@@ -73,9 +73,19 @@
   .figrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
   .figrow a{font-size:12px;font-weight:700;border:1px solid var(--blue-50);color:var(--blue-50);border-radius:999px;padding:4px 10px}
   .figrow a:hover{background:var(--blue-50);color:#fff;text-decoration:none}
-  .figscreens{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-  .figscreens img{max-height:200px;width:auto;max-width:100%;border-radius:6px;border:1px solid var(--border);cursor:pointer;transition:opacity .15s;background:var(--bg);object-fit:contain}
-  .figscreens img:hover{opacity:.8}
+  .figscreens{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+  .figscreens img{
+    display:block;flex:none;max-height:200px;width:auto;max-width:100%;
+    padding:8px;background:#fff;border:1px solid var(--border);border-radius:8px;
+    box-shadow:0 1px 2px rgba(1,24,64,.06),0 4px 14px rgba(1,24,64,.08);
+    cursor:pointer;object-fit:contain;
+    transition:box-shadow .15s,transform .15s,border-color .15s;
+  }
+  .figscreens img:hover{
+    border-color:#B8CAEF;
+    box-shadow:0 2px 4px rgba(1,24,64,.1),0 8px 24px rgba(1,24,64,.12);
+    transform:translateY(-1px);
+  }
   /* lightbox */
   #fig-lb{display:none;position:fixed;inset:0;background:rgba(1,24,64,.85);z-index:999;align-items:center;justify-content:center;cursor:zoom-out}
   #fig-lb.on{display:flex}
@@ -476,7 +486,7 @@
         <div class="detail">
           <dl>
             <dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-quote">Quote</a>, <a href="#task-stats">Stats</a>, <a href="#task-button">Button</a>, <a href="#task-image">Image</a>, <a href="#task-video">Video</a></dd>
-            <dt>Variants</dt><dd>Media side (left / right); content mix; background colour; with / without stat overlay.</dd>
+            <dt>Variants</dt><dd>Media side (left / right); content mix; background colour; with / without stat overlay; dark background (Var 1; Var 2).</dd>
             <dt>Fields</dt><dd><code>mediaSide</code>, <code>background</code>, <code>contentColumn</code> (array of blocks), <code>mediaColumn</code> (image or video + optional stat)</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + inherited from its blocks</dd>
             <dt>Steps</dt><dd><ol><li>Sanity composite object with a column page-builder</li><li>Astro component composing the sub-components; media side + background</li><li>Mobile stacking to one column</li></ol></dd>
@@ -489,7 +499,7 @@
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4224-15987" target="_blank" rel="noopener">Var 6</a>
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16321" target="_blank" rel="noopener">Mobile A</a>
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16344" target="_blank" rel="noopener">Mobile B</a>
-            </div><div class="figscreens"><img src="figma-screenshots/twocol-var1.png" alt="Two-column Var 1"><img src="figma-screenshots/twocol-var2.png" alt="Two-column Var 2"><img src="figma-screenshots/twocol-var3.png" alt="Two-column Var 3"><img src="figma-screenshots/twocol-var4.png" alt="Two-column Var 4"><img src="figma-screenshots/twocol-var5.png" alt="Two-column Var 5"><img src="figma-screenshots/twocol-var6.png" alt="Two-column Var 6"><img src="figma-screenshots/twocol-mobile-a.png" alt="Two-column Mobile A"><img src="figma-screenshots/twocol-mobile-b.png" alt="Two-column Mobile B"></div></dd>
+            </div><div class="figscreens"><img src="figma-screenshots/twocol-var1.png" alt="Two-column Var 1"><img src="figma-screenshots/twocol-var2.png" alt="Two-column Var 2"><img src="figma-screenshots/twocol-var3.png" alt="Two-column Var 3"><img src="figma-screenshots/twocol-var4.png" alt="Two-column Var 4"><img src="figma-screenshots/twocol-var5.png" alt="Two-column Var 5"><img src="figma-screenshots/twocol-var6.png" alt="Two-column Var 6"><img src="figma-screenshots/twocol-mobile-a.png" alt="Two-column Mobile A"><img src="figma-screenshots/twocol-mobile-b.png" alt="Two-column Mobile B"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7271&amp;m=dev" target="_blank" rel="noopener">Var 1</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7209&amp;m=dev" target="_blank" rel="noopener">Var 2</a></div><div class="figscreens"><img src="figma-screenshots/twocol-dark-var1.png" alt="Two-column dark Var 1"><img src="figma-screenshots/twocol-dark-var2.png" alt="Two-column dark Var 2"></div></dd>
           </dl>
         </div>
       </details>
@@ -503,9 +513,10 @@
           <dl>
             <dt>Depends on</dt><dd><a href="#task-twocol">Two-column</a>, <a href="#task-text">Text</a>, <a href="#task-button">Button</a></dd>
             <dt>Description</dt><dd>Asymmetric two-column layout where the left column is proportionally wider. Distinct from the equal-split <a href="#task-twocol">Two-column</a>.</dd>
+            <dt>Variants</dt><dd>Default; dark background.</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Confirm column ratio with design</li><li>Sanity composite (may extend Two-column schema with a ratio field)</li><li>Astro component with wider-left grid variant</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div></dd>
           </dl>
         </div>
       </details>
@@ -797,11 +808,11 @@
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Announcement bar<small>Global · top-of-page banner strip</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A slim banner above the nav for time-sensitive announcements or promotions. Dismissable per session.</dd>
-          <dt>Variants</dt><dd>Desktop; mobile.</dd>
+          <dt>Variants</dt><dd>Default (desktop; mobile); countdown with gradient (desktop; mobile); full-width message with CTA (desktop; mobile).</dd>
           <dt>Fields</dt><dd><code>message</code> (rich text), <code>link</code>, <code>dismissable</code>, <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity singleton with active/inactive toggle</li><li>Astro component rendered in base layout above the header</li><li>Dismissable via localStorage</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8117-394" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8118-2370" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-desktop.png" alt="Announcement bar – Desktop"><img src="figma-screenshots/global-announcement-mobile.png" alt="Announcement bar – Mobile"></div></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8117-394" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8118-2370" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-desktop.png" alt="Announcement bar – Desktop"><img src="figma-screenshots/global-announcement-mobile.png" alt="Announcement bar – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-118&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-119&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-countdown-desktop.png" alt="Announcement bar – Countdown desktop"><img src="figma-screenshots/global-announcement-countdown-mobile.png" alt="Announcement bar – Countdown mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119682&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119665&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-fullwidth-desktop.png" alt="Announcement bar – Full width desktop"><img src="figma-screenshots/global-announcement-fullwidth-mobile.png" alt="Announcement bar – Full width mobile"></div></dd>
         </dl></div>
       </details>
 
