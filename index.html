@@ -28,7 +28,7 @@
 
   .wrap{max-width:var(--maxw);margin:0 auto;padding:26px 22px 60px}
   .intro h1{font-size:32px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px}
-  .intro p{color:var(--muted);max-width:64ch;margin:0 0 14px}
+  .intro p{color:var(--muted);margin:0 0 14px}
   .legend{display:flex;flex-wrap:wrap;gap:18px;background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;font-size:13px}
   .legend .grp{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
   .legend .grp b{color:var(--blue-30);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
@@ -130,7 +130,7 @@
 
 <header class="top">
   <div class="inner">
-    <div class="brand"><span class="dot"></span> Website Rebuild — Project Plan</div>
+    <div class="brand"><span class="dot"></span> Website Rebuild — Library guideline</div>
     <div class="tabs" role="tablist" aria-label="Views">
       <button id="tab-plan" role="tab" aria-selected="true" aria-controls="panel-plan">Build plan</button>
       <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Index</button>
@@ -142,9 +142,9 @@
 
   <div class="intro">
     <h1>How we rebuild the site, in order</h1>
-    <p>This is the sequence the team works through, for designers and developers both. Read it top to bottom: each phase unlocks the next, and every task expands to show who does what, which tokens and components it touches, and what "done" means. Build order matters because each layer is made from the one before it: tokens first, then the primitives and content blocks, then the composite that is assembled from them, then the full sections.</p>
+    <p>This is the sequence the team works through, for designers and developers both. Read it top to bottom: each phase unlocks the next, and every task expands to show who does what, which tokens and components it touches, and what "done" means. Build order matters because each layer is made from the one before it: tokens first, then core components, then standalone components, then global components, then templates.</p>
     <div style="background:var(--blue-95);border:1px solid var(--border);border-left:4px solid var(--blue-50);border-radius:10px;padding:14px 16px;margin-top:14px;font-size:14px">
-      <b style="color:var(--blue-30)">Recommended approach for the design team:</b> build the shared component kit first, then prove it by composing one real pilot template, then roll out the rest of the templates by composition. Designing a whole template before the kit is settled re-bakes the inconsistency we just untangled; building the kit with no real page to test it against is just as risky. So components come first, a single pilot template validates them end to end, and the remaining templates are then mostly assembly plus their own page-specific design. Templates enter the plan at Phase 4.
+      <b style="color:var(--blue-30)">Recommended approach for the design team:</b> build the shared component kit first, then prove it by composing one real pilot template, then roll out the rest of the templates by composition. Designing a whole template before the kit is settled re-bakes the inconsistency we just untangled; building the kit with no real page to test it against is just as risky. So components come first, a single pilot template validates them end to end, and the remaining templates are then mostly assembly plus their own page-specific design. Templates enter the plan at Phase 5.
     </div>
   </div>
 
@@ -292,11 +292,11 @@
     <summary>
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">2</span>
-      <h2>Phase 2 · Primitives &amp; content blocks</h2>
-      <span class="count">12 tasks</span>
+      <h2>Phase 2 · Core components</h2>
+      <span class="count">11 tasks</span>
     </summary>
     <div class="body">
-      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Build these first. The composite section in Phase 3 is assembled entirely from them. Each task is the same shape: design finalises the Figma component and its variants, dev builds the Sanity schema and the Astro component and wires the tokens.</p>
+      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Build these first. The standalone components in Phase 3 are assembled from them. Each task is the same shape: design finalises the Figma component and its variants, dev builds the Sanity schema and the Astro component and wires the tokens.</p>
 
       <details class="task" id="task-button">
         <summary>
@@ -453,18 +453,6 @@
         </dl></div>
       </details>
 
-      <details class="task" id="task-iconcards">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Content block · grid of icon + title + text</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Variants</dt><dd>Column count (2 / 3 / 4); with / without per-card link.</dd>
-          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon, title, body, optional link), <code>columns</code></dd>
-          <dt>Composition</dt><dd>Grid of icon-card sub-elements.</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Steps</dt><dd><ol><li>Sanity <code>iconCards</code> with items array</li><li>Astro grid + IconCard sub-component</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2480-35539" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2964-6922" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/icon-cards-desktop.png" alt="Icon cards – Desktop"><img src="figma-screenshots/icon-cards-mobile.png" alt="Icon cards – Mobile"></div></dd>
-        </dl></div>
-      </details>
-
     </div>
   </details>
 
@@ -473,8 +461,8 @@
     <summary>
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">3</span>
-      <h2>Phase 3 · Composites &amp; Sections</h2>
-      <span class="count">15 tasks</span>
+      <h2>Phase 3 · Standalone components</h2>
+      <span class="count">24 tasks</span>
     </summary>
     <div class="body">
       <details class="task" id="task-twocol">
@@ -513,10 +501,10 @@
           <dl>
             <dt>Depends on</dt><dd><a href="#task-twocol">Two-column</a>, <a href="#task-text">Text</a>, <a href="#task-button">Button</a></dd>
             <dt>Description</dt><dd>Asymmetric two-column layout where the left column is proportionally wider. Distinct from the equal-split <a href="#task-twocol">Two-column</a>.</dd>
-            <dt>Variants</dt><dd>Default; dark background.</dd>
+            <dt>Variants</dt><dd>Default; pricing; dark background.</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Confirm column ratio with design</li><li>Sanity composite (may extend Two-column schema with a ratio field)</li><li>Astro component with wider-left grid variant</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4066-131897&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/bigger-text-col.png" alt="Two-column with bigger left – pricing"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div></dd>
           </dl>
         </div>
       </details>
@@ -536,7 +524,95 @@
           </dl>
         </div>
       </details>
-      <p style="color:var(--muted);font-size:13.5px;margin:18px 0 2px;padding-top:14px;border-top:1px solid var(--border)">The following are also composite-level components — page sections assembled from the blocks above, reused across templates.</p>
+      <p style="color:var(--muted);font-size:13.5px;margin:18px 0 2px;padding-top:14px;border-top:1px solid var(--border)">The following are also standalone components — page sections assembled from the core components above, reused across templates.</p>
+      <details class="task" id="task-iconcards">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Section · grid of icon + title + text</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Variants</dt><dd>Column count (2 / 3 / 4); with / without per-card link.</dd>
+          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon, title, body, optional link), <code>columns</code></dd>
+          <dt>Composition</dt><dd>Grid of icon-card sub-elements.</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>iconCards</code> with items array</li><li>Astro grid + IconCard sub-component</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2480-35539" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2964-6922" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/icon-cards-desktop.png" alt="Icon cards – Desktop"><img src="figma-screenshots/icon-cards-mobile.png" alt="Icon cards – Mobile"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-icon-list-grid">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon list grid<small>Section · heading, intro and icon-led benefit list</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A section with a display heading and optional intro, followed by a responsive grid of list items. Each item pairs a wired icon in a blue square tile with a bold label and supporting body copy. Distinct from <a href="#task-iconcards">Icon cards</a> — taller section intro and vertically stacked icon + text per cell.</dd>
+          <dt>Variants</dt><dd>Desktop (multi-column grid); mobile (stacked). Column count configurable on desktop.</dd>
+          <dt>Fields</dt><dd><code>heading</code>, <code>intro</code> (optional rich text), <code>items</code> (icon, title, body), <code>columns</code>, <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>iconListGrid</code> with items array</li><li>Astro responsive grid; icon tile uses Blue 50 background and 8px radius</li><li>Mobile: single-column stack with consistent vertical rhythm</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12847-19722&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12873-30806&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/icon-list-grid-desktop.png" alt="Icon list grid – Desktop"><img src="figma-screenshots/icon-list-grid-mobile.png" alt="Icon list grid – Mobile"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-image-icon-grid-list">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Image with icon grid list<small>Section · heading, icon grid and side image</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A section with a display heading, a two-column body pairing a wrapped grid of icon-led list items with a rounded side image. Each list item has a flat icon in a light-blue tile, bold title, body copy and optional link-with-arrow CTA. Distinct from <a href="#task-icon-list-grid">Icon list grid</a> — adds a media column and per-item links.</dd>
+          <dt>Variants</dt><dd>Image side (left / right); item count (typically four in a 2×2 grid).</dd>
+          <dt>Fields</dt><dd><code>heading</code>, <code>items</code> (icon, title, body, optional link), <code>image</code>, <code>mediaSide</code>, <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>imageIconGridList</code> with items array and image field</li><li>Astro two-column layout; icon tile uses Blue 90 (#CEDFFD) and 8px radius; image uses large corner radius</li><li>Mobile: stack image and grid; confirm grid collapse with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=5703-62374&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/image-icon-grid-list.png" alt="Image with icon grid list"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-services-section">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Services section<small>Section · centred intro, icon columns, CTA and hero image</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A full-width services block on a light page background. Centred eyebrow, heading and intro copy, followed by a row of icon-led service columns separated by vertical dividers, a primary CTA, and a large illustrative image below.</dd>
+          <dt>Variants</dt><dd>Column count (typically four); with / without eyebrow; with / without bottom image.</dd>
+          <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code> (rich text), <code>items</code> (icon, title, body), <code>cta</code> (label, href), <code>image</code> (optional), <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>servicesSection</code> with items array and optional hero image</li><li>Astro centred layout; column dividers; Blue 99 (#F5F8FF) section background</li><li>Mobile: stack columns; confirm divider and image treatment with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3916-158301&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/services-section.png" alt="Services section"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-video-hero-section">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Video hero section<small>Section · full-bleed video background, headline and play CTA</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A full-width hero with a background video or still image, dark gradient overlay, large headline and supporting copy, and a primary pill button with play icon (e.g. “Watch their story”). Used at the top of customer-story pages.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile.</dd>
+          <dt>Fields</dt><dd><code>heading</code>, <code>body</code>, <code>cta</code> (label, href or video URL), <code>backgroundVideo</code> or <code>backgroundImage</code>, <code>overlay</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + <a class="chip link" href="#task-button">Button</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>videoHeroSection</code> with media and CTA fields</li><li>Astro full-bleed hero; gradient overlay (#011840); lazy-load or poster for video</li><li>Mobile: scale type and confirm video crop with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-27662&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-99554&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/video-hero-section-desktop.png" alt="Video hero section – Desktop"><img src="figma-screenshots/video-hero-section-mobile.png" alt="Video hero section – Mobile"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-introduction-summary">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Introduction summary<small>Section · case-study intro, accordion and company sidebar</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A dark full-width block for customer-story pages. Left column carries a summary label, intro copy and expandable accordion rows; desktop adds a right sidebar with company bio and logo over a subtle world-map background.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile.</dd>
+          <dt>Fields</dt><dd><code>label</code> (e.g. “Summary”), <code>intro</code> (rich text), <code>items</code> (accordion title + body), <code>companyBio</code>, <code>logo</code>, <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>introductionSummary</code> with accordion items and company sidebar fields</li><li>Astro two-column layout on desktop; accessible accordion (keyboard + ARIA)</li><li>Mobile: stack intro, accordion, bio and logo; confirm map background treatment with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-27668&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90046&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/introduction-summary-desktop.png" alt="Introduction summary – Desktop"><img src="figma-screenshots/introduction-summary-mobile.png" alt="Introduction summary – Mobile"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-use-case-section">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Use case section<small>Section · long-form story body and results sidebar</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A two-column customer-story block. The left column carries long-form use-case copy with blog-style headings and body text; desktop pins a right sidebar card labelled “The result” with stacked headline metrics and a Powered by ROLLER mark.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile.</dd>
+          <dt>Fields</dt><dd><code>body</code> (rich text / portable text blocks), <code>resultsLabel</code>, <code>stats</code> (value, description), <code>showPoweredBy</code> (boolean)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>useCaseSection</code> with portable-text body and results stats array</li><li>Astro two-column layout; sticky results card on desktop</li><li>Mobile: stack body and results card; confirm sidebar order with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-77634&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90082&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/use-case-section-desktop.png" alt="Use case section – Desktop"><img src="figma-screenshots/use-case-section-mobile.png" alt="Use case section – Mobile"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-form-section">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Form section<small>Section · lead-capture form with background variants</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A conversion band pairing marketing copy with an inline lead-capture form. Includes eyebrow, heading and body text, underline-style inputs (e.g. first name, last name, email), submit CTA, and optional report or asset thumbnail. Available in blue, dark and light background treatments. Input fields support default, focus, filled, valid and error states with helper text.</dd>
+          <dt>Variants</dt><dd>Blue (desktop; mobile); dark; light. Input states: default, focus, filled, error (empty and filled).</dd>
+          <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code>, <code>fields</code> (label, type, required), <code>submitLabel</code>, <code>image</code> (optional), <code>variant</code> (blue | dark | light), <code>formAction</code> / integration ID</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + <a class="chip link" href="#task-button">Button</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>formSection</code> with variant enum and configurable field list</li><li>Astro line-input form component; map colours per variant (Blue 50 bg, Blue 10 submit on blue)</li><li>Implement input states (focus cursor, error border + icon helper); wire to form backend</li><li>Mobile: stack inputs and confirm image placement with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-34883&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-96863&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/form-section-blue-desktop.png" alt="Form section – Blue desktop"><img src="figma-screenshots/form-section-blue-mobile.png" alt="Form section – Blue mobile"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7301&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-dark.png" alt="Form section – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-56565&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-light.png" alt="Form section – Light"></div><div class="figrow"><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=1700-5570&amp;m=dev" target="_blank" rel="noopener">Input states</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-12796&amp;m=dev" target="_blank" rel="noopener">Dark section</a></div><div class="figscreens"><img src="figma-screenshots/form-status-states.png" alt="Form status – Input states"><img src="figma-screenshots/form-status-dark-section.png" alt="Form status – Dark section"></div></dd>
+        </dl></div>
+      </details>
       <details class="task" id="task-faq">
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
@@ -617,10 +693,11 @@
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Stats section<small>Section · headline metrics bar</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>items</code> (value, label)</dd>
+          <dt>Variants</dt><dd>Default; blue background with vertical dividers (four stats).</dd>
           <dt>Note</dt><dd>Section-level stats bar, distinct from the <a href="#task-stats">Stats primitive</a> used inside Two-column.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>statsSection</code></li><li>Astro component composing the Stats primitive</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4263-117796" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-widget.png" alt="Stats section"></div></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4263-117796" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-widget.png" alt="Stats section"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-28382&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-blue.png" alt="Stats section – blue background"></div></dd>
         </dl></div>
       </details>
 
@@ -677,6 +754,18 @@
         </dl></div>
       </details>
 
+      <details class="task" id="task-announcement-bar">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Announcement bar<small>Section · optional per-page banner strip</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A slim banner above the nav for time-sensitive announcements or promotions. Added per page — not a site-wide global. Dismissable per session.</dd>
+          <dt>Variants</dt><dd>Default (desktop; mobile); countdown with gradient (desktop; mobile); full-width message with CTA (desktop; mobile).</dd>
+          <dt>Fields</dt><dd><code>message</code> (rich text), <code>link</code>, <code>dismissable</code>, <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity optional page-level field or block (one per page)</li><li>Astro component rendered at the top of the page when enabled</li><li>Dismissable via localStorage</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8117-394" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8118-2370" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-desktop.png" alt="Announcement bar – Desktop"><img src="figma-screenshots/global-announcement-mobile.png" alt="Announcement bar – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-118&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-119&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-countdown-desktop.png" alt="Announcement bar – Countdown desktop"><img src="figma-screenshots/global-announcement-countdown-mobile.png" alt="Announcement bar – Countdown mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119682&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119665&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-fullwidth-desktop.png" alt="Announcement bar – Full width desktop"><img src="figma-screenshots/global-announcement-fullwidth-mobile.png" alt="Announcement bar – Full width mobile"></div></dd>
+        </dl></div>
+      </details>
+
     </div>
   </details>
 
@@ -685,7 +774,118 @@
     <summary>
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">4</span>
-      <h2>Phase 4 · Templates</h2>
+      <h2>Phase 4 · Global Components</h2>
+      <span class="count">10 tasks</span>
+    </summary>
+    <div class="body">
+      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Global components appear across the site regardless of template. Build them after the core and standalone kit, before templates, so every page shell is ready.</p>
+
+      <details class="task" id="task-layout">
+        <summary>
+          <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+          <span class="tname">Header &amp; footer<small>Global · site-wide navigation and page frame</small></span>
+          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+        </summary>
+        <div class="detail">
+          <dl>
+            <dt>Goal</dt><dd>The global header, footer and the shell that wraps every page: fonts and tokens, navigation, analytics and consent, global SEO defaults.</dd>
+            <dt>Who does what</dt><dd><div class="who"><span><b>Design:</b> header, nav and footer designs (desktop and mobile).</span><span><b>Dev:</b> Astro base layout; wire tokens, global SEO, and the analytics, consent and HubSpot integration points.</span></div></dd>
+            <dt>Depends on</dt><dd><a href="#task-tokens">Tokens</a>, <a href="#task-button">Button</a></dd>
+            <dt>Done when</dt><dd>Any page can render inside the shell with working nav, footer and global head tags.</dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14819-18836&amp;m=dev" target="_blank" rel="noopener">Header desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90038&amp;m=dev" target="_blank" rel="noopener">Header mobile</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13307&amp;m=dev" target="_blank" rel="noopener">Footer desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13453&amp;m=dev" target="_blank" rel="noopener">Footer mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-header-desktop.png" alt="Header – Desktop"><img src="figma-screenshots/global-header-mobile.png" alt="Header – Mobile"><img src="figma-screenshots/global-footer-desktop.png" alt="Footer – Desktop"><img src="figma-screenshots/global-footer-mobile.png" alt="Footer – Mobile"></div></dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="task" id="task-trust-banner">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Trust banner<small>Global · trust signals strip</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A strip of certifications, security badges or partner logos. Used near conversion points.</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5359-82723" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-trust-banner.png" alt="Trust banner"></div></dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-logo-carousel">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel<small>Global · auto-scrolling customer logos · light bg</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A marquee of customer logos on a light background. Used globally for credibility.</dd>
+          <dt>Fields</dt><dd><code>logos</code> (image, alt, optional href)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16167" target="_blank" rel="noopener">Light bg</a></div><div class="figscreens"><img src="figma-screenshots/global-logo-carousel.png" alt="Customer logo carousel – Light bg"></div></dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-logo-carousel-dark">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel — dark<small>Global · auto-scrolling logos · dark bg, centred text</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>Dark-background variant of the <a href="#task-logo-carousel">Customer logo carousel</a>, with centred heading text above the logo marquee.</dd>
+          <dt>Fields</dt><dd><code>heading</code> (optional, centred), <code>logos</code> (image, alt, optional href)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Note</dt><dd>Design reference provided as PNG. Figma node link to be added. May share schema with the light variant; <code>theme</code> prop controls bg colour.</dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-user-review-widget">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">User review widget<small>Global · third-party review badges row</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A horizontal row of third-party review badges (G2, Capterra, GetApp, etc.). Reused across pages for social proof.</dd>
+          <dt>Fields</dt><dd><code>badges</code> (logo, link, alt)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-37652" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-user-review-widget.png" alt="User review widget"></div></dd>
+        </dl></div>
+      </details>
+
+
+      <details class="task" id="task-features-widget">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Roller features widget<small>Global · full feature-set navigation panel</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A full-width panel displaying ROLLER's feature set, used globally as a navigation or discovery component.</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6685-21342" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/global-features-widget.png" alt="Roller features widget – Desktop"></div></dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-industries-widget">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industries widget<small>Global · industry navigation panel · light &amp; dark</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Variants</dt><dd>Light background; dark background; mobile (shared for both colour modes).</dd>
+          <dt>Fields</dt><dd><code>items</code> (industry name, icon, href), <code>theme</code> (light / dark)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4908-104564" target="_blank" rel="noopener">Light</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=3492-119449" target="_blank" rel="noopener">Dark</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5135-17531" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-industries-light.png" alt="Industries widget – Light"><img src="figma-screenshots/global-industries-dark.png" alt="Industries widget – Dark"><img src="figma-screenshots/global-industries-mobile.png" alt="Industries widget – Mobile"></div></dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-company-stats">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Company stats widget<small>Global · ROLLER headline numbers</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A row of ROLLER's headline company stats (customers, revenue processed, etc.). Global singleton used across marketing pages.</dd>
+          <dt>Fields</dt><dd><code>stats</code> (value, label) — Sanity singleton</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5575-43587" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-company-stats.png" alt="Company stats widget"></div></dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-global-stats">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Global stats<small>Global · map visual and stacked headline metrics</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A global two-column block pairing a circular globe/map visual with a stacked list of headline stats separated by horizontal rules. Distinct from the <a href="#task-company-stats">Company stats widget</a> simple metrics row and the page-level <a href="#task-stats-section">Stats section</a>.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile.</dd>
+          <dt>Fields</dt><dd><code>stats</code> (value, label) — Sanity singleton or global config; optional map/globe asset</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity global singleton for stat values</li><li>Astro two-column layout; stacked stats with divider lines</li><li>Mobile: stack map and stats; confirm map scale with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-28192&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-99689&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-stats-desktop.png" alt="Global stats – Desktop"><img src="figma-screenshots/global-stats-mobile.png" alt="Global stats – Mobile"></div></dd>
+        </dl></div>
+      </details>
+
+    </div>
+  </details>
+  <!-- PHASE 5 -->
+  <details class="phase" id="phase-5">
+    <summary>
+      <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+      <span class="pn">5</span>
+      <h2>Phase 5 · Templates</h2>
       <span class="count">9 templates</span>
     </summary>
     <div class="body">
@@ -776,126 +976,6 @@
     </div>
   </details>
 
-  <!-- PHASE 5 -->
-  <details class="phase" id="phase-5">
-    <summary>
-      <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
-      <span class="pn">5</span>
-      <h2>Phase 5 · Globals</h2>
-      <span class="count">10 tasks</span>
-    </summary>
-    <div class="body">
-      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Global components appear across the site regardless of template. They are built alongside whichever templates need them first and slot in without changing the phases above.</p>
-
-      <details class="task" id="task-layout">
-        <summary>
-          <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
-          <span class="tname">Header &amp; footer<small>Global · site-wide navigation and page frame</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
-        </summary>
-        <div class="detail">
-          <dl>
-            <dt>Goal</dt><dd>The global header, footer and the shell that wraps every page: fonts and tokens, navigation, analytics and consent, global SEO defaults.</dd>
-            <dt>Who does what</dt><dd><div class="who"><span><b>Design:</b> header, nav and footer designs (desktop and mobile).</span><span><b>Dev:</b> Astro base layout; wire tokens, global SEO, and the analytics, consent and HubSpot integration points.</span></div></dd>
-            <dt>Depends on</dt><dd><a href="#task-tokens">Tokens</a>, <a href="#task-button">Button</a></dd>
-            <dt>Done when</dt><dd>Any page can render inside the shell with working nav, footer and global head tags.</dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14819-18836&amp;m=dev" target="_blank" rel="noopener">Header desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90038&amp;m=dev" target="_blank" rel="noopener">Header mobile</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13307&amp;m=dev" target="_blank" rel="noopener">Footer desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13453&amp;m=dev" target="_blank" rel="noopener">Footer mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-header-desktop.png" alt="Header – Desktop"><img src="figma-screenshots/global-header-mobile.png" alt="Header – Mobile"><img src="figma-screenshots/global-footer-desktop.png" alt="Footer – Desktop"><img src="figma-screenshots/global-footer-mobile.png" alt="Footer – Mobile"></div></dd>
-          </dl>
-        </div>
-      </details>
-
-      <details class="task" id="task-announcement-bar">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Announcement bar<small>Global · top-of-page banner strip</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A slim banner above the nav for time-sensitive announcements or promotions. Dismissable per session.</dd>
-          <dt>Variants</dt><dd>Default (desktop; mobile); countdown with gradient (desktop; mobile); full-width message with CTA (desktop; mobile).</dd>
-          <dt>Fields</dt><dd><code>message</code> (rich text), <code>link</code>, <code>dismissable</code>, <code>background</code></dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Steps</dt><dd><ol><li>Sanity singleton with active/inactive toggle</li><li>Astro component rendered in base layout above the header</li><li>Dismissable via localStorage</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8117-394" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8118-2370" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-desktop.png" alt="Announcement bar – Desktop"><img src="figma-screenshots/global-announcement-mobile.png" alt="Announcement bar – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-118&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-119&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-countdown-desktop.png" alt="Announcement bar – Countdown desktop"><img src="figma-screenshots/global-announcement-countdown-mobile.png" alt="Announcement bar – Countdown mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119682&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119665&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-fullwidth-desktop.png" alt="Announcement bar – Full width desktop"><img src="figma-screenshots/global-announcement-fullwidth-mobile.png" alt="Announcement bar – Full width mobile"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-trust-banner">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Trust banner<small>Global · trust signals strip</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A strip of certifications, security badges or partner logos. Used near conversion points.</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5359-82723" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-trust-banner.png" alt="Trust banner"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-logo-carousel">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel<small>Global · auto-scrolling customer logos · light bg</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A marquee of customer logos on a light background. Used globally for credibility.</dd>
-          <dt>Fields</dt><dd><code>logos</code> (image, alt, optional href)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16167" target="_blank" rel="noopener">Light bg</a></div><div class="figscreens"><img src="figma-screenshots/global-logo-carousel.png" alt="Customer logo carousel – Light bg"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-logo-carousel-dark">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel — dark<small>Global · auto-scrolling logos · dark bg, centred text</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>Dark-background variant of the <a href="#task-logo-carousel">Customer logo carousel</a>, with centred heading text above the logo marquee.</dd>
-          <dt>Fields</dt><dd><code>heading</code> (optional, centred), <code>logos</code> (image, alt, optional href)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Note</dt><dd>Design reference provided as PNG. Figma node link to be added. May share schema with the light variant; <code>theme</code> prop controls bg colour.</dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-user-review-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">User review widget<small>Global · third-party review badges row</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A horizontal row of third-party review badges (G2, Capterra, GetApp, etc.). Reused across pages for social proof.</dd>
-          <dt>Fields</dt><dd><code>badges</code> (logo, link, alt)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-37652" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-user-review-widget.png" alt="User review widget"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-user-reviews-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">User reviews section<small>Global · review awards full section</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>Full section with eyebrow, heading, body copy and a row of third-party review award badges (Capterra, G2, GetApp, Slashdot, etc.).</dd>
-          <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code>, <code>badges</code> (image, alt, link)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Note</dt><dd>Design reference provided as PNG. Figma node link to be added.</dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-features-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Roller features widget<small>Global · full feature-set navigation panel</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A full-width panel displaying ROLLER's feature set, used globally as a navigation or discovery component.</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6685-21342" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/global-features-widget.png" alt="Roller features widget – Desktop"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-industries-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industries widget<small>Global · industry navigation panel · light &amp; dark</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Variants</dt><dd>Light background; dark background; mobile (shared for both colour modes).</dd>
-          <dt>Fields</dt><dd><code>items</code> (industry name, icon, href), <code>theme</code> (light / dark)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4908-104564" target="_blank" rel="noopener">Light</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=3492-119449" target="_blank" rel="noopener">Dark</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5135-17531" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-industries-light.png" alt="Industries widget – Light"><img src="figma-screenshots/global-industries-dark.png" alt="Industries widget – Dark"><img src="figma-screenshots/global-industries-mobile.png" alt="Industries widget – Mobile"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-company-stats">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Company stats widget<small>Global · ROLLER headline numbers</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A row of ROLLER's headline company stats (customers, revenue processed, etc.). Global singleton used across marketing pages.</dd>
-          <dt>Fields</dt><dd><code>stats</code> (value, label) — Sanity singleton</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5575-43587" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-company-stats.png" alt="Company stats widget"></div></dd>
-        </dl></div>
-      </details>
-
-    </div>
-  </details>
 
   <p style="color:var(--muted);font-size:13px;margin-top:18px">Beyond these phases, the wider rebuild continues with the Sanity content model and migration from HubSpot, integrations (forms, analytics, CRM), then QA, SEO and launch. Those become their own plan once the component set and templates are locked.</p>
 
@@ -916,11 +996,18 @@
     <div class="row"><span class="nm">Two-column — text-heavy <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol-text-heavy">Go to task</a></div>
     <div class="row"><span class="nm">FAQ <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-faq">Go to task</a></div>
     <div class="row"><span class="nm">CTA section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-cta">Go to task</a></div>
+    <div class="row"><span class="nm">Icon cards <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-iconcards">Go to task</a></div>
+    <div class="row"><span class="nm">Icon list grid <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-icon-list-grid">Go to task</a></div>
+    <div class="row"><span class="nm">Image with icon grid list <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-image-icon-grid-list">Go to task</a></div>
+    <div class="row"><span class="nm">Services section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-services-section">Go to task</a></div>
+    <div class="row"><span class="nm">Video hero section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-video-hero-section">Go to task</a></div>
+    <div class="row"><span class="nm">Introduction summary <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-introduction-summary">Go to task</a></div>
+    <div class="row"><span class="nm">Use case section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-use-case-section">Go to task</a></div>
+    <div class="row"><span class="nm">Form section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-form-section">Go to task</a></div>
     <div class="row"><span class="nm">Special heading <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-specialheading">Go to task</a></div>
     <div class="row"><span class="nm">Centered text block <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-centeredtext">Go to task</a></div>
     <div class="row"><span class="nm">Flat text block <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-flattext">Go to task</a></div>
     <div class="row"><span class="nm">Text block — alt layout <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-text-block-alt">Go to task</a></div>
-    <div class="row"><span class="nm">Icon cards <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-iconcards">Go to task</a></div>
     <div class="row"><span class="nm">Features unfold <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-featuresunfold">Go to task</a></div>
     <div class="row"><span class="nm">Reports <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-reports">Go to task</a></div>
     <div class="row"><span class="nm">Category links <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-categorylinks">Go to task</a></div>
@@ -931,18 +1018,18 @@
     <div class="row"><span class="nm">Industry vertical section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-industry-vertical">Go to task</a></div>
     <div class="row"><span class="nm">Features list <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-features-list">Go to task</a></div>
     <div class="row"><span class="nm">Implementation packages <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-implementation-packages">Go to task</a></div>
+    <div class="row"><span class="nm">Announcement bar <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-announcement-bar">Go to task</a></div>
 
-    <h3>Globals</h3>
+    <h3>Global Components</h3>
     <div class="row"><span class="nm">Header &amp; footer</span><a href="#task-layout">Go to task</a></div>
-    <div class="row"><span class="nm">Announcement bar</span><a href="#task-announcement-bar">Go to task</a></div>
     <div class="row"><span class="nm">Trust banner</span><a href="#task-trust-banner">Go to task</a></div>
     <div class="row"><span class="nm">Customer logo carousel</span><a href="#task-logo-carousel">Go to task</a></div>
     <div class="row"><span class="nm">Customer logo carousel — dark</span><a href="#task-logo-carousel-dark">Go to task</a></div>
     <div class="row"><span class="nm">User review widget</span><a href="#task-user-review-widget">Go to task</a></div>
-    <div class="row"><span class="nm">User reviews section</span><a href="#task-user-reviews-section">Go to task</a></div>
     <div class="row"><span class="nm">Roller features widget</span><a href="#task-features-widget">Go to task</a></div>
     <div class="row"><span class="nm">Industries widget</span><a href="#task-industries-widget">Go to task</a></div>
     <div class="row"><span class="nm">Company stats widget</span><a href="#task-company-stats">Go to task</a></div>
+    <div class="row"><span class="nm">Global stats</span><a href="#task-global-stats">Go to task</a></div>
 
     <h3>Templates</h3>
     <div class="row"><span class="nm">Pilot · General template</span><a href="#tmpl-pilot">Go to task</a></div>
@@ -961,7 +1048,7 @@
     <div class="row"><span class="nm">Grid &amp; breakpoints</span><a href="#tok-grid">Go to tokens</a></div>
   </div>
 
-  <footer>ROLLER website rebuild · project plan · component set 1 (core). Globals and wider phases to follow.</footer>
+  <footer>ROLLER website rebuild · project plan · component set 1 (core). Global Components and wider phases to follow.</footer>
 
 </main>
 
