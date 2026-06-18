@@ -99,7 +99,11 @@
   details.tok[open]>summary .chev{transform:rotate(90deg)}
   details.tok .tbody{padding:2px 14px 12px 30px;font-size:13.5px}
   .sw{display:inline-flex;align-items:center;gap:7px;margin:3px 12px 3px 0;font-size:12.5px}
-  .sw i{width:16px;height:16px;border-radius:4px;border:1px solid var(--border);display:inline-block}
+  .sw i{width:16px;height:16px;border-radius:4px;border:1px solid var(--border);display:inline-block;flex:none}
+  .sw i.wide{width:48px;height:16px}
+  .tok-h{font-size:11px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 3px;width:100%}
+  .tok-h:first-child{margin-top:6px}
+  .tok-note{font-size:12px;color:var(--muted);margin:0 0 6px;line-height:1.45}
   .usedby{margin-top:8px;color:var(--muted);font-size:13px}
 
   /* index tab */
@@ -176,7 +180,7 @@
           <dl>
             <dt>Goal</dt><dd>One agreed set of tokens, with a thin semantic layer, that both Figma and code read from.</dd>
             <dt>Who does what</dt><dd><div class="who"><span><b>Design:</b> confirm the canonical values and naming in Figma variables.</span><span><b>Dev:</b> mirror them as CSS custom properties.</span></div></dd>
-            <dt>Resolved</dt><dd>H4 confirmed as Inter Medium (500), 28px / lh 36 / ls −2. Blue 95 (#EBF2FE) confirmed as BGL2 subtle bg; Blue 99 (#F5F8FF) added as BGL1 page-level background. Both sourced from Figma Variables.</dd>
+            <dt>Resolved</dt><dd>H4 confirmed as Inter Medium (500), 28px / lh 36 / ls −2. Blue 95 (#EBF2FE) confirmed as BGL2 subtle bg; Blue 99 (#F5F8FF) added as BGL1 page-level background. Colour structure aligned to Brand Style Guide (Core → ROLLER Blues → Accent / Joy Spectrum → Gradients). New accent tokens: Curiosity #8839F5, Passion #FF290C, Innovation #38F6FF, gradient mid #9326FF.</dd>
             <dt>Status note</dt><dd>Gathering is complete and the variable set is written. Sign-off on the two decisions closes this task.</dd>
           </dl>
 
@@ -184,29 +188,64 @@
             <details class="tok" id="tok-colour">
               <summary><svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg> Colour tokens</summary>
               <div class="tbody">
-                <div style="font-size:11px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:6px 0 3px;width:100%">Blue · Primary</div>
-                <span class="sw"><i style="background:#011840"></i><code class="hex">#011840</code>Blue 10 · text / dark bg</span>
+                <p class="tok-note">Structured to match the Brand Style Guide — emotional core colours, blue ramp (acting as greys), accent / Joy Spectrum, then gradients and type pairings. Website-library component tokens kept below.</p>
+                <div class="figrow" style="margin-bottom:8px">
+                  <a href="https://www.figma.com/design/ocepG3YFY1hI7NDyBRscbB/Brand-Style-Guide--WIP-?node-id=2008-4854&amp;m=dev" target="_blank" rel="noopener">Palette &amp; gradients</a>
+                  <a href="https://www.figma.com/design/ocepG3YFY1hI7NDyBRscbB/Brand-Style-Guide--WIP-?node-id=2080-2496&amp;m=dev" target="_blank" rel="noopener">Type &amp; colour pairings</a>
+                </div>
+
+                <div class="tok-h">Core colours</div>
+                <p class="tok-note">Three semantic brand colours — shape environments rather than a single hero hue.</p>
+                <span class="sw"><i style="background:#011840"></i><code class="hex">#011840</code>Commitment · Blue 10 · text / dark bg</span>
+                <span class="sw"><i style="background:#0960F6"></i><code class="hex">#0960F6</code>Empowerment · Blue 50 · accent / primary action</span>
+                <span class="sw"><i style="background:#FFFFFF;border:1px solid var(--border)"></i><code class="hex">#FFFFFF</code>Effortless · White · bright white</span>
+
+                <div class="tok-h">ROLLER blues</div>
+                <p class="tok-note">Full blue ramp — acting as greys in the brand system. Blue 10 &amp; 50 also appear as core colours above.</p>
+                <span class="sw"><i style="background:#011840"></i><code class="hex">#011840</code>Blue 10 · Commitment</span>
                 <span class="sw"><i style="background:#032663"></i><code class="hex">#032663</code>Blue 20</span>
                 <span class="sw"><i style="background:#033180"></i><code class="hex">#033180</code>Blue 30 · secondary / dark surface</span>
                 <span class="sw"><i style="background:#074DC5"></i><code class="hex">#074DC5</code>Blue 40</span>
-                <span class="sw"><i style="background:#0960F6"></i><code class="hex">#0960F6</code>Blue 50 · accent / primary action</span>
+                <span class="sw"><i style="background:#0960F6"></i><code class="hex">#0960F6</code>Blue 50 · Empowerment</span>
                 <span class="sw"><i style="background:#3A80F8"></i><code class="hex">#3A80F8</code>Blue 60</span>
                 <span class="sw"><i style="background:#6BA0FA"></i><code class="hex">#6BA0FA</code>Blue 70</span>
                 <span class="sw"><i style="background:#9DBFFB"></i><code class="hex">#9DBFFB</code>Blue 80</span>
                 <span class="sw"><i style="background:#CEDFFD"></i><code class="hex">#CEDFFD</code>Blue 90 · dividers / borders</span>
                 <span class="sw"><i style="background:#EBF2FE"></i><code class="hex">#EBF2FE</code>Blue 95 · subtle bg (BGL2) ✓</span>
-                <span class="sw"><i style="background:#F5F8FF;border:1px solid var(--border)"></i><code class="hex">#F5F8FF</code>Blue 99 · page bg (BGL1) ✓ new</span>
-                <div style="font-size:11px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 3px;width:100%">OrangeRed · Secondary</div>
+                <span class="sw"><i style="background:#F5F8FF;border:1px solid var(--border)"></i><code class="hex">#F5F8FF</code>Blue 99 · page bg (BGL1) ✓</span>
+
+                <div class="tok-h">Accent colours · Joy Spectrum</div>
+                <p class="tok-note">Brand accent hues — Curiosity, Passion, Innovation. Used in marketing gradients and hero treatments.</p>
+                <span class="sw"><i style="background:#8839F5"></i><code class="hex">#8839F5</code>Purple · Curiosity ✓ new</span>
+                <span class="sw"><i style="background:#FF290C"></i><code class="hex">#FF290C</code>Red · Passion (Red 50) ✓ new</span>
+                <span class="sw"><i style="background:#38F6FF;border:1px solid var(--border)"></i><code class="hex">#38F6FF</code>Cyan · Innovation ✓ new</span>
+                <span class="sw"><i style="background:#9326FF"></i><code class="hex">#9326FF</code>Purple mid · accent gradient stop ✓ new</span>
+
+                <div class="tok-h">Gradient colours</div>
+                <p class="tok-note">Background solids and multi-stop gradients from the brand guide — implement as CSS linear-gradient tokens.</p>
+                <span class="sw"><i style="background:#011840"></i><code class="hex">#011840</code>Background · Commitment solid</span>
+                <span class="sw"><i style="background:#0960F6"></i><code class="hex">#0960F6</code>Background · Empowerment solid</span>
+                <span class="sw"><i style="background:#FFFFFF;border:1px solid var(--border)"></i><code class="hex">#FFFFFF</code>Background · Effortless solid</span>
+                <span class="sw"><i class="wide" style="background:linear-gradient(90deg,#011840,#0960F6)"></i><code class="hex">Blue 10 → Blue 50</code>Brand blue gradient</span>
+                <span class="sw"><i class="wide" style="background:linear-gradient(90deg,rgba(1,24,64,0),#9326FF 50%,#FF290C)"></i>Accent gradient · transparent → Purple → Passion</span>
+                <span class="sw"><i class="wide" style="background:linear-gradient(180deg,#005EFF,#9326FF 47%,#FF290C)"></i>Hero gradient · Blue → Purple → Red</span>
+
+                <div class="tok-h">Type and colour pairings</div>
+                <p class="tok-note">Commitment (Blue 10) backgrounds use white type; Empowerment (Blue 50) and lighter blues use Commitment or white type depending on contrast. Joy Spectrum gradients pair with white headlines and Commitment body copy — see Brand Style Guide frame for live examples.</p>
+
+                <div class="tok-h">Extended tokens · website library</div>
+                <p class="tok-note">Component-level colours from Website-library variables — retained alongside the brand guide palette.</p>
+                <div class="tok-h" style="margin-top:6px;font-size:10px;opacity:.85">OrangeRed · Secondary</div>
                 <span class="sw"><i style="background:#330D00"></i><code class="hex">#330D00</code>OrangeRed 10 · dark</span>
                 <span class="sw"><i style="background:#FF490C"></i><code class="hex">#FF490C</code>OrangeRed 50 · eyebrow / action accent ✓</span>
-                <div style="font-size:11px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 3px;width:100%">Yellow</div>
+                <div class="tok-h" style="margin-top:6px;font-size:10px;opacity:.85">Yellow</div>
                 <span class="sw"><i style="background:#FFFBE6;border:1px solid var(--border)"></i><code class="hex">#FFFBE6</code>Yellow 10</span>
                 <span class="sw"><i style="background:#FFD500"></i><code class="hex">#FFD500</code>Yellow 50</span>
                 <span class="sw"><i style="background:#665500"></i><code class="hex">#665500</code>Yellow 70</span>
-                <div style="font-size:11px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 3px;width:100%">Error Red</div>
+                <div class="tok-h" style="margin-top:6px;font-size:10px;opacity:.85">Error red</div>
                 <span class="sw"><i style="background:#E50B0B"></i><code class="hex">#E50B0B</code>Red 50 · error ✓</span>
                 <span class="sw"><i style="background:#590202"></i><code class="hex">#590202</code>Red 70 · dark error</span>
-                <div style="font-size:11px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 3px;width:100%">Neutral</div>
+                <div class="tok-h" style="margin-top:6px;font-size:10px;opacity:.85">Neutral</div>
                 <span class="sw"><i style="background:#F2F2F2;border:1px solid var(--border)"></i><code class="hex">#F2F2F2</code>Neutral 10</span>
                 <span class="sw"><i style="background:#E5E5E4;border:1px solid var(--border)"></i><code class="hex">#E5E5E4</code>Neutral 20</span>
                 <span class="sw"><i style="background:#CCCCCC"></i><code class="hex">#CCCCCC</code>Neutral 30</span>
@@ -217,9 +256,9 @@
                 <span class="sw"><i style="background:#171717"></i><code class="hex">#171717</code>Neutral 900</span>
                 <span class="sw"><i style="background:#000000"></i><code class="hex">#000000</code>Black</span>
                 <span class="sw"><i style="background:#FFFFFF;border:1px solid var(--border)"></i><code class="hex">#FFFFFF</code>White</span>
-                <div style="font-size:11px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 3px;width:100%">Success</div>
+                <div class="tok-h" style="margin-top:6px;font-size:10px;opacity:.85">Success</div>
                 <span class="sw"><i style="background:#18F273"></i><code class="hex">#18F273</code>Green · success <span style="color:#B22F04">⚠ confirm — not in Figma variable defs</span></span>
-                <div class="usedby" style="margin-top:10px">Used by: <a class="chip link" href="#task-button">Button</a><a class="chip link" href="#task-text">Text block</a><a class="chip link" href="#task-quote">Quote</a><a class="chip link" href="#task-cta">CTA</a><a class="chip link" href="#task-faq">FAQ</a> — full ramp sourced from Figma Variables, node 6081-7949.</div>
+                <div class="usedby" style="margin-top:10px">Used by: <a class="chip link" href="#task-button">Button</a><a class="chip link" href="#task-text">Text block</a><a class="chip link" href="#task-quote">Quote</a><a class="chip link" href="#task-cta">CTA</a><a class="chip link" href="#task-faq">FAQ</a> — Brand Style Guide nodes 2008-4854 &amp; 2080-2496; website-library ramp from Figma Variables node 6081-7949.</div>
               </div>
             </details>
 
@@ -462,7 +501,7 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">3</span>
       <h2>Phase 3 · Standalone components</h2>
-      <span class="count">24 tasks</span>
+      <span class="count">28 tasks</span>
     </summary>
     <div class="body">
       <details class="task" id="task-twocol">
@@ -501,10 +540,10 @@
           <dl>
             <dt>Depends on</dt><dd><a href="#task-twocol">Two-column</a>, <a href="#task-text">Text</a>, <a href="#task-button">Button</a></dd>
             <dt>Description</dt><dd>Asymmetric two-column layout where the left column is proportionally wider. Distinct from the equal-split <a href="#task-twocol">Two-column</a>.</dd>
-            <dt>Variants</dt><dd>Default; pricing; dark background.</dd>
+            <dt>Variants</dt><dd>Default; pricing; dark background; hero heading with CTA pair and square image.</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Confirm column ratio with design</li><li>Sanity composite (may extend Two-column schema with a ratio field)</li><li>Astro component with wider-left grid variant</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4066-131897&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/bigger-text-col.png" alt="Two-column with bigger left – pricing"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4066-131897&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/bigger-text-col.png" alt="Two-column with bigger left – pricing"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=5392-7315&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-hero-image.png" alt="Two-column with bigger left – hero and image"></div></dd>
           </dl>
         </div>
       </details>
@@ -524,6 +563,24 @@
           </dl>
         </div>
       </details>
+      <details class="task" id="task-flat-one-column">
+        <summary>
+          <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+          <span class="tname">Flat one column<small>Composite · single-column hero text, CTA and optional media</small></span>
+          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+        </summary>
+        <div class="detail">
+          <dl>
+            <dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-button">Button</a>, <a href="#task-image">Image</a></dd>
+            <dt>Description</dt><dd>A full-width single-column block stacking eyebrow, hero-scale heading, body copy, an optional CTA pair, and an optional full-width 16:9 image. Richer than the <a href="#task-flattext">Flat text block</a>; no side-by-side column split.</dd>
+            <dt>Variants</dt><dd>Default (left-aligned with image); dark; centred; centred with image.</dd>
+            <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>body</code>, <code>buttons</code>, <code>image</code> (optional), <code>align</code> (left | centre), <code>variant</code> (light | dark)</dd>
+            <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+            <dt>Steps</dt><dd><ol><li>Sanity <code>flatOneColumn</code> with alignment and variant fields</li><li>Astro vertical stack; map OnLight / OnDark heading and CTA treatments</li><li>Confirm centred max-width and image aspect ratio with design</li></ol></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4787-119109&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-default.png" alt="Flat one column – Default"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3845-175867&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark.png" alt="Flat one column – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4146-127627&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred.png" alt="Flat one column – Centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3843-174802&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred-alt.png" alt="Flat one column – Centred alt"></div></dd>
+          </dl>
+        </div>
+      </details>
       <p style="color:var(--muted);font-size:13.5px;margin:18px 0 2px;padding-top:14px;border-top:1px solid var(--border)">The following are also standalone components — page sections assembled from the core components above, reused across templates.</p>
       <details class="task" id="task-iconcards">
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Section · grid of icon + title + text</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
@@ -534,6 +591,17 @@
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>iconCards</code> with items array</li><li>Astro grid + IconCard sub-component</li></ol></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2480-35539" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2964-6922" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/icon-cards-desktop.png" alt="Icon cards – Desktop"><img src="figma-screenshots/icon-cards-mobile.png" alt="Icon cards – Mobile"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-cards">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Cards<small>Section · image cards with title, body and link</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A section with optional eyebrow, heading and intro, followed by a row of image-led cards. Each card has a rounded image thumb, title, body copy and text link with chevron. Version 2 may vary card count, layout or trailing content (e.g. logo strip).</dd>
+          <dt>Variants</dt><dd>Desktop; desktop version 2; desktop version 3; pricing page (desktop; mobile).</dd>
+          <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code>, <code>items</code> (image, title, body, link), <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>cards</code> with items array</li><li>Astro responsive card grid; 32px radius, Blue 90 (#CEDFFD) thumb bg, drop shadow token</li><li>Confirm version 2 differences and mobile treatment with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-49636&amp;m=dev" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop.png" alt="Cards – Desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10893-25174&amp;m=dev" target="_blank" rel="noopener">Desktop v2</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v2.png" alt="Cards – Desktop v2"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10098-11279&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v3.png" alt="Cards – Desktop v3"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6681-18122&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37254&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cards-pricing-desktop.png" alt="Cards – Pricing desktop"><img src="figma-screenshots/cards-pricing-mobile.png" alt="Cards – Pricing mobile"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-icon-list-grid">
@@ -606,11 +674,33 @@
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Form section<small>Section · lead-capture form with background variants</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A conversion band pairing marketing copy with an inline lead-capture form. Includes eyebrow, heading and body text, underline-style inputs (e.g. first name, last name, email), submit CTA, and optional report or asset thumbnail. Available in blue, dark and light background treatments. Input fields support default, focus, filled, valid and error states with helper text.</dd>
-          <dt>Variants</dt><dd>Blue (desktop; mobile); dark; light. Input states: default, focus, filled, error (empty and filled).</dd>
+          <dt>Variants</dt><dd>Blue (desktop; mobile); dark; light (desktop; mobile). Input states: default, focus, filled, error (empty and filled).</dd>
           <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code>, <code>fields</code> (label, type, required), <code>submitLabel</code>, <code>image</code> (optional), <code>variant</code> (blue | dark | light), <code>formAction</code> / integration ID</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + <a class="chip link" href="#task-button">Button</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>formSection</code> with variant enum and configurable field list</li><li>Astro line-input form component; map colours per variant (Blue 50 bg, Blue 10 submit on blue)</li><li>Implement input states (focus cursor, error border + icon helper); wire to form backend</li><li>Mobile: stack inputs and confirm image placement with design</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-34883&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-96863&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/form-section-blue-desktop.png" alt="Form section – Blue desktop"><img src="figma-screenshots/form-section-blue-mobile.png" alt="Form section – Blue mobile"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7301&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-dark.png" alt="Form section – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-56565&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-light.png" alt="Form section – Light"></div><div class="figrow"><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=1700-5570&amp;m=dev" target="_blank" rel="noopener">Input states</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-12796&amp;m=dev" target="_blank" rel="noopener">Dark section</a></div><div class="figscreens"><img src="figma-screenshots/form-status-states.png" alt="Form status – Input states"><img src="figma-screenshots/form-status-dark-section.png" alt="Form status – Dark section"></div></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-34883&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-96863&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/form-section-blue-desktop.png" alt="Form section – Blue desktop"><img src="figma-screenshots/form-section-blue-mobile.png" alt="Form section – Blue mobile"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7301&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-dark.png" alt="Form section – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=11312-13915&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=11392-38258&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/form-section-light-desktop.png" alt="Form section – Light desktop"><img src="figma-screenshots/form-section-light-mobile.png" alt="Form section – Light mobile"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-56565&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-light.png" alt="Form section – Light"></div><div class="figrow"><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=1700-5570&amp;m=dev" target="_blank" rel="noopener">Input states</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-12796&amp;m=dev" target="_blank" rel="noopener">Dark section</a></div><div class="figscreens"><img src="figma-screenshots/form-status-states.png" alt="Form status – Input states"><img src="figma-screenshots/form-status-dark-section.png" alt="Form status – Dark section"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-pricing-widget">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Pricing widget<small>Section · plan comparison cards</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A row of plan pricing cards for tier comparison. Each card has a coloured header stripe (or “Most popular” badge), plan label, description, divider, feature list and full-width CTA. Used on pricing pages.</dd>
+          <dt>Variants</dt><dd>Plan row (desktop); full section (desktop); mobile layout A; mobile layout B.</dd>
+          <dt>Fields</dt><dd><code>plans</code> (name, description, features, cta, badge, headerColor), <code>highlightedPlan</code> (optional)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>pricingWidget</code> with plans array</li><li>Astro responsive grid; 32px card radius, drop shadow token</li><li>Mobile: confirm stacked card order and highlight treatment with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8737-57514&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/pricing-widget-desktop-a.png" alt="Pricing widget – Plan row desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8724-11597&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/pricing-widget-desktop-b.png" alt="Pricing widget – Full section desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37252&amp;m=dev" target="_blank" rel="noopener">Mobile</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37253&amp;m=dev" target="_blank" rel="noopener">Mobile alt</a></div><div class="figscreens"><img src="figma-screenshots/pricing-widget-mobile-a.png" alt="Pricing widget – Mobile A"><img src="figma-screenshots/pricing-widget-mobile-b.png" alt="Pricing widget – Mobile B"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-addons">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Addons<small>Section · optional add-on products row</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A horizontal band of add-on product cards beneath the main pricing tiers. Each item pairs icon or image, title, short description and optional link or price.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile.</dd>
+          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon or image, title, body, link or price)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>addons</code> with items array</li><li>Astro horizontal card row; stack on mobile</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6681-18121&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37253&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/addons-desktop.png" alt="Addons – Desktop"><img src="figma-screenshots/addons-mobile.png" alt="Addons – Mobile"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-faq">
@@ -637,10 +727,11 @@
         </summary>
         <div class="detail">
           <dl>
+            <dt>Variants</dt><dd>Default (desktop; mobile); compact band (desktop; mobile).</dd>
             <dt>Fields</dt><dd><code>heading</code>, <code>body</code>, <code>buttons</code>, <code>background</code></dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a> + <a class="chip link" href="#task-button">Button</a></dd>
             <dt>Steps</dt><dd><ol><li>Sanity <code>cta</code></li><li>Astro component with background variant + button slot</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16208" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16369" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cta-desktop.png" alt="CTA section – Desktop"><img src="figma-screenshots/cta-mobile.png" alt="CTA section – Mobile"></div></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16208" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16369" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cta-desktop.png" alt="CTA section – Desktop"><img src="figma-screenshots/cta-mobile.png" alt="CTA section – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12492-24815&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12494-16779&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cta-section-v2-desktop.png" alt="CTA section – Compact desktop"><img src="figma-screenshots/cta-section-v2-mobile.png" alt="CTA section – Compact mobile"></div></dd>
           </dl>
         </div>
       </details>
@@ -693,11 +784,11 @@
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Stats section<small>Section · headline metrics bar</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>items</code> (value, label)</dd>
-          <dt>Variants</dt><dd>Default; blue background with vertical dividers (four stats).</dd>
+          <dt>Variants</dt><dd>Default; blue background with vertical dividers (four stats); light background row.</dd>
           <dt>Note</dt><dd>Section-level stats bar, distinct from the <a href="#task-stats">Stats primitive</a> used inside Two-column.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>statsSection</code></li><li>Astro component composing the Stats primitive</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4263-117796" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-widget.png" alt="Stats section"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-28382&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-blue.png" alt="Stats section – blue background"></div></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4263-117796" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-widget.png" alt="Stats section"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-28382&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-blue.png" alt="Stats section – blue background"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10100-29968&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/stats-section-v2.png" alt="Stats section – light row"></div></dd>
         </dl></div>
       </details>
 
@@ -775,24 +866,43 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">4</span>
       <h2>Phase 4 · Global Components</h2>
-      <span class="count">10 tasks</span>
+      <span class="count">12 tasks</span>
     </summary>
     <div class="body">
       <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Global components appear across the site regardless of template. Build them after the core and standalone kit, before templates, so every page shell is ready.</p>
 
-      <details class="task" id="task-layout">
+      <details class="task" id="task-header">
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
-          <span class="tname">Header &amp; footer<small>Global · site-wide navigation and page frame</small></span>
+          <span class="tname">Header<small>Global · site-wide navigation and page shell</small></span>
           <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
         </summary>
         <div class="detail">
           <dl>
-            <dt>Goal</dt><dd>The global header, footer and the shell that wraps every page: fonts and tokens, navigation, analytics and consent, global SEO defaults.</dd>
-            <dt>Who does what</dt><dd><div class="who"><span><b>Design:</b> header, nav and footer designs (desktop and mobile).</span><span><b>Dev:</b> Astro base layout; wire tokens, global SEO, and the analytics, consent and HubSpot integration points.</span></div></dd>
+            <dt>Goal</dt><dd>The global header and Astro base layout shell: fonts and tokens, primary navigation, mega-menu panels, mobile menu, analytics and consent hooks, global SEO defaults.</dd>
+            <dt>Who does what</dt><dd><div class="who"><span><b>Design:</b> header bar, nav and expanded menu states (desktop and mobile).</span><span><b>Dev:</b> Astro base layout; wire tokens, global SEO, and the analytics, consent and HubSpot integration points.</span></div></dd>
             <dt>Depends on</dt><dd><a href="#task-tokens">Tokens</a>, <a href="#task-button">Button</a></dd>
-            <dt>Done when</dt><dd>Any page can render inside the shell with working nav, footer and global head tags.</dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14819-18836&amp;m=dev" target="_blank" rel="noopener">Header desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90038&amp;m=dev" target="_blank" rel="noopener">Header mobile</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13307&amp;m=dev" target="_blank" rel="noopener">Footer desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13453&amp;m=dev" target="_blank" rel="noopener">Footer mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-header-desktop.png" alt="Header – Desktop"><img src="figma-screenshots/global-header-mobile.png" alt="Header – Mobile"><img src="figma-screenshots/global-footer-desktop.png" alt="Footer – Desktop"><img src="figma-screenshots/global-footer-mobile.png" alt="Footer – Mobile"></div></dd>
+            <dt>Variants</dt><dd>Default bar; mega-menu expanded (two panel layouts); mobile menu.</dd>
+            <dt>Done when</dt><dd>Any page renders inside the shell with working nav, expanded menus and global head tags.</dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14819-18836&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90038&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-header-desktop.png" alt="Header – Desktop"><img src="figma-screenshots/global-header-mobile.png" alt="Header – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8480-10211&amp;m=dev" target="_blank" rel="noopener">Menu</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=2208-99432&amp;m=dev" target="_blank" rel="noopener">Desktop expanded</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=6044-2219&amp;m=dev" target="_blank" rel="noopener">Desktop expanded 2</a></div><div class="figscreens"><img src="figma-screenshots/header-menu.png" alt="Header – Menu"><img src="figma-screenshots/header-desktop-expanded.png" alt="Header – Desktop expanded"><img src="figma-screenshots/header-desktop-expanded-2.png" alt="Header – Desktop expanded 2"></div></dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="task" id="task-footer">
+        <summary>
+          <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+          <span class="tname">Footer<small>Global · site-wide footer navigation</small></span>
+          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+        </summary>
+        <div class="detail">
+          <dl>
+            <dt>Goal</dt><dd>The global footer: link columns, legal and utility links, social marks, and any newsletter or CTA slots. Renders inside the <a href="#task-header">Header</a> base layout shell.</dd>
+            <dt>Who does what</dt><dd><div class="who"><span><b>Design:</b> footer layout and link groupings (desktop and mobile).</span><span><b>Dev:</b> Astro footer component; Sanity or config for link groups where editable.</span></div></dd>
+            <dt>Depends on</dt><dd><a href="#task-tokens">Tokens</a>, <a href="#task-header">Header</a> (base layout)</dd>
+            <dt>Variants</dt><dd>Desktop; mobile.</dd>
+            <dt>Done when</dt><dd>Footer renders on every page with working links and responsive layout.</dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13307&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14591-13453&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-footer-desktop.png" alt="Footer – Desktop"><img src="figma-screenshots/global-footer-mobile.png" alt="Footer – Mobile"></div></dd>
           </dl>
         </div>
       </details>
@@ -849,10 +959,10 @@
       <details class="task" id="task-industries-widget">
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industries widget<small>Global · industry navigation panel · light &amp; dark</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
         <div class="detail"><dl>
-          <dt>Variants</dt><dd>Light background; dark background; mobile (shared for both colour modes).</dd>
+          <dt>Variants</dt><dd>Light background; dark background; mobile (light frame in Website-library; shared mobile in Website-Refresh).</dd>
           <dt>Fields</dt><dd><code>items</code> (industry name, icon, href), <code>theme</code> (light / dark)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4908-104564" target="_blank" rel="noopener">Light</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=3492-119449" target="_blank" rel="noopener">Dark</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5135-17531" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-industries-light.png" alt="Industries widget – Light"><img src="figma-screenshots/global-industries-dark.png" alt="Industries widget – Dark"><img src="figma-screenshots/global-industries-mobile.png" alt="Industries widget – Mobile"></div></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4908-104564" target="_blank" rel="noopener">Light</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=3492-119449" target="_blank" rel="noopener">Dark</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5135-17531" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-industries-light.png" alt="Industries widget – Light"><img src="figma-screenshots/global-industries-dark.png" alt="Industries widget – Dark"><img src="figma-screenshots/global-industries-mobile.png" alt="Industries widget – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=6090-14888&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/industries-widget-light-mobile.png" alt="Industries widget – Light mobile"></div></dd>
         </dl></div>
       </details>
 
@@ -860,9 +970,10 @@
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Company stats widget<small>Global · ROLLER headline numbers</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A row of ROLLER's headline company stats (customers, revenue processed, etc.). Global singleton used across marketing pages.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile.</dd>
           <dt>Fields</dt><dd><code>stats</code> (value, label) — Sanity singleton</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5575-43587" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-company-stats.png" alt="Company stats widget"></div></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5575-43587" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-company-stats.png" alt="Company stats widget"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4159-145238&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/company-stats-mobile.png" alt="Company stats widget – Mobile"></div></dd>
         </dl></div>
       </details>
 
@@ -875,6 +986,18 @@
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity global singleton for stat values</li><li>Astro two-column layout; stacked stats with divider lines</li><li>Mobile: stack map and stats; confirm map scale with design</li></ol></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-28192&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-99689&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-stats-desktop.png" alt="Global stats – Desktop"><img src="figma-screenshots/global-stats-mobile.png" alt="Global stats – Mobile"></div></dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-testimonial-carousel">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Testimonial carousel<small>Global · quote cards in a horizontal carousel</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A global section with centred heading and a horizontally scrollable row of testimonial cards. Each card carries a quote mark, quote text, attribution (name, role) and optional company logo on a white card with drop shadow.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile (confirm with design).</dd>
+          <dt>Fields</dt><dd><code>heading</code>, <code>items</code> (quote, name, role, logo), <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> · motion (carousel)</dd>
+          <dt>Steps</dt><dd><ol><li>Sanity global or reusable block with items array</li><li>Astro scroll-snap or carousel; accessible controls and keyboard nav</li><li>Mobile: confirm card width and peek with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10100-4611&amp;m=dev" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/testimonial-carousel-desktop.png" alt="Testimonial carousel – Desktop"></div></dd>
         </dl></div>
       </details>
 
@@ -994,9 +1117,11 @@
     <div class="row"><span class="nm">Two-column <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol">Go to task</a></div>
     <div class="row"><span class="nm">Two-column with bigger left <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol-bigger">Go to task</a></div>
     <div class="row"><span class="nm">Two-column — text-heavy <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol-text-heavy">Go to task</a></div>
+    <div class="row"><span class="nm">Flat one column <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-flat-one-column">Go to task</a></div>
     <div class="row"><span class="nm">FAQ <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-faq">Go to task</a></div>
     <div class="row"><span class="nm">CTA section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-cta">Go to task</a></div>
     <div class="row"><span class="nm">Icon cards <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-iconcards">Go to task</a></div>
+    <div class="row"><span class="nm">Cards <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-cards">Go to task</a></div>
     <div class="row"><span class="nm">Icon list grid <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-icon-list-grid">Go to task</a></div>
     <div class="row"><span class="nm">Image with icon grid list <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-image-icon-grid-list">Go to task</a></div>
     <div class="row"><span class="nm">Services section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-services-section">Go to task</a></div>
@@ -1004,6 +1129,8 @@
     <div class="row"><span class="nm">Introduction summary <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-introduction-summary">Go to task</a></div>
     <div class="row"><span class="nm">Use case section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-use-case-section">Go to task</a></div>
     <div class="row"><span class="nm">Form section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-form-section">Go to task</a></div>
+    <div class="row"><span class="nm">Pricing widget <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-pricing-widget">Go to task</a></div>
+    <div class="row"><span class="nm">Addons <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-addons">Go to task</a></div>
     <div class="row"><span class="nm">Special heading <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-specialheading">Go to task</a></div>
     <div class="row"><span class="nm">Centered text block <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-centeredtext">Go to task</a></div>
     <div class="row"><span class="nm">Flat text block <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-flattext">Go to task</a></div>
@@ -1021,7 +1148,8 @@
     <div class="row"><span class="nm">Announcement bar <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-announcement-bar">Go to task</a></div>
 
     <h3>Global Components</h3>
-    <div class="row"><span class="nm">Header &amp; footer</span><a href="#task-layout">Go to task</a></div>
+    <div class="row"><span class="nm">Header</span><a href="#task-header">Go to task</a></div>
+    <div class="row"><span class="nm">Footer</span><a href="#task-footer">Go to task</a></div>
     <div class="row"><span class="nm">Trust banner</span><a href="#task-trust-banner">Go to task</a></div>
     <div class="row"><span class="nm">Customer logo carousel</span><a href="#task-logo-carousel">Go to task</a></div>
     <div class="row"><span class="nm">Customer logo carousel — dark</span><a href="#task-logo-carousel-dark">Go to task</a></div>
@@ -1030,6 +1158,7 @@
     <div class="row"><span class="nm">Industries widget</span><a href="#task-industries-widget">Go to task</a></div>
     <div class="row"><span class="nm">Company stats widget</span><a href="#task-company-stats">Go to task</a></div>
     <div class="row"><span class="nm">Global stats</span><a href="#task-global-stats">Go to task</a></div>
+    <div class="row"><span class="nm">Testimonial carousel</span><a href="#task-testimonial-carousel">Go to task</a></div>
 
     <h3>Templates</h3>
     <div class="row"><span class="nm">Pilot · General template</span><a href="#tmpl-pilot">Go to task</a></div>
