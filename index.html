@@ -341,7 +341,7 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">2</span>
       <h2>Phase 2 · Core components</h2>
-      <span class="count">11 tasks</span>
+      <span class="count">8 tasks</span>
     </summary>
     <div class="body">
       <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Build these first. The standalone components in Phase 3 are assembled from them. Each task is the same shape: design finalises the Figma component and its variants, dev builds the Sanity schema and the Astro component and wires the tokens.</p>
@@ -371,11 +371,11 @@
         </summary>
         <div class="detail">
           <dl>
-            <dt>Variants</dt><dd>Alignment; eyebrow colour; with / without eyebrow.</dd>
-            <dt>Fields</dt><dd><code>eyebrow</code> (+colour), <code>heading</code>, <code>body</code> (rich text), <code>align</code></dd>
+            <dt>Variants</dt><dd>Default (desktop; mobile); alignment; eyebrow colour; with / without eyebrow; alt layout (alternate spacing &amp; style).</dd>
+            <dt>Fields</dt><dd><code>eyebrow</code> (+colour), <code>heading</code>, <code>body</code> (rich text), <code>align</code>, <code>layout</code> (default | alt)</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-            <dt>Steps</dt><dd><ol><li>Sanity <code>textBlock</code></li><li>Astro component mapped to the S-scale</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16190" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16354" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/text-desktop.png" alt="Text block – Desktop"><img src="figma-screenshots/text-mobile.png" alt="Text block – Mobile"></div></dd>
+            <dt>Steps</dt><dd><ol><li>Sanity <code>textBlock</code> with <code>layout</code> enum</li><li>Astro component mapped to the S-scale; alt layout variant for alternate spacing and heading treatment</li></ol></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16190" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16354" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/text-desktop.png" alt="Text block – Desktop"><img src="figma-screenshots/text-mobile.png" alt="Text block – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6833-18497&amp;m=dev" target="_blank" rel="noopener">Alt layout · View frame</a></div><div class="figscreens"><img src="figma-screenshots/text-block-alt.png" alt="Text block – Alt layout"></div></dd>
           </dl>
         </div>
       </details>
@@ -468,39 +468,6 @@
         </dl></div>
       </details>
 
-      <details class="task" id="task-centeredtext">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Centered text block<small>Content block · centred eyebrow, heading, body</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Variants</dt><dd>Two versions provided; centred alignment.</dd>
-          <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code> (centred)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Steps</dt><dd><ol><li>Likely a centred + width variant of <a href="#task-text">Text block</a> rather than a separate object, to avoid duplication</li><li>Astro component / variant</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22264" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22277" target="_blank" rel="noopener">Desktop alt</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4593-12534" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/centered-text-desktop.png" alt="Centered text – Desktop"><img src="figma-screenshots/centered-text-desktop-alt.png" alt="Centered text – Desktop alt"><img src="figma-screenshots/centered-text-mobile.png" alt="Centered text – Mobile"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-flattext">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Flat text block<small>Content block · full-width text, no media column</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Variants</dt><dd>Left-aligned (default); centred alignment variant.</dd>
-          <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code>, <code>align</code></dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Note</dt><dd>Desktop left-aligned version provided as PNG reference. Centred variant has a Figma frame.</dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1949-185473" target="_blank" rel="noopener">Centred variant</a></div><div class="figscreens"><img src="figma-screenshots/flattext-centered.png" alt="Flat text block – Centred variant"></div></dd>
-        </dl></div>
-      </details>
-
-      <details class="task" id="task-text-block-alt">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Text block — alt layout<small>Content block · one-column text, alternate spacing &amp; style</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A variation of the one-column text block with a different visual treatment — likely tighter spacing, different heading scale, or alternate background. Confirm exact differences from the <a href="#task-flattext">Flat text block</a> against the Figma frame.</dd>
-          <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code> — confirm any additional fields from Figma.</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Steps</dt><dd><ol><li>Review Figma frame to confirm this is a distinct component vs a prop/variant of <a href="#task-flattext">Flat text block</a></li><li>Sanity schema or variant field accordingly</li><li>Astro component or variant</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6833-18497" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/text-block-alt.png" alt="Text block – alt layout"></div></dd>
-        </dl></div>
-      </details>
-
     </div>
   </details>
 
@@ -510,7 +477,7 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">3</span>
       <h2>Phase 3 · Standalone components</h2>
-      <span class="count">29 tasks</span>
+      <span class="count">30 tasks</span>
     </summary>
     <div class="body">
       <details class="task" id="task-twocol">
@@ -576,23 +543,34 @@
       <details class="task" id="task-flat-one-column">
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
-          <span class="tname">Flat one column<small>Composite · single-column hero text, CTA and optional media</small></span>
+          <span class="tname">Flat one column<small>Section · single-column text, optional CTA and media</small></span>
           <span class="meta"><span class="pill p-values">Values</span></span>
         </summary>
         <div class="detail">
           <dl>
-            <dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-button">Button</a>, <a href="#task-image">Image</a></dd>
-            <dt>Description</dt><dd>A full-width single-column block stacking eyebrow, hero-scale heading, body copy, an optional CTA pair, and an optional full-width 16:9 image. Richer than the <a href="#task-flattext">Flat text block</a>; no side-by-side column split.</dd>
+            <dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-button">Button</a> (optional), <a href="#task-image">Image</a> (optional)</dd>
+            <dt>Description</dt><dd>A full-width single-column section — eyebrow, heading and body, with optional CTA pair and optional full-width 16:9 image. No side-by-side column split. Text-only variants omit buttons and image.</dd>
             <dt>Used on</dt><dd>Values page (dark variation)</dd>
-            <dt>Variants</dt><dd>Default (left-aligned with image); dark; dark (Values page); centred; centred with image.</dd>
-            <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>body</code>, <code>buttons</code>, <code>image</code> (optional), <code>align</code> (left | centre), <code>variant</code> (light | dark)</dd>
+            <dt>Variants</dt><dd>Text-only (left-aligned); text-only (centred); default (left-aligned with image); dark; dark (Values page); centred; centred with image.</dd>
+            <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>body</code>, <code>buttons</code> (optional), <code>image</code> (optional), <code>align</code> (left | centre), <code>variant</code> (light | dark)</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-            <dt>Steps</dt><dd><ol><li>Sanity <code>flatOneColumn</code> with alignment and variant fields</li><li>Astro vertical stack; map OnLight / OnDark heading and CTA treatments</li><li>Confirm centred max-width and image aspect ratio with design</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4787-119109&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-default.png" alt="Flat one column – Default"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3845-175867&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark.png" alt="Flat one column – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13985-14954&amp;m=dev" target="_blank" rel="noopener">Dark · Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13940-23312&amp;m=dev" target="_blank" rel="noopener">Dark · Mobile</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark-values-desktop.png" alt="Flat one column – Dark desktop (Values)"><img src="figma-screenshots/flat-one-column-dark-values-mobile.png" alt="Flat one column – Dark mobile (Values)"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4146-127627&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred.png" alt="Flat one column – Centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3843-174802&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred-alt.png" alt="Flat one column – Centred alt"></div></dd>
+            <dt>Steps</dt><dd><ol><li>Sanity <code>flatOneColumn</code> with alignment and variant fields; buttons and image optional for text-only layouts</li><li>Astro vertical stack; map OnLight / OnDark heading and CTA treatments</li><li>Confirm centred max-width and image aspect ratio with design</li></ol></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1949-185473" target="_blank" rel="noopener">Text-only · Centred</a></div><div class="figscreens"><img src="figma-screenshots/flattext-centered.png" alt="Flat one column – Text-only centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4787-119109&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-default.png" alt="Flat one column – Default"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3845-175867&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark.png" alt="Flat one column – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13985-14954&amp;m=dev" target="_blank" rel="noopener">Dark · Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13940-23312&amp;m=dev" target="_blank" rel="noopener">Dark · Mobile</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark-values-desktop.png" alt="Flat one column – Dark desktop (Values)"><img src="figma-screenshots/flat-one-column-dark-values-mobile.png" alt="Flat one column – Dark mobile (Values)"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4146-127627&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred.png" alt="Flat one column – Centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3843-174802&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred-alt.png" alt="Flat one column – Centred alt"></div></dd>
           </dl>
         </div>
       </details>
-      <p style="color:var(--muted);font-size:13.5px;margin:18px 0 2px;padding-top:14px;border-top:1px solid var(--border)">The following are also standalone components — page sections assembled from the core components above, reused across templates.</p>
+      <p style="color:var(--muted);font-size:13.5px;margin:18px 0 2px;padding-top:14px;border-top:1px solid var(--border)"></p>
+      <details class="task" id="task-centeredtext">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Centered text block<small>Section · centred eyebrow, heading, body</small></span><span class="meta"></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A full-width text section with centred eyebrow, heading and body. Built from the <a href="#task-text">Text block</a> content model with centred alignment and constrained max-width.</dd>
+          <dt>Variants</dt><dd>Desktop; desktop alt; mobile.</dd>
+          <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code>, <code>align</code> (centre)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity standalone block or <code>textBlock</code> with centred alignment preset</li><li>Astro section wrapper; confirm max-width with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22264" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22277" target="_blank" rel="noopener">Desktop alt</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4593-12534" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/centered-text-desktop.png" alt="Centered text – Desktop"><img src="figma-screenshots/centered-text-desktop-alt.png" alt="Centered text – Desktop alt"><img src="figma-screenshots/centered-text-mobile.png" alt="Centered text – Mobile"></div></dd>
+        </dl></div>
+      </details>
       <details class="task" id="task-iconcards">
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Section · grid of icon + title + text</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
@@ -1167,9 +1145,7 @@
     <div class="row"><span class="nm">Pricing widget <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-pricing-widget">Go to task</a></div>
     <div class="row"><span class="nm">Addons <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-addons">Go to task</a></div>
     <div class="row"><span class="nm">Special heading <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-specialheading">Go to task</a></div>
-    <div class="row"><span class="nm">Centered text block <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-centeredtext">Go to task</a></div>
-    <div class="row"><span class="nm">Flat text block <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-flattext">Go to task</a></div>
-    <div class="row"><span class="nm">Text block — alt layout <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-text-block-alt">Go to task</a></div>
+    <div class="row"><span class="nm">Centered text block <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-centeredtext">Go to task</a></div>
     <div class="row"><span class="nm">Features unfold <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-featuresunfold">Go to task</a></div>
     <div class="row"><span class="nm">Reports <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-reports">Go to task</a></div>
     <div class="row"><span class="nm">Category links <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-categorylinks">Go to task</a></div>
