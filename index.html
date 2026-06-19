@@ -39,6 +39,15 @@
   .s-todo{background:#EEF1F5;color:var(--muted)}
   .r-design{background:#FFEEE7;color:#B22F04}
   .r-dev{background:var(--blue-95);color:var(--blue-30)}
+  /* page tags — one colour per page type */
+  .p-prof-services{background:#EDE7FF;color:#5B21B6}
+  .p-values{background:#FFF0E6;color:#9A3412}
+  .p-home{background:var(--blue-95);color:var(--blue-30)}
+  .p-pricing{background:#FFEEE7;color:#B22F04}
+  .p-multi-venue{background:#E0F2FE;color:#0369A1}
+  .p-customer-story{background:#E0E8F5;color:#011840}
+  .p-blog{background:#E3FBEE;color:#04632B}
+  .p-general{background:#EEF1F5;color:#4D4D4D}
 
   .phase{margin-top:22px}
   .phase>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:var(--r)}
@@ -153,8 +162,8 @@
   </div>
 
   <div class="legend" aria-label="Legend">
-    <div class="grp"><b>Status</b><span class="pill s-todo">Done</span><span class="pill s-todo">In progress</span><span class="pill s-todo">To do</span></div>
-    <div class="grp"><b>Who</b><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span></div>
+    <div class="grp"><b>Used on</b><span class="pill p-prof-services">Professional services</span><span class="pill p-values">Values</span><span class="pill p-multi-venue">Multi venue</span><span class="pill p-home">Home</span><span class="pill p-pricing">Pricing</span><span class="pill p-customer-story">Customer story</span></div>
+    <!-- <div class="grp"><b>Phase status</b><span class="pill s-todo">In progress</span><span class="pill s-todo">To do</span> <span style="color:var(--muted);font-size:12px">· tokens &amp; pipeline only</span></div> -->
   </div>
 
   <!-- ============ PLAN PANEL ============ -->
@@ -341,7 +350,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Button<small>Primitive · used inside other blocks</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -358,7 +367,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Text block<small>Content block · eyebrow, heading, body</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -375,7 +384,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Image<small>Content block</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -392,7 +401,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Video<small>Content block</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -408,7 +417,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Quote<small>Content block · testimonial</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -421,7 +430,7 @@
       </details>
 
       <details class="task" id="task-dual-quote">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Dual quote<small>Content block · two testimonials side by side</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Dual quote<small>Content block · two testimonials side by side</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Variants</dt><dd>Desktop: two quotes side-by-side; stacks on mobile.</dd>
           <dt>Fields</dt><dd><code>quotes</code> (2× quote, authorName, authorRole, logo, avatar)</dd>
@@ -435,7 +444,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Stats<small>Content block · used inside Two-column</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -448,7 +457,7 @@
       </details>
 
       <details class="task" id="task-specialheading">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Special heading<small>Content block · display heading treatment</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Special heading<small>Content block · display heading treatment</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Variants</dt><dd>With / without eyebrow; accent style. Heading only, no body, so distinct from Text block.</dd>
           <dt>Fields</dt><dd><code>heading</code>, <code>eyebrow</code> (optional), <code>style</code></dd>
@@ -460,7 +469,7 @@
       </details>
 
       <details class="task" id="task-centeredtext">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Centered text block<small>Content block · centred eyebrow, heading, body</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Centered text block<small>Content block · centred eyebrow, heading, body</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Variants</dt><dd>Two versions provided; centred alignment.</dd>
           <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code> (centred)</dd>
@@ -471,7 +480,7 @@
       </details>
 
       <details class="task" id="task-flattext">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Flat text block<small>Content block · full-width text, no media column</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Flat text block<small>Content block · full-width text, no media column</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Variants</dt><dd>Left-aligned (default); centred alignment variant.</dd>
           <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code>, <code>align</code></dd>
@@ -482,7 +491,7 @@
       </details>
 
       <details class="task" id="task-text-block-alt">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Text block — alt layout<small>Content block · one-column text, alternate spacing &amp; style</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Text block — alt layout<small>Content block · one-column text, alternate spacing &amp; style</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A variation of the one-column text block with a different visual treatment — likely tighter spacing, different heading scale, or alternate background. Confirm exact differences from the <a href="#task-flattext">Flat text block</a> against the Figma frame.</dd>
           <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code> — confirm any additional fields from Figma.</dd>
@@ -501,14 +510,14 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">3</span>
       <h2>Phase 3 · Standalone components</h2>
-      <span class="count">28 tasks</span>
+      <span class="count">29 tasks</span>
     </summary>
     <div class="body">
       <details class="task" id="task-twocol">
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Two-column<small>The workhorse section, assembled from the blocks above</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -534,16 +543,17 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Two-column with bigger left<small>Composite · asymmetric column split</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"><span class="pill p-values">Values</span></span>
         </summary>
         <div class="detail">
           <dl>
             <dt>Depends on</dt><dd><a href="#task-twocol">Two-column</a>, <a href="#task-text">Text</a>, <a href="#task-button">Button</a></dd>
             <dt>Description</dt><dd>Asymmetric two-column layout where the left column is proportionally wider. Distinct from the equal-split <a href="#task-twocol">Two-column</a>.</dd>
-            <dt>Variants</dt><dd>Default; pricing; dark background; hero heading with CTA pair and square image.</dd>
+            <dt>Used on</dt><dd>Values page (list variation)</dd>
+            <dt>Variants</dt><dd>Default; pricing; dark background; hero heading with CTA pair and square image; list (Values page — stacked items in wider left column).</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Confirm column ratio with design</li><li>Sanity composite (may extend Two-column schema with a ratio field)</li><li>Astro component with wider-left grid variant</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4066-131897&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/bigger-text-col.png" alt="Two-column with bigger left – pricing"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=5392-7315&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-hero-image.png" alt="Two-column with bigger left – hero and image"></div></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4066-131897&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/bigger-text-col.png" alt="Two-column with bigger left – pricing"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=5392-7315&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-hero-image.png" alt="Two-column with bigger left – hero and image"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13937-17400&amp;m=dev" target="_blank" rel="noopener">List · Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13940-23317&amp;m=dev" target="_blank" rel="noopener">List · Mobile</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-list-desktop.png" alt="Two-column with bigger left – List desktop"><img src="figma-screenshots/twocol-bigger-left-list-mobile.png" alt="Two-column with bigger left – List mobile"></div></dd>
           </dl>
         </div>
       </details>
@@ -551,7 +561,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Two-column — text-heavy<small>Composite · wider text column, narrower media</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -567,23 +577,24 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Flat one column<small>Composite · single-column hero text, CTA and optional media</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"><span class="pill p-values">Values</span></span>
         </summary>
         <div class="detail">
           <dl>
             <dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-button">Button</a>, <a href="#task-image">Image</a></dd>
             <dt>Description</dt><dd>A full-width single-column block stacking eyebrow, hero-scale heading, body copy, an optional CTA pair, and an optional full-width 16:9 image. Richer than the <a href="#task-flattext">Flat text block</a>; no side-by-side column split.</dd>
-            <dt>Variants</dt><dd>Default (left-aligned with image); dark; centred; centred with image.</dd>
+            <dt>Used on</dt><dd>Values page (dark variation)</dd>
+            <dt>Variants</dt><dd>Default (left-aligned with image); dark; dark (Values page); centred; centred with image.</dd>
             <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>body</code>, <code>buttons</code>, <code>image</code> (optional), <code>align</code> (left | centre), <code>variant</code> (light | dark)</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Sanity <code>flatOneColumn</code> with alignment and variant fields</li><li>Astro vertical stack; map OnLight / OnDark heading and CTA treatments</li><li>Confirm centred max-width and image aspect ratio with design</li></ol></dd>
-            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4787-119109&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-default.png" alt="Flat one column – Default"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3845-175867&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark.png" alt="Flat one column – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4146-127627&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred.png" alt="Flat one column – Centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3843-174802&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred-alt.png" alt="Flat one column – Centred alt"></div></dd>
+            <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4787-119109&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-default.png" alt="Flat one column – Default"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3845-175867&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark.png" alt="Flat one column – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13985-14954&amp;m=dev" target="_blank" rel="noopener">Dark · Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13940-23312&amp;m=dev" target="_blank" rel="noopener">Dark · Mobile</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark-values-desktop.png" alt="Flat one column – Dark desktop (Values)"><img src="figma-screenshots/flat-one-column-dark-values-mobile.png" alt="Flat one column – Dark mobile (Values)"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4146-127627&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred.png" alt="Flat one column – Centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3843-174802&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred-alt.png" alt="Flat one column – Centred alt"></div></dd>
           </dl>
         </div>
       </details>
       <p style="color:var(--muted);font-size:13.5px;margin:18px 0 2px;padding-top:14px;border-top:1px solid var(--border)">The following are also standalone components — page sections assembled from the core components above, reused across templates.</p>
       <details class="task" id="task-iconcards">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Section · grid of icon + title + text</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Section · grid of icon + title + text</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Variants</dt><dd>Column count (2 / 3 / 4); with / without per-card link.</dd>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon, title, body, optional link), <code>columns</code></dd>
@@ -594,18 +605,19 @@
         </dl></div>
       </details>
       <details class="task" id="task-cards">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Cards<small>Section · image cards with title, body and link</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Cards<small>Section · image cards with title, body and link</small></span><span class="meta"><span class="pill p-multi-venue">Multi venue</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A section with optional eyebrow, heading and intro, followed by a row of image-led cards. Each card has a rounded image thumb, title, body copy and text link with chevron. Version 2 may vary card count, layout or trailing content (e.g. logo strip).</dd>
-          <dt>Variants</dt><dd>Desktop; desktop version 2; desktop version 3; pricing page (desktop; mobile).</dd>
-          <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code>, <code>items</code> (image, title, body, link), <code>background</code></dd>
+          <dt>Used on</dt><dd>Multi venue page (dark variation)</dd>
+          <dt>Variants</dt><dd>Desktop; desktop version 2; desktop version 3; pricing page (desktop; mobile); dark (Commitment background, light card treatment — Multi venue).</dd>
+          <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code>, <code>items</code> (image, title, body, link), <code>background</code>, <code>theme</code> (light | dark)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>cards</code> with items array</li><li>Astro responsive card grid; 32px radius, Blue 90 (#CEDFFD) thumb bg, drop shadow token</li><li>Confirm version 2 differences and mobile treatment with design</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-49636&amp;m=dev" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop.png" alt="Cards – Desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10893-25174&amp;m=dev" target="_blank" rel="noopener">Desktop v2</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v2.png" alt="Cards – Desktop v2"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10098-11279&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v3.png" alt="Cards – Desktop v3"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6681-18122&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37254&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cards-pricing-desktop.png" alt="Cards – Pricing desktop"><img src="figma-screenshots/cards-pricing-mobile.png" alt="Cards – Pricing mobile"></div></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-49636&amp;m=dev" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop.png" alt="Cards – Desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10893-25174&amp;m=dev" target="_blank" rel="noopener">Desktop v2</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v2.png" alt="Cards – Desktop v2"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10098-11279&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v3.png" alt="Cards – Desktop v3"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6681-18122&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37254&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cards-pricing-desktop.png" alt="Cards – Pricing desktop"><img src="figma-screenshots/cards-pricing-mobile.png" alt="Cards – Pricing mobile"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-43359&amp;m=dev" target="_blank" rel="noopener">Dark · View frame</a></div><div class="figscreens"><img src="figma-screenshots/cards-dark-multi-venue.png" alt="Cards – Dark (Multi venue)"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-icon-list-grid">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon list grid<small>Section · heading, intro and icon-led benefit list</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon list grid<small>Section · heading, intro and icon-led benefit list</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A section with a display heading and optional intro, followed by a responsive grid of list items. Each item pairs a wired icon in a blue square tile with a bold label and supporting body copy. Distinct from <a href="#task-iconcards">Icon cards</a> — taller section intro and vertically stacked icon + text per cell.</dd>
           <dt>Variants</dt><dd>Desktop (multi-column grid); mobile (stacked). Column count configurable on desktop.</dd>
@@ -616,7 +628,7 @@
         </dl></div>
       </details>
       <details class="task" id="task-image-icon-grid-list">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Image with icon grid list<small>Section · heading, icon grid and side image</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Image with icon grid list<small>Section · heading, icon grid and side image</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A section with a display heading, a two-column body pairing a wrapped grid of icon-led list items with a rounded side image. Each list item has a flat icon in a light-blue tile, bold title, body copy and optional link-with-arrow CTA. Distinct from <a href="#task-icon-list-grid">Icon list grid</a> — adds a media column and per-item links.</dd>
           <dt>Variants</dt><dd>Image side (left / right); item count (typically four in a 2×2 grid).</dd>
@@ -627,9 +639,10 @@
         </dl></div>
       </details>
       <details class="task" id="task-services-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Services section<small>Section · centred intro, icon columns, CTA and hero image</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Services section<small>Section · centred intro, icon columns, CTA and hero image</small></span><span class="meta"><span class="pill p-prof-services">Professional services</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A full-width services block on a light page background. Centred eyebrow, heading and intro copy, followed by a row of icon-led service columns separated by vertical dividers, a primary CTA, and a large illustrative image below.</dd>
+          <dt>Used on</dt><dd>Professional services page</dd>
           <dt>Variants</dt><dd>Column count (typically four); with / without eyebrow; with / without bottom image.</dd>
           <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code> (rich text), <code>items</code> (icon, title, body), <code>cta</code> (label, href), <code>image</code> (optional), <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
@@ -637,8 +650,20 @@
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3916-158301&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/services-section.png" alt="Services section"></div></dd>
         </dl></div>
       </details>
+      <details class="task" id="task-service-detail">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Service detail<small>Section · individual service breakdown with copy and supporting visual</small></span><span class="meta"><span class="pill p-prof-services">Professional services</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A content section for a single professional service — heading, descriptive copy, feature or benefit list, optional CTA, and supporting image or illustration. Composed on the Professional services page below the overview <a href="#task-services-section">Services section</a>.</dd>
+          <dt>Used on</dt><dd>Professional services page</dd>
+          <dt>Variants</dt><dd>Two-column (copy + image); vertical layout with dual service CTA cards (centred heading, intro, paired cards).</dd>
+          <dt>Fields</dt><dd><code>heading</code>, <code>body</code> (rich text), <code>items</code> (optional icon, title, body), <code>cta</code> (optional), <code>image</code>, <code>mediaSide</code> (left / right), <code>layout</code> (two-column | vertical-cards)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>serviceDetail</code> block with portable-text body and optional items array</li><li>Astro two-column or stacked layout; mirror spacing from adjacent Professional services sections</li><li>Vertical-cards variant: centred heading comp + row of service CTA cards (Blue 99 bg, 32px radius, drop shadow)</li><li>Mobile: stack media and copy; stack or scroll cards — confirm with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4158-124571&amp;m=dev" target="_blank" rel="noopener">Vertical layout · View frame</a></div><div class="figscreens"><img src="figma-screenshots/service-detail.png" alt="Service detail – Vertical layout with dual CTA cards"></div></dd>
+        </dl></div>
+      </details>
       <details class="task" id="task-video-hero-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Video hero section<small>Section · full-bleed video background, headline and play CTA</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Video hero section<small>Section · full-bleed video background, headline and play CTA</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A full-width hero with a background video or still image, dark gradient overlay, large headline and supporting copy, and a primary pill button with play icon (e.g. “Watch their story”). Used at the top of customer-story pages.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
@@ -649,7 +674,7 @@
         </dl></div>
       </details>
       <details class="task" id="task-introduction-summary">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Introduction summary<small>Section · case-study intro, accordion and company sidebar</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Introduction summary<small>Section · case-study intro, accordion and company sidebar</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A dark full-width block for customer-story pages. Left column carries a summary label, intro copy and expandable accordion rows; desktop adds a right sidebar with company bio and logo over a subtle world-map background.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
@@ -660,7 +685,7 @@
         </dl></div>
       </details>
       <details class="task" id="task-use-case-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Use case section<small>Section · long-form story body and results sidebar</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Use case section<small>Section · long-form story body and results sidebar</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A two-column customer-story block. The left column carries long-form use-case copy with blog-style headings and body text; desktop pins a right sidebar card labelled “The result” with stacked headline metrics and a Powered by ROLLER mark.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
@@ -671,7 +696,7 @@
         </dl></div>
       </details>
       <details class="task" id="task-form-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Form section<small>Section · lead-capture form with background variants</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Form section<small>Section · lead-capture form with background variants</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A conversion band pairing marketing copy with an inline lead-capture form. Includes eyebrow, heading and body text, underline-style inputs (e.g. first name, last name, email), submit CTA, and optional report or asset thumbnail. Available in blue, dark and light background treatments. Input fields support default, focus, filled, valid and error states with helper text.</dd>
           <dt>Variants</dt><dd>Blue (desktop; mobile); dark; light (desktop; mobile). Input states: default, focus, filled, error (empty and filled).</dd>
@@ -682,7 +707,7 @@
         </dl></div>
       </details>
       <details class="task" id="task-pricing-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Pricing widget<small>Section · plan comparison cards</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Pricing widget<small>Section · plan comparison cards</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A row of plan pricing cards for tier comparison. Each card has a coloured header stripe (or “Most popular” badge), plan label, description, divider, feature list and full-width CTA. Used on pricing pages.</dd>
           <dt>Variants</dt><dd>Plan row (desktop); full section (desktop); mobile layout A; mobile layout B.</dd>
@@ -693,7 +718,7 @@
         </dl></div>
       </details>
       <details class="task" id="task-addons">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Addons<small>Section · optional add-on products row</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Addons<small>Section · optional add-on products row</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A horizontal band of add-on product cards beneath the main pricing tiers. Each item pairs icon or image, title, short description and optional link or price.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
@@ -707,7 +732,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">FAQ<small>Section · accordion</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -723,7 +748,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">CTA section<small>Section · conversion band</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -737,7 +762,7 @@
       </details>
 
       <details class="task" id="task-featuresunfold">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features unfold<small>Section · interactive feature reveal</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features unfold<small>Section · interactive feature reveal</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (title, body, media or icon)</dd>
           <dt>Composition</dt><dd>An interactive unfold of features (tabs, accordion or step reveal).</dd>
@@ -749,7 +774,7 @@
       </details>
 
       <details class="task" id="task-reports">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Reports<small>Section · grid of report / resource cards</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Reports<small>Section · grid of report / resource cards</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (cover image, title, description, link)</dd>
           <dt>Composition</dt><dd>Grid or list of report cards. Ties to the gated resource pages.</dd>
@@ -760,7 +785,7 @@
       </details>
 
       <details class="task" id="task-categorylinks">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Category links<small>Section · grouped link lists</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Category links<small>Section · grouped link lists</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>groups</code> (category title + <code>links</code> array of label + href)</dd>
           <dt>Composition</dt><dd>Grouped lists of links.</dd>
@@ -771,7 +796,7 @@
       </details>
 
       <details class="task" id="task-features-index">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features index<small>Section · navigable feature grid</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features index<small>Section · navigable feature grid</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (feature name, icon, href)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
@@ -781,7 +806,7 @@
       </details>
 
       <details class="task" id="task-stats-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Stats section<small>Section · headline metrics bar</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Stats section<small>Section · headline metrics bar</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>items</code> (value, label)</dd>
           <dt>Variants</dt><dd>Default; blue background with vertical dividers (four stats); light background row.</dd>
@@ -793,17 +818,19 @@
       </details>
 
       <details class="task" id="task-horizontal-slider">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Horizontal slider<small>Section · horizontally scrollable card row</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Horizontal slider<small>Section · horizontally scrollable card row</small></span><span class="meta"><span class="pill p-multi-venue">Multi venue</span></span></summary>
         <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (card content per use-case)</dd>
+          <dt>Used on</dt><dd>Multi venue page (dark variation)</dd>
+          <dt>Variants</dt><dd>Light; dark (Commitment background, light card treatment).</dd>
+          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (card content per use-case), <code>theme</code> (light | dark)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Steps</dt><dd><ol><li>Confirm card content type with design</li><li>Sanity schema</li><li>Astro scroll-snap carousel</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4908-104558" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-horizontal-slider.png" alt="Horizontal slider section"></div></dd>
+          <dt>Steps</dt><dd><ol><li>Confirm card content type with design</li><li>Sanity schema with <code>theme</code> enum</li><li>Astro scroll-snap carousel</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4908-104558" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-horizontal-slider.png" alt="Horizontal slider section"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-43376&amp;m=dev" target="_blank" rel="noopener">Dark · View frame</a></div><div class="figscreens"><img src="figma-screenshots/horizontal-slider-dark.png" alt="Horizontal slider – Dark"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-customer-story">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer story carousel<small>Section · rotating customer case studies</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer story carousel<small>Section · rotating customer case studies</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>items</code> (customer name, logo, quote, stats, link)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
@@ -813,7 +840,7 @@
       </details>
 
       <details class="task" id="task-industry-vertical">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industry vertical section<small>Section · content tailored to a specific industry</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industry vertical section<small>Section · content tailored to a specific industry</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A section that presents ROLLER's value proposition for a specific industry vertical — likely with industry-specific imagery, copy and links.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
@@ -825,7 +852,7 @@
       </details>
 
       <details class="task" id="task-features-list">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features list<small>Section · scannable feature bullet list</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features list<small>Section · scannable feature bullet list</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A structured list of feature bullet points, used to communicate product capabilities at a glance. Different from the <a href="#task-features-index">Features index</a> navigation grid.</dd>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon, label, optional body)</dd>
@@ -836,7 +863,7 @@
       </details>
 
       <details class="task" id="task-implementation-packages">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Implementation packages<small>Section · onboarding / pricing package cards</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Implementation packages<small>Section · onboarding / pricing package cards</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>packages</code> (name, features list, CTA, highlighted flag)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
@@ -846,7 +873,7 @@
       </details>
 
       <details class="task" id="task-announcement-bar">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Announcement bar<small>Section · optional per-page banner strip</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Announcement bar<small>Section · optional per-page banner strip</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A slim banner above the nav for time-sensitive announcements or promotions. Added per page — not a site-wide global. Dismissable per session.</dd>
           <dt>Variants</dt><dd>Default (desktop; mobile); countdown with gradient (desktop; mobile); full-width message with CTA (desktop; mobile).</dd>
@@ -866,7 +893,7 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">4</span>
       <h2>Phase 4 · Global Components</h2>
-      <span class="count">12 tasks</span>
+      <span class="count">11 tasks</span>
     </summary>
     <div class="body">
       <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Global components appear across the site regardless of template. Build them after the core and standalone kit, before templates, so every page shell is ready.</p>
@@ -875,7 +902,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Header<small>Global · site-wide navigation and page shell</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -893,7 +920,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Footer<small>Global · site-wide footer navigation</small></span>
-          <span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span>
+          <span class="meta"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -908,7 +935,7 @@
       </details>
 
       <details class="task" id="task-trust-banner">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Trust banner<small>Global · trust signals strip</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Trust banner<small>Global · trust signals strip</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A strip of certifications, security badges or partner logos. Used near conversion points.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
@@ -917,27 +944,33 @@
       </details>
 
       <details class="task" id="task-logo-carousel">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel<small>Global · auto-scrolling customer logos · light bg</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel<small>Global · auto-scrolling customer logos · light &amp; dark</small></span><span class="meta"><span class="pill p-multi-venue">Multi venue</span></span></summary>
         <div class="detail"><dl>
-          <dt>Description</dt><dd>A marquee of customer logos on a light background. Used globally for credibility.</dd>
-          <dt>Fields</dt><dd><code>logos</code> (image, alt, optional href)</dd>
+          <dt>Description</dt><dd>A marquee of customer logos for credibility. Light variant sits on a pale background; dark variant uses a Commitment (Blue 10) background with optional centred heading above the logo strip.</dd>
+          <dt>Used on</dt><dd>Multi venue page (dark variation)</dd>
+          <dt>Variants</dt><dd>Light background; dark background (centred heading optional; Multi venue reference).</dd>
+          <dt>Fields</dt><dd><code>theme</code> (light | dark), <code>heading</code> (optional, centred — dark variant), <code>logos</code> (image, alt, optional href)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16167" target="_blank" rel="noopener">Light bg</a></div><div class="figscreens"><img src="figma-screenshots/global-logo-carousel.png" alt="Customer logo carousel – Light bg"></div></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity reusable block or global config with <code>theme</code> enum</li><li>Astro marquee component; CSS animation with reduced-motion fallback</li><li>Dark variant: centred heading + Blue 10 section background</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16167" target="_blank" rel="noopener">Light bg</a></div><div class="figscreens"><img src="figma-screenshots/global-logo-carousel.png" alt="Customer logo carousel – Light bg"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-43367&amp;m=dev" target="_blank" rel="noopener">Dark · View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-logo-carousel-dark-multi-venue.png" alt="Customer logo carousel – Dark (Multi venue)"></div></dd>
         </dl></div>
       </details>
 
-      <details class="task" id="task-logo-carousel-dark">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel — dark<small>Global · auto-scrolling logos · dark bg, centred text</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+      <details class="task" id="task-boxed-user-reviews">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Boxed user reviews<small>Global · boxed third-party review scores</small></span><span class="meta"><span class="pill p-prof-services">Professional services</span></span></summary>
         <div class="detail"><dl>
-          <dt>Description</dt><dd>Dark-background variant of the <a href="#task-logo-carousel">Customer logo carousel</a>, with centred heading text above the logo marquee.</dd>
-          <dt>Fields</dt><dd><code>heading</code> (optional, centred), <code>logos</code> (image, alt, optional href)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Note</dt><dd>Design reference provided as PNG. Figma node link to be added. May share schema with the light variant; <code>theme</code> prop controls bg colour.</dd>
+          <dt>Description</dt><dd>A row of boxed review score cards (e.g. G2, Capterra) with star rating, score and review count. Distinct from the simpler <a href="#task-user-review-widget">User review widget</a> badge strip — each platform sits in its own bordered card.</dd>
+          <dt>Used on</dt><dd>Professional services page</dd>
+          <dt>Variants</dt><dd>Desktop; mobile (confirm layout with design).</dd>
+          <dt>Fields</dt><dd><code>items</code> (platform logo, score, star rating, review count, href), <code>background</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity reusable block with items array</li><li>Astro horizontal card row; equal-height boxes with border radius</li><li>Mobile: stack or horizontal scroll — confirm with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5564-30189&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/boxed-user-reviews.png" alt="Boxed user reviews"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-user-review-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">User review widget<small>Global · third-party review badges row</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">User review widget<small>Global · third-party review badges row</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A horizontal row of third-party review badges (G2, Capterra, GetApp, etc.). Reused across pages for social proof.</dd>
           <dt>Fields</dt><dd><code>badges</code> (logo, link, alt)</dd>
@@ -948,7 +981,7 @@
 
 
       <details class="task" id="task-features-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Roller features widget<small>Global · full feature-set navigation panel</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Roller features widget<small>Global · full feature-set navigation panel</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A full-width panel displaying ROLLER's feature set, used globally as a navigation or discovery component.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
@@ -957,7 +990,7 @@
       </details>
 
       <details class="task" id="task-industries-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industries widget<small>Global · industry navigation panel · light &amp; dark</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industries widget<small>Global · industry navigation panel · light &amp; dark</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Variants</dt><dd>Light background; dark background; mobile (light frame in Website-library; shared mobile in Website-Refresh).</dd>
           <dt>Fields</dt><dd><code>items</code> (industry name, icon, href), <code>theme</code> (light / dark)</dd>
@@ -967,7 +1000,7 @@
       </details>
 
       <details class="task" id="task-company-stats">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Company stats widget<small>Global · ROLLER headline numbers</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Company stats widget<small>Global · ROLLER headline numbers</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A row of ROLLER's headline company stats (customers, revenue processed, etc.). Global singleton used across marketing pages.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
@@ -978,7 +1011,7 @@
       </details>
 
       <details class="task" id="task-global-stats">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Global stats<small>Global · map visual and stacked headline metrics</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Global stats<small>Global · map visual and stacked headline metrics</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A global two-column block pairing a circular globe/map visual with a stacked list of headline stats separated by horizontal rules. Distinct from the <a href="#task-company-stats">Company stats widget</a> simple metrics row and the page-level <a href="#task-stats-section">Stats section</a>.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
@@ -990,14 +1023,15 @@
       </details>
 
       <details class="task" id="task-testimonial-carousel">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Testimonial carousel<small>Global · quote cards in a horizontal carousel</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Testimonial carousel<small>Global · quote cards in a horizontal carousel</small></span><span class="meta"><span class="pill p-pricing">Pricing</span><span class="pill p-prof-services">Professional services</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A global section with centred heading and a horizontally scrollable row of testimonial cards. Each card carries a quote mark, quote text, attribution (name, role) and optional company logo on a white card with drop shadow.</dd>
-          <dt>Variants</dt><dd>Desktop; mobile (confirm with design).</dd>
-          <dt>Fields</dt><dd><code>heading</code>, <code>items</code> (quote, name, role, logo), <code>background</code></dd>
+          <dt>Used on</dt><dd>Pricing page; Professional services page</dd>
+          <dt>Variants</dt><dd>Quote cards (desktop); customer story cards · OnDark (logo, quote, vertical rule, CTA per card).</dd>
+          <dt>Fields</dt><dd><code>heading</code>, <code>items</code> (quote, name, role, logo — or customer-story fields: logo, quote, cta), <code>background</code>, <code>cardType</code> (quote | customer-story)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> · motion (carousel)</dd>
-          <dt>Steps</dt><dd><ol><li>Sanity global or reusable block with items array</li><li>Astro scroll-snap or carousel; accessible controls and keyboard nav</li><li>Mobile: confirm card width and peek with design</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10100-4611&amp;m=dev" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/testimonial-carousel-desktop.png" alt="Testimonial carousel – Desktop"></div></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity global or reusable block with items array</li><li>Astro scroll-snap or carousel; accessible controls and keyboard nav</li><li>Customer-story variant: taller cards, logo header, side rule, bottom CTA</li><li>Mobile: confirm card width and peek with design</li></ol></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10100-4611&amp;m=dev" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/testimonial-carousel-desktop.png" alt="Testimonial carousel – Desktop"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4158-124800&amp;m=dev" target="_blank" rel="noopener">Customer story cards · View frame</a></div><div class="figscreens"><img src="figma-screenshots/testimonial-carousel-customer-story.png" alt="Testimonial carousel – Customer story cards"></div></dd>
         </dl></div>
       </details>
 
@@ -1115,16 +1149,17 @@
     <div class="row"><span class="nm">Dual quote <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-dual-quote">Go to task</a></div>
     <div class="row"><span class="nm">Stats <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-stats">Go to task</a></div>
     <div class="row"><span class="nm">Two-column <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol">Go to task</a></div>
-    <div class="row"><span class="nm">Two-column with bigger left <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol-bigger">Go to task</a></div>
+    <div class="row"><span class="nm">Two-column with bigger left <span class="pill p-values" style="margin-left:6px">Values</span></span><a href="#task-twocol-bigger">Go to task</a></div>
     <div class="row"><span class="nm">Two-column — text-heavy <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol-text-heavy">Go to task</a></div>
-    <div class="row"><span class="nm">Flat one column <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-flat-one-column">Go to task</a></div>
+    <div class="row"><span class="nm">Flat one column <span class="pill p-values" style="margin-left:6px">Values</span></span><a href="#task-flat-one-column">Go to task</a></div>
     <div class="row"><span class="nm">FAQ <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-faq">Go to task</a></div>
     <div class="row"><span class="nm">CTA section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-cta">Go to task</a></div>
     <div class="row"><span class="nm">Icon cards <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-iconcards">Go to task</a></div>
-    <div class="row"><span class="nm">Cards <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-cards">Go to task</a></div>
+    <div class="row"><span class="nm">Cards <span class="pill p-multi-venue" style="margin-left:6px">Multi venue</span></span><a href="#task-cards">Go to task</a></div>
     <div class="row"><span class="nm">Icon list grid <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-icon-list-grid">Go to task</a></div>
     <div class="row"><span class="nm">Image with icon grid list <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-image-icon-grid-list">Go to task</a></div>
-    <div class="row"><span class="nm">Services section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-services-section">Go to task</a></div>
+    <div class="row"><span class="nm">Services section <span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-services-section">Go to task</a></div>
+    <div class="row"><span class="nm">Service detail <span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-service-detail">Go to task</a></div>
     <div class="row"><span class="nm">Video hero section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-video-hero-section">Go to task</a></div>
     <div class="row"><span class="nm">Introduction summary <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-introduction-summary">Go to task</a></div>
     <div class="row"><span class="nm">Use case section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-use-case-section">Go to task</a></div>
@@ -1140,7 +1175,7 @@
     <div class="row"><span class="nm">Category links <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-categorylinks">Go to task</a></div>
     <div class="row"><span class="nm">Features index <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-features-index">Go to task</a></div>
     <div class="row"><span class="nm">Stats section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-stats-section">Go to task</a></div>
-    <div class="row"><span class="nm">Horizontal slider <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-horizontal-slider">Go to task</a></div>
+    <div class="row"><span class="nm">Horizontal slider <span class="pill p-multi-venue" style="margin-left:6px">Multi venue</span></span><a href="#task-horizontal-slider">Go to task</a></div>
     <div class="row"><span class="nm">Customer story carousel <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-customer-story">Go to task</a></div>
     <div class="row"><span class="nm">Industry vertical section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-industry-vertical">Go to task</a></div>
     <div class="row"><span class="nm">Features list <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-features-list">Go to task</a></div>
@@ -1151,14 +1186,14 @@
     <div class="row"><span class="nm">Header</span><a href="#task-header">Go to task</a></div>
     <div class="row"><span class="nm">Footer</span><a href="#task-footer">Go to task</a></div>
     <div class="row"><span class="nm">Trust banner</span><a href="#task-trust-banner">Go to task</a></div>
-    <div class="row"><span class="nm">Customer logo carousel</span><a href="#task-logo-carousel">Go to task</a></div>
-    <div class="row"><span class="nm">Customer logo carousel — dark</span><a href="#task-logo-carousel-dark">Go to task</a></div>
+    <div class="row"><span class="nm">Customer logo carousel <span class="pill p-multi-venue" style="margin-left:6px">Multi venue</span></span><a href="#task-logo-carousel">Go to task</a></div>
+    <div class="row"><span class="nm">Boxed user reviews <span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-boxed-user-reviews">Go to task</a></div>
     <div class="row"><span class="nm">User review widget</span><a href="#task-user-review-widget">Go to task</a></div>
     <div class="row"><span class="nm">Roller features widget</span><a href="#task-features-widget">Go to task</a></div>
     <div class="row"><span class="nm">Industries widget</span><a href="#task-industries-widget">Go to task</a></div>
     <div class="row"><span class="nm">Company stats widget</span><a href="#task-company-stats">Go to task</a></div>
     <div class="row"><span class="nm">Global stats</span><a href="#task-global-stats">Go to task</a></div>
-    <div class="row"><span class="nm">Testimonial carousel</span><a href="#task-testimonial-carousel">Go to task</a></div>
+    <div class="row"><span class="nm">Testimonial carousel <span class="pill p-pricing" style="margin-left:6px">Pricing</span><span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-testimonial-carousel">Go to task</a></div>
 
     <h3>Templates</h3>
     <div class="row"><span class="nm">Pilot · General template</span><a href="#tmpl-pilot">Go to task</a></div>
