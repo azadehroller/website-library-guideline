@@ -131,14 +131,61 @@
   .tok-note{font-size:12px;color:var(--muted);margin:0 0 6px;line-height:1.45}
   .usedby{margin-top:8px;color:var(--muted);font-size:13px}
 
-  /* index tab */
+  /* components tab */
   #panel-index{display:none}
   /* pages tab */
   #panel-pages{display:none}
   /* hubspot components tab */
   #panel-hs{display:none}
-  .hs-frame{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-top:16px;box-shadow:0 1px 2px rgba(1,24,64,.06)}
-  .hs-frame iframe{display:block;width:100%;height:calc(100vh - 240px);min-height:640px;border:0}
+  .hs-lib{display:grid;grid-template-columns:260px 1fr;gap:0;margin-top:16px;background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:0 1px 2px rgba(1,24,64,.06);min-height:640px}
+  .hs-lib-aside{background:#033180;color:#fff;padding:14px;overflow-y:auto;max-height:calc(100vh - 200px);position:sticky;top:0;align-self:start}
+  .hs-lib-filters{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+  .hs-lib-filters button{flex:1;min-width:52px;padding:6px 8px;border:none;border-radius:6px;cursor:pointer;font-size:11px;font-weight:700;background:rgba(255,255,255,.15);color:#fff}
+  .hs-lib-filters button.on{background:#fff;color:#033180}
+  #hs-lib-search{width:100%;padding:8px 10px;border:none;border-radius:8px;margin-bottom:10px;font-size:13px}
+  .hs-lib-nav-group{margin-bottom:12px}
+  .hs-lib-nav-group h3{font-size:10px;text-transform:uppercase;letter-spacing:.06em;opacity:.7;margin:0 0 6px;font-weight:700}
+  .hs-lib-nav-sub h4{font-size:10px;text-transform:uppercase;letter-spacing:.05em;opacity:.6;margin:8px 0 4px;font-weight:700}
+  .hs-lib-nav a{display:flex;justify-content:space-between;gap:6px;color:#cedffd;text-decoration:none;font-size:12px;padding:5px 6px;border-radius:5px}
+  .hs-lib-nav a:hover{background:rgba(255,255,255,.12);color:#fff}
+  .hs-lib-nav a.hs-nav-disabled{opacity:.45}
+  .hs-lib-nav a .id{opacity:.6;font-family:monospace;font-size:10px}
+  .hs-lib-main{padding:18px 22px 32px;overflow-y:auto;max-height:calc(100vh - 200px)}
+  .hs-lib-bucket{font-size:13px;font-weight:800;color:#fff;background:linear-gradient(90deg,#033180,#074dc5);padding:10px 14px;border-radius:10px;margin:0 0 10px}
+  .hs-lib-bucket.sec{background:linear-gradient(90deg,#0a6e4e,#12a372)}
+  .hs-lib-bucket.disabled{background:linear-gradient(90deg,#5a6b8a,#8a96aa);margin-top:28px}
+  .hs-lib-bucket.disabled.sec{background:linear-gradient(90deg,#4a6b5e,#6a8a7a)}
+  .hs-lib-card{background:#fff;border:1px solid var(--border);border-radius:10px;margin:0 0 8px}
+  .hs-lib-card.hs-item-disabled{opacity:.78;background:#f4f6f9;border-color:#d8dee8}
+  .hs-lib-card.hs-item-disabled .hs-lib-summary{color:#5a6b8a}
+  .hs-lib-summary{padding:10px 14px;cursor:pointer;font-weight:700;font-size:14px;color:var(--blue-30);list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+  .hs-lib-summary::-webkit-details-marker{display:none}
+  .hs-lib-summary::before{content:'';width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:6px solid var(--blue-50);margin-right:4px;transition:transform .15s}
+  .hs-lib-card[open]>.hs-lib-summary::before{transform:rotate(90deg)}
+  .hs-lib-body{padding:0 14px 14px;border-top:1px solid var(--border)}
+  .hs-lib-meta{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;font-size:12.5px;margin:12px 0}
+  .hs-lib-meta .label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:2px}
+  .hs-lib-sec h3{font-size:13px;margin:14px 0 6px;color:var(--blue-30)}
+  .hs-lib-sec .muted{color:var(--muted);font-size:12.5px;margin:0 0 6px}
+  .hs-lib-sec pre.outline{background:#0b1f3f;color:#e8f0ff;padding:10px;border-radius:8px;overflow-x:auto;font-size:12px;line-height:1.4;margin:0}
+  .hs-lib-sec table.summary{width:100%;border-collapse:collapse;font-size:12px;margin:6px 0}
+  .hs-lib-sec table.summary th,.hs-lib-sec table.summary td{border:1px solid var(--border);padding:5px 8px;text-align:left;vertical-align:top}
+  .hs-lib-sec table.summary th{background:#eef3ff}
+  .hs-lib-sec ul.variants{margin:4px 0;padding-left:1.1rem;font-size:12.5px}
+  .hs-phase-map{margin:.5rem 0;padding:.55rem .65rem;background:#FFEEE7;border:1px solid #f5c4b0;border-radius:8px;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}
+  .hs-phase-map .lbl{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#9A3412;margin-right:.15rem}
+  .hs-phase-pill{font-size:.72rem;padding:.2rem .55rem;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid}
+  .hs-phase-pill.mapped{background:#fff;color:#B22F04;border-color:#f5c4b0;cursor:pointer}
+  .hs-phase-pill.mapped:hover{background:#B22F04;color:#fff}
+  .hs-phase-pill.unmapped{background:#EEF1F5;color:#5B6B86;border-color:#d5dbe3;cursor:default}
+  .hs-phase-conf{font-size:.62rem;font-weight:700;padding:.1rem .35rem;border-radius:999px;text-transform:uppercase}
+  .hs-phase-conf.high{background:#E3FBEE;color:#04632B}
+  .hs-phase-conf.medium{background:#fff;color:#B22F04;border:1px solid #f5c4b0}
+  .hs-phase-conf.low{background:#EEF1F5;color:#5B6B86}
+  .hs-usage-pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid}
+  .hs-usage-pill.used{background:#E3FBEE;color:#04632B;border-color:#b8ebd0}
+  .hs-usage-pill.disabled{background:#EEF1F5;color:#5B6B86;border-color:#d5dbe3}
+  @media(max-width:900px){.hs-lib{grid-template-columns:1fr}.hs-lib-aside{position:relative;max-height:none}.hs-lib-main{max-height:none}}
   .hs-note{background:#FFEEE7;border:1px solid var(--border);border-left:4px solid var(--coral);border-radius:8px;padding:10px 14px;margin:12px 0 0;font-size:13px;color:#9A3412;line-height:1.5}
   .hs-map-panel{background:#fff;border:1px solid var(--border);border-radius:var(--r);margin:16px 0 0;overflow:hidden}
   .hs-map-head{padding:12px 16px;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
@@ -239,6 +286,10 @@
   .comp-coverage-faq:hover{background:#5B21B6;color:#fff}
   .comp-coverage-twocol{background:var(--blue-95);color:var(--blue-30)}
   .comp-coverage-twocol:hover{background:var(--blue-30);color:#fff}
+  .idx-intro{font-size:13.5px;color:var(--muted);margin:0 0 18px;line-height:1.5}
+  .idx-intro strong{color:var(--text)}
+  .comp-index-none{font-size:10px;font-weight:700;color:var(--muted);margin-left:6px}
+  .comp-index-audit{font-size:12px;color:var(--muted);margin:-8px 0 14px}
   /* per-page HubSpot module audit */
   .pg-mod-audit{width:100%;flex-basis:100%;margin:4px 0 2px;border:1px solid var(--border);border-radius:8px;background:#FBFCFF;overflow:hidden}
   .pg-mod-audit>summary{list-style:none;cursor:pointer;padding:7px 12px;font-size:12.5px;font-weight:700;color:var(--blue-30);display:flex;align-items:center;gap:8px}
@@ -281,7 +332,7 @@
     <div class="brand"><span class="dot"></span> Website Rebuild — Library guideline</div>
     <div class="tabs" role="tablist" aria-label="Views">
       <button id="tab-plan" role="tab" aria-selected="true" aria-controls="panel-plan">Build plan</button>
-      <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Index</button>
+      <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Components</button>
       <button id="tab-pages" role="tab" aria-selected="false" aria-controls="panel-pages">Pages</button>
       <button id="tab-hs" role="tab" aria-selected="false" aria-controls="panel-hs">HubSpot</button>
     </div>
@@ -1252,62 +1303,22 @@
 
   </div><!-- /panel-plan -->
 
-  <!-- ============ INDEX PANEL ============ -->
+  <!-- ============ COMPONENTS PANEL ============ -->
   <div id="panel-index" role="tabpanel" aria-labelledby="tab-index" class="idx">
-    <h3>Components</h3>
-    <div class="row"><span class="nm">Button <span class="pill r-design" style="margin-left:6px">Primitive</span></span><a href="#task-button">Go to task</a></div>
-    <div class="row"><span class="nm">Text block <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-text">Go to task</a></div>
-    <div class="row"><span class="nm">Image <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-image">Go to task</a></div>
-    <div class="row"><span class="nm">Video <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-video">Go to task</a></div>
-    <div class="row"><span class="nm">Quote <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-quote">Go to task</a></div>
-    <div class="row"><span class="nm">Stats <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-stats">Go to task</a></div>
-    <div class="row"><span class="nm">Two-column <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol">Go to task</a></div>
-    <div class="row"><span class="nm">Two-column with bigger left <span class="pill p-values" style="margin-left:6px">Values</span></span><a href="#task-twocol-bigger">Go to task</a></div>
-    <div class="row"><span class="nm">Two-column — text-heavy <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol-text-heavy">Go to task</a></div>
-    <div class="row"><span class="nm">Flat one column <span class="pill p-values" style="margin-left:6px">Values</span></span><a href="#task-flat-one-column">Go to task</a></div>
-    <div class="row"><span class="nm">FAQ <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-faq">Go to task</a></div>
-    <div class="row"><span class="nm">CTA section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-cta">Go to task</a></div>
-    <div class="row"><span class="nm">Icon cards <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-iconcards">Go to task</a></div>
-    <div class="row"><span class="nm">Cards <span class="pill p-multi-venue" style="margin-left:6px">Multi venue</span></span><a href="#task-cards">Go to task</a></div>
-    <div class="row"><span class="nm">Icon list grid <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-icon-list-grid">Go to task</a></div>
-    <div class="row"><span class="nm">Image with icon grid list <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-image-icon-grid-list">Go to task</a></div>
-    <div class="row"><span class="nm">Services section <span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-services-section">Go to task</a></div>
-    <div class="row"><span class="nm">Service detail <span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-service-detail">Go to task</a></div>
-    <div class="row"><span class="nm">Video hero section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-video-hero-section">Go to task</a></div>
-    <div class="row"><span class="nm">Introduction summary <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-introduction-summary">Go to task</a></div>
-    <div class="row"><span class="nm">Use case section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-use-case-section">Go to task</a></div>
-    <div class="row"><span class="nm">Form section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-form-section">Go to task</a></div>
-    <div class="row"><span class="nm">Pricing widget <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-pricing-widget">Go to task</a></div>
-    <div class="row"><span class="nm">Addons <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-addons">Go to task</a></div>
-    <div class="row"><span class="nm">Centered text block <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-centeredtext">Go to task</a></div>
-    <div class="row"><span class="nm">Dual quote <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-dual-quote">Go to task</a></div>
-    <div class="row"><span class="nm">Special hero introduction <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-special-hero-introduction">Go to task</a></div>
-    <div class="row"><span class="nm">Features unfold <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-featuresunfold">Go to task</a></div>
-    <div class="row"><span class="nm">Reports <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-reports">Go to task</a></div>
-    <div class="row"><span class="nm">Category links <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-categorylinks">Go to task</a></div>
-    <div class="row"><span class="nm">Features index <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-features-index">Go to task</a></div>
-    <div class="row"><span class="nm">Stats section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-stats-section">Go to task</a></div>
-    <div class="row"><span class="nm">Horizontal slider <span class="pill p-multi-venue" style="margin-left:6px">Multi venue</span></span><a href="#task-horizontal-slider">Go to task</a></div>
-    <div class="row"><span class="nm">Customer story carousel <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-customer-story">Go to task</a></div>
-    <div class="row"><span class="nm">Industry vertical section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-industry-vertical">Go to task</a></div>
-    <div class="row"><span class="nm">Features list <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-features-list">Go to task</a></div>
-    <div class="row"><span class="nm">Implementation packages <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-implementation-packages">Go to task</a></div>
-    <div class="row"><span class="nm">Announcement bar <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-announcement-bar">Go to task</a></div>
+    <p class="idx-intro">Jump to any build-plan component. Page counts come from the latest live-site audit (<span id="comp-index-audit-meta">loading…</span>).</p>
+    <div id="comp-index-audit-stats" class="comp-index-audit" aria-live="polite"></div>
 
-    <h3>Global Components</h3>
-    <div class="row"><span class="nm">Header</span><a href="#task-header">Go to task</a></div>
-    <div class="row"><span class="nm">Footer</span><a href="#task-footer">Go to task</a></div>
-    <div class="row"><span class="nm">Trust banner</span><a href="#task-trust-banner">Go to task</a></div>
-    <div class="row"><span class="nm">Customer logo carousel <span class="pill p-multi-venue" style="margin-left:6px">Multi venue</span></span><a href="#task-logo-carousel">Go to task</a></div>
-    <div class="row"><span class="nm">Boxed user reviews <span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-boxed-user-reviews">Go to task</a></div>
-    <div class="row"><span class="nm">User review widget</span><a href="#task-user-review-widget">Go to task</a></div>
-    <div class="row"><span class="nm">Roller features widget</span><a href="#task-features-widget">Go to task</a></div>
-    <div class="row"><span class="nm">Industries widget</span><a href="#task-industries-widget">Go to task</a></div>
-    <div class="row"><span class="nm">Company stats widget</span><a href="#task-company-stats">Go to task</a></div>
-    <div class="row"><span class="nm">Global stats</span><a href="#task-global-stats">Go to task</a></div>
-    <div class="row"><span class="nm">Testimonial carousel <span class="pill p-pricing" style="margin-left:6px">Pricing</span><span class="pill p-prof-services" style="margin-left:6px">Professional services</span></span><a href="#task-testimonial-carousel">Go to task</a></div>
+    <h3>Phase 2 · Primitives</h3>
+    <div id="comp-index-primitives" class="comp-index-list"></div>
+
+    <h3>Phase 3 · Standalone sections</h3>
+    <div id="comp-index-phase3" class="comp-index-list"></div>
+
+    <h3>Phase 4 · Global components</h3>
+    <div id="comp-index-global" class="comp-index-list"></div>
 
     <h3>Templates</h3>
+    <div class="comp-index-list">
     <div class="row"><span class="nm">Pilot · General template</span><a href="#tmpl-pilot">Go to task</a></div>
     <div class="row"><span class="nm">Home</span><a href="#tmpl-home">Go to task</a></div>
     <div class="row"><span class="nm">Features</span><a href="#tmpl-features">Go to task</a></div>
@@ -1316,12 +1327,15 @@
     <div class="row"><span class="nm">Get Started</span><a href="#tmpl-getstarted">Go to task</a></div>
     <div class="row"><span class="nm">Blog landing</span><a href="#tmpl-blog-landing">Go to task</a></div>
     <div class="row"><span class="nm">Blog post</span><a href="#tmpl-blog-post">Go to task</a></div>
+    </div>
 
     <h3>Token groups</h3>
+    <div class="comp-index-list">
     <div class="row"><span class="nm">Colour</span><a href="#tok-colour">Go to tokens</a></div>
     <div class="row"><span class="nm">Typography</span><a href="#tok-type">Go to tokens</a></div>
     <div class="row"><span class="nm">Spacing</span><a href="#tok-space">Go to tokens</a></div>
     <div class="row"><span class="nm">Grid &amp; breakpoints</span><a href="#tok-grid">Go to tokens</a></div>
+    </div>
   </div><!-- /panel-index -->
 
   <!-- ============ PAGES PANEL ============ -->
@@ -1727,7 +1741,7 @@
 
     <div class="intro" style="margin-top:22px">
       <h1>HubSpot module library</h1>
-      <p>Reference catalogue of ROLLS theme HubSpot modules and pre-composed sections — folder names, <code>module_id</code> values, output structure, and variants. Each entry is mapped (best-guess) to a Build plan component by structure and naming — not an exact 1:1 name match. Source: <code>HS-components.html</code>.</p>
+      <p>Reference catalogue of ROLLS theme HubSpot modules and pre-composed sections — folder names, <code>module_id</code> values, output structure, and variants. Each entry is mapped (best-guess) to a Build plan component by structure and naming — not an exact 1:1 name match. Source: <code>HS-components.html</code> (rendered from <code>hs-library.data.js</code>).</p>
     </div>
 
     <div class="pg-stats" id="hs-map-stats">
@@ -1735,9 +1749,10 @@
       <div class="pg-stat"><span class="pg-stat-n" style="color:var(--blue-30)" id="hs-stat-sections">—</span><span class="pg-stat-l">Sections</span></div>
       <div class="pg-stat"><span class="pg-stat-n" style="color:#04632B" id="hs-stat-mapped">—</span><span class="pg-stat-l">Mapped to Build plan</span></div>
       <div class="pg-stat"><span class="pg-stat-n" style="color:#92400E" id="hs-stat-gaps">—</span><span class="pg-stat-l">Phase gaps (no HS module)</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" style="color:#04632B" id="hs-stat-used">—</span><span class="pg-stat-l">On audited pages</span></div>
     </div>
 
-    <p class="hs-note">Mapped entries show a coral tag in the library viewer below, linking to the matching Build plan task. HubSpot-only modules (pulse, search, animations, etc.) are tagged <strong>Not in build plan</strong>. Nine Build plan components have no dedicated HubSpot module — layout variants or composites.</p>
+    <p class="hs-note">Mapped entries show a coral tag in the library viewer below, linking to the matching Build plan task. Items with at least one hit on an audited page appear in the <strong>On site</strong> section; everything else stays at the bottom as disabled (greyed out, still expandable). HubSpot-only modules are tagged <strong>Not in build plan</strong>.</p>
 
     <div class="hs-map-panel" id="hs-map-panel">
       <div class="hs-map-head">
@@ -1757,8 +1772,17 @@
       </div>
     </div>
 
-    <div class="hs-frame">
-      <iframe id="hs-components-frame" src="HS-components.html" title="ROLLS Theme — HubSpot Module &amp; Section Library" loading="lazy"></iframe>
+    <div class="hs-lib" id="hs-library">
+      <aside class="hs-lib-aside" aria-label="Library navigation">
+        <div class="hs-lib-filters" id="hs-lib-filters" role="group" aria-label="Filter library">
+          <button type="button" class="on" data-filter="all">All</button>
+          <button type="button" data-filter="mod">Modules</button>
+          <button type="button" data-filter="sec">Sections</button>
+        </div>
+        <input id="hs-lib-search" type="search" placeholder="Search modules &amp; sections…" aria-label="Search HubSpot library">
+        <div id="hs-lib-nav"></div>
+      </aside>
+      <div class="hs-lib-main" id="hs-lib-main" aria-label="HubSpot module and section catalogue"></div>
     </div>
 
   </div><!-- /panel-hs -->
@@ -1770,6 +1794,8 @@
 <div id="fig-lb" role="dialog" aria-modal="true" aria-label="Figma preview"><img src="" alt=""></div>
 <script src="page-components.data.js?v=6"></script>
 <script src="page-modules.data.js?v=2"></script>
+<script src="hs-usage.data.js?v=1"></script>
+<script src="hs-library.data.js?v=1"></script>
 <script src="hs-phase-mapping.data.js?v=2"></script>
 <script>
   document.querySelectorAll('details[open]').forEach(function(d){d.open=false});
@@ -1797,17 +1823,17 @@
   tabIndex.addEventListener('click',function(){show('index')});
   tabPages.addEventListener('click',function(){show('pages')});
   tabHs.addEventListener('click',function(){show('hs')});
-  // jumping from the index to a task opens its details and switches to the plan
-  document.querySelectorAll('#panel-index a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(e){
-      var href=a.getAttribute('href');
-      if(href.indexOf('pages')===1){return}
-      e.preventDefault();
-      show('plan');
-      var el=document.querySelector(href.split('?')[0]);
-      if(el){var p=el.closest('details');while(p){p.open=true;p=p.parentElement&&p.parentElement.closest('details')}}
-      if(href.split('?')[0]){location.hash=href.split('?')[0]}
-    });
+  // Components tab → build plan tasks, templates, tokens
+  document.getElementById('panel-index').addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="#"]');
+    if(!a){return}
+    var href=a.getAttribute('href');
+    if(href.indexOf('#task-')!==0&&href.indexOf('#tmpl-')!==0&&href.indexOf('#tok-')!==0){return}
+    e.preventDefault();
+    show('plan');
+    var el=document.querySelector(href.split('?')[0]);
+    if(el){var p=el.closest('details');while(p){p.open=true;p=p.parentElement&&p.parentElement.closest('details')}}
+    if(href.split('?')[0]){location.hash=href.split('?')[0]}
   });
   // opening a cross-link inside the plan expands the target too
   document.querySelectorAll('#panel-plan a[href^="#"]').forEach(function(a){
@@ -1991,26 +2017,127 @@
       renderComponentMetaTags(compId,metaId);
     }
 
-    function renderIndexBadge(compId){
-      var comp=data.components[compId];
-      if(!comp||!comp.pageCount)return;
-      var taskLink=document.querySelector('#panel-index a[href="#'+comp.id+'"]');
-      if(!taskLink)return;
-      var row=taskLink.closest('.row');
-      if(!row)return;
-      var nm=row.querySelector('.nm');
-      if(!nm||nm.querySelector('[data-coverage-badge="'+compId+'"]'))return;
-      var badge=document.createElement('a');
-      badge.className='comp-coverage-pill comp-coverage-'+compId;
-      badge.setAttribute('data-coverage-badge',compId);
-      badge.href='#pages?component='+compId;
-      badge.textContent=comp.pageCount+' pages';
-      badge.addEventListener('click',function(e){
-        e.preventDefault();
-        show('pages');
-        setFilter(compId,true);
+    var COMP_INDEX_GROUPS={
+      primitives:[
+        'task-button','task-text','task-image','task-video','task-quote','task-stats'
+      ],
+      phase3:[
+        'task-twocol','task-twocol-bigger','task-twocol-text-heavy','task-flat-one-column',
+        'task-centeredtext','task-dual-quote','task-special-hero-introduction','task-iconcards',
+        'task-cards','task-icon-list-grid','task-image-icon-grid-list','task-services-section',
+        'task-service-detail','task-video-hero-section','task-introduction-summary',
+        'task-use-case-section','task-form-section','task-pricing-widget','task-addons',
+        'task-faq','task-cta','task-featuresunfold','task-reports','task-categorylinks',
+        'task-features-index','task-stats-section','task-horizontal-slider','task-customer-story',
+        'task-industry-vertical','task-features-list','task-implementation-packages',
+        'task-announcement-bar'
+      ],
+      global:[
+        'task-header','task-footer','task-trust-banner','task-logo-carousel',
+        'task-boxed-user-reviews','task-user-review-widget','task-features-widget',
+        'task-industries-widget','task-company-stats','task-global-stats','task-testimonial-carousel'
+      ]
+    };
+
+    function compKeyForTask(taskId){
+      if(!data||!data.components){return null}
+      var keys=Object.keys(data.components);
+      for(var i=0;i<keys.length;i++){
+        if(data.components[keys[i]].id===taskId){return keys[i]}
+      }
+      return null;
+    }
+
+    function taskDisplayName(taskId){
+      var task=document.getElementById(taskId);
+      if(!task){return taskId}
+      var tname=task.querySelector('.tname');
+      if(!tname){return taskId}
+      var node=tname.childNodes[0];
+      return node&&node.textContent?node.textContent.trim():tname.textContent.split('\n')[0].trim();
+    }
+
+    function appendTaskPills(nm,taskId){
+      var task=document.getElementById(taskId);
+      if(!task){return}
+      var meta=task.querySelector('summary .meta');
+      if(meta){
+        meta.querySelectorAll('.pill').forEach(function(p){
+          var pill=p.cloneNode(true);
+          pill.style.marginLeft='6px';
+          nm.appendChild(pill);
+        });
+      }
+      var small=task.querySelector('summary .tname small');
+      if(small&&(!meta||!meta.querySelector('.pill'))){
+        var pill=document.createElement('span');
+        pill.className='pill s-todo';
+        pill.style.marginLeft='6px';
+        pill.textContent=small.textContent;
+        nm.appendChild(pill);
+      }
+    }
+
+    function renderCompIndexRow(taskId,container){
+      var row=document.createElement('div');
+      row.className='row';
+      var nm=document.createElement('span');
+      nm.className='nm';
+      nm.appendChild(document.createTextNode(taskDisplayName(taskId)));
+      appendTaskPills(nm,taskId);
+      var compKey=compKeyForTask(taskId);
+      var comp=compKey&&data.components[compKey];
+      if(comp){
+        if(comp.pageCount>0){
+          var badge=document.createElement('a');
+          badge.className='comp-coverage-pill comp-coverage-'+compKey;
+          badge.href='#pages?component='+compKey;
+          badge.textContent=comp.pageCount+' page'+(comp.pageCount===1?'':'s');
+          badge.title=comp.detection||'';
+          badge.addEventListener('click',function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            show('pages');
+            setFilter(compKey,true);
+          });
+          nm.appendChild(badge);
+        }else if(comp.detection){
+          var none=document.createElement('span');
+          none.className='comp-index-none';
+          none.textContent='Not on audited pages';
+          none.title=comp.detection;
+          nm.appendChild(none);
+        }
+      }
+      var link=document.createElement('a');
+      link.href='#'+taskId;
+      link.textContent='Go to task';
+      row.appendChild(nm);
+      row.appendChild(link);
+      container.appendChild(row);
+    }
+
+    function renderComponentsIndex(){
+      if(!data||!data.components){return}
+      var metaEl=document.getElementById('comp-index-audit-meta');
+      var statsEl=document.getElementById('comp-index-audit-stats');
+      var pageTotal=Object.keys(data.pages||{}).length;
+      var compTotal=Object.keys(data.components).length;
+      var withPages=Object.keys(data.components).filter(function(k){return data.components[k].pageCount>0}).length;
+      if(metaEl){
+        metaEl.textContent=(data.audited||'June 2026')+' · '+pageTotal+' URLs';
+      }
+      if(statsEl){
+        statsEl.innerHTML=withPages+' of '+compTotal+' tracked components found on at least one audited page. Click a page count to filter the <a href="#pages">Pages tab</a>.';
+      }
+      [['comp-index-primitives','primitives'],['comp-index-phase3','phase3'],['comp-index-global','global']].forEach(function(pair){
+        var el=document.getElementById(pair[0]);
+        if(!el){return}
+        el.innerHTML='';
+        COMP_INDEX_GROUPS[pair[1]].forEach(function(taskId){
+          renderCompIndexRow(taskId,el);
+        });
       });
-      nm.appendChild(badge);
     }
 
     function buildFilterButtons(){
@@ -2051,8 +2178,8 @@
       if(!data||!data.components)return;
       Object.keys(data.components).forEach(function(compId){
         renderComponentUsedOn(compId);
-        renderIndexBadge(compId);
       });
+      renderComponentsIndex();
     }
 
     function applyHash(){
@@ -2331,14 +2458,65 @@
 
   (function(){
     var mapData=window.HS_PHASE_MAPPING;
-    if(!mapData){return}
+    var usageData=window.HS_USAGE;
+    var libData=window.HS_LIBRARY;
+    if(!mapData||!libData){return}
 
-    var hsFrame=document.getElementById('hs-components-frame');
+    var libMain=document.getElementById('hs-lib-main');
+    var libNav=document.getElementById('hs-lib-nav');
+    var libSearch=document.getElementById('hs-lib-search');
     var mapFilter='all';
+    var libFilter='all';
 
     function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
 
     function normFolder(f){return String(f||'').toLowerCase().replace(/\\/g,'/')}
+
+    function moduleUsage(folder){
+      if(!usageData||!folder){return null}
+      return usageData.byFolder[normFolder(folder)]||null
+    }
+
+    function sectionUsage(file){
+      if(!usageData||!file){return null}
+      return usageData.byFile[file]||null
+    }
+
+    function mapEntryFor(card){
+      if(card.kind==='module'){
+        var slug=Object.keys(mapData.modules||{}).find(function(s){
+          return normFolder(mapData.modules[s].hsFolder)===normFolder(card.folder);
+        });
+        return slug?mapData.modules[slug]:null;
+      }
+      var slug=Object.keys(mapData.sections||{}).find(function(s){
+        return mapData.sections[s].hsFile===card.file;
+      });
+      return slug?mapData.sections[slug]:null;
+    }
+
+    function usagePillHtml(entry){
+      if(!entry||!entry.used){
+        return '<span class="hs-usage-pill disabled">Not on audited pages</span>'
+      }
+      var n=entry.pageCount;
+      return '<span class="hs-usage-pill used">'+n+' page'+(n===1?'':'s')+'</span>'
+    }
+
+    function pillHtml(entry){
+      if(entry&&entry.status==='mapped'&&entry.phaseId){
+        var conf=entry.confidence||'medium';
+        return '<span class="hs-phase-map"><span class="lbl">Build plan</span>'
+          +'<a href="#" class="hs-phase-pill mapped '+conf+'" data-phase="'+esc(entry.phaseId)+'" title="'+esc(entry.reason)+'">'
+          +'Phase '+entry.phase+' · '+esc(entry.phaseName)+'</a>'
+          +'<span class="hs-phase-conf '+conf+'">'+conf+'</span></span>';
+      }
+      if(entry){
+        return '<span class="hs-phase-map"><span class="lbl">Build plan</span>'
+          +'<span class="hs-phase-pill unmapped" title="'+esc(entry.reason)+'">Not in build plan</span></span>';
+      }
+      return '';
+    }
 
     function openPlanTask(phaseId){
       if(!phaseId){return}
@@ -2352,109 +2530,192 @@
       }
     }
 
+    function findCardEl(slug,kind){
+      if(kind==='section'){
+        var sec=mapData.sections[slug];
+        var file=sec&&sec.hsFile;
+        var card=(libData.sections||[]).find(function(s){return s.file===file});
+        return card?document.getElementById(card.id):null;
+      }
+      var mod=mapData.modules[slug];
+      var folder=mod&&mod.hsFolder;
+      var card=(libData.modules||[]).find(function(m){return normFolder(m.folder)===normFolder(folder)});
+      return card?document.getElementById(card.id):null;
+    }
+
     function scrollHsTo(slug,kind){
       show('hs');
-      function tryScroll(){
-        var doc=hsFrame.contentDocument;
-        if(!doc){return}
-        var card=null;
-        if(kind==='section'){
-          var sec=mapData.sections[slug];
-          var file=sec&&sec.hsFile?sec.hsFile:slug;
-          card=doc.querySelector('article.section-card[data-file="'+file.replace(/\\/g,'/')+'"]');
-        }else{
-          var mod=mapData.modules[slug];
-          var folder=mod&&mod.hsFolder?mod.hsFolder:(String(slug).indexOf('.module')>-1?slug:slug+'.module');
-          card=doc.querySelector('article.module-card[data-folder="'+normFolder(folder)+'"]');
-        }
-        var allBtn=doc.querySelector('.filter-btns button[data-filter="all"]');
-        if(allBtn){allBtn.click()}
-        if(card){
-          card.style.display='block';
-          if(doc.defaultView){doc.defaultView.location.hash=card.id}
-          card.scrollIntoView({behavior:'smooth',block:'start'});
-        }
-      }
-      if(hsFrame.contentDocument&&hsFrame.contentDocument.body){tryScroll()}
-      else{hsFrame.addEventListener('load',tryScroll,{once:true})}
-    }
-
-    window.addEventListener('message',function(ev){
-      if(!ev.data||ev.data.type!=='hs-map-nav'){return}
-      if(ev.data.action==='plan'){openPlanTask(ev.data.phaseId)}
-      if(ev.data.action==='hs'){scrollHsTo(ev.data.slug,ev.data.kind)}
-    });
-
-    function pillHtml(entry,kind){
-      if(entry.status==='mapped'&&entry.phaseId){
-        var conf=entry.confidence||'medium';
-        return '<span class="hs-phase-map"><span class="lbl">Build plan</span>'
-          +'<a href="#" class="hs-phase-pill mapped '+conf+'" data-phase="'+esc(entry.phaseId)+'" title="'+esc(entry.reason)+'">'
-          +'Phase '+entry.phase+' · '+esc(entry.phaseName)+'</a>'
-          +'<span class="hs-phase-conf '+conf+'">'+conf+'</span></span>';
-      }
-      return '<span class="hs-phase-map"><span class="lbl">Build plan</span>'
-        +'<span class="hs-phase-pill unmapped" title="'+esc(entry.reason)+'">Not in build plan</span></span>';
-    }
-
-    function injectIframeStyles(doc){
-      if(doc.getElementById('hs-phase-map-style')){return}
-      var st=doc.createElement('style');
-      st.id='hs-phase-map-style';
-      st.textContent='.hs-phase-map{margin:.7rem 0 0;padding:.55rem .65rem;background:#FFEEE7;border:1px solid #f5c4b0;border-radius:8px;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}'
-        +'.hs-phase-map .lbl{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#9A3412;margin-right:.15rem}'
-        +'.hs-phase-pill{font-size:.72rem;padding:.2rem .55rem;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid}'
-        +'.hs-phase-pill.mapped{background:#fff;color:#B22F04;border-color:#f5c4b0;cursor:pointer}'
-        +'.hs-phase-pill.mapped:hover{background:#B22F04;color:#fff}'
-        +'.hs-phase-pill.unmapped{background:#EEF1F5;color:#5B6B86;border-color:#d5dbe3;cursor:default}'
-        +'.hs-phase-conf{font-size:.62rem;font-weight:700;padding:.1rem .35rem;border-radius:999px;text-transform:uppercase}'
-        +'.hs-phase-conf.high{background:#E3FBEE;color:#04632B}'
-        +'.hs-phase-conf.medium{background:#fff;color:#B22F04;border:1px solid #f5c4b0}'
-        +'.hs-phase-conf.low{background:#EEF1F5;color:#5B6B86}';
-      doc.head.appendChild(st);
-    }
-
-    function decorateIframe(){
-      var doc=hsFrame.contentDocument;
-      if(!doc){return}
-      injectIframeStyles(doc);
-      var modByFolder={};
-      doc.querySelectorAll('article.module-card[data-folder]').forEach(function(card){
-        modByFolder[normFolder(card.getAttribute('data-folder'))]=card;
+      libFilter='all';
+      document.querySelectorAll('#hs-lib-filters button').forEach(function(b){
+        b.classList.toggle('on',b.getAttribute('data-filter')==='all');
       });
-      Object.keys(mapData.modules||{}).forEach(function(slug){
-        var entry=mapData.modules[slug];
-        var card=modByFolder[normFolder(entry.hsFolder)];
-        if(!card){return}
-        var header=card.querySelector('header');
-        if(!header||header.querySelector('.hs-phase-map')){return}
-        var wrap=document.createElement('div');
-        wrap.innerHTML=pillHtml(entry,'module');
-        header.appendChild(wrap.firstChild);
-        header.querySelectorAll('[data-phase]').forEach(function(a){
-          a.addEventListener('click',function(e){
-            e.preventDefault();
-            window.parent.postMessage({type:'hs-map-nav',action:'plan',phaseId:a.getAttribute('data-phase')},'*');
-          });
+      applyLibFilter();
+      var el=findCardEl(slug,kind);
+      if(el){
+        el.open=true;
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    }
+
+    function renderCard(card){
+      var usage=card.kind==='module'?moduleUsage(card.folder):sectionUsage(card.file);
+      var onSite=usage&&usage.used;
+      var mapEntry=mapEntryFor(card);
+      var det=document.createElement('details');
+      det.className='hs-lib-card '+(onSite?'hs-item-used':'hs-item-disabled');
+      det.id=card.id;
+      det.setAttribute('data-kind',card.kind);
+      det.setAttribute('data-hs-used',onSite?'1':'0');
+      det.setAttribute('data-search',card.search||'');
+      var sum=document.createElement('summary');
+      sum.className='hs-lib-summary';
+      sum.innerHTML='<span class="hs-lib-title">'+esc(card.title)+'</span> '+usagePillHtml(usage);
+      det.appendChild(sum);
+      var body=document.createElement('div');
+      body.className='hs-lib-body';
+      var phaseWrap=document.createElement('div');
+      phaseWrap.innerHTML=pillHtml(mapEntry);
+      if(phaseWrap.firstChild){body.appendChild(phaseWrap.firstChild)}
+      if(card.meta&&card.meta.length){
+        var meta=document.createElement('div');
+        meta.className='hs-lib-meta';
+        card.meta.forEach(function(m){
+          meta.innerHTML+='<div><span class="label">'+esc(m.label)+'</span>'+m.html+'</div>';
+        });
+        body.appendChild(meta);
+      }
+      (card.sections||[]).forEach(function(sec){
+        var block=document.createElement('div');
+        block.className='hs-lib-sec';
+        if(sec.heading){block.innerHTML+='<h3>'+esc(sec.heading)+'</h3>'}
+        block.innerHTML+=sec.html;
+        body.appendChild(block);
+      });
+      det.appendChild(body);
+      body.querySelectorAll('[data-phase]').forEach(function(a){
+        a.addEventListener('click',function(e){
+          e.preventDefault();
+          openPlanTask(a.getAttribute('data-phase'));
         });
       });
-      doc.querySelectorAll('article.section-card[data-file]').forEach(function(card){
-        var file=card.getAttribute('data-file');
-        var slug=Object.keys(mapData.sections||{}).find(function(s){return mapData.sections[s].hsFile===file});
-        if(!slug){return}
-        var entry=mapData.sections[slug];
-        var header=card.querySelector('header');
-        if(!header||header.querySelector('.hs-phase-map')){return}
-        var wrap=document.createElement('div');
-        wrap.innerHTML=pillHtml(entry,'section');
-        header.appendChild(wrap.firstChild);
-        header.querySelectorAll('[data-phase]').forEach(function(a){
-          a.addEventListener('click',function(e){
-            e.preventDefault();
-            window.parent.postMessage({type:'hs-map-nav',action:'plan',phaseId:a.getAttribute('data-phase')},'*');
-          });
-        });
+      return det;
+    }
+
+    function renderBucket(label,items,kind,disabled){
+      if(!items.length){return null}
+      var wrap=document.createElement('div');
+      wrap.className='hs-lib-bucket-wrap';
+      wrap.setAttribute('data-bucket-kind',kind);
+      var head=document.createElement('div');
+      head.className='hs-lib-bucket'+(kind==='section'?' sec':'')+(disabled?' disabled':'');
+      head.textContent=label;
+      wrap.appendChild(head);
+      items.forEach(function(card){wrap.appendChild(renderCard(card))});
+      return wrap;
+    }
+
+    function splitCards(cards,kind){
+      var used=[],unused=[];
+      cards.forEach(function(c){
+        var u=kind==='module'?moduleUsage(c.folder):sectionUsage(c.file);
+        if(u&&u.used){used.push(c)}else{unused.push(c)}
       });
+      used.sort(function(a,b){return a.title.localeCompare(b.title)});
+      unused.sort(function(a,b){return a.title.localeCompare(b.title)});
+      return {used:used,unused:unused};
+    }
+
+    function renderLibrary(){
+      if(!libMain){return}
+      libMain.innerHTML='';
+      var mods=splitCards(libData.modules||[],'module');
+      var secs=splitCards(libData.sections||[],'section');
+      [
+        renderBucket('Modules — on site ('+mods.used.length+')',mods.used,'module',false),
+        renderBucket('Modules — not on audited pages ('+mods.unused.length+')',mods.unused,'module',true),
+        renderBucket('Sections — on site ('+secs.used.length+')',secs.used,'section',false),
+        renderBucket('Sections — not on audited pages ('+secs.unused.length+')',secs.unused,'section',true)
+      ].forEach(function(b){if(b){libMain.appendChild(b)}});
+      renderNav(mods,secs);
+      applyLibFilter();
+    }
+
+    function renderNav(mods,secs){
+      if(!libNav){return}
+      libNav.innerHTML='';
+      function navGroup(title,usedItems,unusedItems,kind){
+        var group=document.createElement('div');
+        group.className='hs-lib-nav-group';
+        group.setAttribute('data-nav-kind',kind);
+        var h=document.createElement('h3');
+        h.textContent=title+' ('+(usedItems.length+unusedItems.length)+')';
+        group.appendChild(h);
+        function sub(label,items,used){
+          if(!items.length){return}
+          var subEl=document.createElement('div');
+          subEl.className='hs-lib-nav-sub';
+          subEl.innerHTML='<h4>'+label+'</h4>';
+          var nav=document.createElement('nav');
+          nav.className='hs-lib-nav';
+          items.forEach(function(c){
+            var a=document.createElement('a');
+            a.href='#'+c.id;
+            a.setAttribute('data-nav-kind',kind);
+            a.setAttribute('data-search',c.search||'');
+            a.className=used?'hs-nav-used':'hs-nav-disabled';
+            var idSuffix=c.kind==='module'?(c.moduleId&&c.moduleId!=='—'?c.moduleId.slice(-6):'—'):'sec';
+            a.innerHTML=esc(c.title)+' <span class="id">'+esc(idSuffix)+'</span>';
+            a.addEventListener('click',function(e){
+              e.preventDefault();
+              var el=document.getElementById(c.id);
+              if(el){el.open=true;el.scrollIntoView({behavior:'smooth',block:'start'})}
+            });
+            nav.appendChild(a);
+          });
+          subEl.appendChild(nav);
+          group.appendChild(subEl);
+        }
+        sub('On site',usedItems,true);
+        sub('Not on audited pages',unusedItems,false);
+        libNav.appendChild(group);
+      }
+      navGroup('Modules',mods.used,mods.unused,'module');
+      navGroup('Sections',secs.used,secs.unused,'section');
+    }
+
+    function applyLibFilter(){
+      var q=libSearch?libSearch.value.trim().toLowerCase():'';
+      if(libMain){
+        libMain.querySelectorAll('.hs-lib-card').forEach(function(card){
+          var kind=card.getAttribute('data-kind');
+          var kindOk=libFilter==='all'||(libFilter==='mod'&&kind==='module')||(libFilter==='sec'&&kind==='section');
+          var searchText=(card.getAttribute('data-search')||'')+' '+(function(el){return el?el.textContent:''})(card.querySelector('.hs-lib-title'));
+          var searchOk=!q||searchText.toLowerCase().indexOf(q)>-1;
+          card.style.display=kindOk&&searchOk?'':'none';
+        });
+        libMain.querySelectorAll('.hs-lib-bucket-wrap').forEach(function(bucket){
+          var visible=[].slice.call(bucket.querySelectorAll('.hs-lib-card')).some(function(c){return c.style.display!=='none'});
+          bucket.style.display=visible?'':'none';
+        });
+      }
+      if(libNav){
+        libNav.querySelectorAll('a[data-search]').forEach(function(a){
+          var navKind=a.getAttribute('data-nav-kind');
+          var kindOk=libFilter==='all'||(libFilter==='mod'&&navKind==='module')||(libFilter==='sec'&&navKind==='section');
+          var searchOk=!q||(a.getAttribute('data-search')||'').indexOf(q)>-1||a.textContent.toLowerCase().indexOf(q)>-1;
+          a.style.display=kindOk&&searchOk?'flex':'none';
+        });
+        libNav.querySelectorAll('.hs-lib-nav-sub').forEach(function(sub){
+          var visible=[].slice.call(sub.querySelectorAll('a')).some(function(a){return a.style.display!=='none'});
+          sub.style.display=visible?'':'none';
+        });
+        libNav.querySelectorAll('.hs-lib-nav-group').forEach(function(group){
+          var kind=group.getAttribute('data-nav-kind');
+          var kindOk=libFilter==='all'||(libFilter==='mod'&&kind==='module')||(libFilter==='sec'&&kind==='section');
+          var visible=kindOk&&[].slice.call(group.querySelectorAll('a')).some(function(a){return a.style.display!=='none'});
+          group.style.display=visible?'':'none';
+        });
+      }
     }
 
     function decoratePhaseTasks(){
@@ -2553,11 +2814,13 @@
 
     function updateStats(){
       var s=mapData.stats||{};
+      var u=usageData&&usageData.stats;
       var el=function(id,v){var n=document.getElementById(id);if(n){n.textContent=v}};
       el('hs-stat-modules',s.hsModules||'—');
       el('hs-stat-sections',s.hsSections||'—');
       el('hs-stat-mapped',(s.mappedModules||0)+' mod · '+(s.mappedSections||0)+' sec');
       el('hs-stat-gaps',s.phaseWithoutHsMatch||'—');
+      if(u){el('hs-stat-used',u.usedModules+' mod · '+u.usedSections+' sec')}
     }
 
     document.getElementById('hs-map-filters').addEventListener('click',function(e){
@@ -2568,11 +2831,19 @@
       renderMapTable();
     });
 
+    document.getElementById('hs-lib-filters').addEventListener('click',function(e){
+      var btn=e.target.closest('button[data-filter]');
+      if(!btn){return}
+      libFilter=btn.getAttribute('data-filter');
+      btn.parentElement.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',b===btn)});
+      applyLibFilter();
+    });
+    if(libSearch){libSearch.addEventListener('input',applyLibFilter)}
+
     updateStats();
     renderMapTable();
     decoratePhaseTasks();
-    if(hsFrame){hsFrame.addEventListener('load',decorateIframe)}
-    if(hsFrame&&hsFrame.contentDocument&&hsFrame.contentDocument.body){decorateIframe()}
+    renderLibrary();
   })();
 </script>
 </body>

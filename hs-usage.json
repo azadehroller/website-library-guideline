@@ -1,0 +1,2443 @@
+{
+  "version": 1,
+  "audited": "2026-06",
+  "pageCount": 202,
+  "modules": {
+    "advanced-image": {
+      "slug": "advanced-image",
+      "label": "Advanced Image",
+      "folder": "advanced-image.module",
+      "pageCount": 31,
+      "used": true
+    },
+    "animated-hero": {
+      "slug": "animated-hero",
+      "label": "Animated Hero",
+      "folder": "animated-hero.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "animation-lottie": {
+      "slug": "animation-lottie",
+      "label": "Animation",
+      "folder": "animation-lottie.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "animation-graphs": {
+      "slug": "animation-graphs",
+      "label": "Animation Graphic",
+      "folder": "animation-graphs.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "animation-guest-returning": {
+      "slug": "animation-guest-returning",
+      "label": "Animation Guest Returning",
+      "folder": "animation-guest-returning.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "aurora-background": {
+      "slug": "aurora-background",
+      "label": "Aurora Background",
+      "folder": "aurora-background.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "auto-play-slider": {
+      "slug": "auto-play-slider",
+      "label": "Auto Play Slider",
+      "folder": "auto-play-slider.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "blog-cards": {
+      "slug": "blog-cards",
+      "label": "Blog Group Cards",
+      "folder": "blog-cards.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "button-stack": {
+      "slug": "button-stack",
+      "label": "button-stack",
+      "folder": "button-stack.module",
+      "pageCount": 150,
+      "used": true
+    },
+    "card": {
+      "slug": "card",
+      "label": "card",
+      "folder": "card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "case-study": {
+      "slug": "case-study",
+      "label": "Case Study",
+      "folder": "case-study.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "confetti-section": {
+      "slug": "confetti-section",
+      "label": "Confetti Section",
+      "folder": "confetti-section.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "cta": {
+      "slug": "cta",
+      "label": "CTA Banner",
+      "folder": "cta.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "divider": {
+      "slug": "divider",
+      "label": "Divider",
+      "folder": "divider.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "faq2": {
+      "slug": "faq2",
+      "label": "FAQ 2",
+      "folder": "faq2.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "FAQs": {
+      "slug": "FAQs",
+      "label": "FAQs section",
+      "folder": "FAQs.module",
+      "pageCount": 76,
+      "used": true
+    },
+    "feature-block-list": {
+      "slug": "feature-block-list",
+      "label": "Feature Block List",
+      "folder": "feature-block-list.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "feature-introduction": {
+      "slug": "feature-introduction",
+      "label": "Feature Introduction",
+      "folder": "feature-introduction.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "features-unfold": {
+      "slug": "features-unfold",
+      "label": "Features Unfold",
+      "folder": "features-unfold.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "Form and Hubspot meeting": {
+      "slug": "Form and Hubspot meeting",
+      "label": "Form and Hubspot meeting",
+      "folder": "Form and Hubspot meeting.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "tabs/Form-test": {
+      "slug": "tabs/Form-test",
+      "label": "Form-test",
+      "folder": "tabs/Form-test.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "frame": {
+      "slug": "frame",
+      "label": "Frame",
+      "folder": "frame.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-stats french": {
+      "slug": "widget-stats french",
+      "label": "French stats",
+      "folder": "widget-stats french.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "header-theme": {
+      "slug": "header-theme",
+      "label": "Global: Header theme",
+      "folder": "header-theme.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "heading-composition": {
+      "slug": "heading-composition",
+      "label": "heading-composition",
+      "folder": "heading-composition.module",
+      "pageCount": 144,
+      "used": true
+    },
+    "hero-full-introduction": {
+      "slug": "hero-full-introduction",
+      "label": "Hero Full Introduction",
+      "folder": "hero-full-introduction.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "icon-cards": {
+      "slug": "icon-cards",
+      "label": "Icon Cards",
+      "folder": "icon-cards.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "image-video-modal": {
+      "slug": "image-video-modal",
+      "label": "image-video-modal",
+      "folder": "image-video-modal.module",
+      "pageCount": 9,
+      "used": true
+    },
+    "information-card": {
+      "slug": "information-card",
+      "label": "Information Card",
+      "folder": "information-card.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "interactive-hero": {
+      "slug": "interactive-hero",
+      "label": "Interactive Hero",
+      "folder": "interactive-hero.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "interactive-summary": {
+      "slug": "interactive-summary",
+      "label": "Interactive Summary",
+      "folder": "interactive-summary.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "interactive-svg": {
+      "slug": "interactive-svg",
+      "label": "Interactive SVG",
+      "folder": "interactive-svg.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "key-takeaways": {
+      "slug": "key-takeaways",
+      "label": "Key Takeaways",
+      "folder": "key-takeaways.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "link-cards": {
+      "slug": "link-cards",
+      "label": "Link Cards",
+      "folder": "link-cards.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "location": {
+      "slug": "location",
+      "label": "Location",
+      "folder": "location.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "logo-set-global-french": {
+      "slug": "logo-set-global-french",
+      "label": "Logo Set French",
+      "folder": "logo-set-global-french.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set": {
+      "slug": "logo-set",
+      "label": "logo-set",
+      "folder": "logo-set.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set-global": {
+      "slug": "logo-set-global",
+      "label": "logo-set-global",
+      "folder": "logo-set-global.module",
+      "pageCount": 90,
+      "used": true
+    },
+    "button": {
+      "slug": "button",
+      "label": "Main Button",
+      "folder": "button.module",
+      "pageCount": 109,
+      "used": true
+    },
+    "media-frame": {
+      "slug": "media-frame",
+      "label": "Media Frame",
+      "folder": "media-frame.module",
+      "pageCount": 7,
+      "used": true
+    },
+    "mega-menu": {
+      "slug": "mega-menu",
+      "label": "mega-menu",
+      "folder": "mega-menu.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "menu": {
+      "slug": "menu",
+      "label": "Menu",
+      "folder": "menu.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "metric": {
+      "slug": "metric",
+      "label": "Metric",
+      "folder": "metric.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "announcement": {
+      "slug": "announcement",
+      "label": "Module: Announcement",
+      "folder": "announcement.module",
+      "pageCount": 150,
+      "used": true
+    },
+    "badge-set": {
+      "slug": "badge-set",
+      "label": "Module: Badges Set",
+      "folder": "badge-set.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-blog-posts": {
+      "slug": "card-blog-posts",
+      "label": "Module: Card Blog Posts",
+      "folder": "card-blog-posts.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-events": {
+      "slug": "card-events",
+      "label": "Module: Card Events",
+      "folder": "card-events.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-partners": {
+      "slug": "card-partners",
+      "label": "Module: Card Partners",
+      "folder": "card-partners.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-pricing": {
+      "slug": "card-pricing",
+      "label": "Module: Card Pricing",
+      "folder": "card-pricing.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-segmentation": {
+      "slug": "card-segmentation",
+      "label": "Module: Card Segmentaion",
+      "folder": "card-segmentation.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "checkout-preview-form": {
+      "slug": "checkout-preview-form",
+      "label": "Module: Checkout Preview",
+      "folder": "checkout-preview-form.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "comparison-table": {
+      "slug": "comparison-table",
+      "label": "Module: Comparison Table",
+      "folder": "comparison-table.module",
+      "pageCount": 21,
+      "used": true
+    },
+    "confetti": {
+      "slug": "confetti",
+      "label": "Module: Confetti",
+      "folder": "confetti.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "custom-form": {
+      "slug": "custom-form",
+      "label": "Module: Custom Form",
+      "folder": "custom-form.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "events-booth-programming": {
+      "slug": "events-booth-programming",
+      "label": "Module: Events Booth Programming",
+      "folder": "events-booth-programming.module",
+      "pageCount": 14,
+      "used": true
+    },
+    "events-listing": {
+      "slug": "events-listing",
+      "label": "Module: Events Listing",
+      "folder": "events-listing.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "features-by-month": {
+      "slug": "features-by-month",
+      "label": "Module: Features By Month",
+      "folder": "features-by-month.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "features-card": {
+      "slug": "features-card",
+      "label": "Module: Features Card",
+      "folder": "features-card.module",
+      "pageCount": 4,
+      "used": true
+    },
+    "features-detail": {
+      "slug": "features-detail",
+      "label": "Module: Features Detail",
+      "folder": "features-detail.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "features-horizontal-slider": {
+      "slug": "features-horizontal-slider",
+      "label": "Module: Features Horizontal Slider",
+      "folder": "features-horizontal-slider.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "features-pricing-card": {
+      "slug": "features-pricing-card",
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing-card.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "features-pricing": {
+      "slug": "features-pricing",
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "features-selector-global": {
+      "slug": "features-selector-global",
+      "label": "Module: Features Selector (Global)",
+      "folder": "features-selector-global.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "gx-pricing-card": {
+      "slug": "gx-pricing-card",
+      "label": "Module: GX Pricing Card",
+      "folder": "gx-pricing-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "icons-list": {
+      "slug": "icons-list",
+      "label": "Module: Icons List",
+      "folder": "icons-list.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "image-carousel": {
+      "slug": "image-carousel",
+      "label": "Module: Image Carousel",
+      "folder": "image-carousel.module",
+      "pageCount": 3,
+      "used": true
+    },
+    "industry-selector": {
+      "slug": "industry-selector",
+      "label": "Module: Industry Selector",
+      "folder": "industry-selector.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "industry-selector-global": {
+      "slug": "industry-selector-global",
+      "label": "Module: Industry Selector (Global)",
+      "folder": "industry-selector-global.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "industry-selector-features-global": {
+      "slug": "industry-selector-features-global",
+      "label": "Module: Industry Selector Features (Global)",
+      "folder": "industry-selector-features-global.module",
+      "pageCount": 8,
+      "used": true
+    },
+    "logo": {
+      "slug": "logo",
+      "label": "Module: Logo",
+      "folder": "logo.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set-global-new": {
+      "slug": "logo-set-global-new",
+      "label": "Module: Logo Set (Global)",
+      "folder": "logo-set-global-new.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set-global-logos-only": {
+      "slug": "logo-set-global-logos-only",
+      "label": "Module: Logo Set (Global) - logos only",
+      "folder": "logo-set-global-logos-only.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "op-team": {
+      "slug": "op-team",
+      "label": "Module: Operating Team",
+      "folder": "op-team.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "partnerships-form": {
+      "slug": "partnerships-form",
+      "label": "Module: Partnerships Form",
+      "folder": "partnerships-form.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pricing-card": {
+      "slug": "pricing-card",
+      "label": "Module: Pricing Cards",
+      "folder": "pricing-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "results-list": {
+      "slug": "results-list",
+      "label": "Module: Results List",
+      "folder": "results-list.module",
+      "pageCount": 47,
+      "used": true
+    },
+    "roi-calculator": {
+      "slug": "roi-calculator",
+      "label": "Module: ROI Calculator",
+      "folder": "roi-calculator.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "rotating-text": {
+      "slug": "rotating-text",
+      "label": "Module: Rotating Text",
+      "folder": "rotating-text.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "rp-pricing-card": {
+      "slug": "rp-pricing-card",
+      "label": "Module: RP Pricing Card",
+      "folder": "rp-pricing-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "service-detail": {
+      "slug": "service-detail",
+      "label": "Module: Service Detail",
+      "folder": "service-detail.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "service-list": {
+      "slug": "service-list",
+      "label": "Module: Service List",
+      "folder": "service-list.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "stat": {
+      "slug": "stat",
+      "label": "Module: Stats",
+      "folder": "stat.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "stats-set": {
+      "slug": "stats-set",
+      "label": "Module: Stats Set",
+      "folder": "stats-set.module",
+      "pageCount": 12,
+      "used": true
+    },
+    "stats-set-stacked": {
+      "slug": "stats-set-stacked",
+      "label": "Module: Stats Set Stacked",
+      "folder": "stats-set-stacked.module",
+      "pageCount": 5,
+      "used": true
+    },
+    "testimonial-carousel": {
+      "slug": "testimonial-carousel",
+      "label": "Module: Testimonial Carousel",
+      "folder": "testimonial-carousel.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "text-list-feed": {
+      "slug": "text-list-feed",
+      "label": "Module: Text list feed",
+      "folder": "text-list-feed.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "video-reel": {
+      "slug": "video-reel",
+      "label": "Module: Video reel",
+      "folder": "video-reel.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "social-icons-set": {
+      "slug": "social-icons-set",
+      "label": "Modules: Social Icons Set",
+      "folder": "social-icons-set.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "monthly-features": {
+      "slug": "monthly-features",
+      "label": "Monthly Features",
+      "folder": "monthly-features.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "quote-new": {
+      "slug": "quote-new",
+      "label": "New Quote",
+      "folder": "quote-new.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "new-roi-calculator": {
+      "slug": "new-roi-calculator",
+      "label": "New ROI Calculator",
+      "folder": "new-roi-calculator.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "open-jobs": {
+      "slug": "open-jobs",
+      "label": "Open Jobs",
+      "folder": "open-jobs.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "blog-sidebar-anchor-links": {
+      "slug": "blog-sidebar-anchor-links",
+      "label": "Post Sidebar Anchor Links",
+      "folder": "blog-sidebar-anchor-links.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "sections": {
+      "slug": "sections",
+      "label": "Pricing section",
+      "folder": "sections.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "Pricing Widget": {
+      "slug": "Pricing Widget",
+      "label": "Pricing Widget",
+      "folder": "Pricing Widget.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "product-launch-card": {
+      "slug": "product-launch-card",
+      "label": "Product Launch Card",
+      "folder": "product-launch-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-arc-chart": {
+      "slug": "pulse-arc-chart",
+      "label": "Pulse Arc Chart",
+      "folder": "pulse-arc-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-bar-chart": {
+      "slug": "pulse-bar-chart",
+      "label": "Pulse Bar Chart",
+      "folder": "pulse-bar-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-circle-chart": {
+      "slug": "pulse-circle-chart",
+      "label": "Pulse Circle Chart",
+      "folder": "pulse-circle-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-half-circle-chart": {
+      "slug": "pulse-half-circle-chart",
+      "label": "Pulse Half Circle Chart",
+      "folder": "pulse-half-circle-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-hero-title": {
+      "slug": "pulse-hero-title",
+      "label": "Pulse Hero Title",
+      "folder": "pulse-hero-title.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-key-takeaways": {
+      "slug": "pulse-key-takeaways",
+      "label": "Pulse Key Takeaways",
+      "folder": "pulse-key-takeaways.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-line-chart": {
+      "slug": "pulse-line-chart",
+      "label": "Pulse Line Chart",
+      "folder": "pulse-line-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-pie-chart": {
+      "slug": "pulse-pie-chart",
+      "label": "Pulse Pie Chart",
+      "folder": "pulse-pie-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-pizza-chart": {
+      "slug": "pulse-pizza-chart",
+      "label": "Pulse Pizza Chart",
+      "folder": "pulse-pizza-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-radar-chart": {
+      "slug": "pulse-radar-chart",
+      "label": "Pulse Radar Chart",
+      "folder": "pulse-radar-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-report-heading": {
+      "slug": "pulse-report-heading",
+      "label": "Pulse Report Heading",
+      "folder": "pulse-report-heading.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-section-heading": {
+      "slug": "pulse-section-heading",
+      "label": "Pulse Section Heading",
+      "folder": "pulse-section-heading.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-stat-card": {
+      "slug": "pulse-stat-card",
+      "label": "Pulse Stat Card",
+      "folder": "pulse-stat-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-wave-animation": {
+      "slug": "pulse-wave-animation",
+      "label": "Pulse Wave Animation",
+      "folder": "pulse-wave-animation.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "quote": {
+      "slug": "quote",
+      "label": "Quote",
+      "folder": "quote.module",
+      "pageCount": 44,
+      "used": true
+    },
+    "range-slider": {
+      "slug": "range-slider",
+      "label": "Range Slider",
+      "folder": "range-slider.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "reports": {
+      "slug": "reports",
+      "label": "Reports",
+      "folder": "reports.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "search_input": {
+      "slug": "search_input",
+      "label": "search_input copy",
+      "folder": "search_input.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "search_results": {
+      "slug": "search_results",
+      "label": "search_results",
+      "folder": "search_results.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "social-follow": {
+      "slug": "social-follow",
+      "label": "social-follow",
+      "folder": "social-follow.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "special-heading": {
+      "slug": "special-heading",
+      "label": "Special Heading",
+      "folder": "special-heading.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "special-intro": {
+      "slug": "special-intro",
+      "label": "Special Intro",
+      "folder": "special-intro.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "special-metric": {
+      "slug": "special-metric",
+      "label": "Special Metric",
+      "folder": "special-metric.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "features-stacked-content": {
+      "slug": "features-stacked-content",
+      "label": "Stacked Content Block",
+      "folder": "features-stacked-content.module",
+      "pageCount": 87,
+      "used": true
+    },
+    "stacked-images": {
+      "slug": "stacked-images",
+      "label": "Stacked Images",
+      "folder": "stacked-images.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "tabs": {
+      "slug": "tabs",
+      "label": "Tabs",
+      "folder": "tabs.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "testimonial-slider": {
+      "slug": "testimonial-slider",
+      "label": "Testimonial slider",
+      "folder": "testimonial-slider.module",
+      "pageCount": 12,
+      "used": true
+    },
+    "testimonial-slider-alt": {
+      "slug": "testimonial-slider-alt",
+      "label": "Testimonial slider Alternate",
+      "folder": "testimonial-slider-alt.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "text-banner": {
+      "slug": "text-banner",
+      "label": "Text Banner",
+      "folder": "text-banner.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "trending-posts": {
+      "slug": "trending-posts",
+      "label": "Trending Posts",
+      "folder": "trending-posts.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "Usercentrics test": {
+      "slug": "Usercentrics test",
+      "label": "Usercentrics test",
+      "folder": "Usercentrics test.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "video-hero": {
+      "slug": "video-hero",
+      "label": "Video Hero",
+      "folder": "video-hero.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-user-review": {
+      "slug": "widget-user-review",
+      "label": "widget-user-review",
+      "folder": "widget-user-review.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "callout-with-image": {
+      "slug": "callout-with-image",
+      "label": "Widget: Callout with image",
+      "folder": "callout-with-image.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-gx-show": {
+      "slug": "widget-gx-show",
+      "label": "Widget: GX Show",
+      "folder": "widget-gx-show.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-industry-rating": {
+      "slug": "widget-industry-rating",
+      "label": "Widget: Industry Rating",
+      "folder": "widget-industry-rating.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-group": {
+      "slug": "widget-group",
+      "label": "Widgets: Widget Group",
+      "folder": "widget-group.module",
+      "pageCount": 6,
+      "used": true
+    }
+  },
+  "sections": {
+    "s-4-bullet-content": {
+      "slug": "s-4-bullet-content",
+      "label": "4 Bullets Content",
+      "file": "s-4-bullet-content.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-aurora-background": {
+      "slug": "s-aurora-background",
+      "label": "Aurora Background",
+      "file": "s-aurora-background.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-case-study": {
+      "slug": "s-case-study",
+      "label": "Case Study",
+      "file": "s-case-study.html",
+      "pageCount": 19,
+      "used": true
+    },
+    "s-comparison": {
+      "slug": "s-comparison",
+      "label": "Comparison",
+      "file": "s-comparison.html",
+      "pageCount": 22,
+      "used": true
+    },
+    "s-customer-stories": {
+      "slug": "s-customer-stories",
+      "label": "Customer Stories",
+      "file": "s-customer-stories.html",
+      "pageCount": 6,
+      "used": true
+    },
+    "s-event-booth-programming": {
+      "slug": "s-event-booth-programming",
+      "label": "Event Listings",
+      "file": "s-event-booth-programming.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-event-listings": {
+      "slug": "s-event-listings",
+      "label": "Event Listings",
+      "file": "s-event-listings.html",
+      "pageCount": 14,
+      "used": true
+    },
+    "s-event-premium-header": {
+      "slug": "s-event-premium-header",
+      "label": "Case Study",
+      "file": "s-event-premium-header.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-featured-image": {
+      "slug": "s-featured-image",
+      "label": "Featured Image",
+      "file": "s-featured-image.html",
+      "pageCount": 110,
+      "used": true
+    },
+    "s-features-horizontal-slider": {
+      "slug": "s-features-horizontal-slider",
+      "label": "Features Horizontal Slider content",
+      "file": "s-features-horizontal-slider.html",
+      "pageCount": 9,
+      "used": true
+    },
+    "s-features-stacked-content": {
+      "slug": "s-features-stacked-content",
+      "label": "Features Stacked content",
+      "file": "s-features-stacked-content.html",
+      "pageCount": 57,
+      "used": true
+    },
+    "s-general-habits": {
+      "slug": "s-general-habits",
+      "label": "General Habits",
+      "file": "s-general-habits.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-get-started": {
+      "slug": "s-get-started",
+      "label": "Get started",
+      "file": "s-get-started.html",
+      "pageCount": 16,
+      "used": true
+    },
+    "s-hero-partner": {
+      "slug": "s-hero-partner",
+      "label": "Hero Partner",
+      "file": "s-hero-partner.html",
+      "pageCount": 11,
+      "used": true
+    },
+    "s-hero-product-explainer": {
+      "slug": "s-hero-product-explainer",
+      "label": "Hero Product Explainer",
+      "file": "s-hero-product-explainer.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-hero-product-tour": {
+      "slug": "s-hero-product-tour",
+      "label": "Hero Product Tour",
+      "file": "s-hero-product-tour.html",
+      "pageCount": 19,
+      "used": true
+    },
+    "s-hero": {
+      "slug": "s-hero",
+      "label": "Hero",
+      "file": "s-hero.html",
+      "pageCount": 4,
+      "used": true
+    },
+    "s-industry-rating": {
+      "slug": "s-industry-rating",
+      "label": "Industry Rating",
+      "file": "s-industry-rating.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-industry-selector": {
+      "slug": "s-industry-selector",
+      "label": "Industry Selector",
+      "file": "s-industry-selector.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-info-image-left": {
+      "slug": "s-info-image-left",
+      "label": "Info with landscape image on the left",
+      "file": "s-info-image-left.html",
+      "pageCount": 80,
+      "used": true
+    },
+    "s-info-image-right": {
+      "slug": "s-info-image-right",
+      "label": "Info with landscape image on the right",
+      "file": "s-info-image-right.html",
+      "pageCount": 5,
+      "used": true
+    },
+    "s-integration-bar": {
+      "slug": "s-integration-bar",
+      "label": "Integration Bar content",
+      "file": "s-integration-bar.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-key-takeaways": {
+      "slug": "s-key-takeaways",
+      "label": "Key Takeaways",
+      "file": "s-key-takeaways.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-logo-set": {
+      "slug": "s-logo-set",
+      "label": "Logo Set",
+      "file": "s-logo-set.html",
+      "pageCount": 1,
+      "used": true
+    },
+    "s-multi-row-content": {
+      "slug": "s-multi-row-content",
+      "label": "Multi-row content",
+      "file": "s-multi-row-content.html",
+      "pageCount": 77,
+      "used": true
+    },
+    "s-operating-team": {
+      "slug": "s-operating-team",
+      "label": "s-operating-team",
+      "file": "s-operating-team.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-page-header": {
+      "slug": "s-page-header",
+      "label": "Hero",
+      "file": "s-page-header.html",
+      "pageCount": 1,
+      "used": true
+    },
+    "s-pain-points": {
+      "slug": "s-pain-points",
+      "label": "Pain Points",
+      "file": "s-pain-points.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-pulse-hero": {
+      "slug": "s-pulse-hero",
+      "label": "Pulse Report Hero",
+      "file": "s-pulse-hero.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-pulse-insights": {
+      "slug": "s-pulse-insights",
+      "label": "Pulse Data Insights",
+      "file": "s-pulse-insights.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-pulse-toc": {
+      "slug": "s-pulse-toc",
+      "label": "Pulse Table of Contents",
+      "file": "s-pulse-toc.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-quote-two-columns": {
+      "slug": "s-quote-two-columns",
+      "label": "Quote two columns with badges",
+      "file": "s-quote-two-columns.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-rollup": {
+      "slug": "s-rollup",
+      "label": "Rollup",
+      "file": "s-rollup.html",
+      "pageCount": 1,
+      "used": true
+    },
+    "s-services": {
+      "slug": "s-services",
+      "label": "Services detail content",
+      "file": "s-services.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-subscription-plans": {
+      "slug": "s-subscription-plans",
+      "label": "Subscription Plans",
+      "file": "s-subscription-plans.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-technology-innovation": {
+      "slug": "s-technology-innovation",
+      "label": "Technology Innovation",
+      "file": "s-technology-innovation.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-testimonial-carousel": {
+      "slug": "s-testimonial-carousel",
+      "label": "Testimonial Carousel",
+      "file": "s-testimonial-carousel.html",
+      "pageCount": 15,
+      "used": true
+    },
+    "s-two-column": {
+      "slug": "s-two-column",
+      "label": "Two Column Section",
+      "file": "s-two-column.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-useful-links": {
+      "slug": "s-useful-links",
+      "label": "Useful Links content",
+      "file": "s-useful-links.html",
+      "pageCount": 7,
+      "used": true
+    },
+    "s-widgets": {
+      "slug": "s-widgets",
+      "label": "Widgets",
+      "file": "s-widgets.html",
+      "pageCount": 15,
+      "used": true
+    }
+  },
+  "byFolder": {
+    "advanced-image.module": {
+      "slug": "advanced-image",
+      "label": "Advanced Image",
+      "folder": "advanced-image.module",
+      "pageCount": 31,
+      "used": true
+    },
+    "animated-hero.module": {
+      "slug": "animated-hero",
+      "label": "Animated Hero",
+      "folder": "animated-hero.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "animation-lottie.module": {
+      "slug": "animation-lottie",
+      "label": "Animation",
+      "folder": "animation-lottie.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "animation-graphs.module": {
+      "slug": "animation-graphs",
+      "label": "Animation Graphic",
+      "folder": "animation-graphs.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "animation-guest-returning.module": {
+      "slug": "animation-guest-returning",
+      "label": "Animation Guest Returning",
+      "folder": "animation-guest-returning.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "aurora-background.module": {
+      "slug": "aurora-background",
+      "label": "Aurora Background",
+      "folder": "aurora-background.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "auto-play-slider.module": {
+      "slug": "auto-play-slider",
+      "label": "Auto Play Slider",
+      "folder": "auto-play-slider.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "blog-cards.module": {
+      "slug": "blog-cards",
+      "label": "Blog Group Cards",
+      "folder": "blog-cards.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "button-stack.module": {
+      "slug": "button-stack",
+      "label": "button-stack",
+      "folder": "button-stack.module",
+      "pageCount": 150,
+      "used": true
+    },
+    "card.module": {
+      "slug": "card",
+      "label": "card",
+      "folder": "card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "case-study.module": {
+      "slug": "case-study",
+      "label": "Case Study",
+      "folder": "case-study.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "confetti-section.module": {
+      "slug": "confetti-section",
+      "label": "Confetti Section",
+      "folder": "confetti-section.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "cta.module": {
+      "slug": "cta",
+      "label": "CTA Banner",
+      "folder": "cta.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "divider.module": {
+      "slug": "divider",
+      "label": "Divider",
+      "folder": "divider.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "faq2.module": {
+      "slug": "faq2",
+      "label": "FAQ 2",
+      "folder": "faq2.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "faqs.module": {
+      "slug": "FAQs",
+      "label": "FAQs section",
+      "folder": "FAQs.module",
+      "pageCount": 76,
+      "used": true
+    },
+    "feature-block-list.module": {
+      "slug": "feature-block-list",
+      "label": "Feature Block List",
+      "folder": "feature-block-list.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "feature-introduction.module": {
+      "slug": "feature-introduction",
+      "label": "Feature Introduction",
+      "folder": "feature-introduction.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "features-unfold.module": {
+      "slug": "features-unfold",
+      "label": "Features Unfold",
+      "folder": "features-unfold.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "form and hubspot meeting.module": {
+      "slug": "Form and Hubspot meeting",
+      "label": "Form and Hubspot meeting",
+      "folder": "Form and Hubspot meeting.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "tabs/form-test.module": {
+      "slug": "tabs/Form-test",
+      "label": "Form-test",
+      "folder": "tabs/Form-test.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "frame.module": {
+      "slug": "frame",
+      "label": "Frame",
+      "folder": "frame.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-stats french.module": {
+      "slug": "widget-stats french",
+      "label": "French stats",
+      "folder": "widget-stats french.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "header-theme.module": {
+      "slug": "header-theme",
+      "label": "Global: Header theme",
+      "folder": "header-theme.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "heading-composition.module": {
+      "slug": "heading-composition",
+      "label": "heading-composition",
+      "folder": "heading-composition.module",
+      "pageCount": 144,
+      "used": true
+    },
+    "hero-full-introduction.module": {
+      "slug": "hero-full-introduction",
+      "label": "Hero Full Introduction",
+      "folder": "hero-full-introduction.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "icon-cards.module": {
+      "slug": "icon-cards",
+      "label": "Icon Cards",
+      "folder": "icon-cards.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "image-video-modal.module": {
+      "slug": "image-video-modal",
+      "label": "image-video-modal",
+      "folder": "image-video-modal.module",
+      "pageCount": 9,
+      "used": true
+    },
+    "information-card.module": {
+      "slug": "information-card",
+      "label": "Information Card",
+      "folder": "information-card.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "interactive-hero.module": {
+      "slug": "interactive-hero",
+      "label": "Interactive Hero",
+      "folder": "interactive-hero.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "interactive-summary.module": {
+      "slug": "interactive-summary",
+      "label": "Interactive Summary",
+      "folder": "interactive-summary.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "interactive-svg.module": {
+      "slug": "interactive-svg",
+      "label": "Interactive SVG",
+      "folder": "interactive-svg.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "key-takeaways.module": {
+      "slug": "key-takeaways",
+      "label": "Key Takeaways",
+      "folder": "key-takeaways.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "link-cards.module": {
+      "slug": "link-cards",
+      "label": "Link Cards",
+      "folder": "link-cards.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "location.module": {
+      "slug": "location",
+      "label": "Location",
+      "folder": "location.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "logo-set-global-french.module": {
+      "slug": "logo-set-global-french",
+      "label": "Logo Set French",
+      "folder": "logo-set-global-french.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set.module": {
+      "slug": "logo-set",
+      "label": "logo-set",
+      "folder": "logo-set.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set-global.module": {
+      "slug": "logo-set-global",
+      "label": "logo-set-global",
+      "folder": "logo-set-global.module",
+      "pageCount": 90,
+      "used": true
+    },
+    "button.module": {
+      "slug": "button",
+      "label": "Main Button",
+      "folder": "button.module",
+      "pageCount": 109,
+      "used": true
+    },
+    "media-frame.module": {
+      "slug": "media-frame",
+      "label": "Media Frame",
+      "folder": "media-frame.module",
+      "pageCount": 7,
+      "used": true
+    },
+    "mega-menu.module": {
+      "slug": "mega-menu",
+      "label": "mega-menu",
+      "folder": "mega-menu.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "menu.module": {
+      "slug": "menu",
+      "label": "Menu",
+      "folder": "menu.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "metric.module": {
+      "slug": "metric",
+      "label": "Metric",
+      "folder": "metric.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "announcement.module": {
+      "slug": "announcement",
+      "label": "Module: Announcement",
+      "folder": "announcement.module",
+      "pageCount": 150,
+      "used": true
+    },
+    "badge-set.module": {
+      "slug": "badge-set",
+      "label": "Module: Badges Set",
+      "folder": "badge-set.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-blog-posts.module": {
+      "slug": "card-blog-posts",
+      "label": "Module: Card Blog Posts",
+      "folder": "card-blog-posts.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-events.module": {
+      "slug": "card-events",
+      "label": "Module: Card Events",
+      "folder": "card-events.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-partners.module": {
+      "slug": "card-partners",
+      "label": "Module: Card Partners",
+      "folder": "card-partners.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-pricing.module": {
+      "slug": "card-pricing",
+      "label": "Module: Card Pricing",
+      "folder": "card-pricing.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "card-segmentation.module": {
+      "slug": "card-segmentation",
+      "label": "Module: Card Segmentaion",
+      "folder": "card-segmentation.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "checkout-preview-form.module": {
+      "slug": "checkout-preview-form",
+      "label": "Module: Checkout Preview",
+      "folder": "checkout-preview-form.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "comparison-table.module": {
+      "slug": "comparison-table",
+      "label": "Module: Comparison Table",
+      "folder": "comparison-table.module",
+      "pageCount": 21,
+      "used": true
+    },
+    "confetti.module": {
+      "slug": "confetti",
+      "label": "Module: Confetti",
+      "folder": "confetti.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "custom-form.module": {
+      "slug": "custom-form",
+      "label": "Module: Custom Form",
+      "folder": "custom-form.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "events-booth-programming.module": {
+      "slug": "events-booth-programming",
+      "label": "Module: Events Booth Programming",
+      "folder": "events-booth-programming.module",
+      "pageCount": 14,
+      "used": true
+    },
+    "events-listing.module": {
+      "slug": "events-listing",
+      "label": "Module: Events Listing",
+      "folder": "events-listing.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "features-by-month.module": {
+      "slug": "features-by-month",
+      "label": "Module: Features By Month",
+      "folder": "features-by-month.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "features-card.module": {
+      "slug": "features-card",
+      "label": "Module: Features Card",
+      "folder": "features-card.module",
+      "pageCount": 4,
+      "used": true
+    },
+    "features-detail.module": {
+      "slug": "features-detail",
+      "label": "Module: Features Detail",
+      "folder": "features-detail.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "features-horizontal-slider.module": {
+      "slug": "features-horizontal-slider",
+      "label": "Module: Features Horizontal Slider",
+      "folder": "features-horizontal-slider.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "features-pricing-card.module": {
+      "slug": "features-pricing-card",
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing-card.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "features-pricing.module": {
+      "slug": "features-pricing",
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "features-selector-global.module": {
+      "slug": "features-selector-global",
+      "label": "Module: Features Selector (Global)",
+      "folder": "features-selector-global.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "gx-pricing-card.module": {
+      "slug": "gx-pricing-card",
+      "label": "Module: GX Pricing Card",
+      "folder": "gx-pricing-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "icons-list.module": {
+      "slug": "icons-list",
+      "label": "Module: Icons List",
+      "folder": "icons-list.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "image-carousel.module": {
+      "slug": "image-carousel",
+      "label": "Module: Image Carousel",
+      "folder": "image-carousel.module",
+      "pageCount": 3,
+      "used": true
+    },
+    "industry-selector.module": {
+      "slug": "industry-selector",
+      "label": "Module: Industry Selector",
+      "folder": "industry-selector.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "industry-selector-global.module": {
+      "slug": "industry-selector-global",
+      "label": "Module: Industry Selector (Global)",
+      "folder": "industry-selector-global.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "industry-selector-features-global.module": {
+      "slug": "industry-selector-features-global",
+      "label": "Module: Industry Selector Features (Global)",
+      "folder": "industry-selector-features-global.module",
+      "pageCount": 8,
+      "used": true
+    },
+    "logo.module": {
+      "slug": "logo",
+      "label": "Module: Logo",
+      "folder": "logo.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set-global-new.module": {
+      "slug": "logo-set-global-new",
+      "label": "Module: Logo Set (Global)",
+      "folder": "logo-set-global-new.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "logo-set-global-logos-only.module": {
+      "slug": "logo-set-global-logos-only",
+      "label": "Module: Logo Set (Global) - logos only",
+      "folder": "logo-set-global-logos-only.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "op-team.module": {
+      "slug": "op-team",
+      "label": "Module: Operating Team",
+      "folder": "op-team.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "partnerships-form.module": {
+      "slug": "partnerships-form",
+      "label": "Module: Partnerships Form",
+      "folder": "partnerships-form.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pricing-card.module": {
+      "slug": "pricing-card",
+      "label": "Module: Pricing Cards",
+      "folder": "pricing-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "results-list.module": {
+      "slug": "results-list",
+      "label": "Module: Results List",
+      "folder": "results-list.module",
+      "pageCount": 47,
+      "used": true
+    },
+    "roi-calculator.module": {
+      "slug": "roi-calculator",
+      "label": "Module: ROI Calculator",
+      "folder": "roi-calculator.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "rotating-text.module": {
+      "slug": "rotating-text",
+      "label": "Module: Rotating Text",
+      "folder": "rotating-text.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "rp-pricing-card.module": {
+      "slug": "rp-pricing-card",
+      "label": "Module: RP Pricing Card",
+      "folder": "rp-pricing-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "service-detail.module": {
+      "slug": "service-detail",
+      "label": "Module: Service Detail",
+      "folder": "service-detail.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "service-list.module": {
+      "slug": "service-list",
+      "label": "Module: Service List",
+      "folder": "service-list.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "stat.module": {
+      "slug": "stat",
+      "label": "Module: Stats",
+      "folder": "stat.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "stats-set.module": {
+      "slug": "stats-set",
+      "label": "Module: Stats Set",
+      "folder": "stats-set.module",
+      "pageCount": 12,
+      "used": true
+    },
+    "stats-set-stacked.module": {
+      "slug": "stats-set-stacked",
+      "label": "Module: Stats Set Stacked",
+      "folder": "stats-set-stacked.module",
+      "pageCount": 5,
+      "used": true
+    },
+    "testimonial-carousel.module": {
+      "slug": "testimonial-carousel",
+      "label": "Module: Testimonial Carousel",
+      "folder": "testimonial-carousel.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "text-list-feed.module": {
+      "slug": "text-list-feed",
+      "label": "Module: Text list feed",
+      "folder": "text-list-feed.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "video-reel.module": {
+      "slug": "video-reel",
+      "label": "Module: Video reel",
+      "folder": "video-reel.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "social-icons-set.module": {
+      "slug": "social-icons-set",
+      "label": "Modules: Social Icons Set",
+      "folder": "social-icons-set.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "monthly-features.module": {
+      "slug": "monthly-features",
+      "label": "Monthly Features",
+      "folder": "monthly-features.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "quote-new.module": {
+      "slug": "quote-new",
+      "label": "New Quote",
+      "folder": "quote-new.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "new-roi-calculator.module": {
+      "slug": "new-roi-calculator",
+      "label": "New ROI Calculator",
+      "folder": "new-roi-calculator.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "open-jobs.module": {
+      "slug": "open-jobs",
+      "label": "Open Jobs",
+      "folder": "open-jobs.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "blog-sidebar-anchor-links.module": {
+      "slug": "blog-sidebar-anchor-links",
+      "label": "Post Sidebar Anchor Links",
+      "folder": "blog-sidebar-anchor-links.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "sections.module": {
+      "slug": "sections",
+      "label": "Pricing section",
+      "folder": "sections.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pricing widget.module": {
+      "slug": "Pricing Widget",
+      "label": "Pricing Widget",
+      "folder": "Pricing Widget.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "product-launch-card.module": {
+      "slug": "product-launch-card",
+      "label": "Product Launch Card",
+      "folder": "product-launch-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-arc-chart.module": {
+      "slug": "pulse-arc-chart",
+      "label": "Pulse Arc Chart",
+      "folder": "pulse-arc-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-bar-chart.module": {
+      "slug": "pulse-bar-chart",
+      "label": "Pulse Bar Chart",
+      "folder": "pulse-bar-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-circle-chart.module": {
+      "slug": "pulse-circle-chart",
+      "label": "Pulse Circle Chart",
+      "folder": "pulse-circle-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-half-circle-chart.module": {
+      "slug": "pulse-half-circle-chart",
+      "label": "Pulse Half Circle Chart",
+      "folder": "pulse-half-circle-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-hero-title.module": {
+      "slug": "pulse-hero-title",
+      "label": "Pulse Hero Title",
+      "folder": "pulse-hero-title.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-key-takeaways.module": {
+      "slug": "pulse-key-takeaways",
+      "label": "Pulse Key Takeaways",
+      "folder": "pulse-key-takeaways.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-line-chart.module": {
+      "slug": "pulse-line-chart",
+      "label": "Pulse Line Chart",
+      "folder": "pulse-line-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-pie-chart.module": {
+      "slug": "pulse-pie-chart",
+      "label": "Pulse Pie Chart",
+      "folder": "pulse-pie-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-pizza-chart.module": {
+      "slug": "pulse-pizza-chart",
+      "label": "Pulse Pizza Chart",
+      "folder": "pulse-pizza-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-radar-chart.module": {
+      "slug": "pulse-radar-chart",
+      "label": "Pulse Radar Chart",
+      "folder": "pulse-radar-chart.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-report-heading.module": {
+      "slug": "pulse-report-heading",
+      "label": "Pulse Report Heading",
+      "folder": "pulse-report-heading.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-section-heading.module": {
+      "slug": "pulse-section-heading",
+      "label": "Pulse Section Heading",
+      "folder": "pulse-section-heading.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-stat-card.module": {
+      "slug": "pulse-stat-card",
+      "label": "Pulse Stat Card",
+      "folder": "pulse-stat-card.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "pulse-wave-animation.module": {
+      "slug": "pulse-wave-animation",
+      "label": "Pulse Wave Animation",
+      "folder": "pulse-wave-animation.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "quote.module": {
+      "slug": "quote",
+      "label": "Quote",
+      "folder": "quote.module",
+      "pageCount": 44,
+      "used": true
+    },
+    "range-slider.module": {
+      "slug": "range-slider",
+      "label": "Range Slider",
+      "folder": "range-slider.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "reports.module": {
+      "slug": "reports",
+      "label": "Reports",
+      "folder": "reports.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "search_input.module": {
+      "slug": "search_input",
+      "label": "search_input copy",
+      "folder": "search_input.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "search_results.module": {
+      "slug": "search_results",
+      "label": "search_results",
+      "folder": "search_results.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "social-follow.module": {
+      "slug": "social-follow",
+      "label": "social-follow",
+      "folder": "social-follow.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "special-heading.module": {
+      "slug": "special-heading",
+      "label": "Special Heading",
+      "folder": "special-heading.module",
+      "pageCount": 2,
+      "used": true
+    },
+    "special-intro.module": {
+      "slug": "special-intro",
+      "label": "Special Intro",
+      "folder": "special-intro.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "special-metric.module": {
+      "slug": "special-metric",
+      "label": "Special Metric",
+      "folder": "special-metric.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "features-stacked-content.module": {
+      "slug": "features-stacked-content",
+      "label": "Stacked Content Block",
+      "folder": "features-stacked-content.module",
+      "pageCount": 87,
+      "used": true
+    },
+    "stacked-images.module": {
+      "slug": "stacked-images",
+      "label": "Stacked Images",
+      "folder": "stacked-images.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "tabs.module": {
+      "slug": "tabs",
+      "label": "Tabs",
+      "folder": "tabs.module",
+      "pageCount": 1,
+      "used": true
+    },
+    "testimonial-slider.module": {
+      "slug": "testimonial-slider",
+      "label": "Testimonial slider",
+      "folder": "testimonial-slider.module",
+      "pageCount": 12,
+      "used": true
+    },
+    "testimonial-slider-alt.module": {
+      "slug": "testimonial-slider-alt",
+      "label": "Testimonial slider Alternate",
+      "folder": "testimonial-slider-alt.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "text-banner.module": {
+      "slug": "text-banner",
+      "label": "Text Banner",
+      "folder": "text-banner.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "trending-posts.module": {
+      "slug": "trending-posts",
+      "label": "Trending Posts",
+      "folder": "trending-posts.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "usercentrics test.module": {
+      "slug": "Usercentrics test",
+      "label": "Usercentrics test",
+      "folder": "Usercentrics test.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "video-hero.module": {
+      "slug": "video-hero",
+      "label": "Video Hero",
+      "folder": "video-hero.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-user-review.module": {
+      "slug": "widget-user-review",
+      "label": "widget-user-review",
+      "folder": "widget-user-review.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "callout-with-image.module": {
+      "slug": "callout-with-image",
+      "label": "Widget: Callout with image",
+      "folder": "callout-with-image.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-gx-show.module": {
+      "slug": "widget-gx-show",
+      "label": "Widget: GX Show",
+      "folder": "widget-gx-show.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-industry-rating.module": {
+      "slug": "widget-industry-rating",
+      "label": "Widget: Industry Rating",
+      "folder": "widget-industry-rating.module",
+      "pageCount": 0,
+      "used": false
+    },
+    "widget-group.module": {
+      "slug": "widget-group",
+      "label": "Widgets: Widget Group",
+      "folder": "widget-group.module",
+      "pageCount": 6,
+      "used": true
+    }
+  },
+  "byFile": {
+    "s-4-bullet-content.html": {
+      "slug": "s-4-bullet-content",
+      "label": "4 Bullets Content",
+      "file": "s-4-bullet-content.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-aurora-background.html": {
+      "slug": "s-aurora-background",
+      "label": "Aurora Background",
+      "file": "s-aurora-background.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-case-study.html": {
+      "slug": "s-case-study",
+      "label": "Case Study",
+      "file": "s-case-study.html",
+      "pageCount": 19,
+      "used": true
+    },
+    "s-comparison.html": {
+      "slug": "s-comparison",
+      "label": "Comparison",
+      "file": "s-comparison.html",
+      "pageCount": 22,
+      "used": true
+    },
+    "s-customer-stories.html": {
+      "slug": "s-customer-stories",
+      "label": "Customer Stories",
+      "file": "s-customer-stories.html",
+      "pageCount": 6,
+      "used": true
+    },
+    "s-event-booth-programming.html": {
+      "slug": "s-event-booth-programming",
+      "label": "Event Listings",
+      "file": "s-event-booth-programming.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-event-listings.html": {
+      "slug": "s-event-listings",
+      "label": "Event Listings",
+      "file": "s-event-listings.html",
+      "pageCount": 14,
+      "used": true
+    },
+    "s-event-premium-header.html": {
+      "slug": "s-event-premium-header",
+      "label": "Case Study",
+      "file": "s-event-premium-header.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-featured-image.html": {
+      "slug": "s-featured-image",
+      "label": "Featured Image",
+      "file": "s-featured-image.html",
+      "pageCount": 110,
+      "used": true
+    },
+    "s-features-horizontal-slider.html": {
+      "slug": "s-features-horizontal-slider",
+      "label": "Features Horizontal Slider content",
+      "file": "s-features-horizontal-slider.html",
+      "pageCount": 9,
+      "used": true
+    },
+    "s-features-stacked-content.html": {
+      "slug": "s-features-stacked-content",
+      "label": "Features Stacked content",
+      "file": "s-features-stacked-content.html",
+      "pageCount": 57,
+      "used": true
+    },
+    "s-general-habits.html": {
+      "slug": "s-general-habits",
+      "label": "General Habits",
+      "file": "s-general-habits.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-get-started.html": {
+      "slug": "s-get-started",
+      "label": "Get started",
+      "file": "s-get-started.html",
+      "pageCount": 16,
+      "used": true
+    },
+    "s-hero-partner.html": {
+      "slug": "s-hero-partner",
+      "label": "Hero Partner",
+      "file": "s-hero-partner.html",
+      "pageCount": 11,
+      "used": true
+    },
+    "s-hero-product-explainer.html": {
+      "slug": "s-hero-product-explainer",
+      "label": "Hero Product Explainer",
+      "file": "s-hero-product-explainer.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-hero-product-tour.html": {
+      "slug": "s-hero-product-tour",
+      "label": "Hero Product Tour",
+      "file": "s-hero-product-tour.html",
+      "pageCount": 19,
+      "used": true
+    },
+    "s-hero.html": {
+      "slug": "s-hero",
+      "label": "Hero",
+      "file": "s-hero.html",
+      "pageCount": 4,
+      "used": true
+    },
+    "s-industry-rating.html": {
+      "slug": "s-industry-rating",
+      "label": "Industry Rating",
+      "file": "s-industry-rating.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-industry-selector.html": {
+      "slug": "s-industry-selector",
+      "label": "Industry Selector",
+      "file": "s-industry-selector.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-info-image-left.html": {
+      "slug": "s-info-image-left",
+      "label": "Info with landscape image on the left",
+      "file": "s-info-image-left.html",
+      "pageCount": 80,
+      "used": true
+    },
+    "s-info-image-right.html": {
+      "slug": "s-info-image-right",
+      "label": "Info with landscape image on the right",
+      "file": "s-info-image-right.html",
+      "pageCount": 5,
+      "used": true
+    },
+    "s-integration-bar.html": {
+      "slug": "s-integration-bar",
+      "label": "Integration Bar content",
+      "file": "s-integration-bar.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-key-takeaways.html": {
+      "slug": "s-key-takeaways",
+      "label": "Key Takeaways",
+      "file": "s-key-takeaways.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-logo-set.html": {
+      "slug": "s-logo-set",
+      "label": "Logo Set",
+      "file": "s-logo-set.html",
+      "pageCount": 1,
+      "used": true
+    },
+    "s-multi-row-content.html": {
+      "slug": "s-multi-row-content",
+      "label": "Multi-row content",
+      "file": "s-multi-row-content.html",
+      "pageCount": 77,
+      "used": true
+    },
+    "s-operating-team.html": {
+      "slug": "s-operating-team",
+      "label": "s-operating-team",
+      "file": "s-operating-team.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-page-header.html": {
+      "slug": "s-page-header",
+      "label": "Hero",
+      "file": "s-page-header.html",
+      "pageCount": 1,
+      "used": true
+    },
+    "s-pain-points.html": {
+      "slug": "s-pain-points",
+      "label": "Pain Points",
+      "file": "s-pain-points.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-pulse-hero.html": {
+      "slug": "s-pulse-hero",
+      "label": "Pulse Report Hero",
+      "file": "s-pulse-hero.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-pulse-insights.html": {
+      "slug": "s-pulse-insights",
+      "label": "Pulse Data Insights",
+      "file": "s-pulse-insights.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-pulse-toc.html": {
+      "slug": "s-pulse-toc",
+      "label": "Pulse Table of Contents",
+      "file": "s-pulse-toc.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-quote-two-columns.html": {
+      "slug": "s-quote-two-columns",
+      "label": "Quote two columns with badges",
+      "file": "s-quote-two-columns.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-rollup.html": {
+      "slug": "s-rollup",
+      "label": "Rollup",
+      "file": "s-rollup.html",
+      "pageCount": 1,
+      "used": true
+    },
+    "s-services.html": {
+      "slug": "s-services",
+      "label": "Services detail content",
+      "file": "s-services.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-subscription-plans.html": {
+      "slug": "s-subscription-plans",
+      "label": "Subscription Plans",
+      "file": "s-subscription-plans.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-technology-innovation.html": {
+      "slug": "s-technology-innovation",
+      "label": "Technology Innovation",
+      "file": "s-technology-innovation.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-testimonial-carousel.html": {
+      "slug": "s-testimonial-carousel",
+      "label": "Testimonial Carousel",
+      "file": "s-testimonial-carousel.html",
+      "pageCount": 15,
+      "used": true
+    },
+    "s-two-column.html": {
+      "slug": "s-two-column",
+      "label": "Two Column Section",
+      "file": "s-two-column.html",
+      "pageCount": 0,
+      "used": false
+    },
+    "s-useful-links.html": {
+      "slug": "s-useful-links",
+      "label": "Useful Links content",
+      "file": "s-useful-links.html",
+      "pageCount": 7,
+      "used": true
+    },
+    "s-widgets.html": {
+      "slug": "s-widgets",
+      "label": "Widgets",
+      "file": "s-widgets.html",
+      "pageCount": 15,
+      "used": true
+    }
+  },
+  "stats": {
+    "catalogModules": 133,
+    "catalogSections": 40,
+    "usedModules": 46,
+    "unusedModules": 87,
+    "usedSections": 20,
+    "unusedSections": 20
+  }
+}

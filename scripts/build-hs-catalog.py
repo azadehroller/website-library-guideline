@@ -71,6 +71,11 @@ def main():
     catalog = build_catalog()
     OUT.write_text(json.dumps(catalog, indent=2) + "\n")
     print(f"Wrote {OUT.name} — {catalog['moduleCount']} modules, {catalog['sectionCount']} sections")
+    lib_script = ROOT / "scripts" / "build-hs-library.py"
+    if lib_script.exists():
+        import subprocess
+
+        subprocess.run(["python3", str(lib_script)], check=False, cwd=ROOT)
 
 
 if __name__ == "__main__":

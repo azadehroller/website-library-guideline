@@ -573,6 +573,10 @@ def main():
             f"{s.get('uniqueSections',0)} sections)  {pages[url]['title']}"
         )
 
+    usage_script = ROOT / "scripts" / "build-hs-usage.py"
+    if usage_script.exists():
+        subprocess.run(["python3", str(usage_script)], check=False, cwd=ROOT)
+
 
 if __name__ == "__main__":
     main()
