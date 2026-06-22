@@ -14,7 +14,10 @@
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-  body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.5}
+  body{margin:0;font-family:var(--font);color:var(--text);
+    /* background:linear-gradient(160deg,#0960F6 0%,#38F6FF 100%); */
+    background: linear-gradient(160deg,#0960F6 22%,#CEDFFD 72%,#38F6FF 91%);
+    background-attachment:fixed;line-height:1.5}
   a{color:var(--blue-50);text-decoration:none}a:hover{text-decoration:underline}
   :focus-visible{outline:3px solid var(--blue-50);outline-offset:2px;border-radius:4px}
 
@@ -27,8 +30,8 @@
   .tabs button[aria-selected="true"]{background:var(--blue-50);color:#fff;border-color:var(--blue-50)}
 
   .wrap{max-width:var(--maxw);margin:0 auto;padding:26px 22px 60px}
-  .intro h1{font-size:32px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px}
-  .intro p{color:var(--muted);margin:0 0 14px}
+  .intro h1{font-size:32px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px;color:#fff}
+  .intro p{color:rgba(255,255,255,.8);margin:0 0 14px}
   .legend{display:flex;flex-wrap:wrap;gap:18px;background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;font-size:13px}
   .legend .grp{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
   .legend .grp b{color:var(--blue-30);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
@@ -151,7 +154,7 @@
   .idx h3{font-size:14px;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:22px 0 8px}
   .idx .row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:#fff;border:1px solid var(--border);border-radius:8px;margin:6px 0}
   .idx .row .nm{font-weight:700}
-  footer{color:var(--muted);font-size:13px;margin-top:34px}
+  footer{color:var(--text);font-size:13px;margin-top:34px}
   .chev{display:inline-block}
   svg{vertical-align:middle}
   /* type scale table */
@@ -411,7 +414,7 @@
       <span class="count">6 tasks</span>
     </summary>
     <div class="body">
-      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Build these first. The standalone components in Phase 3 are assembled from them. Each task is the same shape: design finalises the Figma component and its variants, dev builds the Sanity schema and the Astro component and wires the tokens.</p>
+      <p style="color:var(--blue-10);font-size:13.5px;margin:6px 0 2px">Build these first. The standalone components in Phase 3 are assembled from them. Each task is the same shape: design finalises the Figma component and its variants, dev builds the Sanity schema and the Astro component and wires the tokens.</p>
 
       <details class="task" id="task-button">
         <summary>
@@ -1499,7 +1502,7 @@
       </div></div>
     </details>
 
-    <!-- 10 · Redirects -->
+    <!-- 10 · Redirects (commented out)
     <details class="phase">
       <summary>
         <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
@@ -1516,6 +1519,7 @@
         <div class="pg-row"><a class="pg-url" href="https://www.roller.software/contact-sales/" target="_blank" rel="noopener">https://www.roller.software/contact-sales/</a></div>
       </div></div>
     </details>
+    -->
 
     <!-- 11 · P&C -->
     <details class="phase">
