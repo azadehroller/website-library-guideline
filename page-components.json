@@ -1,0 +1,3978 @@
+{
+  "version": 3,
+  "audited": "2026-06",
+  "phase": 3,
+  "components": {
+    "twocol": {
+      "id": "task-twocol",
+      "label": "Two-column",
+      "pillClass": "pg-comp-twocol",
+      "detection": "features-stacked-content widget; module_features-stacked-content CSS; features-stacked-content section class",
+      "pageCount": 87,
+      "byCategory": {
+        "Competitors": 15,
+        "Features": 30,
+        "Industries": 26,
+        "Others": 6,
+        "Partners/Integrations": 10
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/business-solutions",
+          "title": "Business Solutions",
+          "category": "Others",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/crm-experience",
+          "title": "CRM Experience",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/digital-waiver-software",
+          "title": "Digital Waivers",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/discount-codes",
+          "title": "Discount Codes",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/giftcard",
+          "title": "Gift Cards",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-feedback-software",
+          "title": "Guest Feedback Software",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-tabs",
+          "title": "Guest Tabs",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/membership-management-software",
+          "title": "Membership Management",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-check-in",
+          "title": "Mobile Check-in App",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-food-and-beverage-ordering",
+          "title": "Mobile Food &amp; Beverage",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/multi-venue-management",
+          "title": "Multi-Venue Management",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/online-ticket-system",
+          "title": "Online Ticketing System",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/packages",
+          "title": "Packages",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/party-booking-software",
+          "title": "Party Booking Software",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/payment-processing-software",
+          "title": "ROLLER Payments",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/point-of-sale-reports",
+          "title": "POS Reports",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/pos",
+          "title": "Point of Sale",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/pricing-strategy",
+          "title": "Pricing Strategy",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/printer-management",
+          "title": "Printer Management",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/self-service-ticketing-kiosk",
+          "title": "Self-Serve Kiosks",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/staff-permissions",
+          "title": "Staff Permissions",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/stock-and-inventory-control",
+          "title": "Stock &amp; Inventory Control",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/cashless-wallets",
+          "title": "Cashless Wallets",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/channel-management",
+          "title": "Channel Management",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/api-integrations",
+          "title": "API Integrations",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/capacity-management",
+          "title": "Capacity Management",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-assistant",
+          "title": "ROLLER iQ",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/products/rfid",
+          "title": "RFID",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/loyalty-programs",
+          "title": "Loyalty Programs",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-experience-agent",
+          "title": "Guest Experience Agent",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital",
+          "category": "Features",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries",
+          "title": "Industries",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/adventure-parks-software",
+          "title": "Adventure Parks",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
+          "title": "Amusement &amp; Theme Parks",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/axe-throwing-software",
+          "title": "Axe Throwing",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/bowling-alley-management-software",
+          "title": "Bowling",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/climbing-gyms-software",
+          "title": "Rock Climbing Gyms",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/escape-room-software",
+          "title": "Escape Rooms",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software",
+          "title": "Family Entertainment Centers",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/go-karting",
+          "title": "Go-Karting",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/ice-skating",
+          "title": "Ice Skating",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/mini-golf",
+          "title": "Mini Golf",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/museums-software",
+          "title": "Museums",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software",
+          "title": "Playground / Softplay",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/skating-rink-software",
+          "title": "Roller Skating",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software",
+          "title": "Trampoline Parks",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/visitor-attractions-software",
+          "title": "Visitor Attractions",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-and-aqua-parks-management-software",
+          "title": "Wake &amp; Aqua Parks",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/water-parks-management-software",
+          "title": "Water Parks",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/zoos-management-software",
+          "title": "Zoos &amp; Aquariums",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software/pos-system",
+          "title": "FEC POS",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software/ticketing-system",
+          "title": "FEC Ticketing",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/playcenter-software/online-ticketing-system",
+          "title": "Playcenter Online Ticketing",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software/play-center-point-of-sale-system",
+          "title": "Playcenter POS",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/pos",
+          "title": "Trampoline POS",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/ticketing-software",
+          "title": "Trampoline Ticketing",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-parks-management-software/ticketing-system",
+          "title": "Wake Park Ticketing",
+          "category": "Industries",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/venue-sumo",
+          "title": "Venue Sumo",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/aluvii",
+          "title": "Aluvii",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/centaman",
+          "title": "Centaman",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/clubspeed",
+          "title": "Clubspeed",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/fareharbor",
+          "title": "FareHarbor",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/fusemetrix",
+          "title": "FuseMetrix",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/lilypad-pos",
+          "title": "LiliPad POS",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/party-center-software",
+          "title": "Party Center Software",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/rock-gym-pro",
+          "title": "Rock Gym Pro",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/rocketrez",
+          "title": "RocketRez",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/booknow-software",
+          "title": "BookNow Software",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/checkfront",
+          "title": "Checkfront",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/bookeo",
+          "title": "Bookeo",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/tickettailor",
+          "title": "Ticket Tailor",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/competitor/racefacer",
+          "title": "RaceFacer",
+          "category": "Competitors",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/acquiringaddendumusa",
+          "title": "https://www.roller.software/acquiringaddendumusa",
+          "category": "Others",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
+          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando",
+          "category": "Others",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/braintree",
+          "title": "https://www.roller.software/braintree/",
+          "category": "Others",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/support",
+          "title": "Support",
+          "category": "Others",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/fresh-kds",
+          "title": "Fresh KDS",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/workforce.com",
+          "title": "Workforce.com",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/groupon",
+          "title": "Groupon",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/amusement-connect",
+          "title": "Amusement Connect",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/yellow-dog",
+          "title": "Yellow Dog",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/tanda",
+          "title": "Tanda",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/alvarado",
+          "title": "Alvarado",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/centeredge-software-alternative",
+          "title": "ROLLER and Centeredge",
+          "category": "Others",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/redeam",
+          "title": "Redeam",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        },
+        {
+          "url": "https://www.roller.software/partners/volare",
+          "title": "Volare",
+          "category": "Partners/Integrations",
+          "marker": "module_features-stacked-content CSS"
+        }
+      ]
+    },
+    "faq": {
+      "id": "task-faq",
+      "label": "FAQ",
+      "pillClass": "pg-comp-faq",
+      "detection": "dl.faqs; faq-widget; module_FAQs CSS; FAQPage JSON-LD; pricing accordion (js-faq-heading)",
+      "pageCount": 76,
+      "byCategory": {
+        "Competitors": 4,
+        "Features": 30,
+        "Industries": 23,
+        "Other": 1,
+        "Others": 2,
+        "P&C": 1,
+        "Partners/Integrations": 13,
+        "Pricing": 1,
+        "Single Pages": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/get-started",
+          "title": "Get Started",
+          "category": "Single Pages",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/pricing",
+          "title": "Pricing",
+          "category": "Pricing",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features",
+          "title": "Features",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/crm-experience",
+          "title": "CRM Experience",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/digital-waiver-software",
+          "title": "Digital Waivers",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/discount-codes",
+          "title": "Discount Codes",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/giftcard",
+          "title": "Gift Cards",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-feedback-software",
+          "title": "Guest Feedback Software",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-tabs",
+          "title": "Guest Tabs",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/membership-management-software",
+          "title": "Membership Management",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-check-in",
+          "title": "Mobile Check-in App",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/multi-venue-management",
+          "title": "Multi-Venue Management",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/online-ticket-system",
+          "title": "Online Ticketing System",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/packages",
+          "title": "Packages",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/party-booking-software",
+          "title": "Party Booking Software",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/payment-processing-software",
+          "title": "ROLLER Payments",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/point-of-sale-reports",
+          "title": "POS Reports",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/pos",
+          "title": "Point of Sale",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/pricing-strategy",
+          "title": "Pricing Strategy",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/printer-management",
+          "title": "Printer Management",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/self-service-ticketing-kiosk",
+          "title": "Self-Serve Kiosks",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/staff-permissions",
+          "title": "Staff Permissions",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/stock-and-inventory-control",
+          "title": "Stock &amp; Inventory Control",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/cashless-wallets",
+          "title": "Cashless Wallets",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/channel-management",
+          "title": "Channel Management",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/api-integrations",
+          "title": "API Integrations",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/capacity-management",
+          "title": "Capacity Management",
+          "category": "Features",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-assistant",
+          "title": "ROLLER iQ",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/products/rfid",
+          "title": "RFID",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/loyalty-programs",
+          "title": "Loyalty Programs",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-experience-agent",
+          "title": "Guest Experience Agent",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital",
+          "category": "Features",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/industries/adventure-parks-software",
+          "title": "Adventure Parks",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
+          "title": "Amusement &amp; Theme Parks",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/axe-throwing-software",
+          "title": "Axe Throwing",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/bowling-alley-management-software",
+          "title": "Bowling",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/climbing-gyms-software",
+          "title": "Rock Climbing Gyms",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/escape-room-software",
+          "title": "Escape Rooms",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software",
+          "title": "Family Entertainment Centers",
+          "category": "Industries",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/industries/go-karting",
+          "title": "Go-Karting",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/ice-skating",
+          "title": "Ice Skating",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/mini-golf",
+          "title": "Mini Golf",
+          "category": "Industries",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/industries/museums-software",
+          "title": "Museums",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/pickleball-software",
+          "title": "Pickleball",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software",
+          "title": "Playground / Softplay",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/skating-rink-software",
+          "title": "Roller Skating",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software",
+          "title": "Trampoline Parks",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/visitor-attractions-software",
+          "title": "Visitor Attractions",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-and-aqua-parks-management-software",
+          "title": "Wake &amp; Aqua Parks",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/water-parks-management-software",
+          "title": "Water Parks",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/zoos-management-software",
+          "title": "Zoos &amp; Aquariums",
+          "category": "Industries",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software/play-center-point-of-sale-system",
+          "title": "Playcenter POS",
+          "category": "Industries",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/pos",
+          "title": "Trampoline POS",
+          "category": "Industries",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/ticketing-software",
+          "title": "Trampoline Ticketing",
+          "category": "Industries",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-parks-management-software/ticketing-system",
+          "title": "Wake Park Ticketing",
+          "category": "Industries",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/competitor/checkfront",
+          "title": "Checkfront",
+          "category": "Competitors",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/competitor/bookeo",
+          "title": "Bookeo",
+          "category": "Competitors",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/competitor/tickettailor",
+          "title": "Ticket Tailor",
+          "category": "Competitors",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/competitor/racefacer",
+          "title": "RaceFacer",
+          "category": "Competitors",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/amazon-gift-card",
+          "title": "https://www.roller.software/amazon-gift-card",
+          "category": "Others",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/contact-sales",
+          "title": "https://www.roller.software/contact-sales/",
+          "category": "Other",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/people-and-culture/careers-jobs",
+          "title": "Careers",
+          "category": "P&C",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/support",
+          "title": "Support",
+          "category": "Others",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/partners/technology",
+          "title": "Technology Partners",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/service",
+          "title": "Service Partners",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/fresh-kds",
+          "title": "Fresh KDS",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/workforce.com",
+          "title": "Workforce.com",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/groupon",
+          "title": "Groupon",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/amusement-connect",
+          "title": "Amusement Connect",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/campaign-monitor",
+          "title": "Campaign Monitor",
+          "category": "Partners/Integrations",
+          "marker": "dl.faqs"
+        },
+        {
+          "url": "https://www.roller.software/partners/yellow-dog",
+          "title": "Yellow Dog",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/tanda",
+          "title": "Tanda",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/alvarado",
+          "title": "Alvarado",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/redeam",
+          "title": "Redeam",
+          "category": "Partners/Integrations",
+          "marker": "pricing FAQ accordion"
+        },
+        {
+          "url": "https://www.roller.software/partners/volare",
+          "title": "Volare",
+          "category": "Partners/Integrations",
+          "marker": "dl.faqs"
+        }
+      ]
+    },
+    "twocol-bigger": {
+      "id": "task-twocol-bigger",
+      "label": "Two-column \u00b7 bigger left",
+      "pillClass": "pg-comp-twocol-bigger",
+      "detection": "Values page list variation (/about-us/values/)",
+      "pageCount": 1,
+      "byCategory": {
+        "Single Pages": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/about-us/values",
+          "title": "Values",
+          "category": "Single Pages",
+          "marker": "/about-us/values path"
+        }
+      ]
+    },
+    "flat-one-column": {
+      "id": "task-flat-one-column",
+      "label": "Flat one column",
+      "pillClass": "pg-comp-flat-one-column",
+      "detection": "Values page dark flat sections (/about-us/values/)",
+      "pageCount": 1,
+      "byCategory": {
+        "Single Pages": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/about-us/values",
+          "title": "Values",
+          "category": "Single Pages",
+          "marker": "/about-us/values path"
+        }
+      ]
+    },
+    "features-list": {
+      "id": "task-features-list",
+      "label": "Features list",
+      "pillClass": "pg-comp-features-list",
+      "detection": "module_feature-block-list CSS; Values page",
+      "pageCount": 1,
+      "byCategory": {
+        "Single Pages": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/about-us/values",
+          "title": "Values",
+          "category": "Single Pages",
+          "marker": "module_feature-block-list"
+        }
+      ]
+    },
+    "special-hero": {
+      "id": "task-special-hero-introduction",
+      "label": "Special hero introduction",
+      "pillClass": "pg-comp-special-hero",
+      "detection": "module_special-heading; module_special-intro; module_feature-introduction",
+      "pageCount": 3,
+      "byCategory": {
+        "Campaigns": 2,
+        "P&C": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/product-launch/november-2025",
+          "title": "Product Launch Nov 2025",
+          "category": "Campaigns",
+          "marker": "module_special-heading"
+        },
+        {
+          "url": "https://www.roller.software/product-launch/may-2026",
+          "title": "Product Launch May 2026",
+          "category": "Campaigns",
+          "marker": "module_special-heading"
+        },
+        {
+          "url": "https://www.roller.software/people-and-culture/careers-jobs",
+          "title": "Careers",
+          "category": "P&C",
+          "marker": "module_special-intro"
+        }
+      ]
+    },
+    "iconcards": {
+      "id": "task-iconcards",
+      "label": "Icon cards",
+      "pillClass": "pg-comp-iconcards",
+      "detection": "module_icon-cards CSS",
+      "pageCount": 1,
+      "byCategory": {
+        "Campaigns": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/product-launch/november-2025",
+          "title": "Product Launch Nov 2025",
+          "category": "Campaigns",
+          "marker": "module_icon-cards"
+        }
+      ]
+    },
+    "featuresunfold": {
+      "id": "task-featuresunfold",
+      "label": "Features unfold",
+      "pillClass": "pg-comp-featuresunfold",
+      "detection": "module_features-unfold CSS",
+      "pageCount": 1,
+      "byCategory": {
+        "Campaigns": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/product-launch/may-2026",
+          "title": "Product Launch May 2026",
+          "category": "Campaigns",
+          "marker": "module_features-unfold"
+        }
+      ]
+    },
+    "categorylinks": {
+      "id": "task-categorylinks",
+      "label": "Category links",
+      "pillClass": "pg-comp-categorylinks",
+      "detection": "module_link-cards CSS",
+      "pageCount": 1,
+      "byCategory": {
+        "Campaigns": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/product-launch/november-2025",
+          "title": "Product Launch Nov 2025",
+          "category": "Campaigns",
+          "marker": "module_link-cards"
+        }
+      ]
+    },
+    "icon-list-grid": {
+      "id": "task-icon-list-grid",
+      "label": "Icon list grid",
+      "pillClass": "pg-comp-icon-list-grid",
+      "detection": "module_icons-list CSS",
+      "pageCount": 2,
+      "byCategory": {
+        "Features": 1,
+        "Partners/Integrations": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/features/channel-management",
+          "title": "Channel Management",
+          "category": "Features",
+          "marker": "module_icons-list"
+        },
+        {
+          "url": "https://www.roller.software/partners/redeam",
+          "title": "Redeam",
+          "category": "Partners/Integrations",
+          "marker": "module_icons-list"
+        }
+      ]
+    },
+    "cards": {
+      "id": "task-cards",
+      "label": "Cards",
+      "pillClass": "pg-comp-cards",
+      "detection": "module_features-card CSS",
+      "pageCount": 5,
+      "byCategory": {
+        "Others": 4,
+        "Solutions": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/solutions/multi-venue",
+          "title": "Segmentation Groups",
+          "category": "Solutions",
+          "marker": "/solutions/multi-venue path"
+        },
+        {
+          "url": "https://www.roller.software/building-a-world-class-attraction-venue",
+          "title": "Scaling Success",
+          "category": "Others",
+          "marker": "module_features-card"
+        },
+        {
+          "url": "https://www.roller.software/building-a-world-class-attraction-venue-webinar",
+          "title": "Scaling Success (webinar)",
+          "category": "Others",
+          "marker": "module_features-card"
+        },
+        {
+          "url": "https://www.roller.software/business-growth-webinar",
+          "title": "Scaling Success (growth webinar)",
+          "category": "Others",
+          "marker": "module_features-card"
+        },
+        {
+          "url": "https://www.roller.software/business-growth-webinar-watch",
+          "title": "Scaling Success (webinar watch)",
+          "category": "Others",
+          "marker": "module_features-card"
+        }
+      ]
+    },
+    "services-section": {
+      "id": "task-services-section",
+      "label": "Services section",
+      "pillClass": "pg-comp-services-section",
+      "detection": "Professional services page (/professional-services)",
+      "pageCount": 1,
+      "byCategory": {
+        "Others": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/professional-services",
+          "title": "Professional Services",
+          "category": "Others",
+          "marker": "/professional-services path"
+        }
+      ]
+    },
+    "service-detail": {
+      "id": "task-service-detail",
+      "label": "Service detail",
+      "pillClass": "pg-comp-service-detail",
+      "detection": "module_features-detail on /features or /professional-services",
+      "pageCount": 32,
+      "byCategory": {
+        "Features": 31,
+        "Others": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/features",
+          "title": "Features",
+          "category": "Features",
+          "marker": "module_features-detail"
+        },
+        {
+          "url": "https://www.roller.software/features/crm-experience",
+          "title": "CRM Experience",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/digital-waiver-software",
+          "title": "Digital Waivers",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/discount-codes",
+          "title": "Discount Codes",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/giftcard",
+          "title": "Gift Cards",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-feedback-software",
+          "title": "Guest Feedback Software",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-tabs",
+          "title": "Guest Tabs",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/membership-management-software",
+          "title": "Membership Management",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-check-in",
+          "title": "Mobile Check-in App",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-food-and-beverage-ordering",
+          "title": "Mobile Food &amp; Beverage",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/multi-venue-management",
+          "title": "Multi-Venue Management",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/online-ticket-system",
+          "title": "Online Ticketing System",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/packages",
+          "title": "Packages",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/party-booking-software",
+          "title": "Party Booking Software",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/payment-processing-software",
+          "title": "ROLLER Payments",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/point-of-sale-reports",
+          "title": "POS Reports",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/pos",
+          "title": "Point of Sale",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/pos-system",
+          "title": "POS System",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/pricing-strategy",
+          "title": "Pricing Strategy",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/printer-management",
+          "title": "Printer Management",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/self-service-ticketing-kiosk",
+          "title": "Self-Serve Kiosks",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/staff-permissions",
+          "title": "Staff Permissions",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/stock-and-inventory-control",
+          "title": "Stock &amp; Inventory Control",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/cashless-wallets",
+          "title": "Cashless Wallets",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/channel-management",
+          "title": "Channel Management",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/api-integrations",
+          "title": "API Integrations",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/capacity-management",
+          "title": "Capacity Management",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-assistant",
+          "title": "ROLLER iQ",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/loyalty-programs",
+          "title": "Loyalty Programs",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-experience-agent",
+          "title": "Guest Experience Agent",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital",
+          "category": "Features",
+          "marker": "/professional-services path"
+        },
+        {
+          "url": "https://www.roller.software/professional-services",
+          "title": "Professional Services",
+          "category": "Others",
+          "marker": "module_features-detail"
+        }
+      ]
+    },
+    "video-hero": {
+      "id": "task-video-hero-section",
+      "label": "Video hero section",
+      "pillClass": "pg-comp-video-hero",
+      "detection": "module_media-frame CSS (hero video/image frame)",
+      "pageCount": 7,
+      "byCategory": {
+        "Campaigns": 2,
+        "Features": 4,
+        "P&C": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/features/ai-assistant",
+          "title": "ROLLER iQ",
+          "category": "Features",
+          "marker": "module_media-frame"
+        },
+        {
+          "url": "https://www.roller.software/features/loyalty-programs",
+          "title": "Loyalty Programs",
+          "category": "Features",
+          "marker": "module_media-frame"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-experience-agent",
+          "title": "Guest Experience Agent",
+          "category": "Features",
+          "marker": "module_media-frame"
+        },
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital",
+          "category": "Features",
+          "marker": "module_media-frame"
+        },
+        {
+          "url": "https://www.roller.software/product-launch/november-2025",
+          "title": "Product Launch Nov 2025",
+          "category": "Campaigns",
+          "marker": "module_media-frame"
+        },
+        {
+          "url": "https://www.roller.software/product-launch/may-2026",
+          "title": "Product Launch May 2026",
+          "category": "Campaigns",
+          "marker": "module_media-frame"
+        },
+        {
+          "url": "https://www.roller.software/people-and-culture/careers-jobs",
+          "title": "Careers",
+          "category": "P&C",
+          "marker": "module_media-frame"
+        }
+      ]
+    },
+    "pricing-widget": {
+      "id": "task-pricing-widget",
+      "label": "Pricing widget",
+      "pillClass": "pg-comp-pricing-widget",
+      "detection": "module_card-pricing CSS on /pricing/",
+      "pageCount": 1,
+      "byCategory": {
+        "Pricing": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/pricing",
+          "title": "Pricing",
+          "category": "Pricing",
+          "marker": "module_card-pricing"
+        }
+      ]
+    },
+    "addons": {
+      "id": "task-addons",
+      "label": "Addons",
+      "pillClass": "pg-comp-addons",
+      "detection": "module_tabs CSS on /pricing/",
+      "pageCount": 2,
+      "byCategory": {
+        "P&C": 1,
+        "Pricing": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/pricing",
+          "title": "Pricing",
+          "category": "Pricing",
+          "marker": "/pricing path"
+        },
+        {
+          "url": "https://www.roller.software/people-and-culture/careers-jobs",
+          "title": "Careers",
+          "category": "P&C",
+          "marker": "module_tabs"
+        }
+      ]
+    },
+    "stats-section": {
+      "id": "task-stats-section",
+      "label": "Stats section",
+      "pillClass": "pg-comp-stats-section",
+      "detection": "module_stats-set CSS (page-level stats bar, not stacked global widget)",
+      "pageCount": 11,
+      "byCategory": {
+        "Other": 1,
+        "Others": 6,
+        "Single Pages": 1,
+        "Solutions": 3
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/business-solutions",
+          "title": "Business Solutions",
+          "category": "Others",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/get-started",
+          "title": "Get Started",
+          "category": "Single Pages",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/solutions/grow-your-business",
+          "title": "Solutions SBM",
+          "category": "Solutions",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/solutions/enterprise",
+          "title": "Enterprise",
+          "category": "Solutions",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/solutions/multi-venue",
+          "title": "Segmentation Groups",
+          "category": "Solutions",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/2023-rollup",
+          "title": "2024 Year in Review",
+          "category": "Others",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/2024-rollup",
+          "title": "2025 Year in Review",
+          "category": "Others",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/2025-roll-up-year-in-review",
+          "title": "2026 Year in Review",
+          "category": "Others",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/amazon-gift-card",
+          "title": "https://www.roller.software/amazon-gift-card",
+          "category": "Others",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/contact-sales",
+          "title": "https://www.roller.software/contact-sales/",
+          "category": "Other",
+          "marker": "module_stats-set"
+        },
+        {
+          "url": "https://www.roller.software/support",
+          "title": "Support",
+          "category": "Others",
+          "marker": "module_stats-set"
+        }
+      ]
+    },
+    "horizontal-slider": {
+      "id": "task-horizontal-slider",
+      "label": "Horizontal slider",
+      "pillClass": "pg-comp-horizontal-slider",
+      "detection": "features-horizontal-slide widget",
+      "pageCount": 2,
+      "byCategory": {
+        "Features": 1,
+        "Solutions": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/solutions/multi-venue",
+          "title": "Segmentation Groups",
+          "category": "Solutions",
+          "marker": "features-horizontal-slide widget"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-feedback-software",
+          "title": "Guest Feedback Software",
+          "category": "Features",
+          "marker": "features-horizontal-slide widget"
+        }
+      ]
+    },
+    "customer-story": {
+      "id": "task-customer-story",
+      "label": "Customer story carousel",
+      "pillClass": "pg-comp-customer-story",
+      "detection": "HubSpot testimonial module (38732243047_testimonial)",
+      "pageCount": 4,
+      "byCategory": {
+        "Other": 1,
+        "Others": 2,
+        "Single Pages": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/get-started",
+          "title": "Get Started",
+          "category": "Single Pages",
+          "marker": "testimonial module"
+        },
+        {
+          "url": "https://www.roller.software/customer-referral",
+          "title": "Customer Referral",
+          "category": "Others",
+          "marker": "testimonial module"
+        },
+        {
+          "url": "https://www.roller.software/amazon-gift-card",
+          "title": "https://www.roller.software/amazon-gift-card",
+          "category": "Others",
+          "marker": "testimonial module"
+        },
+        {
+          "url": "https://www.roller.software/contact-sales",
+          "title": "https://www.roller.software/contact-sales/",
+          "category": "Other",
+          "marker": "testimonial module"
+        }
+      ]
+    },
+    "use-case": {
+      "id": "task-use-case-section",
+      "label": "Use case section",
+      "pillClass": "pg-comp-use-case",
+      "detection": "module_results-list CSS (case-study / results sidebar)",
+      "pageCount": 45,
+      "byCategory": {
+        "Competitors": 14,
+        "Industries": 24,
+        "Others": 2,
+        "P&C": 1,
+        "Partners/Integrations": 1,
+        "Solutions": 3
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/solutions/grow-your-business",
+          "title": "Solutions SBM",
+          "category": "Solutions",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/solutions/enterprise",
+          "title": "Enterprise",
+          "category": "Solutions",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/solutions/multi-venue",
+          "title": "Segmentation Groups",
+          "category": "Solutions",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/adventure-parks-software",
+          "title": "Adventure Parks",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
+          "title": "Amusement &amp; Theme Parks",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/axe-throwing-software",
+          "title": "Axe Throwing",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/bowling-alley-management-software",
+          "title": "Bowling",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/climbing-gyms-software",
+          "title": "Rock Climbing Gyms",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/escape-room-software",
+          "title": "Escape Rooms",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software",
+          "title": "Family Entertainment Centers",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/go-karting",
+          "title": "Go-Karting",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/ice-skating",
+          "title": "Ice Skating",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/mini-golf",
+          "title": "Mini Golf",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/pickleball-software",
+          "title": "Pickleball",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software",
+          "title": "Playground / Softplay",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/skating-rink-software",
+          "title": "Roller Skating",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/visitor-attractions-software",
+          "title": "Visitor Attractions",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-and-aqua-parks-management-software",
+          "title": "Wake &amp; Aqua Parks",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/water-parks-management-software",
+          "title": "Water Parks",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/zoos-management-software",
+          "title": "Zoos &amp; Aquariums",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software/pos-system",
+          "title": "FEC POS",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software/ticketing-system",
+          "title": "FEC Ticketing",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/playcenter-software/online-ticketing-system",
+          "title": "Playcenter Online Ticketing",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software/play-center-point-of-sale-system",
+          "title": "Playcenter POS",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/pos",
+          "title": "Trampoline POS",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/ticketing-software",
+          "title": "Trampoline Ticketing",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-parks-management-software/ticketing-system",
+          "title": "Wake Park Ticketing",
+          "category": "Industries",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/venue-sumo",
+          "title": "Venue Sumo",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/aluvii",
+          "title": "Aluvii",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/centaman",
+          "title": "Centaman",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/clubspeed",
+          "title": "Clubspeed",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/fareharbor",
+          "title": "FareHarbor",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/fusemetrix",
+          "title": "FuseMetrix",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/lilypad-pos",
+          "title": "LiliPad POS",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/party-center-software",
+          "title": "Party Center Software",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/rock-gym-pro",
+          "title": "Rock Gym Pro",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/rocketrez",
+          "title": "RocketRez",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/checkfront",
+          "title": "Checkfront",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/bookeo",
+          "title": "Bookeo",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/tickettailor",
+          "title": "Ticket Tailor",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/competitor/racefacer",
+          "title": "RaceFacer",
+          "category": "Competitors",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/people-and-culture/careers-jobs",
+          "title": "Careers",
+          "category": "P&C",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/support",
+          "title": "Support",
+          "category": "Others",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/centeredge-software-alternative",
+          "title": "ROLLER and Centeredge",
+          "category": "Others",
+          "marker": "module_results-list"
+        },
+        {
+          "url": "https://www.roller.software/partners/volare",
+          "title": "Volare",
+          "category": "Partners/Integrations",
+          "marker": "module_results-list"
+        }
+      ]
+    },
+    "reports": {
+      "id": "task-reports",
+      "label": "Reports",
+      "pillClass": "pg-comp-reports",
+      "detection": "module_information-card CSS",
+      "pageCount": 1,
+      "byCategory": {
+        "Others": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/2025-roll-up-year-in-review",
+          "title": "2026 Year in Review",
+          "category": "Others",
+          "marker": "module_information-card"
+        }
+      ]
+    },
+    "features-index": {
+      "id": "task-features-index",
+      "label": "Features index",
+      "pillClass": "pg-comp-features-index",
+      "detection": "module_features-detail on /features index",
+      "pageCount": 32,
+      "byCategory": {
+        "Features": 31,
+        "Others": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/features",
+          "title": "Features",
+          "category": "Features",
+          "marker": "module_features-detail"
+        },
+        {
+          "url": "https://www.roller.software/features/crm-experience",
+          "title": "CRM Experience",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/digital-waiver-software",
+          "title": "Digital Waivers",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/discount-codes",
+          "title": "Discount Codes",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/giftcard",
+          "title": "Gift Cards",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-feedback-software",
+          "title": "Guest Feedback Software",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-tabs",
+          "title": "Guest Tabs",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/membership-management-software",
+          "title": "Membership Management",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-check-in",
+          "title": "Mobile Check-in App",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-food-and-beverage-ordering",
+          "title": "Mobile Food &amp; Beverage",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/multi-venue-management",
+          "title": "Multi-Venue Management",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/online-ticket-system",
+          "title": "Online Ticketing System",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/packages",
+          "title": "Packages",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/party-booking-software",
+          "title": "Party Booking Software",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/payment-processing-software",
+          "title": "ROLLER Payments",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/point-of-sale-reports",
+          "title": "POS Reports",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/pos",
+          "title": "Point of Sale",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/pos-system",
+          "title": "POS System",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/pricing-strategy",
+          "title": "Pricing Strategy",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/printer-management",
+          "title": "Printer Management",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/self-service-ticketing-kiosk",
+          "title": "Self-Serve Kiosks",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/staff-permissions",
+          "title": "Staff Permissions",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/stock-and-inventory-control",
+          "title": "Stock &amp; Inventory Control",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/cashless-wallets",
+          "title": "Cashless Wallets",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/channel-management",
+          "title": "Channel Management",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/api-integrations",
+          "title": "API Integrations",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/capacity-management",
+          "title": "Capacity Management",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-assistant",
+          "title": "ROLLER iQ",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/loyalty-programs",
+          "title": "Loyalty Programs",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-experience-agent",
+          "title": "Guest Experience Agent",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital",
+          "category": "Features",
+          "marker": "/features path"
+        },
+        {
+          "url": "https://www.roller.software/professional-services",
+          "title": "Professional Services",
+          "category": "Others",
+          "marker": "module_features-detail"
+        }
+      ]
+    },
+    "dual-quote": {
+      "id": "task-dual-quote",
+      "label": "Dual quote",
+      "pillClass": "pg-comp-dual-quote",
+      "detection": "Two or more module_quote sections on same page",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "announcement-bar": {
+      "id": "task-announcement-bar",
+      "label": "Announcement bar",
+      "pillClass": "pg-comp-announcement-bar",
+      "detection": "module_announcement CSS (site-wide optional banner)",
+      "pageCount": 150,
+      "byCategory": {
+        "Campaigns": 2,
+        "Competitors": 15,
+        "Events": 16,
+        "Features": 32,
+        "Industries": 27,
+        "Legal Pages": 5,
+        "Other": 2,
+        "Others": 29,
+        "P&C": 1,
+        "Partners/Integrations": 13,
+        "Pricing": 1,
+        "Single Pages": 4,
+        "Solutions": 3
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/business-solutions",
+          "title": "Business Solutions",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/about-us",
+          "title": "About Us",
+          "category": "Single Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/get-started",
+          "title": "Get Started",
+          "category": "Single Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/blog",
+          "title": "Blog",
+          "category": "Other",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/pricing",
+          "title": "Pricing",
+          "category": "Pricing",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/demo",
+          "title": "Demo Videos",
+          "category": "Single Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/solutions/grow-your-business",
+          "title": "Solutions SBM",
+          "category": "Solutions",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/solutions/enterprise",
+          "title": "Enterprise",
+          "category": "Solutions",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/solutions/multi-venue",
+          "title": "Segmentation Groups",
+          "category": "Solutions",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features",
+          "title": "Features",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/crm-experience",
+          "title": "CRM Experience",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/digital-waiver-software",
+          "title": "Digital Waivers",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/discount-codes",
+          "title": "Discount Codes",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/giftcard",
+          "title": "Gift Cards",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-feedback-software",
+          "title": "Guest Feedback Software",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-tabs",
+          "title": "Guest Tabs",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/membership-management-software",
+          "title": "Membership Management",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-check-in",
+          "title": "Mobile Check-in App",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/mobile-food-and-beverage-ordering",
+          "title": "Mobile Food &amp; Beverage",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/multi-venue-management",
+          "title": "Multi-Venue Management",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/online-ticket-system",
+          "title": "Online Ticketing System",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/packages",
+          "title": "Packages",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/party-booking-software",
+          "title": "Party Booking Software",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/payment-processing-software",
+          "title": "ROLLER Payments",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/point-of-sale-reports",
+          "title": "POS Reports",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/pos",
+          "title": "Point of Sale",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/pos-system",
+          "title": "POS System",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/pricing-strategy",
+          "title": "Pricing Strategy",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/printer-management",
+          "title": "Printer Management",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/self-service-ticketing-kiosk",
+          "title": "Self-Serve Kiosks",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/staff-permissions",
+          "title": "Staff Permissions",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/stock-and-inventory-control",
+          "title": "Stock &amp; Inventory Control",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/cashless-wallets",
+          "title": "Cashless Wallets",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/channel-management",
+          "title": "Channel Management",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/api-integrations",
+          "title": "API Integrations",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/capacity-management",
+          "title": "Capacity Management",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-assistant",
+          "title": "ROLLER iQ",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/products/rfid",
+          "title": "RFID",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/loyalty-programs",
+          "title": "Loyalty Programs",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-experience-agent",
+          "title": "Guest Experience Agent",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital",
+          "category": "Features",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries",
+          "title": "Industries",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/adventure-parks-software",
+          "title": "Adventure Parks",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
+          "title": "Amusement &amp; Theme Parks",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/axe-throwing-software",
+          "title": "Axe Throwing",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/bowling-alley-management-software",
+          "title": "Bowling",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/climbing-gyms-software",
+          "title": "Rock Climbing Gyms",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/escape-room-software",
+          "title": "Escape Rooms",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software",
+          "title": "Family Entertainment Centers",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/go-karting",
+          "title": "Go-Karting",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/ice-skating",
+          "title": "Ice Skating",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/mini-golf",
+          "title": "Mini Golf",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/museums-software",
+          "title": "Museums",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/pickleball-software",
+          "title": "Pickleball",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software",
+          "title": "Playground / Softplay",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/skating-rink-software",
+          "title": "Roller Skating",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software",
+          "title": "Trampoline Parks",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/visitor-attractions-software",
+          "title": "Visitor Attractions",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-and-aqua-parks-management-software",
+          "title": "Wake &amp; Aqua Parks",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/water-parks-management-software",
+          "title": "Water Parks",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/zoos-management-software",
+          "title": "Zoos &amp; Aquariums",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software/pos-system",
+          "title": "FEC POS",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software/ticketing-system",
+          "title": "FEC Ticketing",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/playcenter-software/online-ticketing-system",
+          "title": "Playcenter Online Ticketing",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software/play-center-point-of-sale-system",
+          "title": "Playcenter POS",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/pos",
+          "title": "Trampoline POS",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software/ticketing-software",
+          "title": "Trampoline Ticketing",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-parks-management-software/ticketing-system",
+          "title": "Wake Park Ticketing",
+          "category": "Industries",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/venue-sumo",
+          "title": "Venue Sumo",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/aluvii",
+          "title": "Aluvii",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/centaman",
+          "title": "Centaman",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/clubspeed",
+          "title": "Clubspeed",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/fareharbor",
+          "title": "FareHarbor",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/fusemetrix",
+          "title": "FuseMetrix",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/lilypad-pos",
+          "title": "LiliPad POS",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/party-center-software",
+          "title": "Party Center Software",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/rock-gym-pro",
+          "title": "Rock Gym Pro",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/rocketrez",
+          "title": "RocketRez",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/booknow-software",
+          "title": "BookNow Software",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/checkfront",
+          "title": "Checkfront",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/bookeo",
+          "title": "Bookeo",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/tickettailor",
+          "title": "Ticket Tailor",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/competitor/racefacer",
+          "title": "RaceFacer",
+          "category": "Competitors",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/2023-rollup",
+          "title": "2024 Year in Review",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/2024-rollup",
+          "title": "2025 Year in Review",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/2025-roll-up-year-in-review",
+          "title": "2026 Year in Review",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/building-a-world-class-attraction-venue",
+          "title": "Scaling Success",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/building-a-world-class-attraction-venue-webinar",
+          "title": "Scaling Success (webinar)",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/business-growth-webinar",
+          "title": "Scaling Success (growth webinar)",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/business-growth-webinar-watch",
+          "title": "Scaling Success (webinar watch)",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/product-launch/november-2025",
+          "title": "Product Launch Nov 2025",
+          "category": "Campaigns",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/product-launch/may-2026",
+          "title": "Product Launch May 2026",
+          "category": "Campaigns",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events",
+          "title": "Events Hub",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/aalara2024",
+          "title": "AALARA 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/aip2024-0",
+          "title": "AIP Awards 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/amusement360",
+          "title": "Amusement 360 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/amusementexpo2025",
+          "title": "Amusement Expo 2026",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/cwa2024",
+          "title": "CWA 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/experienceacademy",
+          "title": "Experience Academy 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/familyattractions2024",
+          "title": "Family Attractions Expo 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/iaapaasia2024",
+          "title": "IAAPA Asia 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/iaapaeurope2024",
+          "title": "IAAPA Europe 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/iaapaexpo2024",
+          "title": "IAAPA Orlando 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/iaapafecsummit2025",
+          "title": "IAAPA FEC Summit 2026",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/iatp2024",
+          "title": "IATP 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/rsa2025",
+          "title": "RSA 2026",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/sk8expo",
+          "title": "SK8 Expo 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/events/worldwaterpark2024",
+          "title": "WWA 2025",
+          "category": "Events",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/2026-benchmark-report",
+          "title": "2026 Benchmark Report",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/2025-pulse-report",
+          "title": "Pulse Report",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/guest-experience-playbook",
+          "title": "Guest Experience Playbook",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/customer-referral",
+          "title": "Customer Referral",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/analytics-ebook",
+          "title": "Analytics eBook",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/chatgpt-ebook",
+          "title": "ChatGPT eBook",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/membership-ebook",
+          "title": "Membership eBook",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/gx-show-ebook",
+          "title": "GX Show eBook",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/2025-roller-skating-trends-report",
+          "title": "Roller Skating Trends 2026",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/2025-water-park-trends-report",
+          "title": "Water Park Trends 2026",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/expanding-your-business-playbook",
+          "title": "Expanding Your Business Playbook",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/opening-your-first-attraction-playbook",
+          "title": "Opening Your First Attraction",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/mystery-shopper-report",
+          "title": "Mystery Shopper Report",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/data-processing-agreement",
+          "title": "https://www.roller.software/data-processing-agreement/",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/acquiringaddendumusa",
+          "title": "https://www.roller.software/acquiringaddendumusa",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/amazon-gift-card",
+          "title": "https://www.roller.software/amazon-gift-card",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
+          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/braintree",
+          "title": "https://www.roller.software/braintree/",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/contact-sales",
+          "title": "https://www.roller.software/contact-sales/",
+          "category": "Other",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/people-and-culture/careers-jobs",
+          "title": "Careers",
+          "category": "P&C",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/about-us/values",
+          "title": "Values",
+          "category": "Single Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/job-applicant-privacy-policy",
+          "title": "Job Applicant Privacy Policy",
+          "category": "Legal Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/support",
+          "title": "Support",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/api-terms-of-service",
+          "title": "API Terms of Use",
+          "category": "Legal Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/professional-services",
+          "title": "Professional Services",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/dpa",
+          "title": "Data Processing Agreement",
+          "category": "Legal Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/master-terms",
+          "title": "Terms of Service",
+          "category": "Legal Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/privacy-policy",
+          "title": "Privacy Policy",
+          "category": "Legal Pages",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/technology",
+          "title": "Technology Partners",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/service",
+          "title": "Service Partners",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/fresh-kds",
+          "title": "Fresh KDS",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/workforce.com",
+          "title": "Workforce.com",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/groupon",
+          "title": "Groupon",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/amusement-connect",
+          "title": "Amusement Connect",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/campaign-monitor",
+          "title": "Campaign Monitor",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/yellow-dog",
+          "title": "Yellow Dog",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/tanda",
+          "title": "Tanda",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/alvarado",
+          "title": "Alvarado",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/centeredge-software-alternative",
+          "title": "ROLLER and Centeredge",
+          "category": "Others",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/redeam",
+          "title": "Redeam",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        },
+        {
+          "url": "https://www.roller.software/partners/volare",
+          "title": "Volare",
+          "category": "Partners/Integrations",
+          "marker": "module_announcement"
+        }
+      ]
+    },
+    "twocol-text-heavy": {
+      "id": "task-twocol-text-heavy",
+      "label": "Two-column \u00b7 text-heavy",
+      "pillClass": "pg-comp-twocol-text-heavy",
+      "detection": "No unique HubSpot marker yet \u2014 variant of Two-column",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "centeredtext": {
+      "id": "task-centeredtext",
+      "label": "Centered text block",
+      "pillClass": "pg-comp-centeredtext",
+      "detection": "No unique HubSpot marker yet",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "image-icon-grid-list": {
+      "id": "task-image-icon-grid-list",
+      "label": "Image with icon grid list",
+      "pillClass": "pg-comp-image-icon-grid-list",
+      "detection": "No unique HubSpot marker yet",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "introduction-summary": {
+      "id": "task-introduction-summary",
+      "label": "Introduction summary",
+      "pillClass": "pg-comp-introduction-summary",
+      "detection": "No unique HubSpot marker yet",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "form-section": {
+      "id": "task-form-section",
+      "label": "Form section",
+      "pillClass": "pg-comp-form-section",
+      "detection": "Uses shared custom-form module site-wide",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "cta": {
+      "id": "task-cta",
+      "label": "CTA section",
+      "pillClass": "pg-comp-cta",
+      "detection": "Uses shared conversion modules site-wide",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "industry-vertical": {
+      "id": "task-industry-vertical",
+      "label": "Industry vertical section",
+      "pillClass": "pg-comp-industry-vertical",
+      "detection": "No unique HubSpot marker yet",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    },
+    "implementation-packages": {
+      "id": "task-implementation-packages",
+      "label": "Implementation packages",
+      "pillClass": "pg-comp-implementation-packages",
+      "detection": "No unique HubSpot marker yet",
+      "pageCount": 0,
+      "byCategory": {},
+      "pages": []
+    }
+  },
+  "pages": {
+    "https://www.roller.software/2023-rollup": [
+      "announcement-bar",
+      "stats-section"
+    ],
+    "https://www.roller.software/2024-rollup": [
+      "announcement-bar",
+      "stats-section"
+    ],
+    "https://www.roller.software/2025-pulse-report": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/2025-roll-up-year-in-review": [
+      "announcement-bar",
+      "reports",
+      "stats-section"
+    ],
+    "https://www.roller.software/2025-roller-skating-trends-report": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/2025-water-park-trends-report": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/2026-benchmark-report": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/about-us": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/about-us/values": [
+      "announcement-bar",
+      "features-list",
+      "flat-one-column",
+      "twocol-bigger"
+    ],
+    "https://www.roller.software/acquiringaddendumusa": [
+      "announcement-bar",
+      "twocol"
+    ],
+    "https://www.roller.software/amazon-gift-card": [
+      "announcement-bar",
+      "customer-story",
+      "faq",
+      "stats-section"
+    ],
+    "https://www.roller.software/analytics-ebook": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/api-terms-of-service": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/blog": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/braintree": [
+      "announcement-bar",
+      "twocol"
+    ],
+    "https://www.roller.software/building-a-world-class-attraction-venue": [
+      "announcement-bar",
+      "cards"
+    ],
+    "https://www.roller.software/building-a-world-class-attraction-venue-webinar": [
+      "announcement-bar",
+      "cards"
+    ],
+    "https://www.roller.software/business-growth-webinar": [
+      "announcement-bar",
+      "cards"
+    ],
+    "https://www.roller.software/business-growth-webinar-watch": [
+      "announcement-bar",
+      "cards"
+    ],
+    "https://www.roller.software/business-solutions": [
+      "announcement-bar",
+      "stats-section",
+      "twocol"
+    ],
+    "https://www.roller.software/centeredge-software-alternative": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/chatgpt-ebook": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/competitor/aluvii": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/bookeo": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/booknow-software": [
+      "announcement-bar",
+      "twocol"
+    ],
+    "https://www.roller.software/competitor/centaman": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/checkfront": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/clubspeed": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/fareharbor": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/fusemetrix": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/lilypad-pos": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/party-center-software": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/racefacer": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/rock-gym-pro": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/rocketrez": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/tickettailor": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/competitor/venue-sumo": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/contact-sales": [
+      "announcement-bar",
+      "customer-story",
+      "faq",
+      "stats-section"
+    ],
+    "https://www.roller.software/customer-referral": [
+      "announcement-bar",
+      "customer-story"
+    ],
+    "https://www.roller.software/data-processing-agreement": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/demo": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/dpa": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/aalara2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/aip2024-0": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/amusement360": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/amusementexpo2025": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/cwa2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/experienceacademy": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/familyattractions2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/iaapaasia2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/iaapaeurope2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/iaapaexpo2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/iaapafecsummit2025": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/iatp2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/rsa2025": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/sk8expo": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/events/worldwaterpark2024": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/expanding-your-business-playbook": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/features": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail"
+    ],
+    "https://www.roller.software/features/ai-assistant": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol",
+      "video-hero"
+    ],
+    "https://www.roller.software/features/api-integrations": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/capacity-management": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/capital": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol",
+      "video-hero"
+    ],
+    "https://www.roller.software/features/cashless-wallets": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/channel-management": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "icon-list-grid",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/crm-experience": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/digital-waiver-software": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/discount-codes": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/giftcard": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/guest-experience-agent": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol",
+      "video-hero"
+    ],
+    "https://www.roller.software/features/guest-feedback-software": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "horizontal-slider",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/guest-tabs": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/loyalty-programs": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol",
+      "video-hero"
+    ],
+    "https://www.roller.software/features/membership-management-software": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/mobile-check-in": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/mobile-food-and-beverage-ordering": [
+      "announcement-bar",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/multi-venue-management": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/online-ticket-system": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/packages": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/party-booking-software": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/payment-processing-software": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/point-of-sale-reports": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/pos": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/pos-system": [
+      "announcement-bar",
+      "features-index",
+      "service-detail"
+    ],
+    "https://www.roller.software/features/pricing-strategy": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/printer-management": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/self-service-ticketing-kiosk": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/staff-permissions": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/features/stock-and-inventory-control": [
+      "announcement-bar",
+      "faq",
+      "features-index",
+      "service-detail",
+      "twocol"
+    ],
+    "https://www.roller.software/get-started": [
+      "announcement-bar",
+      "customer-story",
+      "faq",
+      "stats-section"
+    ],
+    "https://www.roller.software/guest-experience-playbook": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/gx-show-ebook": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/iaapa-2019-trade-show-orlando": [
+      "announcement-bar",
+      "twocol"
+    ],
+    "https://www.roller.software/industries": [
+      "announcement-bar",
+      "twocol"
+    ],
+    "https://www.roller.software/industries/adventure-parks-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/amusement-and-theme-parks-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/axe-throwing-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/bowling-alley-management-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/climbing-gyms-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/escape-room-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/family-entertainment-center-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/family-entertainment-center-software/pos-system": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/family-entertainment-center-software/ticketing-system": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/go-karting": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/ice-skating": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/mini-golf": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/museums-software": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/industries/pickleball-software": [
+      "announcement-bar",
+      "faq",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/playcenter-software/online-ticketing-system": [
+      "announcement-bar",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/playground-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/playground-software/play-center-point-of-sale-system": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/skating-rink-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/trampoline-parks-software": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/industries/trampoline-parks-software/pos": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/trampoline-parks-software/ticketing-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/visitor-attractions-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/wake-and-aqua-parks-management-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/wake-parks-management-software/ticketing-system": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/water-parks-management-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/industries/zoos-management-software": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/job-applicant-privacy-policy": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/master-terms": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/membership-ebook": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/mystery-shopper-report": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/opening-your-first-attraction-playbook": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/partners/alvarado": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/amusement-connect": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/campaign-monitor": [
+      "announcement-bar",
+      "faq"
+    ],
+    "https://www.roller.software/partners/fresh-kds": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/groupon": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/intercard": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/redeam": [
+      "announcement-bar",
+      "faq",
+      "icon-list-grid",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/service": [
+      "announcement-bar",
+      "faq"
+    ],
+    "https://www.roller.software/partners/tanda": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/technology": [
+      "announcement-bar",
+      "faq"
+    ],
+    "https://www.roller.software/partners/volare": [
+      "announcement-bar",
+      "faq",
+      "twocol",
+      "use-case"
+    ],
+    "https://www.roller.software/partners/workforce.com": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/partners/yellow-dog": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/people-and-culture/careers-jobs": [
+      "addons",
+      "announcement-bar",
+      "faq",
+      "special-hero",
+      "use-case",
+      "video-hero"
+    ],
+    "https://www.roller.software/pricing": [
+      "addons",
+      "announcement-bar",
+      "faq",
+      "pricing-widget"
+    ],
+    "https://www.roller.software/privacy-policy": [
+      "announcement-bar"
+    ],
+    "https://www.roller.software/product-launch/may-2026": [
+      "announcement-bar",
+      "featuresunfold",
+      "special-hero",
+      "video-hero"
+    ],
+    "https://www.roller.software/product-launch/november-2025": [
+      "announcement-bar",
+      "categorylinks",
+      "iconcards",
+      "special-hero",
+      "video-hero"
+    ],
+    "https://www.roller.software/products/rfid": [
+      "announcement-bar",
+      "faq",
+      "twocol"
+    ],
+    "https://www.roller.software/professional-services": [
+      "announcement-bar",
+      "features-index",
+      "service-detail",
+      "services-section"
+    ],
+    "https://www.roller.software/solutions/enterprise": [
+      "announcement-bar",
+      "stats-section",
+      "use-case"
+    ],
+    "https://www.roller.software/solutions/grow-your-business": [
+      "announcement-bar",
+      "stats-section",
+      "use-case"
+    ],
+    "https://www.roller.software/solutions/multi-venue": [
+      "announcement-bar",
+      "cards",
+      "horizontal-slider",
+      "stats-section",
+      "use-case"
+    ],
+    "https://www.roller.software/support": [
+      "announcement-bar",
+      "faq",
+      "stats-section",
+      "twocol",
+      "use-case"
+    ]
+  }
+}

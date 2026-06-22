@@ -1,0 +1,1232 @@
+{
+  "total_urls": 202,
+  "with_faq": 76,
+  "without_faq": 126,
+  "errors": 0,
+  "detection_notes": "HubSpot FAQ module (dl.faqs / faq-widget / module_FAQs / FAQPage JSON-LD) OR pricing-style accordion (Frequently Asked Questions + js-faq-heading)",
+  "by_category": {
+    "Competitors": 4,
+    "Features": 30,
+    "Industries": 23,
+    "Other": 4,
+    "P&C": 1,
+    "Partners/Integrations": 13,
+    "Pricing": 1
+  },
+  "pages_with_faq": [
+    {
+      "url": "https://www.roller.software/industries/adventure-parks-software",
+      "status": "has_faq",
+      "title": "Adventure Parks",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/alvarado",
+      "status": "has_faq",
+      "title": "Alvarado",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/amusement-and-theme-parks-software/",
+      "status": "has_faq",
+      "title": "Amusement &amp; Theme Parks",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/amusement-connect",
+      "status": "has_faq",
+      "title": "Amusement Connect",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/api-integrations/",
+      "status": "has_faq",
+      "title": "API Integrations",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/axe-throwing-software",
+      "status": "has_faq",
+      "title": "Axe Throwing",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/competitor/bookeo",
+      "status": "has_faq",
+      "title": "Bookeo",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/bowling-alley-management-software",
+      "status": "has_faq",
+      "title": "Bowling",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/campaign-monitor",
+      "status": "has_faq",
+      "title": "Campaign Monitor",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/capacity-management",
+      "status": "has_faq",
+      "title": "Capacity Management",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/people-and-culture/careers-jobs",
+      "status": "has_faq",
+      "title": "Careers",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/cashless-wallets",
+      "status": "has_faq",
+      "title": "Cashless Wallets",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/channel-management",
+      "status": "has_faq",
+      "title": "Channel Management",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/competitor/checkfront",
+      "status": "has_faq",
+      "title": "Checkfront",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/crm-experience/",
+      "status": "has_faq",
+      "title": "CRM Experience",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/digital-waiver-software/",
+      "status": "has_faq",
+      "title": "Digital Waivers",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/discount-codes",
+      "status": "has_faq",
+      "title": "Discount Codes",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/escape-room-software",
+      "status": "has_faq",
+      "title": "Escape Rooms",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/family-entertainment-center-software/",
+      "status": "has_faq",
+      "title": "Family Entertainment Centers",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features",
+      "status": "has_faq",
+      "title": "Features",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/fresh-kds",
+      "status": "has_faq",
+      "title": "Fresh KDS",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/get-started/",
+      "status": "has_faq",
+      "title": "Get Started",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/giftcard/",
+      "status": "has_faq",
+      "title": "Gift Cards",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/go-karting",
+      "status": "has_faq",
+      "title": "Go-Karting",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/groupon/",
+      "status": "has_faq",
+      "title": "Groupon",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/guest-experience-agent",
+      "status": "has_faq",
+      "title": "Guest Experience Agent",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/guest-feedback-software/",
+      "status": "has_faq",
+      "title": "Guest Feedback Software",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/guest-tabs",
+      "status": "has_faq",
+      "title": "Guest Tabs",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/amazon-gift-card",
+      "status": "has_faq",
+      "title": "https://www.roller.software/amazon-gift-card",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/contact-sales/",
+      "status": "has_faq",
+      "title": "https://www.roller.software/contact-sales/",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/ice-skating",
+      "status": "has_faq",
+      "title": "Ice Skating",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/intercard/",
+      "status": "has_faq",
+      "title": "Intercard",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/loyalty-programs",
+      "status": "has_faq",
+      "title": "Loyalty Programs",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/membership-management-software/",
+      "status": "has_faq",
+      "title": "Membership Management",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/mini-golf",
+      "status": "has_faq",
+      "title": "Mini Golf",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/mobile-check-in",
+      "status": "has_faq",
+      "title": "Mobile Check-in App",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/multi-venue-management/",
+      "status": "has_faq",
+      "title": "Multi-Venue Management",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/museums-software/",
+      "status": "has_faq",
+      "title": "Museums",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/online-ticket-system/",
+      "status": "has_faq",
+      "title": "Online Ticketing System",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/packages",
+      "status": "has_faq",
+      "title": "Packages",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/party-booking-software/",
+      "status": "has_faq",
+      "title": "Party Booking Software",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/pickleball-software",
+      "status": "has_faq",
+      "title": "Pickleball",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/playground-software/play-center-point-of-sale-system",
+      "status": "has_faq",
+      "title": "Playcenter POS",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/playground-software",
+      "status": "has_faq",
+      "title": "Playground / Softplay",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/pos/",
+      "status": "has_faq",
+      "title": "Point of Sale",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/point-of-sale-reports/",
+      "status": "has_faq",
+      "title": "POS Reports",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/pricing/",
+      "status": "has_faq",
+      "title": "Pricing",
+      "marker": "pricing-style FAQ (js-faq-heading + heading)"
+    },
+    {
+      "url": "https://www.roller.software/features/pricing-strategy",
+      "status": "has_faq",
+      "title": "Pricing Strategy",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/printer-management",
+      "status": "has_faq",
+      "title": "Printer Management",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/competitor/racefacer",
+      "status": "has_faq",
+      "title": "RaceFacer",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/redeam/",
+      "status": "has_faq",
+      "title": "Redeam",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/products/rfid",
+      "status": "has_faq",
+      "title": "RFID",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/climbing-gyms-software/",
+      "status": "has_faq",
+      "title": "Rock Climbing Gyms",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/capital",
+      "status": "has_faq",
+      "title": "ROLLER Capital",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/ai-assistant",
+      "status": "has_faq",
+      "title": "ROLLER iQ",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/payment-processing-software/",
+      "status": "has_faq",
+      "title": "ROLLER Payments",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/skating-rink-software/",
+      "status": "has_faq",
+      "title": "Roller Skating",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/self-service-ticketing-kiosk/",
+      "status": "has_faq",
+      "title": "Self-Serve Kiosks",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/service",
+      "status": "has_faq",
+      "title": "Service Partners",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/staff-permissions",
+      "status": "has_faq",
+      "title": "Staff Permissions",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/features/stock-and-inventory-control",
+      "status": "has_faq",
+      "title": "Stock &amp; Inventory Control",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/support",
+      "status": "has_faq",
+      "title": "Support",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/tanda",
+      "status": "has_faq",
+      "title": "Tanda",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/technology",
+      "status": "has_faq",
+      "title": "Technology Partners",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/competitor/tickettailor",
+      "status": "has_faq",
+      "title": "Ticket Tailor",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/trampoline-parks-software/",
+      "status": "has_faq",
+      "title": "Trampoline Parks",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/trampoline-parks-software/pos/",
+      "status": "has_faq",
+      "title": "Trampoline POS",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/trampoline-parks-software/ticketing-software/",
+      "status": "has_faq",
+      "title": "Trampoline Ticketing",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/visitor-attractions-software",
+      "status": "has_faq",
+      "title": "Visitor Attractions",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/volare",
+      "status": "has_faq",
+      "title": "Volare",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/wake-and-aqua-parks-management-software",
+      "status": "has_faq",
+      "title": "Wake &amp; Aqua Parks",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/wake-parks-management-software/ticketing-system/",
+      "status": "has_faq",
+      "title": "Wake Park Ticketing",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/water-parks-management-software/",
+      "status": "has_faq",
+      "title": "Water Parks",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/workforce.com",
+      "status": "has_faq",
+      "title": "Workforce.com",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/partners/yellow-dog",
+      "status": "has_faq",
+      "title": "Yellow Dog",
+      "marker": "dl.faqs"
+    },
+    {
+      "url": "https://www.roller.software/industries/zoos-management-software/",
+      "status": "has_faq",
+      "title": "Zoos &amp; Aquariums",
+      "marker": "dl.faqs"
+    }
+  ],
+  "pages_without_faq": [
+    {
+      "url": "https://www.roller.software/business-solutions",
+      "status": "no_faq",
+      "title": "Business Solutions",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/about-us",
+      "status": "no_faq",
+      "title": "About Us",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/the-guest-experience-show/",
+      "status": "no_faq",
+      "title": "The Guest Experience Show",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/blog",
+      "status": "no_faq",
+      "title": "Blog",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/demo/",
+      "status": "no_faq",
+      "title": "Demo Videos",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/solutions/grow-your-business",
+      "status": "no_faq",
+      "title": "Solutions SBM",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/solutions/enterprise",
+      "status": "no_faq",
+      "title": "Enterprise",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/solutions/multi-venue",
+      "status": "no_faq",
+      "title": "Segmentation Groups",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/features/mobile-food-and-beverage-ordering",
+      "status": "no_faq",
+      "title": "Mobile Food &amp; Beverage",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/features/pos-system/",
+      "status": "no_faq",
+      "title": "POS System",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/industries/",
+      "status": "no_faq",
+      "title": "Industries",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/industries/family-entertainment-center-software/pos-system",
+      "status": "no_faq",
+      "title": "FEC POS",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/industries/family-entertainment-center-software/ticketing-system/",
+      "status": "no_faq",
+      "title": "FEC Ticketing",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/industries/playcenter-software/online-ticketing-system/",
+      "status": "no_faq",
+      "title": "Playcenter Online Ticketing",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/venue-sumo",
+      "status": "no_faq",
+      "title": "Venue Sumo",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/aluvii",
+      "status": "no_faq",
+      "title": "Aluvii",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/centaman",
+      "status": "no_faq",
+      "title": "Centaman",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/clubspeed",
+      "status": "no_faq",
+      "title": "Clubspeed",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/fareharbor",
+      "status": "no_faq",
+      "title": "FareHarbor",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/fusemetrix",
+      "status": "no_faq",
+      "title": "FuseMetrix",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/lilypad-pos",
+      "status": "no_faq",
+      "title": "LiliPad POS",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/party-center-software",
+      "status": "no_faq",
+      "title": "Party Center Software",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/rock-gym-pro",
+      "status": "no_faq",
+      "title": "Rock Gym Pro",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/rocketrez",
+      "status": "no_faq",
+      "title": "RocketRez",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/competitor/booknow-software",
+      "status": "no_faq",
+      "title": "BookNow Software",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/2023-rollup",
+      "status": "no_faq",
+      "title": "2024 Year in Review",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/2024-rollup",
+      "status": "no_faq",
+      "title": "2025 Year in Review",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/2025-roll-up-year-in-review",
+      "status": "no_faq",
+      "title": "2026 Year in Review",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/building-a-world-class-attraction-venue",
+      "status": "no_faq",
+      "title": "Scaling Success",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/building-a-world-class-attraction-venue-webinar",
+      "status": "no_faq",
+      "title": "Scaling Success (webinar)",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/business-growth-webinar",
+      "status": "no_faq",
+      "title": "Scaling Success (growth webinar)",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/business-growth-webinar-watch",
+      "status": "no_faq",
+      "title": "Scaling Success (webinar watch)",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/product-launch/november-2025",
+      "status": "no_faq",
+      "title": "Product Launch Nov 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/product-launch/may-2026",
+      "status": "no_faq",
+      "title": "Product Launch May 2026",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events",
+      "status": "no_faq",
+      "title": "Events Hub",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/aalara2024",
+      "status": "no_faq",
+      "title": "AALARA 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/aip2024-0",
+      "status": "no_faq",
+      "title": "AIP Awards 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/amusement360",
+      "status": "no_faq",
+      "title": "Amusement 360 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/amusementexpo2025",
+      "status": "no_faq",
+      "title": "Amusement Expo 2026",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/cwa2024",
+      "status": "no_faq",
+      "title": "CWA 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/experienceacademy",
+      "status": "no_faq",
+      "title": "Experience Academy 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/familyattractions2024",
+      "status": "no_faq",
+      "title": "Family Attractions Expo 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/iaapaasia2024",
+      "status": "no_faq",
+      "title": "IAAPA Asia 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/iaapaeurope2024",
+      "status": "no_faq",
+      "title": "IAAPA Europe 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/iaapaexpo2024",
+      "status": "no_faq",
+      "title": "IAAPA Orlando 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/iaapafecsummit2025",
+      "status": "no_faq",
+      "title": "IAAPA FEC Summit 2026",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/iatp2024",
+      "status": "no_faq",
+      "title": "IATP 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/rsa2025",
+      "status": "no_faq",
+      "title": "RSA 2026",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/sk8expo",
+      "status": "no_faq",
+      "title": "SK8 Expo 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/events/worldwaterpark2024",
+      "status": "no_faq",
+      "title": "WWA 2025",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/2026-benchmark-report",
+      "status": "no_faq",
+      "title": "2026 Benchmark Report",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/2025-pulse-report",
+      "status": "no_faq",
+      "title": "Pulse Report",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/guest-experience-playbook",
+      "status": "no_faq",
+      "title": "Guest Experience Playbook",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/customer-referral",
+      "status": "no_faq",
+      "title": "Customer Referral",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/analytics-ebook",
+      "status": "no_faq",
+      "title": "Analytics eBook",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/chatgpt-ebook",
+      "status": "no_faq",
+      "title": "ChatGPT eBook",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/membership-ebook",
+      "status": "no_faq",
+      "title": "Membership eBook",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/gx-show-ebook",
+      "status": "no_faq",
+      "title": "GX Show eBook",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/2025-roller-skating-trends-report",
+      "status": "no_faq",
+      "title": "Roller Skating Trends 2026",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/2025-water-park-trends-report",
+      "status": "no_faq",
+      "title": "Water Park Trends 2026",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/expanding-your-business-playbook",
+      "status": "no_faq",
+      "title": "Expanding Your Business Playbook",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/opening-your-first-attraction-playbook",
+      "status": "no_faq",
+      "title": "Opening Your First Attraction",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/mystery-shopper-report/",
+      "status": "no_faq",
+      "title": "Mystery Shopper Report",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/data-processing-agreement/",
+      "status": "no_faq",
+      "title": "https://www.roller.software/data-processing-agreement/",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/acquiringaddendumusa",
+      "status": "no_faq",
+      "title": "https://www.roller.software/acquiringaddendumusa",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/cross-site-tracking",
+      "status": "no_faq",
+      "title": "https://www.roller.software/cross-site-tracking",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
+      "status": "no_faq",
+      "title": "https://www.roller.software/iaapa-2019-trade-show-orlando",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/braintree/",
+      "status": "no_faq",
+      "title": "https://www.roller.software/braintree/",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/about-us/values/",
+      "status": "no_faq",
+      "title": "Values",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/job-applicant-privacy-policy",
+      "status": "no_faq",
+      "title": "Job Applicant Privacy Policy",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/api-terms-of-service",
+      "status": "no_faq",
+      "title": "API Terms of Use",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/professional-services",
+      "status": "no_faq",
+      "title": "Professional Services",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/dpa",
+      "status": "no_faq",
+      "title": "Data Processing Agreement",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/master-terms",
+      "status": "no_faq",
+      "title": "Terms of Service",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/privacy-policy",
+      "status": "no_faq",
+      "title": "Privacy Policy",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/partners",
+      "status": "no_faq",
+      "title": "Partners \u2014 Overview",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integration-partners/",
+      "status": "no_faq",
+      "title": "Integration Partners",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/centeredge-software-alternative/",
+      "status": "no_faq",
+      "title": "ROLLER and Centeredge",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations",
+      "status": "no_faq",
+      "title": "Integration Partners Directory",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/aifinity",
+      "status": "no_faq",
+      "title": "aifinity",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/advanced-locker",
+      "status": "no_faq",
+      "title": "Advanced Locker",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/amusement-connect",
+      "status": "no_faq",
+      "title": "Amusement Connect",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/campaign-monitor",
+      "status": "no_faq",
+      "title": "Campaign Monitor",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/cartstack",
+      "status": "no_faq",
+      "title": "CartStack",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/chaty",
+      "status": "no_faq",
+      "title": "Chaty",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/ebg",
+      "status": "no_faq",
+      "title": "EBG",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/getyourguide",
+      "status": "no_faq",
+      "title": "GetYourGuide",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/google-things-to-do",
+      "status": "no_faq",
+      "title": "Google Things To Do",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/humanitru",
+      "status": "no_faq",
+      "title": "Humanitru",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/intelliplay",
+      "status": "no_faq",
+      "title": "Intelliplay",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/intellipaas-inc",
+      "status": "no_faq",
+      "title": "IntelliPaaS Inc",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/intercard",
+      "status": "no_faq",
+      "title": "Intercard",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/ipwatch",
+      "status": "no_faq",
+      "title": "IPWatch",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/lokt",
+      "status": "no_faq",
+      "title": "LOKT",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/myob",
+      "status": "no_faq",
+      "title": "MYOB",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/myticketpro",
+      "status": "no_faq",
+      "title": "MyTicketPro",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/netsuite",
+      "status": "no_faq",
+      "title": "NetSuite",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/newvue-solutions",
+      "status": "no_faq",
+      "title": "NewVUE Solutions",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/patch-retention",
+      "status": "no_faq",
+      "title": "Patch Retention",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/pladia",
+      "status": "no_faq",
+      "title": "Pladia",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/playspark",
+      "status": "no_faq",
+      "title": "PlaySpark",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/pourtek",
+      "status": "no_faq",
+      "title": "Pourtek",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/quickbooks",
+      "status": "no_faq",
+      "title": "QuickBooks",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/re-venue",
+      "status": "no_faq",
+      "title": "Re-venue",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/restokeai",
+      "status": "no_faq",
+      "title": "Restoke.ai",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/sacoa",
+      "status": "no_faq",
+      "title": "Sacoa",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/sailthru",
+      "status": "no_faq",
+      "title": "Sailthru",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/salesforce",
+      "status": "no_faq",
+      "title": "Salesforce",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/singa-karaoke",
+      "status": "no_faq",
+      "title": "Singa Karaoke",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/singpods",
+      "status": "no_faq",
+      "title": "SINGPODS",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/smart-segments",
+      "status": "no_faq",
+      "title": "Smart Segments",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/specialist-apps",
+      "status": "no_faq",
+      "title": "Specialist Apps",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/supy",
+      "status": "no_faq",
+      "title": "Supy",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/t2-connect",
+      "status": "no_faq",
+      "title": "T2 Connect",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/tanda",
+      "status": "no_faq",
+      "title": "Tanda",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/tiqets",
+      "status": "no_faq",
+      "title": "Tiqets",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/trengo",
+      "status": "no_faq",
+      "title": "Trengo",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/tripcom",
+      "status": "no_faq",
+      "title": "Trip.com",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/vava-voice-ai-receptionists",
+      "status": "no_faq",
+      "title": "VAVA Voice",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/viator",
+      "status": "no_faq",
+      "title": "Viator",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/vlocker",
+      "status": "no_faq",
+      "title": "VLocker",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/when-i-work",
+      "status": "no_faq",
+      "title": "When I Work",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/workforcecom",
+      "status": "no_faq",
+      "title": "Workforce.com",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/xeus",
+      "status": "no_faq",
+      "title": "XEUS",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/xero",
+      "status": "no_faq",
+      "title": "Xero",
+      "marker": null
+    },
+    {
+      "url": "https://www.roller.software/integrations/partner/yonder-hq",
+      "status": "no_faq",
+      "title": "Yonder HQ",
+      "marker": null
+    }
+  ]
+}
