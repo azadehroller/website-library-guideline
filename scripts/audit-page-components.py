@@ -114,9 +114,11 @@ PHASE3_COMPONENTS = [
         "id": "task-cards",
         "label": "Cards",
         "pillClass": "pg-comp-cards",
-        "detection": "module_features-card CSS",
-        "patterns": [(r"module_features-card", "module_features-card")],
-        "url_paths": ["/solutions/multi-venue"],
+        "detection": "Card Segmentation module (dl#cards-events); module_card-segmentation",
+        "patterns": [
+            (r'id="cards-events-module_', "Card Segmentation (cards-events)"),
+            (r"module_card-segmentation", "Card Segmentation module"),
+        ],
     },
     {
         "key": "services-section",
@@ -187,14 +189,6 @@ PHASE3_COMPONENTS = [
         "patterns": [(r"38732243047_testimonial", "testimonial module")],
     },
     {
-        "key": "use-case",
-        "id": "task-use-case-section",
-        "label": "Use case section",
-        "pillClass": "pg-comp-use-case",
-        "detection": "module_results-list CSS (case-study / results sidebar)",
-        "patterns": [(r"module_results-list", "module_results-list")],
-    },
-    {
         "key": "reports",
         "id": "task-reports",
         "label": "Reports",
@@ -224,10 +218,73 @@ PHASE3_COMPONENTS = [
         "id": "task-announcement-bar",
         "label": "Announcement bar",
         "pillClass": "pg-comp-announcement-bar",
-        "detection": "module_announcement CSS (site-wide optional banner)",
-        "patterns": [(r"module_announcement\.min\.css", "module_announcement")],
+        "detection": "Rendered banner only — element with announcement-bar and js-banner classes",
+        "patterns": [
+            (
+                r'class="[^"]*\bannouncement-bar\b[^"]*\bjs-banner\b',
+                "announcement-bar js-banner",
+            ),
+        ],
     },
 ]
+
+# Phase 2 primitives + Phase 4 globals (HubSpot module mapping confirmed)
+EXTRA_COMPONENTS = [
+    {
+        "key": "text",
+        "id": "task-text",
+        "label": "Text block",
+        "pillClass": "pg-comp-text",
+        "detection": "Header Composition module — rendered section.heading-composition",
+        "patterns": [
+            (
+                r'<section class="heading-composition[^"]*custom-text-wrapper',
+                "Header Composition section",
+            ),
+            (r"heading-composition-widget_", "Header Composition widget"),
+        ],
+    },
+    {
+        "key": "button",
+        "id": "task-button",
+        "label": "Button",
+        "pillClass": "pg-comp-button",
+        "detection": "Button stack (#js-button-stack) or Main Button module widget",
+        "patterns": [
+            (r'id="js-button-stack"', "Button stack"),
+            (r"button-stack-widget_", "Button stack widget"),
+            (r"107498943492", "Main Button module"),
+            (r'class="[^"]*\bbutton-module\b', "Main Button section"),
+        ],
+    },
+    {
+        "key": "global-stats",
+        "id": "task-global-stats",
+        "label": "Global stats",
+        "pillClass": "pg-comp-global-stats",
+        "detection": "Stats Set Stacked module — stats-set-stacked-wrapper DOM",
+        "patterns": [
+            (r'stats-set-stacked-wrapper', "Stats Set Stacked"),
+            (r'id="stats-set-stacked-module_', "Stats Set Stacked section"),
+            (r"module_stats-set-stacked", "Stats Set Stacked module"),
+        ],
+    },
+    {
+        "key": "industries-widget",
+        "id": "task-industries-widget",
+        "label": "Industries widget",
+        "pillClass": "pg-comp-industries-widget",
+        "detection": "Industry Selector widget (industry-selector-widget_ / industry-selector DOM)",
+        "patterns": [
+            (r'industry-selector-widget_', "Industry Selector widget"),
+            (r'id="industry-selector-', "Industry Selector section"),
+            (r"module_industry-selector-global", "Industry Selector (Global)"),
+            (r"module_industry-selector\.min\.css", "Industry Selector module"),
+        ],
+    },
+]
+
+ALL_COMPONENTS = PHASE3_COMPONENTS + EXTRA_COMPONENTS
 
 # Phase 3 tasks with no reliable live-site marker yet (still wired in UI)
 PHASE3_PLACEHOLDER = [
@@ -235,6 +292,7 @@ PHASE3_PLACEHOLDER = [
     ("centeredtext", "task-centeredtext", "Centered text block", "pg-comp-centeredtext", "No unique HubSpot marker yet"),
     ("image-icon-grid-list", "task-image-icon-grid-list", "Image with icon grid list", "pg-comp-image-icon-grid-list", "No unique HubSpot marker yet"),
     ("introduction-summary", "task-introduction-summary", "Introduction summary", "pg-comp-introduction-summary", "No unique HubSpot marker yet"),
+    ("use-case", "task-use-case-section", "Use case section", "pg-comp-use-case", "Not used on audited live pages — results-list marker was a false positive"),
     ("form-section", "task-form-section", "Form section", "pg-comp-form-section", "Uses shared custom-form module site-wide"),
     ("cta", "task-cta", "CTA section", "pg-comp-cta", "Uses shared conversion modules site-wide"),
     ("industry-vertical", "task-industry-vertical", "Industry vertical section", "pg-comp-industry-vertical", "No unique HubSpot marker yet"),
@@ -362,13 +420,13 @@ def main():
             bodies[url] = body
 
     # First pass: raw hits per component
-    hits: dict[str, list[dict]] = {c["key"]: [] for c in PHASE3_COMPONENTS}
+    hits: dict[str, list[dict]] = {c["key"]: [] for c in ALL_COMPONENTS}
 
     for url in urls:
         body = bodies[url]
         title = url_titles.get(url, url)
         cat = category(url)
-        for comp in PHASE3_COMPONENTS:
+        for comp in ALL_COMPONENTS:
             marker = detect_component(comp, url, body)
             if marker:
                 hits[comp["key"]].append(
@@ -398,7 +456,7 @@ def main():
     components = {}
     pages_map: dict[str, list[str]] = defaultdict(list)
 
-    for comp in PHASE3_COMPONENTS:
+    for comp in ALL_COMPONENTS:
         key = comp["key"]
         pages = hits[key]
         by_cat: dict[str, int] = defaultdict(int)
@@ -437,9 +495,9 @@ def main():
                 components[key] = old["components"][key]
 
     data = {
-        "version": 3,
+        "version": 6,
         "audited": "2026-06",
-        "phase": 3,
+        "phase": "2-4",
         "components": components,
         "pages": {k: sorted(v) for k, v in sorted(pages_map.items())},
     }

@@ -1,0 +1,3123 @@
+{
+  "source": "HS-components.html",
+  "moduleCount": 133,
+  "sectionCount": 40,
+  "modules": {
+    "advanced-image": {
+      "label": "Advanced Image",
+      "folder": "advanced-image.module",
+      "slug": "advanced-image",
+      "moduleId": "196599791751",
+      "suffix": "791751"
+    },
+    "animated-hero": {
+      "label": "Animated Hero",
+      "folder": "animated-hero.module",
+      "slug": "animated-hero",
+      "moduleId": "200985075814",
+      "suffix": "075814"
+    },
+    "animation-lottie": {
+      "label": "Animation",
+      "folder": "animation-lottie.module",
+      "slug": "animation-lottie",
+      "moduleId": "123703459626",
+      "suffix": "459626"
+    },
+    "animation-graphs": {
+      "label": "Animation Graphic",
+      "folder": "animation-graphs.module",
+      "slug": "animation-graphs",
+      "moduleId": "123703440162",
+      "suffix": "440162"
+    },
+    "animation-guest-returning": {
+      "label": "Animation Guest Returning",
+      "folder": "animation-guest-returning.module",
+      "slug": "animation-guest-returning",
+      "moduleId": "182537223954",
+      "suffix": "223954"
+    },
+    "aurora-background": {
+      "label": "Aurora Background",
+      "folder": "aurora-background.module",
+      "slug": "aurora-background",
+      "moduleId": "197573581433",
+      "suffix": "581433"
+    },
+    "auto-play-slider": {
+      "label": "Auto Play Slider",
+      "folder": "auto-play-slider.module",
+      "slug": "auto-play-slider",
+      "moduleId": "208610768993",
+      "suffix": "768993"
+    },
+    "blog-cards": {
+      "label": "Blog Group Cards",
+      "folder": "blog-cards.module",
+      "slug": "blog-cards",
+      "moduleId": "198366055599",
+      "suffix": "055599"
+    },
+    "button-stack": {
+      "label": "button-stack",
+      "folder": "button-stack.module",
+      "slug": "button-stack",
+      "moduleId": null,
+      "suffix": null
+    },
+    "card": {
+      "label": "card",
+      "folder": "card.module",
+      "slug": "card",
+      "moduleId": null,
+      "suffix": null
+    },
+    "case-study": {
+      "label": "Case Study",
+      "folder": "case-study.module",
+      "slug": "case-study",
+      "moduleId": "212337905703",
+      "suffix": "905703"
+    },
+    "confetti-section": {
+      "label": "Confetti Section",
+      "folder": "confetti-section.module",
+      "slug": "confetti-section",
+      "moduleId": "202247556502",
+      "suffix": "556502"
+    },
+    "cta": {
+      "label": "CTA Banner",
+      "folder": "cta.module",
+      "slug": "cta",
+      "moduleId": "206157767450",
+      "suffix": "767450"
+    },
+    "divider": {
+      "label": "Divider",
+      "folder": "divider.module",
+      "slug": "divider",
+      "moduleId": "199461272502",
+      "suffix": "272502"
+    },
+    "faq2": {
+      "label": "FAQ 2",
+      "folder": "faq2.module",
+      "slug": "faq2",
+      "moduleId": "196180412704",
+      "suffix": "412704"
+    },
+    "FAQs": {
+      "label": "FAQs section",
+      "folder": "FAQs.module",
+      "slug": "FAQs",
+      "moduleId": "129515421737",
+      "suffix": "421737"
+    },
+    "feature-block-list": {
+      "label": "Feature Block List",
+      "folder": "feature-block-list.module",
+      "slug": "feature-block-list",
+      "moduleId": "209136893466",
+      "suffix": "893466"
+    },
+    "feature-introduction": {
+      "label": "Feature Introduction",
+      "folder": "feature-introduction.module",
+      "slug": "feature-introduction",
+      "moduleId": "197851141745",
+      "suffix": "141745"
+    },
+    "features-unfold": {
+      "label": "Features Unfold",
+      "folder": "features-unfold.module",
+      "slug": "features-unfold",
+      "moduleId": "212055578120",
+      "suffix": "578120"
+    },
+    "Form and Hubspot meeting": {
+      "label": "Form and Hubspot meeting",
+      "folder": "Form and Hubspot meeting.module",
+      "slug": "Form and Hubspot meeting",
+      "moduleId": "201957786980",
+      "suffix": "786980"
+    },
+    "tabs/Form-test": {
+      "label": "Form-test",
+      "folder": "tabs/Form-test.module",
+      "slug": "tabs/Form-test",
+      "moduleId": "209615102298",
+      "suffix": "102298"
+    },
+    "frame": {
+      "label": "Frame",
+      "folder": "frame.module",
+      "slug": "frame",
+      "moduleId": "199088096417",
+      "suffix": "096417"
+    },
+    "widget-stats french": {
+      "label": "French stats",
+      "folder": "widget-stats french.module",
+      "slug": "widget-stats french",
+      "moduleId": "212697464654",
+      "suffix": "464654"
+    },
+    "header-theme": {
+      "label": "Global: Header theme",
+      "folder": "header-theme.module",
+      "slug": "header-theme",
+      "moduleId": "109435707160",
+      "suffix": "707160"
+    },
+    "heading-composition": {
+      "label": "heading-composition",
+      "folder": "heading-composition.module",
+      "slug": "heading-composition",
+      "moduleId": null,
+      "suffix": null
+    },
+    "hero-full-introduction": {
+      "label": "Hero Full Introduction",
+      "folder": "hero-full-introduction.module",
+      "slug": "hero-full-introduction",
+      "moduleId": "213288092966",
+      "suffix": "092966"
+    },
+    "icon-cards": {
+      "label": "Icon Cards",
+      "folder": "icon-cards.module",
+      "slug": "icon-cards",
+      "moduleId": "197896020560",
+      "suffix": "020560"
+    },
+    "image-video-modal": {
+      "label": "image-video-modal",
+      "folder": "image-video-modal.module",
+      "slug": "image-video-modal",
+      "moduleId": null,
+      "suffix": null
+    },
+    "information-card": {
+      "label": "Information Card",
+      "folder": "information-card.module",
+      "slug": "information-card",
+      "moduleId": "199892086609",
+      "suffix": "086609"
+    },
+    "interactive-hero": {
+      "label": "Interactive Hero",
+      "folder": "interactive-hero.module",
+      "slug": "interactive-hero",
+      "moduleId": "211211194424",
+      "suffix": "194424"
+    },
+    "interactive-summary": {
+      "label": "Interactive Summary",
+      "folder": "interactive-summary.module",
+      "slug": "interactive-summary",
+      "moduleId": "212343674941",
+      "suffix": "674941"
+    },
+    "interactive-svg": {
+      "label": "Interactive SVG",
+      "folder": "interactive-svg.module",
+      "slug": "interactive-svg",
+      "moduleId": "200349583262",
+      "suffix": "583262"
+    },
+    "key-takeaways": {
+      "label": "Key Takeaways",
+      "folder": "key-takeaways.module",
+      "slug": "key-takeaways",
+      "moduleId": "207759053429",
+      "suffix": "053429"
+    },
+    "link-cards": {
+      "label": "Link Cards",
+      "folder": "link-cards.module",
+      "slug": "link-cards",
+      "moduleId": "197961971893",
+      "suffix": "971893"
+    },
+    "location": {
+      "label": "Location",
+      "folder": "location.module",
+      "slug": "location",
+      "moduleId": "206146476623",
+      "suffix": "476623"
+    },
+    "logo-set-global-french": {
+      "label": "Logo Set French",
+      "folder": "logo-set-global-french.module",
+      "slug": "logo-set-global-french",
+      "moduleId": "212906394904",
+      "suffix": "394904"
+    },
+    "logo-set": {
+      "label": "logo-set",
+      "folder": "logo-set.module",
+      "slug": "logo-set",
+      "moduleId": null,
+      "suffix": null
+    },
+    "logo-set-global": {
+      "label": "logo-set-global",
+      "folder": "logo-set-global.module",
+      "slug": "logo-set-global",
+      "moduleId": null,
+      "suffix": null
+    },
+    "button": {
+      "label": "Main Button",
+      "folder": "button.module",
+      "slug": "button",
+      "moduleId": "107498943492",
+      "suffix": "943492"
+    },
+    "media-frame": {
+      "label": "Media Frame",
+      "folder": "media-frame.module",
+      "slug": "media-frame",
+      "moduleId": "197618326085",
+      "suffix": "326085"
+    },
+    "mega-menu": {
+      "label": "mega-menu",
+      "folder": "mega-menu.module",
+      "slug": "mega-menu",
+      "moduleId": null,
+      "suffix": null
+    },
+    "menu": {
+      "label": "Menu",
+      "folder": "menu.module",
+      "slug": "menu",
+      "moduleId": "107494946662",
+      "suffix": "946662"
+    },
+    "metric": {
+      "label": "Metric",
+      "folder": "metric.module",
+      "slug": "metric",
+      "moduleId": "199392299277",
+      "suffix": "299277"
+    },
+    "announcement": {
+      "label": "Module: Announcement",
+      "folder": "announcement.module",
+      "slug": "announcement",
+      "moduleId": "123703552525",
+      "suffix": "552525"
+    },
+    "badge-set": {
+      "label": "Module: Badges Set",
+      "folder": "badge-set.module",
+      "slug": "badge-set",
+      "moduleId": "108444984843",
+      "suffix": "984843"
+    },
+    "card-blog-posts": {
+      "label": "Module: Card Blog Posts",
+      "folder": "card-blog-posts.module",
+      "slug": "card-blog-posts",
+      "moduleId": "169545356032",
+      "suffix": "356032"
+    },
+    "card-events": {
+      "label": "Module: Card Events",
+      "folder": "card-events.module",
+      "slug": "card-events",
+      "moduleId": "169545356033",
+      "suffix": "356033"
+    },
+    "card-partners": {
+      "label": "Module: Card Partners",
+      "folder": "card-partners.module",
+      "slug": "card-partners",
+      "moduleId": "187474634609",
+      "suffix": "634609"
+    },
+    "card-pricing": {
+      "label": "Module: Card Pricing",
+      "folder": "card-pricing.module",
+      "slug": "card-pricing",
+      "moduleId": "175158862662",
+      "suffix": "862662"
+    },
+    "card-segmentation": {
+      "label": "Module: Card Segmentaion",
+      "folder": "card-segmentation.module",
+      "slug": "card-segmentation",
+      "moduleId": "180648216676",
+      "suffix": "216676"
+    },
+    "checkout-preview-form": {
+      "label": "Module: Checkout Preview",
+      "folder": "checkout-preview-form.module",
+      "slug": "checkout-preview-form",
+      "moduleId": "179786145409",
+      "suffix": "145409"
+    },
+    "comparison-table": {
+      "label": "Module: Comparison Table",
+      "folder": "comparison-table.module",
+      "slug": "comparison-table",
+      "moduleId": "155204530611",
+      "suffix": "530611"
+    },
+    "confetti": {
+      "label": "Module: Confetti",
+      "folder": "confetti.module",
+      "slug": "confetti",
+      "moduleId": "183048492066",
+      "suffix": "492066"
+    },
+    "custom-form": {
+      "label": "Module: Custom Form",
+      "folder": "custom-form.module",
+      "slug": "custom-form",
+      "moduleId": "167209199188",
+      "suffix": "199188"
+    },
+    "events-booth-programming": {
+      "label": "Module: Events Booth Programming",
+      "folder": "events-booth-programming.module",
+      "slug": "events-booth-programming",
+      "moduleId": "162241031844",
+      "suffix": "031844"
+    },
+    "events-listing": {
+      "label": "Module: Events Listing",
+      "folder": "events-listing.module",
+      "slug": "events-listing",
+      "moduleId": "162239531061",
+      "suffix": "531061"
+    },
+    "features-by-month": {
+      "label": "Module: Features By Month",
+      "folder": "features-by-month.module",
+      "slug": "features-by-month",
+      "moduleId": "149510861401",
+      "suffix": "861401"
+    },
+    "features-card": {
+      "label": "Module: Features Card",
+      "folder": "features-card.module",
+      "slug": "features-card",
+      "moduleId": "107498943489",
+      "suffix": "943489"
+    },
+    "features-detail": {
+      "label": "Module: Features Detail",
+      "folder": "features-detail.module",
+      "slug": "features-detail",
+      "moduleId": "108776380677",
+      "suffix": "380677"
+    },
+    "features-horizontal-slider": {
+      "label": "Module: Features Horizontal Slider",
+      "folder": "features-horizontal-slider.module",
+      "slug": "features-horizontal-slider",
+      "moduleId": "114338104070",
+      "suffix": "104070"
+    },
+    "features-pricing-card": {
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing-card.module",
+      "slug": "features-pricing-card",
+      "moduleId": "130988764750",
+      "suffix": "764750"
+    },
+    "features-pricing": {
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing.module",
+      "slug": "features-pricing",
+      "moduleId": "120099445835",
+      "suffix": "445835"
+    },
+    "features-selector-global": {
+      "label": "Module: Features Selector (Global)",
+      "folder": "features-selector-global.module",
+      "slug": "features-selector-global",
+      "moduleId": "170247408148",
+      "suffix": "408148"
+    },
+    "gx-pricing-card": {
+      "label": "Module: GX Pricing Card",
+      "folder": "gx-pricing-card.module",
+      "slug": "gx-pricing-card",
+      "moduleId": "145713614671",
+      "suffix": "614671"
+    },
+    "icons-list": {
+      "label": "Module: Icons List",
+      "folder": "icons-list.module",
+      "slug": "icons-list",
+      "moduleId": "198925714439",
+      "suffix": "714439"
+    },
+    "image-carousel": {
+      "label": "Module: Image Carousel",
+      "folder": "image-carousel.module",
+      "slug": "image-carousel",
+      "moduleId": "183292700972",
+      "suffix": "700972"
+    },
+    "industry-selector": {
+      "label": "Module: Industry Selector",
+      "folder": "industry-selector.module",
+      "slug": "industry-selector",
+      "moduleId": "144194728081",
+      "suffix": "728081"
+    },
+    "industry-selector-global": {
+      "label": "Module: Industry Selector (Global)",
+      "folder": "industry-selector-global.module",
+      "slug": "industry-selector-global",
+      "moduleId": "160355623248",
+      "suffix": "623248"
+    },
+    "industry-selector-features-global": {
+      "label": "Module: Industry Selector Features (Global)",
+      "folder": "industry-selector-features-global.module",
+      "slug": "industry-selector-features-global",
+      "moduleId": "164680689505",
+      "suffix": "689505"
+    },
+    "logo": {
+      "label": "Module: Logo",
+      "folder": "logo.module",
+      "slug": "logo",
+      "moduleId": "107494886818",
+      "suffix": "886818"
+    },
+    "logo-set-global-new": {
+      "label": "Module: Logo Set (Global)",
+      "folder": "logo-set-global-new.module",
+      "slug": "logo-set-global-new",
+      "moduleId": "195231364891",
+      "suffix": "364891"
+    },
+    "logo-set-global-logos-only": {
+      "label": "Module: Logo Set (Global) - logos only",
+      "folder": "logo-set-global-logos-only.module",
+      "slug": "logo-set-global-logos-only",
+      "moduleId": "209058129818",
+      "suffix": "129818"
+    },
+    "op-team": {
+      "label": "Module: Operating Team",
+      "folder": "op-team.module",
+      "slug": "op-team",
+      "moduleId": "196283720070",
+      "suffix": "720070"
+    },
+    "partnerships-form": {
+      "label": "Module: Partnerships Form",
+      "folder": "partnerships-form.module",
+      "slug": "partnerships-form",
+      "moduleId": "181134074666",
+      "suffix": "074666"
+    },
+    "pricing-card": {
+      "label": "Module: Pricing Cards",
+      "folder": "pricing-card.module",
+      "slug": "pricing-card",
+      "moduleId": "107494492736",
+      "suffix": "492736"
+    },
+    "results-list": {
+      "label": "Module: Results List",
+      "folder": "results-list.module",
+      "slug": "results-list",
+      "moduleId": "139494732206",
+      "suffix": "732206"
+    },
+    "roi-calculator": {
+      "label": "Module: ROI Calculator",
+      "folder": "roi-calculator.module",
+      "slug": "roi-calculator",
+      "moduleId": "178959313276",
+      "suffix": "313276"
+    },
+    "rotating-text": {
+      "label": "Module: Rotating Text",
+      "folder": "rotating-text.module",
+      "slug": "rotating-text",
+      "moduleId": "171716777018",
+      "suffix": "777018"
+    },
+    "rp-pricing-card": {
+      "label": "Module: RP Pricing Card",
+      "folder": "rp-pricing-card.module",
+      "slug": "rp-pricing-card",
+      "moduleId": "130988459385",
+      "suffix": "459385"
+    },
+    "service-detail": {
+      "label": "Module: Service Detail",
+      "folder": "service-detail.module",
+      "slug": "service-detail",
+      "moduleId": "108775308312",
+      "suffix": "308312"
+    },
+    "service-list": {
+      "label": "Module: Service List",
+      "folder": "service-list.module",
+      "slug": "service-list",
+      "moduleId": "108859395479",
+      "suffix": "395479"
+    },
+    "stat": {
+      "label": "Module: Stats",
+      "folder": "stat.module",
+      "slug": "stat",
+      "moduleId": "107494885198",
+      "suffix": "885198"
+    },
+    "stats-set": {
+      "label": "Module: Stats Set",
+      "folder": "stats-set.module",
+      "slug": "stats-set",
+      "moduleId": "138558821728",
+      "suffix": "821728"
+    },
+    "stats-set-stacked": {
+      "label": "Module: Stats Set Stacked",
+      "folder": "stats-set-stacked.module",
+      "slug": "stats-set-stacked",
+      "moduleId": "180893604893",
+      "suffix": "604893"
+    },
+    "testimonial-carousel": {
+      "label": "Module: Testimonial Carousel",
+      "folder": "testimonial-carousel.module",
+      "slug": "testimonial-carousel",
+      "moduleId": "138997888534",
+      "suffix": "888534"
+    },
+    "text-list-feed": {
+      "label": "Module: Text list feed",
+      "folder": "text-list-feed.module",
+      "slug": "text-list-feed",
+      "moduleId": "129923296841",
+      "suffix": "296841"
+    },
+    "video-reel": {
+      "label": "Module: Video reel",
+      "folder": "video-reel.module",
+      "slug": "video-reel",
+      "moduleId": "195903824272",
+      "suffix": "824272"
+    },
+    "social-icons-set": {
+      "label": "Modules: Social Icons Set",
+      "folder": "social-icons-set.module",
+      "slug": "social-icons-set",
+      "moduleId": "108434467959",
+      "suffix": "467959"
+    },
+    "monthly-features": {
+      "label": "Monthly Features",
+      "folder": "monthly-features.module",
+      "slug": "monthly-features",
+      "moduleId": "201065981968",
+      "suffix": "981968"
+    },
+    "quote-new": {
+      "label": "New Quote",
+      "folder": "quote-new.module",
+      "slug": "quote-new",
+      "moduleId": "198487529657",
+      "suffix": "529657"
+    },
+    "new-roi-calculator": {
+      "label": "New ROI Calculator",
+      "folder": "new-roi-calculator.module",
+      "slug": "new-roi-calculator",
+      "moduleId": "202831607562",
+      "suffix": "607562"
+    },
+    "open-jobs": {
+      "label": "Open Jobs",
+      "folder": "open-jobs.module",
+      "slug": "open-jobs",
+      "moduleId": "206667096947",
+      "suffix": "096947"
+    },
+    "blog-sidebar-anchor-links": {
+      "label": "Post Sidebar Anchor Links",
+      "folder": "blog-sidebar-anchor-links.module",
+      "slug": "blog-sidebar-anchor-links",
+      "moduleId": "186990854431",
+      "suffix": "854431"
+    },
+    "sections": {
+      "label": "Pricing section",
+      "folder": "sections.module",
+      "slug": "sections",
+      "moduleId": "196024395893",
+      "suffix": "395893"
+    },
+    "Pricing Widget": {
+      "label": "Pricing Widget",
+      "folder": "Pricing Widget.module",
+      "slug": "Pricing Widget",
+      "moduleId": "196024314162",
+      "suffix": "314162"
+    },
+    "product-launch-card": {
+      "label": "Product Launch Card",
+      "folder": "product-launch-card.module",
+      "slug": "product-launch-card",
+      "moduleId": "211755500802",
+      "suffix": "500802"
+    },
+    "pulse-arc-chart": {
+      "label": "Pulse Arc Chart",
+      "folder": "pulse-arc-chart.module",
+      "slug": "pulse-arc-chart",
+      "moduleId": "196161820003",
+      "suffix": "820003"
+    },
+    "pulse-bar-chart": {
+      "label": "Pulse Bar Chart",
+      "folder": "pulse-bar-chart.module",
+      "slug": "pulse-bar-chart",
+      "moduleId": "196030106706",
+      "suffix": "106706"
+    },
+    "pulse-circle-chart": {
+      "label": "Pulse Circle Chart",
+      "folder": "pulse-circle-chart.module",
+      "slug": "pulse-circle-chart",
+      "moduleId": "196161819228",
+      "suffix": "819228"
+    },
+    "pulse-half-circle-chart": {
+      "label": "Pulse Half Circle Chart",
+      "folder": "pulse-half-circle-chart.module",
+      "slug": "pulse-half-circle-chart",
+      "moduleId": "196161820000",
+      "suffix": "820000"
+    },
+    "pulse-hero-title": {
+      "label": "Pulse Hero Title",
+      "folder": "pulse-hero-title.module",
+      "slug": "pulse-hero-title",
+      "moduleId": "196030103692",
+      "suffix": "103692"
+    },
+    "pulse-key-takeaways": {
+      "label": "Pulse Key Takeaways",
+      "folder": "pulse-key-takeaways.module",
+      "slug": "pulse-key-takeaways",
+      "moduleId": "196173664173",
+      "suffix": "664173"
+    },
+    "pulse-line-chart": {
+      "label": "Pulse Line Chart",
+      "folder": "pulse-line-chart.module",
+      "slug": "pulse-line-chart",
+      "moduleId": "196161819944",
+      "suffix": "819944"
+    },
+    "pulse-pie-chart": {
+      "label": "Pulse Pie Chart",
+      "folder": "pulse-pie-chart.module",
+      "slug": "pulse-pie-chart",
+      "moduleId": "196030106711",
+      "suffix": "106711"
+    },
+    "pulse-pizza-chart": {
+      "label": "Pulse Pizza Chart",
+      "folder": "pulse-pizza-chart.module",
+      "slug": "pulse-pizza-chart",
+      "moduleId": "196161820007",
+      "suffix": "820007"
+    },
+    "pulse-radar-chart": {
+      "label": "Pulse Radar Chart",
+      "folder": "pulse-radar-chart.module",
+      "slug": "pulse-radar-chart",
+      "moduleId": "196523673474",
+      "suffix": "673474"
+    },
+    "pulse-report-heading": {
+      "label": "Pulse Report Heading",
+      "folder": "pulse-report-heading.module",
+      "slug": "pulse-report-heading",
+      "moduleId": "196161819941",
+      "suffix": "819941"
+    },
+    "pulse-section-heading": {
+      "label": "Pulse Section Heading",
+      "folder": "pulse-section-heading.module",
+      "slug": "pulse-section-heading",
+      "moduleId": "196229865341",
+      "suffix": "865341"
+    },
+    "pulse-stat-card": {
+      "label": "Pulse Stat Card",
+      "folder": "pulse-stat-card.module",
+      "slug": "pulse-stat-card",
+      "moduleId": "196030103871",
+      "suffix": "103871"
+    },
+    "pulse-wave-animation": {
+      "label": "Pulse Wave Animation",
+      "folder": "pulse-wave-animation.module",
+      "slug": "pulse-wave-animation",
+      "moduleId": "196030106658",
+      "suffix": "106658"
+    },
+    "quote": {
+      "label": "Quote",
+      "folder": "quote.module",
+      "slug": "quote",
+      "moduleId": "107498944440",
+      "suffix": "944440"
+    },
+    "range-slider": {
+      "label": "Range Slider",
+      "folder": "range-slider.module",
+      "slug": "range-slider",
+      "moduleId": "210357628293",
+      "suffix": "628293"
+    },
+    "reports": {
+      "label": "Reports",
+      "folder": "reports.module",
+      "slug": "reports",
+      "moduleId": "197963858261",
+      "suffix": "858261"
+    },
+    "search_input": {
+      "label": "search_input copy",
+      "folder": "search_input.module",
+      "slug": "search_input",
+      "moduleId": "194846440742",
+      "suffix": "440742"
+    },
+    "search_results": {
+      "label": "search_results",
+      "folder": "search_results.module",
+      "slug": "search_results",
+      "moduleId": "194846440767",
+      "suffix": "440767"
+    },
+    "social-follow": {
+      "label": "social-follow",
+      "folder": "social-follow.module",
+      "slug": "social-follow",
+      "moduleId": null,
+      "suffix": null
+    },
+    "special-heading": {
+      "label": "Special Heading",
+      "folder": "special-heading.module",
+      "slug": "special-heading",
+      "moduleId": "197675131804",
+      "suffix": "131804"
+    },
+    "special-intro": {
+      "label": "Special Intro",
+      "folder": "special-intro.module",
+      "slug": "special-intro",
+      "moduleId": "206359166091",
+      "suffix": "166091"
+    },
+    "special-metric": {
+      "label": "Special Metric",
+      "folder": "special-metric.module",
+      "slug": "special-metric",
+      "moduleId": "199468273751",
+      "suffix": "273751"
+    },
+    "features-stacked-content": {
+      "label": "Stacked Content Block",
+      "folder": "features-stacked-content.module",
+      "slug": "features-stacked-content",
+      "moduleId": "117657050778",
+      "suffix": "050778"
+    },
+    "stacked-images": {
+      "label": "Stacked Images",
+      "folder": "stacked-images.module",
+      "slug": "stacked-images",
+      "moduleId": "205064941899",
+      "suffix": "941899"
+    },
+    "tabs": {
+      "label": "Tabs",
+      "folder": "tabs.module",
+      "slug": "tabs",
+      "moduleId": "206146475556",
+      "suffix": "475556"
+    },
+    "testimonial-slider": {
+      "label": "Testimonial slider",
+      "folder": "testimonial-slider.module",
+      "slug": "testimonial-slider",
+      "moduleId": "108088150094",
+      "suffix": "150094"
+    },
+    "testimonial-slider-alt": {
+      "label": "Testimonial slider Alternate",
+      "folder": "testimonial-slider-alt.module",
+      "slug": "testimonial-slider-alt",
+      "moduleId": "192175200105",
+      "suffix": "200105"
+    },
+    "text-banner": {
+      "label": "Text Banner",
+      "folder": "text-banner.module",
+      "slug": "text-banner",
+      "moduleId": "192239305324",
+      "suffix": "305324"
+    },
+    "trending-posts": {
+      "label": "Trending Posts",
+      "folder": "trending-posts.module",
+      "slug": "trending-posts",
+      "moduleId": "208416292231",
+      "suffix": "292231"
+    },
+    "Usercentrics test": {
+      "label": "Usercentrics test",
+      "folder": "Usercentrics test.module",
+      "slug": "Usercentrics test",
+      "moduleId": "210730083616",
+      "suffix": "083616"
+    },
+    "video-hero": {
+      "label": "Video Hero",
+      "folder": "video-hero.module",
+      "slug": "video-hero",
+      "moduleId": "212405396265",
+      "suffix": "396265"
+    },
+    "widget-user-review": {
+      "label": "widget-user-review",
+      "folder": "widget-user-review.module",
+      "slug": "widget-user-review",
+      "moduleId": null,
+      "suffix": null
+    },
+    "callout-with-image": {
+      "label": "Widget: Callout with image",
+      "folder": "callout-with-image.module",
+      "slug": "callout-with-image",
+      "moduleId": "129888391057",
+      "suffix": "391057"
+    },
+    "widget-gx-show": {
+      "label": "Widget: GX Show",
+      "folder": "widget-gx-show.module",
+      "slug": "widget-gx-show",
+      "moduleId": "105708800428",
+      "suffix": "800428"
+    },
+    "widget-industry-rating": {
+      "label": "Widget: Industry Rating",
+      "folder": "widget-industry-rating.module",
+      "slug": "widget-industry-rating",
+      "moduleId": "111460321692",
+      "suffix": "321692"
+    },
+    "widget-group": {
+      "label": "Widgets: Widget Group",
+      "folder": "widget-group.module",
+      "slug": "widget-group",
+      "moduleId": "108776380673",
+      "suffix": "380673"
+    }
+  },
+  "sections": {
+    "s-4-bullet-content": {
+      "label": "4 Bullets Content",
+      "file": "s-4-bullet-content.html",
+      "slug": "s-4-bullet-content",
+      "sectionClass": "s-4-bullet-content",
+      "containsModules": [
+        "heading-composition",
+        "results-list"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-aurora-background": {
+      "label": "Aurora Background",
+      "file": "s-aurora-background.html",
+      "slug": "s-aurora-background",
+      "sectionClass": "s-aurora-background",
+      "containsModules": [
+        "inline HTML"
+      ],
+      "moduleCount": "0 module(s)"
+    },
+    "s-case-study": {
+      "label": "Case Study",
+      "file": "s-case-study.html",
+      "slug": "s-case-study",
+      "sectionClass": "s-case-study",
+      "containsModules": [
+        "heading-composition",
+        "button-stack",
+        "user-review-badges"
+      ],
+      "moduleCount": "4 module(s)"
+    },
+    "s-comparison": {
+      "label": "Comparison",
+      "file": "s-comparison.html",
+      "slug": "s-comparison",
+      "sectionClass": "s-comparison",
+      "containsModules": [
+        "heading-composition",
+        "comparison-table"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-customer-stories": {
+      "label": "Customer Stories",
+      "file": "s-customer-stories.html",
+      "slug": "s-customer-stories",
+      "sectionClass": "s-customer-stories",
+      "containsModules": [
+        "heading-composition",
+        "testimonial-slider"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-event-booth-programming": {
+      "label": "Event Listings",
+      "file": "s-event-booth-programming.html",
+      "slug": "s-event-booth-programming",
+      "sectionClass": "s-event-booth-programming",
+      "containsModules": [
+        "heading-composition",
+        "events-booth-programming"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-event-listings": {
+      "label": "Event Listings",
+      "file": "s-event-listings.html",
+      "slug": "s-event-listings",
+      "sectionClass": "s-event-listings",
+      "containsModules": [
+        "heading-composition",
+        "events-listing"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-event-premium-header": {
+      "label": "Case Study",
+      "file": "s-event-premium-header.html",
+      "slug": "s-event-premium-header",
+      "sectionClass": "s-event-premium-header",
+      "containsModules": [
+        "heading-composition",
+        "button-stack",
+        "user-review-badges"
+      ],
+      "moduleCount": "4 module(s)"
+    },
+    "s-featured-image": {
+      "label": "Featured Image",
+      "file": "s-featured-image.html",
+      "slug": "s-featured-image",
+      "sectionClass": "s-featured-image",
+      "containsModules": [
+        "heading-composition",
+        "button-stack",
+        "@hubspot/linked_image"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-features-horizontal-slider": {
+      "label": "Features Horizontal Slider content",
+      "file": "s-features-horizontal-slider.html",
+      "slug": "s-features-horizontal-slider",
+      "sectionClass": "s-features-horizontal-slider",
+      "containsModules": [
+        "heading-composition",
+        "features-horizontal-slider"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-features-stacked-content": {
+      "label": "Features Stacked content",
+      "file": "s-features-stacked-content.html",
+      "slug": "s-features-stacked-content",
+      "sectionClass": "s-features-stacked-content",
+      "containsModules": [
+        "features-stacked-content"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-general-habits": {
+      "label": "General Habits",
+      "file": "s-general-habits.html",
+      "slug": "s-general-habits",
+      "sectionClass": "s-general-habits",
+      "containsModules": [
+        "pulse-stat-card",
+        "pulse-stat-card",
+        "pulse-stat-card"
+      ],
+      "moduleCount": "8 module(s)"
+    },
+    "s-get-started": {
+      "label": "Get started",
+      "file": "s-get-started.html",
+      "slug": "s-get-started",
+      "sectionClass": "s-get-started",
+      "containsModules": [
+        "heading-composition",
+        "@hubspot/form"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-hero-partner": {
+      "label": "Hero Partner",
+      "file": "s-hero-partner.html",
+      "slug": "s-hero-partner",
+      "sectionClass": "s-hero-partner",
+      "containsModules": [
+        "heading-composition",
+        "button",
+        "@hubspot/text"
+      ],
+      "moduleCount": "4 module(s)"
+    },
+    "s-hero-product-explainer": {
+      "label": "Hero Product Explainer",
+      "file": "s-hero-product-explainer.html",
+      "slug": "s-hero-product-explainer",
+      "sectionClass": "s-hero-product-explainer",
+      "containsModules": [
+        "heading-composition",
+        "button-stack",
+        "@hubspot/linked_image"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-hero-product-tour": {
+      "label": "Hero Product Tour",
+      "file": "s-hero-product-tour.html",
+      "slug": "s-hero-product-tour",
+      "sectionClass": "s-hero-product-tour",
+      "containsModules": [
+        "heading-composition",
+        "button-stack",
+        "@hubspot/linked_image"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-hero": {
+      "label": "Hero",
+      "file": "s-hero.html",
+      "slug": "s-hero",
+      "sectionClass": "s-hero",
+      "containsModules": [
+        "heading-composition",
+        "features-card",
+        "button"
+      ],
+      "moduleCount": "4 module(s)"
+    },
+    "s-industry-rating": {
+      "label": "Industry Rating",
+      "file": "s-industry-rating.html",
+      "slug": "s-industry-rating",
+      "sectionClass": "s-industry-rating",
+      "containsModules": [
+        "heading-composition",
+        "badge-set",
+        "@hubspot/linked_image"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-industry-selector": {
+      "label": "Industry Selector",
+      "file": "s-industry-selector.html",
+      "slug": "s-industry-selector",
+      "sectionClass": "s-industry-selector",
+      "containsModules": [
+        "industry-selector-features-global"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-info-image-left": {
+      "label": "Info with landscape image on the left",
+      "file": "s-info-image-left.html",
+      "slug": "s-info-image-left",
+      "sectionClass": "s-info-image-left",
+      "containsModules": [
+        "@hubspot/linked_image",
+        "heading-composition",
+        "stat +2 more"
+      ],
+      "moduleCount": "5 module(s)"
+    },
+    "s-info-image-right": {
+      "label": "Info with landscape image on the right",
+      "file": "s-info-image-right.html",
+      "slug": "s-info-image-right",
+      "sectionClass": "s-info-image-right",
+      "containsModules": [
+        "heading-composition",
+        "stat",
+        "quote +2 more"
+      ],
+      "moduleCount": "5 module(s)"
+    },
+    "s-integration-bar": {
+      "label": "Integration Bar content",
+      "file": "s-integration-bar.html",
+      "slug": "s-integration-bar",
+      "sectionClass": "s-integration-bar",
+      "containsModules": [
+        "heading-composition",
+        "button",
+        "@hubspot/linked_image"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-key-takeaways": {
+      "label": "Key Takeaways",
+      "file": "s-key-takeaways.html",
+      "slug": "s-key-takeaways",
+      "sectionClass": "s-key-takeaways",
+      "containsModules": [
+        "pulse-key-takeaways"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-logo-set": {
+      "label": "Logo Set",
+      "file": "s-logo-set.html",
+      "slug": "s-logo-set",
+      "sectionClass": "s-logo-set",
+      "containsModules": [
+        "logo-set"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-multi-row-content": {
+      "label": "Multi-row content",
+      "file": "s-multi-row-content.html",
+      "slug": "s-multi-row-content",
+      "sectionClass": "s-multi-row-content",
+      "containsModules": [
+        "heading-composition",
+        "button",
+        "@hubspot/linked_image"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-operating-team": {
+      "label": "s-operating-team",
+      "file": "s-operating-team.html",
+      "slug": "s-operating-team",
+      "sectionClass": "s-operating-team",
+      "containsModules": [
+        "/rolls-theme/op-team"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-page-header": {
+      "label": "Hero",
+      "file": "s-page-header.html",
+      "slug": "s-page-header",
+      "sectionClass": "s-page-header",
+      "containsModules": [
+        "heading-composition"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-pain-points": {
+      "label": "Pain Points",
+      "file": "s-pain-points.html",
+      "slug": "s-pain-points",
+      "sectionClass": "s-pain-points",
+      "containsModules": [
+        "pulse-line-chart",
+        "pulse-half-circle-chart",
+        "pulse-stat-card"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-pulse-hero": {
+      "label": "Pulse Report Hero",
+      "file": "s-pulse-hero.html",
+      "slug": "s-pulse-hero",
+      "sectionClass": "s-pulse-hero",
+      "containsModules": [
+        "@hubspot/rich_text"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-pulse-insights": {
+      "label": "Pulse Data Insights",
+      "file": "s-pulse-insights.html",
+      "slug": "s-pulse-insights",
+      "sectionClass": "s-pulse-insights",
+      "containsModules": [
+        "@hubspot/rich_text"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-pulse-toc": {
+      "label": "Pulse Table of Contents",
+      "file": "s-pulse-toc.html",
+      "slug": "s-pulse-toc",
+      "sectionClass": "s-pulse-toc",
+      "containsModules": [
+        "@hubspot/rich_text"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-quote-two-columns": {
+      "label": "Quote two columns with badges",
+      "file": "s-quote-two-columns.html",
+      "slug": "s-quote-two-columns",
+      "sectionClass": "s-quote-two-columns",
+      "containsModules": [
+        "heading-composition",
+        "quote",
+        "quote"
+      ],
+      "moduleCount": "4 module(s)"
+    },
+    "s-rollup": {
+      "label": "Rollup",
+      "file": "s-rollup.html",
+      "slug": "s-rollup",
+      "sectionClass": "s-rollup",
+      "containsModules": [
+        "confetti",
+        "@hubspot/linked_image"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-services": {
+      "label": "Services detail content",
+      "file": "s-services.html",
+      "slug": "s-services",
+      "sectionClass": "s-services",
+      "containsModules": [
+        "service-detail"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-subscription-plans": {
+      "label": "Subscription Plans",
+      "file": "s-subscription-plans.html",
+      "slug": "s-subscription-plans",
+      "sectionClass": "s-subscription-plans",
+      "containsModules": [
+        "features-pricing-card",
+        "features-pricing-card"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-technology-innovation": {
+      "label": "Technology Innovation",
+      "file": "s-technology-innovation.html",
+      "slug": "s-technology-innovation",
+      "sectionClass": "s-technology-innovation",
+      "containsModules": [
+        "pulse-arc-chart",
+        "pulse-pizza-chart",
+        "pulse-line-chart"
+      ],
+      "moduleCount": "3 module(s)"
+    },
+    "s-testimonial-carousel": {
+      "label": "Testimonial Carousel",
+      "file": "s-testimonial-carousel.html",
+      "slug": "s-testimonial-carousel",
+      "sectionClass": "s-testimonial-carousel",
+      "containsModules": [
+        "testimonial-carousel"
+      ],
+      "moduleCount": "1 module(s)"
+    },
+    "s-two-column": {
+      "label": "Two Column Section",
+      "file": "s-two-column.html",
+      "slug": "s-two-column",
+      "sectionClass": "s-two-column",
+      "containsModules": [
+        "@hubspot/rich_text",
+        "@hubspot/rich_text"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-useful-links": {
+      "label": "Useful Links content",
+      "file": "s-useful-links.html",
+      "slug": "s-useful-links",
+      "sectionClass": "s-useful-links",
+      "containsModules": [
+        "heading-composition",
+        "widget-group"
+      ],
+      "moduleCount": "2 module(s)"
+    },
+    "s-widgets": {
+      "label": "Widgets",
+      "file": "s-widgets.html",
+      "slug": "s-widgets",
+      "sectionClass": "s-widgets",
+      "containsModules": [
+        "widget-industry-rating",
+        "widget-stats",
+        "widget-gx-show"
+      ],
+      "moduleCount": "3 module(s)"
+    }
+  },
+  "byId": {
+    "196599791751": {
+      "label": "Advanced Image",
+      "folder": "advanced-image.module",
+      "slug": "advanced-image",
+      "moduleId": "196599791751",
+      "suffix": "791751"
+    },
+    "791751": {
+      "label": "Advanced Image",
+      "folder": "advanced-image.module",
+      "slug": "advanced-image",
+      "moduleId": "196599791751",
+      "suffix": "791751"
+    },
+    "200985075814": {
+      "label": "Animated Hero",
+      "folder": "animated-hero.module",
+      "slug": "animated-hero",
+      "moduleId": "200985075814",
+      "suffix": "075814"
+    },
+    "075814": {
+      "label": "Animated Hero",
+      "folder": "animated-hero.module",
+      "slug": "animated-hero",
+      "moduleId": "200985075814",
+      "suffix": "075814"
+    },
+    "123703459626": {
+      "label": "Animation",
+      "folder": "animation-lottie.module",
+      "slug": "animation-lottie",
+      "moduleId": "123703459626",
+      "suffix": "459626"
+    },
+    "459626": {
+      "label": "Animation",
+      "folder": "animation-lottie.module",
+      "slug": "animation-lottie",
+      "moduleId": "123703459626",
+      "suffix": "459626"
+    },
+    "123703440162": {
+      "label": "Animation Graphic",
+      "folder": "animation-graphs.module",
+      "slug": "animation-graphs",
+      "moduleId": "123703440162",
+      "suffix": "440162"
+    },
+    "440162": {
+      "label": "Animation Graphic",
+      "folder": "animation-graphs.module",
+      "slug": "animation-graphs",
+      "moduleId": "123703440162",
+      "suffix": "440162"
+    },
+    "182537223954": {
+      "label": "Animation Guest Returning",
+      "folder": "animation-guest-returning.module",
+      "slug": "animation-guest-returning",
+      "moduleId": "182537223954",
+      "suffix": "223954"
+    },
+    "223954": {
+      "label": "Animation Guest Returning",
+      "folder": "animation-guest-returning.module",
+      "slug": "animation-guest-returning",
+      "moduleId": "182537223954",
+      "suffix": "223954"
+    },
+    "197573581433": {
+      "label": "Aurora Background",
+      "folder": "aurora-background.module",
+      "slug": "aurora-background",
+      "moduleId": "197573581433",
+      "suffix": "581433"
+    },
+    "581433": {
+      "label": "Aurora Background",
+      "folder": "aurora-background.module",
+      "slug": "aurora-background",
+      "moduleId": "197573581433",
+      "suffix": "581433"
+    },
+    "208610768993": {
+      "label": "Auto Play Slider",
+      "folder": "auto-play-slider.module",
+      "slug": "auto-play-slider",
+      "moduleId": "208610768993",
+      "suffix": "768993"
+    },
+    "768993": {
+      "label": "Auto Play Slider",
+      "folder": "auto-play-slider.module",
+      "slug": "auto-play-slider",
+      "moduleId": "208610768993",
+      "suffix": "768993"
+    },
+    "198366055599": {
+      "label": "Blog Group Cards",
+      "folder": "blog-cards.module",
+      "slug": "blog-cards",
+      "moduleId": "198366055599",
+      "suffix": "055599"
+    },
+    "055599": {
+      "label": "Blog Group Cards",
+      "folder": "blog-cards.module",
+      "slug": "blog-cards",
+      "moduleId": "198366055599",
+      "suffix": "055599"
+    },
+    "212337905703": {
+      "label": "Case Study",
+      "folder": "case-study.module",
+      "slug": "case-study",
+      "moduleId": "212337905703",
+      "suffix": "905703"
+    },
+    "905703": {
+      "label": "Case Study",
+      "folder": "case-study.module",
+      "slug": "case-study",
+      "moduleId": "212337905703",
+      "suffix": "905703"
+    },
+    "202247556502": {
+      "label": "Confetti Section",
+      "folder": "confetti-section.module",
+      "slug": "confetti-section",
+      "moduleId": "202247556502",
+      "suffix": "556502"
+    },
+    "556502": {
+      "label": "Confetti Section",
+      "folder": "confetti-section.module",
+      "slug": "confetti-section",
+      "moduleId": "202247556502",
+      "suffix": "556502"
+    },
+    "206157767450": {
+      "label": "CTA Banner",
+      "folder": "cta.module",
+      "slug": "cta",
+      "moduleId": "206157767450",
+      "suffix": "767450"
+    },
+    "767450": {
+      "label": "CTA Banner",
+      "folder": "cta.module",
+      "slug": "cta",
+      "moduleId": "206157767450",
+      "suffix": "767450"
+    },
+    "199461272502": {
+      "label": "Divider",
+      "folder": "divider.module",
+      "slug": "divider",
+      "moduleId": "199461272502",
+      "suffix": "272502"
+    },
+    "272502": {
+      "label": "Divider",
+      "folder": "divider.module",
+      "slug": "divider",
+      "moduleId": "199461272502",
+      "suffix": "272502"
+    },
+    "196180412704": {
+      "label": "FAQ 2",
+      "folder": "faq2.module",
+      "slug": "faq2",
+      "moduleId": "196180412704",
+      "suffix": "412704"
+    },
+    "412704": {
+      "label": "FAQ 2",
+      "folder": "faq2.module",
+      "slug": "faq2",
+      "moduleId": "196180412704",
+      "suffix": "412704"
+    },
+    "129515421737": {
+      "label": "FAQs section",
+      "folder": "FAQs.module",
+      "slug": "FAQs",
+      "moduleId": "129515421737",
+      "suffix": "421737"
+    },
+    "421737": {
+      "label": "FAQs section",
+      "folder": "FAQs.module",
+      "slug": "FAQs",
+      "moduleId": "129515421737",
+      "suffix": "421737"
+    },
+    "209136893466": {
+      "label": "Feature Block List",
+      "folder": "feature-block-list.module",
+      "slug": "feature-block-list",
+      "moduleId": "209136893466",
+      "suffix": "893466"
+    },
+    "893466": {
+      "label": "Feature Block List",
+      "folder": "feature-block-list.module",
+      "slug": "feature-block-list",
+      "moduleId": "209136893466",
+      "suffix": "893466"
+    },
+    "197851141745": {
+      "label": "Feature Introduction",
+      "folder": "feature-introduction.module",
+      "slug": "feature-introduction",
+      "moduleId": "197851141745",
+      "suffix": "141745"
+    },
+    "141745": {
+      "label": "Feature Introduction",
+      "folder": "feature-introduction.module",
+      "slug": "feature-introduction",
+      "moduleId": "197851141745",
+      "suffix": "141745"
+    },
+    "212055578120": {
+      "label": "Features Unfold",
+      "folder": "features-unfold.module",
+      "slug": "features-unfold",
+      "moduleId": "212055578120",
+      "suffix": "578120"
+    },
+    "578120": {
+      "label": "Features Unfold",
+      "folder": "features-unfold.module",
+      "slug": "features-unfold",
+      "moduleId": "212055578120",
+      "suffix": "578120"
+    },
+    "201957786980": {
+      "label": "Form and Hubspot meeting",
+      "folder": "Form and Hubspot meeting.module",
+      "slug": "Form and Hubspot meeting",
+      "moduleId": "201957786980",
+      "suffix": "786980"
+    },
+    "786980": {
+      "label": "Form and Hubspot meeting",
+      "folder": "Form and Hubspot meeting.module",
+      "slug": "Form and Hubspot meeting",
+      "moduleId": "201957786980",
+      "suffix": "786980"
+    },
+    "209615102298": {
+      "label": "Form-test",
+      "folder": "tabs/Form-test.module",
+      "slug": "tabs/Form-test",
+      "moduleId": "209615102298",
+      "suffix": "102298"
+    },
+    "102298": {
+      "label": "Form-test",
+      "folder": "tabs/Form-test.module",
+      "slug": "tabs/Form-test",
+      "moduleId": "209615102298",
+      "suffix": "102298"
+    },
+    "199088096417": {
+      "label": "Frame",
+      "folder": "frame.module",
+      "slug": "frame",
+      "moduleId": "199088096417",
+      "suffix": "096417"
+    },
+    "096417": {
+      "label": "Frame",
+      "folder": "frame.module",
+      "slug": "frame",
+      "moduleId": "199088096417",
+      "suffix": "096417"
+    },
+    "212697464654": {
+      "label": "French stats",
+      "folder": "widget-stats french.module",
+      "slug": "widget-stats french",
+      "moduleId": "212697464654",
+      "suffix": "464654"
+    },
+    "464654": {
+      "label": "French stats",
+      "folder": "widget-stats french.module",
+      "slug": "widget-stats french",
+      "moduleId": "212697464654",
+      "suffix": "464654"
+    },
+    "109435707160": {
+      "label": "Global: Header theme",
+      "folder": "header-theme.module",
+      "slug": "header-theme",
+      "moduleId": "109435707160",
+      "suffix": "707160"
+    },
+    "707160": {
+      "label": "Global: Header theme",
+      "folder": "header-theme.module",
+      "slug": "header-theme",
+      "moduleId": "109435707160",
+      "suffix": "707160"
+    },
+    "213288092966": {
+      "label": "Hero Full Introduction",
+      "folder": "hero-full-introduction.module",
+      "slug": "hero-full-introduction",
+      "moduleId": "213288092966",
+      "suffix": "092966"
+    },
+    "092966": {
+      "label": "Hero Full Introduction",
+      "folder": "hero-full-introduction.module",
+      "slug": "hero-full-introduction",
+      "moduleId": "213288092966",
+      "suffix": "092966"
+    },
+    "197896020560": {
+      "label": "Icon Cards",
+      "folder": "icon-cards.module",
+      "slug": "icon-cards",
+      "moduleId": "197896020560",
+      "suffix": "020560"
+    },
+    "020560": {
+      "label": "Icon Cards",
+      "folder": "icon-cards.module",
+      "slug": "icon-cards",
+      "moduleId": "197896020560",
+      "suffix": "020560"
+    },
+    "199892086609": {
+      "label": "Information Card",
+      "folder": "information-card.module",
+      "slug": "information-card",
+      "moduleId": "199892086609",
+      "suffix": "086609"
+    },
+    "086609": {
+      "label": "Information Card",
+      "folder": "information-card.module",
+      "slug": "information-card",
+      "moduleId": "199892086609",
+      "suffix": "086609"
+    },
+    "211211194424": {
+      "label": "Interactive Hero",
+      "folder": "interactive-hero.module",
+      "slug": "interactive-hero",
+      "moduleId": "211211194424",
+      "suffix": "194424"
+    },
+    "194424": {
+      "label": "Interactive Hero",
+      "folder": "interactive-hero.module",
+      "slug": "interactive-hero",
+      "moduleId": "211211194424",
+      "suffix": "194424"
+    },
+    "212343674941": {
+      "label": "Interactive Summary",
+      "folder": "interactive-summary.module",
+      "slug": "interactive-summary",
+      "moduleId": "212343674941",
+      "suffix": "674941"
+    },
+    "674941": {
+      "label": "Interactive Summary",
+      "folder": "interactive-summary.module",
+      "slug": "interactive-summary",
+      "moduleId": "212343674941",
+      "suffix": "674941"
+    },
+    "200349583262": {
+      "label": "Interactive SVG",
+      "folder": "interactive-svg.module",
+      "slug": "interactive-svg",
+      "moduleId": "200349583262",
+      "suffix": "583262"
+    },
+    "583262": {
+      "label": "Interactive SVG",
+      "folder": "interactive-svg.module",
+      "slug": "interactive-svg",
+      "moduleId": "200349583262",
+      "suffix": "583262"
+    },
+    "207759053429": {
+      "label": "Key Takeaways",
+      "folder": "key-takeaways.module",
+      "slug": "key-takeaways",
+      "moduleId": "207759053429",
+      "suffix": "053429"
+    },
+    "053429": {
+      "label": "Key Takeaways",
+      "folder": "key-takeaways.module",
+      "slug": "key-takeaways",
+      "moduleId": "207759053429",
+      "suffix": "053429"
+    },
+    "197961971893": {
+      "label": "Link Cards",
+      "folder": "link-cards.module",
+      "slug": "link-cards",
+      "moduleId": "197961971893",
+      "suffix": "971893"
+    },
+    "971893": {
+      "label": "Link Cards",
+      "folder": "link-cards.module",
+      "slug": "link-cards",
+      "moduleId": "197961971893",
+      "suffix": "971893"
+    },
+    "206146476623": {
+      "label": "Location",
+      "folder": "location.module",
+      "slug": "location",
+      "moduleId": "206146476623",
+      "suffix": "476623"
+    },
+    "476623": {
+      "label": "Location",
+      "folder": "location.module",
+      "slug": "location",
+      "moduleId": "206146476623",
+      "suffix": "476623"
+    },
+    "212906394904": {
+      "label": "Logo Set French",
+      "folder": "logo-set-global-french.module",
+      "slug": "logo-set-global-french",
+      "moduleId": "212906394904",
+      "suffix": "394904"
+    },
+    "394904": {
+      "label": "Logo Set French",
+      "folder": "logo-set-global-french.module",
+      "slug": "logo-set-global-french",
+      "moduleId": "212906394904",
+      "suffix": "394904"
+    },
+    "107498943492": {
+      "label": "Main Button",
+      "folder": "button.module",
+      "slug": "button",
+      "moduleId": "107498943492",
+      "suffix": "943492"
+    },
+    "943492": {
+      "label": "Main Button",
+      "folder": "button.module",
+      "slug": "button",
+      "moduleId": "107498943492",
+      "suffix": "943492"
+    },
+    "197618326085": {
+      "label": "Media Frame",
+      "folder": "media-frame.module",
+      "slug": "media-frame",
+      "moduleId": "197618326085",
+      "suffix": "326085"
+    },
+    "326085": {
+      "label": "Media Frame",
+      "folder": "media-frame.module",
+      "slug": "media-frame",
+      "moduleId": "197618326085",
+      "suffix": "326085"
+    },
+    "107494946662": {
+      "label": "Menu",
+      "folder": "menu.module",
+      "slug": "menu",
+      "moduleId": "107494946662",
+      "suffix": "946662"
+    },
+    "946662": {
+      "label": "Menu",
+      "folder": "menu.module",
+      "slug": "menu",
+      "moduleId": "107494946662",
+      "suffix": "946662"
+    },
+    "199392299277": {
+      "label": "Metric",
+      "folder": "metric.module",
+      "slug": "metric",
+      "moduleId": "199392299277",
+      "suffix": "299277"
+    },
+    "299277": {
+      "label": "Metric",
+      "folder": "metric.module",
+      "slug": "metric",
+      "moduleId": "199392299277",
+      "suffix": "299277"
+    },
+    "123703552525": {
+      "label": "Module: Announcement",
+      "folder": "announcement.module",
+      "slug": "announcement",
+      "moduleId": "123703552525",
+      "suffix": "552525"
+    },
+    "552525": {
+      "label": "Module: Announcement",
+      "folder": "announcement.module",
+      "slug": "announcement",
+      "moduleId": "123703552525",
+      "suffix": "552525"
+    },
+    "108444984843": {
+      "label": "Module: Badges Set",
+      "folder": "badge-set.module",
+      "slug": "badge-set",
+      "moduleId": "108444984843",
+      "suffix": "984843"
+    },
+    "984843": {
+      "label": "Module: Badges Set",
+      "folder": "badge-set.module",
+      "slug": "badge-set",
+      "moduleId": "108444984843",
+      "suffix": "984843"
+    },
+    "169545356032": {
+      "label": "Module: Card Blog Posts",
+      "folder": "card-blog-posts.module",
+      "slug": "card-blog-posts",
+      "moduleId": "169545356032",
+      "suffix": "356032"
+    },
+    "356032": {
+      "label": "Module: Card Blog Posts",
+      "folder": "card-blog-posts.module",
+      "slug": "card-blog-posts",
+      "moduleId": "169545356032",
+      "suffix": "356032"
+    },
+    "169545356033": {
+      "label": "Module: Card Events",
+      "folder": "card-events.module",
+      "slug": "card-events",
+      "moduleId": "169545356033",
+      "suffix": "356033"
+    },
+    "356033": {
+      "label": "Module: Card Events",
+      "folder": "card-events.module",
+      "slug": "card-events",
+      "moduleId": "169545356033",
+      "suffix": "356033"
+    },
+    "187474634609": {
+      "label": "Module: Card Partners",
+      "folder": "card-partners.module",
+      "slug": "card-partners",
+      "moduleId": "187474634609",
+      "suffix": "634609"
+    },
+    "634609": {
+      "label": "Module: Card Partners",
+      "folder": "card-partners.module",
+      "slug": "card-partners",
+      "moduleId": "187474634609",
+      "suffix": "634609"
+    },
+    "175158862662": {
+      "label": "Module: Card Pricing",
+      "folder": "card-pricing.module",
+      "slug": "card-pricing",
+      "moduleId": "175158862662",
+      "suffix": "862662"
+    },
+    "862662": {
+      "label": "Module: Card Pricing",
+      "folder": "card-pricing.module",
+      "slug": "card-pricing",
+      "moduleId": "175158862662",
+      "suffix": "862662"
+    },
+    "180648216676": {
+      "label": "Module: Card Segmentaion",
+      "folder": "card-segmentation.module",
+      "slug": "card-segmentation",
+      "moduleId": "180648216676",
+      "suffix": "216676"
+    },
+    "216676": {
+      "label": "Module: Card Segmentaion",
+      "folder": "card-segmentation.module",
+      "slug": "card-segmentation",
+      "moduleId": "180648216676",
+      "suffix": "216676"
+    },
+    "179786145409": {
+      "label": "Module: Checkout Preview",
+      "folder": "checkout-preview-form.module",
+      "slug": "checkout-preview-form",
+      "moduleId": "179786145409",
+      "suffix": "145409"
+    },
+    "145409": {
+      "label": "Module: Checkout Preview",
+      "folder": "checkout-preview-form.module",
+      "slug": "checkout-preview-form",
+      "moduleId": "179786145409",
+      "suffix": "145409"
+    },
+    "155204530611": {
+      "label": "Module: Comparison Table",
+      "folder": "comparison-table.module",
+      "slug": "comparison-table",
+      "moduleId": "155204530611",
+      "suffix": "530611"
+    },
+    "530611": {
+      "label": "Module: Comparison Table",
+      "folder": "comparison-table.module",
+      "slug": "comparison-table",
+      "moduleId": "155204530611",
+      "suffix": "530611"
+    },
+    "183048492066": {
+      "label": "Module: Confetti",
+      "folder": "confetti.module",
+      "slug": "confetti",
+      "moduleId": "183048492066",
+      "suffix": "492066"
+    },
+    "492066": {
+      "label": "Module: Confetti",
+      "folder": "confetti.module",
+      "slug": "confetti",
+      "moduleId": "183048492066",
+      "suffix": "492066"
+    },
+    "167209199188": {
+      "label": "Module: Custom Form",
+      "folder": "custom-form.module",
+      "slug": "custom-form",
+      "moduleId": "167209199188",
+      "suffix": "199188"
+    },
+    "199188": {
+      "label": "Module: Custom Form",
+      "folder": "custom-form.module",
+      "slug": "custom-form",
+      "moduleId": "167209199188",
+      "suffix": "199188"
+    },
+    "162241031844": {
+      "label": "Module: Events Booth Programming",
+      "folder": "events-booth-programming.module",
+      "slug": "events-booth-programming",
+      "moduleId": "162241031844",
+      "suffix": "031844"
+    },
+    "031844": {
+      "label": "Module: Events Booth Programming",
+      "folder": "events-booth-programming.module",
+      "slug": "events-booth-programming",
+      "moduleId": "162241031844",
+      "suffix": "031844"
+    },
+    "162239531061": {
+      "label": "Module: Events Listing",
+      "folder": "events-listing.module",
+      "slug": "events-listing",
+      "moduleId": "162239531061",
+      "suffix": "531061"
+    },
+    "531061": {
+      "label": "Module: Events Listing",
+      "folder": "events-listing.module",
+      "slug": "events-listing",
+      "moduleId": "162239531061",
+      "suffix": "531061"
+    },
+    "149510861401": {
+      "label": "Module: Features By Month",
+      "folder": "features-by-month.module",
+      "slug": "features-by-month",
+      "moduleId": "149510861401",
+      "suffix": "861401"
+    },
+    "861401": {
+      "label": "Module: Features By Month",
+      "folder": "features-by-month.module",
+      "slug": "features-by-month",
+      "moduleId": "149510861401",
+      "suffix": "861401"
+    },
+    "107498943489": {
+      "label": "Module: Features Card",
+      "folder": "features-card.module",
+      "slug": "features-card",
+      "moduleId": "107498943489",
+      "suffix": "943489"
+    },
+    "943489": {
+      "label": "Module: Features Card",
+      "folder": "features-card.module",
+      "slug": "features-card",
+      "moduleId": "107498943489",
+      "suffix": "943489"
+    },
+    "108776380677": {
+      "label": "Module: Features Detail",
+      "folder": "features-detail.module",
+      "slug": "features-detail",
+      "moduleId": "108776380677",
+      "suffix": "380677"
+    },
+    "380677": {
+      "label": "Module: Features Detail",
+      "folder": "features-detail.module",
+      "slug": "features-detail",
+      "moduleId": "108776380677",
+      "suffix": "380677"
+    },
+    "114338104070": {
+      "label": "Module: Features Horizontal Slider",
+      "folder": "features-horizontal-slider.module",
+      "slug": "features-horizontal-slider",
+      "moduleId": "114338104070",
+      "suffix": "104070"
+    },
+    "104070": {
+      "label": "Module: Features Horizontal Slider",
+      "folder": "features-horizontal-slider.module",
+      "slug": "features-horizontal-slider",
+      "moduleId": "114338104070",
+      "suffix": "104070"
+    },
+    "130988764750": {
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing-card.module",
+      "slug": "features-pricing-card",
+      "moduleId": "130988764750",
+      "suffix": "764750"
+    },
+    "764750": {
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing-card.module",
+      "slug": "features-pricing-card",
+      "moduleId": "130988764750",
+      "suffix": "764750"
+    },
+    "120099445835": {
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing.module",
+      "slug": "features-pricing",
+      "moduleId": "120099445835",
+      "suffix": "445835"
+    },
+    "445835": {
+      "label": "Module: Features Pricing Card",
+      "folder": "features-pricing.module",
+      "slug": "features-pricing",
+      "moduleId": "120099445835",
+      "suffix": "445835"
+    },
+    "170247408148": {
+      "label": "Module: Features Selector (Global)",
+      "folder": "features-selector-global.module",
+      "slug": "features-selector-global",
+      "moduleId": "170247408148",
+      "suffix": "408148"
+    },
+    "408148": {
+      "label": "Module: Features Selector (Global)",
+      "folder": "features-selector-global.module",
+      "slug": "features-selector-global",
+      "moduleId": "170247408148",
+      "suffix": "408148"
+    },
+    "145713614671": {
+      "label": "Module: GX Pricing Card",
+      "folder": "gx-pricing-card.module",
+      "slug": "gx-pricing-card",
+      "moduleId": "145713614671",
+      "suffix": "614671"
+    },
+    "614671": {
+      "label": "Module: GX Pricing Card",
+      "folder": "gx-pricing-card.module",
+      "slug": "gx-pricing-card",
+      "moduleId": "145713614671",
+      "suffix": "614671"
+    },
+    "198925714439": {
+      "label": "Module: Icons List",
+      "folder": "icons-list.module",
+      "slug": "icons-list",
+      "moduleId": "198925714439",
+      "suffix": "714439"
+    },
+    "714439": {
+      "label": "Module: Icons List",
+      "folder": "icons-list.module",
+      "slug": "icons-list",
+      "moduleId": "198925714439",
+      "suffix": "714439"
+    },
+    "183292700972": {
+      "label": "Module: Image Carousel",
+      "folder": "image-carousel.module",
+      "slug": "image-carousel",
+      "moduleId": "183292700972",
+      "suffix": "700972"
+    },
+    "700972": {
+      "label": "Module: Image Carousel",
+      "folder": "image-carousel.module",
+      "slug": "image-carousel",
+      "moduleId": "183292700972",
+      "suffix": "700972"
+    },
+    "144194728081": {
+      "label": "Module: Industry Selector",
+      "folder": "industry-selector.module",
+      "slug": "industry-selector",
+      "moduleId": "144194728081",
+      "suffix": "728081"
+    },
+    "728081": {
+      "label": "Module: Industry Selector",
+      "folder": "industry-selector.module",
+      "slug": "industry-selector",
+      "moduleId": "144194728081",
+      "suffix": "728081"
+    },
+    "160355623248": {
+      "label": "Module: Industry Selector (Global)",
+      "folder": "industry-selector-global.module",
+      "slug": "industry-selector-global",
+      "moduleId": "160355623248",
+      "suffix": "623248"
+    },
+    "623248": {
+      "label": "Module: Industry Selector (Global)",
+      "folder": "industry-selector-global.module",
+      "slug": "industry-selector-global",
+      "moduleId": "160355623248",
+      "suffix": "623248"
+    },
+    "164680689505": {
+      "label": "Module: Industry Selector Features (Global)",
+      "folder": "industry-selector-features-global.module",
+      "slug": "industry-selector-features-global",
+      "moduleId": "164680689505",
+      "suffix": "689505"
+    },
+    "689505": {
+      "label": "Module: Industry Selector Features (Global)",
+      "folder": "industry-selector-features-global.module",
+      "slug": "industry-selector-features-global",
+      "moduleId": "164680689505",
+      "suffix": "689505"
+    },
+    "107494886818": {
+      "label": "Module: Logo",
+      "folder": "logo.module",
+      "slug": "logo",
+      "moduleId": "107494886818",
+      "suffix": "886818"
+    },
+    "886818": {
+      "label": "Module: Logo",
+      "folder": "logo.module",
+      "slug": "logo",
+      "moduleId": "107494886818",
+      "suffix": "886818"
+    },
+    "195231364891": {
+      "label": "Module: Logo Set (Global)",
+      "folder": "logo-set-global-new.module",
+      "slug": "logo-set-global-new",
+      "moduleId": "195231364891",
+      "suffix": "364891"
+    },
+    "364891": {
+      "label": "Module: Logo Set (Global)",
+      "folder": "logo-set-global-new.module",
+      "slug": "logo-set-global-new",
+      "moduleId": "195231364891",
+      "suffix": "364891"
+    },
+    "209058129818": {
+      "label": "Module: Logo Set (Global) - logos only",
+      "folder": "logo-set-global-logos-only.module",
+      "slug": "logo-set-global-logos-only",
+      "moduleId": "209058129818",
+      "suffix": "129818"
+    },
+    "129818": {
+      "label": "Module: Logo Set (Global) - logos only",
+      "folder": "logo-set-global-logos-only.module",
+      "slug": "logo-set-global-logos-only",
+      "moduleId": "209058129818",
+      "suffix": "129818"
+    },
+    "196283720070": {
+      "label": "Module: Operating Team",
+      "folder": "op-team.module",
+      "slug": "op-team",
+      "moduleId": "196283720070",
+      "suffix": "720070"
+    },
+    "720070": {
+      "label": "Module: Operating Team",
+      "folder": "op-team.module",
+      "slug": "op-team",
+      "moduleId": "196283720070",
+      "suffix": "720070"
+    },
+    "181134074666": {
+      "label": "Module: Partnerships Form",
+      "folder": "partnerships-form.module",
+      "slug": "partnerships-form",
+      "moduleId": "181134074666",
+      "suffix": "074666"
+    },
+    "074666": {
+      "label": "Module: Partnerships Form",
+      "folder": "partnerships-form.module",
+      "slug": "partnerships-form",
+      "moduleId": "181134074666",
+      "suffix": "074666"
+    },
+    "107494492736": {
+      "label": "Module: Pricing Cards",
+      "folder": "pricing-card.module",
+      "slug": "pricing-card",
+      "moduleId": "107494492736",
+      "suffix": "492736"
+    },
+    "492736": {
+      "label": "Module: Pricing Cards",
+      "folder": "pricing-card.module",
+      "slug": "pricing-card",
+      "moduleId": "107494492736",
+      "suffix": "492736"
+    },
+    "139494732206": {
+      "label": "Module: Results List",
+      "folder": "results-list.module",
+      "slug": "results-list",
+      "moduleId": "139494732206",
+      "suffix": "732206"
+    },
+    "732206": {
+      "label": "Module: Results List",
+      "folder": "results-list.module",
+      "slug": "results-list",
+      "moduleId": "139494732206",
+      "suffix": "732206"
+    },
+    "178959313276": {
+      "label": "Module: ROI Calculator",
+      "folder": "roi-calculator.module",
+      "slug": "roi-calculator",
+      "moduleId": "178959313276",
+      "suffix": "313276"
+    },
+    "313276": {
+      "label": "Module: ROI Calculator",
+      "folder": "roi-calculator.module",
+      "slug": "roi-calculator",
+      "moduleId": "178959313276",
+      "suffix": "313276"
+    },
+    "171716777018": {
+      "label": "Module: Rotating Text",
+      "folder": "rotating-text.module",
+      "slug": "rotating-text",
+      "moduleId": "171716777018",
+      "suffix": "777018"
+    },
+    "777018": {
+      "label": "Module: Rotating Text",
+      "folder": "rotating-text.module",
+      "slug": "rotating-text",
+      "moduleId": "171716777018",
+      "suffix": "777018"
+    },
+    "130988459385": {
+      "label": "Module: RP Pricing Card",
+      "folder": "rp-pricing-card.module",
+      "slug": "rp-pricing-card",
+      "moduleId": "130988459385",
+      "suffix": "459385"
+    },
+    "459385": {
+      "label": "Module: RP Pricing Card",
+      "folder": "rp-pricing-card.module",
+      "slug": "rp-pricing-card",
+      "moduleId": "130988459385",
+      "suffix": "459385"
+    },
+    "108775308312": {
+      "label": "Module: Service Detail",
+      "folder": "service-detail.module",
+      "slug": "service-detail",
+      "moduleId": "108775308312",
+      "suffix": "308312"
+    },
+    "308312": {
+      "label": "Module: Service Detail",
+      "folder": "service-detail.module",
+      "slug": "service-detail",
+      "moduleId": "108775308312",
+      "suffix": "308312"
+    },
+    "108859395479": {
+      "label": "Module: Service List",
+      "folder": "service-list.module",
+      "slug": "service-list",
+      "moduleId": "108859395479",
+      "suffix": "395479"
+    },
+    "395479": {
+      "label": "Module: Service List",
+      "folder": "service-list.module",
+      "slug": "service-list",
+      "moduleId": "108859395479",
+      "suffix": "395479"
+    },
+    "107494885198": {
+      "label": "Module: Stats",
+      "folder": "stat.module",
+      "slug": "stat",
+      "moduleId": "107494885198",
+      "suffix": "885198"
+    },
+    "885198": {
+      "label": "Module: Stats",
+      "folder": "stat.module",
+      "slug": "stat",
+      "moduleId": "107494885198",
+      "suffix": "885198"
+    },
+    "138558821728": {
+      "label": "Module: Stats Set",
+      "folder": "stats-set.module",
+      "slug": "stats-set",
+      "moduleId": "138558821728",
+      "suffix": "821728"
+    },
+    "821728": {
+      "label": "Module: Stats Set",
+      "folder": "stats-set.module",
+      "slug": "stats-set",
+      "moduleId": "138558821728",
+      "suffix": "821728"
+    },
+    "180893604893": {
+      "label": "Module: Stats Set Stacked",
+      "folder": "stats-set-stacked.module",
+      "slug": "stats-set-stacked",
+      "moduleId": "180893604893",
+      "suffix": "604893"
+    },
+    "604893": {
+      "label": "Module: Stats Set Stacked",
+      "folder": "stats-set-stacked.module",
+      "slug": "stats-set-stacked",
+      "moduleId": "180893604893",
+      "suffix": "604893"
+    },
+    "138997888534": {
+      "label": "Module: Testimonial Carousel",
+      "folder": "testimonial-carousel.module",
+      "slug": "testimonial-carousel",
+      "moduleId": "138997888534",
+      "suffix": "888534"
+    },
+    "888534": {
+      "label": "Module: Testimonial Carousel",
+      "folder": "testimonial-carousel.module",
+      "slug": "testimonial-carousel",
+      "moduleId": "138997888534",
+      "suffix": "888534"
+    },
+    "129923296841": {
+      "label": "Module: Text list feed",
+      "folder": "text-list-feed.module",
+      "slug": "text-list-feed",
+      "moduleId": "129923296841",
+      "suffix": "296841"
+    },
+    "296841": {
+      "label": "Module: Text list feed",
+      "folder": "text-list-feed.module",
+      "slug": "text-list-feed",
+      "moduleId": "129923296841",
+      "suffix": "296841"
+    },
+    "195903824272": {
+      "label": "Module: Video reel",
+      "folder": "video-reel.module",
+      "slug": "video-reel",
+      "moduleId": "195903824272",
+      "suffix": "824272"
+    },
+    "824272": {
+      "label": "Module: Video reel",
+      "folder": "video-reel.module",
+      "slug": "video-reel",
+      "moduleId": "195903824272",
+      "suffix": "824272"
+    },
+    "108434467959": {
+      "label": "Modules: Social Icons Set",
+      "folder": "social-icons-set.module",
+      "slug": "social-icons-set",
+      "moduleId": "108434467959",
+      "suffix": "467959"
+    },
+    "467959": {
+      "label": "Modules: Social Icons Set",
+      "folder": "social-icons-set.module",
+      "slug": "social-icons-set",
+      "moduleId": "108434467959",
+      "suffix": "467959"
+    },
+    "201065981968": {
+      "label": "Monthly Features",
+      "folder": "monthly-features.module",
+      "slug": "monthly-features",
+      "moduleId": "201065981968",
+      "suffix": "981968"
+    },
+    "981968": {
+      "label": "Monthly Features",
+      "folder": "monthly-features.module",
+      "slug": "monthly-features",
+      "moduleId": "201065981968",
+      "suffix": "981968"
+    },
+    "198487529657": {
+      "label": "New Quote",
+      "folder": "quote-new.module",
+      "slug": "quote-new",
+      "moduleId": "198487529657",
+      "suffix": "529657"
+    },
+    "529657": {
+      "label": "New Quote",
+      "folder": "quote-new.module",
+      "slug": "quote-new",
+      "moduleId": "198487529657",
+      "suffix": "529657"
+    },
+    "202831607562": {
+      "label": "New ROI Calculator",
+      "folder": "new-roi-calculator.module",
+      "slug": "new-roi-calculator",
+      "moduleId": "202831607562",
+      "suffix": "607562"
+    },
+    "607562": {
+      "label": "New ROI Calculator",
+      "folder": "new-roi-calculator.module",
+      "slug": "new-roi-calculator",
+      "moduleId": "202831607562",
+      "suffix": "607562"
+    },
+    "206667096947": {
+      "label": "Open Jobs",
+      "folder": "open-jobs.module",
+      "slug": "open-jobs",
+      "moduleId": "206667096947",
+      "suffix": "096947"
+    },
+    "096947": {
+      "label": "Open Jobs",
+      "folder": "open-jobs.module",
+      "slug": "open-jobs",
+      "moduleId": "206667096947",
+      "suffix": "096947"
+    },
+    "186990854431": {
+      "label": "Post Sidebar Anchor Links",
+      "folder": "blog-sidebar-anchor-links.module",
+      "slug": "blog-sidebar-anchor-links",
+      "moduleId": "186990854431",
+      "suffix": "854431"
+    },
+    "854431": {
+      "label": "Post Sidebar Anchor Links",
+      "folder": "blog-sidebar-anchor-links.module",
+      "slug": "blog-sidebar-anchor-links",
+      "moduleId": "186990854431",
+      "suffix": "854431"
+    },
+    "196024395893": {
+      "label": "Pricing section",
+      "folder": "sections.module",
+      "slug": "sections",
+      "moduleId": "196024395893",
+      "suffix": "395893"
+    },
+    "395893": {
+      "label": "Pricing section",
+      "folder": "sections.module",
+      "slug": "sections",
+      "moduleId": "196024395893",
+      "suffix": "395893"
+    },
+    "196024314162": {
+      "label": "Pricing Widget",
+      "folder": "Pricing Widget.module",
+      "slug": "Pricing Widget",
+      "moduleId": "196024314162",
+      "suffix": "314162"
+    },
+    "314162": {
+      "label": "Pricing Widget",
+      "folder": "Pricing Widget.module",
+      "slug": "Pricing Widget",
+      "moduleId": "196024314162",
+      "suffix": "314162"
+    },
+    "211755500802": {
+      "label": "Product Launch Card",
+      "folder": "product-launch-card.module",
+      "slug": "product-launch-card",
+      "moduleId": "211755500802",
+      "suffix": "500802"
+    },
+    "500802": {
+      "label": "Product Launch Card",
+      "folder": "product-launch-card.module",
+      "slug": "product-launch-card",
+      "moduleId": "211755500802",
+      "suffix": "500802"
+    },
+    "196161820003": {
+      "label": "Pulse Arc Chart",
+      "folder": "pulse-arc-chart.module",
+      "slug": "pulse-arc-chart",
+      "moduleId": "196161820003",
+      "suffix": "820003"
+    },
+    "820003": {
+      "label": "Pulse Arc Chart",
+      "folder": "pulse-arc-chart.module",
+      "slug": "pulse-arc-chart",
+      "moduleId": "196161820003",
+      "suffix": "820003"
+    },
+    "196030106706": {
+      "label": "Pulse Bar Chart",
+      "folder": "pulse-bar-chart.module",
+      "slug": "pulse-bar-chart",
+      "moduleId": "196030106706",
+      "suffix": "106706"
+    },
+    "106706": {
+      "label": "Pulse Bar Chart",
+      "folder": "pulse-bar-chart.module",
+      "slug": "pulse-bar-chart",
+      "moduleId": "196030106706",
+      "suffix": "106706"
+    },
+    "196161819228": {
+      "label": "Pulse Circle Chart",
+      "folder": "pulse-circle-chart.module",
+      "slug": "pulse-circle-chart",
+      "moduleId": "196161819228",
+      "suffix": "819228"
+    },
+    "819228": {
+      "label": "Pulse Circle Chart",
+      "folder": "pulse-circle-chart.module",
+      "slug": "pulse-circle-chart",
+      "moduleId": "196161819228",
+      "suffix": "819228"
+    },
+    "196161820000": {
+      "label": "Pulse Half Circle Chart",
+      "folder": "pulse-half-circle-chart.module",
+      "slug": "pulse-half-circle-chart",
+      "moduleId": "196161820000",
+      "suffix": "820000"
+    },
+    "820000": {
+      "label": "Pulse Half Circle Chart",
+      "folder": "pulse-half-circle-chart.module",
+      "slug": "pulse-half-circle-chart",
+      "moduleId": "196161820000",
+      "suffix": "820000"
+    },
+    "196030103692": {
+      "label": "Pulse Hero Title",
+      "folder": "pulse-hero-title.module",
+      "slug": "pulse-hero-title",
+      "moduleId": "196030103692",
+      "suffix": "103692"
+    },
+    "103692": {
+      "label": "Pulse Hero Title",
+      "folder": "pulse-hero-title.module",
+      "slug": "pulse-hero-title",
+      "moduleId": "196030103692",
+      "suffix": "103692"
+    },
+    "196173664173": {
+      "label": "Pulse Key Takeaways",
+      "folder": "pulse-key-takeaways.module",
+      "slug": "pulse-key-takeaways",
+      "moduleId": "196173664173",
+      "suffix": "664173"
+    },
+    "664173": {
+      "label": "Pulse Key Takeaways",
+      "folder": "pulse-key-takeaways.module",
+      "slug": "pulse-key-takeaways",
+      "moduleId": "196173664173",
+      "suffix": "664173"
+    },
+    "196161819944": {
+      "label": "Pulse Line Chart",
+      "folder": "pulse-line-chart.module",
+      "slug": "pulse-line-chart",
+      "moduleId": "196161819944",
+      "suffix": "819944"
+    },
+    "819944": {
+      "label": "Pulse Line Chart",
+      "folder": "pulse-line-chart.module",
+      "slug": "pulse-line-chart",
+      "moduleId": "196161819944",
+      "suffix": "819944"
+    },
+    "196030106711": {
+      "label": "Pulse Pie Chart",
+      "folder": "pulse-pie-chart.module",
+      "slug": "pulse-pie-chart",
+      "moduleId": "196030106711",
+      "suffix": "106711"
+    },
+    "106711": {
+      "label": "Pulse Pie Chart",
+      "folder": "pulse-pie-chart.module",
+      "slug": "pulse-pie-chart",
+      "moduleId": "196030106711",
+      "suffix": "106711"
+    },
+    "196161820007": {
+      "label": "Pulse Pizza Chart",
+      "folder": "pulse-pizza-chart.module",
+      "slug": "pulse-pizza-chart",
+      "moduleId": "196161820007",
+      "suffix": "820007"
+    },
+    "820007": {
+      "label": "Pulse Pizza Chart",
+      "folder": "pulse-pizza-chart.module",
+      "slug": "pulse-pizza-chart",
+      "moduleId": "196161820007",
+      "suffix": "820007"
+    },
+    "196523673474": {
+      "label": "Pulse Radar Chart",
+      "folder": "pulse-radar-chart.module",
+      "slug": "pulse-radar-chart",
+      "moduleId": "196523673474",
+      "suffix": "673474"
+    },
+    "673474": {
+      "label": "Pulse Radar Chart",
+      "folder": "pulse-radar-chart.module",
+      "slug": "pulse-radar-chart",
+      "moduleId": "196523673474",
+      "suffix": "673474"
+    },
+    "196161819941": {
+      "label": "Pulse Report Heading",
+      "folder": "pulse-report-heading.module",
+      "slug": "pulse-report-heading",
+      "moduleId": "196161819941",
+      "suffix": "819941"
+    },
+    "819941": {
+      "label": "Pulse Report Heading",
+      "folder": "pulse-report-heading.module",
+      "slug": "pulse-report-heading",
+      "moduleId": "196161819941",
+      "suffix": "819941"
+    },
+    "196229865341": {
+      "label": "Pulse Section Heading",
+      "folder": "pulse-section-heading.module",
+      "slug": "pulse-section-heading",
+      "moduleId": "196229865341",
+      "suffix": "865341"
+    },
+    "865341": {
+      "label": "Pulse Section Heading",
+      "folder": "pulse-section-heading.module",
+      "slug": "pulse-section-heading",
+      "moduleId": "196229865341",
+      "suffix": "865341"
+    },
+    "196030103871": {
+      "label": "Pulse Stat Card",
+      "folder": "pulse-stat-card.module",
+      "slug": "pulse-stat-card",
+      "moduleId": "196030103871",
+      "suffix": "103871"
+    },
+    "103871": {
+      "label": "Pulse Stat Card",
+      "folder": "pulse-stat-card.module",
+      "slug": "pulse-stat-card",
+      "moduleId": "196030103871",
+      "suffix": "103871"
+    },
+    "196030106658": {
+      "label": "Pulse Wave Animation",
+      "folder": "pulse-wave-animation.module",
+      "slug": "pulse-wave-animation",
+      "moduleId": "196030106658",
+      "suffix": "106658"
+    },
+    "106658": {
+      "label": "Pulse Wave Animation",
+      "folder": "pulse-wave-animation.module",
+      "slug": "pulse-wave-animation",
+      "moduleId": "196030106658",
+      "suffix": "106658"
+    },
+    "107498944440": {
+      "label": "Quote",
+      "folder": "quote.module",
+      "slug": "quote",
+      "moduleId": "107498944440",
+      "suffix": "944440"
+    },
+    "944440": {
+      "label": "Quote",
+      "folder": "quote.module",
+      "slug": "quote",
+      "moduleId": "107498944440",
+      "suffix": "944440"
+    },
+    "210357628293": {
+      "label": "Range Slider",
+      "folder": "range-slider.module",
+      "slug": "range-slider",
+      "moduleId": "210357628293",
+      "suffix": "628293"
+    },
+    "628293": {
+      "label": "Range Slider",
+      "folder": "range-slider.module",
+      "slug": "range-slider",
+      "moduleId": "210357628293",
+      "suffix": "628293"
+    },
+    "197963858261": {
+      "label": "Reports",
+      "folder": "reports.module",
+      "slug": "reports",
+      "moduleId": "197963858261",
+      "suffix": "858261"
+    },
+    "858261": {
+      "label": "Reports",
+      "folder": "reports.module",
+      "slug": "reports",
+      "moduleId": "197963858261",
+      "suffix": "858261"
+    },
+    "194846440742": {
+      "label": "search_input copy",
+      "folder": "search_input.module",
+      "slug": "search_input",
+      "moduleId": "194846440742",
+      "suffix": "440742"
+    },
+    "440742": {
+      "label": "search_input copy",
+      "folder": "search_input.module",
+      "slug": "search_input",
+      "moduleId": "194846440742",
+      "suffix": "440742"
+    },
+    "194846440767": {
+      "label": "search_results",
+      "folder": "search_results.module",
+      "slug": "search_results",
+      "moduleId": "194846440767",
+      "suffix": "440767"
+    },
+    "440767": {
+      "label": "search_results",
+      "folder": "search_results.module",
+      "slug": "search_results",
+      "moduleId": "194846440767",
+      "suffix": "440767"
+    },
+    "197675131804": {
+      "label": "Special Heading",
+      "folder": "special-heading.module",
+      "slug": "special-heading",
+      "moduleId": "197675131804",
+      "suffix": "131804"
+    },
+    "131804": {
+      "label": "Special Heading",
+      "folder": "special-heading.module",
+      "slug": "special-heading",
+      "moduleId": "197675131804",
+      "suffix": "131804"
+    },
+    "206359166091": {
+      "label": "Special Intro",
+      "folder": "special-intro.module",
+      "slug": "special-intro",
+      "moduleId": "206359166091",
+      "suffix": "166091"
+    },
+    "166091": {
+      "label": "Special Intro",
+      "folder": "special-intro.module",
+      "slug": "special-intro",
+      "moduleId": "206359166091",
+      "suffix": "166091"
+    },
+    "199468273751": {
+      "label": "Special Metric",
+      "folder": "special-metric.module",
+      "slug": "special-metric",
+      "moduleId": "199468273751",
+      "suffix": "273751"
+    },
+    "273751": {
+      "label": "Special Metric",
+      "folder": "special-metric.module",
+      "slug": "special-metric",
+      "moduleId": "199468273751",
+      "suffix": "273751"
+    },
+    "117657050778": {
+      "label": "Stacked Content Block",
+      "folder": "features-stacked-content.module",
+      "slug": "features-stacked-content",
+      "moduleId": "117657050778",
+      "suffix": "050778"
+    },
+    "050778": {
+      "label": "Stacked Content Block",
+      "folder": "features-stacked-content.module",
+      "slug": "features-stacked-content",
+      "moduleId": "117657050778",
+      "suffix": "050778"
+    },
+    "205064941899": {
+      "label": "Stacked Images",
+      "folder": "stacked-images.module",
+      "slug": "stacked-images",
+      "moduleId": "205064941899",
+      "suffix": "941899"
+    },
+    "941899": {
+      "label": "Stacked Images",
+      "folder": "stacked-images.module",
+      "slug": "stacked-images",
+      "moduleId": "205064941899",
+      "suffix": "941899"
+    },
+    "206146475556": {
+      "label": "Tabs",
+      "folder": "tabs.module",
+      "slug": "tabs",
+      "moduleId": "206146475556",
+      "suffix": "475556"
+    },
+    "475556": {
+      "label": "Tabs",
+      "folder": "tabs.module",
+      "slug": "tabs",
+      "moduleId": "206146475556",
+      "suffix": "475556"
+    },
+    "108088150094": {
+      "label": "Testimonial slider",
+      "folder": "testimonial-slider.module",
+      "slug": "testimonial-slider",
+      "moduleId": "108088150094",
+      "suffix": "150094"
+    },
+    "150094": {
+      "label": "Testimonial slider",
+      "folder": "testimonial-slider.module",
+      "slug": "testimonial-slider",
+      "moduleId": "108088150094",
+      "suffix": "150094"
+    },
+    "192175200105": {
+      "label": "Testimonial slider Alternate",
+      "folder": "testimonial-slider-alt.module",
+      "slug": "testimonial-slider-alt",
+      "moduleId": "192175200105",
+      "suffix": "200105"
+    },
+    "200105": {
+      "label": "Testimonial slider Alternate",
+      "folder": "testimonial-slider-alt.module",
+      "slug": "testimonial-slider-alt",
+      "moduleId": "192175200105",
+      "suffix": "200105"
+    },
+    "192239305324": {
+      "label": "Text Banner",
+      "folder": "text-banner.module",
+      "slug": "text-banner",
+      "moduleId": "192239305324",
+      "suffix": "305324"
+    },
+    "305324": {
+      "label": "Text Banner",
+      "folder": "text-banner.module",
+      "slug": "text-banner",
+      "moduleId": "192239305324",
+      "suffix": "305324"
+    },
+    "208416292231": {
+      "label": "Trending Posts",
+      "folder": "trending-posts.module",
+      "slug": "trending-posts",
+      "moduleId": "208416292231",
+      "suffix": "292231"
+    },
+    "292231": {
+      "label": "Trending Posts",
+      "folder": "trending-posts.module",
+      "slug": "trending-posts",
+      "moduleId": "208416292231",
+      "suffix": "292231"
+    },
+    "210730083616": {
+      "label": "Usercentrics test",
+      "folder": "Usercentrics test.module",
+      "slug": "Usercentrics test",
+      "moduleId": "210730083616",
+      "suffix": "083616"
+    },
+    "083616": {
+      "label": "Usercentrics test",
+      "folder": "Usercentrics test.module",
+      "slug": "Usercentrics test",
+      "moduleId": "210730083616",
+      "suffix": "083616"
+    },
+    "212405396265": {
+      "label": "Video Hero",
+      "folder": "video-hero.module",
+      "slug": "video-hero",
+      "moduleId": "212405396265",
+      "suffix": "396265"
+    },
+    "396265": {
+      "label": "Video Hero",
+      "folder": "video-hero.module",
+      "slug": "video-hero",
+      "moduleId": "212405396265",
+      "suffix": "396265"
+    },
+    "129888391057": {
+      "label": "Widget: Callout with image",
+      "folder": "callout-with-image.module",
+      "slug": "callout-with-image",
+      "moduleId": "129888391057",
+      "suffix": "391057"
+    },
+    "391057": {
+      "label": "Widget: Callout with image",
+      "folder": "callout-with-image.module",
+      "slug": "callout-with-image",
+      "moduleId": "129888391057",
+      "suffix": "391057"
+    },
+    "105708800428": {
+      "label": "Widget: GX Show",
+      "folder": "widget-gx-show.module",
+      "slug": "widget-gx-show",
+      "moduleId": "105708800428",
+      "suffix": "800428"
+    },
+    "800428": {
+      "label": "Widget: GX Show",
+      "folder": "widget-gx-show.module",
+      "slug": "widget-gx-show",
+      "moduleId": "105708800428",
+      "suffix": "800428"
+    },
+    "111460321692": {
+      "label": "Widget: Industry Rating",
+      "folder": "widget-industry-rating.module",
+      "slug": "widget-industry-rating",
+      "moduleId": "111460321692",
+      "suffix": "321692"
+    },
+    "321692": {
+      "label": "Widget: Industry Rating",
+      "folder": "widget-industry-rating.module",
+      "slug": "widget-industry-rating",
+      "moduleId": "111460321692",
+      "suffix": "321692"
+    },
+    "108776380673": {
+      "label": "Widgets: Widget Group",
+      "folder": "widget-group.module",
+      "slug": "widget-group",
+      "moduleId": "108776380673",
+      "suffix": "380673"
+    },
+    "380673": {
+      "label": "Widgets: Widget Group",
+      "folder": "widget-group.module",
+      "slug": "widget-group",
+      "moduleId": "108776380673",
+      "suffix": "380673"
+    }
+  }
+}

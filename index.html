@@ -9,7 +9,7 @@
     --blue-10:#011840;--blue-30:#033180;--blue-50:#0960F6;--blue-90:#CEDFFD;--blue-95:#EBF2FE;
     --coral:#FF490C;--green:#18F273;--white:#fff;
     --text:#011840;--muted:#5B6B86;--border:#D7E2F7;--bg:#F7F9FE;--card:#fff;
-    --font:"Proxima Nova",Arial,Helvetica,sans-serif;--maxw:1000px;--r:10px;
+    --font:"Proxima Nova",Arial,Helvetica,sans-serif;--maxw:1200px;--r:10px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -135,6 +135,39 @@
   #panel-index{display:none}
   /* pages tab */
   #panel-pages{display:none}
+  /* hubspot components tab */
+  #panel-hs{display:none}
+  .hs-frame{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-top:16px;box-shadow:0 1px 2px rgba(1,24,64,.06)}
+  .hs-frame iframe{display:block;width:100%;height:calc(100vh - 240px);min-height:640px;border:0}
+  .hs-note{background:#FFEEE7;border:1px solid var(--border);border-left:4px solid var(--coral);border-radius:8px;padding:10px 14px;margin:12px 0 0;font-size:13px;color:#9A3412;line-height:1.5}
+  .hs-map-panel{background:#fff;border:1px solid var(--border);border-radius:var(--r);margin:16px 0 0;overflow:hidden}
+  .hs-map-head{padding:12px 16px;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+  .hs-map-head h2{margin:0;font-size:15px;flex:1;min-width:180px}
+  .hs-map-filters{display:flex;flex-wrap:wrap;gap:6px}
+  .hs-map-filters button{font-size:12px;font-weight:700;padding:5px 10px;border:1px solid var(--border);border-radius:999px;background:#fff;color:var(--blue-30);cursor:pointer}
+  .hs-map-filters button.on{background:var(--coral);border-color:var(--coral);color:#fff}
+  .hs-map-body{max-height:280px;overflow:auto}
+  .hs-map-table{width:100%;border-collapse:collapse;font-size:12.5px}
+  .hs-map-table th,.hs-map-table td{border-bottom:1px solid var(--border);padding:7px 12px;text-align:left;vertical-align:top}
+  .hs-map-table th{position:sticky;top:0;background:#FBFCFF;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);z-index:1}
+  .hs-map-table tr:hover td{background:var(--blue-95)}
+  .hs-map-kind{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .hs-map-conf{font-size:10px;font-weight:700;padding:2px 6px;border-radius:999px;white-space:nowrap}
+  .hs-map-conf.high{background:#E3FBEE;color:#04632B}
+  .hs-map-conf.medium{background:#FFEEE7;color:#B22F04}
+  .hs-map-conf.low{background:#EEF1F5;color:#5B6B86}
+  .hs-map-status{font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px;white-space:nowrap}
+  .hs-map-status.mapped{background:#E3FBEE;color:#04632B}
+  .hs-map-status.gap{background:#FEF3C7;color:#92400E}
+  .hs-map-status.unmapped{background:#EEF1F5;color:#5B6B86}
+  .hs-map-link{font-weight:700;color:var(--blue-50);text-decoration:none}
+  .hs-map-link:hover{text-decoration:underline}
+  .hs-map-reason{color:var(--muted);font-size:12px;max-width:340px}
+  .hs-pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin:2px 4px 2px 0;text-decoration:none;border:1px solid var(--border);background:#FFEEE7;color:#B22F04}
+  .hs-pill:hover{background:var(--coral);color:#fff;border-color:var(--coral)}
+  .hs-pill.sec{background:#e6f7f0;color:#0a6e4e;border-color:#b8e6d4}
+  .hs-pill.gap-pill{background:#FEF3C7;color:#92400E;border-color:#f5d88a}
+  .hs-map-gap{font-size:13px;color:#92400E;line-height:1.45}
   .pg-stats{display:flex;background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:22px 0}
   .pg-stat{flex:1;padding:14px 20px;text-align:center;border-right:1px solid var(--border)}
   .pg-stat:last-child{border-right:none}
@@ -177,7 +210,7 @@
   .pg-filter{font-family:inherit;font-size:12px;font-weight:700;border:1px solid var(--border);background:#fff;color:var(--text);border-radius:999px;padding:5px 12px;cursor:pointer}
   .pg-filter[aria-pressed="true"]{background:var(--blue-50);color:#fff;border-color:var(--blue-50)}
   .pg-filter-count{font-size:10px;opacity:.85;margin-left:4px}
-  .pg-filter-status{font-size:13px;color:var(--muted);margin:0 0 14px;min-height:1.2em}
+  .pg-filter-status{font-size:13px;color:var(--blue-10);margin:0 0 14px;min-height:1.2em}
   .pg-row.pg-hidden{display:none}
   .pg-comp-pills{display:flex;gap:4px;flex-wrap:wrap;flex:none;align-items:center}
   .pg-comp-pill{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;text-decoration:none;letter-spacing:.02em}
@@ -206,6 +239,39 @@
   .comp-coverage-faq:hover{background:#5B21B6;color:#fff}
   .comp-coverage-twocol{background:var(--blue-95);color:var(--blue-30)}
   .comp-coverage-twocol:hover{background:var(--blue-30);color:#fff}
+  /* per-page HubSpot module audit */
+  .pg-mod-audit{width:100%;flex-basis:100%;margin:4px 0 2px;border:1px solid var(--border);border-radius:8px;background:#FBFCFF;overflow:hidden}
+  .pg-mod-audit>summary{list-style:none;cursor:pointer;padding:7px 12px;font-size:12.5px;font-weight:700;color:var(--blue-30);display:flex;align-items:center;gap:8px}
+  .pg-mod-audit>summary::-webkit-details-marker{display:none}
+  .pg-mod-audit>summary .pg-mod-count{font-size:11px;font-weight:700;color:var(--muted)}
+  .pg-mod-body{padding:0 10px 10px;display:grid;gap:8px}
+  .pg-mod-group{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--blue-30);margin:6px 0 2px}
+  .pg-mod-item{background:#fff;border:1px solid var(--border);border-radius:6px;padding:8px 10px;font-size:12.5px}
+  .pg-mod-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:2px}
+  .pg-mod-title{font-weight:700;color:var(--text)}
+  .pg-mod-kind{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:999px;background:var(--blue-95);color:var(--blue-30)}
+  .pg-mod-kind.kind-section{background:#E6F7F0;color:#0a6e4e}
+  .pg-mod-kind.kind-instance{background:#EDE7FF;color:#5B21B6}
+  .pg-mod-kind.kind-widget{background:#FFEEE7;color:#B22F04}
+  .pg-mod-kind.kind-css{background:var(--blue-95);color:var(--blue-30)}
+  .pg-mod-kind.kind-hs{background:#EEF1F5;color:#5B6B86}
+  .pg-mod-dl{display:grid;grid-template-columns:92px 1fr;gap:3px 8px;margin:6px 0 0;font-size:12px}
+  .pg-mod-dl dt{font-weight:700;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.03em;padding-top:1px}
+  .pg-mod-dl dd{margin:0;word-break:break-word}
+  .pg-mod-dl code{font-family:"SFMono-Regular",Consolas,monospace;font-size:11px;background:#F0F3FA;padding:1px 4px;border-radius:3px}
+  .pg-mod-pre{margin:4px 0 0;padding:6px 8px;background:#0b1f3f;color:#e8f0ff;border-radius:6px;font-size:10.5px;line-height:1.35;overflow-x:auto;font-family:"SFMono-Regular",Consolas,monospace;white-space:pre}
+  .pg-mod-scope{font-size:10px;color:var(--muted)}
+  .pg-mod-lead{margin:0 0 10px;font-size:12.5px;color:var(--muted);line-height:1.45}
+  .pg-mod-summary{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+  .pg-mod-pill{font-size:10px;font-weight:800;padding:3px 8px;border-radius:999px;background:var(--blue-95);color:var(--blue-30)}
+  .pg-mod-pill.pg-mod-pill-sec{background:#E6F7F0;color:#0a6e4e}
+  .pg-mod-pill.pg-mod-pill-plat{background:#EEF1F5;color:#5B6B86}
+  .pg-mod-placements{font-size:11px;font-weight:800;color:var(--coral);margin-left:auto}
+  .pg-mod-miss{font-size:10px;font-weight:700;color:#B22F04}
+  .pg-mod-contains{font-size:11.5px;color:var(--muted);margin-top:4px}
+  details.pg-mod-raw{margin-top:8px;border:1px dashed var(--border);border-radius:8px;padding:0 8px 8px;background:#fff}
+  details.pg-mod-raw>summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--muted);padding:8px 4px;list-style:none}
+  details.pg-mod-raw>summary::-webkit-details-marker{display:none}
 </style>
 </head>
 <body>
@@ -217,6 +283,7 @@
       <button id="tab-plan" role="tab" aria-selected="true" aria-controls="panel-plan">Build plan</button>
       <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Index</button>
       <button id="tab-pages" role="tab" aria-selected="false" aria-controls="panel-pages">Pages</button>
+      <button id="tab-hs" role="tab" aria-selected="false" aria-controls="panel-hs">HubSpot</button>
     </div>
   </div>
 </header>
@@ -943,7 +1010,7 @@
       <span class="count">11 tasks</span>
     </summary>
     <div class="body">
-      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Global components appear across the site regardless of template. Build them after the core and standalone kit, before templates, so every page shell is ready.</p>
+      <p style="color:var(--blue-10);font-size:13.5px;margin:6px 0 2px">Global components appear across the site regardless of template. Build them after the core and standalone kit, before templates, so every page shell is ready.</p>
 
       <details class="task" id="task-header">
         <summary>
@@ -1093,7 +1160,7 @@
       <span class="count">9 templates</span>
     </summary>
     <div class="body">
-      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Templates enter here. Before building all of them, take one real page end to end to validate the tokens, components, schemas, template shell and SEO together. The <b>General template</b> is the recommended pilot — it is the baseline all other pages extend from.</p>
+      <p style="color:var(--blue-10);font-size:13.5px;margin:6px 0 2px">Templates enter here. Before building all of them, take one real page end to end to validate the tokens, components, schemas, template shell and SEO together. The <b>General template</b> is the recommended pilot — it is the baseline all other pages extend from.</p>
       <details class="task" id="tmpl-pilot">
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
@@ -1262,7 +1329,7 @@
 
     <div class="intro" style="margin-top:22px">
       <h1>Site page directory</h1>
-      <p>Complete list of roller.software live pages — June 2026 audit. Expand any category to browse its pages. Pages that use audited Phase 3 components show coloured pills. Use the filter below to narrow the list. Component rows in the Build plan show category tags at a glance. <span class="pill s-done" style="font-size:11px;vertical-align:middle">NEW</span> pages were found and added in this audit; <span class="pill r-design" style="font-size:11px;vertical-align:middle">FIXED</span> marks corrected URLs.</p>
+      <p>Complete list of roller.software live pages — June 2026 audit. Expand any category to browse its pages. Each page row expands to show <strong>unique HubSpot modules &amp; sections</strong> matched to the ROLLS theme library (<code>HS-components.html</code>), with placement counts and raw HTML detections. Phase 3 component pills and filters are unchanged.</p>
     </div>
 
     <div class="pg-stats">
@@ -1655,12 +1722,55 @@
 
   </div><!-- /panel-pages -->
 
+  <!-- ============ HUBSPOT COMPONENTS PANEL ============ -->
+  <div id="panel-hs" role="tabpanel" aria-labelledby="tab-hs">
+
+    <div class="intro" style="margin-top:22px">
+      <h1>HubSpot module library</h1>
+      <p>Reference catalogue of ROLLS theme HubSpot modules and pre-composed sections — folder names, <code>module_id</code> values, output structure, and variants. Each entry is mapped (best-guess) to a Build plan component by structure and naming — not an exact 1:1 name match. Source: <code>HS-components.html</code>.</p>
+    </div>
+
+    <div class="pg-stats" id="hs-map-stats">
+      <div class="pg-stat"><span class="pg-stat-n" style="color:var(--coral)" id="hs-stat-modules">—</span><span class="pg-stat-l">HubSpot modules</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" style="color:var(--blue-30)" id="hs-stat-sections">—</span><span class="pg-stat-l">Sections</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" style="color:#04632B" id="hs-stat-mapped">—</span><span class="pg-stat-l">Mapped to Build plan</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" style="color:#92400E" id="hs-stat-gaps">—</span><span class="pg-stat-l">Phase gaps (no HS module)</span></div>
+    </div>
+
+    <p class="hs-note">Mapped entries show a coral tag in the library viewer below, linking to the matching Build plan task. HubSpot-only modules (pulse, search, animations, etc.) are tagged <strong>Not in build plan</strong>. Nine Build plan components have no dedicated HubSpot module — layout variants or composites.</p>
+
+    <div class="hs-map-panel" id="hs-map-panel">
+      <div class="hs-map-head">
+        <h2>HubSpot → Build plan mapping</h2>
+        <div class="hs-map-filters" id="hs-map-filters">
+          <button type="button" class="on" data-filter="all">All</button>
+          <button type="button" data-filter="mapped">Mapped</button>
+          <button type="button" data-filter="unmapped">Not in build plan</button>
+          <button type="button" data-filter="gaps">Phase gaps</button>
+        </div>
+      </div>
+      <div class="hs-map-body">
+        <table class="hs-map-table" id="hs-map-table">
+          <thead><tr><th>Kind</th><th>HubSpot</th><th>Build plan</th><th>Conf.</th><th>Notes</th></tr></thead>
+          <tbody id="hs-map-tbody"><tr><td colspan="5" style="color:var(--muted);padding:14px">Loading mapping…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="hs-frame">
+      <iframe id="hs-components-frame" src="HS-components.html" title="ROLLS Theme — HubSpot Module &amp; Section Library" loading="lazy"></iframe>
+    </div>
+
+  </div><!-- /panel-hs -->
+
   <footer>ROLLER website rebuild · project plan · component set 1 (core). Global Components and wider phases to follow.</footer>
 
 </main>
 
 <div id="fig-lb" role="dialog" aria-modal="true" aria-label="Figma preview"><img src="" alt=""></div>
-<script src="page-components.data.js?v=3"></script>
+<script src="page-components.data.js?v=6"></script>
+<script src="page-modules.data.js?v=2"></script>
+<script src="hs-phase-mapping.data.js?v=2"></script>
 <script>
   document.querySelectorAll('details[open]').forEach(function(d){d.open=false});
   // lightbox
@@ -1671,19 +1781,22 @@
   lb.addEventListener('click',function(){lb.classList.remove('on');lbImg.src=''});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
 
-  var tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index'),tabPages=document.getElementById('tab-pages');
-  var panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index'),panPages=document.getElementById('panel-pages');
+  var tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index'),tabPages=document.getElementById('tab-pages'),tabHs=document.getElementById('tab-hs');
+  var panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index'),panPages=document.getElementById('panel-pages'),panHs=document.getElementById('panel-hs');
   function show(which){
     tabPlan.setAttribute('aria-selected',which==='plan');
     tabIndex.setAttribute('aria-selected',which==='index');
     tabPages.setAttribute('aria-selected',which==='pages');
+    tabHs.setAttribute('aria-selected',which==='hs');
     panPlan.style.display=which==='plan'?'block':'none';
     panIndex.style.display=which==='index'?'block':'none';
     panPages.style.display=which==='pages'?'block':'none';
+    panHs.style.display=which==='hs'?'block':'none';
   }
   tabPlan.addEventListener('click',function(){show('plan')});
   tabIndex.addEventListener('click',function(){show('index')});
   tabPages.addEventListener('click',function(){show('pages')});
+  tabHs.addEventListener('click',function(){show('hs')});
   // jumping from the index to a task opens its details and switches to the plan
   document.querySelectorAll('#panel-index a[href^="#"]').forEach(function(a){
     a.addEventListener('click',function(e){
@@ -1712,7 +1825,7 @@
     var filterStatus=document.getElementById('pg-filter-status');
     var filterButtons=[];
     var FILTER_MIN_PAGES=5;
-    var FILTER_SKIP=['announcement-bar'];
+    var FILTER_SKIP=[];
 
     function normUrl(href){
       if(!href)return '';
@@ -1953,7 +2066,7 @@
 
     window.addEventListener('hashchange',applyHash);
 
-    fetch('page-components.json?v=3').then(function(r){return r.json()}).then(initCoverage).catch(function(){
+    fetch('page-components.json?v=6').then(function(r){return r.json()}).then(initCoverage).catch(function(){
       if(window.PAGE_COMPONENTS){initCoverage(window.PAGE_COMPONENTS);return}
       document.querySelectorAll('[id^="comp-used-"]').forEach(function(target){
         target.innerHTML='<span style="color:#B22F04">Could not load page-components.json.</span>';
@@ -1969,7 +2082,497 @@
       coverageReady=true;
       setFilter('all',false);
       applyHash();
+      if(window.initPageModules){window.initPageModules()}
     }
+  })();
+
+  // per-page HubSpot module audit
+  (function(){
+    var modData=null;
+
+    function esc(s){
+      if(!s)return '';
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    function normUrl(href){
+      if(!href)return '';
+      try{
+        var u=new URL(href);
+        var path=u.pathname.replace(/\/+$/,'');
+        if(!path)path='/';
+        return u.origin+path;
+      }catch(e){
+        return href.replace(/\/+$/,'');
+      }
+    }
+
+    function kindClass(kind){
+      if(kind==='section-template'||kind==='section-css')return 'kind-section';
+      if(kind==='instance')return 'kind-instance';
+      if(kind==='widget')return 'kind-widget';
+      if(kind==='module-css')return 'kind-css';
+      return 'kind-hs';
+    }
+
+    function kindLabel(kind){
+      return ({
+        'module-css':'Module CSS',
+        'instance':'Instance',
+        'widget':'Widget',
+        'hubspot-widget':'HubSpot widget',
+        'section-template':'Section',
+        'section-css':'Section CSS'
+      })[kind]||kind;
+    }
+
+    function itemTitle(item){
+      if(item.kind==='module-css')return item.folder;
+      if(item.kind==='instance')return item.label+(item.types&&item.types.length>1?' (+ '+(item.types.length-1)+' alias)':'');
+      if(item.kind==='widget')return item.name;
+      if(item.kind==='section-template')return item.classString;
+      if(item.kind==='section-css')return 'sections bundle '+item.sectionAssetId;
+      if(item.kind==='hubspot-widget')return item.widgetType||item.wrapperId;
+      return item.wrapperId||'—';
+    }
+
+    function addDlField(dl,dt,ddHtml){
+      var dtEl=document.createElement('dt');dtEl.textContent=dt;
+      var ddEl=document.createElement('dd');ddEl.innerHTML=ddHtml;
+      dl.appendChild(dtEl);dl.appendChild(ddEl);
+    }
+
+    function renderItem(item){
+      var art=document.createElement('article');
+      art.className='pg-mod-item';
+      var head=document.createElement('div');
+      head.className='pg-mod-head';
+      var kind=document.createElement('span');
+      kind.className='pg-mod-kind '+kindClass(item.kind);
+      kind.textContent=kindLabel(item.kind);
+      head.appendChild(kind);
+      var title=document.createElement('span');
+      title.className='pg-mod-title';
+      title.textContent=itemTitle(item);
+      head.appendChild(title);
+      if(item.scope){
+        var scope=document.createElement('span');
+        scope.className='pg-mod-scope';
+        scope.textContent='· '+item.scope;
+        head.appendChild(scope);
+      }
+      art.appendChild(head);
+      var dl=document.createElement('dl');
+      dl.className='pg-mod-dl';
+      if(item.assetModuleId)addDlField(dl,'Asset ID','<code>'+esc(item.assetModuleId)+'</code>');
+      if(item.instanceId)addDlField(dl,'Instance ID','<code>'+esc(item.instanceId)+'</code>');
+      if(item.widgetId)addDlField(dl,'Widget ID','<code>'+esc(item.widgetId)+'</code>');
+      if(item.sectionAssetId)addDlField(dl,'Section ID','<code>'+esc(item.sectionAssetId)+'</code>');
+      if(item.folder)addDlField(dl,'Folder','<code>'+esc(item.folder)+'.module</code>');
+      if(item.types&&item.types.length)addDlField(dl,'Types',item.types.map(function(t){return '<code>'+esc(t)+'</code>'}).join(' '));
+      if(item.classes)addDlField(dl,'Classes',esc(item.classes));
+      if(item.wrapperId)addDlField(dl,'Wrapper','<code>'+esc(item.wrapperId)+'</code>');
+      if(item.domId)addDlField(dl,'DOM id','<code>'+esc(item.domId)+'</code>');
+      if(item.cssHref)addDlField(dl,'CSS',esc(item.cssHref));
+      if(item.classes&&item.kind==='section-template')addDlField(dl,'Section cls',item.classes.map(function(c){return '<code>'+esc(c)+'</code>'}).join(' '));
+      art.appendChild(dl);
+      if(item.structure){
+        var pre=document.createElement('pre');
+        pre.className='pg-mod-pre';
+        pre.textContent=item.structure;
+        art.appendChild(pre);
+      }
+      return art;
+    }
+
+    function renderCatalogItem(item){
+      var art=document.createElement('article');
+      art.className='pg-mod-item';
+      var head=document.createElement('div');
+      head.className='pg-mod-head';
+      var kind=document.createElement('span');
+      kind.className='pg-mod-kind '+(item.catalogType==='section'?'kind-section':item.catalogType==='platform'?'kind-hs':'kind-instance');
+      kind.textContent=item.catalogType==='section'?'Section':item.catalogType==='platform'?'Platform':'Module';
+      head.appendChild(kind);
+      var title=document.createElement('span');
+      title.className='pg-mod-title';
+      title.textContent=item.label;
+      head.appendChild(title);
+      if(item.placements>1){
+        var plc=document.createElement('span');
+        plc.className='pg-mod-placements';
+        plc.textContent='× '+item.placements+' on page';
+        head.appendChild(plc);
+      }
+      if(item.inCatalog===false){
+        var miss=document.createElement('span');
+        miss.className='pg-mod-miss';
+        miss.textContent='not in theme library';
+        head.appendChild(miss);
+      }
+      art.appendChild(head);
+      var dl=document.createElement('dl');
+      dl.className='pg-mod-dl';
+      if(item.folder)addDlField(dl,'Folder','<code>'+esc(item.folder)+'</code>');
+      if(item.moduleId)addDlField(dl,'module_id','<code>'+esc(item.moduleId)+'</code>');
+      if(item.file)addDlField(dl,'Section file','<code>'+esc(item.file)+'</code>');
+      if(item.sectionClass)addDlField(dl,'Section class','<code>'+esc(item.sectionClass)+'</code>');
+      if(item.scope)addDlField(dl,'Scope',esc(item.scope));
+      if(item.sources&&item.sources.length)addDlField(dl,'Detected via',esc(item.sources.join(' · ')));
+      if(item.instanceIds&&item.instanceIds.length)addDlField(dl,'Instance IDs',item.instanceIds.map(function(id){return '<code>'+esc(id)+'</code>'}).join(' '));
+      if(item.wrapperId)addDlField(dl,'Wrapper','<code>'+esc(item.wrapperId)+'</code>');
+      if(item.widgetType)addDlField(dl,'Widget type','<code>'+esc(item.widgetType)+'</code>');
+      art.appendChild(dl);
+      if(item.containsModules&&item.containsModules.length){
+        var contains=document.createElement('p');
+        contains.className='pg-mod-contains';
+        contains.innerHTML='Section contains: '+item.containsModules.map(function(m){return '<code>'+esc(m)+'</code>'}).join(' ');
+        art.appendChild(contains);
+      }
+      return art;
+    }
+
+    function renderCatalogGroup(body,label,items){
+      if(!items||!items.length)return;
+      var h=document.createElement('div');
+      h.className='pg-mod-group';
+      h.textContent=label;
+      body.appendChild(h);
+      items.forEach(function(item){body.appendChild(renderCatalogItem(item))});
+    }
+
+    function renderRawGroup(body,label,items){
+      if(!items.length)return;
+      var h=document.createElement('div');
+      h.className='pg-mod-group';
+      h.textContent=label;
+      body.appendChild(h);
+      items.forEach(function(item){body.appendChild(renderItem(item))});
+    }
+
+    function decorateModuleRows(){
+      if(!modData||!modData.pages)return;
+      document.querySelectorAll('#panel-pages .pg-row').forEach(function(row){
+        if(row.querySelector('.pg-mod-audit'))return;
+        var link=row.querySelector('.pg-url');
+        if(!link)return;
+        var key=normUrl(link.href);
+        var page=modData.pages[key]||modData.pages[key+'/'];
+        if(!page)return;
+        var cat=page.catalog||{};
+        var cs=cat.summary||{};
+        var unique=cs.uniqueTotal||0;
+        var raw=cs.rawDetections||(page.summary&&page.summary.total)||0;
+        var det=document.createElement('details');
+        det.className='pg-mod-audit';
+        var sum=document.createElement('summary');
+        sum.innerHTML='HubSpot modules <span class="pg-mod-count">('+unique+' unique · '+raw+' raw detections · audited '+esc(modData.audited)+')</span>';
+        det.appendChild(sum);
+        var body=document.createElement('div');
+        body.className='pg-mod-body';
+        if(page.error){
+          var err=document.createElement('p');
+          err.style.cssText='color:#B22F04;font-size:12.5px;margin:0';
+          err.textContent=page.error;
+          body.appendChild(err);
+        }else{
+          var lead=document.createElement('p');
+          lead.className='pg-mod-lead';
+          lead.textContent='Matched against the HubSpot tab library (ROLLS theme). Placement count shows repetitions on this page — e.g. two Two-column instances = ×2.';
+          body.appendChild(lead);
+          var pills=document.createElement('div');
+          pills.className='pg-mod-summary';
+          if(cs.uniqueModules) pills.innerHTML+='<span class="pg-mod-pill">'+cs.uniqueModules+' theme modules</span>';
+          if(cs.uniqueSections) pills.innerHTML+='<span class="pg-mod-pill pg-mod-pill-sec">'+cs.uniqueSections+' sections</span>';
+          if(cs.platformWidgets) pills.innerHTML+='<span class="pg-mod-pill pg-mod-pill-plat">'+cs.platformWidgets+' platform widgets</span>';
+          if(cs.unmapped) pills.innerHTML+='<span class="pg-mod-pill" style="background:#FFEEE7;color:#B22F04">'+cs.unmapped+' unmapped</span>';
+          body.appendChild(pills);
+          renderCatalogGroup(body,'Theme modules (from HS-components library)',(cat.modules||[]).filter(function(m){return m.scope!=='global'}));
+          renderCatalogGroup(body,'Global theme modules (header, footer, announcement…)',(cat.modules||[]).filter(function(m){return m.scope==='global'}));
+          renderCatalogGroup(body,'Section layouts (pre-composed)',cat.sections||[]);
+          renderCatalogGroup(body,'HubSpot platform widgets (not in theme library)',cat.platform||[]);
+          if(cat.unmapped&&cat.unmapped.length){
+            renderCatalogGroup(body,'Unmapped instances',cat.unmapped.map(function(u){
+              return {catalogType:'platform',label:'Instance '+u.instanceId,placements:1,inCatalog:false,wrapperId:u.wrapperId,sources:['unmapped'],classes:u.classes,structure:u.structure};
+            }));
+          }
+          var rawDet=document.createElement('details');
+          rawDet.className='pg-mod-raw';
+          rawDet.innerHTML='<summary>Raw HTML detections ('+raw+')</summary>';
+          var rawBody=document.createElement('div');
+          rawBody.className='pg-mod-body';
+          renderRawGroup(rawBody,'Sections',page.sections||[]);
+          var mods=page.modules||[];
+          renderRawGroup(rawBody,'Content modules',mods.filter(function(m){return m.scope!=='global'}));
+          renderRawGroup(rawBody,'Global / shell modules',mods.filter(function(m){return m.scope==='global'}));
+          rawDet.appendChild(rawBody);
+          body.appendChild(rawDet);
+        }
+        det.appendChild(body);
+        row.appendChild(det);
+      });
+    }
+
+    window.initPageModules=function(){
+      decorateModuleRows();
+    };
+
+    fetch('page-modules.json?v=2').then(function(r){return r.json()}).then(function(json){
+      modData=json;
+      decorateModuleRows();
+    }).catch(function(){
+      if(window.PAGE_MODULES){
+        modData=window.PAGE_MODULES;
+        decorateModuleRows();
+        return;
+      }
+    });
+  })();
+
+  (function(){
+    var mapData=window.HS_PHASE_MAPPING;
+    if(!mapData){return}
+
+    var hsFrame=document.getElementById('hs-components-frame');
+    var mapFilter='all';
+
+    function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+
+    function normFolder(f){return String(f||'').toLowerCase().replace(/\\/g,'/')}
+
+    function openPlanTask(phaseId){
+      if(!phaseId){return}
+      show('plan');
+      var el=document.getElementById(phaseId);
+      if(el){
+        var p=el.closest('details');
+        while(p){p.open=true;p=p.parentElement&&p.parentElement.closest('details')}
+        location.hash=phaseId;
+        el.scrollIntoView({behavior:'smooth',block:'nearest'});
+      }
+    }
+
+    function scrollHsTo(slug,kind){
+      show('hs');
+      function tryScroll(){
+        var doc=hsFrame.contentDocument;
+        if(!doc){return}
+        var card=null;
+        if(kind==='section'){
+          var sec=mapData.sections[slug];
+          var file=sec&&sec.hsFile?sec.hsFile:slug;
+          card=doc.querySelector('article.section-card[data-file="'+file.replace(/\\/g,'/')+'"]');
+        }else{
+          var mod=mapData.modules[slug];
+          var folder=mod&&mod.hsFolder?mod.hsFolder:(String(slug).indexOf('.module')>-1?slug:slug+'.module');
+          card=doc.querySelector('article.module-card[data-folder="'+normFolder(folder)+'"]');
+        }
+        var allBtn=doc.querySelector('.filter-btns button[data-filter="all"]');
+        if(allBtn){allBtn.click()}
+        if(card){
+          card.style.display='block';
+          if(doc.defaultView){doc.defaultView.location.hash=card.id}
+          card.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      }
+      if(hsFrame.contentDocument&&hsFrame.contentDocument.body){tryScroll()}
+      else{hsFrame.addEventListener('load',tryScroll,{once:true})}
+    }
+
+    window.addEventListener('message',function(ev){
+      if(!ev.data||ev.data.type!=='hs-map-nav'){return}
+      if(ev.data.action==='plan'){openPlanTask(ev.data.phaseId)}
+      if(ev.data.action==='hs'){scrollHsTo(ev.data.slug,ev.data.kind)}
+    });
+
+    function pillHtml(entry,kind){
+      if(entry.status==='mapped'&&entry.phaseId){
+        var conf=entry.confidence||'medium';
+        return '<span class="hs-phase-map"><span class="lbl">Build plan</span>'
+          +'<a href="#" class="hs-phase-pill mapped '+conf+'" data-phase="'+esc(entry.phaseId)+'" title="'+esc(entry.reason)+'">'
+          +'Phase '+entry.phase+' · '+esc(entry.phaseName)+'</a>'
+          +'<span class="hs-phase-conf '+conf+'">'+conf+'</span></span>';
+      }
+      return '<span class="hs-phase-map"><span class="lbl">Build plan</span>'
+        +'<span class="hs-phase-pill unmapped" title="'+esc(entry.reason)+'">Not in build plan</span></span>';
+    }
+
+    function injectIframeStyles(doc){
+      if(doc.getElementById('hs-phase-map-style')){return}
+      var st=doc.createElement('style');
+      st.id='hs-phase-map-style';
+      st.textContent='.hs-phase-map{margin:.7rem 0 0;padding:.55rem .65rem;background:#FFEEE7;border:1px solid #f5c4b0;border-radius:8px;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}'
+        +'.hs-phase-map .lbl{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#9A3412;margin-right:.15rem}'
+        +'.hs-phase-pill{font-size:.72rem;padding:.2rem .55rem;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid}'
+        +'.hs-phase-pill.mapped{background:#fff;color:#B22F04;border-color:#f5c4b0;cursor:pointer}'
+        +'.hs-phase-pill.mapped:hover{background:#B22F04;color:#fff}'
+        +'.hs-phase-pill.unmapped{background:#EEF1F5;color:#5B6B86;border-color:#d5dbe3;cursor:default}'
+        +'.hs-phase-conf{font-size:.62rem;font-weight:700;padding:.1rem .35rem;border-radius:999px;text-transform:uppercase}'
+        +'.hs-phase-conf.high{background:#E3FBEE;color:#04632B}'
+        +'.hs-phase-conf.medium{background:#fff;color:#B22F04;border:1px solid #f5c4b0}'
+        +'.hs-phase-conf.low{background:#EEF1F5;color:#5B6B86}';
+      doc.head.appendChild(st);
+    }
+
+    function decorateIframe(){
+      var doc=hsFrame.contentDocument;
+      if(!doc){return}
+      injectIframeStyles(doc);
+      var modByFolder={};
+      doc.querySelectorAll('article.module-card[data-folder]').forEach(function(card){
+        modByFolder[normFolder(card.getAttribute('data-folder'))]=card;
+      });
+      Object.keys(mapData.modules||{}).forEach(function(slug){
+        var entry=mapData.modules[slug];
+        var card=modByFolder[normFolder(entry.hsFolder)];
+        if(!card){return}
+        var header=card.querySelector('header');
+        if(!header||header.querySelector('.hs-phase-map')){return}
+        var wrap=document.createElement('div');
+        wrap.innerHTML=pillHtml(entry,'module');
+        header.appendChild(wrap.firstChild);
+        header.querySelectorAll('[data-phase]').forEach(function(a){
+          a.addEventListener('click',function(e){
+            e.preventDefault();
+            window.parent.postMessage({type:'hs-map-nav',action:'plan',phaseId:a.getAttribute('data-phase')},'*');
+          });
+        });
+      });
+      doc.querySelectorAll('article.section-card[data-file]').forEach(function(card){
+        var file=card.getAttribute('data-file');
+        var slug=Object.keys(mapData.sections||{}).find(function(s){return mapData.sections[s].hsFile===file});
+        if(!slug){return}
+        var entry=mapData.sections[slug];
+        var header=card.querySelector('header');
+        if(!header||header.querySelector('.hs-phase-map')){return}
+        var wrap=document.createElement('div');
+        wrap.innerHTML=pillHtml(entry,'section');
+        header.appendChild(wrap.firstChild);
+        header.querySelectorAll('[data-phase]').forEach(function(a){
+          a.addEventListener('click',function(e){
+            e.preventDefault();
+            window.parent.postMessage({type:'hs-map-nav',action:'plan',phaseId:a.getAttribute('data-phase')},'*');
+          });
+        });
+      });
+    }
+
+    function decoratePhaseTasks(){
+      Object.keys(mapData.byPhase||{}).forEach(function(pid){
+        var task=document.getElementById(pid);
+        if(!task){return}
+        var dl=task.querySelector('.detail dl');
+        if(!dl||dl.querySelector('dt.hs-map-dt')){return}
+        var entry=mapData.byPhase[pid];
+        var dt=document.createElement('dt');
+        dt.className='hs-map-dt';
+        dt.textContent='HubSpot';
+        var dd=document.createElement('dd');
+        if(entry.gap){
+          dd.innerHTML='<span class="hs-map-gap">'+esc(entry.gap.note)+'</span>';
+        }else{
+          var html='';
+          (entry.hsModules||[]).forEach(function(m){
+            html+='<a href="#" class="hs-pill" data-hs-slug="'+esc(m.hsSlug)+'" data-hs-kind="module" title="'+esc(m.reason)+'">'+esc(m.hsLabel)+'</a>';
+          });
+          (entry.hsSections||[]).forEach(function(s){
+            html+='<a href="#" class="hs-pill sec" data-hs-slug="'+esc(s.hsSlug)+'" data-hs-kind="section" title="'+esc(s.reason)+'">§ '+esc(s.hsLabel)+'</a>';
+          });
+          dd.innerHTML=html||'<span style="color:var(--muted);font-size:13px">—</span>';
+          dd.querySelectorAll('[data-hs-slug]').forEach(function(a){
+            a.addEventListener('click',function(e){
+              e.preventDefault();
+              scrollHsTo(a.getAttribute('data-hs-slug'),a.getAttribute('data-hs-kind'));
+            });
+          });
+        }
+        var figDt=null;
+        dl.querySelectorAll('dt').forEach(function(d){if(d.textContent.trim()==='Figma'){figDt=d}});
+        if(figDt){dl.insertBefore(dt,figDt);dl.insertBefore(dd,figDt)}
+        else{dl.appendChild(dt);dl.appendChild(dd)}
+      });
+    }
+
+    function renderMapTable(){
+      var tbody=document.getElementById('hs-map-tbody');
+      if(!tbody){return}
+      var rows=[];
+      Object.keys(mapData.modules||{}).forEach(function(slug){
+        var m=mapData.modules[slug];
+        rows.push({kind:'Module',name:m.hsLabel,slug:slug,hsKind:'module',entry:m,filter:m.status==='mapped'?'mapped':'unmapped'});
+      });
+      Object.keys(mapData.sections||{}).forEach(function(slug){
+        var s=mapData.sections[slug];
+        rows.push({kind:'Section',name:s.hsLabel,slug:slug,hsKind:'section',entry:s,filter:s.status==='mapped'?'mapped':'unmapped'});
+      });
+      (mapData.phaseGaps||[]).forEach(function(g){
+        rows.push({kind:'Gap',name:g.phaseName,slug:g.phaseId,hsKind:'gap',entry:g,filter:'gaps'});
+      });
+      rows.sort(function(a,b){
+        if(a.filter!==b.filter){return a.filter==='mapped'?-1:b.filter==='mapped'?1:0}
+        return a.name.localeCompare(b.name);
+      });
+      tbody.innerHTML='';
+      rows.forEach(function(r){
+        if(mapFilter!=='all'&&r.filter!==mapFilter){return}
+        var tr=document.createElement('tr');
+        tr.setAttribute('data-filter',r.filter);
+        var phaseCell='',confCell='',noteCell='';
+        if(r.filter==='gaps'){
+          phaseCell='<span class="hs-map-status gap">No HS module</span> <a class="hs-map-link" href="#'+esc(r.slug)+'">'+esc(r.name)+'</a>';
+          noteCell='<span class="hs-map-reason">'+esc(r.entry.note)+'</span>';
+        }else if(r.entry.status==='mapped'){
+          phaseCell='<span class="hs-map-status mapped">Mapped</span> <a class="hs-map-link" href="#'+esc(r.entry.phaseId)+'">Phase '+r.entry.phase+' · '+esc(r.entry.phaseName)+'</a>';
+          confCell='<span class="hs-map-conf '+esc(r.entry.confidence)+'">'+esc(r.entry.confidence)+'</span>';
+          noteCell='<span class="hs-map-reason">'+esc(r.entry.reason)+'</span>';
+        }else{
+          phaseCell='<span class="hs-map-status unmapped">Not in build plan</span>';
+          noteCell='<span class="hs-map-reason">'+esc(r.entry.reason)+'</span>';
+        }
+        tr.innerHTML='<td><span class="hs-map-kind">'+esc(r.kind)+'</span></td>'
+          +'<td>'+(r.filter==='gaps'?'—':'<a href="#" class="hs-map-link hs-jump" data-slug="'+esc(r.slug)+'" data-kind="'+esc(r.hsKind)+'">'+esc(r.name)+'</a>')+'</td>'
+          +'<td>'+phaseCell+'</td><td>'+confCell+'</td><td>'+noteCell+'</td>';
+        tbody.appendChild(tr);
+      });
+      if(!tbody.children.length){
+        tbody.innerHTML='<tr><td colspan="5" style="color:var(--muted);padding:14px">No entries for this filter.</td></tr>';
+      }
+      tbody.querySelectorAll('a[href^="#task-"]').forEach(function(a){
+        a.addEventListener('click',function(e){
+          e.preventDefault();
+          openPlanTask(a.getAttribute('href').slice(1));
+        });
+      });
+      tbody.querySelectorAll('.hs-jump').forEach(function(a){
+        a.addEventListener('click',function(e){
+          e.preventDefault();
+          scrollHsTo(a.getAttribute('data-slug'),a.getAttribute('data-kind'));
+        });
+      });
+    }
+
+    function updateStats(){
+      var s=mapData.stats||{};
+      var el=function(id,v){var n=document.getElementById(id);if(n){n.textContent=v}};
+      el('hs-stat-modules',s.hsModules||'—');
+      el('hs-stat-sections',s.hsSections||'—');
+      el('hs-stat-mapped',(s.mappedModules||0)+' mod · '+(s.mappedSections||0)+' sec');
+      el('hs-stat-gaps',s.phaseWithoutHsMatch||'—');
+    }
+
+    document.getElementById('hs-map-filters').addEventListener('click',function(e){
+      var btn=e.target.closest('button[data-filter]');
+      if(!btn){return}
+      mapFilter=btn.getAttribute('data-filter');
+      btn.parentElement.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',b===btn)});
+      renderMapTable();
+    });
+
+    updateStats();
+    renderMapTable();
+    decoratePhaseTasks();
+    if(hsFrame){hsFrame.addEventListener('load',decorateIframe)}
+    if(hsFrame&&hsFrame.contentDocument&&hsFrame.contentDocument.body){decorateIframe()}
   })();
 </script>
 </body>
