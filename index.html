@@ -48,6 +48,19 @@
   .p-customer-story{background:#E0E8F5;color:#011840}
   .p-blog{background:#E3FBEE;color:#04632B}
   .p-general{background:#EEF1F5;color:#4D4D4D}
+  /* audited page categories (coverage tags on component rows) */
+  .p-cat-features{background:#E8F0FE;color:#1E40AF}
+  .p-cat-industries{background:#E0F2FE;color:#0369A1}
+  .p-cat-competitors{background:#FEF3C7;color:#92400E}
+  .p-cat-partners{background:#EDE7FF;color:#5B21B6}
+  .p-cat-pricing{background:#FFEEE7;color:#B22F04}
+  .p-cat-pc{background:#E3FBEE;color:#04632B}
+  .p-cat-single{background:var(--blue-95);color:var(--blue-30)}
+  .p-cat-other{background:#EEF1F5;color:#5B6B86}
+  .p-cat-solutions{background:#E0E8F5;color:#011840}
+  .p-cat-gated{background:#FFF7ED;color:#9A3412}
+  .p-cat-events{background:#F3E8FF;color:#6B21A8}
+  details.task>summary .meta .pill[class*="p-cat-"]{font-size:10px;padding:2px 7px;font-weight:700}
 
   .phase{margin-top:22px}
   .phase>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:var(--r)}
@@ -117,6 +130,24 @@
 
   /* index tab */
   #panel-index{display:none}
+  /* pages tab */
+  #panel-pages{display:none}
+  .pg-stats{display:flex;background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:22px 0}
+  .pg-stat{flex:1;padding:14px 20px;text-align:center;border-right:1px solid var(--border)}
+  .pg-stat:last-child{border-right:none}
+  .pg-stat-n{font-size:26px;font-weight:800;line-height:1;display:block;margin-bottom:3px}
+  .pg-body{padding:4px 0 4px 14px;margin-left:14px;border-left:2px solid var(--border)}
+  .pg-row{display:flex;align-items:baseline;gap:10px;padding:8px 14px;background:#fff;border:1px solid var(--border);border-radius:8px;margin:5px 0;flex-wrap:wrap}
+  .pg-row:hover{background:var(--blue-95)}
+  .pg-title{font-weight:600;font-size:13.5px;flex:0 0 210px;min-width:0}
+  .pg-url{font-family:"SFMono-Regular",Consolas,"Courier New",monospace;font-size:11.5px;color:var(--blue-50);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-decoration:none}
+  .pg-url:hover{text-decoration:underline}
+  .pg-nourl{color:var(--muted);font-size:12px;flex:1}
+  .pg-badge{font-size:10px;font-weight:800;letter-spacing:.04em;padding:2px 7px;border-radius:999px;white-space:nowrap;flex:none}
+  .pg-badge-new{background:#E3FBEE;color:#04632B}
+  .pg-badge-fixed{background:#FFEEE7;color:#B22F04}
+  .pg-fix-note{display:block;font-size:10px;color:#B22F04;font-family:"SFMono-Regular",Consolas,"Courier New",monospace;margin-top:2px;width:100%}
+  .pg-section-note{background:var(--blue-95);border:1px solid var(--border);border-left:4px solid var(--blue-50);border-radius:8px;padding:10px 14px;margin:10px 0 4px;font-size:13px;color:var(--blue-30);line-height:1.5}
   .idx h3{font-size:14px;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin:22px 0 8px}
   .idx .row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:#fff;border:1px solid var(--border);border-radius:8px;margin:6px 0}
   .idx .row .nm{font-weight:700}
@@ -137,6 +168,41 @@
   .grid-label{font-weight:700;min-width:80px;color:var(--blue-30);font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;flex-shrink:0}
   /* hex code chips */
   code.hex{font-family:"SFMono-Regular",Consolas,monospace;font-size:10.5px;color:var(--muted);background:#F0F3FA;padding:1px 5px;border-radius:3px;letter-spacing:.02em;margin-right:2px}
+  /* page ↔ component coverage */
+  .pg-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0 8px;padding:12px 14px;background:#fff;border:1px solid var(--border);border-radius:var(--r)}
+  .pg-filters-label{font-size:12px;font-weight:800;color:var(--blue-30);text-transform:uppercase;letter-spacing:.04em;margin-right:4px}
+  .pg-filter{font-family:inherit;font-size:12px;font-weight:700;border:1px solid var(--border);background:#fff;color:var(--text);border-radius:999px;padding:5px 12px;cursor:pointer}
+  .pg-filter[aria-pressed="true"]{background:var(--blue-50);color:#fff;border-color:var(--blue-50)}
+  .pg-filter-count{font-size:10px;opacity:.85;margin-left:4px}
+  .pg-filter-status{font-size:13px;color:var(--muted);margin:0 0 14px;min-height:1.2em}
+  .pg-row.pg-hidden{display:none}
+  .pg-comp-pills{display:flex;gap:4px;flex-wrap:wrap;flex:none;align-items:center}
+  .pg-comp-pill{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;text-decoration:none;letter-spacing:.02em}
+  .pg-comp-pill:hover{text-decoration:none}
+  .pg-comp-pill[class*="pg-comp-"]{background:var(--blue-95);color:var(--blue-30);border:1px solid #B8CAEF}
+  .pg-comp-pill[class*="pg-comp-"]:hover{background:var(--blue-30);color:#fff}
+  .pg-comp-faq{background:#EDE7FF;color:#5B21B6;border:1px solid #C4B5FD}
+  .pg-comp-faq:hover{background:#5B21B6;color:#fff}
+  .pg-comp-twocol{background:var(--blue-95);color:var(--blue-30);border:1px solid #B8CAEF}
+  .pg-comp-twocol:hover{background:var(--blue-30);color:#fff}
+  .comp-used{margin:0}
+  .comp-used-lead{margin:0 0 10px;font-size:13.5px;color:var(--muted)}
+  .comp-used-lead a{font-weight:700}
+  .comp-used-cats{display:grid;gap:6px}
+  details.comp-used-cat{border:1px solid var(--border);border-radius:8px;background:#FBFCFF;overflow:hidden}
+  details.comp-used-cat>summary{list-style:none;cursor:pointer;padding:8px 12px;font-weight:700;font-size:13px;display:flex;align-items:center;gap:8px}
+  details.comp-used-cat>summary::-webkit-details-marker{display:none}
+  details.comp-used-cat .comp-used-list{margin:0;padding:0 12px 10px 12px;list-style:none;display:grid;gap:4px}
+  details.comp-used-cat .comp-used-list a{font-size:13px;font-weight:600}
+  details.comp-used-cat .comp-used-list span{display:block;font-size:11px;color:var(--muted);font-family:"SFMono-Regular",Consolas,monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .comp-coverage-pill{font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px;margin-left:6px;text-decoration:none}
+  .comp-coverage-pill:hover{text-decoration:none}
+  .comp-coverage-pill[class*="comp-coverage-"]{background:var(--blue-95);color:var(--blue-30)}
+  .comp-coverage-pill[class*="comp-coverage-"]:hover{background:var(--blue-30);color:#fff}
+  .comp-coverage-faq{background:#EDE7FF;color:#5B21B6}
+  .comp-coverage-faq:hover{background:#5B21B6;color:#fff}
+  .comp-coverage-twocol{background:var(--blue-95);color:var(--blue-30)}
+  .comp-coverage-twocol:hover{background:var(--blue-30);color:#fff}
 </style>
 </head>
 <body>
@@ -147,6 +213,7 @@
     <div class="tabs" role="tablist" aria-label="Views">
       <button id="tab-plan" role="tab" aria-selected="true" aria-controls="panel-plan">Build plan</button>
       <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Index</button>
+      <button id="tab-pages" role="tab" aria-selected="false" aria-controls="panel-pages">Pages</button>
     </div>
   </div>
 </header>
@@ -341,7 +408,7 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">2</span>
       <h2>Phase 2 · Core components</h2>
-      <span class="count">8 tasks</span>
+      <span class="count">6 tasks</span>
     </summary>
     <div class="body">
       <p style="color:var(--muted);font-size:13.5px;margin:6px 0 2px">Build these first. The standalone components in Phase 3 are assembled from them. Each task is the same shape: design finalises the Figma component and its variants, dev builds the Sanity schema and the Astro component and wires the tokens.</p>
@@ -429,17 +496,6 @@
         </div>
       </details>
 
-      <details class="task" id="task-dual-quote">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Dual quote<small>Content block · two testimonials side by side</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Variants</dt><dd>Desktop: two quotes side-by-side; stacks on mobile.</dd>
-          <dt>Fields</dt><dd><code>quotes</code> (2× quote, authorName, authorRole, logo, avatar)</dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
-          <dt>Steps</dt><dd><ol><li>Sanity <code>dualQuote</code> — reuses <a href="#task-quote">Quote</a> schema twice</li><li>Astro side-by-side grid collapsing to single column on mobile</li></ol></dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-37649" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-38355" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/dual-quote-desktop.png" alt="Dual quote – Desktop"><img src="figma-screenshots/dual-quote-mobile.png" alt="Dual quote – Mobile"></div></dd>
-        </dl></div>
-      </details>
-
       <details class="task" id="task-stats">
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
@@ -456,18 +512,6 @@
         </div>
       </details>
 
-      <details class="task" id="task-specialheading">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Special heading<small>Content block · display heading treatment</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Variants</dt><dd>With / without eyebrow; accent style. Heading only, no body, so distinct from Text block.</dd>
-          <dt>Fields</dt><dd><code>heading</code>, <code>eyebrow</code> (optional), <code>style</code></dd>
-          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a></dd>
-          <dt>Steps</dt><dd><ol><li>Sanity <code>specialHeading</code></li><li>Astro component</li></ol></dd>
-          <dt>Note</dt><dd>Spec inferred from the name; confirm against the frame.</dd>
-          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22240" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4520-1580" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/special-heading-desktop.png" alt="Special heading – Desktop"><img src="figma-screenshots/special-heading-mobile.png" alt="Special heading – Mobile"></div></dd>
-        </dl></div>
-      </details>
-
     </div>
   </details>
 
@@ -477,14 +521,14 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">3</span>
       <h2>Phase 3 · Standalone components</h2>
-      <span class="count">30 tasks</span>
+      <span class="count">32 tasks</span>
     </summary>
     <div class="body">
       <details class="task" id="task-twocol">
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Two-column<small>The workhorse section, assembled from the blocks above</small></span>
-          <span class="meta"></span>
+          <span class="meta" id="comp-meta-twocol"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -493,6 +537,7 @@
             <dt>Fields</dt><dd><code>mediaSide</code>, <code>background</code>, <code>contentColumn</code> (array of blocks), <code>mediaColumn</code> (image or video + optional stat)</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + inherited from its blocks</dd>
             <dt>Steps</dt><dd><ol><li>Sanity composite object with a column page-builder</li><li>Astro component composing the sub-components; media side + background</li><li>Mobile stacking to one column</li></ol></dd>
+            <dt>Used on</dt><dd id="comp-used-twocol"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
             <dt>Figma</dt><dd><div class="figrow">
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5272-34802" target="_blank" rel="noopener">Var 1</a>
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5250-41774" target="_blank" rel="noopener">Var 2</a>
@@ -510,16 +555,16 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Two-column with bigger left<small>Composite · asymmetric column split</small></span>
-          <span class="meta"><span class="pill p-values">Values</span></span>
+          <span class="meta" id="comp-meta-twocol-bigger"><span class="pill p-values">Values</span></span>
         </summary>
         <div class="detail">
           <dl>
             <dt>Depends on</dt><dd><a href="#task-twocol">Two-column</a>, <a href="#task-text">Text</a>, <a href="#task-button">Button</a></dd>
             <dt>Description</dt><dd>Asymmetric two-column layout where the left column is proportionally wider. Distinct from the equal-split <a href="#task-twocol">Two-column</a>.</dd>
-            <dt>Used on</dt><dd>Values page (list variation)</dd>
             <dt>Variants</dt><dd>Default; pricing; dark background; hero heading with CTA pair and square image; list (Values page — stacked items in wider left column).</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Confirm column ratio with design</li><li>Sanity composite (may extend Two-column schema with a ratio field)</li><li>Astro component with wider-left grid variant</li></ol></dd>
+            <dt>Used on</dt><dd id="comp-used-twocol-bigger"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
             <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135880" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left.png" alt="Two-column with bigger left"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4066-131897&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/bigger-text-col.png" alt="Two-column with bigger left – pricing"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4388-2373&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-dark.png" alt="Two-column with bigger left – dark"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=5392-7315&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-hero-image.png" alt="Two-column with bigger left – hero and image"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13937-17400&amp;m=dev" target="_blank" rel="noopener">List · Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13940-23317&amp;m=dev" target="_blank" rel="noopener">List · Mobile</a></div><div class="figscreens"><img src="figma-screenshots/twocol-bigger-left-list-desktop.png" alt="Two-column with bigger left – List desktop"><img src="figma-screenshots/twocol-bigger-left-list-mobile.png" alt="Two-column with bigger left – List mobile"></div></dd>
           </dl>
         </div>
@@ -528,7 +573,7 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Two-column — text-heavy<small>Composite · wider text column, narrower media</small></span>
-          <span class="meta"></span>
+          <span class="meta" id="comp-meta-twocol-text-heavy"></span>
         </summary>
         <div class="detail">
           <dl>
@@ -536,6 +581,7 @@
             <dt>Description</dt><dd>A two-column layout where the text/content column dominates and the media column is narrower. Different from the equal-split <a href="#task-twocol">Two-column</a> and the <a href="#task-twocol-bigger">bigger-left variant</a>.</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Confirm column ratio with design</li><li>May extend Two-column schema with a layout-mode field</li><li>Astro component with text-dominant grid variant</li></ol></dd>
+            <dt>Used on</dt><dd id="comp-used-twocol-text-heavy"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
             <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=15037-19167" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/twocol-text-heavy.png" alt="Two-column – text-heavy"></div></dd>
           </dl>
         </div>
@@ -544,165 +590,185 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">Flat one column<small>Section · single-column text, optional CTA and media</small></span>
-          <span class="meta"><span class="pill p-values">Values</span></span>
+          <span class="meta" id="comp-meta-flat-one-column"><span class="pill p-values">Values</span></span>
         </summary>
         <div class="detail">
-          <dl>
-            <dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-button">Button</a> (optional), <a href="#task-image">Image</a> (optional)</dd>
+          <dl><dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-button">Button</a> (optional), <a href="#task-image">Image</a> (optional)</dd>
             <dt>Description</dt><dd>A full-width single-column section — eyebrow, heading and body, with optional CTA pair and optional full-width 16:9 image. No side-by-side column split. Text-only variants omit buttons and image.</dd>
-            <dt>Used on</dt><dd>Values page (dark variation)</dd>
             <dt>Variants</dt><dd>Text-only (left-aligned); text-only (centred); default (left-aligned with image); dark; dark (Values page); centred; centred with image.</dd>
             <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>body</code>, <code>buttons</code> (optional), <code>image</code> (optional), <code>align</code> (left | centre), <code>variant</code> (light | dark)</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Sanity <code>flatOneColumn</code> with alignment and variant fields; buttons and image optional for text-only layouts</li><li>Astro vertical stack; map OnLight / OnDark heading and CTA treatments</li><li>Confirm centred max-width and image aspect ratio with design</li></ol></dd>
+            <dt>Used on</dt><dd id="comp-used-flat-one-column"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
             <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1949-185473" target="_blank" rel="noopener">Text-only · Centred</a></div><div class="figscreens"><img src="figma-screenshots/flattext-centered.png" alt="Flat one column – Text-only centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4787-119109&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-default.png" alt="Flat one column – Default"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3845-175867&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark.png" alt="Flat one column – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13985-14954&amp;m=dev" target="_blank" rel="noopener">Dark · Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=13940-23312&amp;m=dev" target="_blank" rel="noopener">Dark · Mobile</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-dark-values-desktop.png" alt="Flat one column – Dark desktop (Values)"><img src="figma-screenshots/flat-one-column-dark-values-mobile.png" alt="Flat one column – Dark mobile (Values)"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4146-127627&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred.png" alt="Flat one column – Centred"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3843-174802&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/flat-one-column-centred-alt.png" alt="Flat one column – Centred alt"></div></dd>
           </dl>
         </div>
       </details>
       <p style="color:var(--muted);font-size:13.5px;margin:18px 0 2px;padding-top:14px;border-top:1px solid var(--border)"></p>
       <details class="task" id="task-centeredtext">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Centered text block<small>Section · centred eyebrow, heading, body</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A full-width text section with centred eyebrow, heading and body. Built from the <a href="#task-text">Text block</a> content model with centred alignment and constrained max-width.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Centered text block<small>Section · centred eyebrow, heading, body</small></span><span class="meta" id="comp-meta-centeredtext"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A full-width text section with centred eyebrow, heading and body. Built from the <a href="#task-text">Text block</a> content model with centred alignment and constrained max-width.</dd>
           <dt>Variants</dt><dd>Desktop; desktop alt; mobile.</dd>
           <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code>, <code>align</code> (centre)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity standalone block or <code>textBlock</code> with centred alignment preset</li><li>Astro section wrapper; confirm max-width with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-centeredtext"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22264" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22277" target="_blank" rel="noopener">Desktop alt</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4593-12534" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/centered-text-desktop.png" alt="Centered text – Desktop"><img src="figma-screenshots/centered-text-desktop-alt.png" alt="Centered text – Desktop alt"><img src="figma-screenshots/centered-text-mobile.png" alt="Centered text – Mobile"></div></dd>
         </dl></div>
       </details>
+      <details class="task" id="task-dual-quote">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Dual quote<small>Section · two testimonials side by side</small></span><span class="meta" id="comp-meta-dual-quote"></span></summary>
+        <div class="detail"><dl><dt>Depends on</dt><dd><a href="#task-quote">Quote</a></dd>
+          <dt>Description</dt><dd>A full-width section with two testimonials displayed side by side on desktop, stacking on mobile. Composes two <a href="#task-quote">Quote</a> instances in a grid layout.</dd>
+          <dt>Variants</dt><dd>Desktop: two quotes side-by-side; stacks on mobile.</dd>
+          <dt>Fields</dt><dd><code>quotes</code> (2× quote, authorName, authorRole, logo, avatar)</dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>dualQuote</code> — reuses <a href="#task-quote">Quote</a> schema twice</li><li>Astro side-by-side grid collapsing to single column on mobile</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-dual-quote"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-37649" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-38355" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/dual-quote-desktop.png" alt="Dual quote – Desktop"><img src="figma-screenshots/dual-quote-mobile.png" alt="Dual quote – Mobile"></div></dd>
+        </dl></div>
+      </details>
+      <details class="task" id="task-special-hero-introduction">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Special hero introduction<small>Section · hero introduction</small></span><span class="meta" id="comp-meta-special-hero"></span></summary>
+        <div class="detail"><dl><dt>Depends on</dt><dd><a href="#task-text">Text block</a> (heading model only)</dd>
+          <dt>Description</dt><dd>A full-width hero introduction section with display-scale heading and optional eyebrow. Heading only — no body — so distinct from <a href="#task-text">Text block</a>.</dd>
+          <dt>Variants</dt><dd>With / without eyebrow; accent style.</dd>
+          <dt>Fields</dt><dd><code>heading</code>, <code>eyebrow</code> (optional), <code>style</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>specialHeroIntroduction</code></li><li>Astro section component</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-special-hero"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
+          <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22239&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4593-12496&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/special-hero-introduction-desktop.png" alt="Special hero introduction – Desktop"><img src="figma-screenshots/special-hero-introduction-mobile.png" alt="Special hero introduction – Mobile"></div></dd>
+        </dl></div>
+      </details>
       <details class="task" id="task-iconcards">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Section · grid of icon + title + text</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Variants</dt><dd>Column count (2 / 3 / 4); with / without per-card link.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon cards<small>Section · grid of icon + title + text</small></span><span class="meta" id="comp-meta-iconcards"></span></summary>
+        <div class="detail"><dl><dt>Variants</dt><dd>Column count (2 / 3 / 4); with / without per-card link.</dd>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon, title, body, optional link), <code>columns</code></dd>
           <dt>Composition</dt><dd>Grid of icon-card sub-elements.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>iconCards</code> with items array</li><li>Astro grid + IconCard sub-component</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-iconcards"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2480-35539" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2964-6922" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/icon-cards-desktop.png" alt="Icon cards – Desktop"><img src="figma-screenshots/icon-cards-mobile.png" alt="Icon cards – Mobile"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-cards">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Cards<small>Section · image cards with title, body and link</small></span><span class="meta"><span class="pill p-multi-venue">Multi venue</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A section with optional eyebrow, heading and intro, followed by a row of image-led cards. Each card has a rounded image thumb, title, body copy and text link with chevron. Version 2 may vary card count, layout or trailing content (e.g. logo strip).</dd>
-          <dt>Used on</dt><dd>Multi venue page (dark variation)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Cards<small>Section · image cards with title, body and link</small></span><span class="meta" id="comp-meta-cards"><span class="pill p-multi-venue">Multi venue</span></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A section with optional eyebrow, heading and intro, followed by a row of image-led cards. Each card has a rounded image thumb, title, body copy and text link with chevron. Version 2 may vary card count, layout or trailing content (e.g. logo strip).</dd>
           <dt>Variants</dt><dd>Desktop; desktop version 2; desktop version 3; pricing page (desktop; mobile); dark (Commitment background, light card treatment — Multi venue).</dd>
           <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code>, <code>items</code> (image, title, body, link), <code>background</code>, <code>theme</code> (light | dark)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>cards</code> with items array</li><li>Astro responsive card grid; 32px radius, Blue 90 (#CEDFFD) thumb bg, drop shadow token</li><li>Confirm version 2 differences and mobile treatment with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-cards"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-49636&amp;m=dev" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop.png" alt="Cards – Desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10893-25174&amp;m=dev" target="_blank" rel="noopener">Desktop v2</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v2.png" alt="Cards – Desktop v2"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10098-11279&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/cards-desktop-v3.png" alt="Cards – Desktop v3"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6681-18122&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37254&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cards-pricing-desktop.png" alt="Cards – Pricing desktop"><img src="figma-screenshots/cards-pricing-mobile.png" alt="Cards – Pricing mobile"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-43359&amp;m=dev" target="_blank" rel="noopener">Dark · View frame</a></div><div class="figscreens"><img src="figma-screenshots/cards-dark-multi-venue.png" alt="Cards – Dark (Multi venue)"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-icon-list-grid">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon list grid<small>Section · heading, intro and icon-led benefit list</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A section with a display heading and optional intro, followed by a responsive grid of list items. Each item pairs a wired icon in a blue square tile with a bold label and supporting body copy. Distinct from <a href="#task-iconcards">Icon cards</a> — taller section intro and vertically stacked icon + text per cell.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Icon list grid<small>Section · heading, intro and icon-led benefit list</small></span><span class="meta" id="comp-meta-icon-list-grid"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A section with a display heading and optional intro, followed by a responsive grid of list items. Each item pairs a wired icon in a blue square tile with a bold label and supporting body copy. Distinct from <a href="#task-iconcards">Icon cards</a> — taller section intro and vertically stacked icon + text per cell.</dd>
           <dt>Variants</dt><dd>Desktop (multi-column grid); mobile (stacked). Column count configurable on desktop.</dd>
           <dt>Fields</dt><dd><code>heading</code>, <code>intro</code> (optional rich text), <code>items</code> (icon, title, body), <code>columns</code>, <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>iconListGrid</code> with items array</li><li>Astro responsive grid; icon tile uses Blue 50 background and 8px radius</li><li>Mobile: single-column stack with consistent vertical rhythm</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-icon-list-grid"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12847-19722&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12873-30806&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/icon-list-grid-desktop.png" alt="Icon list grid – Desktop"><img src="figma-screenshots/icon-list-grid-mobile.png" alt="Icon list grid – Mobile"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-image-icon-grid-list">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Image with icon grid list<small>Section · heading, icon grid and side image</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A section with a display heading, a two-column body pairing a wrapped grid of icon-led list items with a rounded side image. Each list item has a flat icon in a light-blue tile, bold title, body copy and optional link-with-arrow CTA. Distinct from <a href="#task-icon-list-grid">Icon list grid</a> — adds a media column and per-item links.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Image with icon grid list<small>Section · heading, icon grid and side image</small></span><span class="meta" id="comp-meta-image-icon-grid-list"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A section with a display heading, a two-column body pairing a wrapped grid of icon-led list items with a rounded side image. Each list item has a flat icon in a light-blue tile, bold title, body copy and optional link-with-arrow CTA. Distinct from <a href="#task-icon-list-grid">Icon list grid</a> — adds a media column and per-item links.</dd>
           <dt>Variants</dt><dd>Image side (left / right); item count (typically four in a 2×2 grid).</dd>
           <dt>Fields</dt><dd><code>heading</code>, <code>items</code> (icon, title, body, optional link), <code>image</code>, <code>mediaSide</code>, <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>imageIconGridList</code> with items array and image field</li><li>Astro two-column layout; icon tile uses Blue 90 (#CEDFFD) and 8px radius; image uses large corner radius</li><li>Mobile: stack image and grid; confirm grid collapse with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-image-icon-grid-list"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=5703-62374&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/image-icon-grid-list.png" alt="Image with icon grid list"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-services-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Services section<small>Section · centred intro, icon columns, CTA and hero image</small></span><span class="meta"><span class="pill p-prof-services">Professional services</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A full-width services block on a light page background. Centred eyebrow, heading and intro copy, followed by a row of icon-led service columns separated by vertical dividers, a primary CTA, and a large illustrative image below.</dd>
-          <dt>Used on</dt><dd>Professional services page</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Services section<small>Section · centred intro, icon columns, CTA and hero image</small></span><span class="meta" id="comp-meta-services-section"><span class="pill p-prof-services">Professional services</span></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A full-width services block on a light page background. Centred eyebrow, heading and intro copy, followed by a row of icon-led service columns separated by vertical dividers, a primary CTA, and a large illustrative image below.</dd>
           <dt>Variants</dt><dd>Column count (typically four); with / without eyebrow; with / without bottom image.</dd>
           <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code> (rich text), <code>items</code> (icon, title, body), <code>cta</code> (label, href), <code>image</code> (optional), <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>servicesSection</code> with items array and optional hero image</li><li>Astro centred layout; column dividers; Blue 99 (#F5F8FF) section background</li><li>Mobile: stack columns; confirm divider and image treatment with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-services-section"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=3916-158301&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/services-section.png" alt="Services section"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-service-detail">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Service detail<small>Section · individual service breakdown with copy and supporting visual</small></span><span class="meta"><span class="pill p-prof-services">Professional services</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A content section for a single professional service — heading, descriptive copy, feature or benefit list, optional CTA, and supporting image or illustration. Composed on the Professional services page below the overview <a href="#task-services-section">Services section</a>.</dd>
-          <dt>Used on</dt><dd>Professional services page</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Service detail<small>Section · individual service breakdown with copy and supporting visual</small></span><span class="meta" id="comp-meta-service-detail"><span class="pill p-prof-services">Professional services</span></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A content section for a single professional service — heading, descriptive copy, feature or benefit list, optional CTA, and supporting image or illustration. Composed on the Professional services page below the overview <a href="#task-services-section">Services section</a>.</dd>
           <dt>Variants</dt><dd>Two-column (copy + image); vertical layout with dual service CTA cards (centred heading, intro, paired cards).</dd>
           <dt>Fields</dt><dd><code>heading</code>, <code>body</code> (rich text), <code>items</code> (optional icon, title, body), <code>cta</code> (optional), <code>image</code>, <code>mediaSide</code> (left / right), <code>layout</code> (two-column | vertical-cards)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>serviceDetail</code> block with portable-text body and optional items array</li><li>Astro two-column or stacked layout; mirror spacing from adjacent Professional services sections</li><li>Vertical-cards variant: centred heading comp + row of service CTA cards (Blue 99 bg, 32px radius, drop shadow)</li><li>Mobile: stack media and copy; stack or scroll cards — confirm with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-service-detail"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4158-124571&amp;m=dev" target="_blank" rel="noopener">Vertical layout · View frame</a></div><div class="figscreens"><img src="figma-screenshots/service-detail.png" alt="Service detail – Vertical layout with dual CTA cards"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-video-hero-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Video hero section<small>Section · full-bleed video background, headline and play CTA</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A full-width hero with a background video or still image, dark gradient overlay, large headline and supporting copy, and a primary pill button with play icon (e.g. “Watch their story”). Used at the top of customer-story pages.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Video hero section<small>Section · full-bleed video background, headline and play CTA</small></span><span class="meta" id="comp-meta-video-hero"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A full-width hero with a background video or still image, dark gradient overlay, large headline and supporting copy, and a primary pill button with play icon (e.g. “Watch their story”). Used at the top of customer-story pages.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
           <dt>Fields</dt><dd><code>heading</code>, <code>body</code>, <code>cta</code> (label, href or video URL), <code>backgroundVideo</code> or <code>backgroundImage</code>, <code>overlay</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + <a class="chip link" href="#task-button">Button</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>videoHeroSection</code> with media and CTA fields</li><li>Astro full-bleed hero; gradient overlay (#011840); lazy-load or poster for video</li><li>Mobile: scale type and confirm video crop with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-video-hero"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-27662&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-99554&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/video-hero-section-desktop.png" alt="Video hero section – Desktop"><img src="figma-screenshots/video-hero-section-mobile.png" alt="Video hero section – Mobile"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-introduction-summary">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Introduction summary<small>Section · case-study intro, accordion and company sidebar</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A dark full-width block for customer-story pages. Left column carries a summary label, intro copy and expandable accordion rows; desktop adds a right sidebar with company bio and logo over a subtle world-map background.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Introduction summary<small>Section · case-study intro, accordion and company sidebar</small></span><span class="meta" id="comp-meta-introduction-summary"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A dark full-width block for customer-story pages. Left column carries a summary label, intro copy and expandable accordion rows; desktop adds a right sidebar with company bio and logo over a subtle world-map background.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
           <dt>Fields</dt><dd><code>label</code> (e.g. “Summary”), <code>intro</code> (rich text), <code>items</code> (accordion title + body), <code>companyBio</code>, <code>logo</code>, <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>introductionSummary</code> with accordion items and company sidebar fields</li><li>Astro two-column layout on desktop; accessible accordion (keyboard + ARIA)</li><li>Mobile: stack intro, accordion, bio and logo; confirm map background treatment with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-introduction-summary"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-27668&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90046&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/introduction-summary-desktop.png" alt="Introduction summary – Desktop"><img src="figma-screenshots/introduction-summary-mobile.png" alt="Introduction summary – Mobile"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-use-case-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Use case section<small>Section · long-form story body and results sidebar</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A two-column customer-story block. The left column carries long-form use-case copy with blog-style headings and body text; desktop pins a right sidebar card labelled “The result” with stacked headline metrics and a Powered by ROLLER mark.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Use case section<small>Section · long-form story body and results sidebar</small></span><span class="meta" id="comp-meta-use-case"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A two-column customer-story block. The left column carries long-form use-case copy with blog-style headings and body text; desktop pins a right sidebar card labelled “The result” with stacked headline metrics and a Powered by ROLLER mark.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
           <dt>Fields</dt><dd><code>body</code> (rich text / portable text blocks), <code>resultsLabel</code>, <code>stats</code> (value, description), <code>showPoweredBy</code> (boolean)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>useCaseSection</code> with portable-text body and results stats array</li><li>Astro two-column layout; sticky results card on desktop</li><li>Mobile: stack body and results card; confirm sidebar order with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-use-case"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-77634&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-90082&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/use-case-section-desktop.png" alt="Use case section – Desktop"><img src="figma-screenshots/use-case-section-mobile.png" alt="Use case section – Mobile"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-form-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Form section<small>Section · lead-capture form with background variants</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A conversion band pairing marketing copy with an inline lead-capture form. Includes eyebrow, heading and body text, underline-style inputs (e.g. first name, last name, email), submit CTA, and optional report or asset thumbnail. Available in blue, dark and light background treatments. Input fields support default, focus, filled, valid and error states with helper text.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Form section<small>Section · lead-capture form with background variants</small></span><span class="meta" id="comp-meta-form-section"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A conversion band pairing marketing copy with an inline lead-capture form. Includes eyebrow, heading and body text, underline-style inputs (e.g. first name, last name, email), submit CTA, and optional report or asset thumbnail. Available in blue, dark and light background treatments. Input fields support default, focus, filled, valid and error states with helper text.</dd>
           <dt>Variants</dt><dd>Blue (desktop; mobile); dark; light (desktop; mobile). Input states: default, focus, filled, error (empty and filled).</dd>
           <dt>Fields</dt><dd><code>eyebrow</code> (optional), <code>heading</code>, <code>intro</code>, <code>fields</code> (label, type, required), <code>submitLabel</code>, <code>image</code> (optional), <code>variant</code> (blue | dark | light), <code>formAction</code> / integration ID</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + <a class="chip link" href="#task-button">Button</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>formSection</code> with variant enum and configurable field list</li><li>Astro line-input form component; map colours per variant (Blue 50 bg, Blue 10 submit on blue)</li><li>Implement input states (focus cursor, error border + icon helper); wire to form backend</li><li>Mobile: stack inputs and confirm image placement with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-form-section"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14795-34883&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=14862-96863&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/form-section-blue-desktop.png" alt="Form section – Blue desktop"><img src="figma-screenshots/form-section-blue-mobile.png" alt="Form section – Blue mobile"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7301&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-dark.png" alt="Form section – Dark"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=11312-13915&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=11392-38258&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/form-section-light-desktop.png" alt="Form section – Light desktop"><img src="figma-screenshots/form-section-light-mobile.png" alt="Form section – Light mobile"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8866-56565&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/form-section-light.png" alt="Form section – Light"></div><div class="figrow"><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=1700-5570&amp;m=dev" target="_blank" rel="noopener">Input states</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-12796&amp;m=dev" target="_blank" rel="noopener">Dark section</a></div><div class="figscreens"><img src="figma-screenshots/form-status-states.png" alt="Form status – Input states"><img src="figma-screenshots/form-status-dark-section.png" alt="Form status – Dark section"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-pricing-widget">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Pricing widget<small>Section · plan comparison cards</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A row of plan pricing cards for tier comparison. Each card has a coloured header stripe (or “Most popular” badge), plan label, description, divider, feature list and full-width CTA. Used on pricing pages.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Pricing widget<small>Section · plan comparison cards</small></span><span class="meta" id="comp-meta-pricing-widget"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A row of plan pricing cards for tier comparison. Each card has a coloured header stripe (or “Most popular” badge), plan label, description, divider, feature list and full-width CTA. Used on pricing pages.</dd>
           <dt>Variants</dt><dd>Plan row (desktop); full section (desktop); mobile layout A; mobile layout B.</dd>
           <dt>Fields</dt><dd><code>plans</code> (name, description, features, cta, badge, headerColor), <code>highlightedPlan</code> (optional)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a> + <a class="chip link" href="#task-button">Button</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>pricingWidget</code> with plans array</li><li>Astro responsive grid; 32px card radius, drop shadow token</li><li>Mobile: confirm stacked card order and highlight treatment with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-pricing-widget"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8737-57514&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/pricing-widget-desktop-a.png" alt="Pricing widget – Plan row desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8724-11597&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/pricing-widget-desktop-b.png" alt="Pricing widget – Full section desktop"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37252&amp;m=dev" target="_blank" rel="noopener">Mobile</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37253&amp;m=dev" target="_blank" rel="noopener">Mobile alt</a></div><div class="figscreens"><img src="figma-screenshots/pricing-widget-mobile-a.png" alt="Pricing widget – Mobile A"><img src="figma-screenshots/pricing-widget-mobile-b.png" alt="Pricing widget – Mobile B"></div></dd>
         </dl></div>
       </details>
       <details class="task" id="task-addons">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Addons<small>Section · optional add-on products row</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A horizontal band of add-on product cards beneath the main pricing tiers. Each item pairs icon or image, title, short description and optional link or price.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Addons<small>Section · optional add-on products row</small></span><span class="meta" id="comp-meta-addons"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A horizontal band of add-on product cards beneath the main pricing tiers. Each item pairs icon or image, title, short description and optional link or price.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon or image, title, body, link or price)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-grid">Grid</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>addons</code> with items array</li><li>Astro horizontal card row; stack on mobile</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-addons"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6681-18121&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1-37253&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/addons-desktop.png" alt="Addons – Desktop"><img src="figma-screenshots/addons-mobile.png" alt="Addons – Mobile"></div></dd>
         </dl></div>
       </details>
@@ -710,13 +776,14 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">FAQ<small>Section · accordion</small></span>
-          <span class="meta"></span>
+          <span class="meta" id="comp-meta-faq"></span>
         </summary>
         <div class="detail">
           <dl>
             <dt>Fields</dt><dd><code>heading</code>, <code>items</code> (question + answer), <code>background</code></dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
             <dt>Steps</dt><dd><ol><li>Sanity <code>faq</code> with items array</li><li>Astro accessible accordion (keyboard + ARIA)</li><li>Define expand motion token</li></ol></dd>
+            <dt>Used on</dt><dd id="comp-used-faq"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
             <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16214" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16375" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/faq-desktop.png" alt="FAQ – Desktop"><img src="figma-screenshots/faq-mobile.png" alt="FAQ – Mobile"></div></dd>
           </dl>
         </div>
@@ -726,138 +793,137 @@
         <summary>
           <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
           <span class="tname">CTA section<small>Section · conversion band</small></span>
-          <span class="meta"></span>
+          <span class="meta" id="comp-meta-cta"></span>
         </summary>
         <div class="detail">
-          <dl>
-            <dt>Variants</dt><dd>Default (desktop; mobile); compact band (desktop; mobile).</dd>
+          <dl><dt>Variants</dt><dd>Default (desktop; mobile); compact band (desktop; mobile).</dd>
             <dt>Fields</dt><dd><code>heading</code>, <code>body</code>, <code>buttons</code>, <code>background</code></dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a> + <a class="chip link" href="#task-button">Button</a></dd>
             <dt>Steps</dt><dd><ol><li>Sanity <code>cta</code></li><li>Astro component with background variant + button slot</li></ol></dd>
+            <dt>Used on</dt><dd id="comp-used-cta"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
             <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16208" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16369" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cta-desktop.png" alt="CTA section – Desktop"><img src="figma-screenshots/cta-mobile.png" alt="CTA section – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12492-24815&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=12494-16779&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/cta-section-v2-desktop.png" alt="CTA section – Compact desktop"><img src="figma-screenshots/cta-section-v2-mobile.png" alt="CTA section – Compact mobile"></div></dd>
           </dl>
         </div>
       </details>
 
       <details class="task" id="task-featuresunfold">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features unfold<small>Section · interactive feature reveal</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (title, body, media or icon)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features unfold<small>Section · interactive feature reveal</small></span><span class="meta" id="comp-meta-featuresunfold"></span></summary>
+        <div class="detail"><dl><dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (title, body, media or icon)</dd>
           <dt>Composition</dt><dd>An interactive unfold of features (tabs, accordion or step reveal).</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> · motion (TBD)</dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>featuresUnfold</code> with items</li><li>Astro component, accessible and keyboard-friendly</li><li>Confirm the interaction model with design</li></ol></dd>
           <dt>Note</dt><dd>Interaction inferred from the name; confirm against the frame.</dd>
+          <dt>Used on</dt><dd id="comp-used-featuresunfold"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22315" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4593-10809" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/features-unfold-desktop.png" alt="Features unfold – Desktop"><img src="figma-screenshots/features-unfold-mobile.png" alt="Features unfold – Mobile"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-reports">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Reports<small>Section · grid of report / resource cards</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (cover image, title, description, link)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Reports<small>Section · grid of report / resource cards</small></span><span class="meta" id="comp-meta-reports"></span></summary>
+        <div class="detail"><dl><dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (cover image, title, description, link)</dd>
           <dt>Composition</dt><dd>Grid or list of report cards. Ties to the gated resource pages.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>reports</code> with items</li><li>Astro component</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-reports"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=5150-22852" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4593-11357" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/reports-desktop.png" alt="Reports – Desktop"><img src="figma-screenshots/reports-mobile.png" alt="Reports – Mobile"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-categorylinks">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Category links<small>Section · grouped link lists</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>groups</code> (category title + <code>links</code> array of label + href)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Category links<small>Section · grouped link lists</small></span><span class="meta" id="comp-meta-categorylinks"></span></summary>
+        <div class="detail"><dl><dt>Fields</dt><dd><code>groups</code> (category title + <code>links</code> array of label + href)</dd>
           <dt>Composition</dt><dd>Grouped lists of links.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>categoryLinks</code></li><li>Astro component</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-categorylinks"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2550-972" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=2989-2087" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/category-links-desktop.png" alt="Category links – Desktop"><img src="figma-screenshots/category-links-mobile.png" alt="Category links – Mobile"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-features-index">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features index<small>Section · navigable feature grid</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (feature name, icon, href)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features index<small>Section · navigable feature grid</small></span><span class="meta" id="comp-meta-features-index"></span></summary>
+        <div class="detail"><dl><dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (feature name, icon, href)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>featuresIndex</code> with items array</li><li>Astro grid component</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-features-index"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-126219" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-features-index.png" alt="Features index section"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-stats-section">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Stats section<small>Section · headline metrics bar</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>items</code> (value, label)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Stats section<small>Section · headline metrics bar</small></span><span class="meta" id="comp-meta-stats-section"></span></summary>
+        <div class="detail"><dl><dt>Fields</dt><dd><code>items</code> (value, label)</dd>
           <dt>Variants</dt><dd>Default; blue background with vertical dividers (four stats); light background row.</dd>
           <dt>Note</dt><dd>Section-level stats bar, distinct from the <a href="#task-stats">Stats primitive</a> used inside Two-column.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>statsSection</code></li><li>Astro component composing the Stats primitive</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-stats-section"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4263-117796" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-widget.png" alt="Stats section"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-28382&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-blue.png" alt="Stats section – blue background"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10100-29968&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/stats-section-v2.png" alt="Stats section – light row"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-horizontal-slider">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Horizontal slider<small>Section · horizontally scrollable card row</small></span><span class="meta"><span class="pill p-multi-venue">Multi venue</span></span></summary>
-        <div class="detail"><dl>
-          <dt>Used on</dt><dd>Multi venue page (dark variation)</dd>
-          <dt>Variants</dt><dd>Light; dark (Commitment background, light card treatment).</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Horizontal slider<small>Section · horizontally scrollable card row</small></span><span class="meta" id="comp-meta-horizontal-slider"><span class="pill p-multi-venue">Multi venue</span></span></summary>
+        <div class="detail"><dl><dt>Variants</dt><dd>Light; dark (Commitment background, light card treatment).</dd>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (card content per use-case), <code>theme</code> (light | dark)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Confirm card content type with design</li><li>Sanity schema with <code>theme</code> enum</li><li>Astro scroll-snap carousel</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-horizontal-slider"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4908-104558" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-horizontal-slider.png" alt="Horizontal slider section"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-43376&amp;m=dev" target="_blank" rel="noopener">Dark · View frame</a></div><div class="figscreens"><img src="figma-screenshots/horizontal-slider-dark.png" alt="Horizontal slider – Dark"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-customer-story">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer story carousel<small>Section · rotating customer case studies</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>items</code> (customer name, logo, quote, stats, link)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer story carousel<small>Section · rotating customer case studies</small></span><span class="meta" id="comp-meta-customer-story"></span></summary>
+        <div class="detail"><dl><dt>Fields</dt><dd><code>items</code> (customer name, logo, quote, stats, link)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>customerStoryCarousel</code></li><li>Astro accessible carousel</li><li>Ties to Sanity customer story documents</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-customer-story"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1946-135315" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-customer-story.png" alt="Customer story carousel"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-industry-vertical">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industry vertical section<small>Section · content tailored to a specific industry</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A section that presents ROLLER's value proposition for a specific industry vertical — likely with industry-specific imagery, copy and links.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industry vertical section<small>Section · content tailored to a specific industry</small></span><span class="meta" id="comp-meta-industry-vertical"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A section that presents ROLLER's value proposition for a specific industry vertical — likely with industry-specific imagery, copy and links.</dd>
           <dt>Variants</dt><dd>Desktop; mobile.</dd>
           <dt>Fields</dt><dd><code>industry</code>, <code>heading</code>, <code>body</code>, <code>media</code>, <code>links</code> (TBD from Figma)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Confirm fields from Figma frame</li><li>Sanity <code>industryVertical</code></li><li>Astro component</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-industry-vertical"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-37770" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6035-38453" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/section-industry-vertical-desktop.png" alt="Industry vertical – Desktop"><img src="figma-screenshots/section-industry-vertical-mobile.png" alt="Industry vertical – Mobile"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-features-list">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features list<small>Section · scannable feature bullet list</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A structured list of feature bullet points, used to communicate product capabilities at a glance. Different from the <a href="#task-features-index">Features index</a> navigation grid.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Features list<small>Section · scannable feature bullet list</small></span><span class="meta" id="comp-meta-features-list"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A structured list of feature bullet points, used to communicate product capabilities at a glance. Different from the <a href="#task-features-index">Features index</a> navigation grid.</dd>
           <dt>Fields</dt><dd><code>heading</code> (optional), <code>items</code> (icon, label, optional body)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>featuresList</code> with items array</li><li>Astro component</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-features-list"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1949-186981" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-features-list.png" alt="Features list section"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-implementation-packages">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Implementation packages<small>Section · onboarding / pricing package cards</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Fields</dt><dd><code>heading</code> (optional), <code>packages</code> (name, features list, CTA, highlighted flag)</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Implementation packages<small>Section · onboarding / pricing package cards</small></span><span class="meta" id="comp-meta-implementation-packages"></span></summary>
+        <div class="detail"><dl><dt>Fields</dt><dd><code>heading</code> (optional), <code>packages</code> (name, features list, CTA, highlighted flag)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity <code>implementationPackages</code></li><li>Astro component with card grid</li><li>Confirm highlighted/recommended state treatment with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-implementation-packages"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=1949-185476" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-implementation-packages.png" alt="Implementation packages section"></div></dd>
         </dl></div>
       </details>
 
       <details class="task" id="task-announcement-bar">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Announcement bar<small>Section · optional per-page banner strip</small></span><span class="meta"></span></summary>
-        <div class="detail"><dl>
-          <dt>Description</dt><dd>A slim banner above the nav for time-sensitive announcements or promotions. Added per page — not a site-wide global. Dismissable per session.</dd>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Announcement bar<small>Section · optional per-page banner strip</small></span><span class="meta" id="comp-meta-announcement-bar"></span></summary>
+        <div class="detail"><dl><dt>Description</dt><dd>A slim banner above the nav for time-sensitive announcements or promotions. Added per page — not a site-wide global. Dismissable per session.</dd>
           <dt>Variants</dt><dd>Default (desktop; mobile); countdown with gradient (desktop; mobile); full-width message with CTA (desktop; mobile).</dd>
           <dt>Fields</dt><dd><code>message</code> (rich text), <code>link</code>, <code>dismissable</code>, <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Steps</dt><dd><ol><li>Sanity optional page-level field or block (one per page)</li><li>Astro component rendered at the top of the page when enabled</li><li>Dismissable via localStorage</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-announcement-bar"><span style="color:var(--muted);font-size:13px">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8117-394" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=8118-2370" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-desktop.png" alt="Announcement bar – Desktop"><img src="figma-screenshots/global-announcement-mobile.png" alt="Announcement bar – Mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-118&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=7390-119&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-countdown-desktop.png" alt="Announcement bar – Countdown desktop"><img src="figma-screenshots/global-announcement-countdown-mobile.png" alt="Announcement bar – Countdown mobile"></div><div class="figrow"><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119682&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/OZZPhDtGvUtHuzYIDZ5RWx/Website-library-2023?node-id=4998-119665&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div><div class="figscreens"><img src="figma-screenshots/global-announcement-fullwidth-desktop.png" alt="Announcement bar – Full width desktop"><img src="figma-screenshots/global-announcement-fullwidth-mobile.png" alt="Announcement bar – Full width mobile"></div></dd>
         </dl></div>
       </details>
@@ -1124,7 +1190,6 @@
     <div class="row"><span class="nm">Image <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-image">Go to task</a></div>
     <div class="row"><span class="nm">Video <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-video">Go to task</a></div>
     <div class="row"><span class="nm">Quote <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-quote">Go to task</a></div>
-    <div class="row"><span class="nm">Dual quote <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-dual-quote">Go to task</a></div>
     <div class="row"><span class="nm">Stats <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-stats">Go to task</a></div>
     <div class="row"><span class="nm">Two-column <span class="pill r-dev" style="margin-left:6px">Composite</span></span><a href="#task-twocol">Go to task</a></div>
     <div class="row"><span class="nm">Two-column with bigger left <span class="pill p-values" style="margin-left:6px">Values</span></span><a href="#task-twocol-bigger">Go to task</a></div>
@@ -1144,8 +1209,9 @@
     <div class="row"><span class="nm">Form section <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-form-section">Go to task</a></div>
     <div class="row"><span class="nm">Pricing widget <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-pricing-widget">Go to task</a></div>
     <div class="row"><span class="nm">Addons <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-addons">Go to task</a></div>
-    <div class="row"><span class="nm">Special heading <span class="pill s-todo" style="margin-left:6px">Content</span></span><a href="#task-specialheading">Go to task</a></div>
     <div class="row"><span class="nm">Centered text block <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-centeredtext">Go to task</a></div>
+    <div class="row"><span class="nm">Dual quote <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-dual-quote">Go to task</a></div>
+    <div class="row"><span class="nm">Special hero introduction <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-special-hero-introduction">Go to task</a></div>
     <div class="row"><span class="nm">Features unfold <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-featuresunfold">Go to task</a></div>
     <div class="row"><span class="nm">Reports <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-reports">Go to task</a></div>
     <div class="row"><span class="nm">Category links <span class="pill s-todo" style="margin-left:6px">Section</span></span><a href="#task-categorylinks">Go to task</a></div>
@@ -1186,15 +1252,413 @@
     <div class="row"><span class="nm">Typography</span><a href="#tok-type">Go to tokens</a></div>
     <div class="row"><span class="nm">Spacing</span><a href="#tok-space">Go to tokens</a></div>
     <div class="row"><span class="nm">Grid &amp; breakpoints</span><a href="#tok-grid">Go to tokens</a></div>
-  </div>
+  </div><!-- /panel-index -->
+
+  <!-- ============ PAGES PANEL ============ -->
+  <div id="panel-pages" role="tabpanel" aria-labelledby="tab-pages">
+
+    <div class="intro" style="margin-top:22px">
+      <h1>Site page directory</h1>
+      <p>Complete list of roller.software live pages — June 2026 audit. Expand any category to browse its pages. Pages that use audited Phase 3 components show coloured pills. Use the filter below to narrow the list. Component rows in the Build plan show category tags at a glance. <span class="pill s-done" style="font-size:11px;vertical-align:middle">NEW</span> pages were found and added in this audit; <span class="pill r-design" style="font-size:11px;vertical-align:middle">FIXED</span> marks corrected URLs.</p>
+    </div>
+
+    <div class="pg-stats">
+      <div class="pg-stat"><span class="pg-stat-n" style="color:var(--blue-30)">211</span><span class="pg-stat-l">Total pages</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" style="color:#04632B">59</span><span class="pg-stat-l">Added this audit</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" style="color:#B22F04">2</span><span class="pg-stat-l">URLs corrected</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" style="color:var(--blue-50)">15</span><span class="pg-stat-l">Categories</span></div>
+    </div>
+
+    <div class="pg-filters" id="pg-filters" role="group" aria-label="Filter pages by component">
+      <span class="pg-filters-label">Component</span>
+      <button type="button" class="pg-filter" data-component="all" aria-pressed="true">All pages</button>
+      <span id="pg-filter-components"></span>
+    </div>
+    <p class="pg-filter-status" id="pg-filter-status" aria-live="polite"></p>
+
+    <!-- 1 · Single Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Single Pages</h2>
+        <span class="count">8 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Home page</span><a class="pg-url" href="https://www.roller.software" target="_blank" rel="noopener">https://www.roller.software</a></div>
+        <div class="pg-row"><span class="pg-title">Home page variant</span><a class="pg-url" href="https://www.roller.software/business-solutions" target="_blank" rel="noopener">https://www.roller.software/business-solutions</a></div>
+        <div class="pg-row"><span class="pg-title">About Us</span><a class="pg-url" href="https://www.roller.software/about-us" target="_blank" rel="noopener">https://www.roller.software/about-us</a></div>
+        <div class="pg-row"><span class="pg-title">Get Started</span><a class="pg-url" href="https://www.roller.software/get-started/" target="_blank" rel="noopener">https://www.roller.software/get-started/</a></div>
+        <div class="pg-row"><span class="pg-title">The Guest Experience Show</span><a class="pg-url" href="https://www.roller.software/the-guest-experience-show/" target="_blank" rel="noopener">https://www.roller.software/the-guest-experience-show/</a></div>
+        <div class="pg-row"><span class="pg-title">Blog</span><a class="pg-url" href="https://www.roller.software/blog" target="_blank" rel="noopener">https://www.roller.software/blog</a></div>
+        <div class="pg-row"><span class="pg-title">Pricing</span><a class="pg-url" href="https://www.roller.software/pricing/" target="_blank" rel="noopener">https://www.roller.software/pricing/</a></div>
+        <div class="pg-row"><span class="pg-title">Demo Videos</span><a class="pg-url" href="https://www.roller.software/demo/" target="_blank" rel="noopener">https://www.roller.software/demo/</a></div>
+      </div></div>
+    </details>
+
+    <!-- 2 · Solutions Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Solutions Pages</h2>
+        <span class="count">3 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Solutions SBM</span><a class="pg-url" href="https://www.roller.software/solutions/grow-your-business" target="_blank" rel="noopener">https://www.roller.software/solutions/grow-your-business</a></div>
+        <div class="pg-row"><span class="pg-title">Enterprise</span><a class="pg-url" href="https://www.roller.software/solutions/enterprise" target="_blank" rel="noopener">https://www.roller.software/solutions/enterprise</a></div>
+        <div class="pg-row"><span class="pg-title">Segmentation Groups</span><a class="pg-url" href="https://www.roller.software/solutions/multi-venue" target="_blank" rel="noopener">https://www.roller.software/solutions/multi-venue</a></div>
+      </div></div>
+    </details>
+
+    <!-- 3 · Features Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Features Pages</h2>
+        <span class="count">32 pages · 3 added · 1 URL corrected</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Features</span><a class="pg-url" href="https://www.roller.software/features" target="_blank" rel="noopener">https://www.roller.software/features</a></div>
+        <div class="pg-row"><span class="pg-title">CRM Experience</span><a class="pg-url" href="https://www.roller.software/features/crm-experience/" target="_blank" rel="noopener">https://www.roller.software/features/crm-experience/</a></div>
+        <div class="pg-row"><span class="pg-title">Digital Waivers</span><a class="pg-url" href="https://www.roller.software/features/digital-waiver-software/" target="_blank" rel="noopener">https://www.roller.software/features/digital-waiver-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Discount Codes</span><a class="pg-url" href="https://www.roller.software/features/discount-codes" target="_blank" rel="noopener">https://www.roller.software/features/discount-codes</a></div>
+        <div class="pg-row"><span class="pg-title">Gift Cards</span><a class="pg-url" href="https://www.roller.software/features/giftcard/" target="_blank" rel="noopener">https://www.roller.software/features/giftcard/</a></div>
+        <div class="pg-row"><span class="pg-title">Guest Feedback Software</span><a class="pg-url" href="https://www.roller.software/features/guest-feedback-software/" target="_blank" rel="noopener">https://www.roller.software/features/guest-feedback-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Guest Tabs</span><a class="pg-url" href="https://www.roller.software/features/guest-tabs" target="_blank" rel="noopener">https://www.roller.software/features/guest-tabs</a></div>
+        <div class="pg-row"><span class="pg-title">Membership Management</span><a class="pg-url" href="https://www.roller.software/features/membership-management-software/" target="_blank" rel="noopener">https://www.roller.software/features/membership-management-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Mobile Check-in App</span><a class="pg-url" href="https://www.roller.software/features/mobile-check-in" target="_blank" rel="noopener">https://www.roller.software/features/mobile-check-in</a></div>
+        <div class="pg-row"><span class="pg-title">Mobile Food &amp; Beverage</span><a class="pg-url" href="https://www.roller.software/features/mobile-food-and-beverage-ordering" target="_blank" rel="noopener">https://www.roller.software/features/mobile-food-and-beverage-ordering</a></div>
+        <div class="pg-row"><span class="pg-title">Multi-Venue Management</span><a class="pg-url" href="https://www.roller.software/features/multi-venue-management/" target="_blank" rel="noopener">https://www.roller.software/features/multi-venue-management/</a></div>
+        <div class="pg-row"><span class="pg-title">Online Ticketing System</span><a class="pg-url" href="https://www.roller.software/features/online-ticket-system/" target="_blank" rel="noopener">https://www.roller.software/features/online-ticket-system/</a></div>
+        <div class="pg-row"><span class="pg-title">Packages</span><a class="pg-url" href="https://www.roller.software/features/packages" target="_blank" rel="noopener">https://www.roller.software/features/packages</a></div>
+        <div class="pg-row"><span class="pg-title">Party Booking Software</span><a class="pg-url" href="https://www.roller.software/features/party-booking-software/" target="_blank" rel="noopener">https://www.roller.software/features/party-booking-software/</a></div>
+        <div class="pg-row"><span class="pg-title">ROLLER Payments</span><a class="pg-url" href="https://www.roller.software/features/payment-processing-software/" target="_blank" rel="noopener">https://www.roller.software/features/payment-processing-software/</a></div>
+        <div class="pg-row"><span class="pg-title">POS Reports</span><a class="pg-url" href="https://www.roller.software/features/point-of-sale-reports/" target="_blank" rel="noopener">https://www.roller.software/features/point-of-sale-reports/</a></div>
+        <div class="pg-row"><span class="pg-title">Point of Sale</span><a class="pg-url" href="https://www.roller.software/features/pos/" target="_blank" rel="noopener">https://www.roller.software/features/pos/</a></div>
+        <div class="pg-row"><span class="pg-title">POS System</span><a class="pg-url" href="https://www.roller.software/features/pos-system/" target="_blank" rel="noopener">https://www.roller.software/features/pos-system/</a></div>
+        <div class="pg-row"><span class="pg-title">Pricing Strategy</span><a class="pg-url" href="https://www.roller.software/features/pricing-strategy" target="_blank" rel="noopener">https://www.roller.software/features/pricing-strategy</a></div>
+        <div class="pg-row"><span class="pg-title">Printer Management</span><a class="pg-url" href="https://www.roller.software/features/printer-management" target="_blank" rel="noopener">https://www.roller.software/features/printer-management</a></div>
+        <div class="pg-row"><span class="pg-title">Self-Serve Kiosks</span><a class="pg-url" href="https://www.roller.software/features/self-service-ticketing-kiosk/" target="_blank" rel="noopener">https://www.roller.software/features/self-service-ticketing-kiosk/</a></div>
+        <div class="pg-row"><span class="pg-title">Staff Permissions</span><a class="pg-url" href="https://www.roller.software/features/staff-permissions" target="_blank" rel="noopener">https://www.roller.software/features/staff-permissions</a></div>
+        <div class="pg-row"><span class="pg-title">Stock &amp; Inventory Control</span><a class="pg-url" href="https://www.roller.software/features/stock-and-inventory-control" target="_blank" rel="noopener">https://www.roller.software/features/stock-and-inventory-control</a></div>
+        <div class="pg-row"><span class="pg-title">Cashless Wallets</span><a class="pg-url" href="https://www.roller.software/features/cashless-wallets" target="_blank" rel="noopener">https://www.roller.software/features/cashless-wallets</a><span class="pg-badge pg-badge-fixed">FIXED</span><span class="pg-fix-note">Was: /features/channel-management</span></div>
+        <div class="pg-row"><span class="pg-title">Channel Management</span><a class="pg-url" href="https://www.roller.software/features/channel-management" target="_blank" rel="noopener">https://www.roller.software/features/channel-management</a></div>
+        <div class="pg-row"><span class="pg-title">API Integrations</span><a class="pg-url" href="https://www.roller.software/features/api-integrations/" target="_blank" rel="noopener">https://www.roller.software/features/api-integrations/</a></div>
+        <div class="pg-row"><span class="pg-title">Capacity Management</span><a class="pg-url" href="https://www.roller.software/features/capacity-management" target="_blank" rel="noopener">https://www.roller.software/features/capacity-management</a></div>
+        <div class="pg-row"><span class="pg-title">ROLLER iQ</span><a class="pg-url" href="https://www.roller.software/features/ai-assistant" target="_blank" rel="noopener">https://www.roller.software/features/ai-assistant</a></div>
+        <div class="pg-row"><span class="pg-title">RFID</span><a class="pg-url" href="https://www.roller.software/products/rfid" target="_blank" rel="noopener">https://www.roller.software/products/rfid</a></div>
+        <div class="pg-row"><span class="pg-title">Loyalty Programs</span><a class="pg-url" href="https://www.roller.software/features/loyalty-programs" target="_blank" rel="noopener">https://www.roller.software/features/loyalty-programs</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Guest Experience Agent</span><a class="pg-url" href="https://www.roller.software/features/guest-experience-agent" target="_blank" rel="noopener">https://www.roller.software/features/guest-experience-agent</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">ROLLER Capital</span><a class="pg-url" href="https://www.roller.software/features/capital" target="_blank" rel="noopener">https://www.roller.software/features/capital</a><span class="pg-badge pg-badge-new">NEW</span></div>
+      </div></div>
+    </details>
+
+    <!-- 4 · Industry Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Industry Pages</h2>
+        <span class="count">20 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Industries</span><a class="pg-url" href="https://www.roller.software/industries/" target="_blank" rel="noopener">https://www.roller.software/industries/</a></div>
+        <div class="pg-row"><span class="pg-title">Adventure Parks</span><a class="pg-url" href="https://www.roller.software/industries/adventure-parks-software" target="_blank" rel="noopener">https://www.roller.software/industries/adventure-parks-software</a></div>
+        <div class="pg-row"><span class="pg-title">Amusement &amp; Theme Parks</span><a class="pg-url" href="https://www.roller.software/industries/amusement-and-theme-parks-software/" target="_blank" rel="noopener">https://www.roller.software/industries/amusement-and-theme-parks-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Axe Throwing</span><a class="pg-url" href="https://www.roller.software/industries/axe-throwing-software" target="_blank" rel="noopener">https://www.roller.software/industries/axe-throwing-software</a></div>
+        <div class="pg-row"><span class="pg-title">Bowling</span><a class="pg-url" href="https://www.roller.software/industries/bowling-alley-management-software" target="_blank" rel="noopener">https://www.roller.software/industries/bowling-alley-management-software</a></div>
+        <div class="pg-row"><span class="pg-title">Rock Climbing Gyms</span><a class="pg-url" href="https://www.roller.software/industries/climbing-gyms-software/" target="_blank" rel="noopener">https://www.roller.software/industries/climbing-gyms-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Escape Rooms</span><a class="pg-url" href="https://www.roller.software/industries/escape-room-software" target="_blank" rel="noopener">https://www.roller.software/industries/escape-room-software</a></div>
+        <div class="pg-row"><span class="pg-title">Family Entertainment Centers</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software/" target="_blank" rel="noopener">https://www.roller.software/industries/family-entertainment-center-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Go-Karting</span><a class="pg-url" href="https://www.roller.software/industries/go-karting" target="_blank" rel="noopener">https://www.roller.software/industries/go-karting</a></div>
+        <div class="pg-row"><span class="pg-title">Ice Skating</span><a class="pg-url" href="https://www.roller.software/industries/ice-skating" target="_blank" rel="noopener">https://www.roller.software/industries/ice-skating</a></div>
+        <div class="pg-row"><span class="pg-title">Mini Golf</span><a class="pg-url" href="https://www.roller.software/industries/mini-golf" target="_blank" rel="noopener">https://www.roller.software/industries/mini-golf</a></div>
+        <div class="pg-row"><span class="pg-title">Museums</span><a class="pg-url" href="https://www.roller.software/industries/museums-software/" target="_blank" rel="noopener">https://www.roller.software/industries/museums-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Pickleball</span><a class="pg-url" href="https://www.roller.software/industries/pickleball-software" target="_blank" rel="noopener">https://www.roller.software/industries/pickleball-software</a></div>
+        <div class="pg-row"><span class="pg-title">Playground / Softplay</span><a class="pg-url" href="https://www.roller.software/industries/playground-software" target="_blank" rel="noopener">https://www.roller.software/industries/playground-software</a></div>
+        <div class="pg-row"><span class="pg-title">Roller Skating</span><a class="pg-url" href="https://www.roller.software/industries/skating-rink-software/" target="_blank" rel="noopener">https://www.roller.software/industries/skating-rink-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Trampoline Parks</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/" target="_blank" rel="noopener">https://www.roller.software/industries/trampoline-parks-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Visitor Attractions</span><a class="pg-url" href="https://www.roller.software/industries/visitor-attractions-software" target="_blank" rel="noopener">https://www.roller.software/industries/visitor-attractions-software</a></div>
+        <div class="pg-row"><span class="pg-title">Wake &amp; Aqua Parks</span><a class="pg-url" href="https://www.roller.software/industries/wake-and-aqua-parks-management-software" target="_blank" rel="noopener">https://www.roller.software/industries/wake-and-aqua-parks-management-software</a></div>
+        <div class="pg-row"><span class="pg-title">Water Parks</span><a class="pg-url" href="https://www.roller.software/industries/water-parks-management-software/" target="_blank" rel="noopener">https://www.roller.software/industries/water-parks-management-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Zoos &amp; Aquariums</span><a class="pg-url" href="https://www.roller.software/industries/zoos-management-software/" target="_blank" rel="noopener">https://www.roller.software/industries/zoos-management-software/</a></div>
+      </div></div>
+    </details>
+
+    <!-- 5 · DG LP -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>DG LP</h2>
+        <span class="count">8 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Business Solutions</span><a class="pg-url" href="https://www.roller.software/business-solutions" target="_blank" rel="noopener">https://www.roller.software/business-solutions</a></div>
+        <div class="pg-row"><span class="pg-title">FEC POS</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software/pos-system" target="_blank" rel="noopener">https://www.roller.software/industries/family-entertainment-center-software/pos-system</a></div>
+        <div class="pg-row"><span class="pg-title">FEC Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software/ticketing-system/" target="_blank" rel="noopener">https://www.roller.software/industries/family-entertainment-center-software/ticketing-system/</a></div>
+        <div class="pg-row"><span class="pg-title">Playcenter Online Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/playcenter-software/online-ticketing-system/" target="_blank" rel="noopener">https://www.roller.software/industries/playcenter-software/online-ticketing-system/</a></div>
+        <div class="pg-row"><span class="pg-title">Playcenter POS</span><a class="pg-url" href="https://www.roller.software/industries/playground-software/play-center-point-of-sale-system" target="_blank" rel="noopener">https://www.roller.software/industries/playground-software/play-center-point-of-sale-system</a></div>
+        <div class="pg-row"><span class="pg-title">Trampoline POS</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/pos/" target="_blank" rel="noopener">https://www.roller.software/industries/trampoline-parks-software/pos/</a></div>
+        <div class="pg-row"><span class="pg-title">Trampoline Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/ticketing-software/" target="_blank" rel="noopener">https://www.roller.software/industries/trampoline-parks-software/ticketing-software/</a></div>
+        <div class="pg-row"><span class="pg-title">Wake Park Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/wake-parks-management-software/ticketing-system/" target="_blank" rel="noopener">https://www.roller.software/industries/wake-parks-management-software/ticketing-system/</a></div>
+      </div></div>
+    </details>
+
+    <!-- 6 · Competitor Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Competitor Pages</h2>
+        <span class="count">15 pages · 5 added · 1 URL corrected</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Venue Sumo</span><a class="pg-url" href="https://www.roller.software/competitor/venue-sumo" target="_blank" rel="noopener">https://www.roller.software/competitor/venue-sumo</a></div>
+        <div class="pg-row"><span class="pg-title">Aluvii</span><a class="pg-url" href="https://www.roller.software/competitor/aluvii" target="_blank" rel="noopener">https://www.roller.software/competitor/aluvii</a></div>
+        <div class="pg-row"><span class="pg-title">Centaman</span><a class="pg-url" href="https://www.roller.software/competitor/centaman" target="_blank" rel="noopener">https://www.roller.software/competitor/centaman</a></div>
+        <div class="pg-row"><span class="pg-title">Clubspeed</span><a class="pg-url" href="https://www.roller.software/competitor/clubspeed" target="_blank" rel="noopener">https://www.roller.software/competitor/clubspeed</a></div>
+        <div class="pg-row"><span class="pg-title">FareHarbor</span><a class="pg-url" href="https://www.roller.software/competitor/fareharbor" target="_blank" rel="noopener">https://www.roller.software/competitor/fareharbor</a></div>
+        <div class="pg-row"><span class="pg-title">FuseMetrix</span><a class="pg-url" href="https://www.roller.software/competitor/fusemetrix" target="_blank" rel="noopener">https://www.roller.software/competitor/fusemetrix</a></div>
+        <div class="pg-row"><span class="pg-title">LiliPad POS</span><a class="pg-url" href="https://www.roller.software/competitor/lilypad-pos" target="_blank" rel="noopener">https://www.roller.software/competitor/lilypad-pos</a></div>
+        <div class="pg-row"><span class="pg-title">Party Center Software</span><a class="pg-url" href="https://www.roller.software/competitor/party-center-software" target="_blank" rel="noopener">https://www.roller.software/competitor/party-center-software</a></div>
+        <div class="pg-row"><span class="pg-title">Rock Gym Pro</span><a class="pg-url" href="https://www.roller.software/competitor/rock-gym-pro" target="_blank" rel="noopener">https://www.roller.software/competitor/rock-gym-pro</a></div>
+        <div class="pg-row"><span class="pg-title">RocketRez</span><a class="pg-url" href="https://www.roller.software/competitor/rocketrez" target="_blank" rel="noopener">https://www.roller.software/competitor/rocketrez</a><span class="pg-badge pg-badge-fixed">FIXED</span><span class="pg-fix-note">Was: /competitor/rocketrezz (extra z)</span></div>
+        <div class="pg-row"><span class="pg-title">BookNow Software</span><a class="pg-url" href="https://www.roller.software/competitor/booknow-software" target="_blank" rel="noopener">https://www.roller.software/competitor/booknow-software</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Checkfront</span><a class="pg-url" href="https://www.roller.software/competitor/checkfront" target="_blank" rel="noopener">https://www.roller.software/competitor/checkfront</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Bookeo</span><a class="pg-url" href="https://www.roller.software/competitor/bookeo" target="_blank" rel="noopener">https://www.roller.software/competitor/bookeo</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Ticket Tailor</span><a class="pg-url" href="https://www.roller.software/competitor/tickettailor" target="_blank" rel="noopener">https://www.roller.software/competitor/tickettailor</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">RaceFacer</span><a class="pg-url" href="https://www.roller.software/competitor/racefacer" target="_blank" rel="noopener">https://www.roller.software/competitor/racefacer</a><span class="pg-badge pg-badge-new">NEW</span></div>
+      </div></div>
+    </details>
+
+    <!-- 7 · Campaigns -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Campaigns</h2>
+        <span class="count">9 pages · 1 added</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">2024 Year in Review</span><a class="pg-url" href="https://www.roller.software/2023-rollup" target="_blank" rel="noopener">https://www.roller.software/2023-rollup</a></div>
+        <div class="pg-row"><span class="pg-title">2025 Year in Review</span><a class="pg-url" href="https://www.roller.software/2024-rollup" target="_blank" rel="noopener">https://www.roller.software/2024-rollup</a></div>
+        <div class="pg-row"><span class="pg-title">2026 Year in Review</span><a class="pg-url" href="https://www.roller.software/2025-roll-up-year-in-review" target="_blank" rel="noopener">https://www.roller.software/2025-roll-up-year-in-review</a></div>
+        <div class="pg-row"><span class="pg-title">Scaling Success</span><a class="pg-url" href="https://www.roller.software/building-a-world-class-attraction-venue" target="_blank" rel="noopener">https://www.roller.software/building-a-world-class-attraction-venue</a></div>
+        <div class="pg-row"><span class="pg-title">Scaling Success (webinar)</span><a class="pg-url" href="https://www.roller.software/building-a-world-class-attraction-venue-webinar" target="_blank" rel="noopener">https://www.roller.software/building-a-world-class-attraction-venue-webinar</a></div>
+        <div class="pg-row"><span class="pg-title">Scaling Success (growth webinar)</span><a class="pg-url" href="https://www.roller.software/business-growth-webinar" target="_blank" rel="noopener">https://www.roller.software/business-growth-webinar</a></div>
+        <div class="pg-row"><span class="pg-title">Scaling Success (webinar watch)</span><a class="pg-url" href="https://www.roller.software/business-growth-webinar-watch" target="_blank" rel="noopener">https://www.roller.software/business-growth-webinar-watch</a></div>
+        <div class="pg-row"><span class="pg-title">Product Launch Nov 2025</span><a class="pg-url" href="https://www.roller.software/product-launch/november-2025" target="_blank" rel="noopener">https://www.roller.software/product-launch/november-2025</a></div>
+        <div class="pg-row"><span class="pg-title">Product Launch May 2026</span><a class="pg-url" href="https://www.roller.software/product-launch/may-2026" target="_blank" rel="noopener">https://www.roller.software/product-launch/may-2026</a><span class="pg-badge pg-badge-new">NEW</span></div>
+      </div></div>
+    </details>
+
+    <!-- 8 · Events Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Events Pages</h2>
+        <span class="count">16 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Events Hub</span><a class="pg-url" href="https://www.roller.software/events" target="_blank" rel="noopener">https://www.roller.software/events</a></div>
+        <div class="pg-row"><span class="pg-title">AALARA 2025</span><a class="pg-url" href="https://www.roller.software/events/aalara2024" target="_blank" rel="noopener">https://www.roller.software/events/aalara2024</a></div>
+        <div class="pg-row"><span class="pg-title">AIP Awards 2025</span><a class="pg-url" href="https://www.roller.software/events/aip2024-0" target="_blank" rel="noopener">https://www.roller.software/events/aip2024-0</a></div>
+        <div class="pg-row"><span class="pg-title">Amusement 360 2025</span><a class="pg-url" href="https://www.roller.software/events/amusement360" target="_blank" rel="noopener">https://www.roller.software/events/amusement360</a></div>
+        <div class="pg-row"><span class="pg-title">Amusement Expo 2026</span><a class="pg-url" href="https://www.roller.software/events/amusementexpo2025" target="_blank" rel="noopener">https://www.roller.software/events/amusementexpo2025</a></div>
+        <div class="pg-row"><span class="pg-title">CWA 2025</span><a class="pg-url" href="https://www.roller.software/events/cwa2024" target="_blank" rel="noopener">https://www.roller.software/events/cwa2024</a></div>
+        <div class="pg-row"><span class="pg-title">Experience Academy 2025</span><a class="pg-url" href="https://www.roller.software/events/experienceacademy" target="_blank" rel="noopener">https://www.roller.software/events/experienceacademy</a></div>
+        <div class="pg-row"><span class="pg-title">Family Attractions Expo 2025</span><a class="pg-url" href="https://www.roller.software/events/familyattractions2024" target="_blank" rel="noopener">https://www.roller.software/events/familyattractions2024</a></div>
+        <div class="pg-row"><span class="pg-title">IAAPA Asia 2025</span><a class="pg-url" href="https://www.roller.software/events/iaapaasia2024" target="_blank" rel="noopener">https://www.roller.software/events/iaapaasia2024</a></div>
+        <div class="pg-row"><span class="pg-title">IAAPA Europe 2025</span><a class="pg-url" href="https://www.roller.software/events/iaapaeurope2024" target="_blank" rel="noopener">https://www.roller.software/events/iaapaeurope2024</a></div>
+        <div class="pg-row"><span class="pg-title">IAAPA Orlando 2025</span><a class="pg-url" href="https://www.roller.software/events/iaapaexpo2024" target="_blank" rel="noopener">https://www.roller.software/events/iaapaexpo2024</a></div>
+        <div class="pg-row"><span class="pg-title">IAAPA FEC Summit 2026</span><a class="pg-url" href="https://www.roller.software/events/iaapafecsummit2025" target="_blank" rel="noopener">https://www.roller.software/events/iaapafecsummit2025</a></div>
+        <div class="pg-row"><span class="pg-title">IATP 2025</span><a class="pg-url" href="https://www.roller.software/events/iatp2024" target="_blank" rel="noopener">https://www.roller.software/events/iatp2024</a></div>
+        <div class="pg-row"><span class="pg-title">RSA 2026</span><a class="pg-url" href="https://www.roller.software/events/rsa2025" target="_blank" rel="noopener">https://www.roller.software/events/rsa2025</a></div>
+        <div class="pg-row"><span class="pg-title">SK8 Expo 2025</span><a class="pg-url" href="https://www.roller.software/events/sk8expo" target="_blank" rel="noopener">https://www.roller.software/events/sk8expo</a></div>
+        <div class="pg-row"><span class="pg-title">WWA 2025</span><a class="pg-url" href="https://www.roller.software/events/worldwaterpark2024" target="_blank" rel="noopener">https://www.roller.software/events/worldwaterpark2024</a></div>
+      </div></div>
+    </details>
+
+    <!-- 9 · Gated Content -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Gated Content</h2>
+        <span class="count">13 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">2026 Benchmark Report</span><a class="pg-url" href="https://www.roller.software/2026-benchmark-report" target="_blank" rel="noopener">https://www.roller.software/2026-benchmark-report</a></div>
+        <div class="pg-row"><span class="pg-title">Pulse Report</span><a class="pg-url" href="https://www.roller.software/2025-pulse-report" target="_blank" rel="noopener">https://www.roller.software/2025-pulse-report</a></div>
+        <div class="pg-row"><span class="pg-title">Guest Experience Playbook</span><a class="pg-url" href="https://www.roller.software/guest-experience-playbook" target="_blank" rel="noopener">https://www.roller.software/guest-experience-playbook</a></div>
+        <div class="pg-row"><span class="pg-title">Customer Referral</span><a class="pg-url" href="https://www.roller.software/customer-referral" target="_blank" rel="noopener">https://www.roller.software/customer-referral</a></div>
+        <div class="pg-row"><span class="pg-title">Analytics eBook</span><a class="pg-url" href="https://www.roller.software/analytics-ebook" target="_blank" rel="noopener">https://www.roller.software/analytics-ebook</a></div>
+        <div class="pg-row"><span class="pg-title">ChatGPT eBook</span><a class="pg-url" href="https://www.roller.software/chatgpt-ebook" target="_blank" rel="noopener">https://www.roller.software/chatgpt-ebook</a></div>
+        <div class="pg-row"><span class="pg-title">Membership eBook</span><a class="pg-url" href="https://www.roller.software/membership-ebook" target="_blank" rel="noopener">https://www.roller.software/membership-ebook</a></div>
+        <div class="pg-row"><span class="pg-title">GX Show eBook</span><a class="pg-url" href="https://www.roller.software/gx-show-ebook" target="_blank" rel="noopener">https://www.roller.software/gx-show-ebook</a></div>
+        <div class="pg-row"><span class="pg-title">Roller Skating Trends 2026</span><a class="pg-url" href="https://www.roller.software/2025-roller-skating-trends-report" target="_blank" rel="noopener">https://www.roller.software/2025-roller-skating-trends-report</a></div>
+        <div class="pg-row"><span class="pg-title">Water Park Trends 2026</span><a class="pg-url" href="https://www.roller.software/2025-water-park-trends-report" target="_blank" rel="noopener">https://www.roller.software/2025-water-park-trends-report</a></div>
+        <div class="pg-row"><span class="pg-title">Expanding Your Business Playbook</span><a class="pg-url" href="https://www.roller.software/expanding-your-business-playbook" target="_blank" rel="noopener">https://www.roller.software/expanding-your-business-playbook</a></div>
+        <div class="pg-row"><span class="pg-title">Opening Your First Attraction</span><a class="pg-url" href="https://www.roller.software/opening-your-first-attraction-playbook" target="_blank" rel="noopener">https://www.roller.software/opening-your-first-attraction-playbook</a></div>
+        <div class="pg-row"><span class="pg-title">Mystery Shopper Report</span><a class="pg-url" href="https://www.roller.software/mystery-shopper-report/" target="_blank" rel="noopener">https://www.roller.software/mystery-shopper-report/</a></div>
+      </div></div>
+    </details>
+
+    <!-- 10 · Redirects -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Redirects</h2>
+        <span class="count">7 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><a class="pg-url" href="https://www.roller.software/data-processing-agreement/" target="_blank" rel="noopener">https://www.roller.software/data-processing-agreement/</a></div>
+        <div class="pg-row"><a class="pg-url" href="https://www.roller.software/acquiringaddendumusa" target="_blank" rel="noopener">https://www.roller.software/acquiringaddendumusa</a></div>
+        <div class="pg-row"><a class="pg-url" href="https://www.roller.software/cross-site-tracking" target="_blank" rel="noopener">https://www.roller.software/cross-site-tracking</a></div>
+        <div class="pg-row"><a class="pg-url" href="https://www.roller.software/amazon-gift-card" target="_blank" rel="noopener">https://www.roller.software/amazon-gift-card</a></div>
+        <div class="pg-row"><a class="pg-url" href="https://www.roller.software/iaapa-2019-trade-show-orlando" target="_blank" rel="noopener">https://www.roller.software/iaapa-2019-trade-show-orlando</a></div>
+        <div class="pg-row"><a class="pg-url" href="https://www.roller.software/braintree/" target="_blank" rel="noopener">https://www.roller.software/braintree/</a></div>
+        <div class="pg-row"><a class="pg-url" href="https://www.roller.software/contact-sales/" target="_blank" rel="noopener">https://www.roller.software/contact-sales/</a></div>
+      </div></div>
+    </details>
+
+    <!-- 11 · P&C -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>P&amp;C</h2>
+        <span class="count">3 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Careers</span><a class="pg-url" href="https://www.roller.software/people-and-culture/careers-jobs" target="_blank" rel="noopener">https://www.roller.software/people-and-culture/careers-jobs</a></div>
+        <div class="pg-row"><span class="pg-title">Values</span><a class="pg-url" href="https://www.roller.software/about-us/values/" target="_blank" rel="noopener">https://www.roller.software/about-us/values/</a></div>
+        <div class="pg-row"><span class="pg-title">Job Applicant Privacy Policy</span><a class="pg-url" href="https://www.roller.software/job-applicant-privacy-policy" target="_blank" rel="noopener">https://www.roller.software/job-applicant-privacy-policy</a></div>
+      </div></div>
+    </details>
+
+    <!-- 12 · Others -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Others</h2>
+        <span class="count">5 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Support</span><a class="pg-url" href="https://www.roller.software/support" target="_blank" rel="noopener">https://www.roller.software/support</a></div>
+        <div class="pg-row"><span class="pg-title">API Documentation</span><a class="pg-url" href="https://www.roller.software/api-terms-of-service" target="_blank" rel="noopener">https://www.roller.software/api-terms-of-service</a></div>
+        <div class="pg-row"><span class="pg-title">Help Center</span><span class="pg-nourl">Not in HubSpot — no URL</span></div>
+        <div class="pg-row"><span class="pg-title">Changelog</span><span class="pg-nourl">Not in HubSpot — no URL</span></div>
+        <div class="pg-row"><span class="pg-title">Professional Services</span><a class="pg-url" href="https://www.roller.software/professional-services" target="_blank" rel="noopener">https://www.roller.software/professional-services</a></div>
+      </div></div>
+    </details>
+
+    <!-- 13 · Legal Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Legal Pages</h2>
+        <span class="count">4 pages</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Data Processing Agreement</span><a class="pg-url" href="https://www.roller.software/dpa" target="_blank" rel="noopener">https://www.roller.software/dpa</a></div>
+        <div class="pg-row"><span class="pg-title">Terms of Service</span><a class="pg-url" href="https://www.roller.software/master-terms" target="_blank" rel="noopener">https://www.roller.software/master-terms</a></div>
+        <div class="pg-row"><span class="pg-title">API Terms of Use</span><a class="pg-url" href="https://www.roller.software/api-terms-of-service" target="_blank" rel="noopener">https://www.roller.software/api-terms-of-service</a></div>
+        <div class="pg-row"><span class="pg-title">Privacy Policy</span><a class="pg-url" href="https://www.roller.software/privacy-policy" target="_blank" rel="noopener">https://www.roller.software/privacy-policy</a></div>
+      </div></div>
+    </details>
+
+    <!-- 14 · Partners Pages -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Partners Pages</h2>
+        <span class="count">16 pages · 2 added</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-row"><span class="pg-title">Partners — Overview</span><a class="pg-url" href="https://www.roller.software/partners" target="_blank" rel="noopener">https://www.roller.software/partners</a></div>
+        <div class="pg-row"><span class="pg-title">Technology Partners</span><a class="pg-url" href="https://www.roller.software/partners/technology" target="_blank" rel="noopener">https://www.roller.software/partners/technology</a></div>
+        <div class="pg-row"><span class="pg-title">Service Partners</span><a class="pg-url" href="https://www.roller.software/partners/service" target="_blank" rel="noopener">https://www.roller.software/partners/service</a></div>
+        <div class="pg-row"><span class="pg-title">Integration Partners</span><a class="pg-url" href="https://www.roller.software/integration-partners/" target="_blank" rel="noopener">https://www.roller.software/integration-partners/</a></div>
+        <div class="pg-row"><span class="pg-title">Fresh KDS</span><a class="pg-url" href="https://www.roller.software/partners/fresh-kds" target="_blank" rel="noopener">https://www.roller.software/partners/fresh-kds</a></div>
+        <div class="pg-row"><span class="pg-title">Workforce.com</span><a class="pg-url" href="https://www.roller.software/partners/workforce.com" target="_blank" rel="noopener">https://www.roller.software/partners/workforce.com</a></div>
+        <div class="pg-row"><span class="pg-title">Groupon</span><a class="pg-url" href="https://www.roller.software/partners/groupon/" target="_blank" rel="noopener">https://www.roller.software/partners/groupon/</a></div>
+        <div class="pg-row"><span class="pg-title">Amusement Connect</span><a class="pg-url" href="https://www.roller.software/partners/amusement-connect" target="_blank" rel="noopener">https://www.roller.software/partners/amusement-connect</a></div>
+        <div class="pg-row"><span class="pg-title">Campaign Monitor</span><a class="pg-url" href="https://www.roller.software/partners/campaign-monitor" target="_blank" rel="noopener">https://www.roller.software/partners/campaign-monitor</a></div>
+        <div class="pg-row"><span class="pg-title">Yellow Dog</span><a class="pg-url" href="https://www.roller.software/partners/yellow-dog" target="_blank" rel="noopener">https://www.roller.software/partners/yellow-dog</a></div>
+        <div class="pg-row"><span class="pg-title">Intercard</span><a class="pg-url" href="https://www.roller.software/partners/intercard/" target="_blank" rel="noopener">https://www.roller.software/partners/intercard/</a></div>
+        <div class="pg-row"><span class="pg-title">Tanda</span><a class="pg-url" href="https://www.roller.software/partners/tanda" target="_blank" rel="noopener">https://www.roller.software/partners/tanda</a></div>
+        <div class="pg-row"><span class="pg-title">Alvarado</span><a class="pg-url" href="https://www.roller.software/partners/alvarado" target="_blank" rel="noopener">https://www.roller.software/partners/alvarado</a></div>
+        <div class="pg-row"><span class="pg-title">ROLLER and Centeredge</span><a class="pg-url" href="https://www.roller.software/centeredge-software-alternative/" target="_blank" rel="noopener">https://www.roller.software/centeredge-software-alternative/</a></div>
+        <div class="pg-row"><span class="pg-title">Redeam</span><a class="pg-url" href="https://www.roller.software/partners/redeam/" target="_blank" rel="noopener">https://www.roller.software/partners/redeam/</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Volare</span><a class="pg-url" href="https://www.roller.software/partners/volare" target="_blank" rel="noopener">https://www.roller.software/partners/volare</a><span class="pg-badge pg-badge-new">NEW</span></div>
+      </div></div>
+    </details>
+
+    <!-- 15 · Integrations -->
+    <details class="phase">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Integrations <small style="font-weight:400;color:var(--muted);font-size:13px">— new section</small></h2>
+        <span class="count">48 pages · all added</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-section-note">The /integrations directory lists 63 partners total. The 47 individual pages below were confirmed via direct crawl. The remaining ~16 follow the same <code style="font-size:11px">/integrations/partner/</code> URL pattern — assign owners when confirmed.</div>
+        <div class="pg-row"><span class="pg-title">Integration Partners Directory</span><a class="pg-url" href="https://www.roller.software/integrations" target="_blank" rel="noopener">https://www.roller.software/integrations</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">aifinity</span><a class="pg-url" href="https://www.roller.software/integrations/partner/aifinity" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/aifinity</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Advanced Locker</span><a class="pg-url" href="https://www.roller.software/integrations/partner/advanced-locker" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/advanced-locker</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Amusement Connect</span><a class="pg-url" href="https://www.roller.software/integrations/partner/amusement-connect" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/amusement-connect</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Campaign Monitor</span><a class="pg-url" href="https://www.roller.software/integrations/partner/campaign-monitor" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/campaign-monitor</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">CartStack</span><a class="pg-url" href="https://www.roller.software/integrations/partner/cartstack" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/cartstack</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Chaty</span><a class="pg-url" href="https://www.roller.software/integrations/partner/chaty" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/chaty</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">EBG</span><a class="pg-url" href="https://www.roller.software/integrations/partner/ebg" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/ebg</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">GetYourGuide</span><a class="pg-url" href="https://www.roller.software/integrations/partner/getyourguide" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/getyourguide</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Google Things To Do</span><a class="pg-url" href="https://www.roller.software/integrations/partner/google-things-to-do" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/google-things-to-do</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Humanitru</span><a class="pg-url" href="https://www.roller.software/integrations/partner/humanitru" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/humanitru</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Intelliplay</span><a class="pg-url" href="https://www.roller.software/integrations/partner/intelliplay" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/intelliplay</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">IntelliPaaS Inc</span><a class="pg-url" href="https://www.roller.software/integrations/partner/intellipaas-inc" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/intellipaas-inc</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Intercard</span><a class="pg-url" href="https://www.roller.software/integrations/partner/intercard" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/intercard</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">IPWatch</span><a class="pg-url" href="https://www.roller.software/integrations/partner/ipwatch" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/ipwatch</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">LOKT</span><a class="pg-url" href="https://www.roller.software/integrations/partner/lokt" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/lokt</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">MYOB</span><a class="pg-url" href="https://www.roller.software/integrations/partner/myob" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/myob</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">MyTicketPro</span><a class="pg-url" href="https://www.roller.software/integrations/partner/myticketpro" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/myticketpro</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">NetSuite</span><a class="pg-url" href="https://www.roller.software/integrations/partner/netsuite" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/netsuite</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">NewVUE Solutions</span><a class="pg-url" href="https://www.roller.software/integrations/partner/newvue-solutions" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/newvue-solutions</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Patch Retention</span><a class="pg-url" href="https://www.roller.software/integrations/partner/patch-retention" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/patch-retention</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Pladia</span><a class="pg-url" href="https://www.roller.software/integrations/partner/pladia" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/pladia</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">PlaySpark</span><a class="pg-url" href="https://www.roller.software/integrations/partner/playspark" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/playspark</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Pourtek</span><a class="pg-url" href="https://www.roller.software/integrations/partner/pourtek" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/pourtek</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">QuickBooks</span><a class="pg-url" href="https://www.roller.software/integrations/partner/quickbooks" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/quickbooks</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Re-venue</span><a class="pg-url" href="https://www.roller.software/integrations/partner/re-venue" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/re-venue</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Restoke.ai</span><a class="pg-url" href="https://www.roller.software/integrations/partner/restokeai" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/restokeai</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Sacoa</span><a class="pg-url" href="https://www.roller.software/integrations/partner/sacoa" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/sacoa</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Sailthru</span><a class="pg-url" href="https://www.roller.software/integrations/partner/sailthru" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/sailthru</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Salesforce</span><a class="pg-url" href="https://www.roller.software/integrations/partner/salesforce" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/salesforce</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Singa Karaoke</span><a class="pg-url" href="https://www.roller.software/integrations/partner/singa-karaoke" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/singa-karaoke</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">SINGPODS</span><a class="pg-url" href="https://www.roller.software/integrations/partner/singpods" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/singpods</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Smart Segments</span><a class="pg-url" href="https://www.roller.software/integrations/partner/smart-segments" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/smart-segments</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Specialist Apps</span><a class="pg-url" href="https://www.roller.software/integrations/partner/specialist-apps" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/specialist-apps</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Supy</span><a class="pg-url" href="https://www.roller.software/integrations/partner/supy" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/supy</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">T2 Connect</span><a class="pg-url" href="https://www.roller.software/integrations/partner/t2-connect" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/t2-connect</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Tanda</span><a class="pg-url" href="https://www.roller.software/integrations/partner/tanda" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/tanda</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Tiqets</span><a class="pg-url" href="https://www.roller.software/integrations/partner/tiqets" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/tiqets</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Trengo</span><a class="pg-url" href="https://www.roller.software/integrations/partner/trengo" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/trengo</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Trip.com</span><a class="pg-url" href="https://www.roller.software/integrations/partner/tripcom" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/tripcom</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">VAVA Voice</span><a class="pg-url" href="https://www.roller.software/integrations/partner/vava-voice-ai-receptionists" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/vava-voice-ai-receptionists</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Viator</span><a class="pg-url" href="https://www.roller.software/integrations/partner/viator" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/viator</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">VLocker</span><a class="pg-url" href="https://www.roller.software/integrations/partner/vlocker" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/vlocker</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">When I Work</span><a class="pg-url" href="https://www.roller.software/integrations/partner/when-i-work" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/when-i-work</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Workforce.com</span><a class="pg-url" href="https://www.roller.software/integrations/partner/workforcecom" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/workforcecom</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">XEUS</span><a class="pg-url" href="https://www.roller.software/integrations/partner/xeus" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/xeus</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Xero</span><a class="pg-url" href="https://www.roller.software/integrations/partner/xero" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/xero</a><span class="pg-badge pg-badge-new">NEW</span></div>
+        <div class="pg-row"><span class="pg-title">Yonder HQ</span><a class="pg-url" href="https://www.roller.software/integrations/partner/yonder-hq" target="_blank" rel="noopener">https://www.roller.software/integrations/partner/yonder-hq</a><span class="pg-badge pg-badge-new">NEW</span></div>
+      </div></div>
+    </details>
+
+  </div><!-- /panel-pages -->
 
   <footer>ROLLER website rebuild · project plan · component set 1 (core). Global Components and wider phases to follow.</footer>
 
 </main>
 
 <div id="fig-lb" role="dialog" aria-modal="true" aria-label="Figma preview"><img src="" alt=""></div>
-
+<script src="page-components.data.js?v=3"></script>
 <script>
+  document.querySelectorAll('details[open]').forEach(function(d){d.open=false});
   // lightbox
   var lb=document.getElementById('fig-lb'),lbImg=lb.querySelector('img');
   document.querySelectorAll('.figscreens img').forEach(function(img){
@@ -1203,30 +1667,306 @@
   lb.addEventListener('click',function(){lb.classList.remove('on');lbImg.src=''});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
 
-  var tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index');
-  var panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index');
+  var tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index'),tabPages=document.getElementById('tab-pages');
+  var panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index'),panPages=document.getElementById('panel-pages');
   function show(which){
-    var planOn=which==='plan';
-    tabPlan.setAttribute('aria-selected',planOn);tabIndex.setAttribute('aria-selected',!planOn);
-    panPlan.style.display=planOn?'block':'none';panIndex.style.display=planOn?'none':'block';
+    tabPlan.setAttribute('aria-selected',which==='plan');
+    tabIndex.setAttribute('aria-selected',which==='index');
+    tabPages.setAttribute('aria-selected',which==='pages');
+    panPlan.style.display=which==='plan'?'block':'none';
+    panIndex.style.display=which==='index'?'block':'none';
+    panPages.style.display=which==='pages'?'block':'none';
   }
   tabPlan.addEventListener('click',function(){show('plan')});
   tabIndex.addEventListener('click',function(){show('index')});
+  tabPages.addEventListener('click',function(){show('pages')});
   // jumping from the index to a task opens its details and switches to the plan
   document.querySelectorAll('#panel-index a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(){
+    a.addEventListener('click',function(e){
+      var href=a.getAttribute('href');
+      if(href.indexOf('pages')===1){return}
+      e.preventDefault();
       show('plan');
-      var el=document.querySelector(a.getAttribute('href'));
+      var el=document.querySelector(href.split('?')[0]);
       if(el){var p=el.closest('details');while(p){p.open=true;p=p.parentElement&&p.parentElement.closest('details')}}
+      if(href.split('?')[0]){location.hash=href.split('?')[0]}
     });
   });
   // opening a cross-link inside the plan expands the target too
   document.querySelectorAll('#panel-plan a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      var el=document.querySelector(a.getAttribute('href'));
+    a.addEventListener('click',function(e){
+      var href=a.getAttribute('href');
+      if(href.indexOf('pages')===1){return}
+      var el=document.querySelector(href.split('?')[0]);
       if(el){var p=el.closest('details');while(p){p.open=true;p=p.parentElement&&p.parentElement.closest('details')}}
     });
   });
+
+  // page ↔ component coverage
+  (function(){
+    var data=null,activeFilter='all',totalLinkedRows=0,coverageReady=false;
+    var filterStatus=document.getElementById('pg-filter-status');
+    var filterButtons=[];
+    var FILTER_MIN_PAGES=5;
+    var FILTER_SKIP=['announcement-bar'];
+
+    function normUrl(href){
+      if(!href)return '';
+      try{
+        var u=new URL(href);
+        var path=u.pathname.replace(/\/+$/,'');
+        if(!path)path='/';
+        return u.origin+path;
+      }catch(e){
+        return href.replace(/\/+$/,'');
+      }
+    }
+
+    function openDetails(el){
+      if(!el)return;
+      var p=el.closest('details');
+      while(p){p.open=true;p=p.parentElement&&p.parentElement.closest('details')}
+    }
+
+    function setFilter(componentId,updateHash){
+      activeFilter=componentId;
+      filterButtons.forEach(function(btn){
+        btn.setAttribute('aria-pressed',btn.getAttribute('data-component')===componentId?'true':'false');
+      });
+      var shown=0;
+      document.querySelectorAll('#panel-pages .pg-row').forEach(function(row){
+        var link=row.querySelector('.pg-url');
+        if(!link){
+          row.classList.toggle('pg-hidden',componentId!=='all');
+          return;
+        }
+        var comps=(row.dataset.components||'').split(',').filter(Boolean);
+        var match=componentId==='all'||comps.indexOf(componentId)!==-1;
+        row.classList.toggle('pg-hidden',!match);
+        if(match)shown++;
+      });
+      if(componentId==='all'){
+        filterStatus.textContent='Showing all '+totalLinkedRows+' linked pages.';
+      }else{
+        var comp=data&&data.components[componentId];
+        filterStatus.textContent='Showing '+shown+' of '+totalLinkedRows+' pages that use '+(comp?comp.label:componentId.toUpperCase())+'.';
+      }
+      if(updateHash!==false){
+        if(componentId==='all'){history.replaceState(null,'','#pages')}
+        else{history.replaceState(null,'','#pages?component='+componentId)}
+      }
+    }
+
+    function decoratePageRows(){
+      if(!data||!data.pages)return;
+      totalLinkedRows=0;
+      document.querySelectorAll('#panel-pages .pg-row').forEach(function(row){
+        var link=row.querySelector('.pg-url');
+        if(!link)return;
+        totalLinkedRows++;
+        var key=normUrl(link.href);
+        var comps=data.pages[key]||data.pages[key+'/']||[];
+        if(!comps.length)return;
+        row.dataset.components=comps.join(',');
+        var pills=document.createElement('span');
+        pills.className='pg-comp-pills';
+        comps.forEach(function(id){
+          var comp=data.components[id];
+          if(!comp)return;
+          var pill=document.createElement('a');
+          pill.className='pg-comp-pill '+(comp.pillClass||('pg-comp-'+id));
+          pill.href='#'+comp.id;
+          pill.textContent=comp.label;
+          pill.title='Open '+comp.label+' component task';
+          pill.addEventListener('click',function(e){
+            e.preventDefault();
+            show('plan');
+            openDetails(document.getElementById(comp.id));
+            location.hash='#'+comp.id;
+          });
+          pills.appendChild(pill);
+        });
+        row.appendChild(pills);
+      });
+    }
+
+    function categoryPillClass(cat){
+      var map={
+        'Features':'p-cat-features',
+        'Industries':'p-cat-industries',
+        'Competitors':'p-cat-competitors',
+        'Partners/Integrations':'p-cat-partners',
+        'Pricing':'p-cat-pricing',
+        'P&C':'p-cat-pc',
+        'Single Pages':'p-cat-single',
+        'Other':'p-cat-other',
+        'Others':'p-cat-other',
+        'Solutions':'p-cat-solutions',
+        'Gated Content':'p-cat-gated',
+        'Events':'p-cat-events',
+        'Legal Pages':'p-cat-other',
+        'Campaigns':'p-cat-gated'
+      };
+      return map[cat]||'p-cat-other';
+    }
+
+    function categoryPillLabel(cat){
+      if(cat==='Partners/Integrations')return 'Partners';
+      return cat;
+    }
+
+    function renderComponentMetaTags(compId, metaId){
+      var meta=document.getElementById(metaId);
+      var comp=data&&data.components[compId];
+      if(!meta||!comp||!comp.byCategory)return;
+      meta.querySelectorAll('[data-audit-cat]').forEach(function(el){el.remove()});
+      var cats=Object.keys(comp.byCategory).sort(function(a,b){
+        return comp.byCategory[b]-comp.byCategory[a];
+      });
+      cats.forEach(function(cat){
+        var count=comp.byCategory[cat];
+        var pill=document.createElement('span');
+        pill.className='pill '+categoryPillClass(cat);
+        pill.setAttribute('data-audit-cat','1');
+        pill.title=cat+' · '+count+' page'+(count===1?'':'s');
+        pill.textContent=categoryPillLabel(cat);
+        meta.appendChild(pill);
+      });
+    }
+
+    function renderComponentUsedOn(compId){
+      var target=document.getElementById('comp-used-'+compId);
+      var metaId='comp-meta-'+compId;
+      var comp=data&&data.components[compId];
+      if(!target||!comp)return;
+      if(!comp.pageCount){
+        target.innerHTML='<span style="color:var(--muted);font-size:13.5px">Not detected on audited pages yet. '+comp.detection+'</span>';
+        renderComponentMetaTags(compId,metaId);
+        return;
+      }
+      var html='<div class="comp-used">';
+      html+='<p class="comp-used-lead"><strong>'+comp.pageCount+' live pages</strong> · audited '+data.audited+'. ';
+      if(comp.pageCount>=FILTER_MIN_PAGES&&FILTER_SKIP.indexOf(compId)===-1){
+        html+='<a href="#pages?component='+compId+'">View all in Pages tab →</a>';
+      }
+      html+='</p>';
+      html+='<p class="comp-used-lead" style="margin-top:-4px;font-size:12.5px">Detection: '+comp.detection+'</p>';
+      html+='<div class="comp-used-cats">';
+      Object.keys(comp.byCategory).sort().forEach(function(cat){
+        var pages=comp.pages.filter(function(p){return p.category===cat});
+        html+='<details class="comp-used-cat">';
+        html+='<summary>'+cat+' <span style="color:var(--muted);font-weight:600">('+pages.length+')</span></summary>';
+        html+='<ul class="comp-used-list">';
+        pages.forEach(function(p){
+          html+='<li><a href="'+p.url+'" target="_blank" rel="noopener">'+p.title+'</a><span>'+p.url.replace('https://www.roller.software','')+'</span></li>';
+        });
+        html+='</ul></details>';
+      });
+      html+='</div></div>';
+      target.innerHTML=html;
+      target.querySelectorAll('a[href="#pages?component='+compId+'"]').forEach(function(a){
+        a.addEventListener('click',function(e){
+          e.preventDefault();
+          show('pages');
+          setFilter(compId,true);
+        });
+      });
+      renderComponentMetaTags(compId,metaId);
+    }
+
+    function renderIndexBadge(compId){
+      var comp=data.components[compId];
+      if(!comp||!comp.pageCount)return;
+      var taskLink=document.querySelector('#panel-index a[href="#'+comp.id+'"]');
+      if(!taskLink)return;
+      var row=taskLink.closest('.row');
+      if(!row)return;
+      var nm=row.querySelector('.nm');
+      if(!nm||nm.querySelector('[data-coverage-badge="'+compId+'"]'))return;
+      var badge=document.createElement('a');
+      badge.className='comp-coverage-pill comp-coverage-'+compId;
+      badge.setAttribute('data-coverage-badge',compId);
+      badge.href='#pages?component='+compId;
+      badge.textContent=comp.pageCount+' pages';
+      badge.addEventListener('click',function(e){
+        e.preventDefault();
+        show('pages');
+        setFilter(compId,true);
+      });
+      nm.appendChild(badge);
+    }
+
+    function buildFilterButtons(){
+      var host=document.getElementById('pg-filter-components');
+      if(!host||!data)return;
+      host.innerHTML='';
+      filterButtons=[document.querySelector('.pg-filter[data-component="all"]')];
+      Object.keys(data.components)
+        .filter(function(id){
+          var c=data.components[id];
+          return c.pageCount>=FILTER_MIN_PAGES&&FILTER_SKIP.indexOf(id)===-1;
+        })
+        .sort(function(a,b){return data.components[b].pageCount-data.components[a].pageCount})
+        .forEach(function(compId){
+          var comp=data.components[compId];
+          var btn=document.createElement('button');
+          btn.type='button';
+          btn.className='pg-filter';
+          btn.setAttribute('data-component',compId);
+          btn.setAttribute('aria-pressed','false');
+          btn.textContent=comp.label+' ';
+          var count=document.createElement('span');
+          count.className='pg-filter-count';
+          count.textContent='('+comp.pageCount+')';
+          btn.appendChild(count);
+          btn.addEventListener('click',function(){
+            setFilter(compId,true);
+          });
+          host.appendChild(btn);
+          filterButtons.push(btn);
+        });
+      filterButtons[0].addEventListener('click',function(){
+        setFilter('all',true);
+      });
+    }
+
+    function renderAllUsedOn(){
+      if(!data||!data.components)return;
+      Object.keys(data.components).forEach(function(compId){
+        renderComponentUsedOn(compId);
+        renderIndexBadge(compId);
+      });
+    }
+
+    function applyHash(){
+      if(!coverageReady)return;
+      var hash=location.hash.replace(/^#/,'');
+      if(hash.indexOf('pages')!==0)return;
+      show('pages');
+      var match=hash.match(/component=([a-z0-9-]+)/);
+      setFilter(match?match[1]:'all',false);
+    }
+
+    window.addEventListener('hashchange',applyHash);
+
+    fetch('page-components.json?v=3').then(function(r){return r.json()}).then(initCoverage).catch(function(){
+      if(window.PAGE_COMPONENTS){initCoverage(window.PAGE_COMPONENTS);return}
+      document.querySelectorAll('[id^="comp-used-"]').forEach(function(target){
+        target.innerHTML='<span style="color:#B22F04">Could not load page-components.json.</span>';
+      });
+      if(filterStatus){filterStatus.textContent='Page coverage data unavailable.'}
+    });
+
+    function initCoverage(json){
+      data=json;
+      buildFilterButtons();
+      decoratePageRows();
+      renderAllUsedOn();
+      coverageReady=true;
+      setFilter('all',false);
+      applyHash();
+    }
+  })();
 </script>
 </body>
 </html>
