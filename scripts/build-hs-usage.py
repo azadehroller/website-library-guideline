@@ -26,15 +26,26 @@ def build_usage(page_modules: dict, catalog: dict) -> dict:
 
     modules: dict[str, dict] = {}
     by_folder: dict[str, dict] = {}
+    page_records = page_modules.get("pages", {})
+
+    def page_refs(urls: set[str]) -> list[dict]:
+        refs = []
+        for url in sorted(urls):
+            rec = page_records.get(url) or page_records.get(url + "/") or {}
+            refs.append({"url": url, "title": rec.get("title") or url})
+        return refs
+
     for slug, rec in catalog.get("modules", {}).items():
-        pages = sorted(mod_pages.get(slug, ()))
-        page_count = len(pages)
+        pages_set = mod_pages.get(slug, set())
+        page_list = page_refs(pages_set)
+        page_count = len(page_list)
         entry = {
             "slug": slug,
             "label": rec.get("label", slug),
             "folder": rec.get("folder"),
             "pageCount": page_count,
             "used": page_count > 0,
+            "pages": page_list,
         }
         modules[slug] = entry
         if rec.get("folder"):
@@ -43,14 +54,16 @@ def build_usage(page_modules: dict, catalog: dict) -> dict:
     sections: dict[str, dict] = {}
     by_file: dict[str, dict] = {}
     for slug, rec in catalog.get("sections", {}).items():
-        pages = sorted(sec_pages.get(slug, ()))
-        page_count = len(pages)
+        pages_set = sec_pages.get(slug, set())
+        page_list = page_refs(pages_set)
+        page_count = len(page_list)
         entry = {
             "slug": slug,
             "label": rec.get("label", slug),
             "file": rec.get("file"),
             "pageCount": page_count,
             "used": page_count > 0,
+            "pages": page_list,
         }
         sections[slug] = entry
         if rec.get("file"):

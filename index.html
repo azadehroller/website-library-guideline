@@ -49,6 +49,10 @@
   .p-pricing{background:#FFEEE7;color:#B22F04}
   .p-multi-venue{background:#E0F2FE;color:#0369A1}
   .p-customer-story{background:#E0E8F5;color:#011840}
+  a.pill.pill-link{text-decoration:none}
+  a.pill.pill-link:hover{filter:brightness(.95);text-decoration:underline}
+  .pg-title[href]{color:inherit;text-decoration:none}
+  .pg-title[href]:hover{color:var(--blue-50);text-decoration:underline}
   .p-blog{background:#E3FBEE;color:#04632B}
   .p-general{background:#EEF1F5;color:#4D4D4D}
   /* audited page categories (coverage tags on component rows) */
@@ -64,6 +68,7 @@
   .p-cat-gated{background:#FFF7ED;color:#9A3412}
   .p-cat-events{background:#F3E8FF;color:#6B21A8}
   details.task>summary .meta .pill[class*="p-cat-"]{font-size:10px;padding:2px 7px;font-weight:700}
+  details.task>summary .meta a.pill[class*="p-cat-"]{cursor:pointer}
 
   .phase{margin-top:22px}
   .phase>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:var(--r)}
@@ -182,8 +187,9 @@
   .hs-phase-conf.high{background:#E3FBEE;color:#04632B}
   .hs-phase-conf.medium{background:#fff;color:#B22F04;border:1px solid #f5c4b0}
   .hs-phase-conf.low{background:#EEF1F5;color:#5B6B86}
-  .hs-usage-pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid}
-  .hs-usage-pill.used{background:#E3FBEE;color:#04632B;border-color:#b8ebd0}
+  .hs-usage-pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid;text-decoration:none;display:inline-block}
+  .hs-usage-pill.used{background:#E3FBEE;color:#04632B;border-color:#b8ebd0;cursor:pointer}
+  .hs-usage-pill.used:hover{background:#04632B;color:#fff}
   .hs-usage-pill.disabled{background:#EEF1F5;color:#5B6B86;border-color:#d5dbe3}
   @media(max-width:900px){.hs-lib{grid-template-columns:1fr}.hs-lib-aside{position:relative;max-height:none}.hs-lib-main{max-height:none}}
   .hs-note{background:#FFEEE7;border:1px solid var(--border);border-left:4px solid var(--coral);border-radius:8px;padding:10px 14px;margin:12px 0 0;font-size:13px;color:#9A3412;line-height:1.5}
@@ -291,10 +297,10 @@
   .comp-coverage-faq:hover{background:#5B21B6;color:#fff}
   .comp-coverage-twocol{background:var(--blue-95);color:var(--blue-30)}
   .comp-coverage-twocol:hover{background:var(--blue-30);color:#fff}
-  .idx-intro{font-size:13.5px;color:var(--blue-10);margin:0 0 18px;line-height:1.5}
-  .idx-intro strong{color:var(--text)}
+  .intro .idx-intro{font-size:13.5px;color:var(--blue-10);margin:0 0 18px;line-height:1.5}
+  .idx-intro strong{color:var(--blue-10)}
   .comp-index-none{font-size:10px;font-weight:700;color:var(--muted);margin-left:6px}
-  .comp-index-audit{font-size:12px;color:var(--blue-10);margin:-8px 0 14px}
+  .intro .comp-index-audit{font-size:12px;color:var(--blue-10);margin:-8px 0 14px}
   /* per-page HubSpot module audit */
   .pg-mod-audit{width:100%;flex-basis:100%;margin:4px 0 2px;border:1px solid var(--border);border-radius:8px;background:#FBFCFF;overflow:hidden}
   .pg-mod-audit>summary{list-style:none;cursor:pointer;padding:7px 12px;font-size:12.5px;font-weight:700;color:var(--blue-30);display:flex;align-items:center;gap:8px}
@@ -351,13 +357,15 @@
     <p>This is the sequence the team works through, for designers and developers both. Read it top to bottom: each phase unlocks the next, and every task expands to show who does what, which tokens and components it touches, and what "done" means. Build order matters because each layer is made from the one before it: tokens first, then core components, then standalone components, then global components, then templates.</p>
     <div style="background:var(--blue-95);border:1px solid var(--border);border-left:4px solid var(--blue-50);border-radius:10px;padding:14px 16px;margin-top:14px;font-size:14px">
       <b style="color:var(--blue-30)">Recommended approach for the design team:</b> build the shared component kit first, then prove it by composing one real pilot template, then roll out the rest of the templates by composition. Designing a whole template before the kit is settled re-bakes the inconsistency we just untangled; building the kit with no real page to test it against is just as risky. So components come first, a single pilot template validates them end to end, and the remaining templates are then mostly assembly plus their own page-specific design. Templates enter the plan at Phase 5.
+      <p class="idx-intro">Jump to any build-plan component. Page counts come from the latest live-site audit (<span id="comp-index-audit-meta">loading…</span>).</p>
+    <p id="comp-index-audit-stats" class="comp-index-audit" aria-live="polite"></div>
     </div>
   </div>
 
-  <div class="legend" aria-label="Legend">
-    <div class="grp"><b>Used on</b><span class="pill p-prof-services">Professional services</span><span class="pill p-values">Values</span><span class="pill p-multi-venue">Multi venue</span><span class="pill p-home">Home</span><span class="pill p-pricing">Pricing</span><span class="pill p-customer-story">Customer story</span></div>
+  <!-- <div class="legend" aria-label="Legend">
+    <div class="grp"><b>Used on</b><span class="pill p-prof-services">Professional services</span><span class="pill p-values">Values</span><span class="pill p-multi-venue">Multi venue</span><span class="pill p-home">Home</span><span class="pill p-pricing">Pricing</span><span class="pill p-customer-story">Customer story</span></div> -->
     <!-- <div class="grp"><b>Phase status</b><span class="pill s-todo">In progress</span><span class="pill s-todo">To do</span> <span style="color:var(--muted);font-size:12px">· tokens &amp; pipeline only</span></div> -->
-  </div>
+  <!-- </div> -->
 
   <!-- ============ PLAN PANEL ============ -->
   <div id="panel-plan" role="tabpanel" aria-labelledby="tab-plan">
@@ -1118,7 +1126,7 @@
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel<small>Global · auto-scrolling customer logos · light &amp; dark</small></span><span class="meta"><span class="pill p-multi-venue">Multi venue</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A universal marquee of customer logos for credibility — one component in the new build replacing all HubSpot logo-set modules. Light variant sits on a pale background; dark variant uses a Commitment (Blue 10) background with optional centred heading above the logo strip.</dd>
-          <dt>Used on</dt><dd>Multi venue page (dark variation)</dd>
+          <dt>Used on</dt><dd data-used-page="Segmentation Groups">Multi venue page (dark variation)</dd>
           <dt>Variants</dt><dd>Light background; dark background (centred heading optional; Multi venue reference).</dd>
           <dt>Fields</dt><dd><code>theme</code> (light | dark), <code>heading</code> (optional, centred — dark variant), <code>logos</code> (image, alt, optional href)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
@@ -1132,7 +1140,7 @@
         <div class="detail"><dl>
           <dt>Depends on</dt><dd><a href="#task-text">Text block</a> (heading composition), review badge <a href="#task-image">Image</a> loop (items array)</dd>
           <dt>Description</dt><dd>A row of boxed review score cards (e.g. G2, Capterra) with star rating, score and review count. Composed from Heading composition plus a loop of review badge images. Maps to HubSpot Industry Rating / badge-set. Distinct from the simpler <a href="#task-user-review-widget">User review widget</a> badge strip.</dd>
-          <dt>Used on</dt><dd>Professional services page</dd>
+          <dt>Used on</dt><dd data-used-page="Professional Services">Professional services page</dd>
           <dt>Variants</dt><dd>Desktop; mobile (confirm layout with design).</dd>
           <dt>Fields</dt><dd><code>items</code> (platform logo, score, star rating, review count, href), <code>background</code></dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
@@ -1198,7 +1206,7 @@
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Testimonial carousel<small>Global · quote cards in a horizontal carousel</small></span><span class="meta"><span class="pill p-pricing">Pricing</span><span class="pill p-prof-services">Professional services</span></span></summary>
         <div class="detail"><dl>
           <dt>Description</dt><dd>A global section with centred heading and a horizontally scrollable row of testimonial cards. Each card carries a quote mark, quote text, attribution (name, role) and optional company logo on a white card with drop shadow.</dd>
-          <dt>Used on</dt><dd>Pricing page; Professional services page</dd>
+          <dt>Used on</dt><dd><span data-used-page="Pricing">Pricing page</span>; <span data-used-page="Professional Services">Professional services page</span></dd>
           <dt>Variants</dt><dd>Quote cards (desktop); customer story cards · OnDark (logo, quote, vertical rule, CTA per card).</dd>
           <dt>Fields</dt><dd><code>heading</code>, <code>items</code> (quote, name, role, logo — or customer-story fields: logo, quote, cta), <code>background</code>, <code>cardType</code> (quote | customer-story)</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> · motion (carousel)</dd>
@@ -1312,8 +1320,7 @@
 
   <!-- ============ COMPONENTS PANEL ============ -->
   <div id="panel-index" role="tabpanel" aria-labelledby="tab-index" class="idx">
-    <p class="idx-intro">Jump to any build-plan component. Page counts come from the latest live-site audit (<span id="comp-index-audit-meta">loading…</span>).</p>
-    <div id="comp-index-audit-stats" class="comp-index-audit" aria-live="polite"></div>
+  
 
     <h3>Phase 2 · Primitives</h3>
     <div id="comp-index-primitives" class="comp-index-list"></div>
@@ -1801,7 +1808,7 @@
 <div id="fig-lb" role="dialog" aria-modal="true" aria-label="Figma preview"><img src="" alt=""></div>
 <script src="page-components.data.js?v=6"></script>
 <script src="page-modules.data.js?v=2"></script>
-<script src="hs-usage.data.js?v=1"></script>
+<script src="hs-usage.data.js?v=2"></script>
 <script src="hs-library.data.js?v=1"></script>
 <script src="hs-phase-mapping.data.js?v=2"></script>
 <script>
@@ -1859,6 +1866,97 @@
     var filterButtons=[];
     var FILTER_MIN_PAGES=5;
     var FILTER_SKIP=[];
+    var pageRefIndex=null;
+    var activeHsFilter=null;
+
+    var PILL_PAGE_TITLES={
+      'p-prof-services':['Professional Services'],
+      'p-multi-venue':['Segmentation Groups'],
+      'p-home':['Home page'],
+      'p-pricing':['Pricing'],
+      'p-values':['Values'],
+      'p-customer-story':['Customer Referral']
+    };
+
+    function buildPageRefIndex(){
+      var byTitle={};
+      document.querySelectorAll('#panel-pages .pg-row').forEach(function(row){
+        var titleEl=row.querySelector('.pg-title');
+        var link=row.querySelector('.pg-url');
+        if(!titleEl||!link||!link.href)return;
+        byTitle[titleEl.textContent.trim().toLowerCase()]={title:titleEl.textContent.trim(),url:link.href,row:row};
+      });
+      return byTitle;
+    }
+
+    function pageRefUrl(titleKeys){
+      if(!pageRefIndex){pageRefIndex=buildPageRefIndex()}
+      var keys=Array.isArray(titleKeys)?titleKeys:[titleKeys];
+      for(var i=0;i<keys.length;i++){
+        var hit=pageRefIndex[keys[i].toLowerCase()];
+        if(hit){return hit}
+      }
+      return null;
+    }
+
+    function linkPageRowTitles(){
+      document.querySelectorAll('#panel-pages .pg-row').forEach(function(row){
+        var link=row.querySelector('.pg-url');
+        var title=row.querySelector('.pg-title');
+        if(!link||!title||title.tagName==='A')return;
+        var a=document.createElement('a');
+        a.className=title.className;
+        a.href=link.href;
+        a.target='_blank';
+        a.rel='noopener';
+        a.textContent=title.textContent;
+        title.replaceWith(a);
+      });
+      pageRefIndex=buildPageRefIndex();
+    }
+
+    function linkDesignPills(){
+      document.querySelectorAll('.pill[class*="p-"]').forEach(function(pill){
+        if(pill.tagName==='A'||pill.classList.contains('pill-link'))return;
+        var cls=Array.prototype.find.call(pill.classList,function(c){return PILL_PAGE_TITLES[c]});
+        if(!cls)return;
+        var ref=pageRefUrl(PILL_PAGE_TITLES[cls]);
+        if(!ref)return;
+        var a=document.createElement('a');
+        a.className=pill.className+' pill-link';
+        a.href=ref.url;
+        a.target='_blank';
+        a.rel='noopener';
+        a.title='Open '+ref.title+' on roller.software';
+        a.textContent=pill.textContent;
+        pill.replaceWith(a);
+      });
+    }
+
+    function linkStaticUsedOn(){
+      document.querySelectorAll('[data-used-page]').forEach(function(el){
+        if(el.tagName==='A')return;
+        var ref=pageRefUrl(el.getAttribute('data-used-page'));
+        if(!ref)return;
+        var a=document.createElement('a');
+        a.href=ref.url;
+        a.target='_blank';
+        a.rel='noopener';
+        a.textContent=el.textContent;
+        a.title='Open '+ref.title+' on roller.software';
+        el.replaceWith(a);
+      });
+    }
+
+    function scrollToPageRow(row){
+      if(!row)return;
+      show('pages');
+      openDetails(row);
+      row.scrollIntoView({behavior:'smooth',block:'nearest'});
+      row.style.outline='2px solid var(--coral)';
+      row.style.outlineOffset='2px';
+      setTimeout(function(){row.style.outline='';row.style.outlineOffset=''},2000);
+    }
 
     function normUrl(href){
       if(!href)return '';
@@ -1880,6 +1978,7 @@
 
     function setFilter(componentId,updateHash){
       activeFilter=componentId;
+      activeHsFilter=null;
       filterButtons.forEach(function(btn){
         btn.setAttribute('aria-pressed',btn.getAttribute('data-component')===componentId?'true':'false');
       });
@@ -1907,6 +2006,43 @@
       }
     }
 
+    function setHsModuleFilter(hsSlug,updateHash){
+      activeFilter='all';
+      activeHsFilter=hsSlug;
+      filterButtons.forEach(function(btn){btn.setAttribute('aria-pressed','false')});
+      var shown=0;
+      document.querySelectorAll('#panel-pages .pg-row').forEach(function(row){
+        var link=row.querySelector('.pg-url');
+        if(!link){
+          row.classList.toggle('pg-hidden',true);
+          return;
+        }
+        var mods=(row.dataset.hsModules||'').split(',').filter(Boolean);
+        var match=mods.indexOf(hsSlug)!==-1;
+        row.classList.toggle('pg-hidden',!match);
+        if(match)shown++;
+      });
+      filterStatus.textContent='Showing '+shown+' of '+totalLinkedRows+' pages that use HubSpot module '+hsSlug+'.';
+      if(updateHash!==false){
+        history.replaceState(null,'','#pages?hsModule='+hsSlug);
+      }
+    }
+
+    function augmentPageRowsWithHsModules(){
+      var modPages=window.PAGE_MODULES&&window.PAGE_MODULES.pages;
+      if(!modPages)return;
+      document.querySelectorAll('#panel-pages .pg-row').forEach(function(row){
+        var link=row.querySelector('.pg-url');
+        if(!link)return;
+        var key=normUrl(link.href);
+        var page=modPages[key]||modPages[key+'/'];
+        if(!page||!page.catalog)return;
+        var slugs=(page.catalog.modules||[]).filter(function(m){return m.inCatalog&&m.slug}).map(function(m){return m.slug})
+          .concat((page.catalog.sections||[]).filter(function(s){return s.inCatalog&&s.slug}).map(function(s){return s.slug}));
+        if(slugs.length){row.dataset.hsModules=slugs.join(',')}
+      });
+    }
+
     function decoratePageRows(){
       if(!data||!data.pages)return;
       totalLinkedRows=0;
@@ -1916,8 +2052,8 @@
         totalLinkedRows++;
         var key=normUrl(link.href);
         var comps=data.pages[key]||data.pages[key+'/']||[];
-        if(!comps.length)return;
-        row.dataset.components=comps.join(',');
+        if(comps.length){row.dataset.components=comps.join(',')}
+        if(row.querySelector('.pg-comp-pills'))return;
         var pills=document.createElement('span');
         pills.className='pg-comp-pills';
         comps.forEach(function(id){
@@ -1938,6 +2074,7 @@
         });
         row.appendChild(pills);
       });
+      augmentPageRowsWithHsModules();
     }
 
     function categoryPillClass(cat){
@@ -1975,11 +2112,18 @@
       });
       cats.forEach(function(cat){
         var count=comp.byCategory[cat];
-        var pill=document.createElement('span');
-        pill.className='pill '+categoryPillClass(cat);
+        var pill=document.createElement('a');
+        pill.className='pill '+categoryPillClass(cat)+' pill-link';
         pill.setAttribute('data-audit-cat','1');
-        pill.title=cat+' · '+count+' page'+(count===1?'':'s');
+        pill.href='#pages?component='+compId;
+        pill.title=cat+' · '+count+' page'+(count===1?'':'s')+' — filter Pages tab';
         pill.textContent=categoryPillLabel(cat);
+        pill.addEventListener('click',function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          show('pages');
+          setFilter(compId,true);
+        });
         meta.appendChild(pill);
       });
     }
@@ -2194,6 +2338,8 @@
       var hash=location.hash.replace(/^#/,'');
       if(hash.indexOf('pages')!==0)return;
       show('pages');
+      var hsMatch=hash.match(/hsModule=([a-z0-9-]+)/);
+      if(hsMatch){setHsModuleFilter(hsMatch[1],false);return}
       var match=hash.match(/component=([a-z0-9-]+)/);
       setFilter(match?match[1]:'all',false);
     }
@@ -2210,13 +2356,17 @@
 
     function initCoverage(json){
       data=json;
+      linkPageRowTitles();
       buildFilterButtons();
       decoratePageRows();
+      linkDesignPills();
+      linkStaticUsedOn();
       renderAllUsedOn();
       coverageReady=true;
       setFilter('all',false);
       applyHash();
       if(window.initPageModules){window.initPageModules()}
+      window.augmentPageRowsWithHsModules=augmentPageRowsWithHsModules;
     }
   })();
 
@@ -2449,6 +2599,7 @@
 
     window.initPageModules=function(){
       decorateModuleRows();
+      if(window.augmentPageRowsWithHsModules){window.augmentPageRowsWithHsModules()}
     };
 
     fetch('page-modules.json?v=2').then(function(r){return r.json()}).then(function(json){
@@ -2507,7 +2658,8 @@
         return '<span class="hs-usage-pill disabled">Not on audited pages</span>'
       }
       var n=entry.pageCount;
-      return '<span class="hs-usage-pill used">'+n+' page'+(n===1?'':'s')+'</span>'
+      var slug=entry.slug||'';
+      return '<a href="#pages?hsModule='+encodeURIComponent(slug)+'" class="hs-usage-pill used" data-hs-module="'+slug+'" title="Filter Pages tab to '+n+' page'+(n===1?'':'s')+' using this module">'+n+' page'+(n===1?'':'s')+'</a>'
     }
 
     function pillHtml(entry){
@@ -2578,6 +2730,13 @@
       sum.className='hs-lib-summary';
       sum.innerHTML='<span class="hs-lib-title">'+esc(card.title)+'</span> '+usagePillHtml(usage);
       det.appendChild(sum);
+      det.querySelectorAll('[data-hs-module]').forEach(function(a){
+        a.addEventListener('click',function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          location.hash='pages?hsModule='+encodeURIComponent(a.getAttribute('data-hs-module'));
+        });
+      });
       var body=document.createElement('div');
       body.className='hs-lib-body';
       var phaseWrap=document.createElement('div');
