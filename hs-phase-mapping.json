@@ -4,13 +4,13 @@
   "stats": {
     "hsModules": 133,
     "hsSections": 40,
-    "mappedModules": 80,
-    "unmappedModules": 53,
+    "mappedModules": 76,
+    "unmappedModules": 57,
     "mappedSections": 29,
     "unmappedSections": 11,
     "phaseTasks": 49,
-    "phaseWithHsMatch": 42,
-    "phaseWithoutHsMatch": 7
+    "phaseWithHsMatch": 41,
+    "phaseWithoutHsMatch": 8
   },
   "modules": {
     "advanced-image": {
@@ -438,12 +438,12 @@
       "hsLabel": "Logo Set French",
       "hsFolder": "logo-set-global-french.module",
       "hsModuleId": "212906394904",
-      "phaseId": null,
-      "phaseName": null,
-      "phase": null,
-      "confidence": null,
-      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
-      "status": "not-in-build-plan"
+      "phaseId": "task-logo-carousel",
+      "phaseName": "Logo carousel",
+      "phase": 4,
+      "confidence": "high",
+      "reason": "logo-set-global-french \u2014 consolidates into Customer logo carousel (light / dark).",
+      "status": "mapped"
     },
     "logo-set": {
       "hsSlug": "logo-set",
@@ -453,8 +453,8 @@
       "phaseId": "task-logo-carousel",
       "phaseName": "Logo carousel",
       "phase": 4,
-      "confidence": "low",
-      "reason": "logo-set \u2014 partial logo strip.",
+      "confidence": "high",
+      "reason": "logo-set \u2014 consolidates into Customer logo carousel (light / dark).",
       "status": "mapped"
     },
     "logo-set-global": {
@@ -466,7 +466,7 @@
       "phaseName": "Logo carousel",
       "phase": 4,
       "confidence": "high",
-      "reason": "Logo Set Global \u2014 logo strip / carousel.",
+      "reason": "logo-set-global \u2014 consolidates into Customer logo carousel (light / dark).",
       "status": "mapped"
     },
     "button": {
@@ -546,11 +546,11 @@
       "hsLabel": "Module: Badges Set",
       "hsFolder": "badge-set.module",
       "hsModuleId": "108444984843",
-      "phaseId": "task-trust-banner",
-      "phaseName": "Trust banner",
+      "phaseId": "task-boxed-user-reviews",
+      "phaseName": "Boxed user reviews",
       "phase": 4,
-      "confidence": "medium",
-      "reason": "Badges Set \u2014 trust badge row.",
+      "confidence": "high",
+      "reason": "Badges Set \u2014 review badge image loop; part of Boxed user reviews (with Heading composition).",
       "status": "mapped"
     },
     "card-blog-posts": {
@@ -690,12 +690,12 @@
       "hsLabel": "Module: Features By Month",
       "hsFolder": "features-by-month.module",
       "hsModuleId": "149510861401",
-      "phaseId": "task-features-widget",
-      "phaseName": "Features widget",
-      "phase": 4,
-      "confidence": "low",
-      "reason": "Features by month \u2014 widget content.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "features-card": {
       "hsSlug": "features-card",
@@ -765,8 +765,8 @@
       "phaseId": "task-features-widget",
       "phaseName": "Features widget",
       "phase": 4,
-      "confidence": "medium",
-      "reason": "Features selector \u2014 Phase 4 features widget.",
+      "confidence": "high",
+      "reason": "Features Selector (Global) \u2014 maps to Roller features widget.",
       "status": "mapped"
     },
     "gx-pricing-card": {
@@ -861,8 +861,8 @@
       "phaseId": "task-logo-carousel",
       "phaseName": "Logo carousel",
       "phase": 4,
-      "confidence": "medium",
-      "reason": "Logo Set Global (new variant).",
+      "confidence": "high",
+      "reason": "logo-set-global-new \u2014 consolidates into Customer logo carousel (light / dark).",
       "status": "mapped"
     },
     "logo-set-global-logos-only": {
@@ -873,8 +873,8 @@
       "phaseId": "task-logo-carousel",
       "phaseName": "Logo carousel",
       "phase": 4,
-      "confidence": "medium",
-      "reason": "Logo Set \u2014 logos-only variant.",
+      "confidence": "high",
+      "reason": "logo-set-global-logos-only \u2014 consolidates into Customer logo carousel (light / dark).",
       "status": "mapped"
     },
     "op-team": {
@@ -1074,12 +1074,12 @@
       "hsLabel": "Monthly Features",
       "hsFolder": "monthly-features.module",
       "hsModuleId": "201065981968",
-      "phaseId": "task-features-widget",
-      "phaseName": "Features widget",
-      "phase": 4,
-      "confidence": "low",
-      "reason": "Monthly features \u2014 features widget content.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "quote-new": {
       "hsSlug": "quote-new",
@@ -1506,12 +1506,12 @@
       "hsLabel": "Text Banner",
       "hsFolder": "text-banner.module",
       "hsModuleId": "192239305324",
-      "phaseId": "task-cta",
-      "phaseName": "CTA section",
-      "phase": 3,
-      "confidence": "low",
-      "reason": "Text Banner \u2014 compact CTA/text band.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "trending-posts": {
       "hsSlug": "trending-posts",
@@ -1578,23 +1578,23 @@
       "hsLabel": "Widget: GX Show",
       "hsFolder": "widget-gx-show.module",
       "hsModuleId": "105708800428",
-      "phaseId": "task-trust-banner",
-      "phaseName": "Trust banner",
-      "phase": 4,
-      "confidence": "low",
-      "reason": "GX Show widget \u2014 trust/content widget.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "widget-industry-rating": {
       "hsSlug": "widget-industry-rating",
       "hsLabel": "Widget: Industry Rating",
       "hsFolder": "widget-industry-rating.module",
       "hsModuleId": "111460321692",
-      "phaseId": "task-trust-banner",
-      "phaseName": "Trust banner",
+      "phaseId": "task-user-review-widget",
+      "phaseName": "User review widget",
       "phase": 4,
       "confidence": "medium",
-      "reason": "Industry rating widget \u2014 trust/rating strip.",
+      "reason": "Industry rating widget \u2014 third-party review scores (used in Widgets section).",
       "status": "mapped"
     },
     "widget-group": {
@@ -1602,12 +1602,12 @@
       "hsLabel": "Widgets: Widget Group",
       "hsFolder": "widget-group.module",
       "hsModuleId": "108776380673",
-      "phaseId": "task-features-widget",
-      "phaseName": "Features widget",
-      "phase": 4,
-      "confidence": "low",
-      "reason": "Widget group \u2014 composite features widget shell.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     }
   },
   "sections": {
@@ -1881,12 +1881,12 @@
         "badge-set",
         "@hubspot/linked_image"
       ],
-      "phaseId": null,
-      "phaseName": null,
-      "phase": null,
-      "confidence": null,
-      "reason": "Pulse/report/campaign section \u2014 not in current Build plan phases.",
-      "status": "not-in-build-plan"
+      "phaseId": "task-boxed-user-reviews",
+      "phaseName": "Boxed user reviews",
+      "phase": 4,
+      "confidence": "high",
+      "reason": "Industry Rating section \u2014 Heading composition + badge-set (+ side image in HS).",
+      "status": "mapped"
     },
     "s-industry-selector": {
       "hsSlug": "s-industry-selector",
@@ -1975,7 +1975,7 @@
       "phaseName": "Logo carousel",
       "phase": 4,
       "confidence": "high",
-      "reason": "Logo Set section \u2014 logo carousel strip.",
+      "reason": "Logo Set section \u2014 all logo-set HS modules consolidate into one Customer logo carousel (light / dark).",
       "status": "mapped"
     },
     "s-multi-row-content": {
@@ -2209,12 +2209,12 @@
         "widget-stats",
         "widget-gx-show"
       ],
-      "phaseId": "task-features-widget",
-      "phaseName": "Features widget",
-      "phase": 4,
-      "confidence": "medium",
-      "reason": "Widgets section \u2014 composite global widgets row.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "Pulse/report/campaign section \u2014 not in current Build plan phases.",
+      "status": "not-in-build-plan"
     }
   },
   "phaseGaps": [
@@ -2236,29 +2236,107 @@
       "phaseId": "task-flat-one-column",
       "phase": 3,
       "phaseName": "Flat one column",
-      "note": "Composite section \u2014 assembled from heading-composition + button + image modules, not one HubSpot folder.",
-      "relatedHs": []
+      "note": "Composite section \u2014 Heading composition + Button + Image. No dedicated HubSpot module.",
+      "relatedHs": [],
+      "composite": true,
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Heading composition"
+        },
+        {
+          "phaseId": "task-button",
+          "name": "Button",
+          "role": "CTA"
+        },
+        {
+          "phaseId": "task-image",
+          "name": "Image",
+          "role": "Optional media"
+        }
+      ]
     },
     {
       "phaseId": "task-centeredtext",
       "phase": 3,
       "phaseName": "Centered text block",
-      "note": "Centred text section \u2014 heading-composition with centre alignment; no dedicated module.",
-      "relatedHs": []
+      "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module.",
+      "relatedHs": [],
+      "composite": true,
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Heading composition, centre-aligned"
+        }
+      ]
     },
     {
       "phaseId": "task-image-icon-grid-list",
       "phase": 3,
       "phaseName": "Image with icon grid list",
-      "note": "Composite \u2014 icons-list + side image; no single HubSpot module.",
-      "relatedHs": []
+      "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module.",
+      "relatedHs": [],
+      "composite": true,
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Section heading"
+        },
+        {
+          "phaseId": "task-icon-list-grid",
+          "name": "Icon list grid",
+          "role": "Icon tile grid"
+        },
+        {
+          "phaseId": "task-image",
+          "name": "Image",
+          "role": "Side image"
+        }
+      ]
     },
     {
-      "phaseId": "task-boxed-user-reviews",
+      "phaseId": "task-footer",
       "phase": 4,
-      "phaseName": "Boxed user reviews",
-      "note": "No dedicated HubSpot module found \u2014 may use widget-user-review in a section.",
-      "relatedHs": []
+      "phaseName": "Footer",
+      "note": "Footer shell \u2014 assembled from HubSpot menu/text/form widgets + social-icons-set, no footer.module.",
+      "relatedHs": [],
+      "composite": true,
+      "components": [
+        {
+          "phaseId": "task-header",
+          "name": "Header",
+          "role": "Navigation shell (inverse)"
+        }
+      ]
+    },
+    {
+      "phaseId": "task-trust-banner",
+      "phase": 4,
+      "phaseName": "Trust banner",
+      "note": "Composite section \u2014 Heading composition + Quote + Image. Does not map to a HubSpot module.",
+      "relatedHs": [],
+      "composite": true,
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Heading composition (eyebrow + heading)"
+        },
+        {
+          "phaseId": "task-quote",
+          "name": "Quote",
+          "role": "Trust testimonial"
+        },
+        {
+          "phaseId": "task-image",
+          "name": "Image",
+          "role": "Side image"
+        }
+      ],
+      "hsAnalog": "Closest HS section is Industry Rating (heading-composition + badge-set + image) but uses badges, not Quote."
     },
     {
       "phaseId": "task-company-stats",
@@ -2268,6 +2346,126 @@
       "relatedHs": []
     }
   ],
+  "composites": {
+    "task-trust-banner": {
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Heading composition (eyebrow + heading)"
+        },
+        {
+          "phaseId": "task-quote",
+          "name": "Quote",
+          "role": "Trust testimonial"
+        },
+        {
+          "phaseId": "task-image",
+          "name": "Image",
+          "role": "Side image"
+        }
+      ],
+      "note": "Composite section \u2014 Heading composition + Quote + Image. Does not map to a HubSpot module.",
+      "hsAnalog": "Closest HS section is Industry Rating (heading-composition + badge-set + image) but uses badges, not Quote."
+    },
+    "task-flat-one-column": {
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Heading composition"
+        },
+        {
+          "phaseId": "task-button",
+          "name": "Button",
+          "role": "CTA"
+        },
+        {
+          "phaseId": "task-image",
+          "name": "Image",
+          "role": "Optional media"
+        }
+      ],
+      "note": "Composite section \u2014 Heading composition + Button + Image. No dedicated HubSpot module."
+    },
+    "task-centeredtext": {
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Heading composition, centre-aligned"
+        }
+      ],
+      "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module."
+    },
+    "task-image-icon-grid-list": {
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Section heading"
+        },
+        {
+          "phaseId": "task-icon-list-grid",
+          "name": "Icon list grid",
+          "role": "Icon tile grid"
+        },
+        {
+          "phaseId": "task-image",
+          "name": "Image",
+          "role": "Side image"
+        }
+      ],
+      "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module."
+    },
+    "task-dual-quote": {
+      "components": [
+        {
+          "phaseId": "task-quote",
+          "name": "Quote",
+          "role": "Two Quote instances side by side"
+        }
+      ],
+      "note": "Composes two Quote primitives; HubSpot quote-new / s-quote-two-columns are partial analogs.",
+      "hasHsPartial": true
+    },
+    "task-boxed-user-reviews": {
+      "components": [
+        {
+          "phaseId": "task-text",
+          "name": "Text block",
+          "role": "Heading composition"
+        },
+        {
+          "phaseId": "task-image",
+          "name": "Image",
+          "role": "Review badge image loop (items array)"
+        }
+      ],
+      "note": "Built from Heading composition + review badge image loop. HubSpot: Industry Rating section / badge-set module.",
+      "hasHsPartial": true
+    },
+    "task-footer": {
+      "components": [
+        {
+          "phaseId": "task-header",
+          "name": "Header",
+          "role": "Navigation shell (inverse)"
+        }
+      ],
+      "note": "Footer shell \u2014 assembled from HubSpot menu/text/form widgets + social-icons-set, no footer.module."
+    }
+  },
+  "consolidations": {
+    "task-logo-carousel": {
+      "note": "One universal Customer logo carousel in the new build. All HubSpot logo-set modules map here \u2014 use light or dark theme variant only.",
+      "variants": [
+        "light",
+        "dark"
+      ],
+      "hsModulePattern": "logo-set"
+    }
+  },
   "byPhase": {
     "task-button": {
       "phaseId": "task-button",
@@ -2576,8 +2774,46 @@
         "phaseId": "task-flat-one-column",
         "phase": 3,
         "phaseName": "Flat one column",
-        "note": "Composite section \u2014 assembled from heading-composition + button + image modules, not one HubSpot folder.",
-        "relatedHs": []
+        "note": "Composite section \u2014 Heading composition + Button + Image. No dedicated HubSpot module.",
+        "relatedHs": [],
+        "composite": true,
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading composition"
+          },
+          {
+            "phaseId": "task-button",
+            "name": "Button",
+            "role": "CTA"
+          },
+          {
+            "phaseId": "task-image",
+            "name": "Image",
+            "role": "Optional media"
+          }
+        ]
+      },
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading composition"
+          },
+          {
+            "phaseId": "task-button",
+            "name": "Button",
+            "role": "CTA"
+          },
+          {
+            "phaseId": "task-image",
+            "name": "Image",
+            "role": "Optional media"
+          }
+        ],
+        "note": "Composite section \u2014 Heading composition + Button + Image. No dedicated HubSpot module."
       }
     },
     "task-centeredtext": {
@@ -2590,8 +2826,26 @@
         "phaseId": "task-centeredtext",
         "phase": 3,
         "phaseName": "Centered text block",
-        "note": "Centred text section \u2014 heading-composition with centre alignment; no dedicated module.",
-        "relatedHs": []
+        "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module.",
+        "relatedHs": [],
+        "composite": true,
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading composition, centre-aligned"
+          }
+        ]
+      },
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading composition, centre-aligned"
+          }
+        ],
+        "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module."
       }
     },
     "task-dual-quote": {
@@ -2630,7 +2884,17 @@
           "status": "mapped"
         }
       ],
-      "gap": null
+      "gap": null,
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-quote",
+            "name": "Quote",
+            "role": "Two Quote instances side by side"
+          }
+        ],
+        "note": "Composes two Quote primitives; HubSpot quote-new / s-quote-two-columns are partial analogs."
+      }
     },
     "task-special-hero-introduction": {
       "phaseId": "task-special-hero-introduction",
@@ -2917,8 +3181,46 @@
         "phaseId": "task-image-icon-grid-list",
         "phase": 3,
         "phaseName": "Image with icon grid list",
-        "note": "Composite \u2014 icons-list + side image; no single HubSpot module.",
-        "relatedHs": []
+        "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module.",
+        "relatedHs": [],
+        "composite": true,
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Section heading"
+          },
+          {
+            "phaseId": "task-icon-list-grid",
+            "name": "Icon list grid",
+            "role": "Icon tile grid"
+          },
+          {
+            "phaseId": "task-image",
+            "name": "Image",
+            "role": "Side image"
+          }
+        ]
+      },
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Section heading"
+          },
+          {
+            "phaseId": "task-icon-list-grid",
+            "name": "Icon list grid",
+            "role": "Icon tile grid"
+          },
+          {
+            "phaseId": "task-image",
+            "name": "Image",
+            "role": "Side image"
+          }
+        ],
+        "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module."
       }
     },
     "task-services-section": {
@@ -3333,18 +3635,6 @@
           "phase": 3,
           "confidence": "high",
           "reason": "CTA Banner (section.cta-module conversion band).",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "text-banner",
-          "hsLabel": "Text Banner",
-          "hsFolder": "text-banner.module",
-          "hsModuleId": "192239305324",
-          "phaseId": "task-cta",
-          "phaseName": "CTA section",
-          "phase": 3,
-          "confidence": "low",
-          "reason": "Text Banner \u2014 compact CTA/text band.",
           "status": "mapped"
         }
       ],
@@ -3844,58 +4134,103 @@
         }
       ],
       "hsSections": [],
-      "gap": null
+      "gap": {
+        "phaseId": "task-footer",
+        "phase": 4,
+        "phaseName": "Footer",
+        "note": "Footer shell \u2014 assembled from HubSpot menu/text/form widgets + social-icons-set, no footer.module.",
+        "relatedHs": [],
+        "composite": true,
+        "components": [
+          {
+            "phaseId": "task-header",
+            "name": "Header",
+            "role": "Navigation shell (inverse)"
+          }
+        ]
+      },
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-header",
+            "name": "Header",
+            "role": "Navigation shell (inverse)"
+          }
+        ],
+        "note": "Footer shell \u2014 assembled from HubSpot menu/text/form widgets + social-icons-set, no footer.module."
+      }
     },
     "task-trust-banner": {
       "phaseId": "task-trust-banner",
       "phase": 4,
       "phaseName": "Trust banner",
-      "hsModules": [
-        {
-          "hsSlug": "badge-set",
-          "hsLabel": "Module: Badges Set",
-          "hsFolder": "badge-set.module",
-          "hsModuleId": "108444984843",
-          "phaseId": "task-trust-banner",
-          "phaseName": "Trust banner",
-          "phase": 4,
-          "confidence": "medium",
-          "reason": "Badges Set \u2014 trust badge row.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "widget-gx-show",
-          "hsLabel": "Widget: GX Show",
-          "hsFolder": "widget-gx-show.module",
-          "hsModuleId": "105708800428",
-          "phaseId": "task-trust-banner",
-          "phaseName": "Trust banner",
-          "phase": 4,
-          "confidence": "low",
-          "reason": "GX Show widget \u2014 trust/content widget.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "widget-industry-rating",
-          "hsLabel": "Widget: Industry Rating",
-          "hsFolder": "widget-industry-rating.module",
-          "hsModuleId": "111460321692",
-          "phaseId": "task-trust-banner",
-          "phaseName": "Trust banner",
-          "phase": 4,
-          "confidence": "medium",
-          "reason": "Industry rating widget \u2014 trust/rating strip.",
-          "status": "mapped"
-        }
-      ],
+      "hsModules": [],
       "hsSections": [],
-      "gap": null
+      "gap": {
+        "phaseId": "task-trust-banner",
+        "phase": 4,
+        "phaseName": "Trust banner",
+        "note": "Composite section \u2014 Heading composition + Quote + Image. Does not map to a HubSpot module.",
+        "relatedHs": [],
+        "composite": true,
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading composition (eyebrow + heading)"
+          },
+          {
+            "phaseId": "task-quote",
+            "name": "Quote",
+            "role": "Trust testimonial"
+          },
+          {
+            "phaseId": "task-image",
+            "name": "Image",
+            "role": "Side image"
+          }
+        ],
+        "hsAnalog": "Closest HS section is Industry Rating (heading-composition + badge-set + image) but uses badges, not Quote."
+      },
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading composition (eyebrow + heading)"
+          },
+          {
+            "phaseId": "task-quote",
+            "name": "Quote",
+            "role": "Trust testimonial"
+          },
+          {
+            "phaseId": "task-image",
+            "name": "Image",
+            "role": "Side image"
+          }
+        ],
+        "note": "Composite section \u2014 Heading composition + Quote + Image. Does not map to a HubSpot module.",
+        "hsAnalog": "Closest HS section is Industry Rating (heading-composition + badge-set + image) but uses badges, not Quote."
+      }
     },
     "task-logo-carousel": {
       "phaseId": "task-logo-carousel",
       "phase": 4,
       "phaseName": "Logo carousel",
       "hsModules": [
+        {
+          "hsSlug": "logo-set-global-french",
+          "hsLabel": "Logo Set French",
+          "hsFolder": "logo-set-global-french.module",
+          "hsModuleId": "212906394904",
+          "phaseId": "task-logo-carousel",
+          "phaseName": "Logo carousel",
+          "phase": 4,
+          "confidence": "high",
+          "reason": "logo-set-global-french \u2014 consolidates into Customer logo carousel (light / dark).",
+          "status": "mapped"
+        },
         {
           "hsSlug": "logo-set",
           "hsLabel": "logo-set",
@@ -3904,8 +4239,8 @@
           "phaseId": "task-logo-carousel",
           "phaseName": "Logo carousel",
           "phase": 4,
-          "confidence": "low",
-          "reason": "logo-set \u2014 partial logo strip.",
+          "confidence": "high",
+          "reason": "logo-set \u2014 consolidates into Customer logo carousel (light / dark).",
           "status": "mapped"
         },
         {
@@ -3917,7 +4252,7 @@
           "phaseName": "Logo carousel",
           "phase": 4,
           "confidence": "high",
-          "reason": "Logo Set Global \u2014 logo strip / carousel.",
+          "reason": "logo-set-global \u2014 consolidates into Customer logo carousel (light / dark).",
           "status": "mapped"
         },
         {
@@ -3928,8 +4263,8 @@
           "phaseId": "task-logo-carousel",
           "phaseName": "Logo carousel",
           "phase": 4,
-          "confidence": "medium",
-          "reason": "Logo Set Global (new variant).",
+          "confidence": "high",
+          "reason": "logo-set-global-new \u2014 consolidates into Customer logo carousel (light / dark).",
           "status": "mapped"
         },
         {
@@ -3940,8 +4275,8 @@
           "phaseId": "task-logo-carousel",
           "phaseName": "Logo carousel",
           "phase": 4,
-          "confidence": "medium",
-          "reason": "Logo Set \u2014 logos-only variant.",
+          "confidence": "high",
+          "reason": "logo-set-global-logos-only \u2014 consolidates into Customer logo carousel (light / dark).",
           "status": "mapped"
         }
       ],
@@ -3957,24 +4292,71 @@
           "phaseName": "Logo carousel",
           "phase": 4,
           "confidence": "high",
-          "reason": "Logo Set section \u2014 logo carousel strip.",
+          "reason": "Logo Set section \u2014 all logo-set HS modules consolidate into one Customer logo carousel (light / dark).",
           "status": "mapped"
         }
       ],
-      "gap": null
+      "gap": null,
+      "consolidation": {
+        "note": "One universal Customer logo carousel in the new build. All HubSpot logo-set modules map here \u2014 use light or dark theme variant only.",
+        "variants": [
+          "light",
+          "dark"
+        ],
+        "hsModulePattern": "logo-set"
+      }
     },
     "task-boxed-user-reviews": {
       "phaseId": "task-boxed-user-reviews",
       "phase": 4,
       "phaseName": "Boxed user reviews",
-      "hsModules": [],
-      "hsSections": [],
-      "gap": {
-        "phaseId": "task-boxed-user-reviews",
-        "phase": 4,
-        "phaseName": "Boxed user reviews",
-        "note": "No dedicated HubSpot module found \u2014 may use widget-user-review in a section.",
-        "relatedHs": []
+      "hsModules": [
+        {
+          "hsSlug": "badge-set",
+          "hsLabel": "Module: Badges Set",
+          "hsFolder": "badge-set.module",
+          "hsModuleId": "108444984843",
+          "phaseId": "task-boxed-user-reviews",
+          "phaseName": "Boxed user reviews",
+          "phase": 4,
+          "confidence": "high",
+          "reason": "Badges Set \u2014 review badge image loop; part of Boxed user reviews (with Heading composition).",
+          "status": "mapped"
+        }
+      ],
+      "hsSections": [
+        {
+          "hsSlug": "s-industry-rating",
+          "hsLabel": "Industry Rating",
+          "hsFile": "s-industry-rating.html",
+          "containsModules": [
+            "heading-composition",
+            "badge-set",
+            "@hubspot/linked_image"
+          ],
+          "phaseId": "task-boxed-user-reviews",
+          "phaseName": "Boxed user reviews",
+          "phase": 4,
+          "confidence": "high",
+          "reason": "Industry Rating section \u2014 Heading composition + badge-set (+ side image in HS).",
+          "status": "mapped"
+        }
+      ],
+      "gap": null,
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading composition"
+          },
+          {
+            "phaseId": "task-image",
+            "name": "Image",
+            "role": "Review badge image loop (items array)"
+          }
+        ],
+        "note": "Built from Heading composition + review badge image loop. HubSpot: Industry Rating section / badge-set module."
       }
     },
     "task-user-review-widget": {
@@ -3993,6 +4375,18 @@
           "confidence": "high",
           "reason": "User review widget \u2014 Phase 4 global.",
           "status": "mapped"
+        },
+        {
+          "hsSlug": "widget-industry-rating",
+          "hsLabel": "Widget: Industry Rating",
+          "hsFolder": "widget-industry-rating.module",
+          "hsModuleId": "111460321692",
+          "phaseId": "task-user-review-widget",
+          "phaseName": "User review widget",
+          "phase": 4,
+          "confidence": "medium",
+          "reason": "Industry rating widget \u2014 third-party review scores (used in Widgets section).",
+          "status": "mapped"
         }
       ],
       "hsSections": [],
@@ -4004,18 +4398,6 @@
       "phaseName": "Features widget",
       "hsModules": [
         {
-          "hsSlug": "features-by-month",
-          "hsLabel": "Module: Features By Month",
-          "hsFolder": "features-by-month.module",
-          "hsModuleId": "149510861401",
-          "phaseId": "task-features-widget",
-          "phaseName": "Features widget",
-          "phase": 4,
-          "confidence": "low",
-          "reason": "Features by month \u2014 widget content.",
-          "status": "mapped"
-        },
-        {
           "hsSlug": "features-selector-global",
           "hsLabel": "Module: Features Selector (Global)",
           "hsFolder": "features-selector-global.module",
@@ -4023,53 +4405,12 @@
           "phaseId": "task-features-widget",
           "phaseName": "Features widget",
           "phase": 4,
-          "confidence": "medium",
-          "reason": "Features selector \u2014 Phase 4 features widget.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "monthly-features",
-          "hsLabel": "Monthly Features",
-          "hsFolder": "monthly-features.module",
-          "hsModuleId": "201065981968",
-          "phaseId": "task-features-widget",
-          "phaseName": "Features widget",
-          "phase": 4,
-          "confidence": "low",
-          "reason": "Monthly features \u2014 features widget content.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "widget-group",
-          "hsLabel": "Widgets: Widget Group",
-          "hsFolder": "widget-group.module",
-          "hsModuleId": "108776380673",
-          "phaseId": "task-features-widget",
-          "phaseName": "Features widget",
-          "phase": 4,
-          "confidence": "low",
-          "reason": "Widget group \u2014 composite features widget shell.",
+          "confidence": "high",
+          "reason": "Features Selector (Global) \u2014 maps to Roller features widget.",
           "status": "mapped"
         }
       ],
-      "hsSections": [
-        {
-          "hsSlug": "s-widgets",
-          "hsLabel": "Widgets",
-          "hsFile": "s-widgets.html",
-          "containsModules": [
-            "widget-industry-rating",
-            "widget-stats",
-            "widget-gx-show"
-          ],
-          "phaseId": "task-features-widget",
-          "phaseName": "Features widget",
-          "phase": 4,
-          "confidence": "medium",
-          "reason": "Widgets section \u2014 composite global widgets row.",
-          "status": "mapped"
-        }
-      ],
+      "hsSections": [],
       "gap": null
     },
     "task-industries-widget": {

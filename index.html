@@ -215,6 +215,11 @@
   .hs-pill.sec{background:#e6f7f0;color:#0a6e4e;border-color:#b8e6d4}
   .hs-pill.gap-pill{background:#FEF3C7;color:#92400E;border-color:#f5d88a}
   .hs-map-gap{font-size:13px;color:#92400E;line-height:1.45}
+  .hs-map-composite{margin-top:6px;font-size:13px;color:var(--muted);line-height:1.45}
+  .hs-map-composite a{color:var(--accent);text-decoration:none}
+  .hs-map-composite a:hover{text-decoration:underline}
+  .hs-map-analog{margin-top:4px;font-size:12px;color:var(--muted);font-style:italic}
+  .hs-map-consolidation{margin-bottom:8px;font-size:13px;color:#1E40AF;line-height:1.45}
   .pg-stats{display:flex;background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:22px 0}
   .pg-stat{flex:1;padding:14px 20px;text-align:center;border-right:1px solid var(--border)}
   .pg-stat:last-child{border-right:none}
@@ -1100,9 +1105,10 @@
       </details>
 
       <details class="task" id="task-trust-banner">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Trust banner<small>Global · trust signals strip</small></span><span class="meta"></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Trust banner<small>Global · trust signals strip · composite</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
-          <dt>Description</dt><dd>A strip of certifications, security badges or partner logos. Used near conversion points.</dd>
+          <dt>Depends on</dt><dd><a href="#task-text">Text block</a> (heading composition), <a href="#task-quote">Quote</a>, <a href="#task-image">Image</a></dd>
+          <dt>Description</dt><dd>A two-column trust strip with heading composition and quote on one side and an image on the other. Composed from core content blocks — not a single HubSpot module.</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-space">Spacing</a><a class="chip link" href="#tok-colour">Colour</a></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=5359-82723" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/global-trust-banner.png" alt="Trust banner"></div></dd>
         </dl></div>
@@ -1111,7 +1117,7 @@
       <details class="task" id="task-logo-carousel">
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Customer logo carousel<small>Global · auto-scrolling customer logos · light &amp; dark</small></span><span class="meta"><span class="pill p-multi-venue">Multi venue</span></span></summary>
         <div class="detail"><dl>
-          <dt>Description</dt><dd>A marquee of customer logos for credibility. Light variant sits on a pale background; dark variant uses a Commitment (Blue 10) background with optional centred heading above the logo strip.</dd>
+          <dt>Description</dt><dd>A universal marquee of customer logos for credibility — one component in the new build replacing all HubSpot logo-set modules. Light variant sits on a pale background; dark variant uses a Commitment (Blue 10) background with optional centred heading above the logo strip.</dd>
           <dt>Used on</dt><dd>Multi venue page (dark variation)</dd>
           <dt>Variants</dt><dd>Light background; dark background (centred heading optional; Multi venue reference).</dd>
           <dt>Fields</dt><dd><code>theme</code> (light | dark), <code>heading</code> (optional, centred — dark variant), <code>logos</code> (image, alt, optional href)</dd>
@@ -1124,7 +1130,8 @@
       <details class="task" id="task-boxed-user-reviews">
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Boxed user reviews<small>Global · boxed third-party review scores</small></span><span class="meta"><span class="pill p-prof-services">Professional services</span></span></summary>
         <div class="detail"><dl>
-          <dt>Description</dt><dd>A row of boxed review score cards (e.g. G2, Capterra) with star rating, score and review count. Distinct from the simpler <a href="#task-user-review-widget">User review widget</a> badge strip — each platform sits in its own bordered card.</dd>
+          <dt>Depends on</dt><dd><a href="#task-text">Text block</a> (heading composition), review badge <a href="#task-image">Image</a> loop (items array)</dd>
+          <dt>Description</dt><dd>A row of boxed review score cards (e.g. G2, Capterra) with star rating, score and review count. Composed from Heading composition plus a loop of review badge images. Maps to HubSpot Industry Rating / badge-set. Distinct from the simpler <a href="#task-user-review-widget">User review widget</a> badge strip.</dd>
           <dt>Used on</dt><dd>Professional services page</dd>
           <dt>Variants</dt><dd>Desktop; mobile (confirm layout with design).</dd>
           <dt>Fields</dt><dd><code>items</code> (platform logo, score, star rating, review count, href), <code>background</code></dd>
@@ -1148,7 +1155,7 @@
       <details class="task" id="task-features-widget">
         <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Roller features widget<small>Global · full feature-set navigation panel</small></span><span class="meta"></span></summary>
         <div class="detail"><dl>
-          <dt>Description</dt><dd>A full-width panel displaying ROLLER's feature set, used globally as a navigation or discovery component.</dd>
+          <dt>Description</dt><dd>A full-width panel displaying ROLLER's feature set, used globally as a navigation or discovery component. Maps to HubSpot Features Selector (Global).</dd>
           <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=6685-21342" target="_blank" rel="noopener">Desktop</a></div><div class="figscreens"><img src="figma-screenshots/global-features-widget.png" alt="Roller features widget – Desktop"></div></dd>
         </dl></div>
@@ -2730,9 +2737,29 @@
         dt.textContent='HubSpot';
         var dd=document.createElement('dd');
         if(entry.gap){
-          dd.innerHTML='<span class="hs-map-gap">'+esc(entry.gap.note)+'</span>';
+          var gapHtml='<span class="hs-map-gap">'+esc(entry.gap.note)+'</span>';
+          if(entry.gap.composite&&entry.gap.components&&entry.gap.components.length){
+            gapHtml+='<div class="hs-map-composite">Built from: '+entry.gap.components.map(function(c){
+              return '<a href="#'+esc(c.phaseId)+'">'+esc(c.name)+'</a>';
+            }).join(', ')+'</div>';
+          }
+          if(entry.gap.hsAnalog){
+            gapHtml+='<div class="hs-map-analog">'+esc(entry.gap.hsAnalog)+'</div>';
+          }
+          dd.innerHTML=gapHtml;
         }else{
           var html='';
+          if(entry.composite&&entry.composite.components&&entry.composite.components.length){
+            html+='<div class="hs-map-composite">Built from: '+entry.composite.components.map(function(c){
+              return '<a href="#'+esc(c.phaseId)+'">'+esc(c.name)+'</a>';
+            }).join(', ')+'</div>';
+            if(entry.composite.note){
+              html+='<div class="hs-map-analog">'+esc(entry.composite.note)+'</div>';
+            }
+          }
+          if(entry.consolidation){
+            html+='<div class="hs-map-consolidation">'+esc(entry.consolidation.note)+'</div>';
+          }
           (entry.hsModules||[]).forEach(function(m){
             html+='<a href="#" class="hs-pill" data-hs-slug="'+esc(m.hsSlug)+'" data-hs-kind="module" title="'+esc(m.reason)+'">'+esc(m.hsLabel)+'</a>';
           });

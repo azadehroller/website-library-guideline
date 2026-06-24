@@ -109,18 +109,25 @@ MODULE_MAP: dict[str, tuple[str, str, str]] = {
     "quote-new": ("task-dual-quote", "medium", "New Quote — may render paired quotes; maps to Dual quote."),
     "button": ("task-button", "high", "Main Button module."),
     "button-stack": ("task-button", "high", "Button stack — multiple Button instances."),
-    "logo-set-global": ("task-logo-carousel", "high", "Logo Set Global — logo strip / carousel."),
-    "logo-set-global-new": ("task-logo-carousel", "medium", "Logo Set Global (new variant)."),
-    "logo-set-global-logos-only": ("task-logo-carousel", "medium", "Logo Set — logos-only variant."),
-    "logo-set": ("task-logo-carousel", "low", "logo-set — partial logo strip."),
+    "logo-set": ("task-logo-carousel", "high", "logo-set — consolidates into Customer logo carousel (light / dark)."),
+    "logo-set-global": ("task-logo-carousel", "high", "logo-set-global — consolidates into Customer logo carousel (light / dark)."),
+    "logo-set-global-new": ("task-logo-carousel", "high", "logo-set-global-new — consolidates into Customer logo carousel (light / dark)."),
+    "logo-set-global-logos-only": ("task-logo-carousel", "high", "logo-set-global-logos-only — consolidates into Customer logo carousel (light / dark)."),
+    "logo-set-global-french": ("task-logo-carousel", "high", "logo-set-global-french — consolidates into Customer logo carousel (light / dark)."),
     "header-theme": ("task-header", "high", "Global Header theme shell."),
     "mega-menu": ("task-header", "high", "Mega menu — part of Header navigation."),
     "menu": ("task-header", "medium", "Menu module — navigation element in Header."),
     "widget-user-review": ("task-user-review-widget", "high", "User review widget — Phase 4 global."),
-    "widget-industry-rating": ("task-trust-banner", "medium", "Industry rating widget — trust/rating strip."),
-    "widget-gx-show": ("task-trust-banner", "low", "GX Show widget — trust/content widget."),
-    "badge-set": ("task-trust-banner", "medium", "Badges Set — trust badge row."),
-    "text-banner": ("task-cta", "low", "Text Banner — compact CTA/text band."),
+    "widget-industry-rating": (
+        "task-user-review-widget",
+        "medium",
+        "Industry rating widget — third-party review scores (used in Widgets section).",
+    ),
+    "badge-set": (
+        "task-boxed-user-reviews",
+        "high",
+        "Badges Set — review badge image loop; part of Boxed user reviews (with Heading composition).",
+    ),
     "advanced-image": ("task-image", "high", "Advanced Image — Image primitive variant."),
     "animated-hero": ("task-special-hero-introduction", "medium", "Animated Hero — hero introduction with motion."),
     "interactive-hero": ("task-special-hero-introduction", "medium", "Interactive Hero — hero intro section."),
@@ -135,8 +142,11 @@ MODULE_MAP: dict[str, tuple[str, str, str]] = {
         "high",
         "Industry Selector Features — industry vertical page section.",
     ),
-    "features-selector-global": ("task-features-widget", "medium", "Features selector — Phase 4 features widget."),
-    "widget-group": ("task-features-widget", "low", "Widget group — composite features widget shell."),
+    "features-selector-global": (
+        "task-features-widget",
+        "high",
+        "Features Selector (Global) — maps to Roller features widget.",
+    ),
     "widget-stats": ("task-company-stats", "low", "Stats widget — partial match for Company stats widget."),
     "social-icons-set": ("task-footer", "medium", "Social icons — footer social links set."),
     "comparison-table": ("task-cards", "low", "Comparison table — card/table hybrid; partial Cards match."),
@@ -144,8 +154,6 @@ MODULE_MAP: dict[str, tuple[str, str, str]] = {
     "confetti": ("task-reports", "low", "Confetti module — rollup/report pages."),
     "blog-cards": ("task-reports", "low", "Blog cards — content card grid; partial Reports match."),
     "card-blog-posts": ("task-reports", "low", "Blog post cards — resource listing."),
-    "monthly-features": ("task-features-widget", "low", "Monthly features — features widget content."),
-    "features-by-month": ("task-features-widget", "low", "Features by month — widget content."),
 }
 
 SECTION_MAP: dict[str, tuple[str, str, str]] = {
@@ -194,7 +202,7 @@ SECTION_MAP: dict[str, tuple[str, str, str]] = {
         "Features Horizontal Slider section.",
     ),
     "s-services": ("task-service-detail", "high", "Services detail content section."),
-    "s-logo-set": ("task-logo-carousel", "high", "Logo Set section — logo carousel strip."),
+    "s-logo-set": ("task-logo-carousel", "high", "Logo Set section — all logo-set HS modules consolidate into one Customer logo carousel (light / dark)."),
     "s-subscription-plans": (
         "task-implementation-packages",
         "medium",
@@ -202,8 +210,12 @@ SECTION_MAP: dict[str, tuple[str, str, str]] = {
     ),
     "s-quote-two-columns": ("task-dual-quote", "high", "Quote two columns — side-by-side dual quote layout."),
     "s-get-started": ("task-cta", "medium", "Get started section — CTA conversion band."),
+    "s-industry-rating": (
+        "task-boxed-user-reviews",
+        "high",
+        "Industry Rating section — Heading composition + badge-set (+ side image in HS).",
+    ),
     "s-industry-selector": ("task-industry-vertical", "high", "Industry Selector section."),
-    "s-widgets": ("task-features-widget", "medium", "Widgets section — composite global widgets row."),
     "s-4-bullet-content": ("task-use-case-section", "low", "4 Bullets + results — partial use-case layout."),
     "s-comparison": ("task-cards", "low", "Comparison section — card/table layout."),
     "s-integration-bar": ("task-twocol", "low", "Integration bar — two-column CTA + image."),
@@ -265,15 +277,93 @@ PHASE_TASKS = [
     ("task-testimonial-carousel", 4, "Testimonial carousel"),
 ]
 
+# Build-plan composites — no dedicated HubSpot module; assembled from core / section components.
+COMPOSITE_MAP: dict[str, dict] = {
+    "task-trust-banner": {
+        "components": [
+            {"phaseId": "task-text", "name": "Text block", "role": "Heading composition (eyebrow + heading)"},
+            {"phaseId": "task-quote", "name": "Quote", "role": "Trust testimonial"},
+            {"phaseId": "task-image", "name": "Image", "role": "Side image"},
+        ],
+        "note": "Composite section — Heading composition + Quote + Image. Does not map to a HubSpot module.",
+        "hsAnalog": "Closest HS section is Industry Rating (heading-composition + badge-set + image) but uses badges, not Quote.",
+    },
+    "task-flat-one-column": {
+        "components": [
+            {"phaseId": "task-text", "name": "Text block", "role": "Heading composition"},
+            {"phaseId": "task-button", "name": "Button", "role": "CTA"},
+            {"phaseId": "task-image", "name": "Image", "role": "Optional media"},
+        ],
+        "note": "Composite section — Heading composition + Button + Image. No dedicated HubSpot module.",
+    },
+    "task-centeredtext": {
+        "components": [
+            {"phaseId": "task-text", "name": "Text block", "role": "Heading composition, centre-aligned"},
+        ],
+        "note": "Centred text section — Heading composition with centre alignment; no dedicated HubSpot module.",
+    },
+    "task-image-icon-grid-list": {
+        "components": [
+            {"phaseId": "task-text", "name": "Text block", "role": "Section heading"},
+            {"phaseId": "task-icon-list-grid", "name": "Icon list grid", "role": "Icon tile grid"},
+            {"phaseId": "task-image", "name": "Image", "role": "Side image"},
+        ],
+        "note": "Composite — Icon list grid + side image; no single HubSpot module.",
+    },
+    "task-dual-quote": {
+        "components": [
+            {"phaseId": "task-quote", "name": "Quote", "role": "Two Quote instances side by side"},
+        ],
+        "note": "Composes two Quote primitives; HubSpot quote-new / s-quote-two-columns are partial analogs.",
+        "hasHsPartial": True,
+    },
+    "task-boxed-user-reviews": {
+        "components": [
+            {"phaseId": "task-text", "name": "Text block", "role": "Heading composition"},
+            {"phaseId": "task-image", "name": "Image", "role": "Review badge image loop (items array)"},
+        ],
+        "note": "Built from Heading composition + review badge image loop. HubSpot: Industry Rating section / badge-set module.",
+        "hasHsPartial": True,
+    },
+    "task-footer": {
+        "components": [
+            {"phaseId": "task-header", "name": "Header", "role": "Navigation shell (inverse)"},
+        ],
+        "note": "Footer shell — assembled from HubSpot menu/text/form widgets + social-icons-set, no footer.module.",
+    },
+}
+
+# Composites that must not count as “mapped” via incidental HS module hits.
+COMPOSITE_ONLY: set[str] = {
+    tid for tid, spec in COMPOSITE_MAP.items() if not spec.get("hasHsPartial")
+}
+
+# Multiple HubSpot modules → one build component (with theme / layout variants).
+CONSOLIDATION_MAP: dict[str, dict] = {
+    "task-logo-carousel": {
+        "note": "One universal Customer logo carousel in the new build. All HubSpot logo-set modules map here — use light or dark theme variant only.",
+        "variants": ["light", "dark"],
+        "hsModulePattern": "logo-set",
+    },
+}
+
+LOGO_CAROUSEL_AUTO_REASON = (
+    "Logo-set module — consolidates into one Customer logo carousel (light / dark theme variants)."
+)
+
+
+def resolve_module_phase(slug: str) -> tuple[str, str, str] | None:
+    if slug in MODULE_MAP:
+        return MODULE_MAP[slug]
+    if slug.startswith("logo-set"):
+        return ("task-logo-carousel", "high", LOGO_CAROUSEL_AUTO_REASON)
+    return None
+
 PHASE_GAP_NOTES: dict[str, str] = {
     "task-twocol-bigger": "Layout variant of Two-column — no separate HubSpot module; uses features-stacked-content / section templates with different grid ratio.",
     "task-twocol-text-heavy": "Layout variant of Two-column — same HubSpot module, text-dominant column ratio.",
-    "task-flat-one-column": "Composite section — assembled from heading-composition + button + image modules, not one HubSpot folder.",
-    "task-centeredtext": "Centred text section — heading-composition with centre alignment; no dedicated module.",
-    "task-image-icon-grid-list": "Composite — icons-list + side image; no single HubSpot module.",
     "task-services-section": "Services overview — closest HS match is service-list / multi-module section, not exact.",
-    "task-footer": "Footer shell — assembled from HubSpot menu/text/form widgets + social-icons-set, no footer.module.",
-    "task-boxed-user-reviews": "No dedicated HubSpot module found — may use widget-user-review in a section.",
+    "task-boxed-user-reviews": "See badge-set / s-industry-rating — composite of Heading composition + badge image loop.",
     "task-company-stats": "No exact module — widget-stats is the closest partial match.",
 }
 
@@ -319,8 +409,9 @@ def build_mapping():
     mapped_phase_ids: set[str] = set()
 
     for slug, mod in catalog["modules"].items():
-        if slug in MODULE_MAP:
-            phase_id, confidence, reason = MODULE_MAP[slug]
+        mapping = resolve_module_phase(slug)
+        if mapping:
+            phase_id, confidence, reason = mapping
             phase_name = next((n for i, p, n in PHASE_TASKS if i == phase_id), phase_id)
             modules_out[slug] = {
                 "hsSlug": slug,
@@ -334,7 +425,8 @@ def build_mapping():
                 "reason": reason,
                 "status": "mapped",
             }
-            mapped_phase_ids.add(phase_id)
+            if phase_id not in COMPOSITE_ONLY:
+                mapped_phase_ids.add(phase_id)
         else:
             modules_out[slug] = {
                 "hsSlug": slug,
@@ -365,7 +457,8 @@ def build_mapping():
                 "reason": reason,
                 "status": "mapped",
             }
-            mapped_phase_ids.add(phase_id)
+            if phase_id not in COMPOSITE_ONLY:
+                mapped_phase_ids.add(phase_id)
         else:
             sections_out[slug] = {
                 "hsSlug": slug,
@@ -382,23 +475,33 @@ def build_mapping():
 
     phase_gaps = []
     for tid, phase, name in PHASE_TASKS:
-        if tid not in mapped_phase_ids:
-            phase_gaps.append(
-                {
-                    "phaseId": tid,
-                    "phase": phase,
-                    "phaseName": name,
-                    "note": PHASE_GAP_NOTES.get(
+        composite = COMPOSITE_MAP.get(tid)
+        in_gap = tid not in mapped_phase_ids or tid in COMPOSITE_ONLY
+        if in_gap:
+            gap = {
+                "phaseId": tid,
+                "phase": phase,
+                "phaseName": name,
+                "note": (
+                    composite["note"]
+                    if composite
+                    else PHASE_GAP_NOTES.get(
                         tid,
                         "No dedicated HubSpot module — likely a layout variant or composite of other modules.",
-                    ),
-                    "relatedHs": [
-                        s
-                        for s, m in modules_out.items()
-                        if m.get("phaseId") and tid.replace("task-", "") in s.replace("-", "")
-                    ][:3],
-                }
-            )
+                    )
+                ),
+                "relatedHs": [
+                    s
+                    for s, m in modules_out.items()
+                    if m.get("phaseId") and tid.replace("task-", "") in s.replace("-", "")
+                ][:3],
+            }
+            if composite:
+                gap["composite"] = True
+                gap["components"] = composite["components"]
+                if composite.get("hsAnalog"):
+                    gap["hsAnalog"] = composite["hsAnalog"]
+            phase_gaps.append(gap)
 
     mapped_mod = sum(1 for m in modules_out.values() if m["status"] == "mapped")
     mapped_sec = sum(1 for s in sections_out.values() if s["status"] == "mapped")
@@ -420,6 +523,8 @@ def build_mapping():
         "modules": modules_out,
         "sections": sections_out,
         "phaseGaps": phase_gaps,
+        "composites": COMPOSITE_MAP,
+        "consolidations": CONSOLIDATION_MAP,
         "byPhase": {},
     }
 
@@ -427,7 +532,7 @@ def build_mapping():
         hs_mods = [m for m in modules_out.values() if m.get("phaseId") == tid]
         hs_secs = [s for s in sections_out.values() if s.get("phaseId") == tid]
         if hs_mods or hs_secs or tid in [g["phaseId"] for g in phase_gaps]:
-            data["byPhase"][tid] = {
+            entry = {
                 "phaseId": tid,
                 "phase": phase,
                 "phaseName": name,
@@ -435,6 +540,14 @@ def build_mapping():
                 "hsSections": hs_secs,
                 "gap": next((g for g in phase_gaps if g["phaseId"] == tid), None),
             }
+            if tid in CONSOLIDATION_MAP:
+                entry["consolidation"] = CONSOLIDATION_MAP[tid]
+            composite = COMPOSITE_MAP.get(tid)
+            if composite:
+                entry["composite"] = {
+                    k: v for k, v in composite.items() if k not in ("hasHsPartial",)
+                }
+            data["byPhase"][tid] = entry
 
     return data
 
