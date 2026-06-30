@@ -70,11 +70,25 @@ PHASE3_COMPONENTS = [
         "id": "task-special-hero-introduction",
         "label": "Special hero introduction",
         "pillClass": "pg-comp-special-hero",
-        "detection": "module_special-heading; module_special-intro; module_feature-introduction",
+        "detection": "Product launch pages — module_special-heading only. New build component; no HubSpot module.",
+        "url_paths": ["/product-launch"],
+        "patterns": [(r"module_special-heading", "module_special-heading")],
+    },
+    {
+        "key": "centeredtext",
+        "id": "task-centeredtext",
+        "label": "Special text block",
+        "pillClass": "pg-comp-centeredtext",
+        "detection": "Product launch dated pages — Heading composition (centre-aligned); no HubSpot module",
+        "url_paths": [
+            "/product-launch/november-2025",
+            "/product-launch/may-2026",
+        ],
         "patterns": [
-            (r"module_special-heading", "module_special-heading"),
-            (r"module_special-intro", "module_special-intro"),
-            (r"module_feature-introduction", "module_feature-introduction"),
+            (
+                r'<section class="heading-composition[^"]*custom-text-wrapper',
+                "Heading composition (centre-aligned)",
+            ),
         ],
     },
     {
@@ -110,6 +124,18 @@ PHASE3_COMPONENTS = [
         "patterns": [(r"module_icons-list", "module_icons-list")],
     },
     {
+        "key": "image-icon-grid-list",
+        "id": "task-image-icon-grid-list",
+        "label": "Image with icon grid list",
+        "pillClass": "pg-comp-image-icon-grid-list",
+        "detection": "Module: Results List — results-list.module / module_results-list CSS",
+        "patterns": [
+            (r"module_results-list", "module_results-list"),
+            (r"139494732206", "Results List module_id"),
+            (r"results-list-title", "Results List item title"),
+        ],
+    },
+    {
         "key": "cards",
         "id": "task-cards",
         "label": "Cards",
@@ -142,8 +168,26 @@ PHASE3_COMPONENTS = [
         "id": "task-video-hero-section",
         "label": "Video hero section",
         "pillClass": "pg-comp-video-hero",
-        "detection": "module_media-frame CSS (hero video/image frame)",
-        "patterns": [(r"module_media-frame", "module_media-frame")],
+        "detection": "Video Hero module (video-hero DOM) or Media Frame module (module_media-frame CSS)",
+        "patterns": [
+            (r"module_video-hero", "Video Hero module CSS"),
+            (r'class="video-hero"', "Video Hero section"),
+            (r"video-hero__heading", "Video Hero heading"),
+            (r"module_media-frame", "Media Frame module"),
+        ],
+    },
+    {
+        "key": "use-case",
+        "id": "task-use-case-section",
+        "label": "Use case section",
+        "pillClass": "pg-comp-use-case",
+        "detection": "Case Study module — long-form segments + results sidebar (case-study__rail / case-study__segments)",
+        "patterns": [
+            (r"case-study__rail", "Use case results sidebar rail"),
+            (r"case-study__segments", "Use case story segments"),
+            (r"case-study__result", "The results sidebar aside"),
+            (r"module_case-study\.min\.css", "Case Study module CSS"),
+        ],
     },
     {
         "key": "pricing-widget",
@@ -270,16 +314,31 @@ EXTRA_COMPONENTS = [
         ],
     },
     {
+        "key": "features-widget",
+        "id": "task-features-widget",
+        "label": "Features widget",
+        "pillClass": "pg-comp-features-widget",
+        "detection": "Features Selector (Global) — industry-selector-widget DOM with “Explore all of ROLLER's features” heading",
+        "patterns": [
+            (r"Explore all of ROLLER's features", "Features Selector (Global) heading"),
+            (
+                r"DESIGNED TO GROW WITH YOUR BUSINESS[\s\S]{0,400}Explore all of ROLLER's features",
+                "Features Selector (Global) panel",
+            ),
+        ],
+    },
+    {
         "key": "industries-widget",
         "id": "task-industries-widget",
         "label": "Industries widget",
         "pillClass": "pg-comp-industries-widget",
-        "detection": "Industry Selector widget (industry-selector-widget_ / industry-selector DOM)",
+        "detection": "Industry Selector (Global) — industry-selector-widget DOM with “TAILORED FOR YOUR INDUSTRY” eyebrow",
         "patterns": [
-            (r'industry-selector-widget_', "Industry Selector widget"),
-            (r'id="industry-selector-', "Industry Selector section"),
-            (r"module_industry-selector-global", "Industry Selector (Global)"),
-            (r"module_industry-selector\.min\.css", "Industry Selector module"),
+            (r"TAILORED FOR YOUR INDUSTRY", "Industry Selector (Global) eyebrow"),
+            (
+                r"TAILORED FOR YOUR INDUSTRY[\s\S]{0,400}Find the solution that works for your venue",
+                "Industry Selector (Global) panel",
+            ),
         ],
     },
 ]
@@ -289,10 +348,7 @@ ALL_COMPONENTS = PHASE3_COMPONENTS + EXTRA_COMPONENTS
 # Phase 3 tasks with no reliable live-site marker yet (still wired in UI)
 PHASE3_PLACEHOLDER = [
     ("twocol-text-heavy", "task-twocol-text-heavy", "Two-column · text-heavy", "pg-comp-twocol-text-heavy", "No unique HubSpot marker yet — variant of Two-column"),
-    ("centeredtext", "task-centeredtext", "Centered text block", "pg-comp-centeredtext", "No unique HubSpot marker yet"),
-    ("image-icon-grid-list", "task-image-icon-grid-list", "Image with icon grid list", "pg-comp-image-icon-grid-list", "No unique HubSpot marker yet"),
     ("introduction-summary", "task-introduction-summary", "Introduction summary", "pg-comp-introduction-summary", "No unique HubSpot marker yet"),
-    ("use-case", "task-use-case-section", "Use case section", "pg-comp-use-case", "Not used on audited live pages — results-list marker was a false positive"),
     ("form-section", "task-form-section", "Form section", "pg-comp-form-section", "Uses shared custom-form module site-wide"),
     ("cta", "task-cta", "CTA section", "pg-comp-cta", "Uses shared conversion modules site-wide"),
     ("industry-vertical", "task-industry-vertical", "Industry vertical section", "pg-comp-industry-vertical", "No unique HubSpot marker yet"),
@@ -347,6 +403,8 @@ def category(url: str) -> str:
         return "Legal Pages"
     if path.startswith("/about") or path.startswith("/get-started") or path.startswith("/demo"):
         return "Single Pages"
+    if path.startswith("/customers"):
+        return "Customer Stories"
     if path.startswith("/blog"):
         return "Other"
     if path.startswith("/contact"):
@@ -390,15 +448,21 @@ def detect_component(comp: dict, url: str, body: str) -> str | None:
     if comp.get("exclude_url_paths") and path_match(url, comp["exclude_url_paths"]):
         return None
 
+    url_paths = comp.get("url_paths")
+    patterns = comp.get("patterns", [])
+    path_ok = path_match(url, url_paths) if url_paths else True
+
     marker = None
 
-    if comp.get("url_paths") and path_match(url, comp["url_paths"]):
-        marker = comp["url_paths"][0] + " path"
-
-    for pattern, label in comp.get("patterns", []):
-        if re.search(pattern, body):
-            marker = label
-            break
+    if patterns:
+        if url_paths and not path_ok:
+            return None
+        for pattern, label in patterns:
+            if re.search(pattern, body):
+                marker = label
+                break
+    elif url_paths and path_ok:
+        marker = url_paths[0] + " path"
 
     if comp.get("extra") == "pricing_faq" and pricing_faq(body):
         marker = "pricing FAQ accordion"

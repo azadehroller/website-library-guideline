@@ -218,13 +218,25 @@ def audit_page(body: str) -> dict:
         )
 
     # Standalone widgets (not already captured as module instances)
-    seen_widgets: set[str] = set()
+    widget_names: dict[str, set[str]] = {}
     for m in re.finditer(r"([\w-]+)-widget_(\d+)", body):
         wid = m.group(2)
-        if wid in seen_widgets or wid in instance_ids:
+        name = m.group(1)
+        if name in WIDGET_NAME_SKIP or wid in instance_ids:
+            continue
+        widget_names.setdefault(wid, set()).add(name)
+
+    seen_widgets: set[str] = set()
+    for wid, names in widget_names.items():
+        if wid in seen_widgets:
             continue
         seen_widgets.add(wid)
-        name = m.group(1)
+        if "industry-selector" in names:
+            name = "industry-selector"
+        elif "features-selector" in names:
+            name = "features-selector"
+        else:
+            name = max(names, key=lambda n: (WIDGET_NAME_PRIORITY.get(n, 0), n))
         dom_id = f"{name}-widget_{wid}"
         wrapper_widget = f"hs_cos_wrapper_widget_{wid}"
         modules.append(
@@ -283,10 +295,37 @@ SLUG_ALIASES = {
     "faqs": "FAQs",
     "module-banner": "announcement",
     "logo-set": "logo-set-global",
-    "industry-selector": "industry-selector-features-global",
     "testimonial-carousel": "testimonial-slider",
     "features-card": "features-card",
     "card-pricing": "features-pricing-card",
+}
+
+SELECTOR_WIDGET_MARKERS = {
+    "features-selector-global": r"Explore all of ROLLER's features",
+    "industry-selector-global": r"TAILORED FOR YOUR INDUSTRY",
+}
+
+SELECTOR_INSTANCE_NOISE = frozenset(
+    {
+        "dropdown-wrapper",
+        "industrySelectorBTN",
+        "js-ind-dropdown",
+        "js-industryItemContainer",
+    }
+)
+
+WIDGET_NAME_SKIP = frozenset(
+    SELECTOR_INSTANCE_NOISE
+    | {
+        "js-rp-prices",
+        "js-back-to-top",
+        "unknown",
+    }
+)
+
+WIDGET_NAME_PRIORITY = {
+    "industry-selector": 100,
+    "features-selector": 100,
 }
 
 WIDGET_TYPE_LABELS = {
@@ -326,6 +365,13 @@ def lookup_module(catalog: dict, slug: str | None) -> dict | None:
     return lower.get(slug.lower())
 
 
+def resolve_selector_widget_slug(body: str, default: str = "industry-selector-global") -> str:
+    for slug, pattern in SELECTOR_WIDGET_MARKERS.items():
+        if re.search(pattern, body):
+            return slug
+    return default
+
+
 def lookup_section(catalog: dict, class_string: str) -> dict | None:
     sections = catalog["sections"]
     if class_string in sections:
@@ -336,7 +382,7 @@ def lookup_section(catalog: dict, class_string: str) -> dict | None:
     return None
 
 
-def resolve_page_catalog(page: dict, catalog: dict) -> dict:
+def resolve_page_catalog(page: dict, catalog: dict, body: str = "") -> dict:
     """Map raw detections to HubSpot theme library names; dedupe repetitions."""
     theme_modules: dict[str, dict] = {}
     theme_sections: dict[str, dict] = {}
@@ -408,6 +454,8 @@ def resolve_page_catalog(page: dict, catalog: dict) -> dict:
         if wrapper_id and not entry.get("wrapperId"):
             entry["wrapperId"] = wrapper_id
 
+    noise_types = {"button", "js-rp-prices", "js-back-to-top", "unknown"}
+
     for item in page.get("modules", []):
         kind = item.get("kind")
         scope = item.get("scope", "content")
@@ -417,8 +465,23 @@ def resolve_page_catalog(page: dict, catalog: dict) -> dict:
 
         elif kind == "instance":
             types = item.get("types") or []
-            if types:
+            selector_types = {"industry-selector", "features-selector"} & set(types)
+            if selector_types:
+                slug = (
+                    "features-selector-global"
+                    if "features-selector" in selector_types
+                    else resolve_selector_widget_slug(body)
+                )
+                bump_theme(
+                    slug,
+                    f"instance {item['instanceId']}",
+                    scope,
+                    item["instanceId"],
+                )
+            elif types:
                 for t in types:
+                    if t in noise_types or t in SELECTOR_INSTANCE_NOISE:
+                        continue
                     bump_theme(t, f"instance {item['instanceId']}", scope, item["instanceId"])
             else:
                 cls = item.get("classes", "")
@@ -452,16 +515,24 @@ def resolve_page_catalog(page: dict, catalog: dict) -> dict:
 
         elif kind == "widget":
             name = item.get("name", "")
-            rec = lookup_module(catalog, name)
-            if rec:
-                bump_theme(name, f"widget {item.get('widgetId')}", scope, item.get("widgetId"))
-            else:
-                bump_platform(
-                    f"Widget · {name}",
-                    f"widget {item.get('widgetId')}",
-                    item.get("wrapperId"),
-                    name,
+            if name in ("industry-selector", "features-selector"):
+                slug = (
+                    "features-selector-global"
+                    if name == "features-selector"
+                    else resolve_selector_widget_slug(body)
                 )
+                bump_theme(slug, f"widget {item.get('widgetId')}", scope, item.get("widgetId"))
+            else:
+                rec = lookup_module(catalog, name)
+                if rec:
+                    bump_theme(name, f"widget {item.get('widgetId')}", scope, item.get("widgetId"))
+                else:
+                    bump_platform(
+                        f"Widget · {name}",
+                        f"widget {item.get('widgetId')}",
+                        item.get("wrapperId"),
+                        name,
+                    )
 
         elif kind == "hubspot-widget":
             wtype = item.get("widgetType")
@@ -538,7 +609,7 @@ def main():
             continue
         audit = audit_page(body)
         page_data = {"url": key, "title": title, **audit}
-        page_data["catalog"] = resolve_page_catalog(page_data, catalog)
+        page_data["catalog"] = resolve_page_catalog(page_data, catalog, body)
         pages[key] = page_data
 
     data = {

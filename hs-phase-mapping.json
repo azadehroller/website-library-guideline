@@ -4,10 +4,10 @@
   "stats": {
     "hsModules": 133,
     "hsSections": 40,
-    "mappedModules": 76,
-    "unmappedModules": 57,
-    "mappedSections": 29,
-    "unmappedSections": 11,
+    "mappedModules": 70,
+    "unmappedModules": 63,
+    "mappedSections": 24,
+    "unmappedSections": 16,
     "phaseTasks": 49,
     "phaseWithHsMatch": 41,
     "phaseWithoutHsMatch": 8
@@ -30,12 +30,12 @@
       "hsLabel": "Animated Hero",
       "hsFolder": "animated-hero.module",
       "hsModuleId": "200985075814",
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Animated Hero \u2014 hero introduction with motion.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "animation-lottie": {
       "hsSlug": "animation-lottie",
@@ -138,11 +138,11 @@
       "hsLabel": "Case Study",
       "hsFolder": "case-study.module",
       "hsModuleId": "212337905703",
-      "phaseId": "task-introduction-summary",
-      "phaseName": "Introduction summary",
+      "phaseId": "task-use-case-section",
+      "phaseName": "Use case section",
       "phase": 3,
       "confidence": "high",
-      "reason": "Case Study module (article.case-study intro block).",
+      "reason": "Case Study module \u2014 long-form use-case segments + results sidebar.",
       "status": "mapped"
     },
     "confetti-section": {
@@ -222,12 +222,12 @@
       "hsLabel": "Feature Introduction",
       "hsFolder": "feature-introduction.module",
       "hsModuleId": "197851141745",
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Feature Introduction \u2014 hero intro variant.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "features-unfold": {
       "hsSlug": "features-unfold",
@@ -318,12 +318,12 @@
       "hsLabel": "Hero Full Introduction",
       "hsFolder": "hero-full-introduction.module",
       "hsModuleId": "213288092966",
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "high",
-      "reason": "Hero Full Introduction (section.hero-full-introduction).",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "icon-cards": {
       "hsSlug": "icon-cards",
@@ -366,12 +366,12 @@
       "hsLabel": "Interactive Hero",
       "hsFolder": "interactive-hero.module",
       "hsModuleId": "211211194424",
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Interactive Hero \u2014 hero intro section.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "interactive-summary": {
       "hsSlug": "interactive-summary",
@@ -918,11 +918,11 @@
       "hsLabel": "Module: Results List",
       "hsFolder": "results-list.module",
       "hsModuleId": "139494732206",
-      "phaseId": "task-use-case-section",
-      "phaseName": "Use case section",
+      "phaseId": "task-image-icon-grid-list",
+      "phaseName": "Image with icon grid list",
       "phase": 3,
       "confidence": "high",
-      "reason": "Results List \u2014 case-study results sidebar metrics.",
+      "reason": "Results List \u2014 icon grid with side image (Module: Results List).",
       "status": "mapped"
     },
     "roi-calculator": {
@@ -1410,24 +1410,24 @@
       "hsLabel": "Special Heading",
       "hsFolder": "special-heading.module",
       "hsModuleId": "197675131804",
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Special Heading \u2014 display hero heading.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "special-intro": {
       "hsSlug": "special-intro",
       "hsLabel": "Special Intro",
       "hsFolder": "special-intro.module",
       "hsModuleId": "206359166091",
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Special Intro \u2014 hero introduction copy.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
+      "status": "not-in-build-plan"
     },
     "special-metric": {
       "hsSlug": "special-metric",
@@ -1619,11 +1619,11 @@
         "heading-composition",
         "results-list"
       ],
-      "phaseId": "task-use-case-section",
-      "phaseName": "Use case section",
+      "phaseId": "task-image-icon-grid-list",
+      "phaseName": "Image with icon grid list",
       "phase": 3,
-      "confidence": "low",
-      "reason": "4 Bullets + results \u2014 partial use-case layout.",
+      "confidence": "medium",
+      "reason": "4 Bullets Content \u2014 pre-composed heading + Results List section.",
       "status": "mapped"
     },
     "s-aurora-background": {
@@ -1817,12 +1817,12 @@
         "button",
         "@hubspot/text"
       ],
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Hero Partner \u2014 partner page hero.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "Pulse/report/campaign section \u2014 not in current Build plan phases.",
+      "status": "not-in-build-plan"
     },
     "s-hero-product-explainer": {
       "hsSlug": "s-hero-product-explainer",
@@ -1833,12 +1833,12 @@
         "button-stack",
         "@hubspot/linked_image"
       ],
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Hero Product Explainer \u2014 product hero intro.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "Pulse/report/campaign section \u2014 not in current Build plan phases.",
+      "status": "not-in-build-plan"
     },
     "s-hero-product-tour": {
       "hsSlug": "s-hero-product-tour",
@@ -1849,12 +1849,12 @@
         "button-stack",
         "@hubspot/linked_image"
       ],
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Hero Product Tour \u2014 product tour hero.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "Pulse/report/campaign section \u2014 not in current Build plan phases.",
+      "status": "not-in-build-plan"
     },
     "s-hero": {
       "hsSlug": "s-hero",
@@ -1865,12 +1865,12 @@
         "features-card",
         "button"
       ],
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "high",
-      "reason": "Hero section \u2014 display hero introduction.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "Pulse/report/campaign section \u2014 not in current Build plan phases.",
+      "status": "not-in-build-plan"
     },
     "s-industry-rating": {
       "hsSlug": "s-industry-rating",
@@ -2015,12 +2015,12 @@
       "containsModules": [
         "heading-composition"
       ],
-      "phaseId": "task-special-hero-introduction",
-      "phaseName": "Special hero introduction",
-      "phase": 3,
-      "confidence": "medium",
-      "reason": "Page header hero variant.",
-      "status": "mapped"
+      "phaseId": null,
+      "phaseName": null,
+      "phase": null,
+      "confidence": null,
+      "reason": "Pulse/report/campaign section \u2014 not in current Build plan phases.",
+      "status": "not-in-build-plan"
     },
     "s-pain-points": {
       "hsSlug": "s-pain-points",
@@ -2260,40 +2260,30 @@
     {
       "phaseId": "task-centeredtext",
       "phase": 3,
-      "phaseName": "Centered text block",
-      "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module.",
+      "phaseName": "Special text block",
+      "note": "Composite section \u2014 Heading composition via Text block with centre alignment. No HubSpot module; product launch dated pages only.",
       "relatedHs": [],
       "composite": true,
       "components": [
         {
           "phaseId": "task-text",
           "name": "Text block",
-          "role": "Heading composition, centre-aligned"
+          "role": "Heading composition (centre-aligned)"
         }
       ]
     },
     {
-      "phaseId": "task-image-icon-grid-list",
+      "phaseId": "task-special-hero-introduction",
       "phase": 3,
-      "phaseName": "Image with icon grid list",
-      "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module.",
+      "phaseName": "Special hero introduction",
+      "note": "New build component for product launch hero introductions. No HubSpot module.",
       "relatedHs": [],
       "composite": true,
       "components": [
         {
           "phaseId": "task-text",
           "name": "Text block",
-          "role": "Section heading"
-        },
-        {
-          "phaseId": "task-icon-list-grid",
-          "name": "Icon list grid",
-          "role": "Icon tile grid"
-        },
-        {
-          "phaseId": "task-image",
-          "name": "Image",
-          "role": "Side image"
+          "role": "Heading model only (display-scale heading, optional eyebrow \u2014 no body)"
         }
       ]
     },
@@ -2393,30 +2383,20 @@
         {
           "phaseId": "task-text",
           "name": "Text block",
-          "role": "Heading composition, centre-aligned"
+          "role": "Heading composition (centre-aligned)"
         }
       ],
-      "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module."
+      "note": "Composite section \u2014 Heading composition via Text block with centre alignment. No HubSpot module; product launch dated pages only."
     },
-    "task-image-icon-grid-list": {
+    "task-special-hero-introduction": {
       "components": [
         {
           "phaseId": "task-text",
           "name": "Text block",
-          "role": "Section heading"
-        },
-        {
-          "phaseId": "task-icon-list-grid",
-          "name": "Icon list grid",
-          "role": "Icon tile grid"
-        },
-        {
-          "phaseId": "task-image",
-          "name": "Image",
-          "role": "Side image"
+          "role": "Heading model only (display-scale heading, optional eyebrow \u2014 no body)"
         }
       ],
-      "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module."
+      "note": "New build component for product launch hero introductions. No HubSpot module."
     },
     "task-dual-quote": {
       "components": [
@@ -2819,21 +2799,21 @@
     "task-centeredtext": {
       "phaseId": "task-centeredtext",
       "phase": 3,
-      "phaseName": "Centered text block",
+      "phaseName": "Special text block",
       "hsModules": [],
       "hsSections": [],
       "gap": {
         "phaseId": "task-centeredtext",
         "phase": 3,
-        "phaseName": "Centered text block",
-        "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module.",
+        "phaseName": "Special text block",
+        "note": "Composite section \u2014 Heading composition via Text block with centre alignment. No HubSpot module; product launch dated pages only.",
         "relatedHs": [],
         "composite": true,
         "components": [
           {
             "phaseId": "task-text",
             "name": "Text block",
-            "role": "Heading composition, centre-aligned"
+            "role": "Heading composition (centre-aligned)"
           }
         ]
       },
@@ -2842,10 +2822,10 @@
           {
             "phaseId": "task-text",
             "name": "Text block",
-            "role": "Heading composition, centre-aligned"
+            "role": "Heading composition (centre-aligned)"
           }
         ],
-        "note": "Centred text section \u2014 Heading composition with centre alignment; no dedicated HubSpot module."
+        "note": "Composite section \u2014 Heading composition via Text block with centre alignment. No HubSpot module; product launch dated pages only."
       }
     },
     "task-dual-quote": {
@@ -2900,161 +2880,33 @@
       "phaseId": "task-special-hero-introduction",
       "phase": 3,
       "phaseName": "Special hero introduction",
-      "hsModules": [
-        {
-          "hsSlug": "animated-hero",
-          "hsLabel": "Animated Hero",
-          "hsFolder": "animated-hero.module",
-          "hsModuleId": "200985075814",
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Animated Hero \u2014 hero introduction with motion.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "feature-introduction",
-          "hsLabel": "Feature Introduction",
-          "hsFolder": "feature-introduction.module",
-          "hsModuleId": "197851141745",
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Feature Introduction \u2014 hero intro variant.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "hero-full-introduction",
-          "hsLabel": "Hero Full Introduction",
-          "hsFolder": "hero-full-introduction.module",
-          "hsModuleId": "213288092966",
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "high",
-          "reason": "Hero Full Introduction (section.hero-full-introduction).",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "interactive-hero",
-          "hsLabel": "Interactive Hero",
-          "hsFolder": "interactive-hero.module",
-          "hsModuleId": "211211194424",
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Interactive Hero \u2014 hero intro section.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "special-heading",
-          "hsLabel": "Special Heading",
-          "hsFolder": "special-heading.module",
-          "hsModuleId": "197675131804",
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Special Heading \u2014 display hero heading.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "special-intro",
-          "hsLabel": "Special Intro",
-          "hsFolder": "special-intro.module",
-          "hsModuleId": "206359166091",
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Special Intro \u2014 hero introduction copy.",
-          "status": "mapped"
-        }
-      ],
-      "hsSections": [
-        {
-          "hsSlug": "s-hero-partner",
-          "hsLabel": "Hero Partner",
-          "hsFile": "s-hero-partner.html",
-          "containsModules": [
-            "heading-composition",
-            "button",
-            "@hubspot/text"
-          ],
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Hero Partner \u2014 partner page hero.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "s-hero-product-explainer",
-          "hsLabel": "Hero Product Explainer",
-          "hsFile": "s-hero-product-explainer.html",
-          "containsModules": [
-            "heading-composition",
-            "button-stack",
-            "@hubspot/linked_image"
-          ],
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Hero Product Explainer \u2014 product hero intro.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "s-hero-product-tour",
-          "hsLabel": "Hero Product Tour",
-          "hsFile": "s-hero-product-tour.html",
-          "containsModules": [
-            "heading-composition",
-            "button-stack",
-            "@hubspot/linked_image"
-          ],
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Hero Product Tour \u2014 product tour hero.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "s-hero",
-          "hsLabel": "Hero",
-          "hsFile": "s-hero.html",
-          "containsModules": [
-            "heading-composition",
-            "features-card",
-            "button"
-          ],
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "high",
-          "reason": "Hero section \u2014 display hero introduction.",
-          "status": "mapped"
-        },
-        {
-          "hsSlug": "s-page-header",
-          "hsLabel": "Hero",
-          "hsFile": "s-page-header.html",
-          "containsModules": [
-            "heading-composition"
-          ],
-          "phaseId": "task-special-hero-introduction",
-          "phaseName": "Special hero introduction",
-          "phase": 3,
-          "confidence": "medium",
-          "reason": "Page header hero variant.",
-          "status": "mapped"
-        }
-      ],
-      "gap": null
+      "hsModules": [],
+      "hsSections": [],
+      "gap": {
+        "phaseId": "task-special-hero-introduction",
+        "phase": 3,
+        "phaseName": "Special hero introduction",
+        "note": "New build component for product launch hero introductions. No HubSpot module.",
+        "relatedHs": [],
+        "composite": true,
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading model only (display-scale heading, optional eyebrow \u2014 no body)"
+          }
+        ]
+      },
+      "composite": {
+        "components": [
+          {
+            "phaseId": "task-text",
+            "name": "Text block",
+            "role": "Heading model only (display-scale heading, optional eyebrow \u2014 no body)"
+          }
+        ],
+        "note": "New build component for product launch hero introductions. No HubSpot module."
+      }
     },
     "task-iconcards": {
       "phaseId": "task-iconcards",
@@ -3175,53 +3027,38 @@
       "phaseId": "task-image-icon-grid-list",
       "phase": 3,
       "phaseName": "Image with icon grid list",
-      "hsModules": [],
-      "hsSections": [],
-      "gap": {
-        "phaseId": "task-image-icon-grid-list",
-        "phase": 3,
-        "phaseName": "Image with icon grid list",
-        "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module.",
-        "relatedHs": [],
-        "composite": true,
-        "components": [
-          {
-            "phaseId": "task-text",
-            "name": "Text block",
-            "role": "Section heading"
-          },
-          {
-            "phaseId": "task-icon-list-grid",
-            "name": "Icon list grid",
-            "role": "Icon tile grid"
-          },
-          {
-            "phaseId": "task-image",
-            "name": "Image",
-            "role": "Side image"
-          }
-        ]
-      },
-      "composite": {
-        "components": [
-          {
-            "phaseId": "task-text",
-            "name": "Text block",
-            "role": "Section heading"
-          },
-          {
-            "phaseId": "task-icon-list-grid",
-            "name": "Icon list grid",
-            "role": "Icon tile grid"
-          },
-          {
-            "phaseId": "task-image",
-            "name": "Image",
-            "role": "Side image"
-          }
-        ],
-        "note": "Composite \u2014 Icon list grid + side image; no single HubSpot module."
-      }
+      "hsModules": [
+        {
+          "hsSlug": "results-list",
+          "hsLabel": "Module: Results List",
+          "hsFolder": "results-list.module",
+          "hsModuleId": "139494732206",
+          "phaseId": "task-image-icon-grid-list",
+          "phaseName": "Image with icon grid list",
+          "phase": 3,
+          "confidence": "high",
+          "reason": "Results List \u2014 icon grid with side image (Module: Results List).",
+          "status": "mapped"
+        }
+      ],
+      "hsSections": [
+        {
+          "hsSlug": "s-4-bullet-content",
+          "hsLabel": "4 Bullets Content",
+          "hsFile": "s-4-bullet-content.html",
+          "containsModules": [
+            "heading-composition",
+            "results-list"
+          ],
+          "phaseId": "task-image-icon-grid-list",
+          "phaseName": "Image with icon grid list",
+          "phase": 3,
+          "confidence": "medium",
+          "reason": "4 Bullets Content \u2014 pre-composed heading + Results List section.",
+          "status": "mapped"
+        }
+      ],
+      "gap": null
     },
     "task-services-section": {
       "phaseId": "task-services-section",
@@ -3319,18 +3156,6 @@
       "phaseName": "Introduction summary",
       "hsModules": [
         {
-          "hsSlug": "case-study",
-          "hsLabel": "Case Study",
-          "hsFolder": "case-study.module",
-          "hsModuleId": "212337905703",
-          "phaseId": "task-introduction-summary",
-          "phaseName": "Introduction summary",
-          "phase": 3,
-          "confidence": "high",
-          "reason": "Case Study module (article.case-study intro block).",
-          "status": "mapped"
-        },
-        {
           "hsSlug": "interactive-summary",
           "hsLabel": "Interactive Summary",
           "hsFolder": "interactive-summary.module",
@@ -3385,35 +3210,19 @@
       "phaseName": "Use case section",
       "hsModules": [
         {
-          "hsSlug": "results-list",
-          "hsLabel": "Module: Results List",
-          "hsFolder": "results-list.module",
-          "hsModuleId": "139494732206",
+          "hsSlug": "case-study",
+          "hsLabel": "Case Study",
+          "hsFolder": "case-study.module",
+          "hsModuleId": "212337905703",
           "phaseId": "task-use-case-section",
           "phaseName": "Use case section",
           "phase": 3,
           "confidence": "high",
-          "reason": "Results List \u2014 case-study results sidebar metrics.",
+          "reason": "Case Study module \u2014 long-form use-case segments + results sidebar.",
           "status": "mapped"
         }
       ],
-      "hsSections": [
-        {
-          "hsSlug": "s-4-bullet-content",
-          "hsLabel": "4 Bullets Content",
-          "hsFile": "s-4-bullet-content.html",
-          "containsModules": [
-            "heading-composition",
-            "results-list"
-          ],
-          "phaseId": "task-use-case-section",
-          "phaseName": "Use case section",
-          "phase": 3,
-          "confidence": "low",
-          "reason": "4 Bullets + results \u2014 partial use-case layout.",
-          "status": "mapped"
-        }
-      ],
+      "hsSections": [],
       "gap": null
     },
     "task-form-section": {

@@ -88,8 +88,12 @@ MODULE_MAP: dict[str, tuple[str, str, str]] = {
     "media-frame": ("task-video-hero-section", "high", "Media Frame — hero video/image frame module."),
     "video-hero": ("task-video-hero-section", "high", "Video Hero — full-bleed video hero."),
     "image-video-modal": ("task-video", "medium", "Image/video modal — Video primitive variant."),
-    "results-list": ("task-use-case-section", "high", "Results List — case-study results sidebar metrics."),
-    "case-study": ("task-introduction-summary", "high", "Case Study module (article.case-study intro block)."),
+    "results-list": (
+        "task-image-icon-grid-list",
+        "high",
+        "Results List — icon grid with side image (Module: Results List).",
+    ),
+    "case-study": ("task-use-case-section", "high", "Case Study module — long-form use-case segments + results sidebar."),
     "interactive-summary": (
         "task-introduction-summary",
         "medium",
@@ -97,14 +101,6 @@ MODULE_MAP: dict[str, tuple[str, str, str]] = {
     ),
     "service-detail": ("task-service-detail", "high", "Service Detail — professional services breakdown."),
     "service-list": ("task-services-section", "medium", "Service List — services overview columns."),
-    "hero-full-introduction": (
-        "task-special-hero-introduction",
-        "high",
-        "Hero Full Introduction (section.hero-full-introduction).",
-    ),
-    "special-heading": ("task-special-hero-introduction", "medium", "Special Heading — display hero heading."),
-    "special-intro": ("task-special-hero-introduction", "medium", "Special Intro — hero introduction copy."),
-    "feature-introduction": ("task-special-hero-introduction", "medium", "Feature Introduction — hero intro variant."),
     "quote": ("task-quote", "high", "Quote primitive — single testimonial block."),
     "quote-new": ("task-dual-quote", "medium", "New Quote — may render paired quotes; maps to Dual quote."),
     "button": ("task-button", "high", "Main Button module."),
@@ -129,8 +125,6 @@ MODULE_MAP: dict[str, tuple[str, str, str]] = {
         "Badges Set — review badge image loop; part of Boxed user reviews (with Heading composition).",
     ),
     "advanced-image": ("task-image", "high", "Advanced Image — Image primitive variant."),
-    "animated-hero": ("task-special-hero-introduction", "medium", "Animated Hero — hero introduction with motion."),
-    "interactive-hero": ("task-special-hero-introduction", "medium", "Interactive Hero — hero intro section."),
     "industry-selector": ("task-industries-widget", "high", "Industry Selector — Industries widget."),
     "industry-selector-global": (
         "task-industries-widget",
@@ -175,19 +169,6 @@ SECTION_MAP: dict[str, tuple[str, str, str]] = {
     ),
     "s-multi-row-content": ("task-twocol", "medium", "Multi-row content — stacked two-column rows."),
     "s-two-column": ("task-twocol", "high", "Two Column Section — explicit two-column section template."),
-    "s-hero": ("task-special-hero-introduction", "high", "Hero section — display hero introduction."),
-    "s-page-header": ("task-special-hero-introduction", "medium", "Page header hero variant."),
-    "s-hero-partner": ("task-special-hero-introduction", "medium", "Hero Partner — partner page hero."),
-    "s-hero-product-explainer": (
-        "task-special-hero-introduction",
-        "medium",
-        "Hero Product Explainer — product hero intro.",
-    ),
-    "s-hero-product-tour": (
-        "task-special-hero-introduction",
-        "medium",
-        "Hero Product Tour — product tour hero.",
-    ),
     "s-case-study": ("task-introduction-summary", "high", "Case Study section — customer story intro."),
     "s-event-premium-header": (
         "task-introduction-summary",
@@ -216,7 +197,11 @@ SECTION_MAP: dict[str, tuple[str, str, str]] = {
         "Industry Rating section — Heading composition + badge-set (+ side image in HS).",
     ),
     "s-industry-selector": ("task-industry-vertical", "high", "Industry Selector section."),
-    "s-4-bullet-content": ("task-use-case-section", "low", "4 Bullets + results — partial use-case layout."),
+    "s-4-bullet-content": (
+        "task-image-icon-grid-list",
+        "medium",
+        "4 Bullets Content — pre-composed heading + Results List section.",
+    ),
     "s-comparison": ("task-cards", "low", "Comparison section — card/table layout."),
     "s-integration-bar": ("task-twocol", "low", "Integration bar — two-column CTA + image."),
     "s-useful-links": ("task-categorylinks", "medium", "Useful Links — category link lists."),
@@ -236,7 +221,7 @@ PHASE_TASKS = [
     ("task-twocol-bigger", 3, "Two-column with bigger left"),
     ("task-twocol-text-heavy", 3, "Two-column — text-heavy"),
     ("task-flat-one-column", 3, "Flat one column"),
-    ("task-centeredtext", 3, "Centered text block"),
+    ("task-centeredtext", 3, "Special text block"),
     ("task-dual-quote", 3, "Dual quote"),
     ("task-special-hero-introduction", 3, "Special hero introduction"),
     ("task-iconcards", 3, "Icon cards"),
@@ -298,17 +283,15 @@ COMPOSITE_MAP: dict[str, dict] = {
     },
     "task-centeredtext": {
         "components": [
-            {"phaseId": "task-text", "name": "Text block", "role": "Heading composition, centre-aligned"},
+            {"phaseId": "task-text", "name": "Text block", "role": "Heading composition (centre-aligned)"},
         ],
-        "note": "Centred text section — Heading composition with centre alignment; no dedicated HubSpot module.",
+        "note": "Composite section — Heading composition via Text block with centre alignment. No HubSpot module; product launch dated pages only.",
     },
-    "task-image-icon-grid-list": {
+    "task-special-hero-introduction": {
         "components": [
-            {"phaseId": "task-text", "name": "Text block", "role": "Section heading"},
-            {"phaseId": "task-icon-list-grid", "name": "Icon list grid", "role": "Icon tile grid"},
-            {"phaseId": "task-image", "name": "Image", "role": "Side image"},
+            {"phaseId": "task-text", "name": "Text block", "role": "Heading model only (display-scale heading, optional eyebrow — no body)"},
         ],
-        "note": "Composite — Icon list grid + side image; no single HubSpot module.",
+        "note": "New build component for product launch hero introductions. No HubSpot module.",
     },
     "task-dual-quote": {
         "components": [

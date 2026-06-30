@@ -1,13 +1,13 @@
 {
   "version": 1,
   "audited": "2026-06",
-  "pageCount": 202,
+  "pageCount": 222,
   "modules": {
     "advanced-image": {
       "slug": "advanced-image",
       "label": "Advanced Image",
       "folder": "advanced-image.module",
-      "pageCount": 31,
+      "pageCount": 36,
       "used": true,
       "pages": [
         {
@@ -19,12 +19,8 @@
           "title": "2026 Benchmark Report"
         },
         {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
         },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
@@ -47,8 +43,16 @@
           "title": "FareHarbor"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/racefacer",
           "title": "RaceFacer"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
@@ -87,16 +91,24 @@
           "title": "Point of Sale"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
         },
         {
           "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
           "title": "Amusement &amp; Theme Parks"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/skating-rink-software",
@@ -131,8 +143,16 @@
           "title": "RFID"
         },
         {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/grow-your-business",
           "title": "Solutions SBM"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -196,7 +216,7 @@
       "slug": "button-stack",
       "label": "button-stack",
       "folder": "button-stack.module",
-      "pageCount": 150,
+      "pageCount": 165,
       "used": true,
       "pages": [
         {
@@ -206,6 +226,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -228,20 +252,20 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
+        },
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
         },
         {
           "url": "https://www.roller.software/analytics-ebook",
@@ -254,10 +278,6 @@
         {
           "url": "https://www.roller.software/blog",
           "title": "Blog"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -280,12 +300,20 @@
           "title": "Business Solutions"
         },
         {
+          "url": "https://www.roller.software/capital-terms-of-service",
+          "title": "Capital Terms of Service"
+        },
+        {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
         },
         {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
+        },
+        {
+          "url": "https://www.roller.software/company-facts",
+          "title": "Company Facts"
         },
         {
           "url": "https://www.roller.software/competitor/aluvii",
@@ -320,6 +348,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -340,6 +372,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -348,16 +384,16 @@
           "title": "Venue Sumo"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
         },
         {
-          "url": "https://www.roller.software/data-processing-agreement",
-          "title": "https://www.roller.software/data-processing-agreement/"
+          "url": "https://www.roller.software/customer-stories",
+          "title": "Customer Stories"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/demo",
@@ -444,6 +480,10 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
+        },
+        {
           "url": "https://www.roller.software/features/api-integrations",
           "title": "API Integrations"
         },
@@ -470,10 +510,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -564,16 +600,16 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/guest-experience-playbook",
           "title": "Guest Experience Playbook"
         },
         {
           "url": "https://www.roller.software/gx-show-ebook",
           "title": "GX Show eBook"
-        },
-        {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -616,12 +652,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -704,6 +748,10 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -724,12 +772,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -744,16 +792,16 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -766,6 +814,10 @@
         {
           "url": "https://www.roller.software/privacy-policy",
           "title": "Privacy Policy"
+        },
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
         },
         {
           "url": "https://www.roller.software/product-launch/may-2026",
@@ -784,6 +836,26 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/rpp-terms",
+          "title": "RPP Terms of Service"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -798,6 +870,14 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -813,9 +893,14 @@
       "slug": "case-study",
       "label": "Case Study",
       "folder": "case-study.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        }
+      ]
     },
     "confetti-section": {
       "slug": "confetti-section",
@@ -872,13 +957,9 @@
       "slug": "FAQs",
       "label": "FAQs section",
       "folder": "FAQs.module",
-      "pageCount": 76,
+      "pageCount": 77,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
         {
           "url": "https://www.roller.software/competitor/bookeo",
           "title": "Bookeo"
@@ -888,16 +969,20 @@
           "title": "Checkfront"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/racefacer",
           "title": "RaceFacer"
         },
         {
-          "url": "https://www.roller.software/competitor/tickettailor",
-          "title": "Ticket Tailor"
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
+          "url": "https://www.roller.software/competitor/tickettailor",
+          "title": "Ticket Tailor"
         },
         {
           "url": "https://www.roller.software/features",
@@ -906,6 +991,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -934,10 +1023,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -1056,6 +1141,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -1132,12 +1221,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -1150,10 +1239,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -1178,6 +1263,10 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -1268,7 +1357,7 @@
       "slug": "heading-composition",
       "label": "heading-composition",
       "folder": "heading-composition.module",
-      "pageCount": 144,
+      "pageCount": 155,
       "used": true,
       "pages": [
         {
@@ -1278,6 +1367,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -1300,6 +1393,14 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
+        },
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
@@ -1308,20 +1409,8 @@
           "title": "Values"
         },
         {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
           "url": "https://www.roller.software/analytics-ebook",
           "title": "Analytics eBook"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -1350,6 +1439,10 @@
         {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
+        },
+        {
+          "url": "https://www.roller.software/company-facts",
+          "title": "Company Facts"
         },
         {
           "url": "https://www.roller.software/competitor/aluvii",
@@ -1384,6 +1477,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -1404,6 +1501,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -1412,16 +1513,12 @@
           "title": "Venue Sumo"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
         },
         {
-          "url": "https://www.roller.software/data-processing-agreement",
-          "title": "https://www.roller.software/data-processing-agreement/"
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/demo",
@@ -1504,6 +1601,10 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
+        },
+        {
           "url": "https://www.roller.software/features/api-integrations",
           "title": "API Integrations"
         },
@@ -1530,10 +1631,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -1624,16 +1721,16 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/guest-experience-playbook",
           "title": "Guest Experience Playbook"
         },
         {
           "url": "https://www.roller.software/gx-show-ebook",
           "title": "GX Show eBook"
-        },
-        {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -1676,12 +1773,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -1756,6 +1861,10 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -1776,12 +1885,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -1796,16 +1905,16 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -1832,6 +1941,22 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -1846,6 +1971,14 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -1874,7 +2007,7 @@
       "slug": "image-video-modal",
       "label": "image-video-modal",
       "folder": "image-video-modal.module",
-      "pageCount": 9,
+      "pageCount": 10,
       "used": true,
       "pages": [
         {
@@ -1888,6 +2021,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/capital",
@@ -1932,17 +2069,27 @@
       "slug": "interactive-hero",
       "label": "Interactive Hero",
       "folder": "interactive-hero.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        }
+      ]
     },
     "interactive-summary": {
       "slug": "interactive-summary",
       "label": "Interactive Summary",
       "folder": "interactive-summary.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        }
+      ]
     },
     "interactive-svg": {
       "slug": "interactive-svg",
@@ -2006,17 +2153,9 @@
       "slug": "logo-set-global",
       "label": "logo-set-global",
       "folder": "logo-set-global.module",
-      "pageCount": 90,
+      "pageCount": 89,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
-        },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
@@ -2054,6 +2193,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -2074,6 +2217,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -2084,6 +2231,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -2112,10 +2263,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -2198,10 +2345,6 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
-        },
-        {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
         },
@@ -2248,6 +2391,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -2330,16 +2477,8 @@
           "title": "Intercard"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
           "url": "https://www.roller.software/partners/tanda",
           "title": "Tanda"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -2368,6 +2507,10 @@
         {
           "url": "https://www.roller.software/solutions/multi-venue",
           "title": "Segmentation Groups"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -2375,7 +2518,7 @@
       "slug": "button",
       "label": "Main Button",
       "folder": "button.module",
-      "pageCount": 109,
+      "pageCount": 113,
       "used": true,
       "pages": [
         {
@@ -2385,6 +2528,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -2399,24 +2546,16 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/business-solutions",
@@ -2459,6 +2598,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -2479,16 +2622,16 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
         {
           "url": "https://www.roller.software/competitor/venue-sumo",
           "title": "Venue Sumo"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/events/amusementexpo2025",
@@ -2549,10 +2692,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -2627,8 +2766,8 @@
           "title": "Get Started"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -2671,12 +2810,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -2739,6 +2886,10 @@
           "title": "Zoos &amp; Aquariums"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -2759,8 +2910,8 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -2773,10 +2924,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -2811,8 +2958,20 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -2820,12 +2979,16 @@
       "slug": "media-frame",
       "label": "Media Frame",
       "folder": "media-frame.module",
-      "pageCount": 7,
+      "pageCount": 8,
       "used": true,
       "pages": [
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/capital",
@@ -2886,7 +3049,7 @@
       "slug": "announcement",
       "label": "Module: Announcement",
       "folder": "announcement.module",
-      "pageCount": 150,
+      "pageCount": 165,
       "used": true,
       "pages": [
         {
@@ -2896,6 +3059,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -2918,20 +3085,20 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
+        },
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
         },
         {
           "url": "https://www.roller.software/analytics-ebook",
@@ -2944,10 +3111,6 @@
         {
           "url": "https://www.roller.software/blog",
           "title": "Blog"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -2970,12 +3133,20 @@
           "title": "Business Solutions"
         },
         {
+          "url": "https://www.roller.software/capital-terms-of-service",
+          "title": "Capital Terms of Service"
+        },
+        {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
         },
         {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
+        },
+        {
+          "url": "https://www.roller.software/company-facts",
+          "title": "Company Facts"
         },
         {
           "url": "https://www.roller.software/competitor/aluvii",
@@ -3010,6 +3181,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -3030,6 +3205,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -3038,16 +3217,16 @@
           "title": "Venue Sumo"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
         },
         {
-          "url": "https://www.roller.software/data-processing-agreement",
-          "title": "https://www.roller.software/data-processing-agreement/"
+          "url": "https://www.roller.software/customer-stories",
+          "title": "Customer Stories"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/demo",
@@ -3134,6 +3313,10 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
+        },
+        {
           "url": "https://www.roller.software/features/api-integrations",
           "title": "API Integrations"
         },
@@ -3160,10 +3343,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -3254,16 +3433,16 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/guest-experience-playbook",
           "title": "Guest Experience Playbook"
         },
         {
           "url": "https://www.roller.software/gx-show-ebook",
           "title": "GX Show eBook"
-        },
-        {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -3306,12 +3485,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -3394,6 +3581,10 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -3414,12 +3605,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -3434,16 +3625,16 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -3456,6 +3647,10 @@
         {
           "url": "https://www.roller.software/privacy-policy",
           "title": "Privacy Policy"
+        },
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
         },
         {
           "url": "https://www.roller.software/product-launch/may-2026",
@@ -3474,6 +3669,26 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/rpp-terms",
+          "title": "RPP Terms of Service"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -3488,6 +3703,14 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -3595,6 +3818,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -3633,10 +3860,6 @@
         {
           "url": "https://www.roller.software/industries/zoos-management-software",
           "title": "Zoos &amp; Aquariums"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         }
       ]
     },
@@ -3652,7 +3875,7 @@
       "slug": "custom-form",
       "label": "Module: Custom Form",
       "folder": "custom-form.module",
-      "pageCount": 2,
+      "pageCount": 4,
       "used": true,
       "pages": [
         {
@@ -3660,8 +3883,16 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         }
       ]
     },
@@ -3742,18 +3973,9 @@
       "slug": "features-by-month",
       "label": "Module: Features By Month",
       "folder": "features-by-month.module",
-      "pageCount": 2,
-      "used": true,
-      "pages": [
-        {
-          "url": "https://www.roller.software/2023-rollup",
-          "title": "2024 Year in Review"
-        },
-        {
-          "url": "https://www.roller.software/2024-rollup",
-          "title": "2025 Year in Review"
-        }
-      ]
+      "pageCount": 0,
+      "used": false,
+      "pages": []
     },
     "features-card": {
       "slug": "features-card",
@@ -3784,7 +4006,7 @@
       "slug": "features-detail",
       "label": "Module: Features Detail",
       "folder": "features-detail.module",
-      "pageCount": 2,
+      "pageCount": 4,
       "used": true,
       "pages": [
         {
@@ -3794,6 +4016,14 @@
         {
           "url": "https://www.roller.software/professional-services",
           "title": "Professional Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
         }
       ]
     },
@@ -3830,9 +4060,90 @@
       "slug": "features-selector-global",
       "label": "Module: Features Selector (Global)",
       "folder": "features-selector-global.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 20,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/industries/adventure-parks-software",
+          "title": "Adventure Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
+          "title": "Amusement &amp; Theme Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/axe-throwing-software",
+          "title": "Axe Throwing"
+        },
+        {
+          "url": "https://www.roller.software/industries/bowling-alley-management-software",
+          "title": "Bowling"
+        },
+        {
+          "url": "https://www.roller.software/industries/climbing-gyms-software",
+          "title": "Rock Climbing Gyms"
+        },
+        {
+          "url": "https://www.roller.software/industries/escape-room-software",
+          "title": "Escape Rooms"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software",
+          "title": "Family Entertainment Centers"
+        },
+        {
+          "url": "https://www.roller.software/industries/go-karting",
+          "title": "Go-Karting"
+        },
+        {
+          "url": "https://www.roller.software/industries/ice-skating",
+          "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
+          "url": "https://www.roller.software/industries/mini-golf",
+          "title": "Mini Golf"
+        },
+        {
+          "url": "https://www.roller.software/industries/museums-software",
+          "title": "Museums"
+        },
+        {
+          "url": "https://www.roller.software/industries/pickleball-software",
+          "title": "Pickleball"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software",
+          "title": "Playground / Softplay"
+        },
+        {
+          "url": "https://www.roller.software/industries/skating-rink-software",
+          "title": "Roller Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software",
+          "title": "Trampoline Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/visitor-attractions-software",
+          "title": "Visitor Attractions"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-and-aqua-parks-management-software",
+          "title": "Wake &amp; Aqua Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/water-parks-management-software",
+          "title": "Water Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/zoos-management-software",
+          "title": "Zoos &amp; Aquariums"
+        }
+      ]
     },
     "gx-pricing-card": {
       "slug": "gx-pricing-card",
@@ -3846,16 +4157,12 @@
       "slug": "icons-list",
       "label": "Module: Icons List",
       "folder": "icons-list.module",
-      "pageCount": 2,
+      "pageCount": 1,
       "used": true,
       "pages": [
         {
           "url": "https://www.roller.software/features/channel-management",
           "title": "Channel Management"
-        },
-        {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
         }
       ]
     },
@@ -3892,15 +4199,7 @@
       "slug": "industry-selector-global",
       "label": "Module: Industry Selector (Global)",
       "folder": "industry-selector-global.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
-    },
-    "industry-selector-features-global": {
-      "slug": "industry-selector-features-global",
-      "label": "Module: Industry Selector Features (Global)",
-      "folder": "industry-selector-features-global.module",
-      "pageCount": 8,
+      "pageCount": 32,
       "used": true,
       "pages": [
         {
@@ -3908,20 +4207,104 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/api-integrations",
+          "title": "API Integrations"
+        },
+        {
+          "url": "https://www.roller.software/features/capacity-management",
+          "title": "Capacity Management"
+        },
+        {
+          "url": "https://www.roller.software/features/cashless-wallets",
+          "title": "Cashless Wallets"
+        },
+        {
           "url": "https://www.roller.software/features/channel-management",
           "title": "Channel Management"
+        },
+        {
+          "url": "https://www.roller.software/features/crm-experience",
+          "title": "CRM Experience"
         },
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
         },
         {
+          "url": "https://www.roller.software/features/giftcard",
+          "title": "Gift Cards"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-tabs",
+          "title": "Guest Tabs"
+        },
+        {
+          "url": "https://www.roller.software/features/membership-management-software",
+          "title": "Membership Management"
+        },
+        {
           "url": "https://www.roller.software/features/mobile-check-in",
           "title": "Mobile Check-in App"
         },
         {
+          "url": "https://www.roller.software/features/mobile-food-and-beverage-ordering",
+          "title": "Mobile Food &amp; Beverage"
+        },
+        {
+          "url": "https://www.roller.software/features/multi-venue-management",
+          "title": "Multi-Venue Management"
+        },
+        {
+          "url": "https://www.roller.software/features/online-ticket-system",
+          "title": "Online Ticketing System"
+        },
+        {
+          "url": "https://www.roller.software/features/packages",
+          "title": "Packages"
+        },
+        {
+          "url": "https://www.roller.software/features/party-booking-software",
+          "title": "Party Booking Software"
+        },
+        {
+          "url": "https://www.roller.software/features/payment-processing-software",
+          "title": "ROLLER Payments"
+        },
+        {
+          "url": "https://www.roller.software/features/point-of-sale-reports",
+          "title": "POS Reports"
+        },
+        {
           "url": "https://www.roller.software/features/pos",
           "title": "Point of Sale"
+        },
+        {
+          "url": "https://www.roller.software/features/pricing-strategy",
+          "title": "Pricing Strategy"
+        },
+        {
+          "url": "https://www.roller.software/features/printer-management",
+          "title": "Printer Management"
+        },
+        {
+          "url": "https://www.roller.software/features/self-service-ticketing-kiosk",
+          "title": "Self-Serve Kiosks"
+        },
+        {
+          "url": "https://www.roller.software/features/staff-permissions",
+          "title": "Staff Permissions"
+        },
+        {
+          "url": "https://www.roller.software/features/stock-and-inventory-control",
+          "title": "Stock &amp; Inventory Control"
+        },
+        {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
+          "url": "https://www.roller.software/industries",
+          "title": "Industries"
         },
         {
           "url": "https://www.roller.software/partners/alvarado",
@@ -3932,10 +4315,30 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/solutions/enterprise",
+          "title": "Enterprise"
+        },
+        {
+          "url": "https://www.roller.software/solutions/grow-your-business",
+          "title": "Solutions SBM"
+        },
+        {
+          "url": "https://www.roller.software/solutions/multi-venue",
+          "title": "Segmentation Groups"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
+    },
+    "industry-selector-features-global": {
+      "slug": "industry-selector-features-global",
+      "label": "Module: Industry Selector Features (Global)",
+      "folder": "industry-selector-features-global.module",
+      "pageCount": 0,
+      "used": false,
+      "pages": []
     },
     "logo": {
       "slug": "logo",
@@ -3989,7 +4392,7 @@
       "slug": "results-list",
       "label": "Module: Results List",
       "folder": "results-list.module",
-      "pageCount": 47,
+      "pageCount": 49,
       "used": true,
       "pages": [
         {
@@ -4025,6 +4428,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -4045,12 +4452,20 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
         {
           "url": "https://www.roller.software/competitor/venue-sumo",
           "title": "Venue Sumo"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/features/channel-management",
@@ -4099,6 +4514,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -4151,14 +4570,6 @@
         {
           "url": "https://www.roller.software/industries/zoos-management-software",
           "title": "Zoos &amp; Aquariums"
-        },
-        {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -4234,7 +4645,7 @@
       "slug": "stats-set",
       "label": "Module: Stats Set",
       "folder": "stats-set.module",
-      "pageCount": 12,
+      "pageCount": 10,
       "used": true,
       "pages": [
         {
@@ -4250,16 +4661,8 @@
           "title": "2026 Year in Review"
         },
         {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/get-started",
@@ -4291,9 +4694,17 @@
       "slug": "stats-set-stacked",
       "label": "Module: Stats Set Stacked",
       "folder": "stats-set-stacked.module",
-      "pageCount": 5,
+      "pageCount": 7,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        },
+        {
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
+        },
         {
           "url": "https://www.roller.software/partners/service",
           "title": "Service Partners"
@@ -4428,9 +4839,18 @@
       "slug": "product-launch-card",
       "label": "Product Launch Card",
       "folder": "product-launch-card.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 2,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital"
+        },
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
+        }
+      ]
     },
     "pulse-arc-chart": {
       "slug": "pulse-arc-chart",
@@ -4548,13 +4968,9 @@
       "slug": "quote",
       "label": "Quote",
       "folder": "quote.module",
-      "pageCount": 44,
+      "pageCount": 43,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
@@ -4570,10 +4986,6 @@
         {
           "url": "https://www.roller.software/competitor/rock-gym-pro",
           "title": "Rock Gym Pro"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/features/ai-assistant",
@@ -4668,6 +5080,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -4712,8 +5128,8 @@
           "title": "Zoos &amp; Aquariums"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
         },
         {
           "url": "https://www.roller.software/solutions/enterprise",
@@ -4778,9 +5194,13 @@
       "slug": "special-heading",
       "label": "Special Heading",
       "folder": "special-heading.module",
-      "pageCount": 2,
+      "pageCount": 3,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
+        },
         {
           "url": "https://www.roller.software/product-launch/may-2026",
           "title": "Product Launch May 2026"
@@ -4821,17 +5241,9 @@
       "slug": "features-stacked-content",
       "label": "Stacked Content Block",
       "folder": "features-stacked-content.module",
-      "pageCount": 87,
+      "pageCount": 86,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
-        },
         {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
@@ -4873,6 +5285,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -4893,6 +5309,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -4903,6 +5323,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -4931,10 +5355,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -5017,10 +5437,6 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
-        },
-        {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
         },
@@ -5067,6 +5483,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -5145,16 +5565,8 @@
           "title": "Intercard"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
           "url": "https://www.roller.software/partners/tanda",
           "title": "Tanda"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -5171,6 +5583,10 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -5199,7 +5615,7 @@
       "slug": "testimonial-slider",
       "label": "Testimonial slider",
       "folder": "testimonial-slider.module",
-      "pageCount": 12,
+      "pageCount": 11,
       "used": true,
       "pages": [
         {
@@ -5215,16 +5631,8 @@
           "title": "2026 Year in Review"
         },
         {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/events/aip2024-0",
@@ -5243,6 +5651,10 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/pricing",
           "title": "Pricing"
         },
@@ -5256,9 +5668,14 @@
       "slug": "testimonial-slider-alt",
       "label": "Testimonial slider Alternate",
       "folder": "testimonial-slider-alt.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        }
+      ]
     },
     "text-banner": {
       "slug": "text-banner",
@@ -5288,9 +5705,14 @@
       "slug": "video-hero",
       "label": "Video Hero",
       "folder": "video-hero.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        }
+      ]
     },
     "widget-user-review": {
       "slug": "widget-user-review",
@@ -5379,13 +5801,9 @@
       "slug": "s-case-study",
       "label": "Case Study",
       "file": "s-case-study.html",
-      "pageCount": 19,
+      "pageCount": 17,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
@@ -5397,10 +5815,6 @@
         {
           "url": "https://www.roller.software/competitor/rock-gym-pro",
           "title": "Rock Gym Pro"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
@@ -5508,6 +5922,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -5550,10 +5968,6 @@
         {
           "url": "https://www.roller.software/partners/intercard",
           "title": "Intercard"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         }
       ]
     },
@@ -5561,7 +5975,7 @@
       "slug": "s-customer-stories",
       "label": "Customer Stories",
       "file": "s-customer-stories.html",
-      "pageCount": 6,
+      "pageCount": 8,
       "used": true,
       "pages": [
         {
@@ -5581,8 +5995,16 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/features",
           "title": "Features"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
         },
         {
           "url": "https://www.roller.software/professional-services",
@@ -5675,7 +6097,7 @@
       "slug": "s-featured-image",
       "label": "Featured Image",
       "file": "s-featured-image.html",
-      "pageCount": 110,
+      "pageCount": 114,
       "used": true,
       "pages": [
         {
@@ -5685,6 +6107,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -5697,18 +6123,6 @@
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -5731,6 +6145,10 @@
           "title": "Business Solutions"
         },
         {
+          "url": "https://www.roller.software/capital-terms-of-service",
+          "title": "Capital Terms of Service"
+        },
+        {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
         },
@@ -5747,20 +6165,28 @@
           "title": "Checkfront"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/racefacer",
           "title": "RaceFacer"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/events/aalara2024",
@@ -5851,10 +6277,6 @@
           "title": "Digital Waivers"
         },
         {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
-        },
-        {
           "url": "https://www.roller.software/features/giftcard",
           "title": "Gift Cards"
         },
@@ -5927,8 +6349,8 @@
           "title": "Get Started"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -5969,6 +6391,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -6035,6 +6461,10 @@
           "title": "Terms of Service"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -6055,12 +6485,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -6073,10 +6503,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -6101,6 +6527,18 @@
         {
           "url": "https://www.roller.software/professional-services",
           "title": "Professional Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/rpp-terms",
+          "title": "RPP Terms of Service"
         },
         {
           "url": "https://www.roller.software/solutions/enterprise",
@@ -6169,17 +6607,9 @@
       "slug": "s-features-stacked-content",
       "label": "Features Stacked content",
       "file": "s-features-stacked-content.html",
-      "pageCount": 57,
+      "pageCount": 55,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
-        },
         {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
@@ -6221,6 +6651,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -6239,6 +6673,10 @@
         {
           "url": "https://www.roller.software/competitor/rocketrez",
           "title": "RocketRez"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
@@ -6275,10 +6713,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -6353,10 +6787,6 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
-        },
-        {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
         },
@@ -6393,12 +6823,12 @@
           "title": "Intercard"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
           "url": "https://www.roller.software/products/rfid",
           "title": "RFID"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -6414,7 +6844,7 @@
       "slug": "s-get-started",
       "label": "Get started",
       "file": "s-get-started.html",
-      "pageCount": 16,
+      "pageCount": 19,
       "used": true,
       "pages": [
         {
@@ -6426,16 +6856,12 @@
           "title": "Water Park Trends 2026"
         },
         {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
         },
         {
           "url": "https://www.roller.software/analytics-ebook",
           "title": "Analytics eBook"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/events/aip2024-0",
@@ -6458,6 +6884,10 @@
           "title": "GX Show eBook"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/membership-ebook",
           "title": "Membership eBook"
         },
@@ -6470,6 +6900,14 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -6480,6 +6918,10 @@
         {
           "url": "https://www.roller.software/solutions/multi-venue",
           "title": "Segmentation Groups"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
         }
       ]
     },
@@ -6487,7 +6929,7 @@
       "slug": "s-hero-partner",
       "label": "Hero Partner",
       "file": "s-hero-partner.html",
-      "pageCount": 11,
+      "pageCount": 12,
       "used": true,
       "pages": [
         {
@@ -6519,6 +6961,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -6548,7 +6994,7 @@
       "slug": "s-hero-product-tour",
       "label": "Hero Product Tour",
       "file": "s-hero-product-tour.html",
-      "pageCount": 19,
+      "pageCount": 21,
       "used": true,
       "pages": [
         {
@@ -6604,6 +7050,10 @@
           "title": "Point of Sale"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/industries/family-entertainment-center-software/pos-system",
           "title": "FEC POS"
         },
@@ -6626,6 +7076,10 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -6633,7 +7087,7 @@
       "slug": "s-hero",
       "label": "Hero",
       "file": "s-hero.html",
-      "pageCount": 4,
+      "pageCount": 8,
       "used": true,
       "pages": [
         {
@@ -6643,6 +7097,22 @@
         {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
+        },
+        {
+          "url": "https://www.roller.software/integration-partners",
+          "title": "Integration Partners"
+        },
+        {
+          "url": "https://www.roller.software/integrations",
+          "title": "Integration Partners Directory"
+        },
+        {
+          "url": "https://www.roller.software/partners",
+          "title": "Partners \u2014 Overview"
+        },
+        {
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -6674,7 +7144,7 @@
       "slug": "s-info-image-left",
       "label": "Info with landscape image on the left",
       "file": "s-info-image-left.html",
-      "pageCount": 80,
+      "pageCount": 85,
       "used": true,
       "pages": [
         {
@@ -6726,6 +7196,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -6746,6 +7220,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -6756,6 +7234,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -6784,10 +7266,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -6894,6 +7372,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -6950,6 +7432,10 @@
           "title": "Zoos &amp; Aquariums"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/amusement-connect",
           "title": "Amusement Connect"
         },
@@ -6962,8 +7448,8 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -6978,10 +7464,6 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
@@ -6994,8 +7476,16 @@
           "title": "RFID"
         },
         {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -7061,9 +7551,13 @@
       "slug": "s-multi-row-content",
       "label": "Multi-row content",
       "file": "s-multi-row-content.html",
-      "pageCount": 77,
+      "pageCount": 81,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
+        },
         {
           "url": "https://www.roller.software/2025-pulse-report",
           "title": "Pulse Report"
@@ -7105,6 +7599,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -7123,6 +7621,10 @@
         {
           "url": "https://www.roller.software/competitor/rocketrez",
           "title": "RocketRez"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
@@ -7167,10 +7669,6 @@
         {
           "url": "https://www.roller.software/features/crm-experience",
           "title": "CRM Experience"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -7221,6 +7719,10 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/industries/adventure-parks-software",
           "title": "Adventure Parks"
         },
@@ -7257,12 +7759,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -7337,12 +7847,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/tanda",
@@ -7351,10 +7861,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -7386,9 +7892,13 @@
       "slug": "s-page-header",
       "label": "Hero",
       "file": "s-page-header.html",
-      "pageCount": 1,
+      "pageCount": 2,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
         {
           "url": "https://www.roller.software/professional-services",
           "title": "Professional Services"
@@ -7602,10 +8112,6 @@
           "title": "Cashless Wallets"
         },
         {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
-        },
-        {
           "url": "https://www.roller.software/features/guest-tabs",
           "title": "Guest Tabs"
         },
@@ -7652,6 +8158,10 @@
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     }
@@ -7661,7 +8171,7 @@
       "slug": "advanced-image",
       "label": "Advanced Image",
       "folder": "advanced-image.module",
-      "pageCount": 31,
+      "pageCount": 36,
       "used": true,
       "pages": [
         {
@@ -7673,12 +8183,8 @@
           "title": "2026 Benchmark Report"
         },
         {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
         },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
@@ -7701,8 +8207,16 @@
           "title": "FareHarbor"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/racefacer",
           "title": "RaceFacer"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
@@ -7741,16 +8255,24 @@
           "title": "Point of Sale"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
         },
         {
           "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
           "title": "Amusement &amp; Theme Parks"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/skating-rink-software",
@@ -7785,8 +8307,16 @@
           "title": "RFID"
         },
         {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/grow-your-business",
           "title": "Solutions SBM"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -7850,7 +8380,7 @@
       "slug": "button-stack",
       "label": "button-stack",
       "folder": "button-stack.module",
-      "pageCount": 150,
+      "pageCount": 165,
       "used": true,
       "pages": [
         {
@@ -7860,6 +8390,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -7882,20 +8416,20 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
+        },
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
         },
         {
           "url": "https://www.roller.software/analytics-ebook",
@@ -7908,10 +8442,6 @@
         {
           "url": "https://www.roller.software/blog",
           "title": "Blog"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -7934,12 +8464,20 @@
           "title": "Business Solutions"
         },
         {
+          "url": "https://www.roller.software/capital-terms-of-service",
+          "title": "Capital Terms of Service"
+        },
+        {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
         },
         {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
+        },
+        {
+          "url": "https://www.roller.software/company-facts",
+          "title": "Company Facts"
         },
         {
           "url": "https://www.roller.software/competitor/aluvii",
@@ -7974,6 +8512,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -7994,6 +8536,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -8002,16 +8548,16 @@
           "title": "Venue Sumo"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
         },
         {
-          "url": "https://www.roller.software/data-processing-agreement",
-          "title": "https://www.roller.software/data-processing-agreement/"
+          "url": "https://www.roller.software/customer-stories",
+          "title": "Customer Stories"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/demo",
@@ -8098,6 +8644,10 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
+        },
+        {
           "url": "https://www.roller.software/features/api-integrations",
           "title": "API Integrations"
         },
@@ -8124,10 +8674,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -8218,16 +8764,16 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/guest-experience-playbook",
           "title": "Guest Experience Playbook"
         },
         {
           "url": "https://www.roller.software/gx-show-ebook",
           "title": "GX Show eBook"
-        },
-        {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -8270,12 +8816,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -8358,6 +8912,10 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -8378,12 +8936,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -8398,16 +8956,16 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -8420,6 +8978,10 @@
         {
           "url": "https://www.roller.software/privacy-policy",
           "title": "Privacy Policy"
+        },
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
         },
         {
           "url": "https://www.roller.software/product-launch/may-2026",
@@ -8438,6 +9000,26 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/rpp-terms",
+          "title": "RPP Terms of Service"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -8452,6 +9034,14 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -8467,9 +9057,14 @@
       "slug": "case-study",
       "label": "Case Study",
       "folder": "case-study.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        }
+      ]
     },
     "confetti-section.module": {
       "slug": "confetti-section",
@@ -8526,13 +9121,9 @@
       "slug": "FAQs",
       "label": "FAQs section",
       "folder": "FAQs.module",
-      "pageCount": 76,
+      "pageCount": 77,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
         {
           "url": "https://www.roller.software/competitor/bookeo",
           "title": "Bookeo"
@@ -8542,16 +9133,20 @@
           "title": "Checkfront"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/racefacer",
           "title": "RaceFacer"
         },
         {
-          "url": "https://www.roller.software/competitor/tickettailor",
-          "title": "Ticket Tailor"
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
+          "url": "https://www.roller.software/competitor/tickettailor",
+          "title": "Ticket Tailor"
         },
         {
           "url": "https://www.roller.software/features",
@@ -8560,6 +9155,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -8588,10 +9187,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -8710,6 +9305,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -8786,12 +9385,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -8804,10 +9403,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -8832,6 +9427,10 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -8922,7 +9521,7 @@
       "slug": "heading-composition",
       "label": "heading-composition",
       "folder": "heading-composition.module",
-      "pageCount": 144,
+      "pageCount": 155,
       "used": true,
       "pages": [
         {
@@ -8932,6 +9531,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -8954,6 +9557,14 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
+        },
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
@@ -8962,20 +9573,8 @@
           "title": "Values"
         },
         {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
           "url": "https://www.roller.software/analytics-ebook",
           "title": "Analytics eBook"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -9004,6 +9603,10 @@
         {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
+        },
+        {
+          "url": "https://www.roller.software/company-facts",
+          "title": "Company Facts"
         },
         {
           "url": "https://www.roller.software/competitor/aluvii",
@@ -9038,6 +9641,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -9058,6 +9665,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -9066,16 +9677,12 @@
           "title": "Venue Sumo"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
         },
         {
-          "url": "https://www.roller.software/data-processing-agreement",
-          "title": "https://www.roller.software/data-processing-agreement/"
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/demo",
@@ -9158,6 +9765,10 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
+        },
+        {
           "url": "https://www.roller.software/features/api-integrations",
           "title": "API Integrations"
         },
@@ -9184,10 +9795,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -9278,16 +9885,16 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/guest-experience-playbook",
           "title": "Guest Experience Playbook"
         },
         {
           "url": "https://www.roller.software/gx-show-ebook",
           "title": "GX Show eBook"
-        },
-        {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -9330,12 +9937,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -9410,6 +10025,10 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -9430,12 +10049,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -9450,16 +10069,16 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -9486,6 +10105,22 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -9500,6 +10135,14 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -9528,7 +10171,7 @@
       "slug": "image-video-modal",
       "label": "image-video-modal",
       "folder": "image-video-modal.module",
-      "pageCount": 9,
+      "pageCount": 10,
       "used": true,
       "pages": [
         {
@@ -9542,6 +10185,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/capital",
@@ -9586,17 +10233,27 @@
       "slug": "interactive-hero",
       "label": "Interactive Hero",
       "folder": "interactive-hero.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        }
+      ]
     },
     "interactive-summary.module": {
       "slug": "interactive-summary",
       "label": "Interactive Summary",
       "folder": "interactive-summary.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        }
+      ]
     },
     "interactive-svg.module": {
       "slug": "interactive-svg",
@@ -9660,17 +10317,9 @@
       "slug": "logo-set-global",
       "label": "logo-set-global",
       "folder": "logo-set-global.module",
-      "pageCount": 90,
+      "pageCount": 89,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
-        },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
@@ -9708,6 +10357,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -9728,6 +10381,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -9738,6 +10395,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -9766,10 +10427,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -9852,10 +10509,6 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
-        },
-        {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
         },
@@ -9902,6 +10555,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -9984,16 +10641,8 @@
           "title": "Intercard"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
           "url": "https://www.roller.software/partners/tanda",
           "title": "Tanda"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -10022,6 +10671,10 @@
         {
           "url": "https://www.roller.software/solutions/multi-venue",
           "title": "Segmentation Groups"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -10029,7 +10682,7 @@
       "slug": "button",
       "label": "Main Button",
       "folder": "button.module",
-      "pageCount": 109,
+      "pageCount": 113,
       "used": true,
       "pages": [
         {
@@ -10039,6 +10692,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -10053,24 +10710,16 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/business-solutions",
@@ -10113,6 +10762,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -10133,16 +10786,16 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
         {
           "url": "https://www.roller.software/competitor/venue-sumo",
           "title": "Venue Sumo"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/events/amusementexpo2025",
@@ -10203,10 +10856,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -10281,8 +10930,8 @@
           "title": "Get Started"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -10325,12 +10974,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -10393,6 +11050,10 @@
           "title": "Zoos &amp; Aquariums"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -10413,8 +11074,8 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -10427,10 +11088,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -10465,8 +11122,20 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -10474,12 +11143,16 @@
       "slug": "media-frame",
       "label": "Media Frame",
       "folder": "media-frame.module",
-      "pageCount": 7,
+      "pageCount": 8,
       "used": true,
       "pages": [
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/capital",
@@ -10540,7 +11213,7 @@
       "slug": "announcement",
       "label": "Module: Announcement",
       "folder": "announcement.module",
-      "pageCount": 150,
+      "pageCount": 165,
       "used": true,
       "pages": [
         {
@@ -10550,6 +11223,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -10572,20 +11249,20 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
+        },
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/about-us",
           "title": "About Us"
         },
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
         },
         {
           "url": "https://www.roller.software/analytics-ebook",
@@ -10598,10 +11275,6 @@
         {
           "url": "https://www.roller.software/blog",
           "title": "Blog"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -10624,12 +11297,20 @@
           "title": "Business Solutions"
         },
         {
+          "url": "https://www.roller.software/capital-terms-of-service",
+          "title": "Capital Terms of Service"
+        },
+        {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
         },
         {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
+        },
+        {
+          "url": "https://www.roller.software/company-facts",
+          "title": "Company Facts"
         },
         {
           "url": "https://www.roller.software/competitor/aluvii",
@@ -10664,6 +11345,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -10684,6 +11369,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -10692,16 +11381,16 @@
           "title": "Venue Sumo"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
         },
         {
-          "url": "https://www.roller.software/data-processing-agreement",
-          "title": "https://www.roller.software/data-processing-agreement/"
+          "url": "https://www.roller.software/customer-stories",
+          "title": "Customer Stories"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/demo",
@@ -10788,6 +11477,10 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
+        },
+        {
           "url": "https://www.roller.software/features/api-integrations",
           "title": "API Integrations"
         },
@@ -10814,10 +11507,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -10908,16 +11597,16 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/guest-experience-playbook",
           "title": "Guest Experience Playbook"
         },
         {
           "url": "https://www.roller.software/gx-show-ebook",
           "title": "GX Show eBook"
-        },
-        {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -10960,12 +11649,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -11048,6 +11745,10 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -11068,12 +11769,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -11088,16 +11789,16 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -11110,6 +11811,10 @@
         {
           "url": "https://www.roller.software/privacy-policy",
           "title": "Privacy Policy"
+        },
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
         },
         {
           "url": "https://www.roller.software/product-launch/may-2026",
@@ -11128,6 +11833,26 @@
           "title": "Professional Services"
         },
         {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/rpp-terms",
+          "title": "RPP Terms of Service"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -11142,6 +11867,14 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -11249,6 +11982,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -11287,10 +12024,6 @@
         {
           "url": "https://www.roller.software/industries/zoos-management-software",
           "title": "Zoos &amp; Aquariums"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         }
       ]
     },
@@ -11306,7 +12039,7 @@
       "slug": "custom-form",
       "label": "Module: Custom Form",
       "folder": "custom-form.module",
-      "pageCount": 2,
+      "pageCount": 4,
       "used": true,
       "pages": [
         {
@@ -11314,8 +12047,16 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         }
       ]
     },
@@ -11396,18 +12137,9 @@
       "slug": "features-by-month",
       "label": "Module: Features By Month",
       "folder": "features-by-month.module",
-      "pageCount": 2,
-      "used": true,
-      "pages": [
-        {
-          "url": "https://www.roller.software/2023-rollup",
-          "title": "2024 Year in Review"
-        },
-        {
-          "url": "https://www.roller.software/2024-rollup",
-          "title": "2025 Year in Review"
-        }
-      ]
+      "pageCount": 0,
+      "used": false,
+      "pages": []
     },
     "features-card.module": {
       "slug": "features-card",
@@ -11438,7 +12170,7 @@
       "slug": "features-detail",
       "label": "Module: Features Detail",
       "folder": "features-detail.module",
-      "pageCount": 2,
+      "pageCount": 4,
       "used": true,
       "pages": [
         {
@@ -11448,6 +12180,14 @@
         {
           "url": "https://www.roller.software/professional-services",
           "title": "Professional Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
         }
       ]
     },
@@ -11484,9 +12224,90 @@
       "slug": "features-selector-global",
       "label": "Module: Features Selector (Global)",
       "folder": "features-selector-global.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 20,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/industries/adventure-parks-software",
+          "title": "Adventure Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/amusement-and-theme-parks-software",
+          "title": "Amusement &amp; Theme Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/axe-throwing-software",
+          "title": "Axe Throwing"
+        },
+        {
+          "url": "https://www.roller.software/industries/bowling-alley-management-software",
+          "title": "Bowling"
+        },
+        {
+          "url": "https://www.roller.software/industries/climbing-gyms-software",
+          "title": "Rock Climbing Gyms"
+        },
+        {
+          "url": "https://www.roller.software/industries/escape-room-software",
+          "title": "Escape Rooms"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-center-software",
+          "title": "Family Entertainment Centers"
+        },
+        {
+          "url": "https://www.roller.software/industries/go-karting",
+          "title": "Go-Karting"
+        },
+        {
+          "url": "https://www.roller.software/industries/ice-skating",
+          "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
+          "url": "https://www.roller.software/industries/mini-golf",
+          "title": "Mini Golf"
+        },
+        {
+          "url": "https://www.roller.software/industries/museums-software",
+          "title": "Museums"
+        },
+        {
+          "url": "https://www.roller.software/industries/pickleball-software",
+          "title": "Pickleball"
+        },
+        {
+          "url": "https://www.roller.software/industries/playground-software",
+          "title": "Playground / Softplay"
+        },
+        {
+          "url": "https://www.roller.software/industries/skating-rink-software",
+          "title": "Roller Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/trampoline-parks-software",
+          "title": "Trampoline Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/visitor-attractions-software",
+          "title": "Visitor Attractions"
+        },
+        {
+          "url": "https://www.roller.software/industries/wake-and-aqua-parks-management-software",
+          "title": "Wake &amp; Aqua Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/water-parks-management-software",
+          "title": "Water Parks"
+        },
+        {
+          "url": "https://www.roller.software/industries/zoos-management-software",
+          "title": "Zoos &amp; Aquariums"
+        }
+      ]
     },
     "gx-pricing-card.module": {
       "slug": "gx-pricing-card",
@@ -11500,16 +12321,12 @@
       "slug": "icons-list",
       "label": "Module: Icons List",
       "folder": "icons-list.module",
-      "pageCount": 2,
+      "pageCount": 1,
       "used": true,
       "pages": [
         {
           "url": "https://www.roller.software/features/channel-management",
           "title": "Channel Management"
-        },
-        {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
         }
       ]
     },
@@ -11546,15 +12363,7 @@
       "slug": "industry-selector-global",
       "label": "Module: Industry Selector (Global)",
       "folder": "industry-selector-global.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
-    },
-    "industry-selector-features-global.module": {
-      "slug": "industry-selector-features-global",
-      "label": "Module: Industry Selector Features (Global)",
-      "folder": "industry-selector-features-global.module",
-      "pageCount": 8,
+      "pageCount": 32,
       "used": true,
       "pages": [
         {
@@ -11562,20 +12371,104 @@
           "title": "ROLLER iQ"
         },
         {
+          "url": "https://www.roller.software/features/api-integrations",
+          "title": "API Integrations"
+        },
+        {
+          "url": "https://www.roller.software/features/capacity-management",
+          "title": "Capacity Management"
+        },
+        {
+          "url": "https://www.roller.software/features/cashless-wallets",
+          "title": "Cashless Wallets"
+        },
+        {
           "url": "https://www.roller.software/features/channel-management",
           "title": "Channel Management"
+        },
+        {
+          "url": "https://www.roller.software/features/crm-experience",
+          "title": "CRM Experience"
         },
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
         },
         {
+          "url": "https://www.roller.software/features/giftcard",
+          "title": "Gift Cards"
+        },
+        {
+          "url": "https://www.roller.software/features/guest-tabs",
+          "title": "Guest Tabs"
+        },
+        {
+          "url": "https://www.roller.software/features/membership-management-software",
+          "title": "Membership Management"
+        },
+        {
           "url": "https://www.roller.software/features/mobile-check-in",
           "title": "Mobile Check-in App"
         },
         {
+          "url": "https://www.roller.software/features/mobile-food-and-beverage-ordering",
+          "title": "Mobile Food &amp; Beverage"
+        },
+        {
+          "url": "https://www.roller.software/features/multi-venue-management",
+          "title": "Multi-Venue Management"
+        },
+        {
+          "url": "https://www.roller.software/features/online-ticket-system",
+          "title": "Online Ticketing System"
+        },
+        {
+          "url": "https://www.roller.software/features/packages",
+          "title": "Packages"
+        },
+        {
+          "url": "https://www.roller.software/features/party-booking-software",
+          "title": "Party Booking Software"
+        },
+        {
+          "url": "https://www.roller.software/features/payment-processing-software",
+          "title": "ROLLER Payments"
+        },
+        {
+          "url": "https://www.roller.software/features/point-of-sale-reports",
+          "title": "POS Reports"
+        },
+        {
           "url": "https://www.roller.software/features/pos",
           "title": "Point of Sale"
+        },
+        {
+          "url": "https://www.roller.software/features/pricing-strategy",
+          "title": "Pricing Strategy"
+        },
+        {
+          "url": "https://www.roller.software/features/printer-management",
+          "title": "Printer Management"
+        },
+        {
+          "url": "https://www.roller.software/features/self-service-ticketing-kiosk",
+          "title": "Self-Serve Kiosks"
+        },
+        {
+          "url": "https://www.roller.software/features/staff-permissions",
+          "title": "Staff Permissions"
+        },
+        {
+          "url": "https://www.roller.software/features/stock-and-inventory-control",
+          "title": "Stock &amp; Inventory Control"
+        },
+        {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
+          "url": "https://www.roller.software/industries",
+          "title": "Industries"
         },
         {
           "url": "https://www.roller.software/partners/alvarado",
@@ -11586,10 +12479,30 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/solutions/enterprise",
+          "title": "Enterprise"
+        },
+        {
+          "url": "https://www.roller.software/solutions/grow-your-business",
+          "title": "Solutions SBM"
+        },
+        {
+          "url": "https://www.roller.software/solutions/multi-venue",
+          "title": "Segmentation Groups"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
+    },
+    "industry-selector-features-global.module": {
+      "slug": "industry-selector-features-global",
+      "label": "Module: Industry Selector Features (Global)",
+      "folder": "industry-selector-features-global.module",
+      "pageCount": 0,
+      "used": false,
+      "pages": []
     },
     "logo.module": {
       "slug": "logo",
@@ -11643,7 +12556,7 @@
       "slug": "results-list",
       "label": "Module: Results List",
       "folder": "results-list.module",
-      "pageCount": 47,
+      "pageCount": 49,
       "used": true,
       "pages": [
         {
@@ -11679,6 +12592,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -11699,12 +12616,20 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
         {
           "url": "https://www.roller.software/competitor/venue-sumo",
           "title": "Venue Sumo"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/features/channel-management",
@@ -11753,6 +12678,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -11805,14 +12734,6 @@
         {
           "url": "https://www.roller.software/industries/zoos-management-software",
           "title": "Zoos &amp; Aquariums"
-        },
-        {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/people-and-culture/careers-jobs",
@@ -11888,7 +12809,7 @@
       "slug": "stats-set",
       "label": "Module: Stats Set",
       "folder": "stats-set.module",
-      "pageCount": 12,
+      "pageCount": 10,
       "used": true,
       "pages": [
         {
@@ -11904,16 +12825,8 @@
           "title": "2026 Year in Review"
         },
         {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/get-started",
@@ -11945,9 +12858,17 @@
       "slug": "stats-set-stacked",
       "label": "Module: Stats Set Stacked",
       "folder": "stats-set-stacked.module",
-      "pageCount": 5,
+      "pageCount": 7,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        },
+        {
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
+        },
         {
           "url": "https://www.roller.software/partners/service",
           "title": "Service Partners"
@@ -12082,9 +13003,18 @@
       "slug": "product-launch-card",
       "label": "Product Launch Card",
       "folder": "product-launch-card.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 2,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/features/capital",
+          "title": "ROLLER Capital"
+        },
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
+        }
+      ]
     },
     "pulse-arc-chart.module": {
       "slug": "pulse-arc-chart",
@@ -12202,13 +13132,9 @@
       "slug": "quote",
       "label": "Quote",
       "folder": "quote.module",
-      "pageCount": 44,
+      "pageCount": 43,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
@@ -12224,10 +13150,6 @@
         {
           "url": "https://www.roller.software/competitor/rock-gym-pro",
           "title": "Rock Gym Pro"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/features/ai-assistant",
@@ -12322,6 +13244,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -12366,8 +13292,8 @@
           "title": "Zoos &amp; Aquariums"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
         },
         {
           "url": "https://www.roller.software/solutions/enterprise",
@@ -12432,9 +13358,13 @@
       "slug": "special-heading",
       "label": "Special Heading",
       "folder": "special-heading.module",
-      "pageCount": 2,
+      "pageCount": 3,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/product-launch",
+          "title": "Product Launch"
+        },
         {
           "url": "https://www.roller.software/product-launch/may-2026",
           "title": "Product Launch May 2026"
@@ -12475,17 +13405,9 @@
       "slug": "features-stacked-content",
       "label": "Stacked Content Block",
       "folder": "features-stacked-content.module",
-      "pageCount": 87,
+      "pageCount": 86,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
-        },
         {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
@@ -12527,6 +13449,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -12547,6 +13473,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -12557,6 +13487,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -12585,10 +13519,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -12671,10 +13601,6 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
-        },
-        {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
         },
@@ -12721,6 +13647,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -12799,16 +13729,8 @@
           "title": "Intercard"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
           "url": "https://www.roller.software/partners/tanda",
           "title": "Tanda"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -12825,6 +13747,10 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -12853,7 +13779,7 @@
       "slug": "testimonial-slider",
       "label": "Testimonial slider",
       "folder": "testimonial-slider.module",
-      "pageCount": 12,
+      "pageCount": 11,
       "used": true,
       "pages": [
         {
@@ -12869,16 +13795,8 @@
           "title": "2026 Year in Review"
         },
         {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/events/aip2024-0",
@@ -12897,6 +13815,10 @@
           "title": "Get Started"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/pricing",
           "title": "Pricing"
         },
@@ -12910,9 +13832,14 @@
       "slug": "testimonial-slider-alt",
       "label": "Testimonial slider Alternate",
       "folder": "testimonial-slider-alt.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        }
+      ]
     },
     "text-banner.module": {
       "slug": "text-banner",
@@ -12942,9 +13869,14 @@
       "slug": "video-hero",
       "label": "Video Hero",
       "folder": "video-hero.module",
-      "pageCount": 0,
-      "used": false,
-      "pages": []
+      "pageCount": 1,
+      "used": true,
+      "pages": [
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
+        }
+      ]
     },
     "widget-user-review.module": {
       "slug": "widget-user-review",
@@ -13033,13 +13965,9 @@
       "slug": "s-case-study",
       "label": "Case Study",
       "file": "s-case-study.html",
-      "pageCount": 19,
+      "pageCount": 17,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
         {
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge"
@@ -13051,10 +13979,6 @@
         {
           "url": "https://www.roller.software/competitor/rock-gym-pro",
           "title": "Rock Gym Pro"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
@@ -13162,6 +14086,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -13204,10 +14132,6 @@
         {
           "url": "https://www.roller.software/partners/intercard",
           "title": "Intercard"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         }
       ]
     },
@@ -13215,7 +14139,7 @@
       "slug": "s-customer-stories",
       "label": "Customer Stories",
       "file": "s-customer-stories.html",
-      "pageCount": 6,
+      "pageCount": 8,
       "used": true,
       "pages": [
         {
@@ -13235,8 +14159,16 @@
           "title": "2026 Benchmark Report"
         },
         {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report"
+        },
+        {
           "url": "https://www.roller.software/features",
           "title": "Features"
+        },
+        {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
         },
         {
           "url": "https://www.roller.software/professional-services",
@@ -13329,7 +14261,7 @@
       "slug": "s-featured-image",
       "label": "Featured Image",
       "file": "s-featured-image.html",
-      "pageCount": 110,
+      "pageCount": 114,
       "used": true,
       "pages": [
         {
@@ -13339,6 +14271,10 @@
         {
           "url": "https://www.roller.software/2024-rollup",
           "title": "2025 Year in Review"
+        },
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
         },
         {
           "url": "https://www.roller.software/2025-pulse-report",
@@ -13351,18 +14287,6 @@
         {
           "url": "https://www.roller.software/about-us/values",
           "title": "Values"
-        },
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
         },
         {
           "url": "https://www.roller.software/building-a-world-class-attraction-venue",
@@ -13385,6 +14309,10 @@
           "title": "Business Solutions"
         },
         {
+          "url": "https://www.roller.software/capital-terms-of-service",
+          "title": "Capital Terms of Service"
+        },
+        {
           "url": "https://www.roller.software/chatgpt-ebook",
           "title": "ChatGPT eBook"
         },
@@ -13401,20 +14329,28 @@
           "title": "Checkfront"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/racefacer",
           "title": "RaceFacer"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
         {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
-        },
-        {
           "url": "https://www.roller.software/customer-referral",
           "title": "Customer Referral"
+        },
+        {
+          "url": "https://www.roller.software/customers/stories/area-51",
+          "title": "Area 51"
         },
         {
           "url": "https://www.roller.software/events/aalara2024",
@@ -13505,10 +14441,6 @@
           "title": "Digital Waivers"
         },
         {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
-        },
-        {
           "url": "https://www.roller.software/features/giftcard",
           "title": "Gift Cards"
         },
@@ -13581,8 +14513,8 @@
           "title": "Get Started"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
         },
         {
           "url": "https://www.roller.software/industries",
@@ -13623,6 +14555,10 @@
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -13689,6 +14625,10 @@
           "title": "Terms of Service"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/alvarado",
           "title": "Alvarado"
         },
@@ -13709,12 +14649,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -13727,10 +14667,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -13755,6 +14691,18 @@
         {
           "url": "https://www.roller.software/professional-services",
           "title": "Professional Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/implementation",
+          "title": "Implementation Services"
+        },
+        {
+          "url": "https://www.roller.software/professional-services/training-and-technical",
+          "title": "Training &amp; Technical Services"
+        },
+        {
+          "url": "https://www.roller.software/rpp-terms",
+          "title": "RPP Terms of Service"
         },
         {
           "url": "https://www.roller.software/solutions/enterprise",
@@ -13823,17 +14771,9 @@
       "slug": "s-features-stacked-content",
       "label": "Features Stacked content",
       "file": "s-features-stacked-content.html",
-      "pageCount": 57,
+      "pageCount": 55,
       "used": true,
       "pages": [
-        {
-          "url": "https://www.roller.software/acquiringaddendumusa",
-          "title": "https://www.roller.software/acquiringaddendumusa"
-        },
-        {
-          "url": "https://www.roller.software/braintree",
-          "title": "https://www.roller.software/braintree/"
-        },
         {
           "url": "https://www.roller.software/business-solutions",
           "title": "Business Solutions"
@@ -13875,6 +14815,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -13893,6 +14837,10 @@
         {
           "url": "https://www.roller.software/competitor/rocketrez",
           "title": "RocketRez"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
@@ -13929,10 +14877,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -14007,10 +14951,6 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
-          "url": "https://www.roller.software/iaapa-2019-trade-show-orlando",
-          "title": "https://www.roller.software/iaapa-2019-trade-show-orlando"
-        },
-        {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
         },
@@ -14047,12 +14987,12 @@
           "title": "Intercard"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
-        },
-        {
           "url": "https://www.roller.software/products/rfid",
           "title": "RFID"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -14068,7 +15008,7 @@
       "slug": "s-get-started",
       "label": "Get started",
       "file": "s-get-started.html",
-      "pageCount": 16,
+      "pageCount": 19,
       "used": true,
       "pages": [
         {
@@ -14080,16 +15020,12 @@
           "title": "Water Park Trends 2026"
         },
         {
-          "url": "https://www.roller.software/amazon-gift-card",
-          "title": "https://www.roller.software/amazon-gift-card"
+          "url": "https://www.roller.software/2026-bowling-trends",
+          "title": "Bowling Trends 2026"
         },
         {
           "url": "https://www.roller.software/analytics-ebook",
           "title": "Analytics eBook"
-        },
-        {
-          "url": "https://www.roller.software/contact-sales",
-          "title": "https://www.roller.software/contact-sales/"
         },
         {
           "url": "https://www.roller.software/events/aip2024-0",
@@ -14112,6 +15048,10 @@
           "title": "GX Show eBook"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/membership-ebook",
           "title": "Membership eBook"
         },
@@ -14124,6 +15064,14 @@
           "title": "Opening Your First Attraction"
         },
         {
+          "url": "https://www.roller.software/party-parent-report",
+          "title": "Party Parent Report"
+        },
+        {
+          "url": "https://www.roller.software/school-vacation-optimization-guide",
+          "title": "School Vacation Optimization Guide"
+        },
+        {
           "url": "https://www.roller.software/solutions/enterprise",
           "title": "Enterprise"
         },
@@ -14134,6 +15082,10 @@
         {
           "url": "https://www.roller.software/solutions/multi-venue",
           "title": "Segmentation Groups"
+        },
+        {
+          "url": "https://www.roller.software/venue-launch-checklist",
+          "title": "Venue Launch Checklist"
         }
       ]
     },
@@ -14141,7 +15093,7 @@
       "slug": "s-hero-partner",
       "label": "Hero Partner",
       "file": "s-hero-partner.html",
-      "pageCount": 11,
+      "pageCount": 12,
       "used": true,
       "pages": [
         {
@@ -14173,6 +15125,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -14202,7 +15158,7 @@
       "slug": "s-hero-product-tour",
       "label": "Hero Product Tour",
       "file": "s-hero-product-tour.html",
-      "pageCount": 19,
+      "pageCount": 21,
       "used": true,
       "pages": [
         {
@@ -14258,6 +15214,10 @@
           "title": "Point of Sale"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/industries/family-entertainment-center-software/pos-system",
           "title": "FEC POS"
         },
@@ -14280,6 +15240,10 @@
         {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -14287,7 +15251,7 @@
       "slug": "s-hero",
       "label": "Hero",
       "file": "s-hero.html",
-      "pageCount": 4,
+      "pageCount": 8,
       "used": true,
       "pages": [
         {
@@ -14297,6 +15261,22 @@
         {
           "url": "https://www.roller.software/industries",
           "title": "Industries"
+        },
+        {
+          "url": "https://www.roller.software/integration-partners",
+          "title": "Integration Partners"
+        },
+        {
+          "url": "https://www.roller.software/integrations",
+          "title": "Integration Partners Directory"
+        },
+        {
+          "url": "https://www.roller.software/partners",
+          "title": "Partners \u2014 Overview"
+        },
+        {
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -14328,7 +15308,7 @@
       "slug": "s-info-image-left",
       "label": "Info with landscape image on the left",
       "file": "s-info-image-left.html",
-      "pageCount": 80,
+      "pageCount": 85,
       "used": true,
       "pages": [
         {
@@ -14380,6 +15360,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -14400,6 +15384,10 @@
           "title": "RocketRez"
         },
         {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
+        },
+        {
           "url": "https://www.roller.software/competitor/tickettailor",
           "title": "Ticket Tailor"
         },
@@ -14410,6 +15398,10 @@
         {
           "url": "https://www.roller.software/features/ai-assistant",
           "title": "ROLLER iQ"
+        },
+        {
+          "url": "https://www.roller.software/features/ai-for-attractions",
+          "title": "AI for Attractions"
         },
         {
           "url": "https://www.roller.software/features/api-integrations",
@@ -14438,10 +15430,6 @@
         {
           "url": "https://www.roller.software/features/digital-waiver-software",
           "title": "Digital Waivers"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -14548,6 +15536,10 @@
           "title": "Ice Skating"
         },
         {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
+        },
+        {
           "url": "https://www.roller.software/industries/mini-golf",
           "title": "Mini Golf"
         },
@@ -14604,6 +15596,10 @@
           "title": "Zoos &amp; Aquariums"
         },
         {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
+        {
           "url": "https://www.roller.software/partners/amusement-connect",
           "title": "Amusement Connect"
         },
@@ -14616,8 +15612,8 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
           "url": "https://www.roller.software/partners/service",
@@ -14632,10 +15628,6 @@
           "title": "Technology Partners"
         },
         {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
-        },
-        {
           "url": "https://www.roller.software/partners/workforce.com",
           "title": "Workforce.com"
         },
@@ -14648,8 +15640,16 @@
           "title": "RFID"
         },
         {
+          "url": "https://www.roller.software/security",
+          "title": "Security &amp; Compliance"
+        },
+        {
           "url": "https://www.roller.software/support",
           "title": "Support"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     },
@@ -14715,9 +15715,13 @@
       "slug": "s-multi-row-content",
       "label": "Multi-row content",
       "file": "s-multi-row-content.html",
-      "pageCount": 77,
+      "pageCount": 81,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/2025-benchmark-report",
+          "title": "2025 Benchmark Report"
+        },
         {
           "url": "https://www.roller.software/2025-pulse-report",
           "title": "Pulse Report"
@@ -14759,6 +15763,10 @@
           "title": "FuseMetrix"
         },
         {
+          "url": "https://www.roller.software/competitor/lightspeed",
+          "title": "Lightspeed"
+        },
+        {
           "url": "https://www.roller.software/competitor/lilypad-pos",
           "title": "LiliPad POS"
         },
@@ -14777,6 +15785,10 @@
         {
           "url": "https://www.roller.software/competitor/rocketrez",
           "title": "RocketRez"
+        },
+        {
+          "url": "https://www.roller.software/competitor/square",
+          "title": "Square"
         },
         {
           "url": "https://www.roller.software/competitor/tickettailor",
@@ -14821,10 +15833,6 @@
         {
           "url": "https://www.roller.software/features/crm-experience",
           "title": "CRM Experience"
-        },
-        {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
         },
         {
           "url": "https://www.roller.software/features/giftcard",
@@ -14875,6 +15883,10 @@
           "title": "Stock &amp; Inventory Control"
         },
         {
+          "url": "https://www.roller.software/guest-experience",
+          "title": "Guest Experience Philosophy"
+        },
+        {
           "url": "https://www.roller.software/industries/adventure-parks-software",
           "title": "Adventure Parks"
         },
@@ -14911,12 +15923,20 @@
           "title": "FEC Ticketing"
         },
         {
+          "url": "https://www.roller.software/industries/family-entertainment-centers",
+          "title": "FEC Expert Guides"
+        },
+        {
           "url": "https://www.roller.software/industries/go-karting",
           "title": "Go-Karting"
         },
         {
           "url": "https://www.roller.software/industries/ice-skating",
           "title": "Ice Skating"
+        },
+        {
+          "url": "https://www.roller.software/industries/laser-tag-software",
+          "title": "Laser Tag"
         },
         {
           "url": "https://www.roller.software/industries/mini-golf",
@@ -14991,12 +16011,12 @@
           "title": "Groupon"
         },
         {
-          "url": "https://www.roller.software/partners/intercard",
-          "title": "Intercard"
+          "url": "https://www.roller.software/partners/integration",
+          "title": "Integration Partner Program"
         },
         {
-          "url": "https://www.roller.software/partners/redeam",
-          "title": "Redeam"
+          "url": "https://www.roller.software/partners/intercard",
+          "title": "Intercard"
         },
         {
           "url": "https://www.roller.software/partners/tanda",
@@ -15005,10 +16025,6 @@
         {
           "url": "https://www.roller.software/partners/technology",
           "title": "Technology Partners"
-        },
-        {
-          "url": "https://www.roller.software/partners/volare",
-          "title": "Volare"
         },
         {
           "url": "https://www.roller.software/partners/workforce.com",
@@ -15040,9 +16056,13 @@
       "slug": "s-page-header",
       "label": "Hero",
       "file": "s-page-header.html",
-      "pageCount": 1,
+      "pageCount": 2,
       "used": true,
       "pages": [
+        {
+          "url": "https://www.roller.software/partner-program",
+          "title": "Partner Program"
+        },
         {
           "url": "https://www.roller.software/professional-services",
           "title": "Professional Services"
@@ -15256,10 +16276,6 @@
           "title": "Cashless Wallets"
         },
         {
-          "url": "https://www.roller.software/features/discount-codes",
-          "title": "Discount Codes"
-        },
-        {
           "url": "https://www.roller.software/features/guest-tabs",
           "title": "Guest Tabs"
         },
@@ -15306,6 +16322,10 @@
         {
           "url": "https://www.roller.software/partners/yellow-dog",
           "title": "Yellow Dog"
+        },
+        {
+          "url": "https://www.roller.software/venue-management-software",
+          "title": "Venue Management Software"
         }
       ]
     }
@@ -15313,8 +16333,8 @@
   "stats": {
     "catalogModules": 133,
     "catalogSections": 40,
-    "usedModules": 46,
-    "unusedModules": 87,
+    "usedModules": 52,
+    "unusedModules": 81,
     "usedSections": 20,
     "unusedSections": 20
   }
