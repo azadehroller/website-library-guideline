@@ -1141,6 +1141,16 @@
     flex-wrap: wrap;
   }
 
+  #panel-assets details.asset-page > summary .chev {
+    transition: transform .15s;
+    color: var(--muted);
+    flex: none;
+  }
+
+  #panel-assets details.asset-page[open] > summary .chev {
+    transform: rotate(90deg);
+  }
+
   #panel-assets details.asset-page > summary::-webkit-details-marker { display: none; }
 
   #panel-assets .asset-page-title {
@@ -1249,6 +1259,36 @@
 
   #panel-assets .asset-type.type-svg-inline { background: var(--tone-teal-bg); color: var(--tone-teal-fg); }
   #panel-assets .asset-type.type-background { background: var(--tone-amber-bg, #FFF8E6); color: var(--tone-amber-fg, #8A5A00); }
+  #panel-assets .asset-type.type-video-wistia,
+  #panel-assets .asset-type.type-video-file,
+  #panel-assets .asset-type.type-video-embed { background: #F3EBFF; color: #5B21B6; }
+  #panel-assets .asset-type.type-audio { background: #E8F7EF; color: #0F6B3E; }
+  #panel-assets .asset-type.type-interactive { background: var(--tone-amber-bg, #FFF8E6); color: var(--tone-amber-fg, #8A5A00); }
+
+  #panel-assets .asset-preview.asset-preview-video::after {
+    content: "▶";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+    background: rgba(1, 24, 64, .28);
+    pointer-events: none;
+  }
+
+  #panel-assets .asset-preview { position: relative; }
+
+  #panel-assets .asset-media-placeholder {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    text-align: center;
+    padding: 12px;
+  }
 
   #panel-assets .asset-name {
     font-size: 12.5px;
@@ -1295,7 +1335,7 @@
       <button id="tab-plan" role="tab" aria-selected="true" aria-controls="panel-plan">Build plan</button>
       <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Components</button>
       <button id="tab-pages" role="tab" aria-selected="false" aria-controls="panel-pages">Pages</button>
-      <button id="tab-assets" role="tab" aria-selected="false" aria-controls="panel-assets">Assets</button>
+      <button id="tab-assets" role="tab" aria-selected="false" aria-controls="panel-assets">Media</button>
       <button id="tab-hs" role="tab" aria-selected="false" aria-controls="panel-hs">HubSpot</button>
     </div>
   </div>
@@ -3155,24 +3195,27 @@
   <div id="panel-assets" role="tabpanel" aria-labelledby="tab-assets">
 
     <div class="intro panel">
-      <h1>Page assets</h1>
-      <p>Visual assets found inside each page’s <code>&lt;main&gt;</code> content — images, external SVGs, inline SVG icons, background images, and video posters. Header, footer, and other global shell assets are excluded.</p>
+      <h1>Page media</h1>
+      <p>All media found inside each page’s <code>&lt;main&gt;</code> — images, SVG, video (Wistia and file embeds), audio, and interactive embeds. Header, footer, and other global shell media are excluded.</p>
     </div>
 
     <div class="pg-stats" id="assets-stats">
       <div class="pg-stat"><span class="pg-stat-n" id="assets-stat-pages">—</span><span class="pg-stat-l">Pages audited</span></div>
-      <div class="pg-stat"><span class="pg-stat-n tone-coral" id="assets-stat-total">—</span><span class="pg-stat-l">Assets in main</span></div>
-      <div class="pg-stat"><span class="pg-stat-n tone-success" id="assets-stat-unique">—</span><span class="pg-stat-l">Unique assets</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-coral" id="assets-stat-total">—</span><span class="pg-stat-l">Media items (all pages)</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-success" id="assets-stat-unique">—</span><span class="pg-stat-l">Unique site-wide</span></div>
       <div class="pg-stat"><span class="pg-stat-n tone-accent" id="assets-stat-sections">—</span><span class="pg-stat-l">Sections</span></div>
     </div>
 
-    <div class="pg-filters" id="assets-filters" role="group" aria-label="Filter assets by type">
+    <div class="pg-filters" id="assets-filters" role="group" aria-label="Filter media by type">
       <span class="pg-filters-label">Type</span>
       <button type="button" class="pg-filter on" data-asset-filter="all" aria-pressed="true">All</button>
       <button type="button" class="pg-filter" data-asset-filter="image" aria-pressed="false">Images</button>
       <button type="button" class="pg-filter" data-asset-filter="svg-image" aria-pressed="false">SVG files</button>
       <button type="button" class="pg-filter" data-asset-filter="svg-inline" aria-pressed="false">Inline SVG</button>
       <button type="button" class="pg-filter" data-asset-filter="background" aria-pressed="false">Backgrounds</button>
+      <button type="button" class="pg-filter" data-asset-filter="video" aria-pressed="false">Video</button>
+      <button type="button" class="pg-filter" data-asset-filter="audio" aria-pressed="false">Audio</button>
+      <button type="button" class="pg-filter" data-asset-filter="interactive" aria-pressed="false">Interactive</button>
     </div>
     <p class="pg-filter-status" id="assets-filter-status" aria-live="polite"></p>
 
@@ -3238,7 +3281,7 @@
 <div id="fig-lb" role="dialog" aria-modal="true" aria-label="Figma preview"><img src="" alt=""></div>
 <script src="page-components.data.js?v=12"></script>
 <script src="page-modules.data.js?v=5"></script>
-<script src="page-assets.data.js?v=2"></script>
+<script src="page-assets.data.js?v=4"></script>
 <script src="hs-usage.data.js?v=5"></script>
 <script src="hs-library.data.js?v=3"></script>
 <script src="hs-phase-mapping.data.js?v=6"></script>
@@ -4521,18 +4564,90 @@
       return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
     }
 
+    function normMediaUrl(href){
+      if(!href){return ''}
+      try{
+        var u=new URL(href);
+        var path=u.pathname.replace(/\/+$/,'');
+        if(!path){path='/'}
+        return u.origin+path;
+      }catch(e){
+        return String(href).replace(/\/+$/,'');
+      }
+    }
+
+    function buildSectionsFromPagesTab(){
+      var sections=[];
+      document.querySelectorAll('#panel-pages details.phase').forEach(function(sectionEl){
+        var h2=sectionEl.querySelector('summary h2');
+        if(!h2){return}
+        var pages=[];
+        sectionEl.querySelectorAll('.pg-row').forEach(function(row){
+          var link=row.querySelector('.pg-url');
+          var titleEl=row.querySelector('.pg-title');
+          if(!link||!titleEl){return}
+          pages.push({title:titleEl.textContent.trim(),url:link.href});
+        });
+        if(pages.length){sections.push({name:h2.textContent.trim(),pages:pages})}
+      });
+      return sections;
+    }
+
+    function buildMediaLookup(json){
+      var map={};
+      if(!json||!json.sections){return map}
+      json.sections.forEach(function(section){
+        section.pages.forEach(function(page){
+          map[normMediaUrl(page.url)]=page;
+        });
+      });
+      return map;
+    }
+
+    function mergeSectionsWithMedia(pagesTabSections, mediaLookup){
+      return pagesTabSections.map(function(section){
+        var pages=section.pages.map(function(page){
+          var hit=mediaLookup[normMediaUrl(page.url)];
+          return {
+            title:page.title,
+            url:page.url,
+            assetCount:hit?hit.assetCount:0,
+            assets:hit&&hit.assets?hit.assets:[],
+            error:hit?hit.error:null
+          };
+        });
+        var sectionTotal=pages.reduce(function(n,p){return n+(p.assetCount||0)},0);
+        return {name:section.name,pages:pages,sectionTotal:sectionTotal};
+      });
+    }
+
     function typeLabel(type){
       return ({
         image:'Image',
         'svg-image':'SVG file',
         'svg-inline':'Inline SVG',
         background:'Background',
-        video:'Video'
+        'video-wistia':'Wistia video',
+        'video-file':'Video file',
+        'video-embed':'Video embed',
+        video:'Video',
+        audio:'Audio',
+        interactive:'Interactive embed'
       })[type]||type;
     }
 
+    function isVideoType(type){
+      return type==='video-wistia'||type==='video-file'||type==='video-embed';
+    }
+
     function assetMatchesFilter(asset){
-      return activeFilter==='all'||asset.type===activeFilter;
+      if(activeFilter==='all'){return true}
+      if(activeFilter==='video'){return isVideoType(asset.type)}
+      return asset.type===activeFilter;
+    }
+
+    function filteredCount(assets){
+      return (assets||[]).filter(assetMatchesFilter).length;
     }
 
     function renderAssetCard(asset){
@@ -4546,17 +4661,28 @@
         wrap.className='asset-svg-wrap';
         wrap.innerHTML=asset.preview;
         preview.appendChild(wrap);
-      }else if(asset.url){
+      }else if(asset.thumbnail||(asset.url&&!isVideoType(asset.type)&&asset.type!=='audio'&&asset.type!=='interactive')){
         var img=document.createElement('img');
-        img.src=encodeURI(asset.url);
-        img.alt=asset.alt||asset.filename||'';
+        img.src=encodeURI(asset.thumbnail||asset.url);
+        img.alt=asset.alt||asset.title||asset.filename||'';
         img.loading='lazy';
+        if(isVideoType(asset.type)){preview.classList.add('asset-preview-video')}
         img.addEventListener('click',function(){
-          lbImg.src=asset.url;
+          var openUrl=asset.embedUrl||asset.url;
+          if(isVideoType(asset.type)||asset.type==='interactive'){
+            window.open(openUrl,'_blank','noopener');
+            return;
+          }
+          lbImg.src=asset.thumbnail||asset.url;
           lbImg.alt=img.alt;
           lb.classList.add('on');
         });
         preview.appendChild(img);
+      }else if(isVideoType(asset.type)||asset.type==='audio'||asset.type==='interactive'){
+        var ph=document.createElement('div');
+        ph.className='asset-media-placeholder';
+        ph.textContent=typeLabel(asset.type);
+        preview.appendChild(ph);
       }else{
         preview.textContent='No preview';
       }
@@ -4569,13 +4695,19 @@
       meta.appendChild(type);
       var name=document.createElement('div');
       name.className='asset-name';
-      name.textContent=asset.filename||asset.alt||typeLabel(asset.type);
+      name.textContent=asset.title||asset.filename||asset.alt||typeLabel(asset.type);
       meta.appendChild(name);
-      if(asset.alt&&asset.alt!==asset.filename){
+      if(asset.alt&&asset.alt!==asset.filename&&asset.alt!==asset.title){
         var alt=document.createElement('div');
         alt.className='asset-alt';
         alt.textContent='Alt: '+asset.alt;
         meta.appendChild(alt);
+      }
+      if(asset.wistiaId){
+        var wid=document.createElement('div');
+        wid.className='asset-src';
+        wid.textContent='Wistia ID: '+asset.wistiaId;
+        meta.appendChild(wid);
       }
       if(asset.sources&&asset.sources.length){
         var src=document.createElement('div');
@@ -4583,23 +4715,68 @@
         src.textContent='Found via: '+asset.sources.join(', ');
         meta.appendChild(src);
       }
-      if(asset.url){
+      var linkUrl=asset.embedUrl||asset.url;
+      if(linkUrl){
         var link=document.createElement('a');
         link.className='asset-link';
-        link.href=asset.url;
+        link.href=linkUrl;
         link.target='_blank';
         link.rel='noopener';
-        link.textContent=asset.url;
+        link.textContent=linkUrl;
         meta.appendChild(link);
       }
       card.appendChild(meta);
       return card;
     }
 
+    function renderPageBody(page){
+      var body=document.createElement('div');
+      body.className='asset-body';
+      if(page.error){
+        var err=document.createElement('p');
+        err.className='asset-error';
+        err.textContent=page.error;
+        body.appendChild(err);
+        return body;
+      }
+      var lead=document.createElement('p');
+      lead.className='asset-lead';
+      lead.textContent='Media inside <main> on this page. Header/footer assets are excluded. Responsive srcset variants are deduplicated.';
+      body.appendChild(lead);
+      var shown=filteredCount(page.assets);
+      var grid=document.createElement('div');
+      grid.className='asset-grid';
+      (page.assets||[]).forEach(function(asset){
+        if(!assetMatchesFilter(asset)){return}
+        grid.appendChild(renderAssetCard(asset));
+      });
+      if(!shown){
+        var empty=document.createElement('p');
+        empty.className='asset-empty';
+        empty.textContent=activeFilter==='all'
+          ?'No media found inside <main> on this page.'
+          :'No '+typeLabel(activeFilter==='video'?'video-wistia':activeFilter).toLowerCase()+' items on this page ('+(page.assetCount||0)+' total).';
+        body.appendChild(empty);
+      }else{
+        body.appendChild(grid);
+      }
+      return body;
+    }
+
+    function pageCountLabel(page){
+      var total=page.assetCount||0;
+      var shown=filteredCount(page.assets);
+      if(activeFilter==='all'){
+        return total+' media item'+(total===1?'':'s');
+      }
+      return shown+' of '+total+' items';
+    }
+
     function renderPage(page){
       var det=document.createElement('details');
       det.className='asset-page';
       var sum=document.createElement('summary');
+      sum.innerHTML='<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>';
       var title=document.createElement('span');
       title.className='asset-page-title';
       title.textContent=page.title;
@@ -4613,64 +4790,22 @@
       sum.appendChild(url);
       var count=document.createElement('span');
       count.className='asset-page-count';
-      var visible=(page.assets||[]).filter(assetMatchesFilter).length;
-      count.textContent=visible+' asset'+(visible===1?'':'s');
+      count.textContent=pageCountLabel(page);
       sum.appendChild(count);
       det.appendChild(sum);
-      var body=document.createElement('div');
-      body.className='asset-body';
-      if(page.error){
-        var err=document.createElement('p');
-        err.className='asset-error';
-        err.textContent=page.error;
-        body.appendChild(err);
-      }else{
-        var lead=document.createElement('p');
-        lead.className='asset-lead';
-        lead.textContent='Unique visual assets inside <main> on this page. Responsive srcset variants are deduplicated to one canonical hubfs file.';
-        body.appendChild(lead);
-        var grid=document.createElement('div');
-        grid.className='asset-grid';
-        var shown=0;
-        (page.assets||[]).forEach(function(asset){
-          if(!assetMatchesFilter(asset)){return}
-          grid.appendChild(renderAssetCard(asset));
-          shown++;
-        });
-        if(!shown){
-          var empty=document.createElement('p');
-          empty.className='asset-empty';
-          empty.textContent=activeFilter==='all'
-            ?'No visual assets found inside <main> on this page.'
-            :'No assets match this filter on this page.';
-          body.appendChild(empty);
-        }else{
-          body.appendChild(grid);
-        }
-      }
-      det.appendChild(body);
+      det.appendChild(renderPageBody(page));
+      det._pageData=page;
       return det;
     }
 
-    function updateSectionVisibility(){
-      root.querySelectorAll('details.phase').forEach(function(section){
-        var visible=0;
-        section.querySelectorAll('details.asset-page').forEach(function(page){
-          var n=0;
-          var pageData=page._pageData;
-          if(pageData&&pageData.assets){
-            n=pageData.assets.filter(assetMatchesFilter).length;
-          }
-          var hide=activeFilter!=='all'&&n===0&&!pageData.error;
-          page.classList.toggle('pg-hidden',hide);
-          if(!hide){visible++}
+    function countFilteredTotal(sections){
+      var n=0;
+      sections.forEach(function(section){
+        section.pages.forEach(function(page){
+          n+=filteredCount(page.assets);
         });
-        section.classList.toggle('pg-section-hidden',!visible);
-        var countEl=section.querySelector('summary .count');
-        if(countEl){
-          countEl.textContent=visible+' page'+(visible===1?'':'s');
-        }
       });
+      return n;
     }
 
     function applyAssetFilter(filter){
@@ -4683,31 +4818,20 @@
       root.querySelectorAll('details.asset-page').forEach(function(pageEl){
         var page=pageEl._pageData;
         if(!page){return}
-        var visible=(page.assets||[]).filter(assetMatchesFilter).length;
         var countEl=pageEl.querySelector('.asset-page-count');
-        if(countEl){
-          countEl.textContent=visible+' asset'+(visible===1?'':'s');
-        }
-        var grid=pageEl.querySelector('.asset-grid');
-        if(grid){
-          grid.innerHTML='';
-          (page.assets||[]).forEach(function(asset){
-            if(assetMatchesFilter(asset)){grid.appendChild(renderAssetCard(asset))}
-          });
-        }
+        if(countEl){countEl.textContent=pageCountLabel(page)}
+        var oldBody=pageEl.querySelector('.asset-body');
+        if(oldBody){oldBody.replaceWith(renderPageBody(page))}
       });
-      updateSectionVisibility();
       if(filterStatus&&data){
+        var pageTotal=data.pageCount||0;
+        var itemTotal=data.totalAssets||0;
+        var uniqueTotal=data.uniqueAssets||0;
         if(filter==='all'){
-          filterStatus.textContent='Showing all assets from '+data.pageCount+' pages ('+data.totalAssets+' total · '+data.uniqueAssets+' unique).';
+          filterStatus.textContent='All '+pageTotal+' pages from the Pages tab are listed below, with '+itemTotal+' media items in <main> ('+uniqueTotal+' unique site-wide).';
         }else{
-          var n=0;
-          (data.sections||[]).forEach(function(section){
-            section.pages.forEach(function(page){
-              n+=(page.assets||[]).filter(function(a){return a.type===filter}).length;
-            });
-          });
-          filterStatus.textContent='Showing '+n+' '+typeLabel(filter).toLowerCase()+' assets across all pages.';
+          var shown=countFilteredTotal(data.sections||[]);
+          filterStatus.textContent='Filter active: '+shown+' matching items across all '+pageTotal+' pages ('+itemTotal+' total media items).';
         }
       }
       history.replaceState(null,'',filter==='all'?'#assets':'#assets?type='+filter);
@@ -4715,27 +4839,31 @@
 
     function renderAssets(json){
       data=json;
+      var pagesTabSections=buildSectionsFromPagesTab();
+      var mediaLookup=buildMediaLookup(json);
+      var merged=mergeSectionsWithMedia(pagesTabSections, mediaLookup);
+      data.sections=merged;
+      data.pageCount=merged.reduce(function(n,s){return n+s.pages.length},0);
       root.innerHTML='';
-      document.getElementById('assets-stat-pages').textContent=String(json.pageCount||0);
+      document.getElementById('assets-stat-pages').textContent=String(data.pageCount||0);
       document.getElementById('assets-stat-total').textContent=String(json.totalAssets||0);
       document.getElementById('assets-stat-unique').textContent=String(json.uniqueAssets||0);
-      document.getElementById('assets-stat-sections').textContent=String((json.sections||[]).length);
-      (json.sections||[]).forEach(function(section){
+      document.getElementById('assets-stat-sections').textContent=String(merged.length);
+      merged.forEach(function(section){
         var det=document.createElement('details');
         det.className='phase';
+        det.open=false;
         var sum=document.createElement('summary');
         sum.innerHTML='<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>'
           +'<h2>'+esc(section.name)+'</h2>'
-          +'<span class="count">'+section.pages.length+' pages</span>';
+          +'<span class="count">'+section.pages.length+' pages · '+section.sectionTotal+' items</span>';
         det.appendChild(sum);
         var body=document.createElement('div');
         body.className='body';
         var inner=document.createElement('div');
         inner.className='pg-body';
         section.pages.forEach(function(page){
-          var pageEl=renderPage(page);
-          pageEl._pageData=page;
-          inner.appendChild(pageEl);
+          inner.appendChild(renderPage(page));
         });
         body.appendChild(inner);
         det.appendChild(body);
@@ -4760,14 +4888,15 @@
       applyAssetFilter(match&&match[1]?match[1]:'all');
     });
 
-    fetch('page-assets.json?v=2').then(function(r){return r.json()}).then(renderAssets).catch(function(){
+    fetch('page-assets.json?v=4').then(function(r){return r.json()}).then(renderAssets).catch(function(){
       if(window.PAGE_ASSETS){renderAssets(window.PAGE_ASSETS);return}
       root.innerHTML='<p class="asset-error">Could not load page-assets.json. Run scripts/audit-page-assets.py to generate it.</p>';
     });
+  })();
 
-    if(location.hash.replace(/^#/,'').indexOf('assets')===0){
-      show('assets');
-    }
+  (function(){
+    var hash=(location.hash||'').replace(/^#/,'').split('?')[0];
+    if(hash==='assets'){show('assets')}
   })();
 </script>
 </body>
