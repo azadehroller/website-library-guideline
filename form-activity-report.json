@@ -1,0 +1,351 @@
+{
+  "version": 1,
+  "generated": "01 July 2026",
+  "title": "Form Activity Report",
+  "subtitle": "28 live forms across roller.software",
+  "intro": "This report maps every lead-capture form on the marketing site to the page(s) it lives on and how recently it last received a real submission. Recency is a reliable signal of whether a form is pulling its weight. Use it to decide which forms to keep, which to reposition, and which to retire, and to focus a traffic conversation on the pages that matter.",
+  "callout": "The Last submission and status columns are measured from live HubSpot data. The Volume column is intentionally blank — total submission counts are not in this pull and need a HubSpot export.",
+  "summary": {
+    "total": 28,
+    "active": 9,
+    "slow": 3,
+    "buried": 3,
+    "dormant": 13
+  },
+  "legend": [
+    { "status": "active", "label": "Active — recent, keep and monitor" },
+    { "status": "slow", "label": "Slow — trickling, worth a look" },
+    { "status": "buried", "label": "Buried — high value but low placement" },
+    { "status": "dormant", "label": "Dormant / event — retire or archive candidate" }
+  ],
+  "readingGuide": [
+    {
+      "heading": "Active (top of the table)",
+      "body": "These forms convert on their own. Protect the pages that feed them and keep them on freshness monitoring."
+    },
+    {
+      "heading": "Buried, high value (Demo, Enterprise, FEC)",
+      "body": "These are the most important finding. The forms work and the topics are commercial, but submissions are rare because the form sits low on a low-traffic page. These are redesign and reposition candidates, not retire candidates. Moving the form up, tightening the offer, or driving more traffic should lift them."
+    },
+    {
+      "heading": "Slow (weeks between submissions)",
+      "body": "Still alive but underperforming. Decide case by case whether the topic justifies a refresh or better placement."
+    },
+    {
+      "heading": "Dormant (months to years) and event forms",
+      "body": "These have effectively stopped. Gated content silent for a year or more (GX Show, Guest Experience Playbook, Customer Referral) is the clearest retire list. Event forms are expected to be dead between events and can be archived. Confirm seasonality on the trends and school-vacation guides before retiring, since those may spike at a particular time of year."
+    }
+  ],
+  "method": "Forms were identified from the June 2026 site audit and matched to their HubSpot form ID by reading each live page. Recency is the time since each form's most recent HubSpot submission at the time of this report. Forms sharing one HubSpot form ID across several pages are listed once, with all their pages. The site-wide subscribe form is listed separately because it appears on nearly every page.",
+  "footer": "Generated 01 July 2026. Recency reflects a point-in-time HubSpot pull and will drift; re-run the freshness checks for current values. Volume column pending a HubSpot submission-count export.",
+  "forms": [
+    {
+      "name": "AIP Awards 2025",
+      "guid": "f160d2fa…",
+      "pages": ["/events/aip2024-0"],
+      "lastSubmission": "0.2 h ago",
+      "lastSubmissionSort": 0,
+      "status": "event",
+      "statusLabel": "Event / archived",
+      "recommendation": "Archive. Event form; recent hit was a manual test.",
+      "note": "The only recent submission is a manual test; no organic traffic."
+    },
+    {
+      "name": "IAAPA Orlando 2025",
+      "guid": "b2a5c73e…",
+      "pages": ["/events/iaapaexpo2024"],
+      "lastSubmission": "0.2 h ago",
+      "lastSubmissionSort": 0,
+      "status": "event",
+      "statusLabel": "Event / archived",
+      "recommendation": "Archive. Event form; recent hit was a manual test.",
+      "note": "The only recent submission is a manual test; no organic traffic."
+    },
+    {
+      "name": "2026 Benchmark Report",
+      "guid": "5cbf1aa8…",
+      "pages": ["/2026-benchmark-report"],
+      "lastSubmission": "5.9 h ago",
+      "lastSubmissionSort": 6,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Strongest gated performer.",
+      "note": "Current flagship gated report."
+    },
+    {
+      "name": "Mystery Shopper Report",
+      "guid": "b7ecbc08…",
+      "pages": ["/mystery-shopper-report/"],
+      "lastSubmission": "8.2 h ago",
+      "lastSubmissionSort": 8,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Active.",
+      "note": null
+    },
+    {
+      "name": "Partners",
+      "guid": "1ba546dd…",
+      "pages": ["/partners/integration", "/partners/technology", "/partners/service"],
+      "lastSubmission": "18.6 h ago",
+      "lastSubmissionSort": 19,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Active and healthy.",
+      "note": "One form shared across all three partner pages."
+    },
+    {
+      "name": "2025 Benchmark Report",
+      "guid": "2051941f…",
+      "pages": ["/2025-benchmark-report"],
+      "lastSubmission": "6.7 days ago",
+      "lastSubmissionSort": 160,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep for now; expect a slow taper as 2026 takes over.",
+      "note": "Prior-year edition, superseded by 2026."
+    },
+    {
+      "name": "2026 Pulse Report",
+      "guid": "f5404897…",
+      "pages": ["/2026-pulse-report", "/customers/stories/area-51"],
+      "lastSubmission": "7.4 days ago",
+      "lastSubmissionSort": 179,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Roughly weekly cadence.",
+      "note": "Same form also appears on the Area 51 story page."
+    },
+    {
+      "name": "Bowling Trends 2026",
+      "guid": "b20c7fde…",
+      "pages": ["/2026-bowling-trends"],
+      "lastSubmission": "8.1 days ago",
+      "lastSubmissionSort": 194,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Recent, roughly weekly.",
+      "note": null
+    },
+    {
+      "name": "Venue Launch Checklist",
+      "guid": "70a64b65…",
+      "pages": ["/venue-launch-checklist"],
+      "lastSubmission": "10.6 days ago",
+      "lastSubmissionSort": 254,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Roughly weekly.",
+      "note": null
+    },
+    {
+      "name": "Roller Skating Trends 2026",
+      "guid": "ca21fd8b…",
+      "pages": ["/2025-roller-skating-trends-report"],
+      "lastSubmission": "6 weeks ago",
+      "lastSubmissionSort": 1010,
+      "status": "slow",
+      "statusLabel": "Slow",
+      "recommendation": "Watch. Trickling every ~6 weeks. Consider promoting or refreshing.",
+      "note": null
+    },
+    {
+      "name": "Party Parent Report",
+      "guid": "b71c75b1…",
+      "pages": ["/party-parent-report"],
+      "lastSubmission": "6 weeks ago",
+      "lastSubmissionSort": 1021,
+      "status": "slow",
+      "statusLabel": "Slow",
+      "recommendation": "Watch. ~6-week cadence.",
+      "note": null
+    },
+    {
+      "name": "Analytics eBook",
+      "guid": "066f2fff…",
+      "pages": ["/analytics-ebook"],
+      "lastSubmission": "7 weeks ago",
+      "lastSubmissionSort": 1167,
+      "status": "slow",
+      "statusLabel": "Slow",
+      "recommendation": "Watch. ~7-week cadence. Topic still relevant; worth better placement.",
+      "note": null
+    },
+    {
+      "name": "Demo request",
+      "guid": "08f35b46…",
+      "pages": ["/solutions/grow-your-business", "/solutions/multi-venue", "/features/pos-system"],
+      "lastSubmission": "3 months ago",
+      "lastSubmissionSort": 1803,
+      "status": "buried",
+      "statusLabel": "Buried",
+      "recommendation": "Reposition. High-value intent, but form is buried. Move it up / redesign, do not retire.",
+      "note": "One demo form shared across three high-intent pages; sits low on the page."
+    },
+    {
+      "name": "Enterprise",
+      "guid": "fb0ce181…",
+      "pages": ["/solutions/enterprise"],
+      "lastSubmission": "3 months ago",
+      "lastSubmissionSort": 2224,
+      "status": "buried",
+      "statusLabel": "Buried",
+      "recommendation": "Reposition. High-value, low placement. Redesign the page around the form.",
+      "note": "Form sits low on the page."
+    },
+    {
+      "name": "FEC Expert Guides",
+      "guid": "6c317a40…",
+      "pages": ["/industries/family-entertainment-centers"],
+      "lastSubmission": "6 months ago",
+      "lastSubmissionSort": 4055,
+      "status": "buried",
+      "statusLabel": "Buried",
+      "recommendation": "Reposition/refresh. Industry page should convert; check placement and offer.",
+      "note": "Key industry page."
+    },
+    {
+      "name": "Opening Your First Attraction",
+      "guid": "0d57dd22…",
+      "pages": ["/opening-your-first-attraction-playbook"],
+      "lastSubmission": "8 months ago",
+      "lastSubmissionSort": 5935,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire candidate or refresh content.",
+      "note": null
+    },
+    {
+      "name": "Water Park Trends 2026",
+      "guid": "28a500f2…",
+      "pages": ["/2025-water-park-trends-report"],
+      "lastSubmission": "9 months ago",
+      "lastSubmissionSort": 6413,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire candidate. Note possible seasonality before deciding.",
+      "note": "Seasonal topic."
+    },
+    {
+      "name": "Membership eBook",
+      "guid": "a8a3d5e4…",
+      "pages": ["/membership-ebook"],
+      "lastSubmission": "10 months ago",
+      "lastSubmissionSort": 6921,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire candidate.",
+      "note": null
+    },
+    {
+      "name": "Growth Webinar",
+      "guid": "93275b7f…",
+      "pages": ["/business-growth-webinar"],
+      "lastSubmission": "10 months ago",
+      "lastSubmissionSort": 6941,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Archive. Webinar campaign appears to be over.",
+      "note": "Campaign / webinar landing page."
+    },
+    {
+      "name": "ChatGPT eBook",
+      "guid": "78c04260…",
+      "pages": ["/chatgpt-ebook"],
+      "lastSubmission": "11 months ago",
+      "lastSubmissionSort": 8073,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire candidate.",
+      "note": "Topic likely dated."
+    },
+    {
+      "name": "School Vacation Optimization Guide",
+      "guid": "faee02b8…",
+      "pages": ["/school-vacation-optimization-guide"],
+      "lastSubmission": "15 months ago",
+      "lastSubmissionSort": 10966,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire candidate. Confirm seasonality first.",
+      "note": "Seasonal topic."
+    },
+    {
+      "name": "Expanding Your Business Playbook",
+      "guid": "12076001…",
+      "pages": ["/expanding-your-business-playbook"],
+      "lastSubmission": "16 months ago",
+      "lastSubmissionSort": 11207,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire candidate.",
+      "note": null
+    },
+    {
+      "name": "Scaling Success",
+      "guid": "f82db65d…",
+      "pages": ["/building-a-world-class-attraction-venue"],
+      "lastSubmission": "16 months ago",
+      "lastSubmissionSort": 11256,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Archive. Campaign is long over.",
+      "note": "Retired campaign page."
+    },
+    {
+      "name": "Customer Referral",
+      "guid": "e12ba16d…",
+      "pages": ["/customer-referral"],
+      "lastSubmission": "24 months ago",
+      "lastSubmissionSort": 17562,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Review. Silent ~2 years; confirm the referral program is still run.",
+      "note": null
+    },
+    {
+      "name": "GX Show eBook",
+      "guid": "ae7b5552…",
+      "pages": ["/gx-show-ebook"],
+      "lastSubmission": "27 months ago",
+      "lastSubmissionSort": 19492,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire. Silent ~2.2 years.",
+      "note": null
+    },
+    {
+      "name": "Guest Experience Playbook",
+      "guid": "7b17abe9…",
+      "pages": ["/guest-experience-playbook"],
+      "lastSubmission": "46 months ago",
+      "lastSubmissionSort": 33411,
+      "status": "dormant",
+      "statusLabel": "Dormant",
+      "recommendation": "Retire. Silent ~3.8 years.",
+      "note": null
+    },
+    {
+      "name": "Get Started",
+      "guid": "20a46e0f…",
+      "pages": ["/get-started/"],
+      "lastSubmission": "not measured",
+      "lastSubmissionSort": 1000000000000,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Core lead path, monitored on freshness.",
+      "note": "Primary conversion form. Not re-measured this session; treat as high-traffic active."
+    },
+    {
+      "name": "Site-wide subscribe",
+      "guid": "efa7bd0a…",
+      "pages": ["Almost every page (also the only form on /blog and /customer-stories)"],
+      "lastSubmission": "not measured",
+      "lastSubmissionSort": 1000000000000,
+      "status": "active",
+      "statusLabel": "Active",
+      "recommendation": "Keep. Global form, monitored on freshness.",
+      "note": "Shared newsletter/subscribe form embedded site-wide."
+    }
+  ]
+}

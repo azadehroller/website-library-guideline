@@ -1611,6 +1611,240 @@
     border-radius: 8px;
     background: var(--surface-muted);
   }
+
+  #panel-forms .forms-audit-divider {
+    margin: 36px 0 18px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+  }
+
+  #panel-forms .forms-audit-divider h2 {
+    margin: 0 0 6px;
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--heading);
+  }
+
+  #panel-forms .forms-audit-divider p {
+    margin: 0 0 14px;
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  #panel-forms details.forms-report {
+    margin: 0 0 8px;
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  #panel-forms details.forms-report > summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    cursor: pointer;
+    list-style: none;
+    background: linear-gradient(135deg, var(--heading) 0%, #033180 100%);
+    color: #fff;
+  }
+
+  #panel-forms details.forms-report > summary::-webkit-details-marker { display: none; }
+
+  #panel-forms details.forms-report > summary .chev {
+    transition: transform .15s;
+    flex: none;
+    opacity: .85;
+  }
+
+  #panel-forms details.forms-report[open] > summary .chev { transform: rotate(90deg); }
+
+  #panel-forms details.forms-report > summary h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 800;
+    flex: 1;
+  }
+
+  #panel-forms details.forms-report > summary .forms-report-date {
+    font-size: 12px;
+    opacity: .85;
+    white-space: nowrap;
+  }
+
+  #panel-forms .forms-report-body {
+    padding: 16px 18px 20px;
+  }
+
+  #panel-forms .forms-report-intro {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--text);
+    margin: 0 0 14px;
+  }
+
+  #panel-forms .forms-report-callout {
+    background: var(--tone-info-bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--link);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 14px;
+    margin: 0 0 16px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--heading);
+  }
+
+  #panel-forms .forms-report-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin: 0 0 14px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  #panel-forms .forms-report-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  #panel-forms .forms-report-legend .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    flex: none;
+  }
+
+  #panel-forms .forms-report-filters {
+    margin: 0 0 10px;
+  }
+
+  #panel-forms .forms-report-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 0 0 18px;
+  }
+
+  #panel-forms table.forms-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    min-width: 860px;
+  }
+
+  #panel-forms table.forms-report-table th,
+  #panel-forms table.forms-report-table td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  #panel-forms table.forms-report-table th {
+    background: var(--heading);
+    color: #fff;
+    font-weight: 800;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  #panel-forms table.forms-report-table th span { opacity: .55; font-weight: 400; }
+
+  #panel-forms table.forms-report-table tbody tr:nth-child(even) { background: var(--surface-muted); }
+
+  #panel-forms table.forms-report-table tbody tr.is-hidden { display: none; }
+
+  #panel-forms .forms-report-form-name { font-weight: 700; color: var(--heading); }
+
+  #panel-forms .forms-report-guid {
+    font-size: 10px;
+    font-family: var(--mono);
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  #panel-forms .forms-report-pages {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  #panel-forms .forms-report-pages a {
+    color: var(--link);
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+
+  #panel-forms .forms-report-pages a:hover { text-decoration: underline; }
+
+  #panel-forms .forms-report-age { white-space: nowrap; font-size: 12px; }
+
+  #panel-forms .forms-report-pill {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    white-space: nowrap;
+  }
+
+  #panel-forms .forms-report-pill.status-active { background: var(--link); color: #fff; }
+  #panel-forms .forms-report-pill.status-slow { background: #033180; color: #fff; }
+  #panel-forms .forms-report-pill.status-buried { background: var(--tone-info-bg); color: var(--heading); border: 1px solid var(--border); }
+  #panel-forms .forms-report-pill.status-dormant,
+  #panel-forms .forms-report-pill.status-event { background: var(--surface-muted); color: var(--heading); border: 1px solid var(--border); }
+
+  #panel-forms .forms-report-rec { font-size: 12.5px; line-height: 1.45; }
+
+  #panel-forms .forms-report-note {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  #panel-forms .forms-report-vol {
+    text-align: center;
+    color: var(--muted);
+  }
+
+  #panel-forms .forms-report-reading h3 {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--heading);
+    margin: 16px 0 4px;
+  }
+
+  #panel-forms .forms-report-reading p {
+    font-size: 13px;
+    color: var(--text);
+    margin: 0 0 8px;
+    line-height: 1.5;
+  }
+
+  #panel-forms .forms-report-method,
+  #panel-forms .forms-report-footer {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.45;
+    margin: 14px 0 0;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
 </style>
 </head>
 <body>
@@ -3570,8 +3804,17 @@
   <div id="panel-forms" role="tabpanel" aria-labelledby="tab-forms">
 
     <div class="intro panel">
-      <h1>Page forms</h1>
-      <p>Pages from the Pages tab that contain a lead-capture or interactive form inside <code>&lt;main&gt;</code>. Footer newsletter signup is excluded. HubSpot forms, custom form modules, HTML forms, and third-party embeds (Typeform, Calendly, meetings) are included.</p>
+      <h1>Forms</h1>
+      <p>HubSpot form activity report (submission recency and recommendations) plus a live crawl of every Pages-tab URL for forms inside <code>&lt;main&gt;</code>. Footer newsletter signup is excluded from the page audit.</p>
+    </div>
+
+    <div id="forms-report-root" aria-live="polite">
+      <p class="loading-text">Loading form activity report…</p>
+    </div>
+
+    <div class="forms-audit-divider">
+      <h2>Live page audit</h2>
+      <p>Automated crawl of all Pages-tab URLs — detects whether each page has a form in <code>&lt;main&gt;</code> (HubSpot forms, custom form modules, HTML forms, Typeform, Calendly, meetings). Run <code>scripts/audit-page-forms.py</code> to refresh.</p>
     </div>
 
     <div class="pg-stats" id="forms-stats">
@@ -5914,6 +6157,170 @@
     fetch('page-assets.json?v=6').then(function(r){return r.json()}).then(renderAssets).catch(function(){
       if(window.PAGE_ASSETS){renderAssets(window.PAGE_ASSETS);return}
       root.innerHTML='<p class="asset-error">Could not load page-assets.json. Run scripts/audit-page-assets.py to generate it.</p>';
+    });
+  })();
+
+  (function(){
+    var root=document.getElementById('forms-report-root');
+    if(!root){return}
+
+    var reportData=null;
+    var reportFilter='all';
+    var sortCol=2;
+    var sortDir=1;
+
+    var STATUS_DOT={
+      active:'var(--link)',
+      slow:'#033180',
+      buried:'var(--tone-info-bg)',
+      dormant:'var(--surface-muted)',
+      event:'var(--surface-muted)'
+    };
+
+    function esc(s){
+      return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+    }
+
+    function pageLink(path){
+      if(!path||path.indexOf('/')!==0){return esc(path)}
+      var href='https://www.roller.software'+path;
+      return '<a href="'+esc(href)+'" target="_blank" rel="noopener">'+esc(path)+'</a>';
+    }
+
+    function renderPagesCell(pages){
+      return (pages||[]).map(function(p){return pageLink(p)}).join('<br>');
+    }
+
+    function formMatchesFilter(form){
+      if(reportFilter==='all'){return true}
+      if(reportFilter==='dormant'){return form.status==='dormant'||form.status==='event'}
+      return form.status===reportFilter;
+    }
+
+    function sortForms(forms){
+      var sorted=forms.slice();
+      sorted.sort(function(a,b){
+        var x,y;
+        if(sortCol===2){
+          x=a.lastSubmissionSort; y=b.lastSubmissionSort;
+        }else if(sortCol===3){
+          x=(a.statusLabel||'').toLowerCase(); y=(b.statusLabel||'').toLowerCase();
+        }else if(sortCol===5){
+          x=(a.recommendation||'').toLowerCase(); y=(b.recommendation||'').toLowerCase();
+        }else if(sortCol===1){
+          x=(a.pages||[]).join(' ').toLowerCase(); y=(b.pages||[]).join(' ').toLowerCase();
+        }else{
+          x=(a.name||'').toLowerCase(); y=(b.name||'').toLowerCase();
+        }
+        if(x<y){return -sortDir}
+        if(x>y){return sortDir}
+        return 0;
+      });
+      return sorted;
+    }
+
+    function renderTableBody(){
+      var tbody=root.querySelector('#forms-report-tbody');
+      if(!tbody||!reportData){return}
+      tbody.innerHTML='';
+      sortForms(reportData.forms).forEach(function(form){
+        var tr=document.createElement('tr');
+        if(!formMatchesFilter(form)){tr.className='is-hidden'}
+        tr.innerHTML=
+          '<td><div class="forms-report-form-name">'+esc(form.name)+'</div>'
+          +'<div class="forms-report-guid">'+esc(form.guid)+'</div></td>'
+          +'<td class="forms-report-pages">'+renderPagesCell(form.pages)+'</td>'
+          +'<td class="forms-report-age">'+esc(form.lastSubmission)+'</td>'
+          +'<td><span class="forms-report-pill status-'+esc(form.status)+'">'+esc(form.statusLabel)+'</span></td>'
+          +'<td class="forms-report-vol">&mdash;</td>'
+          +'<td class="forms-report-rec">'+esc(form.recommendation)
+          +(form.note?'<div class="forms-report-note">'+esc(form.note)+'</div>':'')
+          +'</td>';
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderReport(json){
+      reportData=json;
+      var s=json.summary||{};
+      root.innerHTML=
+        '<details class="forms-report">'
+        +'<summary>'
+        +'<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>'
+        +'<h2>Form activity report</h2>'
+        +'<span class="forms-report-date">'+esc(json.generated)+'</span>'
+        +'</summary>'
+        +'<div class="forms-report-body">'
+        +'<p class="forms-report-intro">'+esc(json.intro)+'</p>'
+        +'<div class="forms-report-callout"><strong>Read before sharing:</strong> '+esc(json.callout)+'</div>'
+        +'<div class="pg-stats">'
+        +'<div class="pg-stat"><span class="pg-stat-n tone-coral">'+esc(s.total)+'</span><span class="pg-stat-l">Total forms</span></div>'
+        +'<div class="pg-stat"><span class="pg-stat-n tone-success">'+esc(s.active)+'</span><span class="pg-stat-l">Active</span></div>'
+        +'<div class="pg-stat"><span class="pg-stat-n">'+esc(s.slow)+'</span><span class="pg-stat-l">Slow</span></div>'
+        +'<div class="pg-stat"><span class="pg-stat-n tone-accent">'+esc(s.buried)+'</span><span class="pg-stat-l">Buried (high value)</span></div>'
+        +'<div class="pg-stat"><span class="pg-stat-n">'+esc(s.dormant)+'</span><span class="pg-stat-l">Dormant / archive</span></div>'
+        +'</div>'
+        +'<div class="forms-report-legend">'
+        +(json.legend||[]).map(function(item){
+          return '<span><span class="dot" style="background:'+(STATUS_DOT[item.status]||'var(--muted)')+'"></span> '+esc(item.label)+'</span>';
+        }).join('')
+        +'</div>'
+        +'<div class="pg-filters forms-report-filters" id="forms-report-filters" role="group" aria-label="Filter report by status">'
+        +'<span class="pg-filters-label">Status</span>'
+        +['all','active','slow','buried','dormant'].map(function(key){
+          var labels={all:'All forms',active:'Active',slow:'Slow',buried:'Buried',dormant:'Dormant / event'};
+          var on=reportFilter===key;
+          return '<button type="button" class="pg-filter'+(on?' on':'')+'" data-report-filter="'+key+'" aria-pressed="'+(on?'true':'false')+'">'+labels[key]+'</button>';
+        }).join('')
+        +'</div>'
+        +'<div class="forms-report-table-wrap">'
+        +'<table class="forms-report-table" id="forms-report-table">'
+        +'<thead><tr>'
+        +'<th data-sort-col="0">Form <span>&#8597;</span></th>'
+        +'<th data-sort-col="1">Page(s) <span>&#8597;</span></th>'
+        +'<th data-sort-col="2">Last submission <span>&#8597;</span></th>'
+        +'<th data-sort-col="3">Status <span>&#8597;</span></th>'
+        +'<th data-sort-col="4">Volume <span>&#8597;</span></th>'
+        +'<th data-sort-col="5">Recommendation <span>&#8597;</span></th>'
+        +'</tr></thead>'
+        +'<tbody id="forms-report-tbody"></tbody>'
+        +'</table></div>'
+        +'<div class="forms-report-reading">'
+        +'<h3>How to read this for a traffic conversation</h3>'
+        +(json.readingGuide||[]).map(function(item){
+          return '<p><strong>'+esc(item.heading)+'</strong> '+esc(item.body)+'</p>';
+        }).join('')
+        +'</div>'
+        +'<p class="forms-report-method"><strong>Method.</strong> '+esc(json.method)+'</p>'
+        +'<p class="forms-report-footer">'+esc(json.footer)+'</p>'
+        +'</div></details>';
+
+      renderTableBody();
+
+      root.querySelector('#forms-report-filters').addEventListener('click',function(e){
+        var btn=e.target.closest('[data-report-filter]');
+        if(!btn){return}
+        reportFilter=btn.getAttribute('data-report-filter');
+        root.querySelectorAll('[data-report-filter]').forEach(function(b){
+          var on=b.getAttribute('data-report-filter')===reportFilter;
+          b.classList.toggle('on',on);
+          b.setAttribute('aria-pressed',on?'true':'false');
+        });
+        renderTableBody();
+      });
+
+      root.querySelectorAll('#forms-report-table th[data-sort-col]').forEach(function(th){
+        th.addEventListener('click',function(){
+          var col=parseInt(th.getAttribute('data-sort-col'),10);
+          if(sortCol===col){sortDir=-sortDir}else{sortCol=col;sortDir=col===2?1:-1}
+          renderTableBody();
+        });
+      });
+    }
+
+    fetch('form-activity-report.json?v=1').then(function(r){return r.json()}).then(renderReport).catch(function(){
+      if(window.FORM_ACTIVITY_REPORT){renderReport(window.FORM_ACTIVITY_REPORT);return}
+      root.innerHTML='<p class="asset-error">Could not load form activity report.</p>';
     });
   })();
 
