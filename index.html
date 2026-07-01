@@ -213,6 +213,8 @@
   .r-design, .p-pricing, .p-cat-pricing { background: var(--tone-warn-bg); color: var(--tone-warn-fg); }
   .p-prof-services, .p-cat-partners { background: var(--tone-purple-bg); color: var(--tone-purple-fg); }
   .p-product-launch, .p-cat-campaigns { background: var(--tone-warn-bg); color: var(--tone-warn-fg); }
+  .p-benchmark { background: var(--tone-info-bg); color: var(--tone-info-fg); }
+  .p-pulse { background: #F0E8FF; color: #5B21B6; }
   .p-values, .p-cat-gated { background: #FFF0E6; color: var(--tone-warn-alt-fg); }
   .p-multi-venue, .p-cat-industries { background: var(--tone-sky-bg); color: var(--tone-sky-fg); }
   .p-customer-story, .p-cat-solutions { background: #E0E8F5; color: var(--text); }
@@ -474,7 +476,7 @@
   .usedby { margin-top: 8px; font-size: 13px; }
   .tok-caption { font-size: 12px; color: var(--muted); margin: 2px 0 8px; }
 
-  #panel-index, #panel-pages, #panel-hs, #panel-assets { display: none; }
+  #panel-index, #panel-pages, #panel-hs, #panel-assets, #panel-forms { display: none; }
 
   .idx {
     & h3 {
@@ -626,6 +628,10 @@
   .pg-comp-faq:hover, .comp-coverage-faq:hover { background: var(--tone-purple-fg); color: var(--white); }
   .pg-comp-twocol, .comp-coverage-twocol { background: var(--tone-info-bg); color: var(--tone-info-fg); border-color: var(--blue-90); }
   .pg-comp-twocol:hover, .comp-coverage-twocol:hover { background: var(--heading); color: var(--white); }
+  .pg-comp-metric, .comp-coverage-metric { background: #E8F4FF; color: #0047AB; border-color: #93C5FD; }
+  .pg-comp-metric:hover, .comp-coverage-metric:hover { background: #0047AB; color: var(--white); }
+  .pg-comp-interactive-hero, .comp-coverage-interactive-hero { background: #F0E8FF; color: #5B21B6; border-color: #C4B5FD; }
+  .pg-comp-interactive-hero:hover, .comp-coverage-interactive-hero:hover { background: #5B21B6; color: var(--white); }
 
   .comp-used-lead { margin: 0 0 var(--space-sm); font-size: 13.5px; color: var(--muted); }
   .comp-used-lead a { font-weight: 700; }
@@ -1123,7 +1129,7 @@
   }
 
   /* Assets tab */
-  #panel-assets details.asset-page {
+  #panel-assets details.asset-page, #panel-forms details.asset-page{
     margin: 6px 0;
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -1131,7 +1137,7 @@
     overflow: hidden;
   }
 
-  #panel-assets details.asset-page > summary {
+  #panel-assets details.asset-page > summary, #panel-forms details.asset-page > summary{
     display: flex;
     align-items: baseline;
     gap: 10px;
@@ -1141,19 +1147,19 @@
     flex-wrap: wrap;
   }
 
-  #panel-assets details.asset-page > summary .chev {
+  #panel-assets details.asset-page > summary .chev, #panel-forms details.asset-page > summary .chev{
     transition: transform .15s;
     color: var(--muted);
     flex: none;
   }
 
-  #panel-assets details.asset-page[open] > summary .chev {
+  #panel-assets details.asset-page[open] > summary .chev, #panel-forms details.asset-page[open] > summary .chev{
     transform: rotate(90deg);
   }
 
-  #panel-assets details.asset-page > summary::-webkit-details-marker { display: none; }
+  #panel-assets details.asset-page > summary::-webkit-details-marker, #panel-forms details.asset-page > summary::-webkit-details-marker{ display: none; }
 
-  #panel-assets .asset-page-title {
+  #panel-assets .asset-page-title, #panel-forms .asset-page-title{
     font-weight: 700;
     font-size: 13.5px;
     color: var(--text);
@@ -1161,7 +1167,7 @@
     min-width: 0;
   }
 
-  #panel-assets .asset-page-url {
+  #panel-assets .asset-page-url, #panel-forms .asset-page-url{
     font-family: var(--mono);
     font-size: 11.5px;
     color: var(--link);
@@ -1169,7 +1175,7 @@
     word-break: break-all;
   }
 
-  #panel-assets .asset-page-count {
+  #panel-assets .asset-page-count, #panel-forms .asset-page-count{
     margin-left: auto;
     font-size: 11px;
     font-weight: 800;
@@ -1177,24 +1183,24 @@
     white-space: nowrap;
   }
 
-  #panel-assets .asset-body {
+  #panel-assets .asset-body, #panel-forms .asset-body{
     padding: 0 14px 14px;
     border-top: 1px solid var(--border);
   }
 
-  #panel-assets .asset-lead {
+  #panel-assets .asset-lead, #panel-forms .asset-lead{
     font-size: 12px;
     color: var(--muted);
     margin: 10px 0 12px;
   }
 
-  #panel-assets .asset-grid {
+  #panel-assets .asset-grid, #panel-forms .asset-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 10px;
   }
 
-  #panel-assets .asset-card {
+  #panel-assets .asset-card, #panel-forms .asset-card{
     border: 1px solid var(--border);
     border-radius: 10px;
     background: var(--surface-muted);
@@ -1203,7 +1209,7 @@
     flex-direction: column;
   }
 
-  #panel-assets .asset-preview {
+  #panel-assets .asset-preview, #panel-forms .asset-preview{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1215,20 +1221,20 @@
     overflow: hidden;
   }
 
-  #panel-assets .asset-preview img {
+  #panel-assets .asset-preview img, #panel-forms .asset-preview img{
     max-width: 100%;
     max-height: 136px;
     object-fit: contain;
     cursor: zoom-in;
   }
 
-  #panel-assets .asset-preview svg {
+  #panel-assets .asset-preview svg, #panel-forms .asset-preview svg{
     max-width: 72px;
     max-height: 72px;
     color: var(--heading);
   }
 
-  #panel-assets .asset-svg-wrap {
+  #panel-assets .asset-svg-wrap, #panel-forms .asset-svg-wrap{
     width: 100%;
     max-height: 136px;
     overflow: auto;
@@ -1237,7 +1243,7 @@
     justify-content: center;
   }
 
-  #panel-assets .asset-meta {
+  #panel-assets .asset-meta, #panel-forms .asset-meta{
     padding: 10px 12px;
     display: flex;
     flex-direction: column;
@@ -1245,7 +1251,7 @@
     flex: 1;
   }
 
-  #panel-assets .asset-type {
+  #panel-assets .asset-type, #panel-forms .asset-type{
     align-self: flex-start;
     font-size: 10px;
     font-weight: 800;
@@ -1257,15 +1263,15 @@
     color: var(--tone-info-fg);
   }
 
-  #panel-assets .asset-type.type-svg-inline { background: var(--tone-teal-bg); color: var(--tone-teal-fg); }
-  #panel-assets .asset-type.type-background { background: var(--tone-amber-bg, #FFF8E6); color: var(--tone-amber-fg, #8A5A00); }
-  #panel-assets .asset-type.type-video-wistia,
-  #panel-assets .asset-type.type-video-file,
-  #panel-assets .asset-type.type-video-embed { background: #F3EBFF; color: #5B21B6; }
-  #panel-assets .asset-type.type-audio { background: #E8F7EF; color: #0F6B3E; }
-  #panel-assets .asset-type.type-interactive { background: var(--tone-amber-bg, #FFF8E6); color: var(--tone-amber-fg, #8A5A00); }
+  #panel-assets .asset-type.type-svg-inline, #panel-forms .asset-type.type-svg-inline{ background: var(--tone-teal-bg); color: var(--tone-teal-fg); }
+  #panel-assets .asset-type.type-background, #panel-forms .asset-type.type-background{ background: var(--tone-amber-bg, #FFF8E6); color: var(--tone-amber-fg, #8A5A00); }
+  #panel-assets .asset-type.type-video-wistia,, #panel-forms .asset-type.type-video-wistia,
+  #panel-assets .asset-type.type-video-file,, #panel-forms .asset-type.type-video-file,
+  #panel-assets .asset-type.type-video-embed, #panel-forms .asset-type.type-video-embed{ background: #F3EBFF; color: #5B21B6; }
+  #panel-assets .asset-type.type-audio, #panel-forms .asset-type.type-audio{ background: #E8F7EF; color: #0F6B3E; }
+  #panel-assets .asset-type.type-interactive, #panel-forms .asset-type.type-interactive{ background: var(--tone-amber-bg, #FFF8E6); color: var(--tone-amber-fg, #8A5A00); }
 
-  #panel-assets .asset-preview.asset-preview-video::after {
+  #panel-assets .asset-preview.asset-preview-video::after, #panel-forms .asset-preview.asset-preview-video::after{
     content: "▶";
     position: absolute;
     inset: 0;
@@ -1278,9 +1284,9 @@
     pointer-events: none;
   }
 
-  #panel-assets .asset-preview { position: relative; }
+  #panel-assets .asset-preview, #panel-forms .asset-preview{ position: relative; }
 
-  #panel-assets .asset-media-placeholder {
+  #panel-assets .asset-media-placeholder, #panel-forms .asset-media-placeholder{
     font-size: 12px;
     font-weight: 800;
     color: var(--muted);
@@ -1290,22 +1296,22 @@
     padding: 12px;
   }
 
-  #panel-assets .asset-name {
+  #panel-assets .asset-name, #panel-forms .asset-name{
     font-size: 12.5px;
     font-weight: 700;
     color: var(--text);
     word-break: break-word;
   }
 
-  #panel-assets .asset-alt,
-  #panel-assets .asset-src {
+  #panel-assets .asset-alt,, #panel-forms .asset-alt,
+  #panel-assets .asset-src, #panel-forms .asset-src{
     font-size: 11px;
     color: var(--muted);
     line-height: 1.4;
     word-break: break-word;
   }
 
-  #panel-assets .asset-link {
+  #panel-assets .asset-link, #panel-forms .asset-link{
     font-family: var(--mono);
     font-size: 10.5px;
     color: var(--link);
@@ -1313,17 +1319,298 @@
     text-decoration: none;
   }
 
-  #panel-assets .asset-empty,
-  #panel-assets .asset-error {
+  #panel-assets .asset-empty,, #panel-forms .asset-empty,
+  #panel-assets .asset-error, #panel-forms .asset-error{
     font-size: 12.5px;
     color: var(--muted);
     margin: 8px 0 0;
   }
 
-  #panel-assets .asset-error { color: var(--tone-warn-fg); }
+  #panel-assets .asset-error, #panel-forms .asset-error{ color: var(--tone-warn-fg); }
 
-  #panel-assets details.phase.pg-section-hidden { display: none; }
-  #panel-assets details.asset-page.pg-hidden { display: none; }
+  #panel-assets details.phase.pg-section-hidden, #panel-forms details.phase.pg-section-hidden{ display: none; }
+  #panel-assets details.asset-page.pg-hidden, #panel-forms details.asset-page.pg-hidden{ display: none; }
+
+  #panel-assets .assets-search-wrap, #panel-forms .assets-search-wrap{
+    margin: 0 0 14px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+  }
+
+  #assets-search {
+    width: 100%;
+    max-width: 520px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-muted);
+  }
+
+  #assets-format-filters {
+    display: none;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  #assets-format-filters.is-visible { display: flex; }
+
+  #assets-search-results {
+    display: none;
+    margin: 0 0 18px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+  }
+
+  #assets-search-results.is-visible { display: block; }
+
+  #assets-search-results .assets-search-lead {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+
+  #assets-search-results details.phase { margin-top: 10px; }
+
+  #assets-search-results .assets-search-pages {
+    padding: 4px 0 8px 14px;
+    margin-left: 14px;
+    border-left: 2px solid var(--border);
+  }
+
+  #assets-search-results .asset-search-page {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 8px 10px;
+    margin: 4px 0;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    flex-wrap: wrap;
+  }
+
+  #assets-search-results .asset-search-page:hover {
+    background: var(--tone-info-bg);
+  }
+
+  #assets-search-results .asset-search-page .name {
+    font-weight: 700;
+    font-size: 13.5px;
+    color: var(--text);
+    flex: 0 0 220px;
+    min-width: 0;
+  }
+
+  #assets-search-results .asset-search-page .url {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--link);
+    word-break: break-all;
+  }
+
+  #assets-search-results .asset-search-page .meta {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--coral);
+    white-space: nowrap;
+  }
+
+  /* ── Global Stats panel ───────────────────────────────────────── */
+  #panel-stats .gs-callout {
+    background: var(--tone-warn-bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--coral);
+    border-radius: var(--r);
+    padding: 12px 16px;
+    margin: 0 0 var(--space-md);
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.55;
+  }
+  #panel-stats .gs-callout b { color: var(--tone-warn-fg); }
+
+  #panel-stats .gs-info {
+    background: var(--tone-info-bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--link);
+    border-radius: var(--r);
+    padding: 12px 16px;
+    margin: 0 0 var(--space-md);
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.55;
+  }
+  #panel-stats .gs-info b { color: var(--heading); }
+
+  .gs-num-pill {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: .02em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex: none;
+  }
+  .gs-num-venue   { background: #FEE2E2; color: #991B1B; }
+  .gs-num-revenue { background: var(--tone-success-bg); color: var(--tone-success-fg); }
+  .gs-num-context { background: var(--tone-info-bg);    color: var(--tone-info-deep); }
+  .gs-num-empty   { font-size: 11px; color: var(--muted); font-style: italic; }
+
+  .gs-comp-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 999px;
+    flex: none;
+    white-space: nowrap;
+  }
+  .gs-comp-hc  { background: #FEE2E2; color: #991B1B; }
+  .gs-comp-ls  { background: #FEF3C7; color: #92400E; }
+  .gs-comp-ss  { background: var(--tone-success-bg); color: var(--tone-success-fg); }
+  .gs-comp-sss { background: var(--tone-purple-bg);  color: var(--tone-purple-fg); }
+  .gs-comp-ur  { background: #F3E8FF; color: #6B21A8; }
+
+  #panel-stats .pg-row { align-items: center; }
+  #panel-stats .pg-row .pg-title { flex: 0 0 220px; }
+  #panel-stats .pg-row .gs-nums  { display: flex; flex-wrap: wrap; gap: 4px; flex: 1; min-width: 0; }
+
+  #panel-stats .gs-overview-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: var(--space-sm) 0;
+  }
+  #panel-stats .gs-overview-table th,
+  #panel-stats .gs-overview-table td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  #panel-stats .gs-overview-table th {
+    background: var(--tone-info-bg);
+    color: var(--heading);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  #panel-stats .gs-overview-table td code {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+  #panel-stats .gs-overview-table td .gs-page-count {
+    font-size: 15px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    color: var(--heading);
+  }
+  #panel-stats .gs-filter-active { background: var(--link); color: #fff; border-color: var(--link); }
+
+  #panel-stats .pg-section-hidden { display: none !important; }
+
+  #panel-stats .gs-snippet {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 3px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 560px;
+  }
+
+  #panel-stats .pg-body .pg-row-wrap {
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+  }
+  #panel-stats .pg-body .pg-row-wrap:last-child { border-bottom: none; }
+  /* ── /Global Stats panel ───────────────────────────────────────── */
+
+  #panel-assets .asset-format-tag,, #panel-forms .asset-format-tag,
+  #panel-assets .asset-size-tag, #panel-forms .asset-size-tag{
+    position: absolute;
+    z-index: 1;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: rgba(1, 24, 64, .82);
+    color: #fff;
+    pointer-events: none;
+  }
+
+  #panel-assets .asset-format-tag, #panel-forms .asset-format-tag { top: 8px; right: 8px; }
+  #panel-assets .asset-size-tag, #panel-forms .asset-size-tag { bottom: 8px; left: 8px; }
+
+  #panel-forms .form-badge {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    padding: 3px 8px;
+    border-radius: 999px;
+    flex: none;
+  }
+
+  #panel-forms .form-badge-yes { background: var(--tone-success-bg); color: var(--tone-success-fg); }
+  #panel-forms .form-badge-no { background: rgba(1, 24, 64, .08); color: var(--muted); }
+
+  #panel-forms .form-type-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 10px;
+  }
+
+  #panel-forms .form-type-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: var(--tone-info-bg);
+    color: var(--tone-info-deep);
+  }
+
+  #panel-forms .form-page-note {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  #forms-search {
+    width: 100%;
+    max-width: 520px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-muted);
+  }
 </style>
 </head>
 <body>
@@ -1336,7 +1623,9 @@
       <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Components</button>
       <button id="tab-pages" role="tab" aria-selected="false" aria-controls="panel-pages">Pages</button>
       <button id="tab-assets" role="tab" aria-selected="false" aria-controls="panel-assets">Media</button>
+      <button id="tab-forms" role="tab" aria-selected="false" aria-controls="panel-forms">Forms</button>
       <button id="tab-hs" role="tab" aria-selected="false" aria-controls="panel-hs">HubSpot</button>
+      <button id="tab-stats" role="tab" aria-selected="false" aria-controls="panel-stats">Global stats</button>
     </div>
   </div>
 </header>
@@ -1646,7 +1935,7 @@
       <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
       <span class="pn">3</span>
       <h2>Phase 3 · Standalone components</h2>
-      <span class="count">32 tasks</span>
+      <span class="count">34 tasks</span>
     </summary>
     <div class="body">
       <details class="task" id="task-twocol">
@@ -1658,7 +1947,7 @@
         <div class="detail">
           <dl>
             <dt>Depends on</dt><dd><a href="#task-text">Text</a>, <a href="#task-quote">Quote</a>, <a href="#task-stats">Stats</a>, <a href="#task-button">Button</a>, <a href="#task-image">Image</a>, <a href="#task-video">Video</a></dd>
-            <dt>Variants</dt><dd>Media side (left / right); content mix; background colour; with / without stat overlay; dark background (Var 1; Var 2).</dd>
+            <dt>Variants</dt><dd>Media side (left / right); content mix; background colour; with / without stat overlay; dark background (Var 1; Var 2); light background — Pulse report story sections (desktop; mobile).</dd>
             <dt>Fields</dt><dd><code>mediaSide</code>, <code>background</code>, <code>contentColumn</code> (array of blocks), <code>mediaColumn</code> (image or video + optional stat)</dd>
             <dt>Tokens</dt><dd><a class="chip link" href="#tok-grid">Grid</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a> + inherited from its blocks</dd>
             <dt>Steps</dt><dd><ol><li>Sanity composite object with a column page-builder</li><li>Astro component composing the sub-components; media side + background</li><li>Mobile stacking to one column</li></ol></dd>
@@ -1672,7 +1961,7 @@
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4224-15987" target="_blank" rel="noopener">Var 6</a>
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16321" target="_blank" rel="noopener">Mobile A</a>
               <a href="https://www.figma.com/design/O9pCkQPfrVioGWgt9I4Mjx/Product-Launch-key-visuals---assets?node-id=4228-16344" target="_blank" rel="noopener">Mobile B</a>
-            </div><div class="figscreens"><img src="figma-screenshots/twocol-var1.png" alt="Two-column Var 1"><img src="figma-screenshots/twocol-var2.png" alt="Two-column Var 2"><img src="figma-screenshots/twocol-var3.png" alt="Two-column Var 3"><img src="figma-screenshots/twocol-var4.png" alt="Two-column Var 4"><img src="figma-screenshots/twocol-var5.png" alt="Two-column Var 5"><img src="figma-screenshots/twocol-var6.png" alt="Two-column Var 6"><img src="figma-screenshots/twocol-mobile-a.png" alt="Two-column Mobile A"><img src="figma-screenshots/twocol-mobile-b.png" alt="Two-column Mobile B"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7271&amp;m=dev" target="_blank" rel="noopener">Var 1</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7209&amp;m=dev" target="_blank" rel="noopener">Var 2</a></div><div class="figscreens"><img src="figma-screenshots/twocol-dark-var1.png" alt="Two-column dark Var 1"><img src="figma-screenshots/twocol-dark-var2.png" alt="Two-column dark Var 2"></div></dd>
+            </div><div class="figscreens"><img src="figma-screenshots/twocol-var1.png" alt="Two-column Var 1"><img src="figma-screenshots/twocol-var2.png" alt="Two-column Var 2"><img src="figma-screenshots/twocol-var3.png" alt="Two-column Var 3"><img src="figma-screenshots/twocol-var4.png" alt="Two-column Var 4"><img src="figma-screenshots/twocol-var5.png" alt="Two-column Var 5"><img src="figma-screenshots/twocol-var6.png" alt="Two-column Var 6"><img src="figma-screenshots/twocol-mobile-a.png" alt="Two-column Mobile A"><img src="figma-screenshots/twocol-mobile-b.png" alt="Two-column Mobile B"></div><div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7271&amp;m=dev" target="_blank" rel="noopener">Dark · Var 1</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7209&amp;m=dev" target="_blank" rel="noopener">Dark · Var 2</a></div><div class="figscreens"><img src="figma-screenshots/twocol-dark-var1.png" alt="Two-column dark Var 1"><img src="figma-screenshots/twocol-dark-var2.png" alt="Two-column dark Var 2"></div><div class="figrow"><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=2885-1009&amp;m=dev" target="_blank" rel="noopener">Light · Pulse report · Desktop</a><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=2885-1158&amp;m=dev" target="_blank" rel="noopener">Light · Pulse report · Mobile</a></div><div class="figscreens"><img src="figma-screenshots/twocol-pulse-light-desktop.png" alt="Two-column – Pulse report light desktop"><img src="figma-screenshots/twocol-pulse-light-mobile.png" alt="Two-column – Pulse report light mobile"></div></dd>
           </dl>
         </div>
       </details>
@@ -1986,6 +2275,46 @@
           <dt>Steps</dt><dd><ol><li>Sanity <code>statsSection</code></li><li>Astro component composing the Stats primitive</li></ol></dd>
           <dt>Used on</dt><dd id="comp-used-stats-section"><span class="loading-text">Loading page coverage…</span></dd>
           <dt>Figma</dt><dd><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=4263-117796" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-widget.png" alt="Stats section"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=8810-28382&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/section-stats-blue.png" alt="Stats section – blue background"></div><div class="figrow"><a href="https://www.figma.com/design/bx2k4aFWamz5TjKkpQ21Sa/Website-Refresh-2022---2024?node-id=10100-29968&amp;m=dev" target="_blank" rel="noopener">View frame</a></div><div class="figscreens"><img src="figma-screenshots/stats-section-v2.png" alt="Stats section – light row"></div></dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-metric">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Metric<small>Section · benchmark report data viz</small></span><span class="meta" id="comp-meta-metric"><span class="pill p-benchmark">Benchmark report</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A dark-background data-visualisation block for headline benchmark stats. Three layout modes: proportional vertical bars, glowing circle comparison, and an icon-grid ratio block. Used only on the <a href="#tmpl-other-benchmark">2026 Industry benchmark report</a> landing page — distinct from the site-wide <a href="#task-stats-section">Stats section</a> bar and the <a href="#task-stats">Stats primitive</a> inside Two-column.</dd>
+          <dt>Variants</dt><dd>
+            <b>Bar chart</b> — two (or more) vertical gradient bars with proportional height, large percentage value and caption (<code>chart_type == line_chart</code> on HubSpot <code>metric.module</code>).
+            <b>Circle chart</b> — side-by-side glowing circles sized by value, with multiplier + label (<code>chart_type == circle_chart</code> on HubSpot <code>metric.module</code>).
+            <b>Icon grid</b> — dual icon grids comparing two cohorts with a headline ratio, device icons and caption (HubSpot <code>special-metric.module</code>).
+          </dd>
+          <dt>Fields</dt><dd><code>items</code> (value, label, optional caption); <code>chartType</code> (bar | circle | icon-grid); icon-grid adds <code>primaryIcons</code>, <code>secondaryIcons</code>, <code>ratio</code>, <code>primaryIcon</code>, <code>secondaryIcon</code>, <code>caption</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>metric</code> block with <code>chartType</code> enum and repeatable stat items</li><li>Astro component — bar and circle variants share a grid wrapper; icon-grid variant uses SVG icon tiles</li><li>Confirm gradient, bar height scaling and circle sizing rules with design</li><li>Scroll-trigger fade-in for icon-grid variant (matches HubSpot <code>fade-in-on-scroll</code>)</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-metric" data-used-static><span data-used-page="2026 Benchmark Report">2026 Benchmark Report</span></dd>
+          <dt>HubSpot</dt><dd><code>metric.module</code> (<code>199392299277</code>) — bar chart + circle chart via <code>chart_type</code> field · <code>special-metric.module</code> (<code>199468273751</code>) — icon grid ratio block</dd>
+          <dt>Figma</dt><dd>
+            <div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7259&amp;m=dev" target="_blank" rel="noopener">Bar chart</a><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7264&amp;m=dev" target="_blank" rel="noopener">Circle chart</a></div>
+            <div class="figscreens"><img src="figma-screenshots/metric-bar-chart.png" alt="Metric – Bar chart"><img src="figma-screenshots/metric-circle-chart.png" alt="Metric – Circle chart"></div>
+            <div class="figrow"><a href="https://www.figma.com/design/3BpuT8zMGCwuVnicLh5Bts/Industry-benchmark-report?node-id=4386-7267&amp;m=dev" target="_blank" rel="noopener">Icon grid · Special metric</a></div>
+            <div class="figscreens"><img src="figma-screenshots/metric-special-icon-grid.png" alt="Metric – Icon grid (special metric)"></div>
+          </dd>
+        </dl></div>
+      </details>
+
+      <details class="task" id="task-interactive-hero">
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Interactive hero<small>Section · pulse report animated hero</small></span><span class="meta" id="comp-meta-interactive-hero"><span class="pill p-pulse">Pulse report</span></span></summary>
+        <div class="detail"><dl>
+          <dt>Description</dt><dd>A full-width hero with animated gradient orbs, noise texture overlay, centred eyebrow, display headline, intro copy and primary CTA. Distinct from the static <a href="#task-flat-one-column">Flat one column</a> hero and the <a href="#task-video-hero-section">Video hero section</a>. Used only on the <a href="#tmpl-other-pulse">2026 Pulse report</a> landing page.</dd>
+          <dt>Variants</dt><dd>Desktop; mobile (stacked content, reduced orb scale).</dd>
+          <dt>Fields</dt><dd><code>eyebrow</code>, <code>heading</code>, <code>body</code>, <code>cta</code> (label, url), optional <code>orbColors</code></dd>
+          <dt>Tokens</dt><dd><a class="chip link" href="#tok-type">Type</a><a class="chip link" href="#tok-colour">Colour</a><a class="chip link" href="#tok-space">Spacing</a></dd>
+          <dt>Steps</dt><dd><ol><li>Sanity <code>interactiveHero</code> block</li><li>Astro component with CSS gradient orbs + optional JS parallax/drift animation</li><li>Confirm orb animation performance and reduced-motion fallback with design</li></ol></dd>
+          <dt>Used on</dt><dd id="comp-used-interactive-hero" data-used-static><span data-used-page="2026 Pulse Report">2026 Pulse Report</span></dd>
+          <dt>HubSpot</dt><dd><code>interactive-hero.module</code> (<code>211211194424</code>)</dd>
+          <dt>Figma</dt><dd>
+            <div class="figrow"><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=2885-996&amp;m=dev" target="_blank" rel="noopener">Desktop</a><a href="https://www.figma.com/design/oK2V39NjOFOc0NFyMG6coK/Pulse-Report?node-id=2885-1143&amp;m=dev" target="_blank" rel="noopener">Mobile</a></div>
+            <div class="figscreens"><img src="figma-screenshots/interactive-hero-desktop.png" alt="Interactive hero – Desktop"><img src="figma-screenshots/interactive-hero-mobile.png" alt="Interactive hero – Mobile"></div>
+          </dd>
         </dl></div>
       </details>
 
@@ -2619,6 +2948,7 @@
             <li><b>Hero</b> — light centred vertical hero with headline, intro copy and primary CTA on a soft gradient background</li>
             <li><b>Report preview</b> — two-column block: left copy listing what’s inside the report, right illustrative chart/graph preview with topic pills</li>
             <li><b>Insight sections</b> — stack of alternating light two-column bands (copy + supporting image), each covering a report theme</li>
+            <li><b>Metric blocks</b> — dark data-viz bands: vertical bar charts, circle comparisons and icon-grid ratio stats embedded in insight sections</li>
             <li><b>Dark highlight band</b> — two-column section on a dark background with CTA</li>
             <li><b>Download form</b> — vertical layout with heading, multi-field lead-capture form, submit CTA and report thumbnail; testimonial carousel below the form</li>
             <li><b>Global footer</b></li>
@@ -2627,6 +2957,7 @@
             <a class="chip link" href="#task-header">Header</a>
             <a class="chip link" href="#task-flat-one-column">Flat one column</a> <span class="muted">(light hero)</span>
             <a class="chip link" href="#task-twocol">Two-column</a> <span class="muted">(report preview + insight sections)</span>
+            <a class="chip link" href="#task-metric">Metric</a> <span class="muted">(bar, circle and icon-grid stats in insight sections)</span>
             <a class="chip link" href="#task-twocol-bigger">Two-column with bigger left</a> <span class="muted">(dark highlight band)</span>
             <a class="chip link" href="#task-form-section">Form section</a> <span class="muted">(download gate)</span>
             <a class="chip link" href="#task-testimonial-carousel">Testimonial carousel</a> <span class="muted">(quotes below form)</span>
@@ -2637,25 +2968,26 @@
       </details>
 
       <details class="task" id="tmpl-other-pulse">
-        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industry pulse report<small>Bespoke page · gated content · /2025-pulse-report</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
+        <summary><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg><span class="tname">Industry pulse report<small>Bespoke page · gated content · /2025-pulse-report · /2026-pulse-report</small></span><span class="meta"><span class="pill r-design">Design</span><span class="pill r-dev">Dev</span><span class="pill s-todo">To do</span></span></summary>
         <div class="detail"><dl>
           <dt>Type</dt><dd>Bespoke gated landing page · General code template with report narrative sections and a download form</dd>
-          <dt>Live page</dt><dd><span data-used-page="Pulse Report">Pulse Report</span> · <code>/2025-pulse-report</code></dd>
+          <dt>Live page</dt><dd><span data-used-page="Pulse Report">Pulse Report</span> · <code>/2025-pulse-report</code> · <span data-used-page="2026 Pulse Report">2026 Pulse Report</span> · <code>/2026-pulse-report</code></dd>
           <dt>Who does what</dt><dd><div class="who"><span><b>Design:</b> compose alternating two-column story sections and full-bleed visual band from the kit.</span><span><b>Dev:</b> Astro page + Sanity document + form integration + SEO.</span></div></dd>
           <dt>Depends on</dt><dd><a href="#tmpl-pilot">Pilot</a> + kit · see kit mapping below</dd>
           <dt>In design</dt><dd><ol>
             <li><b>Global header</b></li>
-            <li><b>Hero</b> — light centred hero on a radial gradient background with headline and CTA</li>
+            <li><b>Hero</b> — <a href="#task-interactive-hero">Interactive hero</a> with animated gradient orbs, headline and CTA (2026); light centred hero on radial gradient (2025)</li>
             <li><b>Intro stats band</b> — two-column block: copy and primary CTA left, report cover image right</li>
-            <li><b>Story sections</b> — four alternating light two-column bands (image left/right) each unpacking a report theme</li>
+            <li><b>Story sections</b> — alternating light two-column bands (image left/right) each unpacking a report theme</li>
             <li><b>Full-bleed visual</b> — edge-to-edge photographic band</li>
             <li><b>Download form</b> — centred heading, multi-field form (name, email, etc.), submit CTA and optional report thumbnail</li>
             <li><b>Global footer</b></li>
           </ol></dd>
           <dt>Kit mapping</dt><dd>
             <a class="chip link" href="#task-header">Header</a>
-            <a class="chip link" href="#task-flat-one-column">Flat one column</a> <span class="muted">(hero)</span>
-            <a class="chip link" href="#task-twocol">Two-column</a> <span class="muted">(intro + story sections)</span>
+            <a class="chip link" href="#task-interactive-hero">Interactive hero</a> <span class="muted">(2026 hero)</span>
+            <a class="chip link" href="#task-flat-one-column">Flat one column</a> <span class="muted">(2025 hero)</span>
+            <a class="chip link" href="#task-twocol">Two-column</a> <span class="muted">(intro + light story sections)</span>
             <a class="chip link" href="#task-image">Image</a> <span class="muted">(full-bleed band)</span>
             <a class="chip link" href="#task-form-section">Form section</a> <span class="muted">(download gate)</span>
             <a class="chip link" href="#task-footer">Footer</a>
@@ -3206,6 +3538,11 @@
       <div class="pg-stat"><span class="pg-stat-n tone-accent" id="assets-stat-sections">—</span><span class="pg-stat-l">Sections</span></div>
     </div>
 
+    <div class="assets-search-wrap">
+      <label for="assets-search" class="pg-filters-label" style="display:block;margin-bottom:8px">Search by file name</label>
+      <input id="assets-search" type="search" placeholder="e.g. hero-home.png, personalised marketing-min.png…" autocomplete="off" aria-controls="assets-search-results assets-root">
+    </div>
+
     <div class="pg-filters" id="assets-filters" role="group" aria-label="Filter media by type">
       <span class="pg-filters-label">Type</span>
       <button type="button" class="pg-filter on" data-asset-filter="all" aria-pressed="true">All</button>
@@ -3217,11 +3554,49 @@
       <button type="button" class="pg-filter" data-asset-filter="audio" aria-pressed="false">Audio</button>
       <button type="button" class="pg-filter" data-asset-filter="interactive" aria-pressed="false">Interactive</button>
     </div>
+    <div class="pg-filters" id="assets-format-filters" role="group" aria-label="Filter images by file format">
+      <span class="pg-filters-label">Format</span>
+      <button type="button" class="pg-filter on" data-image-format="all" aria-pressed="true">All formats</button>
+    </div>
     <p class="pg-filter-status" id="assets-filter-status" aria-live="polite"></p>
+
+    <div id="assets-search-results" aria-live="polite"></div>
 
     <div id="assets-root" aria-live="polite"></div>
 
   </div><!-- /panel-assets -->
+
+  <!-- ============ FORMS PANEL ============ -->
+  <div id="panel-forms" role="tabpanel" aria-labelledby="tab-forms">
+
+    <div class="intro panel">
+      <h1>Page forms</h1>
+      <p>Pages from the Pages tab that contain a lead-capture or interactive form inside <code>&lt;main&gt;</code>. Footer newsletter signup is excluded. HubSpot forms, custom form modules, HTML forms, and third-party embeds (Typeform, Calendly, meetings) are included.</p>
+    </div>
+
+    <div class="pg-stats" id="forms-stats">
+      <div class="pg-stat"><span class="pg-stat-n" id="forms-stat-pages">—</span><span class="pg-stat-l">Pages audited</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-success" id="forms-stat-with">—</span><span class="pg-stat-l">With forms</span></div>
+      <div class="pg-stat"><span class="pg-stat-n" id="forms-stat-without">—</span><span class="pg-stat-l">Without forms</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-coral" id="forms-stat-instances">—</span><span class="pg-stat-l">Form instances</span></div>
+    </div>
+
+    <div class="assets-search-wrap">
+      <label for="forms-search" class="pg-filters-label" style="display:block;margin-bottom:8px">Search by page name or URL</label>
+      <input id="forms-search" type="search" placeholder="e.g. benchmark report, get-started…" autocomplete="off" aria-controls="forms-root">
+    </div>
+
+    <div class="pg-filters" id="forms-filters" role="group" aria-label="Filter pages by form presence">
+      <span class="pg-filters-label">Show</span>
+      <button type="button" class="pg-filter on" data-form-filter="all" aria-pressed="true">All pages</button>
+      <button type="button" class="pg-filter" data-form-filter="with" aria-pressed="false">With form</button>
+      <button type="button" class="pg-filter" data-form-filter="without" aria-pressed="false">Without form</button>
+    </div>
+    <p class="pg-filter-status" id="forms-filter-status" aria-live="polite"></p>
+
+    <div id="forms-root" aria-live="polite"></div>
+
+  </div><!-- /panel-forms -->
 
   <!-- ============ HUBSPOT COMPONENTS PANEL ============ -->
   <div id="panel-hs" role="tabpanel" aria-labelledby="tab-hs">
@@ -3274,6 +3649,331 @@
 
   </div><!-- /panel-hs -->
 
+  <!-- ============ GLOBAL STATS PANEL ============ -->
+  <div id="panel-stats" role="tabpanel" aria-labelledby="tab-stats" style="display:none">
+
+    <div class="intro panel">
+      <h1>Global stats</h1>
+      <p>Every live page that carries a brand number — venue count, revenue processed, or contextual stats — across all number-bearing components and widgets. Scraped July 2026 across all 222 audited pages. Use this to identify what needs updating when a headline figure changes.</p>
+    </div>
+
+    <div class="pg-stats">
+      <div class="pg-stat"><span class="pg-stat-n">222</span><span class="pg-stat-l">Pages audited</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-coral">97</span><span class="pg-stat-l">Pages with "3,000"</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-accent">89</span><span class="pg-stat-l">Logo-Set heading</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-amber">24</span><span class="pg-stat-l">Heading-Composition</span></div>
+      <div class="pg-stat"><span class="pg-stat-n">14</span><span class="pg-stat-l">Stats-Set widget</span></div>
+      <div class="pg-stat"><span class="pg-stat-n tone-success">7</span><span class="pg-stat-l">Stats-Set-Stacked</span></div>
+    </div>
+
+    <div class="gs-callout">
+      <b>Highest-risk surface:</b> The Logo-Set heading ("Trusted by 3,000+ venues worldwide") is hardcoded in the HubSpot module default and repeats identically across <b>89 pages</b>. One edit in HubSpot Design Manager propagates to all of them.
+    </div>
+    <div class="gs-info">
+      <b>2,600 and 2,300 not detected.</b> Neither number appears on any live page — the site has already moved to 3,000 throughout. Pages showing 2,000 are report-specific survey data (Party Parent Report, Pulse Report), not the venue count.
+    </div>
+
+    <!-- Overview table -->
+    <details class="phase" open>
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Component overview</h2>
+        <span class="count">5 number-bearing components</span>
+      </summary>
+      <div class="body">
+        <table class="gs-overview-table">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>HS module</th>
+              <th>Pages</th>
+              <th>Current number</th>
+              <th>Where to update</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="gs-comp-tag gs-comp-hc">Heading-Composition</span></td>
+              <td><code>heading-composition.module</code> · id <code>118787874184</code></td>
+              <td><span class="gs-page-count">24</span> <span class="muted">(of 155 total)</span></td>
+              <td><span class="gs-num-pill gs-num-venue">3,000</span></td>
+              <td>Per-page in HubSpot page editor</td>
+            </tr>
+            <tr>
+              <td><span class="gs-comp-tag gs-comp-ls">Logo-Set</span></td>
+              <td><code>logo-set-global.module</code> · id <code>195231364891</code></td>
+              <td><span class="gs-page-count">89</span></td>
+              <td><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></td>
+              <td>Design Manager → module default heading</td>
+            </tr>
+            <tr>
+              <td><span class="gs-comp-tag gs-comp-ss">Stats-Set</span> <span class="muted" style="font-size:11px">Company stats widget</span></td>
+              <td><code>stats-set.module</code> · id <code>138558821728</code></td>
+              <td><span class="gs-page-count">14</span></td>
+              <td><span class="gs-num-pill gs-num-revenue">$5B</span> revenue processed</td>
+              <td>HubSpot module fields · Sanity singleton in rebuild</td>
+            </tr>
+            <tr>
+              <td><span class="gs-comp-tag gs-comp-sss">Stats-Set-Stacked</span> <span class="muted" style="font-size:11px">Global stats</span></td>
+              <td><code>stats-set-stacked.module</code> · id <code>180893604893</code></td>
+              <td><span class="gs-page-count">7</span></td>
+              <td><span class="gs-num-pill gs-num-revenue">$5B</span></td>
+              <td>HubSpot module fields · Sanity singleton in rebuild</td>
+            </tr>
+            <tr>
+              <td><span class="gs-comp-tag gs-comp-ur">User-Reviews</span></td>
+              <td><code>widget-user-review.module</code></td>
+              <td><span class="gs-page-count">34</span></td>
+              <td>Review scores / counts</td>
+              <td>Per-page or module defaults in HubSpot</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <!-- Filter -->
+    <div class="pg-filters" id="stats-filters" role="group" aria-label="Filter by component type">
+      <span class="pg-filters-label">Component</span>
+      <button type="button" class="pg-filter on" data-stats-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="pg-filter" data-stats-filter="hc" aria-pressed="false">Heading-Composition</button>
+      <button type="button" class="pg-filter" data-stats-filter="ls" aria-pressed="false">Logo-Set</button>
+      <button type="button" class="pg-filter" data-stats-filter="ss" aria-pressed="false">Stats-Set</button>
+      <button type="button" class="pg-filter" data-stats-filter="sss" aria-pressed="false">Stats-Set-Stacked</button>
+      <button type="button" class="pg-filter" data-stats-filter="ur" aria-pressed="false">User-Reviews</button>
+    </div>
+    <p class="pg-filter-status" id="stats-filter-status" aria-live="polite"></p>
+
+    <!-- Section: Heading-Composition -->
+    <details class="phase" id="gs-sec-hc" data-gs-section="hc">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Heading-Composition <span class="gs-comp-tag gs-comp-hc" style="vertical-align:middle">with numbers</span></h2>
+        <span class="count">24 pages · per-page edits in HubSpot</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-section-note">Numbers found inside the <code>heading-composition.module</code> block on each page. These are per-page edits — each must be updated individually. Mixed bag: some are the venue count (3,000), others are report-survey figures (2,000) or event attendee counts — not all are brand numbers that need to stay in sync.</div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">2024 Year in Review</span><a class="pg-url" href="https://www.roller.software/2023-rollup" target="_blank" rel="noopener">roller.software/2023-rollup</a><span class="gs-num-pill gs-num-revenue">122M transactions</span><span class="gs-num-pill gs-num-context">700,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">2025 Year in Review</span><a class="pg-url" href="https://www.roller.software/2024-rollup" target="_blank" rel="noopener">roller.software/2024-rollup</a><span class="gs-num-pill gs-num-revenue">76M transactions</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">2026 Year in Review</span><a class="pg-url" href="https://www.roller.software/2025-roll-up-year-in-review" target="_blank" rel="noopener">roller.software/2025-roll-up-year-in-review</a><span class="gs-num-pill gs-num-revenue">83M transactions</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Amusement Expo 2026</span><a class="pg-url" href="https://www.roller.software/events/amusementexpo2025" target="_blank" rel="noopener">roller.software/events/amusementexpo2025</a><span class="gs-num-pill gs-num-context">4,500</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Area 51</span><a class="pg-url" href="https://www.roller.software/customers/stories/area-51" target="_blank" rel="noopener">roller.software/customers/stories/area-51</a><span class="gs-num-pill gs-num-context">1,500</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">BookNow Software</span><a class="pg-url" href="https://www.roller.software/competitor/booknow-software" target="_blank" rel="noopener">roller.software/competitor/booknow-software</a><span class="gs-num-pill gs-num-venue">3,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Bowling Trends 2026</span><a class="pg-url" href="https://www.roller.software/2026-bowling-trends" target="_blank" rel="noopener">roller.software/2026-bowling-trends</a><span class="gs-num-pill gs-num-context">1,000 venues (report data)</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Business Solutions</span><a class="pg-url" href="https://www.roller.software/business-solutions" target="_blank" rel="noopener">roller.software/business-solutions</a><span class="gs-num-pill gs-num-venue">3,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">FEC Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software/ticketing-system" target="_blank" rel="noopener">roller.software/…/fec/ticketing-system</a><span class="gs-num-pill gs-num-context">15,000 tickets/event</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Get Started</span><a class="pg-url" href="https://www.roller.software/get-started" target="_blank" rel="noopener">roller.software/get-started</a><span class="gs-num-pill gs-num-venue">3,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">IAAPA Orlando 2025</span><a class="pg-url" href="https://www.roller.software/events/iaapaexpo2024" target="_blank" rel="noopener">roller.software/events/iaapaexpo2024</a><span class="gs-num-pill gs-num-context">1,100</span><span class="gs-num-pill gs-num-context">40,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Implementation Services</span><a class="pg-url" href="https://www.roller.software/professional-services/implementation" target="_blank" rel="noopener">roller.software/…/implementation</a><span class="gs-num-pill gs-num-context">1,000 venues onboarded</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Industries</span><a class="pg-url" href="https://www.roller.software/industries" target="_blank" rel="noopener">roller.software/industries</a><span class="gs-num-pill gs-num-venue">3,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Laser Tag</span><a class="pg-url" href="https://www.roller.software/industries/laser-tag-software" target="_blank" rel="noopener">roller.software/…/laser-tag-software</a><span class="gs-num-pill gs-num-venue">3,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Party Parent Report</span><a class="pg-url" href="https://www.roller.software/party-parent-report" target="_blank" rel="noopener">roller.software/party-parent-report</a><span class="gs-num-pill gs-num-context">2,000 (survey data)</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Pricing</span><a class="pg-url" href="https://www.roller.software/pricing" target="_blank" rel="noopener">roller.software/pricing</a><span class="gs-num-pill gs-num-venue">3,000</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Professional Services</span><a class="pg-url" href="https://www.roller.software/professional-services" target="_blank" rel="noopener">roller.software/professional-services</a><span class="gs-num-pill gs-num-context">1,000 venues onboarded</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Pulse Report</span><a class="pg-url" href="https://www.roller.software/2025-pulse-report" target="_blank" rel="noopener">roller.software/2025-pulse-report</a><span class="gs-num-pill gs-num-context">2,000 (survey data)</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">ROLLER Payments</span><a class="pg-url" href="https://www.roller.software/features/payment-processing-software" target="_blank" rel="noopener">roller.software/…/payment-processing-software</a><span class="gs-num-pill gs-num-revenue">$1 billion</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Roller Skating Trends 2026</span><a class="pg-url" href="https://www.roller.software/2025-roller-skating-trends-report" target="_blank" rel="noopener">roller.software/…/roller-skating-trends-report</a><span class="gs-num-pill gs-num-context">1,000 venues (report data)</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Trampoline POS</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/pos" target="_blank" rel="noopener">roller.software/…/trampoline-parks-software/pos</a><span class="gs-num-empty">qualifier only ("venues worldwide")</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Trampoline Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/ticketing-software" target="_blank" rel="noopener">roller.software/…/trampoline-parks-software/ticketing</a><span class="gs-num-empty">qualifier only ("parks across")</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Wake &amp; Aqua Parks</span><a class="pg-url" href="https://www.roller.software/industries/wake-and-aqua-parks-management-software" target="_blank" rel="noopener">roller.software/…/wake-and-aqua-parks</a><span class="gs-num-empty">qualifier only ("parks worldwide")</span></div>
+        <div class="pg-row" data-gs-comp="hc"><span class="pg-title">Water Park Trends 2026</span><a class="pg-url" href="https://www.roller.software/2025-water-park-trends-report" target="_blank" rel="noopener">roller.software/2025-water-park-trends-report</a><span class="gs-num-pill gs-num-context">1,000 venues (report data)</span></div>
+      </div></div>
+    </details>
+
+    <!-- Section: Logo-Set -->
+    <details class="phase" id="gs-sec-ls" data-gs-section="ls">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Logo-Set <span class="gs-comp-tag gs-comp-ls" style="vertical-align:middle">3,000+ venues worldwide</span></h2>
+        <span class="count">89 pages · single module default · widest blast radius</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-section-note">All 89 pages carry the identical heading "Trusted by 3,000+ venues worldwide" above the customer logo carousel. This text lives in the <code>logo-set-global.module</code> default field — one edit in HubSpot Design Manager propagates to all pages simultaneously.</div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">AI for Attractions</span><a class="pg-url" href="https://www.roller.software/features/ai-for-attractions" target="_blank" rel="noopener">roller.software/features/ai-for-attractions</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">API Integrations</span><a class="pg-url" href="https://www.roller.software/features/api-integrations" target="_blank" rel="noopener">roller.software/features/api-integrations</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Adventure Parks</span><a class="pg-url" href="https://www.roller.software/industries/adventure-parks-software" target="_blank" rel="noopener">roller.software/industries/adventure-parks-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Aluvii</span><a class="pg-url" href="https://www.roller.software/competitor/aluvii" target="_blank" rel="noopener">roller.software/competitor/aluvii</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Alvarado</span><a class="pg-url" href="https://www.roller.software/partners/alvarado" target="_blank" rel="noopener">roller.software/partners/alvarado</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Amusement &amp; Theme Parks</span><a class="pg-url" href="https://www.roller.software/industries/amusement-and-theme-parks-software" target="_blank" rel="noopener">roller.software/industries/amusement-and-theme-parks-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Amusement Connect</span><a class="pg-url" href="https://www.roller.software/partners/amusement-connect" target="_blank" rel="noopener">roller.software/partners/amusement-connect</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Axe Throwing</span><a class="pg-url" href="https://www.roller.software/industries/axe-throwing-software" target="_blank" rel="noopener">roller.software/industries/axe-throwing-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">BookNow Software</span><a class="pg-url" href="https://www.roller.software/competitor/booknow-software" target="_blank" rel="noopener">roller.software/competitor/booknow-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Bookeo</span><a class="pg-url" href="https://www.roller.software/competitor/bookeo" target="_blank" rel="noopener">roller.software/competitor/bookeo</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Bowling</span><a class="pg-url" href="https://www.roller.software/industries/bowling-alley-management-software" target="_blank" rel="noopener">roller.software/industries/bowling-alley-management-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">CRM Experience</span><a class="pg-url" href="https://www.roller.software/features/crm-experience" target="_blank" rel="noopener">roller.software/features/crm-experience</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Capacity Management</span><a class="pg-url" href="https://www.roller.software/features/capacity-management" target="_blank" rel="noopener">roller.software/features/capacity-management</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Cashless Wallets</span><a class="pg-url" href="https://www.roller.software/features/cashless-wallets" target="_blank" rel="noopener">roller.software/features/cashless-wallets</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Centaman</span><a class="pg-url" href="https://www.roller.software/competitor/centaman" target="_blank" rel="noopener">roller.software/competitor/centaman</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Channel Management</span><a class="pg-url" href="https://www.roller.software/features/channel-management" target="_blank" rel="noopener">roller.software/features/channel-management</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Checkfront</span><a class="pg-url" href="https://www.roller.software/competitor/checkfront" target="_blank" rel="noopener">roller.software/competitor/checkfront</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Clubspeed</span><a class="pg-url" href="https://www.roller.software/competitor/clubspeed" target="_blank" rel="noopener">roller.software/competitor/clubspeed</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Digital Waivers</span><a class="pg-url" href="https://www.roller.software/features/digital-waiver-software" target="_blank" rel="noopener">roller.software/features/digital-waiver-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Enterprise</span><a class="pg-url" href="https://www.roller.software/solutions/enterprise" target="_blank" rel="noopener">roller.software/solutions/enterprise</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Escape Rooms</span><a class="pg-url" href="https://www.roller.software/industries/escape-room-software" target="_blank" rel="noopener">roller.software/industries/escape-room-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">FEC POS</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software/pos-system" target="_blank" rel="noopener">roller.software/…/fec/pos-system</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">FEC Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software/ticketing-system" target="_blank" rel="noopener">roller.software/…/fec/ticketing-system</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Family Entertainment Centers</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software" target="_blank" rel="noopener">roller.software/industries/family-entertainment-center-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">FareHarbor</span><a class="pg-url" href="https://www.roller.software/competitor/fareharbor" target="_blank" rel="noopener">roller.software/competitor/fareharbor</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Fresh KDS</span><a class="pg-url" href="https://www.roller.software/partners/fresh-kds" target="_blank" rel="noopener">roller.software/partners/fresh-kds</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">FuseMetrix</span><a class="pg-url" href="https://www.roller.software/competitor/fusemetrix" target="_blank" rel="noopener">roller.software/competitor/fusemetrix</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Gift Cards</span><a class="pg-url" href="https://www.roller.software/features/giftcard" target="_blank" rel="noopener">roller.software/features/giftcard</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Go-Karting</span><a class="pg-url" href="https://www.roller.software/industries/go-karting" target="_blank" rel="noopener">roller.software/industries/go-karting</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Groupon</span><a class="pg-url" href="https://www.roller.software/partners/groupon" target="_blank" rel="noopener">roller.software/partners/groupon</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Guest Experience Agent</span><a class="pg-url" href="https://www.roller.software/features/guest-experience-agent" target="_blank" rel="noopener">roller.software/features/guest-experience-agent</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Guest Feedback Software</span><a class="pg-url" href="https://www.roller.software/features/guest-feedback-software" target="_blank" rel="noopener">roller.software/features/guest-feedback-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Guest Tabs</span><a class="pg-url" href="https://www.roller.software/features/guest-tabs" target="_blank" rel="noopener">roller.software/features/guest-tabs</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Ice Skating</span><a class="pg-url" href="https://www.roller.software/industries/ice-skating" target="_blank" rel="noopener">roller.software/industries/ice-skating</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Industries</span><a class="pg-url" href="https://www.roller.software/industries" target="_blank" rel="noopener">roller.software/industries</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Intercard</span><a class="pg-url" href="https://www.roller.software/partners/intercard" target="_blank" rel="noopener">roller.software/partners/intercard</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Laser Tag</span><a class="pg-url" href="https://www.roller.software/industries/laser-tag-software" target="_blank" rel="noopener">roller.software/industries/laser-tag-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Lightspeed</span><a class="pg-url" href="https://www.roller.software/competitor/lightspeed" target="_blank" rel="noopener">roller.software/competitor/lightspeed</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">LiliPad POS</span><a class="pg-url" href="https://www.roller.software/competitor/lilypad-pos" target="_blank" rel="noopener">roller.software/competitor/lilypad-pos</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Loyalty Programs</span><a class="pg-url" href="https://www.roller.software/features/loyalty-programs" target="_blank" rel="noopener">roller.software/features/loyalty-programs</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Membership Management</span><a class="pg-url" href="https://www.roller.software/features/membership-management-software" target="_blank" rel="noopener">roller.software/features/membership-management-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Mini Golf</span><a class="pg-url" href="https://www.roller.software/industries/mini-golf" target="_blank" rel="noopener">roller.software/industries/mini-golf</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Mobile Check-in App</span><a class="pg-url" href="https://www.roller.software/features/mobile-check-in" target="_blank" rel="noopener">roller.software/features/mobile-check-in</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Mobile Food &amp; Beverage</span><a class="pg-url" href="https://www.roller.software/features/mobile-food-and-beverage-ordering" target="_blank" rel="noopener">roller.software/features/mobile-food-and-beverage-ordering</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Multi-Venue Management</span><a class="pg-url" href="https://www.roller.software/features/multi-venue-management" target="_blank" rel="noopener">roller.software/features/multi-venue-management</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Museums</span><a class="pg-url" href="https://www.roller.software/industries/museums-software" target="_blank" rel="noopener">roller.software/industries/museums-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Online Ticketing System</span><a class="pg-url" href="https://www.roller.software/features/online-ticket-system" target="_blank" rel="noopener">roller.software/features/online-ticket-system</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">POS Reports</span><a class="pg-url" href="https://www.roller.software/features/point-of-sale-reports" target="_blank" rel="noopener">roller.software/features/point-of-sale-reports</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Packages</span><a class="pg-url" href="https://www.roller.software/features/packages" target="_blank" rel="noopener">roller.software/features/packages</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Party Booking Software</span><a class="pg-url" href="https://www.roller.software/features/party-booking-software" target="_blank" rel="noopener">roller.software/features/party-booking-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Party Center Software</span><a class="pg-url" href="https://www.roller.software/competitor/party-center-software" target="_blank" rel="noopener">roller.software/competitor/party-center-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Pickleball</span><a class="pg-url" href="https://www.roller.software/industries/pickleball-software" target="_blank" rel="noopener">roller.software/industries/pickleball-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Playcenter Online Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/playcenter-software/online-ticketing-system" target="_blank" rel="noopener">roller.software/…/playcenter/online-ticketing</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Playcenter POS</span><a class="pg-url" href="https://www.roller.software/industries/playground-software/play-center-point-of-sale-system" target="_blank" rel="noopener">roller.software/…/playground/play-center-pos</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Playground / Softplay</span><a class="pg-url" href="https://www.roller.software/industries/playground-software" target="_blank" rel="noopener">roller.software/industries/playground-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Point of Sale</span><a class="pg-url" href="https://www.roller.software/features/pos" target="_blank" rel="noopener">roller.software/features/pos</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Pricing</span><a class="pg-url" href="https://www.roller.software/pricing" target="_blank" rel="noopener">roller.software/pricing</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Pricing Strategy</span><a class="pg-url" href="https://www.roller.software/features/pricing-strategy" target="_blank" rel="noopener">roller.software/features/pricing-strategy</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Printer Management</span><a class="pg-url" href="https://www.roller.software/features/printer-management" target="_blank" rel="noopener">roller.software/features/printer-management</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">RFID</span><a class="pg-url" href="https://www.roller.software/products/rfid" target="_blank" rel="noopener">roller.software/products/rfid</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">ROLLER Capital</span><a class="pg-url" href="https://www.roller.software/features/capital" target="_blank" rel="noopener">roller.software/features/capital</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">ROLLER Payments</span><a class="pg-url" href="https://www.roller.software/features/payment-processing-software" target="_blank" rel="noopener">roller.software/features/payment-processing-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">ROLLER and Centeredge</span><a class="pg-url" href="https://www.roller.software/centeredge-software-alternative" target="_blank" rel="noopener">roller.software/centeredge-software-alternative</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">ROLLER iQ</span><a class="pg-url" href="https://www.roller.software/features/ai-assistant" target="_blank" rel="noopener">roller.software/features/ai-assistant</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">RaceFacer</span><a class="pg-url" href="https://www.roller.software/competitor/racefacer" target="_blank" rel="noopener">roller.software/competitor/racefacer</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Rock Climbing Gyms</span><a class="pg-url" href="https://www.roller.software/industries/climbing-gyms-software" target="_blank" rel="noopener">roller.software/industries/climbing-gyms-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Rock Gym Pro</span><a class="pg-url" href="https://www.roller.software/competitor/rock-gym-pro" target="_blank" rel="noopener">roller.software/competitor/rock-gym-pro</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">RocketRez</span><a class="pg-url" href="https://www.roller.software/competitor/rocketrez" target="_blank" rel="noopener">roller.software/competitor/rocketrez</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Roller Skating</span><a class="pg-url" href="https://www.roller.software/industries/skating-rink-software" target="_blank" rel="noopener">roller.software/industries/skating-rink-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Segmentation Groups</span><a class="pg-url" href="https://www.roller.software/solutions/multi-venue" target="_blank" rel="noopener">roller.software/solutions/multi-venue</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Self-Serve Kiosks</span><a class="pg-url" href="https://www.roller.software/features/self-service-ticketing-kiosk" target="_blank" rel="noopener">roller.software/features/self-service-ticketing-kiosk</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Solutions SBM</span><a class="pg-url" href="https://www.roller.software/solutions/grow-your-business" target="_blank" rel="noopener">roller.software/solutions/grow-your-business</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Square</span><a class="pg-url" href="https://www.roller.software/competitor/square" target="_blank" rel="noopener">roller.software/competitor/square</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Staff Permissions</span><a class="pg-url" href="https://www.roller.software/features/staff-permissions" target="_blank" rel="noopener">roller.software/features/staff-permissions</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Stock &amp; Inventory Control</span><a class="pg-url" href="https://www.roller.software/features/stock-and-inventory-control" target="_blank" rel="noopener">roller.software/features/stock-and-inventory-control</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Tanda</span><a class="pg-url" href="https://www.roller.software/partners/tanda" target="_blank" rel="noopener">roller.software/partners/tanda</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Ticket Tailor</span><a class="pg-url" href="https://www.roller.software/competitor/tickettailor" target="_blank" rel="noopener">roller.software/competitor/tickettailor</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Trampoline POS</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/pos" target="_blank" rel="noopener">roller.software/…/trampoline-parks-software/pos</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Trampoline Parks</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software" target="_blank" rel="noopener">roller.software/industries/trampoline-parks-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Trampoline Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/ticketing-software" target="_blank" rel="noopener">roller.software/…/trampoline-parks/ticketing</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Venue Management Software</span><a class="pg-url" href="https://www.roller.software/venue-management-software" target="_blank" rel="noopener">roller.software/venue-management-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Venue Sumo</span><a class="pg-url" href="https://www.roller.software/competitor/venue-sumo" target="_blank" rel="noopener">roller.software/competitor/venue-sumo</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Visitor Attractions</span><a class="pg-url" href="https://www.roller.software/industries/visitor-attractions-software" target="_blank" rel="noopener">roller.software/industries/visitor-attractions-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Wake &amp; Aqua Parks</span><a class="pg-url" href="https://www.roller.software/industries/wake-and-aqua-parks-management-software" target="_blank" rel="noopener">roller.software/…/wake-and-aqua-parks</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Wake Park Ticketing</span><a class="pg-url" href="https://www.roller.software/industries/wake-parks-management-software/ticketing-system" target="_blank" rel="noopener">roller.software/…/wake-parks/ticketing-system</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Water Parks</span><a class="pg-url" href="https://www.roller.software/industries/water-parks-management-software" target="_blank" rel="noopener">roller.software/industries/water-parks-management-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Workforce.com</span><a class="pg-url" href="https://www.roller.software/partners/workforce.com" target="_blank" rel="noopener">roller.software/partners/workforce.com</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Yellow Dog</span><a class="pg-url" href="https://www.roller.software/partners/yellow-dog" target="_blank" rel="noopener">roller.software/partners/yellow-dog</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+        <div class="pg-row" data-gs-comp="ls"><span class="pg-title">Zoos &amp; Aquariums</span><a class="pg-url" href="https://www.roller.software/industries/zoos-management-software" target="_blank" rel="noopener">roller.software/industries/zoos-management-software</a><span class="gs-num-pill gs-num-venue">3,000+ venues worldwide</span></div>
+      </div></div>
+    </details>
+
+    <!-- Section: Stats-Set -->
+    <details class="phase" id="gs-sec-ss" data-gs-section="ss">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Stats-Set <span class="gs-comp-tag gs-comp-ss" style="vertical-align:middle">Company stats widget</span></h2>
+        <span class="count">14 pages · <code>stats-set.module</code> · id 138558821728</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-section-note">The company stats widget — a row of ROLLER headline numbers including revenue processed. In the rebuild this becomes a Sanity singleton (one update propagates to all pages). Year-in-Review pages carry archived annual figures intentionally.</div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">2024 Year in Review</span><a class="pg-url" href="https://www.roller.software/2023-rollup" target="_blank" rel="noopener">roller.software/2023-rollup</a><span class="gs-num-pill gs-num-revenue">$2M (archived annual)</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">2025 Year in Review</span><a class="pg-url" href="https://www.roller.software/2024-rollup" target="_blank" rel="noopener">roller.software/2024-rollup</a><span class="gs-num-pill gs-num-revenue">$1M · 60,000 (archived)</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">2026 Year in Review</span><a class="pg-url" href="https://www.roller.software/2025-roll-up-year-in-review" target="_blank" rel="noopener">roller.software/2025-roll-up-year-in-review</a><span class="gs-num-pill gs-num-revenue">$2M · 27,000 (archived)</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Area 51</span><a class="pg-url" href="https://www.roller.software/customers/stories/area-51" target="_blank" rel="noopener">roller.software/customers/stories/area-51</a><span class="gs-num-pill gs-num-revenue">$4B</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Business Solutions</span><a class="pg-url" href="https://www.roller.software/business-solutions" target="_blank" rel="noopener">roller.software/business-solutions</a><span class="gs-num-pill gs-num-revenue">$5B</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Enterprise</span><a class="pg-url" href="https://www.roller.software/solutions/enterprise" target="_blank" rel="noopener">roller.software/solutions/enterprise</a><span class="gs-num-pill gs-num-revenue">$5B</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Get Started</span><a class="pg-url" href="https://www.roller.software/get-started" target="_blank" rel="noopener">roller.software/get-started</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Integration Partner Program</span><a class="pg-url" href="https://www.roller.software/partners/integration" target="_blank" rel="noopener">roller.software/partners/integration</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Pricing</span><a class="pg-url" href="https://www.roller.software/pricing" target="_blank" rel="noopener">roller.software/pricing</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Segmentation Groups</span><a class="pg-url" href="https://www.roller.software/solutions/multi-venue" target="_blank" rel="noopener">roller.software/solutions/multi-venue</a><span class="gs-num-pill gs-num-revenue">$5B</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Service Partners</span><a class="pg-url" href="https://www.roller.software/partners/service" target="_blank" rel="noopener">roller.software/partners/service</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Solutions SBM</span><a class="pg-url" href="https://www.roller.software/solutions/grow-your-business" target="_blank" rel="noopener">roller.software/solutions/grow-your-business</a><span class="gs-num-pill gs-num-revenue">$5B</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Support</span><a class="pg-url" href="https://www.roller.software/support" target="_blank" rel="noopener">roller.software/support</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+        <div class="pg-row" data-gs-comp="ss"><span class="pg-title">Technology Partners</span><a class="pg-url" href="https://www.roller.software/partners/technology" target="_blank" rel="noopener">roller.software/partners/technology</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+      </div></div>
+    </details>
+
+    <!-- Section: Stats-Set-Stacked -->
+    <details class="phase" id="gs-sec-sss" data-gs-section="sss">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>Stats-Set-Stacked <span class="gs-comp-tag gs-comp-sss" style="vertical-align:middle">Global stats</span></h2>
+        <span class="count">7 pages · <code>stats-set-stacked.module</code> · id 180893604893</span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-section-note">The global stats component — a two-column block with world-map visual and stacked headline metrics. Distinct from the Stats-Set row. Overlaps with Stats-Set on the three Solutions pages. Also becomes a Sanity singleton in the rebuild.</div>
+        <div class="pg-row" data-gs-comp="sss"><span class="pg-title">Area 51</span><a class="pg-url" href="https://www.roller.software/customers/stories/area-51" target="_blank" rel="noopener">roller.software/customers/stories/area-51</a><span class="gs-num-pill gs-num-revenue">$4B</span></div>
+        <div class="pg-row" data-gs-comp="sss"><span class="pg-title">Enterprise</span><a class="pg-url" href="https://www.roller.software/solutions/enterprise" target="_blank" rel="noopener">roller.software/solutions/enterprise</a><span class="gs-num-pill gs-num-revenue">$5B</span></div>
+        <div class="pg-row" data-gs-comp="sss"><span class="pg-title">Integration Partner Program</span><a class="pg-url" href="https://www.roller.software/partners/integration" target="_blank" rel="noopener">roller.software/partners/integration</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+        <div class="pg-row" data-gs-comp="sss"><span class="pg-title">Segmentation Groups</span><a class="pg-url" href="https://www.roller.software/solutions/multi-venue" target="_blank" rel="noopener">roller.software/solutions/multi-venue</a><span class="gs-num-pill gs-num-revenue">$5B</span></div>
+        <div class="pg-row" data-gs-comp="sss"><span class="pg-title">Service Partners</span><a class="pg-url" href="https://www.roller.software/partners/service" target="_blank" rel="noopener">roller.software/partners/service</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+        <div class="pg-row" data-gs-comp="sss"><span class="pg-title">Solutions SBM</span><a class="pg-url" href="https://www.roller.software/solutions/grow-your-business" target="_blank" rel="noopener">roller.software/solutions/grow-your-business</a><span class="gs-num-pill gs-num-revenue">$5B</span></div>
+        <div class="pg-row" data-gs-comp="sss"><span class="pg-title">Technology Partners</span><a class="pg-url" href="https://www.roller.software/partners/technology" target="_blank" rel="noopener">roller.software/partners/technology</a><span class="gs-num-empty">module present · numbers not extracted</span></div>
+      </div></div>
+    </details>
+
+    <!-- Section: User-Reviews -->
+    <details class="phase" id="gs-sec-ur" data-gs-section="ur">
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+        <h2>User-Reviews <span class="gs-comp-tag gs-comp-ur" style="vertical-align:middle">Boxed reviews widget</span></h2>
+        <span class="count">34 pages · <code>widget-user-review.module</code></span>
+      </summary>
+      <div class="body"><div class="pg-body">
+        <div class="pg-section-note">The boxed user-reviews widget carries review scores and counts (star ratings, number of reviews). No venue count numbers were detected in these instances, but review figures are platform-sourced and may drift — worth periodic checks when Capterra / G2 scores update.</div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Adventure Parks</span><a class="pg-url" href="https://www.roller.software/industries/adventure-parks-software" target="_blank" rel="noopener">roller.software/industries/adventure-parks-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Amusement &amp; Theme Parks</span><a class="pg-url" href="https://www.roller.software/industries/amusement-and-theme-parks-software" target="_blank" rel="noopener">roller.software/industries/amusement-and-theme-parks-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Axe Throwing</span><a class="pg-url" href="https://www.roller.software/industries/axe-throwing-software" target="_blank" rel="noopener">roller.software/industries/axe-throwing-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Bowling</span><a class="pg-url" href="https://www.roller.software/industries/bowling-alley-management-software" target="_blank" rel="noopener">roller.software/industries/bowling-alley-management-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Digital Waivers</span><a class="pg-url" href="https://www.roller.software/features/digital-waiver-software" target="_blank" rel="noopener">roller.software/features/digital-waiver-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Enterprise</span><a class="pg-url" href="https://www.roller.software/solutions/enterprise" target="_blank" rel="noopener">roller.software/solutions/enterprise</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Escape Rooms</span><a class="pg-url" href="https://www.roller.software/industries/escape-room-software" target="_blank" rel="noopener">roller.software/industries/escape-room-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Family Entertainment Centers</span><a class="pg-url" href="https://www.roller.software/industries/family-entertainment-center-software" target="_blank" rel="noopener">roller.software/industries/family-entertainment-center-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">FareHarbor</span><a class="pg-url" href="https://www.roller.software/competitor/fareharbor" target="_blank" rel="noopener">roller.software/competitor/fareharbor</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Gift Cards</span><a class="pg-url" href="https://www.roller.software/features/giftcard" target="_blank" rel="noopener">roller.software/features/giftcard</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Go-Karting</span><a class="pg-url" href="https://www.roller.software/industries/go-karting" target="_blank" rel="noopener">roller.software/industries/go-karting</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Guest Feedback Software</span><a class="pg-url" href="https://www.roller.software/features/guest-feedback-software" target="_blank" rel="noopener">roller.software/features/guest-feedback-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Ice Skating</span><a class="pg-url" href="https://www.roller.software/industries/ice-skating" target="_blank" rel="noopener">roller.software/industries/ice-skating</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Laser Tag</span><a class="pg-url" href="https://www.roller.software/industries/laser-tag-software" target="_blank" rel="noopener">roller.software/industries/laser-tag-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">LiliPad POS</span><a class="pg-url" href="https://www.roller.software/competitor/lilypad-pos" target="_blank" rel="noopener">roller.software/competitor/lilypad-pos</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Membership Management</span><a class="pg-url" href="https://www.roller.software/features/membership-management-software" target="_blank" rel="noopener">roller.software/features/membership-management-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Mini Golf</span><a class="pg-url" href="https://www.roller.software/industries/mini-golf" target="_blank" rel="noopener">roller.software/industries/mini-golf</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Museums</span><a class="pg-url" href="https://www.roller.software/industries/museums-software" target="_blank" rel="noopener">roller.software/industries/museums-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Party Booking Software</span><a class="pg-url" href="https://www.roller.software/features/party-booking-software" target="_blank" rel="noopener">roller.software/features/party-booking-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Pickleball</span><a class="pg-url" href="https://www.roller.software/industries/pickleball-software" target="_blank" rel="noopener">roller.software/industries/pickleball-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Point of Sale</span><a class="pg-url" href="https://www.roller.software/features/pos" target="_blank" rel="noopener">roller.software/features/pos</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Pricing Strategy</span><a class="pg-url" href="https://www.roller.software/features/pricing-strategy" target="_blank" rel="noopener">roller.software/features/pricing-strategy</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Printer Management</span><a class="pg-url" href="https://www.roller.software/features/printer-management" target="_blank" rel="noopener">roller.software/features/printer-management</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">RFID</span><a class="pg-url" href="https://www.roller.software/products/rfid" target="_blank" rel="noopener">roller.software/products/rfid</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">ROLLER Capital</span><a class="pg-url" href="https://www.roller.software/features/capital" target="_blank" rel="noopener">roller.software/features/capital</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Rock Climbing Gyms</span><a class="pg-url" href="https://www.roller.software/industries/climbing-gyms-software" target="_blank" rel="noopener">roller.software/industries/climbing-gyms-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Roller Skating</span><a class="pg-url" href="https://www.roller.software/industries/skating-rink-software" target="_blank" rel="noopener">roller.software/industries/skating-rink-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Self-Serve Kiosks</span><a class="pg-url" href="https://www.roller.software/features/self-service-ticketing-kiosk" target="_blank" rel="noopener">roller.software/features/self-service-ticketing-kiosk</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Staff Permissions</span><a class="pg-url" href="https://www.roller.software/features/staff-permissions" target="_blank" rel="noopener">roller.software/features/staff-permissions</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Stock &amp; Inventory</span><a class="pg-url" href="https://www.roller.software/features/stock-and-inventory-control" target="_blank" rel="noopener">roller.software/features/stock-and-inventory-control</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Trampoline POS</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software/pos" target="_blank" rel="noopener">roller.software/…/trampoline-parks-software/pos</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Trampoline Parks</span><a class="pg-url" href="https://www.roller.software/industries/trampoline-parks-software" target="_blank" rel="noopener">roller.software/industries/trampoline-parks-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Visitor Attractions</span><a class="pg-url" href="https://www.roller.software/industries/visitor-attractions-software" target="_blank" rel="noopener">roller.software/industries/visitor-attractions-software</a><span class="gs-num-empty">review scores / counts</span></div>
+        <div class="pg-row" data-gs-comp="ur"><span class="pg-title">Zoos &amp; Aquariums</span><a class="pg-url" href="https://www.roller.software/industries/zoos-management-software" target="_blank" rel="noopener">roller.software/industries/zoos-management-software</a><span class="gs-num-empty">review scores / counts</span></div>
+      </div></div>
+    </details>
+
+  </div><!-- /panel-stats -->
+
   <footer>ROLLER website rebuild · project plan · component set 1 (core). Global Components and wider phases to follow.</footer>
 
 </main>
@@ -3281,7 +3981,7 @@
 <div id="fig-lb" role="dialog" aria-modal="true" aria-label="Figma preview"><img src="" alt=""></div>
 <script src="page-components.data.js?v=12"></script>
 <script src="page-modules.data.js?v=5"></script>
-<script src="page-assets.data.js?v=4"></script>
+<script src="page-assets.data.js?v=5"></script>
 <script src="hs-usage.data.js?v=5"></script>
 <script src="hs-library.data.js?v=3"></script>
 <script src="hs-phase-mapping.data.js?v=6"></script>
@@ -3290,30 +3990,76 @@
   // lightbox
   var lb=document.getElementById('fig-lb'),lbImg=lb.querySelector('img');
   document.querySelectorAll('.figscreens img').forEach(function(img){
+    img.loading='lazy';
+    img.decoding='async';
     img.addEventListener('click',function(){lbImg.src=img.src;lbImg.alt=img.alt;lb.classList.add('on')});
   });
   lb.addEventListener('click',function(){lb.classList.remove('on');lbImg.src=''});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
 
-  var tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index'),tabPages=document.getElementById('tab-pages'),tabAssets=document.getElementById('tab-assets'),tabHs=document.getElementById('tab-hs');
-  var panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index'),panPages=document.getElementById('panel-pages'),panAssets=document.getElementById('panel-assets'),panHs=document.getElementById('panel-hs');
+  var tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index'),tabPages=document.getElementById('tab-pages'),tabAssets=document.getElementById('tab-assets'),tabForms=document.getElementById('tab-forms'),tabHs=document.getElementById('tab-hs'),tabStats=document.getElementById('tab-stats');
+  var panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index'),panPages=document.getElementById('panel-pages'),panAssets=document.getElementById('panel-assets'),panForms=document.getElementById('panel-forms'),panHs=document.getElementById('panel-hs'),panStats=document.getElementById('panel-stats');
   function show(which){
     tabPlan.setAttribute('aria-selected',which==='plan');
     tabIndex.setAttribute('aria-selected',which==='index');
     tabPages.setAttribute('aria-selected',which==='pages');
     tabAssets.setAttribute('aria-selected',which==='assets');
+    tabForms.setAttribute('aria-selected',which==='forms');
     tabHs.setAttribute('aria-selected',which==='hs');
+    tabStats.setAttribute('aria-selected',which==='stats');
     panPlan.style.display=which==='plan'?'block':'none';
     panIndex.style.display=which==='index'?'block':'none';
     panPages.style.display=which==='pages'?'block':'none';
     panAssets.style.display=which==='assets'?'block':'none';
+    panForms.style.display=which==='forms'?'block':'none';
     panHs.style.display=which==='hs'?'block':'none';
+    panStats.style.display=which==='stats'?'block':'none';
   }
   tabPlan.addEventListener('click',function(){show('plan')});
   tabIndex.addEventListener('click',function(){show('index')});
   tabPages.addEventListener('click',function(){show('pages')});
   tabAssets.addEventListener('click',function(){show('assets')});
+  tabForms.addEventListener('click',function(){show('forms')});
   tabHs.addEventListener('click',function(){show('hs')});
+  tabStats.addEventListener('click',function(){show('stats')});
+
+  // Global Stats panel — component filter
+  (function(){
+    var filterBtns=document.querySelectorAll('#stats-filters .pg-filter');
+    var statusEl=document.getElementById('stats-filter-status');
+    var sections=document.querySelectorAll('#panel-stats details[data-gs-section]');
+    var activeFilter='all';
+    function countVisible(){
+      var n=0;
+      document.querySelectorAll('#panel-stats .pg-row').forEach(function(r){if(!r.classList.contains('pg-hidden'))n++});
+      return n;
+    }
+    function applyFilter(f){
+      activeFilter=f;
+      sections.forEach(function(sec){
+        var secType=sec.getAttribute('data-gs-section');
+        var rows=sec.querySelectorAll('.pg-row[data-gs-comp]');
+        var secVisible=0;
+        rows.forEach(function(r){
+          var show=(f==='all'||r.getAttribute('data-gs-comp')===f);
+          r.classList.toggle('pg-hidden',!show);
+          if(show)secVisible++;
+        });
+        sec.classList.toggle('pg-section-hidden',f!=='all'&&secVisible===0);
+      });
+      var total=countVisible();
+      statusEl.textContent=f==='all'?'Showing all '+total+' pages across 5 component types.':'Filtered to '+total+' page'+(total===1?'':'s')+' using the '+f+' component.';
+    }
+    filterBtns.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        filterBtns.forEach(function(b){b.classList.remove('on');b.setAttribute('aria-pressed','false')});
+        btn.classList.add('on');
+        btn.setAttribute('aria-pressed','true');
+        applyFilter(btn.getAttribute('data-stats-filter'));
+      });
+    });
+    applyFilter('all');
+  })();
   // Components tab → build plan tasks, templates, tokens
   document.getElementById('panel-index').addEventListener('click',function(e){
     var a=e.target.closest('a[href^="#"]');
@@ -3698,7 +4444,7 @@
         'task-service-detail','task-video-hero-section','task-introduction-summary',
         'task-use-case-section','task-form-section','task-pricing-widget','task-addons',
         'task-faq','task-cta','task-featuresunfold','task-reports','task-categorylinks',
-        'task-features-index','task-stats-section','task-horizontal-slider','task-customer-story',
+        'task-features-index','task-stats-section','task-metric','task-interactive-hero','task-horizontal-slider','task-customer-story',
         'task-industry-vertical','task-features-list','task-implementation-packages',
         'task-announcement-bar'
       ],
@@ -4557,8 +5303,16 @@
     if(!root){return}
     var data=null;
     var activeFilter='all';
+    var activeImageFormat='all';
+    var searchQuery='';
     var filterStatus=document.getElementById('assets-filter-status');
     var filterBar=document.getElementById('assets-filters');
+    var formatBar=document.getElementById('assets-format-filters');
+    var searchInput=document.getElementById('assets-search');
+    var searchResults=document.getElementById('assets-search-results');
+    var IMAGE_FORMAT_LABELS={
+      all:'All formats',png:'PNG',webp:'WebP',jpg:'JPEG',jpeg:'JPEG',gif:'GIF',avif:'AVIF',svg:'SVG',other:'Other'
+    };
 
     function esc(s){
       return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
@@ -4612,13 +5366,71 @@
             title:page.title,
             url:page.url,
             assetCount:hit?hit.assetCount:0,
-            assets:hit&&hit.assets?hit.assets:[],
+            assets:hit&&hit.assets?hit.assets.map(enrichAsset):[],
             error:hit?hit.error:null
           };
         });
         var sectionTotal=pages.reduce(function(n,p){return n+(p.assetCount||0)},0);
         return {name:section.name,pages:pages,sectionTotal:sectionTotal};
       });
+    }
+
+    function inferFileExt(asset){
+      if(asset.fileExt){return asset.fileExt}
+      if(asset.type==='svg-inline'){return 'inline-svg'}
+      if(asset.type==='svg-image'){return 'svg'}
+      var src=asset.url||asset.filename||'';
+      var m=String(src).match(/\.([a-z0-9]+)(?:\?|#|$)/i);
+      if(!m){return ''}
+      var ext=m[1].toLowerCase();
+      return ext==='jpeg'?'jpg':ext;
+    }
+
+    function enrichAsset(asset){
+      asset.fileExt=inferFileExt(asset);
+      return asset;
+    }
+
+    function imageFormatKey(asset){
+      var ext=inferFileExt(asset);
+      if(!ext){return 'other'}
+      if(ext==='jpg'||ext==='jpeg'){return 'jpg'}
+      if(['png','webp','gif','avif','svg'].indexOf(ext)!==-1){return ext}
+      return 'other';
+    }
+
+    function formatTagLabel(asset){
+      var key=imageFormatKey(asset);
+      if(key==='jpg'){return 'JPEG'}
+      if(key==='inline-svg'){return 'SVG'}
+      return key.toUpperCase();
+    }
+
+    function formatFileSize(bytes){
+      var n=Number(bytes);
+      if(!isFinite(n)||n<0){return ''}
+      if(n===0){return '0 B'}
+      if(n>=1048576){
+        var mb=n/1048576;
+        return (mb>=10?Math.round(mb):Math.round(mb*10)/10)+' MB';
+      }
+      if(n>=1024){
+        var kb=n/1024;
+        return (kb>=100?Math.round(kb):Math.round(kb*10)/10)+' KB';
+      }
+      return n+' B';
+    }
+
+    function showSizeTag(asset){
+      return typeof asset.fileSize==='number'&&asset.fileSize>=0;
+    }
+
+    function isRasterImageAsset(asset){
+      return asset.type==='image'||asset.type==='background';
+    }
+
+    function showFormatTag(asset){
+      return isRasterImageAsset(asset)||asset.type==='svg-image';
     }
 
     function typeLabel(type){
@@ -4640,10 +5452,30 @@
       return type==='video-wistia'||type==='video-file'||type==='video-embed';
     }
 
+    function searchQueryNorm(){
+      return searchQuery.trim().toLowerCase();
+    }
+
+    function assetMatchesSearch(asset){
+      var q=searchQueryNorm();
+      if(!q){return true}
+      return assetFileName(asset).indexOf(q)!==-1;
+    }
+
     function assetMatchesFilter(asset){
-      if(activeFilter==='all'){return true}
+      if(!assetMatchesSearch(asset)){return false}
+      if(activeFilter==='all'){
+        if(activeImageFormat!=='all'&&isRasterImageAsset(asset)){
+          return imageFormatKey(asset)===activeImageFormat;
+        }
+        return true;
+      }
       if(activeFilter==='video'){return isVideoType(asset.type)}
-      return asset.type===activeFilter;
+      if(asset.type!==activeFilter){return false}
+      if(activeFilter==='image'&&activeImageFormat!=='all'){
+        return imageFormatKey(asset)===activeImageFormat;
+      }
+      return true;
     }
 
     function filteredCount(assets){
@@ -4687,6 +5519,18 @@
         preview.textContent='No preview';
       }
       card.appendChild(preview);
+      if(showFormatTag(asset)){
+        var fmt=document.createElement('span');
+        fmt.className='asset-format-tag';
+        fmt.textContent=formatTagLabel(asset);
+        preview.appendChild(fmt);
+      }
+      if(showSizeTag(asset)){
+        var sizeTag=document.createElement('span');
+        sizeTag.className='asset-size-tag';
+        sizeTag.textContent=formatFileSize(asset.fileSize);
+        preview.appendChild(sizeTag);
+      }
       var meta=document.createElement('div');
       meta.className='asset-meta';
       var type=document.createElement('span');
@@ -4750,24 +5594,46 @@
         if(!assetMatchesFilter(asset)){return}
         grid.appendChild(renderAssetCard(asset));
       });
-      if(!shown){
+      if(!shown&&!shouldPruneEmpty()){
         var empty=document.createElement('p');
         empty.className='asset-empty';
-        empty.textContent=activeFilter==='all'
-          ?'No media found inside <main> on this page.'
-          :'No '+typeLabel(activeFilter==='video'?'video-wistia':activeFilter).toLowerCase()+' items on this page ('+(page.assetCount||0)+' total).';
+        if(activeFilter==='all'){
+          empty.textContent='No media found inside <main> on this page.';
+        }else{
+          empty.textContent='No '+typeLabel(activeFilter==='video'?'video-wistia':activeFilter).toLowerCase()+' items on this page ('+(page.assetCount||0)+' total).';
+        }
         body.appendChild(empty);
-      }else{
+      }else if(shown){
         body.appendChild(grid);
       }
       return body;
     }
 
+    function shouldPruneEmpty(){
+      return activeImageFormat!=='all'||!!searchQueryNorm();
+    }
+
+    function countVisiblePages(sections){
+      var n=0;
+      (sections||[]).forEach(function(section){
+        section.pages.forEach(function(page){
+          if(filteredCount(page.assets)>0){n++}
+        });
+      });
+      return n;
+    }
+
     function pageCountLabel(page){
       var total=page.assetCount||0;
       var shown=filteredCount(page.assets);
-      if(activeFilter==='all'){
+      if(searchQueryNorm()){
+        return shown+' match'+(shown===1?'':'es');
+      }
+      if(activeFilter==='all'&&activeImageFormat==='all'){
         return total+' media item'+(total===1?'':'s');
+      }
+      if(activeImageFormat!=='all'){
+        return shown+' item'+(shown===1?'':'s');
       }
       return shown+' of '+total+' items';
     }
@@ -4808,33 +5674,153 @@
       return n;
     }
 
-    function applyAssetFilter(filter){
-      activeFilter=filter;
+    function assetFileName(asset){
+      if(asset.filename){return String(asset.filename).toLowerCase()}
+      var src=asset.url||'';
+      try{
+        var path=new URL(src).pathname;
+        return path.split('/').pop().toLowerCase()||'';
+      }catch(e){
+        var parts=String(src).split('/');
+        return (parts.pop()||'').split('?')[0].split('#')[0].toLowerCase();
+      }
+    }
+
+    function collectImageFormats(sections){
+      var counts={};
+      (sections||[]).forEach(function(section){
+        section.pages.forEach(function(page){
+          (page.assets||[]).forEach(function(asset){
+            if(asset.type!=='image'){return}
+            if(!assetMatchesSearch(asset)){return}
+            var key=imageFormatKey(asset);
+            counts[key]=(counts[key]||0)+1;
+          });
+        });
+      });
+      var order=['png','webp','jpg','gif','avif','svg','other'];
+      return order.filter(function(k){return counts[k]}).map(function(k){
+        return {key:k,count:counts[k]};
+      });
+    }
+
+    function buildFormatFilterButtons(sections){
+      if(!formatBar){return}
+      var show=activeFilter==='image';
+      formatBar.classList.toggle('is-visible',show);
+      if(!show){return}
+      var formats=collectImageFormats(sections);
+      if(activeImageFormat!=='all'&&!formats.some(function(f){return f.key===activeImageFormat})){
+        activeImageFormat='all';
+      }
+      var html='<span class="pg-filters-label">Format</span>';
+      html+='<button type="button" class="pg-filter'+(activeImageFormat==='all'?' on':'')+'" data-image-format="all" aria-pressed="'+(activeImageFormat==='all'?'true':'false')+'">All formats</button>';
+      formats.forEach(function(f){
+        var label=IMAGE_FORMAT_LABELS[f.key]||f.key.toUpperCase();
+        var on=activeImageFormat===f.key;
+        html+='<button type="button" class="pg-filter'+(on?' on':'')+'" data-image-format="'+esc(f.key)+'" aria-pressed="'+(on?'true':'false')+'">'+esc(label)+' ('+f.count+')</button>';
+      });
+      formatBar.innerHTML=html;
+    }
+
+    function filterStatusText(){
+      if(!data){return ''}
+      var pageTotal=data.pageCount||0;
+      var itemTotal=data.totalAssets||0;
+      var uniqueTotal=data.uniqueAssets||0;
+      var q=searchQueryNorm();
+      if(q){
+        var shown=countFilteredTotal(data.sections||[]);
+        var pages=countVisiblePages(data.sections||[]);
+        if(!shown){
+          return 'No media whose file name contains “'+q+'”.';
+        }
+        return 'Search “'+q+'”: '+shown+' match'+(shown===1?'':'es')+' across '+pages+' page'+(pages===1?'':'s')+'.';
+      }
+      if(activeFilter==='all'&&activeImageFormat==='all'){
+        return 'All '+pageTotal+' pages from the Pages tab are listed below, with '+itemTotal+' media items in <main> ('+uniqueTotal+' unique site-wide).';
+      }
+      var shown=countFilteredTotal(data.sections||[]);
+      if(activeImageFormat!=='all'){
+        var fmt=IMAGE_FORMAT_LABELS[activeImageFormat]||activeImageFormat.toUpperCase();
+        var pages=countVisiblePages(data.sections||[]);
+        return fmt+' filter: '+shown+' image'+(shown===1?'':'s')+' on '+pages+' page'+(pages===1?'':'s')+' ('+itemTotal+' total media items).';
+      }
+      return 'Filter active: '+shown+' matching items across all '+pageTotal+' pages ('+itemTotal+' total media items).';
+    }
+
+    function updateFilterStatus(){
+      if(!filterStatus){return}
+      filterStatus.textContent=filterStatusText();
+    }
+
+    function applyMediaVisibility(){
+      var prune=shouldPruneEmpty();
+      root.querySelectorAll('details.phase').forEach(function(sectionEl){
+        var visiblePagesInSection=0;
+        var itemsInSection=0;
+        sectionEl.querySelectorAll('details.asset-page').forEach(function(pageEl){
+          var page=pageEl._pageData;
+          if(!page){return}
+          var count=filteredCount(page.assets);
+          var show=!prune||count>0;
+          pageEl.style.display=show?'':'none';
+          if(show){
+            visiblePagesInSection++;
+            itemsInSection+=count;
+          }
+          var countEl=pageEl.querySelector('.asset-page-count');
+          if(countEl){countEl.textContent=pageCountLabel(page)}
+          var oldBody=pageEl.querySelector('.asset-body');
+          if(oldBody){oldBody.replaceWith(renderPageBody(page))}
+        });
+        sectionEl.style.display=(!prune||visiblePagesInSection>0)?'':'none';
+        var countSpan=sectionEl.querySelector('summary .count');
+        var sectionData=sectionEl._sectionData;
+        if(countSpan&&sectionData){
+          if(prune){
+            countSpan.textContent=visiblePagesInSection+' page'+(visiblePagesInSection===1?'':'s')+' · '+itemsInSection+' item'+(itemsInSection===1?'':'s');
+          }else{
+            countSpan.textContent=sectionData.pages+' pages · '+sectionData.sectionTotal+' items';
+          }
+        }
+      });
+      if(searchResults){
+        searchResults.classList.remove('is-visible');
+        searchResults.innerHTML='';
+      }
+      root.style.display='';
+    }
+
+    function assetsHash(){
+      var h='assets';
+      var params=[];
+      if(activeFilter!=='all'){params.push('type='+activeFilter)}
+      if(activeFilter==='image'&&activeImageFormat!=='all'){params.push('format='+activeImageFormat)}
+      return '#'+h+(params.length?'?'+params.join('&'):'');
+    }
+
+    function applyMediaView(opts){
+      opts=opts||{};
+      if(opts.filter!==undefined){
+        activeFilter=opts.filter;
+        if(activeFilter!=='image'){activeImageFormat='all'}
+      }
+      if(opts.imageFormat!==undefined){activeImageFormat=opts.imageFormat}
+      if(opts.search!==undefined){searchQuery=opts.search}
       filterBar.querySelectorAll('[data-asset-filter]').forEach(function(btn){
-        var on=btn.getAttribute('data-asset-filter')===filter;
+        var on=btn.getAttribute('data-asset-filter')===activeFilter;
         btn.classList.toggle('on',on);
         btn.setAttribute('aria-pressed',on?'true':'false');
       });
-      root.querySelectorAll('details.asset-page').forEach(function(pageEl){
-        var page=pageEl._pageData;
-        if(!page){return}
-        var countEl=pageEl.querySelector('.asset-page-count');
-        if(countEl){countEl.textContent=pageCountLabel(page)}
-        var oldBody=pageEl.querySelector('.asset-body');
-        if(oldBody){oldBody.replaceWith(renderPageBody(page))}
-      });
-      if(filterStatus&&data){
-        var pageTotal=data.pageCount||0;
-        var itemTotal=data.totalAssets||0;
-        var uniqueTotal=data.uniqueAssets||0;
-        if(filter==='all'){
-          filterStatus.textContent='All '+pageTotal+' pages from the Pages tab are listed below, with '+itemTotal+' media items in <main> ('+uniqueTotal+' unique site-wide).';
-        }else{
-          var shown=countFilteredTotal(data.sections||[]);
-          filterStatus.textContent='Filter active: '+shown+' matching items across all '+pageTotal+' pages ('+itemTotal+' total media items).';
-        }
-      }
-      history.replaceState(null,'',filter==='all'?'#assets':'#assets?type='+filter);
+      buildFormatFilterButtons(data?data.sections:[]);
+      applyMediaVisibility();
+      updateFilterStatus();
+      history.replaceState(null,'',assetsHash());
+    }
+
+    function applyAssetFilter(filter){
+      applyMediaView({filter:filter});
     }
 
     function renderAssets(json){
@@ -4867,36 +5853,392 @@
         });
         body.appendChild(inner);
         det.appendChild(body);
+        det._sectionData={pages:section.pages.length,sectionTotal:section.sectionTotal};
         root.appendChild(det);
       });
       var hash=location.hash.replace(/^#/,'');
-      var match=hash.match(/^assets(?:\?type=([a-z-]+))?/);
-      applyAssetFilter(match&&match[1]?match[1]:'all');
+      var match=hash.match(/^assets(?:\?(.+))?/);
+      var filter='all';
+      var format='all';
+      if(match&&match[1]){
+        match[1].split('&').forEach(function(pair){
+          var kv=pair.split('=');
+          if(kv[0]==='type'&&kv[1]){filter=kv[1]}
+          if(kv[0]==='format'&&kv[1]){format=kv[1]}
+        });
+      }
+      applyMediaView({filter:filter,imageFormat:format});
     }
 
     filterBar.addEventListener('click',function(e){
       var btn=e.target.closest('[data-asset-filter]');
       if(!btn){return}
-      applyAssetFilter(btn.getAttribute('data-asset-filter'));
+      applyMediaView({filter:btn.getAttribute('data-asset-filter')});
     });
+
+    if(formatBar){
+      formatBar.addEventListener('click',function(e){
+        var btn=e.target.closest('[data-image-format]');
+        if(!btn){return}
+        applyMediaView({imageFormat:btn.getAttribute('data-image-format')});
+      });
+    }
+
+    if(searchInput){
+      var searchTimer=null;
+      searchInput.addEventListener('input',function(){
+        clearTimeout(searchTimer);
+        searchTimer=setTimeout(function(){
+          applyMediaView({search:searchInput.value});
+        },180);
+      });
+    }
 
     window.addEventListener('hashchange',function(){
       var hash=location.hash.replace(/^#/,'');
       if(hash.indexOf('assets')!==0||!data){return}
       show('assets');
-      var match=hash.match(/^assets(?:\?type=([a-z-]+))?/);
-      applyAssetFilter(match&&match[1]?match[1]:'all');
+      var match=hash.match(/^assets(?:\?(.+))?/);
+      var filter='all';
+      var format='all';
+      if(match&&match[1]){
+        match[1].split('&').forEach(function(pair){
+          var kv=pair.split('=');
+          if(kv[0]==='type'&&kv[1]){filter=kv[1]}
+          if(kv[0]==='format'&&kv[1]){format=kv[1]}
+        });
+      }
+      applyMediaView({filter:filter,imageFormat:format});
     });
 
-    fetch('page-assets.json?v=4').then(function(r){return r.json()}).then(renderAssets).catch(function(){
+    fetch('page-assets.json?v=6').then(function(r){return r.json()}).then(renderAssets).catch(function(){
       if(window.PAGE_ASSETS){renderAssets(window.PAGE_ASSETS);return}
       root.innerHTML='<p class="asset-error">Could not load page-assets.json. Run scripts/audit-page-assets.py to generate it.</p>';
     });
   })();
 
   (function(){
+    var root=document.getElementById('forms-root');
+    if(!root){return}
+    var data=null;
+    var activeFilter='all';
+    var searchQuery='';
+    var filterStatus=document.getElementById('forms-filter-status');
+    var filterBar=document.getElementById('forms-filters');
+    var searchInput=document.getElementById('forms-search');
+
+    function esc(s){
+      return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+    }
+
+    function searchQueryNorm(){
+      return searchQuery.trim().toLowerCase();
+    }
+
+    function pageMatchesSearch(page){
+      var q=searchQueryNorm();
+      if(!q){return true}
+      return (page.title||'').toLowerCase().indexOf(q)!==-1
+        ||(page.url||'').toLowerCase().indexOf(q)!==-1;
+    }
+
+    function pageMatchesFilter(page){
+      if(!pageMatchesSearch(page)){return false}
+      if(activeFilter==='with'){return !!page.hasForm}
+      if(activeFilter==='without'){return !page.hasForm}
+      return true;
+    }
+
+    function buildSectionsFromPagesTab(){
+      var sections=[];
+      document.querySelectorAll('#panel-pages details.phase').forEach(function(sectionEl){
+        var h2=sectionEl.querySelector('summary h2');
+        if(!h2){return}
+        var pages=[];
+        sectionEl.querySelectorAll('.pg-row').forEach(function(row){
+          var link=row.querySelector('.pg-url');
+          var titleEl=row.querySelector('.pg-title');
+          if(!link||!titleEl){return}
+          pages.push({title:titleEl.textContent.trim(),url:link.href});
+        });
+        if(pages.length){sections.push({name:h2.textContent.trim(),pages:pages})}
+      });
+      return sections;
+    }
+
+    function normPageUrl(href){
+      if(!href){return ''}
+      try{
+        var u=new URL(href);
+        var path=u.pathname.replace(/\/+$/,'');
+        if(!path){path='/'}
+        return u.origin+path;
+      }catch(e){
+        return String(href).replace(/\/+$/,'');
+      }
+    }
+
+    function buildFormsLookup(json){
+      var map={};
+      if(!json||!json.sections){return map}
+      json.sections.forEach(function(section){
+        section.pages.forEach(function(page){
+          map[normPageUrl(page.url)]=page;
+        });
+      });
+      return map;
+    }
+
+    function mergeSectionsWithForms(pagesTabSections, formsLookup){
+      return pagesTabSections.map(function(section){
+        var pages=section.pages.map(function(page){
+          var hit=formsLookup[normPageUrl(page.url)];
+          return hit?Object.assign({},hit,{title:page.title,url:page.url}):{
+            title:page.title,
+            url:page.url,
+            hasForm:false,
+            formCount:0,
+            forms:[],
+            error:'Not in audit data'
+          };
+        });
+        var sectionWith=pages.filter(function(p){return p.hasForm}).length;
+        return {name:section.name,pages:pages,sectionWithForms:sectionWith,sectionTotal:pages.length};
+      });
+    }
+
+    function pageCountLabel(page){
+      if(page.error&&page.error!=='Not in audit data'){return page.error}
+      if(page.hasForm){
+        var types=(page.forms||[]).map(function(f){return f.label}).join(', ');
+        return page.formCount+' form'+(page.formCount===1?'':'s')+' · '+types;
+      }
+      return 'No form in main';
+    }
+
+    function renderPageBody(page){
+      var body=document.createElement('div');
+      body.className='asset-body';
+      if(page.error&&page.error!=='Not in audit data'){
+        var err=document.createElement('p');
+        err.className='asset-error';
+        err.textContent=page.error;
+        body.appendChild(err);
+        return body;
+      }
+      if(page.hasForm){
+        var list=document.createElement('div');
+        list.className='form-type-list';
+        (page.forms||[]).forEach(function(form){
+          var tag=document.createElement('span');
+          tag.className='form-type-tag';
+          tag.textContent=form.label+(form.count>1?' ×'+form.count:'');
+          list.appendChild(tag);
+        });
+        body.appendChild(list);
+        var note=document.createElement('p');
+        note.className='form-page-note';
+        note.textContent='Detected inside <main>. Footer newsletter signup is excluded from this audit.';
+        body.appendChild(note);
+      }else{
+        var empty=document.createElement('p');
+        empty.className='form-page-note';
+        empty.textContent='No lead-capture or interactive form found inside <main> on this page.';
+        body.appendChild(empty);
+      }
+      return body;
+    }
+
+    function renderPage(page){
+      var det=document.createElement('details');
+      det.className='asset-page';
+      if(!pageMatchesFilter(page)){det.classList.add('pg-hidden')}
+      var sum=document.createElement('summary');
+      sum.innerHTML='<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>';
+      var title=document.createElement('span');
+      title.className='asset-page-title';
+      title.textContent=page.title;
+      sum.appendChild(title);
+      var url=document.createElement('a');
+      url.className='asset-page-url';
+      url.href=page.url;
+      url.target='_blank';
+      url.rel='noopener';
+      url.textContent=page.url;
+      sum.appendChild(url);
+      var badge=document.createElement('span');
+      badge.className='form-badge '+(page.hasForm?'form-badge-yes':'form-badge-no');
+      badge.textContent=page.hasForm?'Has form':'No form';
+      sum.appendChild(badge);
+      var count=document.createElement('span');
+      count.className='asset-page-count';
+      count.textContent=pageCountLabel(page);
+      sum.appendChild(count);
+      det.appendChild(sum);
+      det.appendChild(renderPageBody(page));
+      det._pageData=page;
+      return det;
+    }
+
+    function updateFilterStatus(){
+      if(!filterStatus||!data){return}
+      var q=searchQueryNorm();
+      var visible=0;
+      var withVisible=0;
+      (data.sections||[]).forEach(function(section){
+        section.pages.forEach(function(page){
+          if(pageMatchesFilter(page)){
+            visible++;
+            if(page.hasForm){withVisible++}
+          }
+        });
+      });
+      if(q){
+        filterStatus.textContent='Search “'+q+'”: '+visible+' page'+(visible===1?'':'s')+' shown'+(withVisible?' ('+withVisible+' with forms).':'.');
+        return;
+      }
+      if(activeFilter==='with'){
+        filterStatus.textContent='Showing '+visible+' page'+(visible===1?'':'s')+' with a form in <main> (footer newsletter excluded).';
+        return;
+      }
+      if(activeFilter==='without'){
+        filterStatus.textContent='Showing '+visible+' page'+(visible===1?'':'s')+' without a form in <main>.';
+        return;
+      }
+      filterStatus.textContent='All '+data.pageCount+' pages from the Pages tab — '+data.pagesWithForms+' with forms, '+data.pagesWithoutForms+' without.';
+    }
+
+    function applyFormsVisibility(){
+      if(!data){return}
+      var prune=activeFilter!=='all'||!!searchQueryNorm();
+      root.querySelectorAll('details.phase').forEach(function(sectionEl){
+        var visiblePagesInSection=0;
+        sectionEl.querySelectorAll('details.asset-page').forEach(function(pageEl){
+          var page=pageEl._pageData;
+          var show=page&&pageMatchesFilter(page);
+          pageEl.classList.toggle('pg-hidden',!show);
+          if(show){visiblePagesInSection++}
+        });
+        sectionEl.classList.toggle('pg-section-hidden',prune&&visiblePagesInSection===0);
+        var countSpan=sectionEl.querySelector('summary .count');
+        var sectionData=sectionEl._sectionData;
+        if(countSpan&&sectionData){
+          if(prune){
+            countSpan.textContent=visiblePagesInSection+' page'+(visiblePagesInSection===1?'':'s')+' · '+sectionData.sectionWithForms+' with forms';
+          }else{
+            countSpan.textContent=sectionData.pages+' pages · '+sectionData.sectionWithForms+' with forms';
+          }
+        }
+      });
+      updateFilterStatus();
+    }
+
+    function formsHash(){
+      var h='forms';
+      if(activeFilter!=='all'){return '#'+h+'?filter='+activeFilter}
+      return '#'+h;
+    }
+
+    function applyFormsView(opts){
+      opts=opts||{};
+      if(opts.filter!==undefined){activeFilter=opts.filter}
+      if(opts.search!==undefined){searchQuery=opts.search}
+      filterBar.querySelectorAll('[data-form-filter]').forEach(function(btn){
+        var on=btn.getAttribute('data-form-filter')===activeFilter;
+        btn.classList.toggle('on',on);
+        btn.setAttribute('aria-pressed',on?'true':'false');
+      });
+      applyFormsVisibility();
+      history.replaceState(null,'',formsHash());
+    }
+
+    function renderForms(json){
+      data=json;
+      var pagesTabSections=buildSectionsFromPagesTab();
+      var formsLookup=buildFormsLookup(json);
+      var merged=mergeSectionsWithForms(pagesTabSections, formsLookup);
+      data.sections=merged;
+      data.pageCount=merged.reduce(function(n,s){return n+s.pages.length},0);
+      root.innerHTML='';
+      document.getElementById('forms-stat-pages').textContent=String(json.pageCount||0);
+      document.getElementById('forms-stat-with').textContent=String(json.pagesWithForms||0);
+      document.getElementById('forms-stat-without').textContent=String(json.pagesWithoutForms||0);
+      document.getElementById('forms-stat-instances').textContent=String(json.totalFormInstances||0);
+      merged.forEach(function(section){
+        var det=document.createElement('details');
+        det.className='phase';
+        det.open=false;
+        var sum=document.createElement('summary');
+        sum.innerHTML='<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>'
+          +'<h2>'+esc(section.name)+'</h2>'
+          +'<span class="count">'+section.pages.length+' pages · '+section.sectionWithForms+' with forms</span>';
+        det.appendChild(sum);
+        var body=document.createElement('div');
+        body.className='body';
+        var inner=document.createElement('div');
+        inner.className='pg-body';
+        section.pages.forEach(function(page){
+          inner.appendChild(renderPage(page));
+        });
+        body.appendChild(inner);
+        det.appendChild(body);
+        det._sectionData={pages:section.pages.length,sectionWithForms:section.sectionWithForms};
+        root.appendChild(det);
+      });
+      var hash=location.hash.replace(/^#/,'');
+      var match=hash.match(/^forms(?:\?(.+))?/);
+      var filter='all';
+      if(match&&match[1]){
+        match[1].split('&').forEach(function(pair){
+          var kv=pair.split('=');
+          if(kv[0]==='filter'&&kv[1]){filter=kv[1]}
+        });
+      }
+      applyFormsView({filter:filter});
+    }
+
+    filterBar.addEventListener('click',function(e){
+      var btn=e.target.closest('[data-form-filter]');
+      if(!btn){return}
+      applyFormsView({filter:btn.getAttribute('data-form-filter')});
+    });
+
+    if(searchInput){
+      var searchTimer=null;
+      searchInput.addEventListener('input',function(){
+        clearTimeout(searchTimer);
+        searchTimer=setTimeout(function(){
+          applyFormsView({search:searchInput.value});
+        },180);
+      });
+    }
+
+    window.addEventListener('hashchange',function(){
+      var hash=location.hash.replace(/^#/,'');
+      if(hash.indexOf('forms')!==0||!data){return}
+      show('forms');
+      var match=hash.match(/^forms(?:\?(.+))?/);
+      var filter='all';
+      if(match&&match[1]){
+        match[1].split('&').forEach(function(pair){
+          var kv=pair.split('=');
+          if(kv[0]==='filter'&&kv[1]){filter=kv[1]}
+        });
+      }
+      applyFormsView({filter:filter});
+    });
+
+    fetch('page-forms.json?v=1').then(function(r){return r.json()}).then(renderForms).catch(function(){
+      if(window.PAGE_FORMS){renderForms(window.PAGE_FORMS);return}
+      root.innerHTML='<p class="asset-error">Could not load page-forms.json. Run scripts/audit-page-forms.py to generate it.</p>';
+    });
+  })();
+
+  (function(){
     var hash=(location.hash||'').replace(/^#/,'').split('?')[0];
     if(hash==='assets'){show('assets')}
+    if(hash==='forms'){show('forms')}
+    if(hash==='stats'){show('stats')}
   })();
 </script>
 </body>

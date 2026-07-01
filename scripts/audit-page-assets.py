@@ -8,11 +8,16 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 import html as html_lib
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse, parse_qs
 
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = Path(__file__).resolve().parent
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+from enrich_asset_sizes import enrich_asset_sizes
 INDEX = ROOT / "index.html"
 OUT_JSON = ROOT / "page-assets.json"
 OUT_JS = ROOT / "page-assets.data.js"
@@ -120,6 +125,26 @@ def filename_from_url(url: str) -> str:
         return "inline data URI"
     path = unquote(urlparse(url).path)
     return path.rsplit("/", 1)[-1] or url
+
+
+def file_extension_for(asset: dict) -> str:
+    asset_type = asset.get("type", "")
+    if asset_type == "svg-inline":
+        return "inline-svg"
+    url = asset.get("url") or ""
+    filename = asset.get("filename") or ""
+    for src in (filename, url):
+        if not src or src.startswith("inline"):
+            continue
+        m = re.search(r"\.([a-z0-9]+)(?:\?|#|$)", src, re.I)
+        if m:
+            ext = m.group(1).lower()
+            if ext == "jpeg":
+                return "jpg"
+            return ext
+    if asset_type == "svg-image":
+        return "svg"
+    return ""
 
 
 def classify_embed(url: str) -> str:
@@ -585,6 +610,9 @@ def extract_assets(main_html: str, page_url: str) -> list[dict]:
     result.sort(key=lambda a: (type_order.get(a["type"], 9), a.get("filename", "").lower()))
     for item in result:
         item.pop("key", None)
+        ext = file_extension_for(item)
+        if ext:
+            item["fileExt"] = ext
     return result
 
 
@@ -635,6 +663,11 @@ def main():
         "errors": errors,
         "sections": audited_sections,
     }
+
+    from enrich_asset_sizes import enrich_asset_sizes
+
+    enriched, _ = enrich_asset_sizes(data)
+    print(f"  Enriched {enriched} assets with fileSize")
 
     OUT_JSON.write_text(json.dumps(data, indent=2) + "\n")
     OUT_JS.write_text("window.PAGE_ASSETS=" + json.dumps(data, separators=(",", ":")) + ";\n")

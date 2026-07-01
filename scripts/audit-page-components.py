@@ -217,6 +217,32 @@ PHASE3_COMPONENTS = [
         "exclude_url_paths": ["/pricing"],
     },
     {
+        "key": "metric",
+        "id": "task-metric",
+        "label": "Metric",
+        "pillClass": "pg-comp-metric",
+        "detection": "metric.module / special-metric.module on /2026-benchmark-report only",
+        "url_paths": ["/2026-benchmark-report"],
+        "patterns": [
+            (r"module_metric", "metric.module CSS"),
+            (r"module_special-metric", "special-metric.module CSS"),
+            (r"special-metric__stat-number", "Special metric icon grid"),
+            (r"metric-title", "Metric chart title"),
+        ],
+    },
+    {
+        "key": "interactive-hero",
+        "id": "task-interactive-hero",
+        "label": "Interactive hero",
+        "pillClass": "pg-comp-interactive-hero",
+        "detection": "interactive-hero.module on /2026-pulse-report only",
+        "url_paths": ["/2026-pulse-report"],
+        "patterns": [
+            (r"module_interactive-hero", "interactive-hero.module CSS"),
+            (r"interactive-hero__title", "Interactive hero DOM"),
+        ],
+    },
+    {
         "key": "horizontal-slider",
         "id": "task-horizontal-slider",
         "label": "Horizontal slider",

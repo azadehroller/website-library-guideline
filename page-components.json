@@ -1788,6 +1788,42 @@
         }
       ]
     },
+    "metric": {
+      "id": "task-metric",
+      "label": "Metric",
+      "pillClass": "pg-comp-metric",
+      "detection": "metric.module / special-metric.module on /2026-benchmark-report only",
+      "pageCount": 1,
+      "byCategory": {
+        "Others": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/2026-benchmark-report",
+          "title": "2026 Benchmark Report",
+          "category": "Others",
+          "marker": "metric.module CSS"
+        }
+      ]
+    },
+    "interactive-hero": {
+      "id": "task-interactive-hero",
+      "label": "Interactive hero",
+      "pillClass": "pg-comp-interactive-hero",
+      "detection": "interactive-hero.module on /2026-pulse-report only",
+      "pageCount": 1,
+      "byCategory": {
+        "Others": 1
+      },
+      "pages": [
+        {
+          "url": "https://www.roller.software/2026-pulse-report",
+          "title": "2026 Pulse Report",
+          "category": "Others",
+          "marker": "interactive-hero.module CSS"
+        }
+      ]
+    },
     "horizontal-slider": {
       "id": "task-horizontal-slider",
       "label": "Horizontal slider",
@@ -2891,7 +2927,7 @@
       "label": "Button",
       "pillClass": "pg-comp-button",
       "detection": "Button stack (#js-button-stack) or Main Button module widget",
-      "pageCount": 221,
+      "pageCount": 165,
       "byCategory": {
         "Campaigns": 3,
         "Competitors": 17,
@@ -2901,9 +2937,9 @@
         "Industries": 29,
         "Legal Pages": 7,
         "Other": 1,
-        "Others": 39,
+        "Others": 38,
         "P&C": 1,
-        "Partners/Integrations": 67,
+        "Partners/Integrations": 12,
         "Pricing": 1,
         "Single Pages": 4,
         "Solutions": 3
@@ -3816,12 +3852,6 @@
           "marker": "Button stack"
         },
         {
-          "url": "https://www.roller.software/partners",
-          "title": "Partners \u2014 Overview",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
           "url": "https://www.roller.software/partner-program",
           "title": "Partner Program",
           "category": "Others",
@@ -3843,12 +3873,6 @@
           "url": "https://www.roller.software/partners/service",
           "title": "Service Partners",
           "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integration-partners",
-          "title": "Integration Partners",
-          "category": "Others",
           "marker": "Button stack"
         },
         {
@@ -3909,330 +3933,6 @@
           "url": "https://www.roller.software/centeredge-software-alternative",
           "title": "ROLLER and Centeredge",
           "category": "Others",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations",
-          "title": "Integration Partners Directory",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/aifinity",
-          "title": "aifinity",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/advanced-locker",
-          "title": "Advanced Locker",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/amusement-connect",
-          "title": "Amusement Connect",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/campaign-monitor",
-          "title": "Campaign Monitor",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/cartstack",
-          "title": "CartStack",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/chaty",
-          "title": "Chaty",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/ebg",
-          "title": "EBG",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/getyourguide",
-          "title": "GetYourGuide",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/google-things-to-do",
-          "title": "Google Things To Do",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/humanitru",
-          "title": "Humanitru",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/intelliplay",
-          "title": "Intelliplay",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/intellipaas-inc",
-          "title": "IntelliPaaS Inc",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/intercard",
-          "title": "Intercard",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/ipwatch",
-          "title": "IPWatch",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/lokt",
-          "title": "LOKT",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/myob",
-          "title": "MYOB",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/myticketpro",
-          "title": "MyTicketPro",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/netsuite",
-          "title": "NetSuite",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/newvue-solutions",
-          "title": "NewVUE Solutions",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/patch-retention",
-          "title": "Patch Retention",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/pladia",
-          "title": "Pladia",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/playspark",
-          "title": "PlaySpark",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/pourtek",
-          "title": "Pourtek",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/quickbooks",
-          "title": "QuickBooks",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/re-venue",
-          "title": "Re-venue",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/restokeai",
-          "title": "Restoke.ai",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/sacoa",
-          "title": "Sacoa",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/sailthru",
-          "title": "Sailthru",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/salesforce",
-          "title": "Salesforce",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/singa-karaoke",
-          "title": "Singa Karaoke",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/singpods",
-          "title": "SINGPODS",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/smart-segments",
-          "title": "Smart Segments",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/specialist-apps",
-          "title": "Specialist Apps",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/supy",
-          "title": "Supy",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/t2-connect",
-          "title": "T2 Connect",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/tanda",
-          "title": "Tanda",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/tiqets",
-          "title": "Tiqets",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/trengo",
-          "title": "Trengo",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/tripcom",
-          "title": "Trip.com",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/vava-voice-ai-receptionists",
-          "title": "VAVA Voice",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/viator",
-          "title": "Viator",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/vlocker",
-          "title": "VLocker",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/when-i-work",
-          "title": "When I Work",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/workforcecom",
-          "title": "Workforce.com",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/xeus",
-          "title": "XEUS",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/xero",
-          "title": "Xero",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/yonder-hq",
-          "title": "Yonder HQ",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/activecampaign-vybrnt",
-          "title": "ActiveCampaign / VYBRNT",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/alvarado",
-          "title": "Alvarado",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/beacon",
-          "title": "Beacon",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/brevo",
-          "title": "Brevo",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/hubspot",
-          "title": "HubSpot",
-          "category": "Partners/Integrations",
-          "marker": "Button stack"
-        },
-        {
-          "url": "https://www.roller.software/integrations/partner/mailchimp",
-          "title": "Mailchimp",
-          "category": "Partners/Integrations",
           "marker": "Button stack"
         }
       ]
@@ -4723,6 +4423,7 @@
     ],
     "https://www.roller.software/2026-benchmark-report": [
       "button",
+      "metric",
       "text"
     ],
     "https://www.roller.software/2026-bowling-trends": [
@@ -4731,6 +4432,7 @@
     ],
     "https://www.roller.software/2026-pulse-report": [
       "button",
+      "interactive-hero",
       "text"
     ],
     "https://www.roller.software/about-us": [
@@ -5446,171 +5148,6 @@
       "text",
       "twocol"
     ],
-    "https://www.roller.software/integration-partners": [
-      "button"
-    ],
-    "https://www.roller.software/integrations": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/activecampaign-vybrnt": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/advanced-locker": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/aifinity": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/alvarado": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/amusement-connect": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/beacon": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/brevo": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/campaign-monitor": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/cartstack": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/chaty": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/ebg": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/getyourguide": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/google-things-to-do": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/hubspot": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/humanitru": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/intellipaas-inc": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/intelliplay": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/intercard": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/ipwatch": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/lokt": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/mailchimp": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/myob": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/myticketpro": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/netsuite": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/newvue-solutions": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/patch-retention": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/pladia": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/playspark": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/pourtek": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/quickbooks": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/re-venue": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/restokeai": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/sacoa": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/sailthru": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/salesforce": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/singa-karaoke": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/singpods": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/smart-segments": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/specialist-apps": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/supy": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/t2-connect": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/tanda": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/tiqets": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/trengo": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/tripcom": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/vava-voice-ai-receptionists": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/viator": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/vlocker": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/when-i-work": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/workforcecom": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/xero": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/xeus": [
-      "button"
-    ],
-    "https://www.roller.software/integrations/partner/yonder-hq": [
-      "button"
-    ],
     "https://www.roller.software/job-applicant-privacy-policy": [
       "button"
     ],
@@ -5633,9 +5170,6 @@
       "button",
       "cards",
       "text"
-    ],
-    "https://www.roller.software/partners": [
-      "button"
     ],
     "https://www.roller.software/partners/alvarado": [
       "button",

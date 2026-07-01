@@ -4,12 +4,12 @@
   "stats": {
     "hsModules": 133,
     "hsSections": 40,
-    "mappedModules": 70,
-    "unmappedModules": 63,
+    "mappedModules": 73,
+    "unmappedModules": 60,
     "mappedSections": 24,
     "unmappedSections": 16,
-    "phaseTasks": 49,
-    "phaseWithHsMatch": 41,
+    "phaseTasks": 51,
+    "phaseWithHsMatch": 43,
     "phaseWithoutHsMatch": 8
   },
   "modules": {
@@ -366,12 +366,12 @@
       "hsLabel": "Interactive Hero",
       "hsFolder": "interactive-hero.module",
       "hsModuleId": "211211194424",
-      "phaseId": null,
-      "phaseName": null,
-      "phase": null,
-      "confidence": null,
-      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
-      "status": "not-in-build-plan"
+      "phaseId": "task-interactive-hero",
+      "phaseName": "Interactive hero",
+      "phase": 3,
+      "confidence": "high",
+      "reason": "Interactive Hero \u2014 animated gradient orbs hero (2026 Pulse report).",
+      "status": "mapped"
     },
     "interactive-summary": {
       "hsSlug": "interactive-summary",
@@ -522,12 +522,12 @@
       "hsLabel": "Metric",
       "hsFolder": "metric.module",
       "hsModuleId": "199392299277",
-      "phaseId": null,
-      "phaseName": null,
-      "phase": null,
-      "confidence": null,
-      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
-      "status": "not-in-build-plan"
+      "phaseId": "task-metric",
+      "phaseName": "Metric",
+      "phase": 3,
+      "confidence": "high",
+      "reason": "Metric module \u2014 bar chart and circle chart variants via chart_type (benchmark report).",
+      "status": "mapped"
     },
     "announcement": {
       "hsSlug": "announcement",
@@ -1434,12 +1434,12 @@
       "hsLabel": "Special Metric",
       "hsFolder": "special-metric.module",
       "hsModuleId": "199468273751",
-      "phaseId": null,
-      "phaseName": null,
-      "phase": null,
-      "confidence": null,
-      "reason": "No matching Build plan component identified \u2014 HubSpot-only or pulse/campaign-specific module.",
-      "status": "not-in-build-plan"
+      "phaseId": "task-metric",
+      "phaseName": "Metric",
+      "phase": 3,
+      "confidence": "high",
+      "reason": "Special Metric module \u2014 icon-grid ratio visualization (benchmark report).",
+      "status": "mapped"
     },
     "features-stacked-content": {
       "hsSlug": "features-stacked-content",
@@ -3671,6 +3671,60 @@
           "phase": 3,
           "confidence": "high",
           "reason": "Stats Set bar \u2014 page-level metrics (section.global.global-4-stats).",
+          "status": "mapped"
+        }
+      ],
+      "hsSections": [],
+      "gap": null
+    },
+    "task-metric": {
+      "phaseId": "task-metric",
+      "phase": 3,
+      "phaseName": "Metric",
+      "hsModules": [
+        {
+          "hsSlug": "metric",
+          "hsLabel": "Metric",
+          "hsFolder": "metric.module",
+          "hsModuleId": "199392299277",
+          "phaseId": "task-metric",
+          "phaseName": "Metric",
+          "phase": 3,
+          "confidence": "high",
+          "reason": "Metric module \u2014 bar chart and circle chart variants via chart_type (benchmark report).",
+          "status": "mapped"
+        },
+        {
+          "hsSlug": "special-metric",
+          "hsLabel": "Special Metric",
+          "hsFolder": "special-metric.module",
+          "hsModuleId": "199468273751",
+          "phaseId": "task-metric",
+          "phaseName": "Metric",
+          "phase": 3,
+          "confidence": "high",
+          "reason": "Special Metric module \u2014 icon-grid ratio visualization (benchmark report).",
+          "status": "mapped"
+        }
+      ],
+      "hsSections": [],
+      "gap": null
+    },
+    "task-interactive-hero": {
+      "phaseId": "task-interactive-hero",
+      "phase": 3,
+      "phaseName": "Interactive hero",
+      "hsModules": [
+        {
+          "hsSlug": "interactive-hero",
+          "hsLabel": "Interactive Hero",
+          "hsFolder": "interactive-hero.module",
+          "hsModuleId": "211211194424",
+          "phaseId": "task-interactive-hero",
+          "phaseName": "Interactive hero",
+          "phase": 3,
+          "confidence": "high",
+          "reason": "Interactive Hero \u2014 animated gradient orbs hero (2026 Pulse report).",
           "status": "mapped"
         }
       ],

@@ -31,6 +31,21 @@ MODULE_MAP: dict[str, tuple[str, str, str]] = {
     "features-card": ("task-cards", "medium", "Features Card — alternate cards row variant."),
     "card": ("task-cards", "low", "Generic card module — likely sub-element of Cards section."),
     "stats-set": ("task-stats-section", "high", "Stats Set bar — page-level metrics (section.global.global-4-stats)."),
+    "metric": (
+        "task-metric",
+        "high",
+        "Metric module — bar chart and circle chart variants via chart_type (benchmark report).",
+    ),
+    "special-metric": (
+        "task-metric",
+        "high",
+        "Special Metric module — icon-grid ratio visualization (benchmark report).",
+    ),
+    "interactive-hero": (
+        "task-interactive-hero",
+        "high",
+        "Interactive Hero — animated gradient orbs hero (2026 Pulse report).",
+    ),
     "stats-set-stacked": (
         "task-global-stats",
         "high",
@@ -243,6 +258,8 @@ PHASE_TASKS = [
     ("task-categorylinks", 3, "Category links"),
     ("task-features-index", 3, "Features index"),
     ("task-stats-section", 3, "Stats section"),
+    ("task-metric", 3, "Metric"),
+    ("task-interactive-hero", 3, "Interactive hero"),
     ("task-horizontal-slider", 3, "Horizontal slider"),
     ("task-customer-story", 3, "Customer story carousel"),
     ("task-industry-vertical", 3, "Industry vertical section"),
