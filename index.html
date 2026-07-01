@@ -114,7 +114,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 14px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
   }
 
@@ -131,6 +131,15 @@
   .tabs {
     display: flex;
     gap: var(--space-xs);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+    min-width: 0;
+    align-items: center;
+
+    &::-webkit-scrollbar { display: none; }
 
     & button {
       font: inherit;
@@ -142,8 +151,11 @@
       border-radius: 999px;
       padding: 7px 15px;
       cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
 
       &[aria-selected="true"] { background: var(--link); color: var(--white); border-color: var(--link); }
+      &:hover:not([aria-selected="true"]) { border-color: var(--link); color: var(--link); }
     }
   }
 
@@ -151,6 +163,7 @@
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 26px var(--space-lg) 60px;
+    background: var(--surface);
   }
 
   .intro {
@@ -476,7 +489,7 @@
   .usedby { margin-top: 8px; font-size: 13px; }
   .tok-caption { font-size: 12px; color: var(--muted); margin: 2px 0 8px; }
 
-  #panel-index, #panel-pages, #panel-hs, #panel-assets, #panel-forms { display: none; }
+  #panel-plan, #panel-index, #panel-pages, #panel-hs, #panel-assets, #panel-forms, #panel-stats { display: none; }
 
   .idx {
     & h3 {
@@ -1845,26 +1858,330 @@
     padding-top: 12px;
     border-top: 1px solid var(--border);
   }
+
+  /* ── Responsive ─────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    header.top .inner {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px var(--space-md) 0;
+      gap: 0;
+    }
+
+    .brand { padding-bottom: 8px; }
+
+    .tabs {
+      width: 100%;
+      padding-bottom: 10px;
+
+      & button { font-size: 12px; padding: 6px 12px; }
+    }
+
+    .wrap { padding: 18px var(--space-md) 40px; }
+
+    .ov-hero {
+      flex-direction: column;
+      gap: 12px;
+      padding: 22px 0 20px;
+      margin-bottom: 28px;
+
+      & h1 { font-size: 1.375rem; }
+    }
+
+    .ov-hero-chips { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+
+    .ov-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+    .ov-grid-2 { grid-template-columns: 1fr 1fr; }
+
+    .ov-n { font-size: 1.375rem; }
+    .ov-section { margin-bottom: 32px; }
+  }
+
+  @media (max-width: 480px) {
+    .tab-group-label { display: none; }
+    .tab-sep { display: none; }
+    .ov-grid { grid-template-columns: 1fr 1fr; }
+    .ov-grid-2 { grid-template-columns: 1fr; }
+    .ov-n { font-size: 1.25rem; }
+  }
+
+  /* ── Tab groups ─────────────────────────────────────────── */
+  .tab-sep {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+    align-self: center;
+    flex-shrink: 0;
+    margin: 0 6px;
+    display: block;
+  }
+  .tab-group-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    align-self: center;
+    white-space: nowrap;
+    padding: 0 2px;
+  }
+
+  /* ── Overview panel ─────────────────────────────────────── */
+  #panel-overview { padding: 0 0 64px; }
+
+  .ov-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 36px 0 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+  .ov-hero h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--heading);
+    margin: 0 0 8px;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+  .ov-hero-sub {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0;
+    max-width: 540px;
+  }
+  .ov-hero-chips {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .ov-hero-chip {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 600;
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 10px;
+    white-space: nowrap;
+  }
+
+  .ov-section { margin-bottom: 48px; }
+  .ov-section-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .ov-section-head h2 {
+    font-size: .8125rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--heading);
+    margin: 0;
+  }
+  .ov-section-desc {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 20px;
+    line-height: 1.5;
+  }
+  .ov-section-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .ov-dot-blue  { background: var(--link); }
+  .ov-dot-coral { background: var(--coral); }
+
+  .ov-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+    gap: 14px;
+  }
+  .ov-grid-2 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+
+  .ov-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left-width: 3px;
+    border-radius: var(--r);
+    padding: 18px 20px 16px;
+    cursor: pointer;
+    transition: box-shadow .15s, transform .1s;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ov-card:hover { box-shadow: 0 4px 18px rgba(9,96,246,.09); transform: translateY(-1px); }
+  .ov-card:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+  .ov-card-blue  { border-left-color: var(--link); }
+  .ov-card-coral { border-left-color: var(--coral); }
+
+  .ov-card-label {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .ov-stats-row { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-end; }
+  .ov-stat { display: flex; flex-direction: column; gap: 2px; }
+  .ov-n {
+    font-size: 1.625rem;
+    font-weight: 800;
+    color: var(--heading);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .ov-l { font-size: 11px; color: var(--muted); font-weight: 500; }
+  .ov-card-desc { font-size: 12.5px; color: var(--text); line-height: 1.5; margin: 0; flex: 1; }
+  .ov-card-link { font-size: 12px; font-weight: 700; color: var(--link); margin-top: 2px; }
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="inner">
-    <div class="brand"><span class="dot"></span> Website Rebuild — Library guideline</div>
+    <div class="brand"><span class="dot"></span> ROLLER Website Library</div>
     <div class="tabs" role="tablist" aria-label="Views">
-      <button id="tab-plan" role="tab" aria-selected="true" aria-controls="panel-plan">Build plan</button>
-      <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Components</button>
+      <button id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview">Overview</button>
+      <span class="tab-sep" aria-hidden="true"></span>
+      <span class="tab-group-label" aria-hidden="true">Website Library</span>
       <button id="tab-pages" role="tab" aria-selected="false" aria-controls="panel-pages">Pages</button>
       <button id="tab-assets" role="tab" aria-selected="false" aria-controls="panel-assets">Media</button>
       <button id="tab-forms" role="tab" aria-selected="false" aria-controls="panel-forms">Forms</button>
+      <button id="tab-stats" role="tab" aria-selected="false" aria-controls="panel-stats">Brand Numbers</button>
       <button id="tab-hs" role="tab" aria-selected="false" aria-controls="panel-hs">HubSpot</button>
-      <button id="tab-stats" role="tab" aria-selected="false" aria-controls="panel-stats">Global stats</button>
+      <span class="tab-sep" aria-hidden="true"></span>
+      <span class="tab-group-label" aria-hidden="true">Sanity Migration</span>
+      <button id="tab-plan" role="tab" aria-selected="false" aria-controls="panel-plan">Migration Plan</button>
+      <button id="tab-index" role="tab" aria-selected="false" aria-controls="panel-index">Components</button>
     </div>
   </div>
 </header>
 
 <main class="wrap">
+
+  <!-- ============ OVERVIEW PANEL ============ -->
+  <div id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
+
+    <div class="ov-hero">
+      <div>
+        <h1>ROLLER Website Library</h1>
+        <p class="ov-hero-sub">Single source of truth for the roller.software website — current live-site reference and the Sanity migration plan.</p>
+      </div>
+      <div class="ov-hero-chips">
+        <span class="ov-hero-chip">222 pages audited</span>
+        <span class="ov-hero-chip">Last scraped June 2026</span>
+      </div>
+    </div>
+
+    <div class="ov-section">
+      <div class="ov-section-head">
+        <span class="ov-section-dot ov-dot-blue"></span>
+        <h2>Website Library</h2>
+      </div>
+      <p class="ov-section-desc">Documentation of the current roller.software site — independent of whether HubSpot or Sanity is the CMS.</p>
+      <div class="ov-grid">
+
+        <div class="ov-card ov-card-blue" onclick="show('pages')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')show('pages')">
+          <div class="ov-card-label">Pages</div>
+          <div class="ov-stats-row">
+            <div class="ov-stat"><span class="ov-n">223</span><span class="ov-l">live pages</span></div>
+            <div class="ov-stat"><span class="ov-n">16</span><span class="ov-l">categories</span></div>
+          </div>
+          <p class="ov-card-desc">Full live-site directory with HubSpot module breakdown per page.</p>
+          <span class="ov-card-link">View pages →</span>
+        </div>
+
+        <div class="ov-card ov-card-blue" onclick="show('assets')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')show('assets')">
+          <div class="ov-card-label">Media</div>
+          <div class="ov-stats-row">
+            <div class="ov-stat"><span class="ov-n" id="ov-media-total">—</span><span class="ov-l">media items</span></div>
+            <div class="ov-stat"><span class="ov-n" id="ov-media-unique">—</span><span class="ov-l">unique assets</span></div>
+          </div>
+          <p class="ov-card-desc">Images, videos and documents across all audited pages.</p>
+          <span class="ov-card-link">View media →</span>
+        </div>
+
+        <div class="ov-card ov-card-blue" onclick="show('forms')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')show('forms')">
+          <div class="ov-card-label">Forms</div>
+          <div class="ov-stats-row">
+            <div class="ov-stat"><span class="ov-n" id="ov-forms-with">—</span><span class="ov-l">pages with forms</span></div>
+            <div class="ov-stat"><span class="ov-n" id="ov-forms-instances">—</span><span class="ov-l">form instances</span></div>
+          </div>
+          <p class="ov-card-desc">HubSpot form module placements across the site.</p>
+          <span class="ov-card-link">View forms →</span>
+        </div>
+
+        <div class="ov-card ov-card-blue" onclick="show('stats')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')show('stats')">
+          <div class="ov-card-label">Brand Numbers</div>
+          <div class="ov-stats-row">
+            <div class="ov-stat"><span class="ov-n">97</span><span class="ov-l">pages with "3,000"</span></div>
+            <div class="ov-stat"><span class="ov-n">5</span><span class="ov-l">component types</span></div>
+          </div>
+          <p class="ov-card-desc">Venue count and revenue figures across site components — audit of blast radius.</p>
+          <span class="ov-card-link">View brand numbers →</span>
+        </div>
+
+        <div class="ov-card ov-card-blue" onclick="show('hs')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')show('hs')">
+          <div class="ov-card-label">HubSpot</div>
+          <div class="ov-stats-row">
+            <div class="ov-stat"><span class="ov-n" id="ov-hs-modules">—</span><span class="ov-l">HS modules</span></div>
+            <div class="ov-stat"><span class="ov-n" id="ov-hs-mapped">—</span><span class="ov-l">mapped to plan</span></div>
+          </div>
+          <p class="ov-card-desc">Current HubSpot module inventory mapped to the Sanity migration build plan.</p>
+          <span class="ov-card-link">View HubSpot →</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ov-section">
+      <div class="ov-section-head">
+        <span class="ov-section-dot ov-dot-coral"></span>
+        <h2>Sanity Migration</h2>
+      </div>
+      <p class="ov-section-desc">The build plan and component catalogue for rebuilding roller.software on Astro + Sanity CMS.</p>
+      <div class="ov-grid ov-grid-2">
+
+        <div class="ov-card ov-card-coral" onclick="show('plan')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')show('plan')">
+          <div class="ov-card-label">Migration Plan</div>
+          <div class="ov-stats-row">
+            <div class="ov-stat"><span class="ov-n">5</span><span class="ov-l">phases</span></div>
+            <div class="ov-stat"><span class="ov-n" id="ov-plan-tasks">53</span><span class="ov-l">build tasks</span></div>
+          </div>
+          <p class="ov-card-desc">Tokens → core components → standalone → global → templates. Each phase builds on the last; the full sequence is the migration order.</p>
+          <span class="ov-card-link">View migration plan →</span>
+        </div>
+
+        <div class="ov-card ov-card-coral" onclick="show('index')" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')show('index')">
+          <div class="ov-card-label">Components</div>
+          <div class="ov-stats-row">
+            <div class="ov-stat"><span class="ov-n" id="ov-comp-total">—</span><span class="ov-l">tracked components</span></div>
+            <div class="ov-stat"><span class="ov-n" id="ov-comp-live">—</span><span class="ov-l">found on live site</span></div>
+          </div>
+          <p class="ov-card-desc">Every Sanity component mapped to its build-plan task and HubSpot source module, with live-site page counts.</p>
+          <span class="ov-card-link">View components →</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /panel-overview -->
+
+  <!-- ============ PLAN PANEL ============ -->
+  <div id="panel-plan" role="tabpanel" aria-labelledby="tab-plan">
 
   <div class="intro">
     <h1>How we rebuild the site, in order</h1>
@@ -1875,14 +2192,6 @@
       <p id="comp-index-audit-stats" class="comp-index-audit" aria-live="polite"></p>
     </div>
   </div>
-
-  <!-- <div class="legend" aria-label="Legend">
-    <div class="grp"><b>Used on</b><span class="pill p-prof-services">Professional services</span><span class="pill p-values">Values</span><span class="pill p-multi-venue">Multi venue</span><span class="pill p-home">Home</span><span class="pill p-pricing">Pricing</span><span class="pill p-customer-story">Customer story</span></div> -->
-    <!-- <div class="grp"><b>Phase status</b><span class="pill s-todo">In progress</span><span class="pill s-todo">To do</span> <span style="color:var(--muted);font-size:12px">· tokens &amp; pipeline only</span></div> -->
-  <!-- </div> -->
-
-  <!-- ============ PLAN PANEL ============ -->
-  <div id="panel-plan" role="tabpanel" aria-labelledby="tab-plan">
 
   <!-- PHASE 1 -->
   <details class="phase" id="phase-1">
@@ -3893,7 +4202,7 @@
   </div><!-- /panel-hs -->
 
   <!-- ============ GLOBAL STATS PANEL ============ -->
-  <div id="panel-stats" role="tabpanel" aria-labelledby="tab-stats" style="display:none">
+  <div id="panel-stats" role="tabpanel" aria-labelledby="tab-stats">
 
     <div class="intro panel">
       <h1>Global stats</h1>
@@ -4240,9 +4549,10 @@
   lb.addEventListener('click',function(){lb.classList.remove('on');lbImg.src=''});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
 
-  var tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index'),tabPages=document.getElementById('tab-pages'),tabAssets=document.getElementById('tab-assets'),tabForms=document.getElementById('tab-forms'),tabHs=document.getElementById('tab-hs'),tabStats=document.getElementById('tab-stats');
-  var panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index'),panPages=document.getElementById('panel-pages'),panAssets=document.getElementById('panel-assets'),panForms=document.getElementById('panel-forms'),panHs=document.getElementById('panel-hs'),panStats=document.getElementById('panel-stats');
+  var tabOverview=document.getElementById('tab-overview'),tabPlan=document.getElementById('tab-plan'),tabIndex=document.getElementById('tab-index'),tabPages=document.getElementById('tab-pages'),tabAssets=document.getElementById('tab-assets'),tabForms=document.getElementById('tab-forms'),tabHs=document.getElementById('tab-hs'),tabStats=document.getElementById('tab-stats');
+  var panOverview=document.getElementById('panel-overview'),panPlan=document.getElementById('panel-plan'),panIndex=document.getElementById('panel-index'),panPages=document.getElementById('panel-pages'),panAssets=document.getElementById('panel-assets'),panForms=document.getElementById('panel-forms'),panHs=document.getElementById('panel-hs'),panStats=document.getElementById('panel-stats');
   function show(which){
+    tabOverview.setAttribute('aria-selected',which==='overview');
     tabPlan.setAttribute('aria-selected',which==='plan');
     tabIndex.setAttribute('aria-selected',which==='index');
     tabPages.setAttribute('aria-selected',which==='pages');
@@ -4250,6 +4560,7 @@
     tabForms.setAttribute('aria-selected',which==='forms');
     tabHs.setAttribute('aria-selected',which==='hs');
     tabStats.setAttribute('aria-selected',which==='stats');
+    panOverview.style.display=which==='overview'?'block':'none';
     panPlan.style.display=which==='plan'?'block':'none';
     panIndex.style.display=which==='index'?'block':'none';
     panPages.style.display=which==='pages'?'block':'none';
@@ -4257,7 +4568,33 @@
     panForms.style.display=which==='forms'?'block':'none';
     panHs.style.display=which==='hs'?'block':'none';
     panStats.style.display=which==='stats'?'block':'none';
+    if(which==='overview')refreshOverview();
   }
+  function refreshOverview(){
+    function cp(fromId,toId){
+      var src=document.getElementById(fromId);
+      var dst=document.getElementById(toId);
+      if(src&&dst&&src.textContent&&src.textContent!=='—')dst.textContent=src.textContent;
+    }
+    cp('assets-stat-total','ov-media-total');
+    cp('assets-stat-unique','ov-media-unique');
+    cp('forms-stat-with','ov-forms-with');
+    cp('forms-stat-instances','ov-forms-instances');
+    cp('hs-stat-modules','ov-hs-modules');
+    cp('hs-stat-mapped','ov-hs-mapped');
+    // Components from audit stats text
+    var statsEl=document.getElementById('comp-index-audit-stats');
+    if(statsEl&&statsEl.textContent){
+      var m=statsEl.textContent.match(/^(\d+)\s+of\s+(\d+)/);
+      if(m){
+        var dst1=document.getElementById('ov-comp-live');
+        var dst2=document.getElementById('ov-comp-total');
+        if(dst1)dst1.textContent=m[1];
+        if(dst2)dst2.textContent=m[2];
+      }
+    }
+  }
+  tabOverview.addEventListener('click',function(){show('overview')});
   tabPlan.addEventListener('click',function(){show('plan')});
   tabIndex.addEventListener('click',function(){show('index')});
   tabPages.addEventListener('click',function(){show('pages')});
@@ -4788,6 +5125,12 @@
       }
       if(statsEl){
         statsEl.innerHTML=withPages+' of '+compTotal+' tracked components found on at least one audited page. Click a page count to filter the <a href="#pages">Pages tab</a>.';
+      }
+      if(typeof refreshOverview==='function'){
+        var dst1=document.getElementById('ov-comp-live');
+        var dst2=document.getElementById('ov-comp-total');
+        if(dst1)dst1.textContent=withPages;
+        if(dst2)dst2.textContent=compTotal;
       }
       [['comp-index-primitives','primitives'],['comp-index-phase3','phase3'],['comp-index-global','global']].forEach(function(pair){
         var el=document.getElementById(pair[0]);
@@ -5516,6 +5859,7 @@
       el('hs-stat-mapped',(s.mappedModules||0)+' mod · '+(s.mappedSections||0)+' sec');
       el('hs-stat-gaps',s.phaseWithoutHsMatch||'—');
       if(u){el('hs-stat-used',u.usedModules+' mod · '+u.usedSections+' sec')}
+      if(typeof refreshOverview==='function')refreshOverview();
     }
 
     document.getElementById('hs-map-filters').addEventListener('click',function(e){
@@ -6078,6 +6422,7 @@
       document.getElementById('assets-stat-total').textContent=String(json.totalAssets||0);
       document.getElementById('assets-stat-unique').textContent=String(json.uniqueAssets||0);
       document.getElementById('assets-stat-sections').textContent=String(merged.length);
+      if(typeof refreshOverview==='function')refreshOverview();
       merged.forEach(function(section){
         var det=document.createElement('details');
         det.className='phase';
@@ -6571,6 +6916,7 @@
       document.getElementById('forms-stat-with').textContent=String(json.pagesWithForms||0);
       document.getElementById('forms-stat-without').textContent=String(json.pagesWithoutForms||0);
       document.getElementById('forms-stat-instances').textContent=String(json.totalFormInstances||0);
+      if(typeof refreshOverview==='function')refreshOverview();
       merged.forEach(function(section){
         var det=document.createElement('details');
         det.className='phase';
@@ -6643,9 +6989,14 @@
 
   (function(){
     var hash=(location.hash||'').replace(/^#/,'').split('?')[0];
-    if(hash==='assets'){show('assets')}
-    if(hash==='forms'){show('forms')}
-    if(hash==='stats'){show('stats')}
+    if(hash==='plan'){show('plan')}
+    else if(hash==='index'){show('index')}
+    else if(hash==='pages'){show('pages')}
+    else if(hash==='assets'){show('assets')}
+    else if(hash==='forms'){show('forms')}
+    else if(hash==='hs'){show('hs')}
+    else if(hash==='stats'){show('stats')}
+    else{show('overview')}
   })();
 </script>
 </body>
